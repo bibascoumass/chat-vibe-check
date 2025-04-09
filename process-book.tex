@@ -1,0 +1,156 @@
+\documentclass{article}\usepackage{graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+% Custom formatting for section titles
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+
+\title{\textbf{Chat Vibe Check: Project Proposal}}
+\begin{document}
+\maketitle
+
+\section{Project Metadata}
+\begin{itemize}
+    \item \textbf{Project Title:} Chat Vibe Check
+    \item \textbf{Team Members Name:} 
+    \begin{itemize}
+        \item Deepa Rukmini Mahalingappa (34040788, drukminimaha@umass.edu)
+        \item Benjamin Ibasco (28561432, bibasco@umass.edu)
+        \item Javin Mendiratta (33328658, jmendiratta@umass.edu)
+    \end{itemize}
+   
+    \item \textbf{Project Repository:} \href{https://github.com/bibascoumass/chat-vibe-check}{GitHub Repository Link}
+\end{itemize}
+
+\section*{Project Objectives}
+Our visualizations should answer the following questions:
+\begin{itemize}
+    \item What about conversations can we analyze that may indicate what a person's attachment style is?
+    \item How do sentiments change based on time and/or topic?
+    \item How have response times changed over time and/or topic?
+    \item How often does each person acknowledge what the other is saying and who has more thoughtful responses?
+    \item What is each user's estimated attachment style?
+\end{itemize}
+
+\section*{Data}
+We expect only the data in text format to be provided by users that visit our website by uploading their chat history from the following supported chat platforms:
+\begin{itemize}
+    \item WhatsApp
+\end{itemize}
+For data to demo and test with, we were planning to either source chats from personal connections or use movie and TV show scripts.
+
+\subsection*{Data Sets}
+\begin{itemize}
+    \item Ubuntu chat logs: https://www.kaggle.com/datasets/rtatman/ubuntu-dialogue-corpus/data
+    \item Movie dialogue: \texttt{https://www.kaggle.com/datasets/Cornell-University/movie-dialog-corpus/data}
+    \item WhatsApp Chat used for studying cyberbullying in Italy: \texttt{https://github.com/dhfbk/WhatsApp-Dataset}
+    \item WhatsApp Group Chat in Hindi: \texttt{https://www.kaggle.com/datasets/mmuhammetcavus/whatsapp-chat/data}
+\end{itemize}
+
+\section*{Data Processing}
+\begin{itemize}
+    \item \textbf{Download:} We'll need to make sure that our website references instructions on how to download the data from our supported platforms.
+    \item \textbf{Cleanup:} We'll need to ingest data from multiple formats and store it such that we can at least query for the message itself and the following metadata: sender, receiver, send time, seen time (this may not be available on all platforms).
+    \item \textbf{Quantities:} The quantities we expect to derive from the data are sentiment, response time, engagement, and conflict resolution metrics relative to topics and time.
+    \item \textbf{Analysis:} We've decided for now that we'll keep the scope simple in the beginning and only focus on text messages and emojis. Video, audio, GIFs, and images will be ignored in the onset.
+\end{itemize}
+
+\section*{Visualization Design}
+[Section intentionally left without content]
+
+\section*{Must-have Features}
+\begin{itemize}
+    \item Time (X-axis) vs Sentiment (Y-axis) Scatterplot: Each point represents a message and each point is labeled by user. 
+    \item Topic (X-axis) vs Sentiment (Y-axis) Heatmap: Each cell represents the average sentiment score for messages the belong to that topic. 
+    \item Response Time vs Sentiment (Y-axis) Scatter Plot: Each point represents a message and each point is labeled by user. 
+    \item Conversation Display: Clicking on a message plot point displays a modal overlay that shows the entire conversation in a scrolling view like a messaging app would.
+\end{itemize}
+
+\section*{Optional Features}
+\begin{itemize}
+    \item Message Grouping: We’ll need to decide if we’ll try to group messages together as part of the same conversation.
+        \begin{itemize}
+            \item We can base this off two criteria: topic and time. Starting with time-based grouping and then later by topic if time permitting.
+        \end{itemize}
+    \item Conflict Resolution Snakey Diagram: Depicting the flow of conversation state transitions from neutral to conflict to resolution.
+    \item Give an attachment style assessment with a confidence score.
+    \item Show each user's perceived attachment style over time.
+    \item Show patterns of behavior based on sentiment and attachment style analysis relative to time and topics.
+\end{itemize}
+(Note: We’ve decided to make visualizations that try to use a derived attachment style metric optional, as we currently have no guarantee if the derived attributes conclusively determine attachment style.)
+
+\section*{Security}
+\begin{itemize}
+    \item Client-side processing such that our data consists only of the messages, the timestamps and a generic username assigned like "User A" or "User B".
+    \item Use our chosen hosting platform's (like Heroku) built-in HTTPS.
+    \item Then we always want to delete the data once the user who has uploaded ends their session, so we're planning on using an in-memory datastore (like Redis) configured with TLS and disable any of its features that write the data to disk (like backups). This way we avoid needing to encrypt data on disk.
+\end{itemize}
+
+\section*{Tech Stack}
+\begin{itemize}
+    \item Front End: React, D3, Modal overlay library (react-modal?)
+    \item Back End: Node.js + Express.js (Express for data ingestion REST APIs), Redis, some NLP library
+    \item Deployment: Heroku, GitHub
+\end{itemize}
+
+\section*{Project Schedule}
+\subsection*{Week 6 (Mar 4, 6)}
+\begin{itemize}
+    \item Collect and review supported chat platform export steps, data formats, and structures.
+    \item Define the unified data schema for all platforms.
+    \item Start collecting real data from users.
+\end{itemize}
+
+\subsection*{Week 7 (Mar 11, 13)}
+\begin{itemize}
+    \item Start implementation of morted chat exports.
+    \item Start implementation of normalization of data to the unified schema.
+\end{itemize}
+
+\subsection*{Week 8 (Mar 25, 27)}
+\begin{itemize}
+    \item Finalize data cleaning and preprocessing steps.
+    \item Build a simple webpage with an upload button that ingests the data into some data store.
+    \item Implement extraction of key metadata (sender, receiver, timestamps) and message text.
+\end{itemize}
+
+\subsection*{Week 9 (Apr 1, 3)}
+\begin{itemize}
+    \item Start implementation of conversation detection.
+    \item Start implementation of analysis components (sentiment, response time, engagement, conflict resolution).
+\end{itemize}
+
+\subsection*{Week 10 (Apr 8, 10)}
+\begin{itemize}
+    \item Integrate analysis outputs with visualization tools.
+    \item Prototype our core visualizations relative to time.
+    \item Start user testing with the minimum viable product.
+\end{itemize}
+
+\subsection*{Week 11 (Apr 15, 17)}
+\begin{itemize}
+    \item Refine analysis components based on user feedback.
+    \item Refine time-based visualization designs based on user feedback.
+    \item Prototype implementing core visualization relative to topic.
+    \item Finalize scope of optional features to be integrated.
+    \item Start implementation on optional features.
+\end{itemize}
+
+\subsection*{Week 12 (Apr 22, 24)}
+\begin{itemize}
+    \item Refine topic-based visualization designs based on user feedback.
+    \item Refine optional feature implementation.
+\end{itemize}
+
+\subsection*{Week 13 (Apr 29, May 1)}
+\begin{itemize}
+    \item Finalize optional feature implementation.
+\end{itemize}
+
+\subsection*{Week 14 (May 6, 8)}
+\begin{itemize}
+    \item Finalize documentation and prepare the project presentation.
+\end{itemize}
+
+\end{document}
