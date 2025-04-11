@@ -56,7 +56,101 @@ What visualizations did you use to initially look at your data? What insights di
 \end{itemize}
 
 \section*{Design Evolution}
+
 What are the different visualizations you considered? Justify the design decisions you made using the perceptual and design principles you learned in the course. Did you deviate from your proposal?
+\\
+\\The \textbf{Chat Sentiment Analysis} project aimed to extract and visualize emotional patterns from chat data in a way that is easy to interpret, interactive, and actionable. Our design evolved significantly from the initial proposal as we explored more effective ways to represent time-based and user-based sentiment trends.
+
+\begin{itemize}
+    \item \textbf{Initial Visualizations Considered:}
+    \begin{itemize}
+        \item Bar charts to show average sentiment per user or per day.
+        \item Line charts for sentiment flow over time.
+        \item Pie charts to show distribution of sentiment types.
+    \end{itemize}
+
+    \item \textbf{Final Visualizations Used:}
+    \begin{itemize}
+        \item \textbf{Heatmap:} Showcased sentiment variation across time periods (e.g., hourly/daily), helping identify emotional peaks.
+        \item \textbf{Scatter Plot - Response Time vs Sentiment:} Revealed correlation between emotional intensity and reply latency.
+        \item \textbf{Scatter Plot - Timestamp vs Sentiment:} Illustrated sentiment flow throughout the conversation, supporting detection of escalating or resolving emotional trends.
+        \item \textbf{Chat Parser Table:} Provided a clean, searchable layout of individual messages with timestamps, user labels, and sentiment tags.
+    \end{itemize}
+
+    
+
+    \item \textbf{Deviations from Original Proposal:}
+    \begin{itemize}
+        \item Initially proposed line charts were replaced by scatter plots, which better captured the irregular and message-level nature of chat data.
+        \item Added a heatmap to uncover recurring emotional patterns tied to time (e.g., nightly negativity).
+        \item Incorporated a chat parser table for granular analysis, which was not part of the original proposal.
+    \end{itemize}
+\end{itemize}
+ \section*{Visualizations Used}
+
+\begin{itemize}
+    \item \textbf{Heatmap: Sentiment vs Time}
+    \begin{itemize}
+        \item \textbf{Design Goal:} To identify how sentiment changes over time (across hours or days), highlighting peak emotional periods like high negativity during specific hours.
+        \item \textbf{Color Mapping:}
+        \begin{itemize}
+            \item \textcolor{red}{Red} = Negative
+            \item \textcolor{green}{Green} = Positive
+            \item \textcolor{gray}{Gray} = Neutral
+        \end{itemize}
+    \end{itemize}
+    
+    \item \textbf{Scatter Plot: Response Time vs Sentiment}
+    \begin{itemize}
+        \item \textbf{Design Goal:} To explore whether the speed of replies correlates with emotional tone, revealing patterns like faster responses during emotional conversations.
+        \item \textbf{Design Enhancements:}
+        \begin{itemize}
+            \item Color-coded sentiment points for clarity.
+            \item Tooltips on hover for detailed insights.
+            \item Filter options by user or time range.
+        \end{itemize}
+        \item \textbf{Design Principles Used:}
+        \begin{itemize}
+            \item Data-ink ratio for clean visualization.
+            \item Pre-attentive processing with color and shape to distinguish sentiment.
+        \end{itemize}
+    \end{itemize}
+    
+    \item \textbf{Scatter Plot: Timestamp vs Sentiment}
+    \begin{itemize}
+        \item \textbf{Design Goal:} To display sentiment flow chronologically over the chat session, allowing trend detection like escalating negativity or emotional recovery.
+        \item \textbf{Design Decisions:}
+        \begin{itemize}
+            \item Smooth timeline across X-axis.
+            \item Hover details with sentiment classification.
+        \end{itemize}
+        \item \textbf{Design Principle Used:}
+        \begin{itemize}
+            \item Temporal alignment of visual elements for easy scanning.
+            \item Consistent color scale to maintain cognitive ease.
+        \end{itemize}
+    \end{itemize}
+    
+    \item \textbf{Chat Parser with Sentiment Tags}
+    \begin{itemize}
+        \item \textbf{Design Goal:} To convert raw chat into a clean, readable, and searchable table with labeled sentiment.
+        \item \textbf{Features:}
+        \begin{itemize}
+            \item Each message row includes: Timestamp, User, Message, and Sentiment Score (with tag).
+            \item Sentiment tags are color-coded.
+            \item Optional search/filter by user or sentiment type.
+        \end{itemize}
+        \item \textbf{Design Principles Used:}
+        \begin{itemize}
+            \item Clarity and hierarchy through formatting, spacing, and alignment.
+            \item Redundancy principle — sentiment shown via both text and color for accessibility.
+        \end{itemize}
+
+        
+    \end{itemize}
+\end{itemize}
+
+
 
 \section*{Implementation}
 Describe the intent and functionality of the interactive visualizations you implemented. Provide clear and well-referenced images showing the key design and interaction elements.
