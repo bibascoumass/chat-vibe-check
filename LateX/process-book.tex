@@ -24,7 +24,15 @@
 \end{itemize}
 
 \section*{Overview and Motivation}
-Provide an overview of the project goals and the motivation for it. Consider that this will be read by people who did not see your project proposal.
+Everyone chats. Everyone texts. But we don't all text the same- and the way we text can tell us a lot not only about ourselves, but also the people with whom we converse. Current chat visualization tools focus on the quantitative- how often you text, what times you text most often, who you text the most, and so on. But texting, and conversation in general, is inherently emotional and qualitative in nature. We wanted to design and create a platform that can analyze not only the quantitative, but also the qualitative. More specifically, our motivation is to build a website that can not only provide information on your chat/texting specifics, but also provide deeper insight into your interpersonal relationships and various sentiments across conversations. To give our analysis a focus and structure, we wanted to analyze chats based on the principles defined by modern psychological frameworks, such as attachment style and behavioral analysis.
+\\\\
+Some more specific goals include:
+\begin{itemize}
+    \item Comparing overall sentiment in a conversation (group and individual) over various time periods
+    \item Analyzing sentiments expressed across various conversation topics to provide insight into individual/group perspectives 
+    \item Displaying response times at various points in the day and for different topics
+    \item Estimating behavioral tendencies and attachment style of chat members using the aforementioned metrics
+\end{itemize}
 
 \section*{Related Work}
 The main inspiration of the project mainly came from the fact that there is growing empirical evidence that arranged marriages are scoring better on metrics like satisfaction and divorce rates compared to traditional marriages (\href{https://www.psychologytoday.com/us/blog/the-science-behind-behavior/201511/why-are-so-many-indian-arranged-marriages-successful}{PyschologyToday.com article}). At the time, we were interested in exploring the reasons why and quickly realized this would be a challenging goal . We then explored narrowing the scope but staying on the theme of understanding relationships and was inspired by personal chat visualizations done by users analyzing trends in their relationship (\href{https://github.com/bibascoumass/chat-vibe-check}{Example from Reddit}). From the examples we noticed the visualizations or insights were very surface level and thought that there might be use for a tool that tried to explore more meaningful behavioral patterns from the chat data. To get a better direction on how or what we would try to observe from the chat data, we decided to base our analysis around an actual psychological framework and we chose Attachment Theory for this.  
@@ -51,7 +59,12 @@ To prototype the data pre-processing and ingestion implementations, we decided t
 \end{itemize}
 
 \section*{Exploratory Data Analysis}
-What visualizations did you use to initially look at your data? What insights did you gain? How did these insights inform your design?
+\begin{itemize}
+    \item \textbf{Download:} We'll need to make sure that our website references instructions on how to download the data from our supported platforms.
+    \item \textbf{Cleanup:} We'll need to ingest data from multiple formats and store it such that we can at least query for the message itself and the following metadata: sender, receiver, send time, seen time (this may not be available on all platforms).
+    \item \textbf{Quantities:} The quantities we expect to derive from the data are sentiment, response time, engagement, and conflict resolution metrics relative to topics and time.
+    \item \textbf{Analysis:} We've decided for now that we'll keep the scope simple in the beginning and only focus on text messages and emojis. Video, audio, GIFs, and images will be ignored in the onset.
+\end{itemize}
 
 \section*{Design Evolution}
 The project aimed to extract and visualize emotional patterns from chat data in a way that is easy to interpret, interactive, and actionable. Our design evolved significantly from the initial proposal as we explored more effective ways to represent time-based and user-based sentiment trends.
@@ -147,12 +160,20 @@ The project aimed to extract and visualize emotional patterns from chat data in 
 
 
 \section*{Implementation}
-Describe the intent and functionality of the interactive visualizations you implemented. Provide clear and well-referenced images showing the key design and interaction elements.
+Our implementation, at the current stage, features a home page for uploading documents, and 4 main features across 3 sub-pages. We plan to add more implementations, interactivity, and design consistency before out final submission.
+\\\\
+Before any of the views can be made, the user must upload their chat log to the website in order for it to be analyzed and parsed on the backend. As of now, our inputs must be a csv with the following format: (!). However, we plan to extend the input types to a more generic implementation.
 \begin{itemize}
-    \item Time (X-axis) vs Sentiment (Y-axis) Scatterplot: Each point represents a message and each point is labeled by user. 
-    \item Topic (X-axis) vs Sentiment (Y-axis) Heatmap: Each cell represents the average sentiment score for messages the belong to that topic. 
-    \item Response Time vs Sentiment (Y-axis) Scatter Plot: Each point represents a message and each point is labeled by user. 
-    \item Conversation Display: Clicking on a message plot point displays a modal overlay that shows the entire conversation in a scrolling view like a messaging app would.
+    \item Home page: This is the page where the user will select the file and upload it. After uploading the file, they can then choose a view from the toolbar. We will decide on and create a default view to show the user immediately upon upload to ensure a smoother and more natural experience. 
+    \item \includegraphics[width=10cm]{./Latex Images/Responsetime timeline ss.png}
+    \item Time (X-axis) vs Sentiment (Y-axis) Scatterplot: Each point represents a message and each point is labeled by user. This plot is meant to showcase the various sentiments shown in the conversation over time, with colors of nodes corresponding to the users and the y-axis showing sentiment (positive vs negative). Each node (message) also displays the sender, sentiment, and timestamp when hovered over. Currently, the graph looks a little cluttered and is working for group messages. We want to see how it will look for smaller chats eventually and add a feature to specify members for group chats.
+    \item \includegraphics[width=10cm]{./Latex Images/Timeline Sentiment ss.png}
+    \item Response Time (X-axis) vs Sentiment (Y-axis) Scatter Plot: Each point represents a message and each point is labeled by user. This plot is meant to showcase the various response times shown in the conversation for varying sentiments, with colors of nodes corresponding to the users and the y-axis showing sentiment (positive vs negative). Each node (message) also displays the sender, sentiment, and response time when hovered over. Currently, the graph is a little confusing to properly interpret. We are considering switching the axis to make response time the dependent variable, so we can analyze if different sentiments influence response time. We may expand this to include topic instead of sentiment as an axis, and explore different chart styles.
+    \item \includegraphics[width=10cm]{./Latex Images/Responsetime timeline ss.png}
+    \item NEEDS WORK: Topic (X-axis) vs Sentiment (Y-axis) Heatmap: This graph is incorrect at the moment, as we need to update it. Currently we have the x-axis showing the timestamp of the message and the y-axis being discrete with certain topics. As such, a different chart style, where topics are more distinctly serrated may be in order. Additionally, our code that determines topics is somewhat faulty, and we need to broaden our range of topics to identity- right now every conversation is being placed in the "other" category. 
+    \item \includegraphics[width=10cm]{./Latex Images/Sentiment heatmap ss.png}
+    \item Conversation Display: This visual simply lists out the entire chat conversation in a scroll-able text box, showing the message and it's corresponding sentiment. This is to provide a familiar interface to the user, while providing a more "overall" view of the data. We will need to incorporate pages or some effective way to split up the conversation for larger datasets.
+    \item \includegraphics[width=10cm]{./Latex Images/Chat log ss.png}
 \end{itemize}
 
 \section*{Optional Features}
