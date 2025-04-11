@@ -2,6 +2,7 @@
 \usepackage[a4paper, margin=1in]{geometry}
 \usepackage{hyperref}
 \usepackage{titlesec}
+\usepackage{todonotes}
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}
 
@@ -26,10 +27,15 @@
 Provide an overview of the project goals and the motivation for it. Consider that this will be read by people who did not see your project proposal.
 
 \section*{Related Work}
-Anything that inspired you, such as a paper, a website, visualizations we discussed in class, etc.
+The main inspiration of the project mainly came from the fact that there is growing empirical evidence that arranged marriages are scoring better on metrics like satisfaction and divorce rates compared to traditional marriages (\href{https://www.psychologytoday.com/us/blog/the-science-behind-behavior/201511/why-are-so-many-indian-arranged-marriages-successful}{PyschologyToday.com article}). At the time, we were interested in exploring the reasons why and quickly realized this would be a challenging goal . We then explored narrowing the scope but staying on the theme of understanding relationships and was inspired by personal chat visualizations done by users analyzing trends in their relationship (\href{https://github.com/bibascoumass/chat-vibe-check}{Example from Reddit}). From the examples we noticed the visualizations or insights were very surface level and thought that there might be use for a tool that tried to explore more meaningful behavioral patterns from the chat data. To get a better direction on how or what we would try to observe from the chat data, we decided to base our analysis around an actual psychological framework and we chose Attachment Theory for this.  
 
 \section*{Questions}
-What questions are you trying to answer with your visualization(s)? How did these queestions evolve/change over the course of the project? What new questions did you consider as the project progressed?
+The main question we're trying to answer is what behavioral patterns can we observe from chat message interactions between people two get a better understanding of their attachment styles? As we explored this idea, we focused on two key derived attributes: Sentiment and engagement. From this realization we focused on having our visualizations answer the following questions:
+\begin{itemize}
+    \item How does the sentiment of my conversation evolve over time?
+    \item Are there certain conversation topics that are intensly positve or negative? 
+    \item Are there periods of time or topics in my conversation when a person is less responsive than usual or tries to avoid or change the topic? 
+\end{itemize}
 
 \section*{Data}
 Include information about the source, how you collected it (e.g., web scraping), cleaning methods, etc.
