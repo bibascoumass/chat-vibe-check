@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './AppBar.css';
 
@@ -7,11 +6,12 @@ function AppBar() {
     <header className="appBar">
       <div className="logoSection">
         <span className="chatIcon">💬</span>
-        <span className="appName">Chat Vibe Analyser</span>
+      <span className="appName">Chat Vibe Analyser</span>
       </div>
       <nav className="navMenu">
-        <button onClick={() => window.location.href = "/plots"}>📊 HeatMap</button>
-        <button onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>📈 Sentiment Analyzer</button>
+        <button onClick={() => window.location.href = "/heatmap"}>📊 HeatMap</button>
+        <button onClick={() => window.location.href = "/scatterplots"}>📊 ScatterPlot</button>
+        <button onClick={() => window.location.href = "/sentiment_analyser"}>📈 Sentiment Analyzer</button>
       </nav>
     </header>
   );

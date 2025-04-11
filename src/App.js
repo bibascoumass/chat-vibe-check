@@ -14,7 +14,7 @@ function Dashboard() {
     formData.append('chat', file);
 
     try {
-      const res = await axios.post('http://localhost:8000/upload', formData);
+      const res = await axios.post('http://localhost:5001/upload', formData);
       setMessages(res.data.messages);
       setShowBackdrop(true);
     } catch (err) {
@@ -37,7 +37,7 @@ function Dashboard() {
           <input
             id="fileUpload"
             type="file"
-            accept=".txt"
+            accept=".csv"
             onChange={(e) => setFile(e.target.files[0])}
             className="fileInputHidden"
           />
@@ -55,25 +55,13 @@ function Dashboard() {
       {showBackdrop && (
         <div className="backdrop">
           <div className="backdropContent">
-            <h2>🧾 Chat Messages & Sentiment</h2>
-            <div className="scrollableChatBox">
-              <ul className="messageList">
-                {messages.map((msg, idx) => (
-                  <li key={idx}>
-                    <span className="timestamp">[{msg.date} {msg.time}]</span>
-                    <b> {msg.sender}</b>: {msg.message}
-                    <span className={`sentiment ${msg.sentiment > 0 ? 'positive' : msg.sentiment < 0 ? 'negative' : 'neutral'}`}>
-                      &nbsp;{msg.sentiment > 0 ? '😊' : msg.sentiment < 0 ? '😠' : '😐'} ({msg.sentiment})
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <h2>🎉 Upload Successful!</h2>
+            <p>Your chat file has been processed successfully.</p>
             <button className="closeButton" onClick={() => setShowBackdrop(false)}>Close</button>
           </div>
         </div>
       )}
-    </div>
+    </div >
   );
 }
 
