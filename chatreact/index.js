@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import SentimentHeatmap from './SentimentHeatmap';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AppBar from './AppBar';
+import SentimentAnalyser from './SentimentAnalyser';
+import SentimentScatterPlot from './SentimentScatterPlot';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +16,9 @@ root.render(
       <AppBar />
       <Routes>
         <Route exact path="/" element={<Dashboard />} />
-        <Route path="/plots" element={<SentimentHeatmap />} />
+        <Route path="/heatmap" element={<SentimentHeatmap />} />
+        <Route path="/scatterplots" element={<SentimentScatterPlot />} />
+        <Route path="/sentiment_analyser" element={<SentimentAnalyser />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

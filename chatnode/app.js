@@ -1,13 +1,15 @@
-
-
 const express = require('express');
 const multer = require('multer');
 const cors = require('cors');
 const Sentiment = require('sentiment');
 const fs = require('fs');
 
+const csv = require('csv-parser');
+
+const { Readable } = require('stream');
+
 const app = express();
-const port = 8000;
+const port = 5001;
 const sentiment = new Sentiment();
 
 app.use(cors());
@@ -16,53 +18,64 @@ app.use(express.json());
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
-// Helper to clean message text
-const cleanMessage = (text) => text.replace(/\s+/g, ' ').trim();
+function bufferToStream(buffer) {
+    const stream = new Readable();
+    stream.push(buffer);
+    stream.push(null);
+    return stream;
+}
 
 app.post('/upload', upload.single('chat'), async (req, res) => {
     try {
-        const chatText = req.file.buffer.toString();
-        const lines = chatText.split('\n');
-        const parsedMessages = [];
+        const buffer = req.file.buffer;
+        const results = [];
 
-        let prevTimestamp = null;
+        const stream = bufferToStream(buffer);
 
-        for (const line of lines) {
-            const match = line.match(
-                /^(\d{1,2}\/\d{1,2}\/\d{2,4}),?\s+(\d{1,2}:\d{2}(?:\s?[apAP][mM]))\s*-\s([^:]+):\s(.+)$/
-            );
+        stream.pipe(csv())
+            .on('data', (row) => {
+                results.push(row);
+            })
+            .on('end', () => {
+                // Sort by ascending timestamp
+                results.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-            if (match) {
-                const [_, date, time, sender, messageRaw] = match;
-                const message = cleanMessage(messageRaw);
-                const sentimentScore = sentiment.analyze(message).score;
+                const parsedMessages = [];
+                let prevTimestamp = null;
 
-                const timestamp = new Date(`${date} ${time}`);
-                const responseTime = prevTimestamp ? (timestamp - prevTimestamp) / 1000 : 0;
-                prevTimestamp = timestamp;
+                for (const row of results) {
+                    const timestamp = new Date(row.date);
+                    const date = timestamp.toLocaleDateString(); 
+                    const time = timestamp.toLocaleTimeString(); 
 
-                parsedMessages.push({
-                    date,
-                    time,
-                    sender,
-                    message,
-                    sentiment: sentimentScore,
-                    timestamp,
-                    responseTime
-                });
-            }
-        }
+                    const sender = row.from;
+                    const message = row.text;
+                    const sentimentScore = sentiment.analyze(message).score;
 
-        fs.writeFileSync('messages.json', JSON.stringify(parsedMessages, null, 2));
+                    const responseTime = prevTimestamp ? (timestamp - prevTimestamp) / 1000 : 0;
+                    prevTimestamp = timestamp;
 
-        res.json({ messages: parsedMessages });
+                    parsedMessages.push({
+                        date,
+                        time,
+                        sender,
+                        message,
+                        sentiment: sentimentScore,
+                        timestamp,
+                        responseTime
+                    });
+                }
+
+                fs.writeFileSync('messages.json', JSON.stringify(parsedMessages, null, 2));
+                res.json({ messages: parsedMessages });
+            });
     } catch (error) {
         console.error('Upload error:', error);
-        res.status(500).json({ error: 'Failed to process chat file.' });
+        res.status(500).json({ error: 'Failed to process CSV file.' });
     }
 });
 
-app.get('/api/heatmap', (req, res) => {
+app.get('/api/plots', (req, res) => {
     try {
         const data = fs.readFileSync('messages.json');
         res.json(JSON.parse(data));

@@ -1,159 +1,164 @@
 .dashboardContainer {
-    height: 50vh;
-    width: 100vw;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f4f6f9;
-  }
-  
-  .uploadContent {
-    display: flex;
-    width: 100%;
-    max-width: 1100px;
-    justify-content: space-between;
-    align-items: center;
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  }
-  
-  .leftPanel {
-    flex: 1;
-    padding-right: 2rem;
-  }
-  
-  .description {
-    margin-bottom: 1rem;
-    color: #444;
-    font-size: 1rem;
-  }
-  
-  .customFileUpload {
-    background-color: #3f51b5;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    display: inline-block;
-    margin-bottom: 1rem;
-  }
-  
-  .fileInputHidden {
-    display: none;
-  }
-  
-  .fileName {
-    margin: 0.5rem 0;
-  }
-  
-  .uploadButton {
-    background-color: #009688;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 1rem;
-  }
-  
-  .rightPanel {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .dashboardImage {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Backdrop */
-  .backdrop {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    width: 50%;
-    height: 90%;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px; /* Adjust padding if needed */
-    border-radius: 12px;
-  }
-  
-  /* Backdrop inner box */
-  .backdropContent {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  
-  .scrollableChatBox {
-    flex: 1;
-    overflow-y: auto;
-    margin-top: 1rem;
-    padding-right: 10px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  /* Message list */
-  .messageList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .messageList li {
-    margin: 10px 0;
-    line-height: 1.5;
-  }
-  
-  /* Sentiment style */
-  .sentiment.positive {
-    color: green;
-  }
-  .sentiment.negative {
-    color: red;
-  }
-  .sentiment.neutral {
-    color: gray;
-  }
-  
-  /* Timestamp */
-  .timestamp {
-    color: #888;
-    font-size: 0.85rem;
-  }
-  
-  /* Close Button */
-  .closeButton {
-    margin-top: 1rem;
-    padding: 10px 20px;
-    align-self: center;
-    background-color: #3f51b5;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  /* Animation */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
-  }
-  
+  height: 50vh;
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f9;
+}
+
+.uploadContent {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.leftPanel {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.description {
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+.customFileUpload {
+  background-color: #3f51b5;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.fileInputHidden {
+  display: none;
+}
+
+.fileName {
+  margin: 0.5rem 0;
+}
+
+.uploadButton {
+  background-color: #009688;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboardImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Backdrop Styles */
+.backdrop {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 999;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.backdropContent {
+background: #fff;
+padding: 2rem 3rem;
+border-radius: 12px;
+text-align: center;
+max-width: 500px;
+width: 90%;
+box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+animation: fadeIn 0.3s ease-in-out;
+}
+
+.closeButton {
+margin-top: 1.5rem;
+padding: 0.6rem 1.2rem;
+background-color: #3f51b5;
+color: white;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.scrollableChatBox {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding-right: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Message list */
+.messageList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.messageList li {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Sentiment style */
+.sentiment.positive {
+  color: green;
+}
+.sentiment.negative {
+  color: red;
+}
+.sentiment.neutral {
+  color: gray;
+}
+
+/* Timestamp */
+.timestamp {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Close Button */
+.closeButton {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  align-self: center;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
