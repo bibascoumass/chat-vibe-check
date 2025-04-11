@@ -6,6 +6,7 @@
 
 
 ## Setup & Start
+### Make sure you're directory in "/chat-vibe-check", not in any of the sub-folders
 1. Install package.json dependencies: `npm install`
 
 2. Start the back and front end services: `npm start`
