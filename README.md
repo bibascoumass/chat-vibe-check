@@ -1,21 +1,14 @@
 # chat-vibe-check
 
+## Dependencies
+- Node.JS v23.11.0
+- npm 10.9.2
 
-Procedure to run the file
 
-After downloading both chatreact and chat node folders.
+## Setup & Start
+1. Install package.json dependencies: `npm install`
 
-step 1: first run node(backend)--> command to run(node app.js).
-
-Step 2: Run react(frontend)--> command to run(npm start).
-
-Node setup:
-
-1. Go inside chatnode folder and run the below command: 
-npm install express multer cors sentiment csv-parser fs stream
-
-2. Go inside chatreact folder and run the below command:
-   npm install
+2. Start the back and front end services: `npm start`
 
 <img width="1430" alt="image" src="https://github.com/user-attachments/assets/afe6e901-887d-48ab-8746-45b5d202a0ec" />
 
