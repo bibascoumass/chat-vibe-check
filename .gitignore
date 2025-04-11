@@ -7,6 +7,9 @@
 *.pdf
 *.synctex.gz
 
+# Dependencies
+node_modules/
+
 # VS code
 *.code-workspace
 
