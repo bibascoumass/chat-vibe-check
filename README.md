@@ -11,7 +11,7 @@
 
 2. Start the back and front end services: `npm start`
 
-3. Upload a .csv file with the right format (and example file is provided for testing)
+3. Upload a .csv file with the right format (and example file is provided in the 'Data' folder for testing)
 
 4. Click on any of the views in the top-right toolbar!
 
