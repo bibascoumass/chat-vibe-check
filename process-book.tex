@@ -54,10 +54,7 @@ To prototype the data pre-processing and ingestion implementations, we decided t
 What visualizations did you use to initially look at your data? What insights did you gain? How did these insights inform your design?
 
 \section*{Design Evolution}
-
-What are the different visualizations you considered? Justify the design decisions you made using the perceptual and design principles you learned in the course. Did you deviate from your proposal?
-\\
-\\The \textbf{Chat Sentiment Analysis} project aimed to extract and visualize emotional patterns from chat data in a way that is easy to interpret, interactive, and actionable. Our design evolved significantly from the initial proposal as we explored more effective ways to represent time-based and user-based sentiment trends.
+The project aimed to extract and visualize emotional patterns from chat data in a way that is easy to interpret, interactive, and actionable. Our design evolved significantly from the initial proposal as we explored more effective ways to represent time-based and user-based sentiment trends.
 
 \begin{itemize}
     \item \textbf{Initial Visualizations Considered:}
@@ -65,6 +62,7 @@ What are the different visualizations you considered? Justify the design decisio
         \item Bar charts to show average sentiment per user or per day.
         \item Line charts for sentiment flow over time.
         \item Pie charts to show distribution of sentiment types.
+        \item Snakey Diagram showing the flow of conversation state transitions from neutral to conflict to resolution.
     \end{itemize}
 
     \item \textbf{Final Visualizations Used:}
@@ -73,15 +71,13 @@ What are the different visualizations you considered? Justify the design decisio
         \item \textbf{Scatter Plot - Response Time vs Sentiment:} Revealed correlation between emotional intensity and reply latency.
         \item \textbf{Scatter Plot - Timestamp vs Sentiment:} Illustrated sentiment flow throughout the conversation, supporting detection of escalating or resolving emotional trends.
         \item \textbf{Chat Parser Table:} Provided a clean, searchable layout of individual messages with timestamps, user labels, and sentiment tags.
-    \end{itemize}
-
-    
+    \end{itemize}    
 
     \item \textbf{Deviations from Original Proposal:}
     \begin{itemize}
         \item Initially proposed line charts were replaced by scatter plots, which better captured the irregular and message-level nature of chat data.
-        \item Added a heatmap to uncover recurring emotional patterns tied to time (e.g., nightly negativity).
-        \item Incorporated a chat parser table for granular analysis, which was not part of the original proposal.
+        \item We're currently playing around relating time, topic and sentiment instead all in one chart rather than having a two separate ones for topic and then for time.
+        \item The most basic implementation for showing the chat is currently just having it as a separate page but we will look into the displaying it as the user clicks on messages. 
     \end{itemize}
 \end{itemize}
  \section*{Visualizations Used}
@@ -187,7 +183,11 @@ Describe the intent and functionality of the interactive visualizations you impl
 \end{itemize}
 
 \section*{Evaluation}
-What did you learn about the data by using your visualizations? How did you answer your research questions? How well does your visualization work, and how could you further improve it? (Be honest here. Limitations are a part of any project, and they will be noticeable during the grading process. Acknowledging them in this section indicates thoughtfulness in your design process, and, as such, will only help your grade.)
+\begin{itemize}
+    \item For such a project that asks users to require them to upload potentially sensitive data, the tool for sanitizing and removing that data needs to be within their control and trust. This was the main reason why we weren't able to initially get data from real people within our networks. 
+    \item We still need to fix how we're identifying topics as the current implementation is finding it hard to identify specific topics in the content and just labeling a lot of data as "Other"
+    \item Admittedly, we may have spent too much time expirmenting with applying the visualizations even in group settings and trying to group messages by topic/conversation so we still need to finetune the scatter plot visualization as well in terms of scoping the data to specific conversations to have more meaningful insights. 
+\end{itemize}
 
 
 \end{document}
