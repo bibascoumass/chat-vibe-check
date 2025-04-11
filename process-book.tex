@@ -38,22 +38,20 @@ The main question we're trying to answer is what behavioral patterns can we obse
 \end{itemize}
 
 \section*{Data}
-Include information about the source, how you collected it (e.g., web scraping), cleaning methods, etc.
+To prototype the data pre-processing and ingestion implementations, we decided to just work with our own Whatsapp group chat data as we just needed to work with the data format for the messaging platform we wanted to support. 
+\\\\ To prototype the visualizations, it was difficult to find a WhatsApp chat dataset in English so we settled on using a dataset from Kaggle of over one million two-person chat logs related to Ubuntu technical support: https://www.kaggle.com/datasets/rtatman/ubuntu-dialogue-corpus/data . At this early stage, there hasn't been a need to do any pre-processing on this dataset. 
+\\\\ The following datasets were also considered:
 \begin{itemize}
-    \item Ubuntu chat logs: https://www.kaggle.com/datasets/rtatman/ubuntu-dialogue-corpus/data
-    \item Movie dialogue: \texttt{https://www.kaggle.com/datasets/Cornell-University/movie-dialog-corpus/data}
-    \item WhatsApp Chat used for studying cyberbullying in Italy: \texttt{https://github.com/dhfbk/WhatsApp-Dataset}
-    \item WhatsApp Group Chat in Hindi: \texttt{https://www.kaggle.com/datasets/mmuhammetcavus/whatsapp-chat/data}
+    \item \href{https://github.com/dhfbk/WhatsApp-Dataset}{Movie Dialogue Corpus} - Initially chosen as a backup in the worst case scenario wherein we couldn't find two person conversation chat data in English. 
+    \item The following WhatsApp chat datasets were considered and although there are analysis libararies that support multiple languages (e.g. multilang-sentiment) we ultimately avoided these as we wouldn't be able to compare the results of our analysis to what we thought the data was actually expressing. 
+    \begin{itemize}
+        \item \href{https://www.kaggle.com/datasets/Cornell-University/movie-dialog-corpus/data}{WhatsApp Chat used for studying cyberbullying in Italy}
+        \item \href{https://www.kaggle.com/datasets/mmuhammetcavus/whatsapp-chat/data}{WhatsApp Group Chat in Hindi}
+    \end{itemize}
 \end{itemize}
 
 \section*{Exploratory Data Analysis}
 What visualizations did you use to initially look at your data? What insights did you gain? How did these insights inform your design?
-\begin{itemize}
-    \item \textbf{Download:} We'll need to make sure that our website references instructions on how to download the data from our supported platforms.
-    \item \textbf{Cleanup:} We'll need to ingest data from multiple formats and store it such that we can at least query for the message itself and the following metadata: sender, receiver, send time, seen time (this may not be available on all platforms).
-    \item \textbf{Quantities:} The quantities we expect to derive from the data are sentiment, response time, engagement, and conflict resolution metrics relative to topics and time.
-    \item \textbf{Analysis:} We've decided for now that we'll keep the scope simple in the beginning and only focus on text messages and emojis. Video, audio, GIFs, and images will be ignored in the onset.
-\end{itemize}
 
 \section*{Design Evolution}
 
