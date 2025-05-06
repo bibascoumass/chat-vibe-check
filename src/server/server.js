@@ -7,7 +7,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 
 const { Readable } = require('stream');
-const config = require('../../config.json');
+const config = require('../config');
 
 const app = express();
 const port = config.serverPort;
