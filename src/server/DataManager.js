@@ -9,7 +9,7 @@ const sentiment = new Sentiment();
 
 
 // UPDATE INPUT FILE HERE
-const preloadedFilePath = path.join('Data/small-sample.csv');
+const preloadedFilePath = path.join('Data/1k-sample.csv');
 const messagesFilePath = path.join('messages.json');
 
 let cachedMessages = [];
@@ -113,9 +113,12 @@ async function preloadData() {
 
 //  On upload, process the incoming CSV file buffer. Clear cached data and overwrite it.
 async function updateDataFromBuffer(buffer) {
-  const stream = bufferToStream(buffer);
-  const parsedMessages = await loadCSVFromStream(stream);
-  cachedMessages = parsedMessages;
+    if (cachedMessages.length === 0 ) {
+        const stream = bufferToStream(buffer);
+        const parsedMessages = await loadCSVFromStream(stream);
+        cachedMessages = parsedMessages;
+    }
+  
   await fsPromises.writeFile(messagesFilePath, JSON.stringify(cachedMessages, null, 2), 'utf8');
   return cachedMessages;
 }

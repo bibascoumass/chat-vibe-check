@@ -36,6 +36,7 @@ app.post('/upload', upload.single('chat'), async (req, res) => {
 // return the cached messages from the preloaded or uploaded data.
 app.get('/api/plots', (req, res) => {
   try {
+    dataManager.updateDataFromBuffer(req.file.buffer);
     const messages = dataManager.getCachedMessages();
     res.json(messages);
   } catch (error) {
