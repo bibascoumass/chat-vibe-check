@@ -1,0 +1,4992 @@
+[
+  {
+    "date": "25/10/2004",
+    "time": "12:19:00 pm",
+    "sender": "kremlyn",
+    "receiver": "",
+    "message": "http://www.newsforge.com/article.pl?sid=04/10/12/1421241",
+    "sentiment": 0,
+    "timestamp": "2004-10-25T06:49:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "25/10/2004",
+    "time": "12:19:00 pm",
+    "sender": "kremlyn",
+    "receiver": "",
+    "message": "Article on Ubuntu.",
+    "sentiment": 0,
+    "timestamp": "2004-10-25T06:49:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "25/10/2004",
+    "time": "12:20:00 pm",
+    "sender": "joolz",
+    "receiver": "kremlyn",
+    "message": "sloooow",
+    "sentiment": 0,
+    "timestamp": "2004-10-25T06:50:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "9/11/2004",
+    "time": "6:31:00 pm",
+    "sender": "Greensky",
+    "receiver": "",
+    "message": "is there any easy way to update the refresh rate to 72 instead of 60 or something, ubuntu isn't auto-detecting it",
+    "sentiment": 1,
+    "timestamp": "2004-11-09T13:01:00.000Z",
+    "responseTime": 1318260
+  },
+  {
+    "date": "9/11/2004",
+    "time": "6:33:00 pm",
+    "sender": "stvn",
+    "receiver": "Greensky",
+    "message": "LinuxJones check XF86Config-4",
+    "sentiment": 0,
+    "timestamp": "2004-11-09T13:03:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "9/11/2004",
+    "time": "6:33:00 pm",
+    "sender": "Greensky",
+    "receiver": "stvn",
+    "message": "I'll see there, thanks",
+    "sentiment": 2,
+    "timestamp": "2004-11-09T13:03:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "22/11/2004",
+    "time": "8:40:00 pm",
+    "sender": "ReddoC",
+    "receiver": "",
+    "message": "Is there a alternative way than apt-get to install xserver-xfree ?",
+    "sentiment": 0,
+    "timestamp": "2004-11-22T15:10:00.000Z",
+    "responseTime": 1130820
+  },
+  {
+    "date": "22/11/2004",
+    "time": "8:41:00 pm",
+    "sender": "ReddoC",
+    "receiver": "",
+    "message": "gwildor: but you need xserver-xfree86 to run synaptic",
+    "sentiment": 0,
+    "timestamp": "2004-11-22T15:11:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "22/11/2004",
+    "time": "8:42:00 pm",
+    "sender": "gwildor_",
+    "receiver": "ReddoC",
+    "message": "was only half paying attention.....sorry",
+    "sentiment": -1,
+    "timestamp": "2004-11-22T15:12:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "14/3/2005",
+    "time": "12:07:00 pm",
+    "sender": "t31",
+    "receiver": "",
+    "message": "anyone knows witch port uses apt-get?",
+    "sentiment": 0,
+    "timestamp": "2005-03-14T06:37:00.000Z",
+    "responseTime": 9645900
+  },
+  {
+    "date": "14/3/2005",
+    "time": "12:08:00 pm",
+    "sender": "t31",
+    "receiver": "",
+    "message": "hi :)",
+    "sentiment": 0,
+    "timestamp": "2005-03-14T06:38:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "14/3/2005",
+    "time": "12:08:00 pm",
+    "sender": "bob2",
+    "receiver": "t31",
+    "message": "it just uses ftp/http",
+    "sentiment": 0,
+    "timestamp": "2005-03-14T06:38:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "19/3/2005",
+    "time": "1:02:00 pm",
+    "sender": "thebartman",
+    "receiver": "",
+    "message": "after using synaptic update, why dosn't firefox update to version 1.0? or 1.0.1",
+    "sentiment": 0,
+    "timestamp": "2005-03-19T07:32:00.000Z",
+    "responseTime": 435240
+  },
+  {
+    "date": "19/3/2005",
+    "time": "1:03:00 pm",
+    "sender": "schweeb",
+    "receiver": "thebartman",
+    "message": "because 1.0 isn't in Warty",
+    "sentiment": 0,
+    "timestamp": "2005-03-19T07:33:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "19/3/2005",
+    "time": "1:04:00 pm",
+    "sender": "schweeb",
+    "receiver": "thebartman",
+    "message": "I think someone set up a repo somewhere, check the wiki",
+    "sentiment": 0,
+    "timestamp": "2005-03-19T07:34:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "19/3/2005",
+    "time": "7:06:00 pm",
+    "sender": "Agrajag",
+    "receiver": "",
+    "message": "grumpy groundhog",
+    "sentiment": 0,
+    "timestamp": "2005-03-19T13:36:00.000Z",
+    "responseTime": 21720
+  },
+  {
+    "date": "19/3/2005",
+    "time": "7:06:00 pm",
+    "sender": "Agrajag",
+    "receiver": "",
+    "message": "they're gonna run out of hogs pretty soon",
+    "sentiment": 1,
+    "timestamp": "2005-03-19T13:36:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "19/3/2005",
+    "time": "7:07:00 pm",
+    "sender": "bradg",
+    "receiver": "Agrajag",
+    "message": "After grumpy is perky penguin.",
+    "sentiment": 0,
+    "timestamp": "2005-03-19T13:37:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "20/4/2005",
+    "time": "11:23:00 am",
+    "sender": "Cheetahfoot",
+    "receiver": "",
+    "message": "where i can i find docs on how to upgrade ubuntu from warty to hoary?",
+    "sentiment": 0,
+    "timestamp": "2005-04-20T05:53:00.000Z",
+    "responseTime": 2736960
+  },
+  {
+    "date": "20/4/2005",
+    "time": "11:24:00 am",
+    "sender": "chiddy",
+    "receiver": "Cheetahfoot",
+    "message": "sudo gedit /etc/apt/sources.list and change all instances of warty to hoary; sudo apt-get update and then sudo apt-get dist-upgrade should do it",
+    "sentiment": 0,
+    "timestamp": "2005-04-20T05:54:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "20/4/2005",
+    "time": "11:25:00 am",
+    "sender": "Cheetahfoot",
+    "receiver": "chiddy",
+    "message": "thanks!",
+    "sentiment": 2,
+    "timestamp": "2005-04-20T05:55:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "12/5/2005",
+    "time": "9:45:00 pm",
+    "sender": "KingArthur",
+    "receiver": "",
+    "message": "hey all, I've a question.  Is there anyway to migrate from Ubuntu to Kubuntu w/o loosing any settings or anything downloaded etc?",
+    "sentiment": 0,
+    "timestamp": "2005-05-12T16:15:00.000Z",
+    "responseTime": 1938000
+  },
+  {
+    "date": "12/5/2005",
+    "time": "9:45:00 pm",
+    "sender": "KingArthur",
+    "receiver": "",
+    "message": "I tried the Kubuntu live cd and was impressed",
+    "sentiment": 3,
+    "timestamp": "2005-05-12T16:15:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "12/5/2005",
+    "time": "9:47:00 pm",
+    "sender": "Nechushtan",
+    "receiver": "KingArthur",
+    "message": "just install KDE via synaptic. i did it and it worked fine",
+    "sentiment": 2,
+    "timestamp": "2005-05-12T16:17:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "5/6/2005",
+    "time": "12:12:00 pm",
+    "sender": "mr_XP",
+    "receiver": "",
+    "message": "Hello Does Ubuntu have somekind of register to configure applications and os settings?",
+    "sentiment": 0,
+    "timestamp": "2005-06-05T06:42:00.000Z",
+    "responseTime": 2039100
+  },
+  {
+    "date": "5/6/2005",
+    "time": "12:14:00 pm",
+    "sender": "mr_XP",
+    "receiver": "",
+    "message": "Hello Does Ubuntu have somekind of register to configure applications and os settings?",
+    "sentiment": 0,
+    "timestamp": "2005-06-05T06:44:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "5/6/2005",
+    "time": "12:15:00 pm",
+    "sender": "apollo2011",
+    "receiver": "mr_XP",
+    "message": "Linux doesn't have an equivalent to the Windows registry",
+    "sentiment": 0,
+    "timestamp": "2005-06-05T06:45:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "16/7/2005",
+    "time": "11:07:00 am",
+    "sender": "meri",
+    "receiver": "",
+    "message": "is there any gui to install wallpapers/themes/icons?",
+    "sentiment": 0,
+    "timestamp": "2005-07-16T05:37:00.000Z",
+    "responseTime": 3538320
+  },
+  {
+    "date": "16/7/2005",
+    "time": "11:07:00 am",
+    "sender": "meri",
+    "receiver": "",
+    "message": "(for gnome)",
+    "sentiment": 0,
+    "timestamp": "2005-07-16T05:37:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "16/7/2005",
+    "time": "11:08:00 am",
+    "sender": "nalioth",
+    "receiver": "meri",
+    "message": "system > prefs > theme",
+    "sentiment": 0,
+    "timestamp": "2005-07-16T05:38:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "8/8/2005",
+    "time": "1:00:00 pm",
+    "sender": "luminerd",
+    "receiver": "",
+    "message": "oh god.",
+    "sentiment": 1,
+    "timestamp": "2005-08-08T07:30:00.000Z",
+    "responseTime": 1993920
+  },
+  {
+    "date": "8/8/2005",
+    "time": "1:01:00 pm",
+    "sender": "luminerd",
+    "receiver": "",
+    "message": "my frickin ex gf called.",
+    "sentiment": 0,
+    "timestamp": "2005-08-08T07:31:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "8/8/2005",
+    "time": "1:01:00 pm",
+    "sender": "black13",
+    "receiver": "luminerd",
+    "message": "kick her to the curb",
+    "sentiment": 0,
+    "timestamp": "2005-08-08T07:31:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "10/8/2005",
+    "time": "5:12:00 pm",
+    "sender": "deprave",
+    "receiver": "",
+    "message": "anyone have a good suggestion on an html editor?",
+    "sentiment": 3,
+    "timestamp": "2005-08-10T11:42:00.000Z",
+    "responseTime": 187860
+  },
+  {
+    "date": "10/8/2005",
+    "time": "5:12:00 pm",
+    "sender": "deprave",
+    "receiver": "",
+    "message": "nothing too fancy etc.",
+    "sentiment": 0,
+    "timestamp": "2005-08-10T11:42:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "10/8/2005",
+    "time": "5:12:00 pm",
+    "sender": "Burgundavia",
+    "receiver": "deprave",
+    "message": "screem or bluefish",
+    "sentiment": 0,
+    "timestamp": "2005-08-10T11:42:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "22/8/2005",
+    "time": "5:24:00 pm",
+    "sender": "black13",
+    "receiver": "",
+    "message": "does the ubuntu live cd use squashfs",
+    "sentiment": 0,
+    "timestamp": "2005-08-22T11:54:00.000Z",
+    "responseTime": 1037520
+  },
+  {
+    "date": "22/8/2005",
+    "time": "5:25:00 pm",
+    "sender": "iiiears",
+    "receiver": "black13",
+    "message": "- i don't think it does",
+    "sentiment": 0,
+    "timestamp": "2005-08-22T11:55:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "22/8/2005",
+    "time": "5:25:00 pm",
+    "sender": "black13",
+    "receiver": "iiiears",
+    "message": "i am looking for for a mini-distro that i can modify/learn from",
+    "sentiment": 0,
+    "timestamp": "2005-08-22T11:55:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "9/9/2005",
+    "time": "10:43:00 am",
+    "sender": "Fotinakis",
+    "receiver": "",
+    "message": "hello all -- quick question: I came across some information that says that Ubuntu comes with 3180 packages by default, and maximally 16271.  Where are the rest of these packages? Is there an ISO somewhere to download or is it totally by apt?",
+    "sentiment": 0,
+    "timestamp": "2005-09-09T05:13:00.000Z",
+    "responseTime": 1531080
+  },
+  {
+    "date": "9/9/2005",
+    "time": "10:45:00 am",
+    "sender": "Fotinakis",
+    "receiver": "",
+    "message": "anyone? (see question above) where to get the rest of the ubuntu packages?",
+    "sentiment": 0,
+    "timestamp": "2005-09-09T05:15:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "9/9/2005",
+    "time": "10:46:00 am",
+    "sender": "volvoguy",
+    "receiver": "Fotinakis",
+    "message": "all the extra software you're referring to is in the universe repository, accessible via apt or synaptic.",
+    "sentiment": 1,
+    "timestamp": "2005-09-09T05:16:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "27/9/2005",
+    "time": "11:18:00 am",
+    "sender": "enntee",
+    "receiver": "",
+    "message": "Can anyone recommend an NFS alternative that works transparently?",
+    "sentiment": 2,
+    "timestamp": "2005-09-27T05:48:00.000Z",
+    "responseTime": 1557120
+  },
+  {
+    "date": "27/9/2005",
+    "time": "11:19:00 am",
+    "sender": "nalioth",
+    "receiver": "enntee",
+    "message": "once you get NFS set up, it IS transparent",
+    "sentiment": 0,
+    "timestamp": "2005-09-27T05:49:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "27/9/2005",
+    "time": "11:19:00 am",
+    "sender": "enntee",
+    "receiver": "nalioth",
+    "message": "yeah, i know. but it's a PITA trying to keep my uid/gid's in sync",
+    "sentiment": 1,
+    "timestamp": "2005-09-27T05:49:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "26/10/2005",
+    "time": "2:34:00 pm",
+    "sender": "hooligan",
+    "receiver": "",
+    "message": "Where does synoptic install the programs to? Like it aint on desktop",
+    "sentiment": 2,
+    "timestamp": "2005-10-26T09:04:00.000Z",
+    "responseTime": 2517300
+  },
+  {
+    "date": "26/10/2005",
+    "time": "2:35:00 pm",
+    "sender": "hooligan",
+    "receiver": "",
+    "message": "nvm",
+    "sentiment": 0,
+    "timestamp": "2005-10-26T09:05:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "26/10/2005",
+    "time": "2:36:00 pm",
+    "sender": "theblue",
+    "receiver": "hooligan",
+    "message": "Synaptic installs the programs to wherever they need to be installed.  Most of them can be found in the Gnome menu, and if not there, in the Debian submenu.  All applications on your system that are recognized by Synaptic are in your Debian submenu.",
+    "sentiment": 0,
+    "timestamp": "2005-10-26T09:06:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "28/10/2005",
+    "time": "10:07:00 pm",
+    "sender": "javiermsi",
+    "receiver": "",
+    "message": "maybe anyone help a linux amateur?",
+    "sentiment": 2,
+    "timestamp": "2005-10-28T16:37:00.000Z",
+    "responseTime": 199860
+  },
+  {
+    "date": "28/10/2005",
+    "time": "10:08:00 pm",
+    "sender": "javiermsi",
+    "receiver": "",
+    "message": "maybe anyone help a linux amateur?",
+    "sentiment": 2,
+    "timestamp": "2005-10-28T16:38:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "28/10/2005",
+    "time": "10:08:00 pm",
+    "sender": "gnomefreak",
+    "receiver": "javiermsi",
+    "message": " ask your question yet?",
+    "sentiment": 0,
+    "timestamp": "2005-10-28T16:38:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "16/11/2005",
+    "time": "1:45:00 pm",
+    "sender": "Melissa83",
+    "receiver": "",
+    "message": "how do i boot straight to console mode?",
+    "sentiment": 1,
+    "timestamp": "2005-11-16T08:15:00.000Z",
+    "responseTime": 1611420
+  },
+  {
+    "date": "16/11/2005",
+    "time": "1:46:00 pm",
+    "sender": "nickrud",
+    "receiver": "Melissa83",
+    "message": "delete S13gdm in /etc/rc2.d",
+    "sentiment": 0,
+    "timestamp": "2005-11-16T08:16:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "16/11/2005",
+    "time": "1:47:00 pm",
+    "sender": "nickrud",
+    "receiver": "Melissa83",
+    "message": "or better yet, rename it to K13gdm, so you can put it back when you want",
+    "sentiment": 3,
+    "timestamp": "2005-11-16T08:17:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "20/11/2005",
+    "time": "2:24:00 pm",
+    "sender": "cyrre",
+    "receiver": "",
+    "message": "I'm not able to download Eterm with apt-get.. should I add some mirror or what?",
+    "sentiment": 0,
+    "timestamp": "2005-11-20T08:54:00.000Z",
+    "responseTime": 347820
+  },
+  {
+    "date": "20/11/2005",
+    "time": "2:25:00 pm",
+    "sender": "nickrud",
+    "receiver": "cyrre",
+    "message": "I see it in universe, eterm",
+    "sentiment": 0,
+    "timestamp": "2005-11-20T08:55:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "20/11/2005",
+    "time": "2:50:00 pm",
+    "sender": "nickrud",
+    "receiver": "cyrre",
+    "message": "it is in the universe repository, you may need to enable it",
+    "sentiment": 0,
+    "timestamp": "2005-11-20T09:20:00.000Z",
+    "responseTime": 1500
+  },
+  {
+    "date": "16/12/2005",
+    "time": "6:40:00 pm",
+    "sender": "mkyb14",
+    "receiver": "",
+    "message": "is there a 'make' program in ubuntu? a program is asking for it",
+    "sentiment": 0,
+    "timestamp": "2005-12-16T13:10:00.000Z",
+    "responseTime": 2260200
+  },
+  {
+    "date": "16/12/2005",
+    "time": "6:41:00 pm",
+    "sender": "irvin",
+    "receiver": "mkyb14",
+    "message": "you'll need build-essential for that",
+    "sentiment": 0,
+    "timestamp": "2005-12-16T13:11:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "16/12/2005",
+    "time": "6:41:00 pm",
+    "sender": "irvin",
+    "receiver": "mkyb14",
+    "message": "sudo apt-get install build-essential",
+    "sentiment": 0,
+    "timestamp": "2005-12-16T13:11:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "20/1/2006",
+    "time": "7:17:00 pm",
+    "sender": "j",
+    "receiver": "",
+    "message": "Hello.  Can anyone recommend a good iso burner for Ubuntu?",
+    "sentiment": 5,
+    "timestamp": "2006-01-20T13:47:00.000Z",
+    "responseTime": 3026160
+  },
+  {
+    "date": "20/1/2006",
+    "time": "7:17:00 pm",
+    "sender": "Madpilot_catsit",
+    "receiver": "j",
+    "message": "just right click on your ISO in the file manager, and select 'Burn To Disc'",
+    "sentiment": 0,
+    "timestamp": "2006-01-20T13:47:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "20/1/2006",
+    "time": "7:22:00 pm",
+    "sender": "Madpilot_catsit",
+    "receiver": "j",
+    "message": "it should - it always has for me...",
+    "sentiment": 0,
+    "timestamp": "2006-01-20T13:52:00.000Z",
+    "responseTime": 300
+  },
+  {
+    "date": "28/1/2006",
+    "time": "3:40:00 pm",
+    "sender": "ubuntugeek",
+    "receiver": "",
+    "message": "Forums will be backup 1/23/2006 around 10am EST.. just a heads up, we needed to do some emergency work.",
+    "sentiment": -2,
+    "timestamp": "2006-01-28T10:10:00.000Z",
+    "responseTime": 677880
+  },
+  {
+    "date": "28/1/2006",
+    "time": "3:40:00 pm",
+    "sender": "ubuntugeek",
+    "receiver": "",
+    "message": "yeah we finally tracked the issue down today..",
+    "sentiment": 1,
+    "timestamp": "2006-01-28T10:10:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "28/1/2006",
+    "time": "3:41:00 pm",
+    "sender": "galgoz",
+    "receiver": "ubuntugeek",
+    "message": "ah, good to hear",
+    "sentiment": 3,
+    "timestamp": "2006-01-28T10:11:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "30/3/2006",
+    "time": "6:34:00 pm",
+    "sender": "ASTX813",
+    "receiver": "",
+    "message": "BOOOOOOOYAAAAAAAHHHHHHHH!",
+    "sentiment": 0,
+    "timestamp": "2006-03-30T13:04:00.000Z",
+    "responseTime": 5280780
+  },
+  {
+    "date": "30/3/2006",
+    "time": "6:34:00 pm",
+    "sender": "sethrd",
+    "receiver": "ASTX813",
+    "message": "You scared me.",
+    "sentiment": -2,
+    "timestamp": "2006-03-30T13:04:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "30/3/2006",
+    "time": "6:34:00 pm",
+    "sender": "sethrd",
+    "receiver": "ASTX813",
+    "message": "Get soemthing to work?",
+    "sentiment": 0,
+    "timestamp": "2006-03-30T13:04:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "5/4/2006",
+    "time": "12:42:00 pm",
+    "sender": "we2by_",
+    "receiver": "",
+    "message": "http://paste.ubuntu-nl.org/11156",
+    "sentiment": 0,
+    "timestamp": "2006-04-05T07:12:00.000Z",
+    "responseTime": 497280
+  },
+  {
+    "date": "5/4/2006",
+    "time": "12:42:00 pm",
+    "sender": "we2by_",
+    "receiver": "",
+    "message": "some one helps me with those dependencies problems",
+    "sentiment": 0,
+    "timestamp": "2006-04-05T07:12:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "5/4/2006",
+    "time": "12:43:00 pm",
+    "sender": "sfaris_",
+    "receiver": "we2by_",
+    "message": "tried 'apt-get -f install' ?",
+    "sentiment": 0,
+    "timestamp": "2006-04-05T07:13:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "13/4/2006",
+    "time": "2:13:00 pm",
+    "sender": "heyjoe2",
+    "receiver": "",
+    "message": "can someone help me with usb problems. ubuntu doesnt recognize my mp3 player of usbstick and win2000 does. im dual booting but i really want to use linux permanently",
+    "sentiment": 1,
+    "timestamp": "2006-04-13T08:43:00.000Z",
+    "responseTime": 696600
+  },
+  {
+    "date": "13/4/2006",
+    "time": "2:14:00 pm",
+    "sender": "nil",
+    "receiver": "heyjoe2",
+    "message": "does ubuntu recognizes other usb devices on your computer?",
+    "sentiment": 0,
+    "timestamp": "2006-04-13T08:44:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "13/4/2006",
+    "time": "2:15:00 pm",
+    "sender": "heyjoe2",
+    "receiver": "nil",
+    "message": "it recognizes my usb mouse",
+    "sentiment": 0,
+    "timestamp": "2006-04-13T08:45:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "17/5/2006",
+    "time": "5:55:00 pm",
+    "sender": "definity",
+    "receiver": "",
+    "message": "how can i brows graphical web pages on terminal",
+    "sentiment": 0,
+    "timestamp": "2006-05-17T12:25:00.000Z",
+    "responseTime": 2950800
+  },
+  {
+    "date": "17/5/2006",
+    "time": "5:55:00 pm",
+    "sender": "definity",
+    "receiver": "",
+    "message": "like normal www http sites",
+    "sentiment": 2,
+    "timestamp": "2006-05-17T12:25:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "17/5/2006",
+    "time": "5:55:00 pm",
+    "sender": "paradizelost",
+    "receiver": "definity",
+    "message": "links",
+    "sentiment": 0,
+    "timestamp": "2006-05-17T12:25:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "21/5/2006",
+    "time": "1:45:00 pm",
+    "sender": "mnob07",
+    "receiver": "",
+    "message": "hey",
+    "sentiment": 0,
+    "timestamp": "2006-05-21T08:15:00.000Z",
+    "responseTime": 330600
+  },
+  {
+    "date": "21/5/2006",
+    "time": "1:47:00 pm",
+    "sender": "mnob07",
+    "receiver": "",
+    "message": "you can ignore me if you want if this is a stupid question, but I need help remembering what my login for ubuntu is. I JUST installed it, all I rememebr is putting Mike as the user name and my normal password but when booting it up they won't log me on?",
+    "sentiment": 0,
+    "timestamp": "2006-05-21T08:17:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "21/5/2006",
+    "time": "1:47:00 pm",
+    "sender": "nickrud",
+    "receiver": "mnob07",
+    "message": "are you making sure you use Mike, not mike",
+    "sentiment": 0,
+    "timestamp": "2006-05-21T08:17:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "29/5/2006",
+    "time": "4:28:00 pm",
+    "sender": "Dawei",
+    "receiver": "",
+    "message": "Bug report time on a Breezy>Dapper update! I did 3 'sudo apt-get -f install's to get things going, once from an 'x-less' environment, because the installation screwed up 'x'. In the process: 1) My sound no longer works. (I have an nVidia card) 2) I had to re-install a few programs that I had running before, they just disappeared. To put it mildly... whoever said that Dapper Drake was ready to release was not looking at life the way that I l",
+    "sentiment": -4,
+    "timestamp": "2006-05-29T10:58:00.000Z",
+    "responseTime": 700860
+  },
+  {
+    "date": "29/5/2006",
+    "time": "4:28:00 pm",
+    "sender": "Dawei",
+    "receiver": "",
+    "message": "it.",
+    "sentiment": 0,
+    "timestamp": "2006-05-29T10:58:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "29/5/2006",
+    "time": "4:29:00 pm",
+    "sender": "zcat[1] ",
+    "receiver": "Dawei",
+    "message": "it might be better off the CD. I did an update to Breezy that way and X broke but otherwise it wasn't too bad. Dapper broke _everything_ but that was beta2",
+    "sentiment": -3,
+    "timestamp": "2006-05-29T10:59:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "6/6/2006",
+    "time": "6:56:00 pm",
+    "sender": "painkiler",
+    "receiver": "",
+    "message": "hey, I just changed the cd drive",
+    "sentiment": 0,
+    "timestamp": "2006-06-06T13:26:00.000Z",
+    "responseTime": 700020
+  },
+  {
+    "date": "6/6/2006",
+    "time": "6:56:00 pm",
+    "sender": "painkiler",
+    "receiver": "",
+    "message": "AND it worked!",
+    "sentiment": 0,
+    "timestamp": "2006-06-06T13:26:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "6/6/2006",
+    "time": "6:56:00 pm",
+    "sender": "aftertaf",
+    "receiver": "painkiler",
+    "message": "hehe",
+    "sentiment": 2,
+    "timestamp": "2006-06-06T13:26:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "14/6/2006",
+    "time": "11:44:00 am",
+    "sender": "stevekl",
+    "receiver": "",
+    "message": "So why are we helping zxc333?",
+    "sentiment": 2,
+    "timestamp": "2006-06-14T06:14:00.000Z",
+    "responseTime": 665280
+  },
+  {
+    "date": "14/6/2006",
+    "time": "11:44:00 am",
+    "sender": "stevekl",
+    "receiver": "",
+    "message": "Seriously, if he's not going to use linux then why does he expect help from us",
+    "sentiment": 2,
+    "timestamp": "2006-06-14T06:14:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "14/6/2006",
+    "time": "11:45:00 am",
+    "sender": "__mikem",
+    "receiver": "stevekl",
+    "message": "aggreed",
+    "sentiment": 0,
+    "timestamp": "2006-06-14T06:15:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "15/6/2006",
+    "time": "6:01:00 pm",
+    "sender": "harry",
+    "receiver": "",
+    "message": "can someone giv me a link in ubuntu wiki to install sun java",
+    "sentiment": 0,
+    "timestamp": "2006-06-15T12:31:00.000Z",
+    "responseTime": 108960
+  },
+  {
+    "date": "15/6/2006",
+    "time": "6:01:00 pm",
+    "sender": "someRandomGuy",
+    "receiver": "harry",
+    "message": "java.com",
+    "sentiment": 0,
+    "timestamp": "2006-06-15T12:31:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "15/6/2006",
+    "time": "6:02:00 pm",
+    "sender": "harry",
+    "receiver": "someRandomGuy",
+    "message": "i mean running the command in terminal to get sun java. there are 2 kinds the black and the sun",
+    "sentiment": 0,
+    "timestamp": "2006-06-15T12:32:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "24/6/2006",
+    "time": "1:07:00 pm",
+    "sender": "siriusnova",
+    "receiver": "",
+    "message": "AIGLX + Compiz = Sexy Ubuntu Desktop :D",
+    "sentiment": 3,
+    "timestamp": "2006-06-24T07:37:00.000Z",
+    "responseTime": 759900
+  },
+  {
+    "date": "24/6/2006",
+    "time": "1:09:00 pm",
+    "sender": "iiiears",
+    "receiver": "siriusnova",
+    "message": "dl.tv former the screensavers host has a nice video of !compiz on open suse today.",
+    "sentiment": 3,
+    "timestamp": "2006-06-24T07:39:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "24/6/2006",
+    "time": "1:09:00 pm",
+    "sender": "siriusnova",
+    "receiver": "iiiears",
+    "message": "#NAME?",
+    "sentiment": 0,
+    "timestamp": "2006-06-24T07:39:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "24/6/2006",
+    "time": "1:54:00 pm",
+    "sender": "LamaZitten",
+    "receiver": "",
+    "message": "Anyone please? i'm sure there is a simple program I'm missing...",
+    "sentiment": -1,
+    "timestamp": "2006-06-24T08:24:00.000Z",
+    "responseTime": 2700
+  },
+  {
+    "date": "24/6/2006",
+    "time": "1:54:00 pm",
+    "sender": "vanberge",
+    "receiver": "LamaZitten",
+    "message": "you just want to use cp? from command line?",
+    "sentiment": 1,
+    "timestamp": "2006-06-24T08:24:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "24/6/2006",
+    "time": "1:54:00 pm",
+    "sender": "vanberge",
+    "receiver": "LamaZitten",
+    "message": "if you are just copying, don't worry about corruption.  even if something really bad happene'd you'd still have the original correct?",
+    "sentiment": -3,
+    "timestamp": "2006-06-24T08:24:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "5/7/2006",
+    "time": "12:40:00 pm",
+    "sender": "dle",
+    "receiver": "",
+    "message": "Hi. What are the 6.06 images called 'alternate'?  E.g. ubuntu-6.06-alternate-i386.iso",
+    "sentiment": 0,
+    "timestamp": "2006-07-05T07:10:00.000Z",
+    "responseTime": 945960
+  },
+  {
+    "date": "5/7/2006",
+    "time": "12:41:00 pm",
+    "sender": "sladen",
+    "receiver": "dle",
+    "message": "they use the Debian-installer, in text-mode.  They are useful when setting up LVM, RAID, servers, or other special (non-Desktop) requirements",
+    "sentiment": 2,
+    "timestamp": "2006-07-05T07:11:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "5/7/2006",
+    "time": "12:41:00 pm",
+    "sender": "dle",
+    "receiver": "sladen",
+    "message": "Ah, thanks!",
+    "sentiment": 2,
+    "timestamp": "2006-07-05T07:11:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "4/8/2006",
+    "time": "6:43:00 pm",
+    "sender": "Tsuki",
+    "receiver": "",
+    "message": "hey guys, I'm having a little problem with my laptop generating a little more heat than it does in XP",
+    "sentiment": -2,
+    "timestamp": "2006-08-04T13:13:00.000Z",
+    "responseTime": 2613720
+  },
+  {
+    "date": "4/8/2006",
+    "time": "6:44:00 pm",
+    "sender": "mheath[laptop] ",
+    "receiver": "Tsuki",
+    "message": "What kind of laptop is it?",
+    "sentiment": 2,
+    "timestamp": "2006-08-04T13:14:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "4/8/2006",
+    "time": "6:46:00 pm",
+    "sender": "mheath[laptop] ",
+    "receiver": "Tsuki",
+    "message": "Well, thats your problem. I wish I could provide more support, but I don't have any experiience with enabling CPU throttling",
+    "sentiment": 1,
+    "timestamp": "2006-08-04T13:16:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "5/9/2006",
+    "time": "2:46:00 pm",
+    "sender": "realist",
+    "receiver": "nahoj",
+    "message": "you're better off just asking your question.",
+    "sentiment": 2,
+    "timestamp": "2006-09-05T09:16:00.000Z",
+    "responseTime": 2750400
+  },
+  {
+    "date": "5/9/2006",
+    "time": "2:46:00 pm",
+    "sender": "nahoj",
+    "receiver": "realist",
+    "message": "the problem is that I don't really know what to ask...",
+    "sentiment": -2,
+    "timestamp": "2006-09-05T09:16:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "5/9/2006",
+    "time": "2:48:00 pm",
+    "sender": "realist",
+    "receiver": "nahoj",
+    "message": "why are you looking for network gurus here, of all places?",
+    "sentiment": 0,
+    "timestamp": "2006-09-05T09:18:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "4/10/2006",
+    "time": "2:53:00 pm",
+    "sender": "Soekisan",
+    "receiver": "",
+    "message": "!schedule",
+    "sentiment": 0,
+    "timestamp": "2006-10-04T09:23:00.000Z",
+    "responseTime": 2505900
+  },
+  {
+    "date": "4/10/2006",
+    "time": "2:54:00 pm",
+    "sender": "Soekisan",
+    "receiver": "",
+    "message": "october?",
+    "sentiment": 0,
+    "timestamp": "2006-10-04T09:24:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "4/10/2006",
+    "time": "2:54:00 pm",
+    "sender": "Flannel",
+    "receiver": "Soekisan",
+    "message": "right, october.  6.10 (2006, 10th month)",
+    "sentiment": 0,
+    "timestamp": "2006-10-04T09:24:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "30/10/2006",
+    "time": "7:10:00 pm",
+    "sender": "moolcool",
+    "receiver": "",
+    "message": "how do i switch to kbuntu?",
+    "sentiment": 0,
+    "timestamp": "2006-10-30T13:40:00.000Z",
+    "responseTime": 2261760
+  },
+  {
+    "date": "30/10/2006",
+    "time": "7:10:00 pm",
+    "sender": "Gotti",
+    "receiver": "moolcool",
+    "message": "'sudo apt-get install kubuntu-desktop'",
+    "sentiment": 0,
+    "timestamp": "2006-10-30T13:40:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "30/10/2006",
+    "time": "7:10:00 pm",
+    "sender": "Gotti",
+    "receiver": "moolcool",
+    "message": "nope...not at all.",
+    "sentiment": 0,
+    "timestamp": "2006-10-30T13:40:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "17/11/2006",
+    "time": "4:35:00 pm",
+    "sender": "aztracker1",
+    "receiver": "",
+    "message": "quick question, if anyone knows.. is there a tutorial on how to switch to an SMP kernel?  I'm using a p4HT, I have the HT dissabled, not sure if it's better off that way in nix or not?",
+    "sentiment": 2,
+    "timestamp": "2006-11-17T11:05:00.000Z",
+    "responseTime": 1545900
+  },
+  {
+    "date": "17/11/2006",
+    "time": "4:35:00 pm",
+    "sender": "variant",
+    "receiver": "aztracker1",
+    "message": "edgy uses smp enabled kernel by default. dapper you have to install it with apt-get",
+    "sentiment": 0,
+    "timestamp": "2006-11-17T11:05:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "17/11/2006",
+    "time": "4:36:00 pm",
+    "sender": "aztracker1",
+    "receiver": "variant",
+    "message": "thx",
+    "sentiment": 0,
+    "timestamp": "2006-11-17T11:06:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "21/1/2007",
+    "time": "10:00:00 pm",
+    "sender": "phaidros",
+    "receiver": "",
+    "message": "anybody xen and vserver on edgy?",
+    "sentiment": 0,
+    "timestamp": "2007-01-21T16:30:00.000Z",
+    "responseTime": 5635440
+  },
+  {
+    "date": "21/1/2007",
+    "time": "10:01:00 pm",
+    "sender": "joshy",
+    "receiver": "phaidros",
+    "message": "i have tryed, but it don't work",
+    "sentiment": 0,
+    "timestamp": "2007-01-21T16:31:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "21/1/2007",
+    "time": "10:02:00 pm",
+    "sender": "joshy",
+    "receiver": "phaidros",
+    "message": "I don't have to patch a kernel, because i've an core2 duo",
+    "sentiment": 0,
+    "timestamp": "2007-01-21T16:32:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "2/2/2007",
+    "time": "7:49:00 pm",
+    "sender": "shut-",
+    "receiver": "",
+    "message": "what ubuntu use kde",
+    "sentiment": 0,
+    "timestamp": "2007-02-02T14:19:00.000Z",
+    "responseTime": 1028820
+  },
+  {
+    "date": "2/2/2007",
+    "time": "7:49:00 pm",
+    "sender": "shut-",
+    "receiver": "",
+    "message": "or what?",
+    "sentiment": 0,
+    "timestamp": "2007-02-02T14:19:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "2/2/2007",
+    "time": "7:49:00 pm",
+    "sender": "kitche",
+    "receiver": "shut-",
+    "message": "gnome kubuntu is kde xubuntu is xfce",
+    "sentiment": 0,
+    "timestamp": "2007-02-02T14:19:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "4/2/2007",
+    "time": "3:12:00 pm",
+    "sender": "ciro",
+    "receiver": "",
+    "message": "how can I install mercury messanger on ubuntu?",
+    "sentiment": 0,
+    "timestamp": "2007-02-04T09:42:00.000Z",
+    "responseTime": 156180
+  },
+  {
+    "date": "4/2/2007",
+    "time": "3:13:00 pm",
+    "sender": "silvertip257",
+    "receiver": "ciro",
+    "message": " you need to follow the directions:  it's tricky, but you can",
+    "sentiment": 0,
+    "timestamp": "2007-02-04T09:43:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "4/2/2007",
+    "time": "3:13:00 pm",
+    "sender": "silvertip257",
+    "receiver": "ciro",
+    "message": " if i remember right you need to do some sneaky stuff to enable the sys tray",
+    "sentiment": -1,
+    "timestamp": "2007-02-04T09:43:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "17/2/2007",
+    "time": "11:44:00 am",
+    "sender": "lightup",
+    "receiver": "",
+    "message": "Is it possible to disable the graphics card in my AGP slot and run from my onboard graphics without removing the card?",
+    "sentiment": 0,
+    "timestamp": "2007-02-17T06:14:00.000Z",
+    "responseTime": 1110660
+  },
+  {
+    "date": "17/2/2007",
+    "time": "11:44:00 am",
+    "sender": "Quintin",
+    "receiver": "lightup",
+    "message": "Probably.  Look at the BIOS for your computer, not here. (!)",
+    "sentiment": 0,
+    "timestamp": "2007-02-17T06:14:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "17/2/2007",
+    "time": "11:45:00 am",
+    "sender": "lightup",
+    "receiver": "Quintin",
+    "message": "ok thanks, I thought it was something you did in the OS",
+    "sentiment": 2,
+    "timestamp": "2007-02-17T06:15:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "22/3/2007",
+    "time": "11:31:00 am",
+    "sender": "manton2007",
+    "receiver": "",
+    "message": "All kidding aside, isn't there a way to get a higher screen resolution than 1024 by ...",
+    "sentiment": 2,
+    "timestamp": "2007-03-22T06:01:00.000Z",
+    "responseTime": 2850360
+  },
+  {
+    "date": "22/3/2007",
+    "time": "11:32:00 am",
+    "sender": "manton2007",
+    "receiver": "",
+    "message": "I'm reading what you wrote, ubotu",
+    "sentiment": 0,
+    "timestamp": "2007-03-22T06:02:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "22/3/2007",
+    "time": "11:34:00 am",
+    "sender": "dot",
+    "receiver": "manton2007",
+    "message": "click on applications, then accesories, then terminal",
+    "sentiment": 0,
+    "timestamp": "2007-03-22T06:04:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "4/4/2007",
+    "time": "8:27:00 pm",
+    "sender": "Pooky",
+    "receiver": "",
+    "message": "anyone know where I can find a php5-dbase package for ubuntu?",
+    "sentiment": 0,
+    "timestamp": "2007-04-04T14:57:00.000Z",
+    "responseTime": 1155180
+  },
+  {
+    "date": "4/4/2007",
+    "time": "8:28:00 pm",
+    "sender": "Frogzoo",
+    "receiver": "Pooky",
+    "message": "apt-cache search php |grep dbase ?",
+    "sentiment": 0,
+    "timestamp": "2007-04-04T14:58:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "4/4/2007",
+    "time": "8:28:00 pm",
+    "sender": "Pooky",
+    "receiver": "Frogzoo",
+    "message": "I don't get a result for that :/",
+    "sentiment": 0,
+    "timestamp": "2007-04-04T14:58:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "9/4/2007",
+    "time": "5:51:00 pm",
+    "sender": "whiskyhotel",
+    "receiver": "",
+    "message": "idleone, i went through the set up and entered all infomation include horiz and vert sync rates but when i go to the screen resolution setting i still dont see any new options, do i have to restart before they take effect?",
+    "sentiment": 2,
+    "timestamp": "2007-04-09T12:21:00.000Z",
+    "responseTime": 422580
+  },
+  {
+    "date": "9/4/2007",
+    "time": "5:53:00 pm",
+    "sender": "whiskyhotel",
+    "receiver": "",
+    "message": "idleone, maybe i didn't use the right depth it gave me the option of 16 and 24 i selected 16, should i try 24?",
+    "sentiment": 0,
+    "timestamp": "2007-04-09T12:23:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "9/4/2007",
+    "time": "5:53:00 pm",
+    "sender": "klock",
+    "receiver": "whiskyhotel",
+    "message": "linux systems can be fully updated without a restart, even the kernel",
+    "sentiment": 0,
+    "timestamp": "2007-04-09T12:23:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "18/4/2007",
+    "time": "1:08:00 pm",
+    "sender": "dimeotane",
+    "receiver": "",
+    "message": "anyone know of a page where I can start reading tonight about how to upgrade to the new version when feisty comes out later this week (without totally doing a reformat/reinstall?)",
+    "sentiment": 0,
+    "timestamp": "2007-04-18T07:38:00.000Z",
+    "responseTime": 760500
+  },
+  {
+    "date": "18/4/2007",
+    "time": "1:10:00 pm",
+    "sender": "Jordan_U",
+    "receiver": "dimeotane",
+    "message": "https://help.ubuntu.com/community/FeistyUpgrades#head-9a1590da4277a813d23cbfb262a8c4ed7712508a",
+    "sentiment": 2,
+    "timestamp": "2007-04-18T07:40:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "18/4/2007",
+    "time": "1:34:00 pm",
+    "sender": "Jordan_U",
+    "receiver": "dimeotane",
+    "message": "You must upgrade to Edgy then Feisty",
+    "sentiment": 0,
+    "timestamp": "2007-04-18T08:04:00.000Z",
+    "responseTime": 1440
+  },
+  {
+    "date": "2/5/2007",
+    "time": "3:14:00 pm",
+    "sender": "AaronMT",
+    "receiver": "",
+    "message": "./configure",
+    "sentiment": 0,
+    "timestamp": "2007-05-02T09:44:00.000Z",
+    "responseTime": 1215600
+  },
+  {
+    "date": "2/5/2007",
+    "time": "3:16:00 pm",
+    "sender": "AaronMT",
+    "receiver": "",
+    "message": "!chmod > noelferreira",
+    "sentiment": 0,
+    "timestamp": "2007-05-02T09:46:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "2/5/2007",
+    "time": "3:18:00 pm",
+    "sender": "noelferreira",
+    "receiver": "AaronMT",
+    "message": "i did chmod to that script however the script itself has a sudo command in it.",
+    "sentiment": 0,
+    "timestamp": "2007-05-02T09:48:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "9/5/2007",
+    "time": "4:08:00 pm",
+    "sender": "senniha9",
+    "receiver": "",
+    "message": "hi i have ubuntu 7.04 and need help with an hp laptop",
+    "sentiment": 2,
+    "timestamp": "2007-05-09T10:38:00.000Z",
+    "responseTime": 607800
+  },
+  {
+    "date": "9/5/2007",
+    "time": "4:08:00 pm",
+    "sender": "ikonia",
+    "receiver": "senniha9",
+    "message": "ask the question",
+    "sentiment": 0,
+    "timestamp": "2007-05-09T10:38:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "9/5/2007",
+    "time": "4:49:00 pm",
+    "sender": "ikonia",
+    "receiver": "senniha9",
+    "message": "just ask your question",
+    "sentiment": 0,
+    "timestamp": "2007-05-09T11:19:00.000Z",
+    "responseTime": 2460
+  },
+  {
+    "date": "17/5/2007",
+    "time": "5:31:00 pm",
+    "sender": "svizzero",
+    "receiver": "",
+    "message": "I installed the 64bit version of ubuntu and I can't open firefox(segfault) and if I try to open nautilus nothing happens and my cpu goes 100%, what can I do???",
+    "sentiment": 0,
+    "timestamp": "2007-05-17T12:01:00.000Z",
+    "responseTime": 693720
+  },
+  {
+    "date": "17/5/2007",
+    "time": "5:32:00 pm",
+    "sender": "svizzero",
+    "receiver": "",
+    "message": "Anyone knows why after I installed the 64bit version of ubuntu and I can't open firefox(segfault) and if I try to open nautilus nothing happens and my cpu goes 100%, what can I do???",
+    "sentiment": 0,
+    "timestamp": "2007-05-17T12:02:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "17/5/2007",
+    "time": "5:33:00 pm",
+    "sender": "Louey",
+    "receiver": "svizzero",
+    "message": "i sent you a link on how to install 32 bit",
+    "sentiment": 0,
+    "timestamp": "2007-05-17T12:03:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "3/6/2007",
+    "time": "6:42:00 pm",
+    "sender": "Ranpha1",
+    "receiver": "",
+    "message": "which program can send mail when it starts?",
+    "sentiment": 0,
+    "timestamp": "2007-06-03T13:12:00.000Z",
+    "responseTime": 1472940
+  },
+  {
+    "date": "3/6/2007",
+    "time": "6:42:00 pm",
+    "sender": "p1ls",
+    "receiver": "Ranpha1",
+    "message": "what do you mean",
+    "sentiment": 0,
+    "timestamp": "2007-06-03T13:12:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "3/6/2007",
+    "time": "6:43:00 pm",
+    "sender": "Ranpha1",
+    "receiver": "p1ls",
+    "message": "i need to send a mail when my system starts. but since init/d scripting is beyond me i want to know if there is a prgram where  you can put in yout mail, smtp server and have that program startup with the complete system",
+    "sentiment": 1,
+    "timestamp": "2007-06-03T13:13:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "24/7/2007",
+    "time": "5:00:00 pm",
+    "sender": "Maximander",
+    "receiver": "",
+    "message": "huh, PPA sounds sweet!",
+    "sentiment": 2,
+    "timestamp": "2007-07-24T11:30:00.000Z",
+    "responseTime": 4400220
+  },
+  {
+    "date": "24/7/2007",
+    "time": "5:00:00 pm",
+    "sender": "Maximander",
+    "receiver": "",
+    "message": "who all is getting in the beta?",
+    "sentiment": 0,
+    "timestamp": "2007-07-24T11:30:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "24/7/2007",
+    "time": "5:02:00 pm",
+    "sender": "pete83",
+    "receiver": "Maximander",
+    "message": "it would be really awesome if it automatically generated packages for all distributions based on the source code",
+    "sentiment": 4,
+    "timestamp": "2007-07-24T11:32:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "28/7/2007",
+    "time": "6:20:00 pm",
+    "sender": "mroc",
+    "receiver": "",
+    "message": "i'm trying to tftp to a router.  it asks me to specify a port....which port do i use?",
+    "sentiment": 0,
+    "timestamp": "2007-07-28T12:50:00.000Z",
+    "responseTime": 350280
+  },
+  {
+    "date": "28/7/2007",
+    "time": "6:22:00 pm",
+    "sender": "howlingmadhowie",
+    "receiver": "mroc",
+    "message": "tftp:69 ftp:21",
+    "sentiment": 0,
+    "timestamp": "2007-07-28T12:52:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "28/7/2007",
+    "time": "6:22:00 pm",
+    "sender": "mroc",
+    "receiver": "howlingmadhowie",
+    "message": "ok, great.   thanks for the info.",
+    "sentiment": 5,
+    "timestamp": "2007-07-28T12:52:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "2/8/2007",
+    "time": "7:44:00 pm",
+    "sender": "Yulquen",
+    "receiver": "",
+    "message": "when installing ubuntu at the free area of a hard disk with xp on, does the installer put a boot selector at the beginning of the disk?",
+    "sentiment": 0,
+    "timestamp": "2007-08-02T14:14:00.000Z",
+    "responseTime": 436920
+  },
+  {
+    "date": "2/8/2007",
+    "time": "7:44:00 pm",
+    "sender": "chaosmachine",
+    "receiver": "Yulquen",
+    "message": "Yes, one called 'grub'",
+    "sentiment": 1,
+    "timestamp": "2007-08-02T14:14:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "2/8/2007",
+    "time": "7:45:00 pm",
+    "sender": "chaosmachine",
+    "receiver": "Yulquen",
+    "message": "as far as I know, its entire setup is automatic in ubuntu.",
+    "sentiment": 0,
+    "timestamp": "2007-08-02T14:15:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "15/8/2007",
+    "time": "2:24:00 pm",
+    "sender": "Pingviller",
+    "receiver": "",
+    "message": "I feel like a complete twit right now.. how am I supposed to install XDocLet ? only found a bunch of tar'ed .jar-files, and I got no clue what to do with em lol",
+    "sentiment": 4,
+    "timestamp": "2007-08-15T08:54:00.000Z",
+    "responseTime": 1103940
+  },
+  {
+    "date": "15/8/2007",
+    "time": "2:25:00 pm",
+    "sender": "bruenig",
+    "receiver": "Pingviller",
+    "message": "eww java, you run then with java -jar whatever.jar",
+    "sentiment": 0,
+    "timestamp": "2007-08-15T08:55:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "15/8/2007",
+    "time": "9:42:00 pm",
+    "sender": "Pingviller",
+    "receiver": "",
+    "message": "I got windows under linux with virtualbox.. got the stuff I need so I can be without a real windows partition :)",
+    "sentiment": 0,
+    "timestamp": "2007-08-15T16:12:00.000Z",
+    "responseTime": 26220
+  },
+  {
+    "date": "16/8/2007",
+    "time": "2:46:00 pm",
+    "sender": "BarMan",
+    "receiver": "",
+    "message": "what is the root password on knoppix ?",
+    "sentiment": 0,
+    "timestamp": "2007-08-16T09:16:00.000Z",
+    "responseTime": 61440
+  },
+  {
+    "date": "16/8/2007",
+    "time": "2:46:00 pm",
+    "sender": "dooglus",
+    "receiver": "BarMan",
+    "message": "toor?",
+    "sentiment": 0,
+    "timestamp": "2007-08-16T09:16:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "16/8/2007",
+    "time": "2:47:00 pm",
+    "sender": "BarMan",
+    "receiver": "dooglus",
+    "message": " no its not that one",
+    "sentiment": -1,
+    "timestamp": "2007-08-16T09:17:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "18/8/2007",
+    "time": "2:43:00 pm",
+    "sender": "anothrguitarist",
+    "receiver": "",
+    "message": "/!register",
+    "sentiment": 0,
+    "timestamp": "2007-08-18T09:13:00.000Z",
+    "responseTime": 172560
+  },
+  {
+    "date": "18/8/2007",
+    "time": "2:43:00 pm",
+    "sender": "anothrguitarist",
+    "receiver": "",
+    "message": "er",
+    "sentiment": 0,
+    "timestamp": "2007-08-18T09:13:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "18/8/2007",
+    "time": "2:44:00 pm",
+    "sender": "Pelo",
+    "receiver": "anothrguitarist",
+    "message": "  /nickserv help register",
+    "sentiment": 2,
+    "timestamp": "2007-08-18T09:14:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "31/8/2007",
+    "time": "9:19:00 pm",
+    "sender": "Fub",
+    "receiver": "",
+    "message": "I'm having problems setting up samba. It seems to work,",
+    "sentiment": -2,
+    "timestamp": "2007-08-31T15:49:00.000Z",
+    "responseTime": 1146900
+  },
+  {
+    "date": "31/8/2007",
+    "time": "9:20:00 pm",
+    "sender": "Fub",
+    "receiver": "",
+    "message": "I can share folders but the shared folders can't be written to over the net",
+    "sentiment": 2,
+    "timestamp": "2007-08-31T15:50:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "31/8/2007",
+    "time": "9:20:00 pm",
+    "sender": "Pelo",
+    "receiver": "Fub",
+    "message": " there is also a #samba channel if you need more then this channel can provide",
+    "sentiment": 0,
+    "timestamp": "2007-08-31T15:50:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "7/9/2007",
+    "time": "7:59:00 pm",
+    "sender": "slash",
+    "receiver": "",
+    "message": "PLEASE",
+    "sentiment": 1,
+    "timestamp": "2007-09-07T14:29:00.000Z",
+    "responseTime": 599940
+  },
+  {
+    "date": "7/9/2007",
+    "time": "7:59:00 pm",
+    "sender": "slash",
+    "receiver": "",
+    "message": "WOMENS",
+    "sentiment": 0,
+    "timestamp": "2007-09-07T14:29:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "7/9/2007",
+    "time": "7:59:00 pm",
+    "sender": "jrib",
+    "receiver": "slash",
+    "message": "/join #ubuntu-es",
+    "sentiment": 1,
+    "timestamp": "2007-09-07T14:29:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "9/10/2007",
+    "time": "1:40:00 pm",
+    "sender": "WildOS",
+    "receiver": "",
+    "message": "Does the size of an unsigned long differ between an x86 based computer and an arm9 based controller?",
+    "sentiment": 0,
+    "timestamp": "2007-10-09T08:10:00.000Z",
+    "responseTime": 2742060
+  },
+  {
+    "date": "9/10/2007",
+    "time": "1:41:00 pm",
+    "sender": "WildOS",
+    "receiver": "",
+    "message": "Sorry, for asking this question here.. but I've found that there are people in this channel working with stuff like this... I am using the helix toolchain and kernel 2.6.22..",
+    "sentiment": 1,
+    "timestamp": "2007-10-09T08:11:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "9/10/2007",
+    "time": "1:41:00 pm",
+    "sender": "Magus_X",
+    "receiver": "WildOS",
+    "message": "porting apps for NintendoDS?",
+    "sentiment": 0,
+    "timestamp": "2007-10-09T08:11:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "31/10/2007",
+    "time": "12:48:00 pm",
+    "sender": "boontoo",
+    "receiver": "",
+    "message": "heh",
+    "sentiment": 0,
+    "timestamp": "2007-10-31T07:18:00.000Z",
+    "responseTime": 1897620
+  },
+  {
+    "date": "31/10/2007",
+    "time": "12:48:00 pm",
+    "sender": "boontoo",
+    "receiver": "",
+    "message": "australia servers must be choked atm",
+    "sentiment": -2,
+    "timestamp": "2007-10-31T07:18:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "31/10/2007",
+    "time": "12:50:00 pm",
+    "sender": "mistik1",
+    "receiver": "boontoo",
+    "message": "he said sound was working for the main user",
+    "sentiment": 0,
+    "timestamp": "2007-10-31T07:20:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "8/11/2007",
+    "time": "11:55:00 am",
+    "sender": "Cerebru1",
+    "receiver": "",
+    "message": "Where can I get help regarding sound problems? Yes I know, I have read tons of documentations and even installed another alsa version... I'm 2 days searching for solutions",
+    "sentiment": 2,
+    "timestamp": "2007-11-08T06:25:00.000Z",
+    "responseTime": 687900
+  },
+  {
+    "date": "8/11/2007",
+    "time": "11:56:00 am",
+    "sender": "Cerebru1",
+    "receiver": "",
+    "message": "Where can I get help regarding sound problems? Yes I know, I have read tons of documentations and even installed another alsa version... I'm 2 days searching for solutions",
+    "sentiment": 2,
+    "timestamp": "2007-11-08T06:26:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "8/11/2007",
+    "time": "11:57:00 am",
+    "sender": "Jordan_U",
+    "receiver": "Cerebru1",
+    "message": "What problems?",
+    "sentiment": -2,
+    "timestamp": "2007-11-08T06:27:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "2/12/2007",
+    "time": "11:06:00 am",
+    "sender": "john-mike",
+    "receiver": "",
+    "message": "Does anyone know how I can check what driver I'm using for my video card?",
+    "sentiment": 0,
+    "timestamp": "2007-12-02T05:36:00.000Z",
+    "responseTime": 2070540
+  },
+  {
+    "date": "2/12/2007",
+    "time": "11:08:00 am",
+    "sender": "john-mike",
+    "receiver": "",
+    "message": "Hmmm...says 'fglrx'.  That's not the new ATI driver, is it?",
+    "sentiment": 0,
+    "timestamp": "2007-12-02T05:38:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "2/12/2007",
+    "time": "11:08:00 am",
+    "sender": "brianski",
+    "receiver": "john-mike",
+    "message": "fglrx could be either the new ati driver or the old one, they are both called fglrx",
+    "sentiment": 0,
+    "timestamp": "2007-12-02T05:38:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "23/12/2007",
+    "time": "6:23:00 am",
+    "sender": "cvd",
+    "receiver": "",
+    "message": "its any soft  to free ram?",
+    "sentiment": 1,
+    "timestamp": "2007-12-23T00:53:00.000Z",
+    "responseTime": 1797300
+  },
+  {
+    "date": "23/12/2007",
+    "time": "6:24:00 am",
+    "sender": "erUSUL",
+    "receiver": "cvd",
+    "message": "free ram i wasted ram",
+    "sentiment": -1,
+    "timestamp": "2007-12-23T00:54:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "23/12/2007",
+    "time": "6:32:00 am",
+    "sender": "erUSUL",
+    "receiver": "cvd",
+    "message": "managin ram is the kernels job",
+    "sentiment": 0,
+    "timestamp": "2007-12-23T01:02:00.000Z",
+    "responseTime": 480
+  },
+  {
+    "date": "16/2/2008",
+    "time": "2:16:00 am",
+    "sender": "bod_",
+    "receiver": "",
+    "message": "no",
+    "sentiment": -1,
+    "timestamp": "2008-02-15T20:46:00.000Z",
+    "responseTime": 4736640
+  },
+  {
+    "date": "16/2/2008",
+    "time": "2:16:00 am",
+    "sender": "bod_",
+    "receiver": "",
+    "message": "the text based",
+    "sentiment": 0,
+    "timestamp": "2008-02-15T20:46:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "16/2/2008",
+    "time": "2:18:00 am",
+    "sender": "hfmls_",
+    "receiver": "bod_",
+    "message": "ok , i have intel onboard vga, with hdmi output, how do i use it?",
+    "sentiment": 0,
+    "timestamp": "2008-02-15T20:48:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "12/3/2008",
+    "time": "9:20:00 am",
+    "sender": "Sinnerman",
+    "receiver": "",
+    "message": "is there any reason why my 'network manager' icon in my tray does not scale when the other ones get resized when i change the size of the panel?",
+    "sentiment": 0,
+    "timestamp": "2008-03-12T03:50:00.000Z",
+    "responseTime": 2185320
+  },
+  {
+    "date": "12/3/2008",
+    "time": "9:21:00 am",
+    "sender": "Pelo",
+    "receiver": "Sinnerman",
+    "message": "probably not a vector icon",
+    "sentiment": 0,
+    "timestamp": "2008-03-12T03:51:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "12/3/2008",
+    "time": "9:21:00 am",
+    "sender": "Sinnerman",
+    "receiver": "Pelo",
+    "message": "the other icons aren't vector icons either.",
+    "sentiment": 0,
+    "timestamp": "2008-03-12T03:51:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "12/3/2008",
+    "time": "8:15:00 pm",
+    "sender": "ActionParsnip",
+    "receiver": "huiii",
+    "message": "check /etc/fstab ;)",
+    "sentiment": 0,
+    "timestamp": "2008-03-12T14:45:00.000Z",
+    "responseTime": 39240
+  },
+  {
+    "date": "12/3/2008",
+    "time": "8:15:00 pm",
+    "sender": "huiii",
+    "receiver": "",
+    "message": "ok",
+    "sentiment": 0,
+    "timestamp": "2008-03-12T14:45:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "12/3/2008",
+    "time": "8:16:00 pm",
+    "sender": "huiii",
+    "receiver": "ActionParsnip",
+    "message": "fstab just lists internal HDDs",
+    "sentiment": 0,
+    "timestamp": "2008-03-12T14:46:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "16/3/2008",
+    "time": "1:05:00 pm",
+    "sender": "myusername",
+    "receiver": "",
+    "message": "whats the best gnome irc?",
+    "sentiment": 3,
+    "timestamp": "2008-03-16T07:35:00.000Z",
+    "responseTime": 319740
+  },
+  {
+    "date": "16/3/2008",
+    "time": "1:05:00 pm",
+    "sender": "Starnestommy",
+    "receiver": "myusername",
+    "message": "xchat or xchat-gnome",
+    "sentiment": 0,
+    "timestamp": "2008-03-16T07:35:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "16/3/2008",
+    "time": "1:09:00 pm",
+    "sender": "Starnestommy",
+    "receiver": "myusername",
+    "message": "which slash bar?",
+    "sentiment": -2,
+    "timestamp": "2008-03-16T07:39:00.000Z",
+    "responseTime": 240
+  },
+  {
+    "date": "28/3/2008",
+    "time": "2:02:00 am",
+    "sender": "boris_",
+    "receiver": "",
+    "message": "hello",
+    "sentiment": 0,
+    "timestamp": "2008-03-27T20:32:00.000Z",
+    "responseTime": 996780
+  },
+  {
+    "date": "28/3/2008",
+    "time": "2:03:00 am",
+    "sender": "boris_",
+    "receiver": "",
+    "message": "hey, i think im getting alot of hardware interrupts which might be slowing my CPU down",
+    "sentiment": -2,
+    "timestamp": "2008-03-27T20:33:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "28/3/2008",
+    "time": "2:03:00 am",
+    "sender": "Kalamarencu",
+    "receiver": "boris_",
+    "message": "hello",
+    "sentiment": 0,
+    "timestamp": "2008-03-27T20:33:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "14/4/2008",
+    "time": "11:20:00 pm",
+    "sender": "biabia",
+    "receiver": "",
+    "message": "ok, anyone know how I set bios password in ubuntu",
+    "sentiment": 0,
+    "timestamp": "2008-04-14T17:50:00.000Z",
+    "responseTime": 1545420
+  },
+  {
+    "date": "14/4/2008",
+    "time": "11:20:00 pm",
+    "sender": "biabia",
+    "receiver": "",
+    "message": "already set",
+    "sentiment": 0,
+    "timestamp": "2008-04-14T17:50:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "14/4/2008",
+    "time": "11:20:00 pm",
+    "sender": "Pici",
+    "receiver": "biabia",
+    "message": "you'd need to set that in your BIOS.",
+    "sentiment": 0,
+    "timestamp": "2008-04-14T17:50:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "23/4/2008",
+    "time": "8:25:00 pm",
+    "sender": "bad_image",
+    "receiver": "",
+    "message": "Hello folks, please help me a bit with the following sentence: 'Order here your personal photos or videos.' - I think the only allowed version is 'Order your personal videos or photos here.', but I'm not sure, are you?",
+    "sentiment": 1,
+    "timestamp": "2008-04-23T14:55:00.000Z",
+    "responseTime": 767100
+  },
+  {
+    "date": "23/4/2008",
+    "time": "8:26:00 pm",
+    "sender": "bad_image",
+    "receiver": "",
+    "message": "Did I choose a bad channel? I ask because you seem to be dumb like windows user",
+    "sentiment": -4,
+    "timestamp": "2008-04-23T14:56:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "23/4/2008",
+    "time": "8:27:00 pm",
+    "sender": "lordleemo",
+    "receiver": "bad_image",
+    "message": "the second sentence is better english   and we are not dumb",
+    "sentiment": 3,
+    "timestamp": "2008-04-23T14:57:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "5/5/2008",
+    "time": "4:29:00 am",
+    "sender": "MachinTrucChose",
+    "receiver": "",
+    "message": "what archiver do you guys recommend for RAR files? Archive Manager doesn't have RAR support apparently O_O",
+    "sentiment": 4,
+    "timestamp": "2008-05-04T22:59:00.000Z",
+    "responseTime": 979320
+  },
+  {
+    "date": "5/5/2008",
+    "time": "4:29:00 am",
+    "sender": "iGama",
+    "receiver": "MachinTrucChose",
+    "message": "apt-get install rar",
+    "sentiment": 0,
+    "timestamp": "2008-05-04T22:59:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "5/5/2008",
+    "time": "4:29:00 am",
+    "sender": "iGama",
+    "receiver": "MachinTrucChose",
+    "message": "there you have it...",
+    "sentiment": 0,
+    "timestamp": "2008-05-04T22:59:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "9/5/2008",
+    "time": "1:24:00 pm",
+    "sender": "Goldenson",
+    "receiver": "",
+    "message": "i just have a problem with my laptop it does not want to find the network in 8.04 or connect to it i have a broadcom wireless card",
+    "sentiment": -3,
+    "timestamp": "2008-05-09T07:54:00.000Z",
+    "responseTime": 377700
+  },
+  {
+    "date": "9/5/2008",
+    "time": "1:24:00 pm",
+    "sender": "LSD|Ninja",
+    "receiver": "Goldenson",
+    "message": "you need ndiswrapper",
+    "sentiment": 0,
+    "timestamp": "2008-05-09T07:54:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "9/5/2008",
+    "time": "1:25:00 pm",
+    "sender": "LSD|Ninja",
+    "receiver": "Goldenson",
+    "message": "Take at look at: http://ubuntuforums.org/showthread.php?p=1071920&mode=linear or http://ubuntuforums.org/showthread.php?t=25683 they might help",
+    "sentiment": 2,
+    "timestamp": "2008-05-09T07:55:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "21/5/2008",
+    "time": "7:26:00 am",
+    "sender": "theFATMAN",
+    "receiver": "",
+    "message": "hello everyone, it's another grand ubuntu day. Does anyone know what I can use to open winrar archives?",
+    "sentiment": 3,
+    "timestamp": "2008-05-21T01:56:00.000Z",
+    "responseTime": 1015260
+  },
+  {
+    "date": "21/5/2008",
+    "time": "7:27:00 am",
+    "sender": "theFATMAN",
+    "receiver": "",
+    "message": "how is everybody?",
+    "sentiment": 0,
+    "timestamp": "2008-05-21T01:57:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "21/5/2008",
+    "time": "7:28:00 am",
+    "sender": "Desolate1",
+    "receiver": "theFATMAN",
+    "message": "a little aggravated. You?",
+    "sentiment": -2,
+    "timestamp": "2008-05-21T01:58:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "2/6/2008",
+    "time": "6:28:00 pm",
+    "sender": "zorglu_",
+    "receiver": "Flannel",
+    "message": "the buggyness of the distro is fully on topic",
+    "sentiment": 0,
+    "timestamp": "2008-06-02T12:58:00.000Z",
+    "responseTime": 1076400
+  },
+  {
+    "date": "2/6/2008",
+    "time": "6:28:00 pm",
+    "sender": "Flannel",
+    "receiver": "zorglu_",
+    "message": "No, this is a channel for support, not discussions about Ubuntu",
+    "sentiment": 1,
+    "timestamp": "2008-06-02T12:58:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "2/6/2008",
+    "time": "6:28:00 pm",
+    "sender": "zorglu_",
+    "receiver": "Flannel",
+    "message": "well you seem to believe that support is unrelated to buggyness :) lets say you quite alone to think so",
+    "sentiment": 0,
+    "timestamp": "2008-06-02T12:58:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "11/6/2008",
+    "time": "8:57:00 am",
+    "sender": "genii",
+    "receiver": "earthling",
+    "message": "You're assuming it's some source code :)",
+    "sentiment": 0,
+    "timestamp": "2008-06-11T03:27:00.000Z",
+    "responseTime": 743340
+  },
+  {
+    "date": "11/6/2008",
+    "time": "9:21:00 am",
+    "sender": "genii",
+    "receiver": "earthling",
+    "message": "rockbox",
+    "sentiment": 0,
+    "timestamp": "2008-06-11T03:51:00.000Z",
+    "responseTime": 1440
+  },
+  {
+    "date": "11/6/2008",
+    "time": "9:22:00 am",
+    "sender": "genii",
+    "receiver": "earthling",
+    "message": "rockbox is actually a linux distribution which goes on your ipod. You can still dual-boot it to the original apple firmware if you like as well",
+    "sentiment": 2,
+    "timestamp": "2008-06-11T03:52:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "18/6/2008",
+    "time": "8:51:00 pm",
+    "sender": "newbeginer6",
+    "receiver": "",
+    "message": "do i need to defrag my harddisk first on windows first before i install ubuntu?",
+    "sentiment": 0,
+    "timestamp": "2008-06-18T15:21:00.000Z",
+    "responseTime": 646140
+  },
+  {
+    "date": "18/6/2008",
+    "time": "8:51:00 pm",
+    "sender": "BoltCloc1",
+    "receiver": "newbeginer6",
+    "message": "nah its fine. but if you want to, go on",
+    "sentiment": 3,
+    "timestamp": "2008-06-18T15:21:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "18/6/2008",
+    "time": "8:53:00 pm",
+    "sender": "BoltCloc1",
+    "receiver": "newbeginer6",
+    "message": "you dont need to defrag. but do you mean partition?",
+    "sentiment": 0,
+    "timestamp": "2008-06-18T15:23:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "25/6/2008",
+    "time": "6:36:00 pm",
+    "sender": "mysterycool",
+    "receiver": "",
+    "message": "Hey",
+    "sentiment": 0,
+    "timestamp": "2008-06-25T13:06:00.000Z",
+    "responseTime": 596580
+  },
+  {
+    "date": "25/6/2008",
+    "time": "6:37:00 pm",
+    "sender": "mysterycool",
+    "receiver": "",
+    "message": "Pidgin won't connect. I type my email and password but it says it's incorrect. but when i try to sign in though the website it works fine! :s",
+    "sentiment": 2,
+    "timestamp": "2008-06-25T13:07:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "25/6/2008",
+    "time": "6:38:00 pm",
+    "sender": "lvlefisto",
+    "receiver": "mysterycool",
+    "message": "i am a user too, but i think you also may know there is also a #pidgin channel",
+    "sentiment": 0,
+    "timestamp": "2008-06-25T13:08:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "26/7/2008",
+    "time": "12:41:00 pm",
+    "sender": "EDocToor",
+    "receiver": "",
+    "message": "I Bought a 'ZUNE' MP3 player,, does anyone have it working with Ubuntu 8.04",
+    "sentiment": 0,
+    "timestamp": "2008-07-26T07:11:00.000Z",
+    "responseTime": 2656980
+  },
+  {
+    "date": "26/7/2008",
+    "time": "12:41:00 pm",
+    "sender": "almostdvs",
+    "receiver": "EDocToor",
+    "message": "nope",
+    "sentiment": 0,
+    "timestamp": "2008-07-26T07:11:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "26/7/2008",
+    "time": "12:45:00 pm",
+    "sender": "almostdvs",
+    "receiver": "EDocToor",
+    "message": "i believe some people have got it to connect from an virtual installation but it runs at usb 1.0 so it's amazinglyslow",
+    "sentiment": 0,
+    "timestamp": "2008-07-26T07:15:00.000Z",
+    "responseTime": 240
+  },
+  {
+    "date": "18/8/2008",
+    "time": "12:41:00 am",
+    "sender": "Zta",
+    "receiver": "",
+    "message": "When is Ubuntu 8.8 being released?",
+    "sentiment": 0,
+    "timestamp": "2008-08-17T19:11:00.000Z",
+    "responseTime": 1943760
+  },
+  {
+    "date": "18/8/2008",
+    "time": "12:42:00 am",
+    "sender": "rambo3",
+    "receiver": "Zta",
+    "message": "never , next is .10",
+    "sentiment": 0,
+    "timestamp": "2008-08-17T19:12:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "18/8/2008",
+    "time": "12:42:00 am",
+    "sender": "Zta",
+    "receiver": "rambo3",
+    "message": "ah, ok.",
+    "sentiment": 0,
+    "timestamp": "2008-08-17T19:12:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "21/8/2008",
+    "time": "6:19:00 pm",
+    "sender": "BigBuddha",
+    "receiver": "",
+    "message": "how do fix vlc in the terminal?",
+    "sentiment": 0,
+    "timestamp": "2008-08-21T12:49:00.000Z",
+    "responseTime": 322620
+  },
+  {
+    "date": "21/8/2008",
+    "time": "6:20:00 pm",
+    "sender": "wols_",
+    "receiver": "BigBuddha",
+    "message": "fix what?",
+    "sentiment": 0,
+    "timestamp": "2008-08-21T12:50:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "21/8/2008",
+    "time": "6:20:00 pm",
+    "sender": "wols_",
+    "receiver": "BigBuddha",
+    "message": "check other programs. same faint sound?",
+    "sentiment": 0,
+    "timestamp": "2008-08-21T12:50:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "4/9/2008",
+    "time": "11:04:00 am",
+    "sender": "Segellion",
+    "receiver": "",
+    "message": "Help!  If I type in 'sudo depmod -a' nothing happends.  It asks me for the sudo password, I enter it, and then I just get the regular command prompt.",
+    "sentiment": 2,
+    "timestamp": "2008-09-04T05:34:00.000Z",
+    "responseTime": 1183440
+  },
+  {
+    "date": "4/9/2008",
+    "time": "11:04:00 am",
+    "sender": "Segellion",
+    "receiver": "",
+    "message": "Should I not get some data from that command?",
+    "sentiment": 0,
+    "timestamp": "2008-09-04T05:34:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "4/9/2008",
+    "time": "11:05:00 am",
+    "sender": "kindofabuzz",
+    "receiver": "Segellion",
+    "message": "no",
+    "sentiment": -1,
+    "timestamp": "2008-09-04T05:35:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "15/10/2008",
+    "time": "1:29:00 pm",
+    "sender": "dft",
+    "receiver": "",
+    "message": "anyone else run into issues with cd/dvd burners not identifying blank media installed?",
+    "sentiment": 0,
+    "timestamp": "2008-10-15T07:59:00.000Z",
+    "responseTime": 3551040
+  },
+  {
+    "date": "15/10/2008",
+    "time": "1:30:00 pm",
+    "sender": "izinucs",
+    "receiver": "dft",
+    "message": "yep.. happened to me with a HP lightscribe cd/dvd burner.. replaced and all is well.",
+    "sentiment": 0,
+    "timestamp": "2008-10-15T08:00:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "15/10/2008",
+    "time": "1:31:00 pm",
+    "sender": "izinucs",
+    "receiver": "dft",
+    "message": "you might try k3b as the burning software . .. I never really liked brassero",
+    "sentiment": 2,
+    "timestamp": "2008-10-15T08:01:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "18/11/2008",
+    "time": "3:45:00 am",
+    "sender": "bingungaja",
+    "receiver": "",
+    "message": "i'd installed ubuntu in my notebook, can i make a partition ? how ?",
+    "sentiment": 0,
+    "timestamp": "2008-11-17T22:15:00.000Z",
+    "responseTime": 2902440
+  },
+  {
+    "date": "18/11/2008",
+    "time": "3:46:00 am",
+    "sender": "Acedip",
+    "receiver": "bingungaja",
+    "message": "or just cfdisk - z 'ur disk'",
+    "sentiment": 0,
+    "timestamp": "2008-11-17T22:16:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "18/11/2008",
+    "time": "3:47:00 am",
+    "sender": "Acedip",
+    "receiver": "bingungaja",
+    "message": "check the 'man cfdisk'",
+    "sentiment": 0,
+    "timestamp": "2008-11-17T22:17:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "23/12/2008",
+    "time": "8:10:00 am",
+    "sender": "Pici",
+    "receiver": "",
+    "message": "!fishing | ortsvorsteher",
+    "sentiment": 0,
+    "timestamp": "2008-12-23T02:40:00.000Z",
+    "responseTime": 3039780
+  },
+  {
+    "date": "23/12/2008",
+    "time": "8:10:00 am",
+    "sender": "ortsvorsteher",
+    "receiver": "Pici",
+    "message": ":)",
+    "sentiment": 0,
+    "timestamp": "2008-12-23T02:40:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "7/1/2009",
+    "time": "2:55:00 pm",
+    "sender": "kc8pxy",
+    "receiver": "",
+    "message": "i know this question will send red-flags a mile high, but i can't seem to get it working on my own.",
+    "sentiment": 0,
+    "timestamp": "2009-01-07T09:25:00.000Z",
+    "responseTime": 1320300
+  },
+  {
+    "date": "7/1/2009",
+    "time": "2:57:00 pm",
+    "sender": "kc8pxy",
+    "receiver": "",
+    "message": "I'm trying to get aircrack-ng to work, and when i follow the howto's, it keeps telling we that it can't put my atheros card can't be put in monitor mode. I've personally put this card in master mode to use as a WAP, so i know it SHOUDL be able to do this also..   is there something ubunt-specific that is goofing me here?",
+    "sentiment": 0,
+    "timestamp": "2009-01-07T09:27:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "7/1/2009",
+    "time": "2:57:00 pm",
+    "sender": "niriven",
+    "receiver": "kc8pxy",
+    "message": "ndiswrapper?",
+    "sentiment": 0,
+    "timestamp": "2009-01-07T09:27:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "25/1/2009",
+    "time": "5:30:00 am",
+    "sender": "guntbert",
+    "receiver": "laeg",
+    "message": "you can type 'your_cmd | less' to see all, when you had enough finish with q",
+    "sentiment": 0,
+    "timestamp": "2009-01-25T00:00:00.000Z",
+    "responseTime": 1521180
+  },
+  {
+    "date": "25/1/2009",
+    "time": "5:42:00 am",
+    "sender": "guntbert",
+    "receiver": "laeg",
+    "message": "you will have to ask the manufacturer...",
+    "sentiment": 0,
+    "timestamp": "2009-01-25T00:12:00.000Z",
+    "responseTime": 720
+  },
+  {
+    "date": "25/1/2009",
+    "time": "5:44:00 am",
+    "sender": "laeg",
+    "receiver": "guntbert",
+    "message": "ok ty",
+    "sentiment": 0,
+    "timestamp": "2009-01-25T00:14:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "9/2/2009",
+    "time": "10:20:00 am",
+    "sender": "Dartel",
+    "receiver": "",
+    "message": "Evening All",
+    "sentiment": 0,
+    "timestamp": "2009-02-09T04:50:00.000Z",
+    "responseTime": 1312560
+  },
+  {
+    "date": "9/2/2009",
+    "time": "10:22:00 am",
+    "sender": "Dartel",
+    "receiver": "",
+    "message": "Is this the best place for new converts from Windoze to Linux (Ubuntu 8.10)?",
+    "sentiment": 3,
+    "timestamp": "2009-02-09T04:52:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "9/2/2009",
+    "time": "10:23:00 am",
+    "sender": "DIFH-iceroot",
+    "receiver": "Dartel",
+    "message": "yes",
+    "sentiment": 1,
+    "timestamp": "2009-02-09T04:53:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "10/2/2009",
+    "time": "10:07:00 pm",
+    "sender": "adante",
+    "receiver": "",
+    "message": "hi folks, i'm making a backup of my root partition just incase this gparted livecd resize goes wrong - at the moment i am just cp -Rp /bin /etc /lib /sbin /usr /boot /home /opt /srv /var /vmlinuz /media /opt /root  -- is there anything else i should be doing?",
+    "sentiment": -2,
+    "timestamp": "2009-02-10T16:37:00.000Z",
+    "responseTime": 128640
+  },
+  {
+    "date": "10/2/2009",
+    "time": "10:09:00 pm",
+    "sender": "cdburgess",
+    "receiver": "adante",
+    "message": "use tar",
+    "sentiment": 0,
+    "timestamp": "2009-02-10T16:39:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "10/2/2009",
+    "time": "10:11:00 pm",
+    "sender": "cdburgess",
+    "receiver": "adante",
+    "message": "try g4l",
+    "sentiment": 0,
+    "timestamp": "2009-02-10T16:41:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "15/3/2009",
+    "time": "6:44:00 pm",
+    "sender": "fieldse",
+    "receiver": "elad`",
+    "message": "seems there's not much for keyboard shortcuts in GNOME but through configuration editor. There may be an application to do this but I haven't found it yet. Weak, eh?  Sounds like someone needs to write an app.",
+    "sentiment": 0,
+    "timestamp": "2009-03-15T13:14:00.000Z",
+    "responseTime": 2838780
+  },
+  {
+    "date": "15/3/2009",
+    "time": "6:45:00 pm",
+    "sender": "elad`",
+    "receiver": "fieldse",
+    "message": "I didn't mean to say I could do better.",
+    "sentiment": 2,
+    "timestamp": "2009-03-15T13:15:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "15/3/2009",
+    "time": "6:46:00 pm",
+    "sender": "elad`",
+    "receiver": "fieldse",
+    "message": "but the same goes for music. If someone is missing half the notes while playing the moonlight sonata, and I point it out, it doesn't mean I presume to be able to hit even a third.",
+    "sentiment": -2,
+    "timestamp": "2009-03-15T13:16:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "2/4/2009",
+    "time": "2:39:00 am",
+    "sender": "LargePrime",
+    "receiver": "",
+    "message": "is their a recommended PDF editor?",
+    "sentiment": 2,
+    "timestamp": "2009-04-01T21:09:00.000Z",
+    "responseTime": 1497180
+  },
+  {
+    "date": "2/4/2009",
+    "time": "2:41:00 am",
+    "sender": "arkanabar",
+    "receiver": "LargePrime",
+    "message": " access the repos with either apt (command line) or synaptic (GUI) package manager.",
+    "sentiment": 0,
+    "timestamp": "2009-04-01T21:11:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "2/4/2009",
+    "time": "2:41:00 am",
+    "sender": "LargePrime",
+    "receiver": "arkanabar",
+    "message": "thanks",
+    "sentiment": 2,
+    "timestamp": "2009-04-01T21:11:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "4/4/2009",
+    "time": "7:49:00 am",
+    "sender": "SectionOne",
+    "receiver": "",
+    "message": "Is there a second cd needed for the 9.04 beta server install? I keep reaching about 77% completed and then it asks for 'Ubuntu-Server 9.04 _Jaunty Jackalope_ Beta i386 (20090324.2)'",
+    "sentiment": 3,
+    "timestamp": "2009-04-04T02:19:00.000Z",
+    "responseTime": 191280
+  },
+  {
+    "date": "4/4/2009",
+    "time": "7:50:00 am",
+    "sender": "oCean_",
+    "receiver": "SectionOne",
+    "message": "since jaunty is still beta, all issues/discussions go in #ubuntu+1 channel, please",
+    "sentiment": 3,
+    "timestamp": "2009-04-04T02:20:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "4/4/2009",
+    "time": "7:50:00 am",
+    "sender": "SectionOne",
+    "receiver": "oCean_",
+    "message": "thnx",
+    "sentiment": 0,
+    "timestamp": "2009-04-04T02:20:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "4/4/2009",
+    "time": "1:49:00 pm",
+    "sender": "quantumkenny",
+    "receiver": "",
+    "message": "Ubutntu 9.04 beta: compiz: missing transparency effeccts on all windows.  everything else in compiz works great.  any ideas?",
+    "sentiment": 1,
+    "timestamp": "2009-04-04T08:19:00.000Z",
+    "responseTime": 21540
+  },
+  {
+    "date": "4/4/2009",
+    "time": "1:49:00 pm",
+    "sender": "quantumkenny",
+    "receiver": "",
+    "message": "intel graphics",
+    "sentiment": 0,
+    "timestamp": "2009-04-04T08:19:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "4/4/2009",
+    "time": "1:49:00 pm",
+    "sender": "musikgoat|main",
+    "receiver": "quantumkenny",
+    "message": "#ubuntu+1",
+    "sentiment": 0,
+    "timestamp": "2009-04-04T08:19:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "17/4/2009",
+    "time": "5:11:00 am",
+    "sender": "GunbladeIV",
+    "receiver": "",
+    "message": "Question: may i know what is the channel for update packaging tutorial?",
+    "sentiment": 0,
+    "timestamp": "2009-04-16T23:41:00.000Z",
+    "responseTime": 1092120
+  },
+  {
+    "date": "17/4/2009",
+    "time": "5:11:00 am",
+    "sender": "Pici",
+    "receiver": "GunbladeIV",
+    "message": "#ubuntu-motu",
+    "sentiment": 0,
+    "timestamp": "2009-04-16T23:41:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "17/4/2009",
+    "time": "5:11:00 am",
+    "sender": "GunbladeIV",
+    "receiver": "Pici",
+    "message": "thanks :)",
+    "sentiment": 2,
+    "timestamp": "2009-04-16T23:41:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "19/4/2009",
+    "time": "11:04:00 am",
+    "sender": "_some0ne",
+    "receiver": "",
+    "message": "does a live ubuntu 8.10 session allow to write to ntfs easily?",
+    "sentiment": 1,
+    "timestamp": "2009-04-19T05:34:00.000Z",
+    "responseTime": 193980
+  },
+  {
+    "date": "19/4/2009",
+    "time": "11:05:00 am",
+    "sender": "elexodus",
+    "receiver": "_some0ne",
+    "message": "No, Live session is read only",
+    "sentiment": -1,
+    "timestamp": "2009-04-19T05:35:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "19/4/2009",
+    "time": "11:05:00 am",
+    "sender": "elexodus",
+    "receiver": "_some0ne",
+    "message": "yup",
+    "sentiment": 0,
+    "timestamp": "2009-04-19T05:35:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "23/4/2009",
+    "time": "5:45:00 pm",
+    "sender": "sriramoman",
+    "receiver": "",
+    "message": "what time will jaunty-ubuntu mostly be released",
+    "sentiment": 0,
+    "timestamp": "2009-04-23T12:15:00.000Z",
+    "responseTime": 369600
+  },
+  {
+    "date": "23/4/2009",
+    "time": "5:45:00 pm",
+    "sender": "g4lt-lappy",
+    "receiver": "sriramoman",
+    "message": "^^^^^",
+    "sentiment": 0,
+    "timestamp": "2009-04-23T12:15:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "23/4/2009",
+    "time": "5:46:00 pm",
+    "sender": "sriramoman",
+    "receiver": "g4lt-lappy",
+    "message": "it doesnt state the time...",
+    "sentiment": 0,
+    "timestamp": "2009-04-23T12:16:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "1/5/2009",
+    "time": "7:58:00 pm",
+    "sender": "traisen",
+    "receiver": "",
+    "message": "ikona: sudo -i login / sudo login / sudo su / sudo -i  rootuserid dont work for me.",
+    "sentiment": 0,
+    "timestamp": "2009-05-01T14:28:00.000Z",
+    "responseTime": 699120
+  },
+  {
+    "date": "1/5/2009",
+    "time": "7:59:00 pm",
+    "sender": "traisen",
+    "receiver": "",
+    "message": "from man sudo -i looks reasonable, but sudo anything asks for the current userids password and then says its not in the sudousers file.",
+    "sentiment": 0,
+    "timestamp": "2009-05-01T14:29:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "1/5/2009",
+    "time": "7:59:00 pm",
+    "sender": "gordonjcp",
+    "receiver": "traisen",
+    "message": "how did you get to a state where your user isn't in sudoers?",
+    "sentiment": 0,
+    "timestamp": "2009-05-01T14:29:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "5/5/2009",
+    "time": "7:35:00 am",
+    "sender": "nikkiclau",
+    "receiver": "usr13",
+    "message": "pointless if you're using the same system and using linux",
+    "sentiment": -2,
+    "timestamp": "2009-05-05T02:05:00.000Z",
+    "responseTime": 300960
+  },
+  {
+    "date": "5/5/2009",
+    "time": "7:35:00 am",
+    "sender": "nikkiclau",
+    "receiver": "usr13",
+    "message": "takes precious hard drive space away ;-)",
+    "sentiment": -1,
+    "timestamp": "2009-05-05T02:05:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "5/5/2009",
+    "time": "7:36:00 am",
+    "sender": "usr13",
+    "receiver": "nikkiclau",
+    "message": "Well, yes if one is enough, one is enough.  And yes, one big one is better (in my opoinion and obviously yours too).",
+    "sentiment": 5,
+    "timestamp": "2009-05-05T02:06:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "16/5/2009",
+    "time": "8:24:00 am",
+    "sender": "shipitkthx",
+    "receiver": "",
+    "message": "ok so im upgrading a server from gutsy to hardy over ssh, and it just got to 'starting kernel log daemon' and now its just hanging there, im lost as far as what to do",
+    "sentiment": -1,
+    "timestamp": "2009-05-16T02:54:00.000Z",
+    "responseTime": 953280
+  },
+  {
+    "date": "16/5/2009",
+    "time": "8:26:00 am",
+    "sender": "IcemanV9",
+    "receiver": "shipitkthx",
+    "message": "do you have access to the server? if yes, then do it on the console.",
+    "sentiment": 1,
+    "timestamp": "2009-05-16T02:56:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "16/5/2009",
+    "time": "8:28:00 am",
+    "sender": "IcemanV9",
+    "receiver": "shipitkthx",
+    "message": "ah. okay. then, you'll need to check it out to be sure that it can be reboot when it's done.",
+    "sentiment": 0,
+    "timestamp": "2009-05-16T02:58:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "16/5/2009",
+    "time": "8:52:00 pm",
+    "sender": "leeguy92",
+    "receiver": "",
+    "message": "how do i generate an xorg.conf file?",
+    "sentiment": 0,
+    "timestamp": "2009-05-16T15:22:00.000Z",
+    "responseTime": 44640
+  },
+  {
+    "date": "16/5/2009",
+    "time": "8:53:00 pm",
+    "sender": "leeguy92",
+    "receiver": "",
+    "message": "for intel GMAs",
+    "sentiment": 0,
+    "timestamp": "2009-05-16T15:23:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "16/5/2009",
+    "time": "8:53:00 pm",
+    "sender": "ozzmosis",
+    "receiver": "leeguy92",
+    "message": "'sudo xorg -configure', I think",
+    "sentiment": 0,
+    "timestamp": "2009-05-16T15:23:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "20/5/2009",
+    "time": "1:28:00 pm",
+    "sender": "C-00000100",
+    "receiver": "Severity1",
+    "message": "what is bartek trying to do?",
+    "sentiment": 0,
+    "timestamp": "2009-05-20T07:58:00.000Z",
+    "responseTime": 318900
+  },
+  {
+    "date": "20/5/2009",
+    "time": "1:31:00 pm",
+    "sender": "C-00000100",
+    "receiver": "Severity1",
+    "message": "is he trying to play online video?",
+    "sentiment": 0,
+    "timestamp": "2009-05-20T08:01:00.000Z",
+    "responseTime": 180
+  },
+  {
+    "date": "20/5/2009",
+    "time": "1:34:00 pm",
+    "sender": "C-00000100",
+    "receiver": "Severity1",
+    "message": "bartek go here, if this doesn't play then it gives you a link to get it... http://www.milkandcookies.com/link/45466/detail/",
+    "sentiment": 0,
+    "timestamp": "2009-05-20T08:04:00.000Z",
+    "responseTime": 180
+  },
+  {
+    "date": "1/6/2009",
+    "time": "3:00:00 pm",
+    "sender": "dsl579",
+    "receiver": "",
+    "message": "whats the command to remove a whole directory",
+    "sentiment": 0,
+    "timestamp": "2009-06-01T09:30:00.000Z",
+    "responseTime": 1041960
+  },
+  {
+    "date": "1/6/2009",
+    "time": "3:00:00 pm",
+    "sender": "usser",
+    "receiver": "dsl579",
+    "message": "rm -r directory",
+    "sentiment": 0,
+    "timestamp": "2009-06-01T09:30:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "1/6/2009",
+    "time": "3:01:00 pm",
+    "sender": "usser",
+    "receiver": "dsl579",
+    "message": "make sure you type the directory name correctly, rm -r is irreversible",
+    "sentiment": -1,
+    "timestamp": "2009-06-01T09:31:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "4/6/2009",
+    "time": "5:24:00 am",
+    "sender": "Zimphin",
+    "receiver": "",
+    "message": "any OS is better than windows",
+    "sentiment": 2,
+    "timestamp": "2009-06-03T23:54:00.000Z",
+    "responseTime": 224580
+  },
+  {
+    "date": "4/6/2009",
+    "time": "5:24:00 am",
+    "sender": "Zimphin",
+    "receiver": "",
+    "message": "All microshit employees should be stoned to death",
+    "sentiment": -2,
+    "timestamp": "2009-06-03T23:54:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "4/6/2009",
+    "time": "5:24:00 am",
+    "sender": "Jack_Sparrow",
+    "receiver": "Zimphin",
+    "message": "please stop",
+    "sentiment": 0,
+    "timestamp": "2009-06-03T23:54:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "16/6/2009",
+    "time": "7:03:00 pm",
+    "sender": "g7",
+    "receiver": "",
+    "message": "what is your wireless problem?",
+    "sentiment": -2,
+    "timestamp": "2009-06-16T13:33:00.000Z",
+    "responseTime": 1085940
+  },
+  {
+    "date": "16/6/2009",
+    "time": "7:03:00 pm",
+    "sender": "ls1983",
+    "receiver": "g7",
+    "message": "it will not connect keeps asking for passphrase altough i have inputted the right and using key1, WEP",
+    "sentiment": 0,
+    "timestamp": "2009-06-16T13:33:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "16/6/2009",
+    "time": "7:05:00 pm",
+    "sender": "ls1983",
+    "receiver": "g7",
+    "message": "yes it's a wirless router and had it connected before but no its not workin",
+    "sentiment": 0,
+    "timestamp": "2009-06-16T13:35:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "20/6/2009",
+    "time": "4:27:00 am",
+    "sender": "new2linx",
+    "receiver": "",
+    "message": "anyone. i really need help understand perl rename. i am trying to rename a bunch of movies that are movie1 cd1.avi movie1 cd2.avi so that they are movie1.1.avi and movie1.2.avi. i have found rename.pl 's/\\.orig$//' *.orig but i am not sure how to modify it for what I want.",
+    "sentiment": 3,
+    "timestamp": "2009-06-19T22:57:00.000Z",
+    "responseTime": 292920
+  },
+  {
+    "date": "20/6/2009",
+    "time": "4:28:00 am",
+    "sender": "Flannel",
+    "receiver": "new2linx",
+    "message": "rename applies the regular expression to the files",
+    "sentiment": 0,
+    "timestamp": "2009-06-19T22:58:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "20/6/2009",
+    "time": "4:29:00 am",
+    "sender": "new2linx",
+    "receiver": "Flannel",
+    "message": "so i won't be able to use perl rename to do what I want?",
+    "sentiment": 1,
+    "timestamp": "2009-06-19T22:59:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "26/6/2009",
+    "time": "3:35:00 am",
+    "sender": "RkyRaccoon",
+    "receiver": "",
+    "message": "can someone help me print from a wireless printer using 9.04?",
+    "sentiment": 2,
+    "timestamp": "2009-06-25T22:05:00.000Z",
+    "responseTime": 515160
+  },
+  {
+    "date": "26/6/2009",
+    "time": "3:35:00 am",
+    "sender": "mezquitale",
+    "receiver": "RkyRaccoon",
+    "message": "is the wireless printer already set up?? Does it have an ip and can you ping it?",
+    "sentiment": 0,
+    "timestamp": "2009-06-25T22:05:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "26/6/2009",
+    "time": "3:36:00 am",
+    "sender": "RkyRaccoon",
+    "receiver": "mezquitale",
+    "message": "its my dads, ive never used it before.  IT works for him so i think its all set up",
+    "sentiment": 0,
+    "timestamp": "2009-06-25T22:06:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "1/7/2009",
+    "time": "4:09:00 pm",
+    "sender": "redsoxking",
+    "receiver": "",
+    "message": "best video editing software? ANYONE",
+    "sentiment": 3,
+    "timestamp": "2009-07-01T10:39:00.000Z",
+    "responseTime": 477180
+  },
+  {
+    "date": "1/7/2009",
+    "time": "4:09:00 pm",
+    "sender": "cellofellow",
+    "receiver": "redsoxking",
+    "message": "while not particularly full-featured or pretty, openmovieeditor is nice.",
+    "sentiment": 4,
+    "timestamp": "2009-07-01T10:39:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "1/7/2009",
+    "time": "4:09:00 pm",
+    "sender": "cellofellow",
+    "receiver": "redsoxking",
+    "message": "if you can get it to work, PiTiVi.",
+    "sentiment": 0,
+    "timestamp": "2009-07-01T10:39:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "30/7/2009",
+    "time": "8:27:00 am",
+    "sender": "^Phantom^",
+    "receiver": "",
+    "message": "I downloaded Google Earth, or so I thought, but ended up with a useless .bin file.  I wanted to install Google Earth, but can't do jack shit with the file I ended up with.  What a worthless fucking waste of 25MB!",
+    "sentiment": -13,
+    "timestamp": "2009-07-30T02:57:00.000Z",
+    "responseTime": 2477880
+  },
+  {
+    "date": "30/7/2009",
+    "time": "8:28:00 am",
+    "sender": "jussi01",
+    "receiver": "^Phantom^",
+    "message": "medibuntu has google earth in it",
+    "sentiment": 0,
+    "timestamp": "2009-07-30T02:58:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "30/7/2009",
+    "time": "8:40:00 am",
+    "sender": "jussi01",
+    "receiver": "^Phantom^",
+    "message": "please watch the language",
+    "sentiment": 1,
+    "timestamp": "2009-07-30T03:10:00.000Z",
+    "responseTime": 720
+  },
+  {
+    "date": "1/8/2009",
+    "time": "11:52:00 am",
+    "sender": "mechtech",
+    "receiver": "",
+    "message": "Sock Puppe?t",
+    "sentiment": 0,
+    "timestamp": "2009-08-01T06:22:00.000Z",
+    "responseTime": 184320
+  },
+  {
+    "date": "1/8/2009",
+    "time": "11:52:00 am",
+    "sender": "mechtech",
+    "receiver": "",
+    "message": "WTF?",
+    "sentiment": -4,
+    "timestamp": "2009-08-01T06:22:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "1/8/2009",
+    "time": "11:52:00 am",
+    "sender": "richardcavell",
+    "receiver": "mechtech",
+    "message": "it's a wikipedia term.  There is Prodigy, PRDIGY and prgidy and they're all the same guy",
+    "sentiment": 0,
+    "timestamp": "2009-08-01T06:22:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "16/8/2009",
+    "time": "3:18:00 am",
+    "sender": "mook1",
+    "receiver": "",
+    "message": "http://pastebin.com/d74f8dc93",
+    "sentiment": 0,
+    "timestamp": "2009-08-15T21:48:00.000Z",
+    "responseTime": 1265160
+  },
+  {
+    "date": "16/8/2009",
+    "time": "3:18:00 am",
+    "sender": "mook1",
+    "receiver": "",
+    "message": "i guese thats what you want no ?",
+    "sentiment": 0,
+    "timestamp": "2009-08-15T21:48:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "16/8/2009",
+    "time": "3:19:00 am",
+    "sender": "shamm",
+    "receiver": "mook1",
+    "message": " lspci | grep vga",
+    "sentiment": 0,
+    "timestamp": "2009-08-15T21:49:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "2/9/2009",
+    "time": "8:23:00 am",
+    "sender": "jpds",
+    "receiver": "",
+    "message": "!pinning | zanberdo",
+    "sentiment": 0,
+    "timestamp": "2009-09-02T02:53:00.000Z",
+    "responseTime": 1487040
+  },
+  {
+    "date": "2/9/2009",
+    "time": "8:25:00 am",
+    "sender": "jpds",
+    "receiver": "",
+    "message": "!guidelines | cryptopsy",
+    "sentiment": 0,
+    "timestamp": "2009-09-02T02:55:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "2/9/2009",
+    "time": "8:25:00 am",
+    "sender": "cryptopsy",
+    "receiver": "jpds",
+    "message": "/topic works too - I find it more conveniant than copy/pasting. What say you?",
+    "sentiment": 0,
+    "timestamp": "2009-09-02T02:55:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "27/9/2009",
+    "time": "1:45:00 am",
+    "sender": "ranasco",
+    "receiver": "",
+    "message": "please help me i movie player display not fine where i go for better performance",
+    "sentiment": 3,
+    "timestamp": "2009-09-26T20:15:00.000Z",
+    "responseTime": 2136000
+  },
+  {
+    "date": "27/9/2009",
+    "time": "1:45:00 am",
+    "sender": "Barnabas",
+    "receiver": "ranasco",
+    "message": "what GPU do you have",
+    "sentiment": 0,
+    "timestamp": "2009-09-26T20:15:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "27/9/2009",
+    "time": "1:47:00 am",
+    "sender": "Barnabas",
+    "receiver": "ranasco",
+    "message": "Graphis Processing Unit",
+    "sentiment": 0,
+    "timestamp": "2009-09-26T20:17:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "27/9/2009",
+    "time": "2:36:00 pm",
+    "sender": "saurav",
+    "receiver": "",
+    "message": "can not read Bengali news paper aajkl in Firefox . i have installed padma duynamic fonts. It works only for Anandabazar. Do i install Netscape ?",
+    "sentiment": 0,
+    "timestamp": "2009-09-27T09:06:00.000Z",
+    "responseTime": 46140
+  },
+  {
+    "date": "27/9/2009",
+    "time": "2:36:00 pm",
+    "sender": "tanjir",
+    "receiver": "saurav",
+    "message": "why do you think people knows about ajkal here? :P",
+    "sentiment": 0,
+    "timestamp": "2009-09-27T09:06:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "27/9/2009",
+    "time": "2:44:00 pm",
+    "sender": "tanjir",
+    "receiver": "saurav",
+    "message": "you still can run IE in ubuntu... lol",
+    "sentiment": 3,
+    "timestamp": "2009-09-27T09:14:00.000Z",
+    "responseTime": 480
+  },
+  {
+    "date": "30/9/2009",
+    "time": "1:49:00 pm",
+    "sender": "The-Last-C",
+    "receiver": "",
+    "message": "CAN ANYONE HELP me with installing a video game? The first patch won't update the game, but the others try to patch and pretend to succeed but they need the first patch to do this. I'm stuck with this game and it won't work unless the first patch is installed... I think it may have something to do with the ms.net framework but I'm not sure....",
+    "sentiment": 2,
+    "timestamp": "2009-09-30T08:19:00.000Z",
+    "responseTime": 255900
+  },
+  {
+    "date": "30/9/2009",
+    "time": "1:50:00 pm",
+    "sender": "Major_Quacks",
+    "receiver": "The-Last-C",
+    "message": "What game?",
+    "sentiment": 0,
+    "timestamp": "2009-09-30T08:20:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "30/9/2009",
+    "time": "1:55:00 pm",
+    "sender": "Major_Quacks",
+    "receiver": "The-Last-C",
+    "message": "I havnt had to need that, I have no experience there, sorry, but I wonder if you could... Hm",
+    "sentiment": -2,
+    "timestamp": "2009-09-30T08:25:00.000Z",
+    "responseTime": 300
+  },
+  {
+    "date": "25/10/2009",
+    "time": "10:56:00 am",
+    "sender": "symptom",
+    "receiver": "",
+    "message": "hello, Can anyone point me to a good tutorial on how to write your own drivers for linux",
+    "sentiment": 3,
+    "timestamp": "2009-10-25T05:26:00.000Z",
+    "responseTime": 2149260
+  },
+  {
+    "date": "25/10/2009",
+    "time": "10:57:00 am",
+    "sender": "lazyshrk",
+    "receiver": "symptom",
+    "message": "Greg Kroah-Hartman had a talk about it, there is a video somewhere",
+    "sentiment": 0,
+    "timestamp": "2009-10-25T05:27:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "25/10/2009",
+    "time": "10:57:00 am",
+    "sender": "lazyshrk",
+    "receiver": "symptom",
+    "message": "1 hour or so, where he goes through examples",
+    "sentiment": 0,
+    "timestamp": "2009-10-25T05:27:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "28/10/2009",
+    "time": "5:28:00 am",
+    "sender": "umberto",
+    "receiver": "",
+    "message": "hello everybody",
+    "sentiment": 0,
+    "timestamp": "2009-10-27T23:58:00.000Z",
+    "responseTime": 239460
+  },
+  {
+    "date": "28/10/2009",
+    "time": "5:29:00 am",
+    "sender": "umberto",
+    "receiver": "",
+    "message": "i've a simple problem",
+    "sentiment": -2,
+    "timestamp": "2009-10-27T23:59:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "28/10/2009",
+    "time": "5:29:00 am",
+    "sender": "Xs3s3",
+    "receiver": "umberto",
+    "message": "which is?",
+    "sentiment": 0,
+    "timestamp": "2009-10-27T23:59:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "28/10/2009",
+    "time": "5:42:00 am",
+    "sender": "rcmaehl",
+    "receiver": "ubuntu",
+    "message": "9.04 jaunty jackalope",
+    "sentiment": 2,
+    "timestamp": "2009-10-28T00:12:00.000Z",
+    "responseTime": 780
+  },
+  {
+    "date": "1/11/2009",
+    "time": "2:18:00 am",
+    "sender": "Guest28473",
+    "receiver": "ubuntu",
+    "message": "crashes from moving my mouse pointer",
+    "sentiment": 0,
+    "timestamp": "2009-10-31T20:48:00.000Z",
+    "responseTime": 333360
+  },
+  {
+    "date": "1/11/2009",
+    "time": "2:19:00 am",
+    "sender": "Guest28473",
+    "receiver": "ubuntu",
+    "message": "crashes from moving my mouse pointer and it freezes",
+    "sentiment": 0,
+    "timestamp": "2009-10-31T20:49:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "1/11/2009",
+    "time": "2:20:00 am",
+    "sender": "Guest28473",
+    "receiver": "ubuntu",
+    "message": "crashes from moving my mouse pointer and it freezes",
+    "sentiment": 0,
+    "timestamp": "2009-10-31T20:50:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "30/11/2009",
+    "time": "6:02:00 am",
+    "sender": "BillHarris",
+    "receiver": "",
+    "message": "what incantation lets me see virtual terminals?  They're there, but since sometime in Jaunty, they're black on black.",
+    "sentiment": 2,
+    "timestamp": "2009-11-30T00:32:00.000Z",
+    "responseTime": 2518920
+  },
+  {
+    "date": "30/11/2009",
+    "time": "6:04:00 am",
+    "sender": "BillHarris",
+    "receiver": "",
+    "message": "will a desktop install use my current /, /boot, and swap partitions and let me keep my /home partition, or is that better done from the alt install?",
+    "sentiment": 2,
+    "timestamp": "2009-11-30T00:34:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "30/11/2009",
+    "time": "6:04:00 am",
+    "sender": "VCoolio",
+    "receiver": "BillHarris",
+    "message": "normal install can do that too, just don't format /home",
+    "sentiment": 0,
+    "timestamp": "2009-11-30T00:34:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "1/12/2009",
+    "time": "3:55:00 am",
+    "sender": "aeon-ltd",
+    "receiver": "",
+    "message": "parsi: chmod 777",
+    "sentiment": 0,
+    "timestamp": "2009-11-30T22:25:00.000Z",
+    "responseTime": 78660
+  },
+  {
+    "date": "1/12/2009",
+    "time": "3:55:00 am",
+    "sender": "aeon-ltd",
+    "receiver": "",
+    "message": "parsi: to the file",
+    "sentiment": 0,
+    "timestamp": "2009-11-30T22:25:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "1/12/2009",
+    "time": "3:55:00 am",
+    "sender": "Parsi",
+    "receiver": "aeon-ltd",
+    "message": "^^^",
+    "sentiment": 0,
+    "timestamp": "2009-11-30T22:25:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "23/12/2009",
+    "time": "5:40:00 am",
+    "sender": "thevishy",
+    "receiver": "",
+    "message": "are there any utils that will do a repair of your laptop once in a while ?",
+    "sentiment": 0,
+    "timestamp": "2009-12-23T00:10:00.000Z",
+    "responseTime": 1907100
+  },
+  {
+    "date": "23/12/2009",
+    "time": "5:40:00 am",
+    "sender": "thevishy",
+    "receiver": "",
+    "message": "like you have advaned system optimizer in windows sort of stuff",
+    "sentiment": 2,
+    "timestamp": "2009-12-23T00:10:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "23/12/2009",
+    "time": "5:40:00 am",
+    "sender": "kuttans",
+    "receiver": "thevishy",
+    "message": "repair in the sense? clean up of unused files ?",
+    "sentiment": 2,
+    "timestamp": "2009-12-23T00:10:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "15/1/2010",
+    "time": "8:50:00 am",
+    "sender": "Ziber",
+    "receiver": "",
+    "message": "anyone seen http://zpaste.org/7045 before?",
+    "sentiment": 0,
+    "timestamp": "2010-01-15T03:20:00.000Z",
+    "responseTime": 1998600
+  },
+  {
+    "date": "15/1/2010",
+    "time": "8:51:00 am",
+    "sender": "iceroot",
+    "receiver": "Ziber",
+    "message": "sudo apt-get install command-not-found",
+    "sentiment": 0,
+    "timestamp": "2010-01-15T03:21:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "23/1/2010",
+    "time": "4:35:00 am",
+    "sender": "iceroot",
+    "receiver": "Ziber",
+    "message": "yes",
+    "sentiment": 1,
+    "timestamp": "2010-01-22T23:05:00.000Z",
+    "responseTime": 675840
+  },
+  {
+    "date": "2/2/2010",
+    "time": "3:13:00 am",
+    "sender": "UbuntuUser",
+    "receiver": "",
+    "message": "Hi all, I want to install the guest extensions of virtualbox in ubuntu 10.04",
+    "sentiment": 1,
+    "timestamp": "2010-02-01T21:43:00.000Z",
+    "responseTime": 859080
+  },
+  {
+    "date": "2/2/2010",
+    "time": "3:13:00 am",
+    "sender": "UbuntuUser",
+    "receiver": "",
+    "message": "but they dont work",
+    "sentiment": 0,
+    "timestamp": "2010-02-01T21:43:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "2/2/2010",
+    "time": "3:13:00 am",
+    "sender": "Pici",
+    "receiver": "UbuntuUser",
+    "message": ": Please join #ubuntu+1 for Lucid/10.4 support/discussion.",
+    "sentiment": 4,
+    "timestamp": "2010-02-01T21:43:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "17/3/2010",
+    "time": "10:06:00 am",
+    "sender": "hardbop200",
+    "receiver": "",
+    "message": "hi all - I'm trying to find ttf-bitstream-vera for karmic, but it's not there, and my google-fu is failing me. can someone point me to some hints?",
+    "sentiment": -2,
+    "timestamp": "2010-03-17T04:36:00.000Z",
+    "responseTime": 3739980
+  },
+  {
+    "date": "17/3/2010",
+    "time": "10:07:00 am",
+    "sender": "erUSUL",
+    "receiver": "hardbop200",
+    "message": "they've been replaced by DejaVu fonts",
+    "sentiment": 0,
+    "timestamp": "2010-03-17T04:37:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "17/3/2010",
+    "time": "10:07:00 am",
+    "sender": "hardbop200",
+    "receiver": "erUSUL",
+    "message": "cool! thank you.",
+    "sentiment": 3,
+    "timestamp": "2010-03-17T04:37:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "9/5/2010",
+    "time": "10:09:00 pm",
+    "sender": "Dr_Willis",
+    "receiver": "ubuntusuperbegin",
+    "message": " the commands in 'linux' are normally the same across disrtos.",
+    "sentiment": 0,
+    "timestamp": "2010-05-09T16:39:00.000Z",
+    "responseTime": 4622520
+  },
+  {
+    "date": "19/5/2010",
+    "time": "7:24:00 pm",
+    "sender": "Fui",
+    "receiver": "",
+    "message": "#join hsa",
+    "sentiment": 1,
+    "timestamp": "2010-05-19T13:54:00.000Z",
+    "responseTime": 854100
+  },
+  {
+    "date": "19/5/2010",
+    "time": "7:24:00 pm",
+    "sender": "Fui",
+    "receiver": "",
+    "message": "join #hsa",
+    "sentiment": 1,
+    "timestamp": "2010-05-19T13:54:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "19/5/2010",
+    "time": "7:25:00 pm",
+    "sender": "onetinsoldier",
+    "receiver": "Fui",
+    "message": "try --> /join #hsa",
+    "sentiment": 1,
+    "timestamp": "2010-05-19T13:55:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "6/6/2010",
+    "time": "1:35:00 pm",
+    "sender": "FlameTai1",
+    "receiver": "",
+    "message": "Question guys, I know it's probably in the manual some where but I'm too lazy to look, where abouts is the setting to make the icons on the desktop smaller?",
+    "sentiment": -1,
+    "timestamp": "2010-06-06T08:05:00.000Z",
+    "responseTime": 1534200
+  },
+  {
+    "date": "6/6/2010",
+    "time": "1:36:00 pm",
+    "sender": "bastid_raZor",
+    "receiver": "FlameTai1",
+    "message": "can't you alt + middle click and resize them?",
+    "sentiment": 0,
+    "timestamp": "2010-06-06T08:06:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "6/6/2010",
+    "time": "1:36:00 pm",
+    "sender": "FlameTai1",
+    "receiver": "bastid_raZor",
+    "message": "That doesn't work for me",
+    "sentiment": 0,
+    "timestamp": "2010-06-06T08:06:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "19/7/2010",
+    "time": "6:13:00 am",
+    "sender": "bullgard4",
+    "receiver": "sheepz_",
+    "message": "Try Synaptic > File > History",
+    "sentiment": 0,
+    "timestamp": "2010-07-19T00:43:00.000Z",
+    "responseTime": 3688620
+  },
+  {
+    "date": "19/7/2010",
+    "time": "6:19:00 am",
+    "sender": "bullgard4",
+    "receiver": "",
+    "message": " /usr/lib/firefox-3.6.6 in mc shows Owner: root/src even after I have re-installed all packages having 'firefox' in their names. How to fix this?",
+    "sentiment": 0,
+    "timestamp": "2010-07-19T00:49:00.000Z",
+    "responseTime": 360
+  },
+  {
+    "date": "19/7/2010",
+    "time": "6:19:00 am",
+    "sender": "sheepz_",
+    "receiver": "bullgard4",
+    "message": "thank you",
+    "sentiment": 2,
+    "timestamp": "2010-07-19T00:49:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "19/7/2010",
+    "time": "7:29:00 pm",
+    "sender": "bytesoup",
+    "receiver": "",
+    "message": "Hello folks, can i post a link to a launchpad question I have open at the moment to get more visibility / help?",
+    "sentiment": 2,
+    "timestamp": "2010-07-19T13:59:00.000Z",
+    "responseTime": 47400
+  },
+  {
+    "date": "19/7/2010",
+    "time": "7:30:00 pm",
+    "sender": "violinappren",
+    "receiver": "bytesoup",
+    "message": "post it",
+    "sentiment": 0,
+    "timestamp": "2010-07-19T14:00:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "19/7/2010",
+    "time": "7:30:00 pm",
+    "sender": "bytesoup",
+    "receiver": "violinappren",
+    "message": "thanks",
+    "sentiment": 2,
+    "timestamp": "2010-07-19T14:00:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "24/7/2010",
+    "time": "8:13:00 am",
+    "sender": "Apocryphic",
+    "receiver": "",
+    "message": "Is something going on?  All of my mini.iso installs are failing on the linux-generic package.",
+    "sentiment": -2,
+    "timestamp": "2010-07-24T02:43:00.000Z",
+    "responseTime": 391380
+  },
+  {
+    "date": "24/7/2010",
+    "time": "8:13:00 am",
+    "sender": "Apocryphic",
+    "receiver": "",
+    "message": "They were working before, but it's been a few weeks since I needed to install Ubuntu.",
+    "sentiment": 0,
+    "timestamp": "2010-07-24T02:43:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "24/7/2010",
+    "time": "8:14:00 am",
+    "sender": "trism",
+    "receiver": "Apocryphic",
+    "message": "the linux-generic various meta packages have been updated, but the actual packages aren't up yet (or they weren't earlier)",
+    "sentiment": 0,
+    "timestamp": "2010-07-24T02:44:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "10/8/2010",
+    "time": "3:49:00 am",
+    "sender": "Knifas_",
+    "receiver": "",
+    "message": "i'm back",
+    "sentiment": 0,
+    "timestamp": "2010-08-09T22:19:00.000Z",
+    "responseTime": 1452900
+  },
+  {
+    "date": "10/8/2010",
+    "time": "3:50:00 am",
+    "sender": "Knifas_",
+    "receiver": "",
+    "message": "i got into my bios",
+    "sentiment": 0,
+    "timestamp": "2010-08-09T22:20:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "10/8/2010",
+    "time": "3:51:00 am",
+    "sender": "sacarlson",
+    "receiver": "Knifas_",
+    "message": "I knew you could do it",
+    "sentiment": 0,
+    "timestamp": "2010-08-09T22:21:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "11/8/2010",
+    "time": "10:28:00 am",
+    "sender": "EDinNY",
+    "receiver": "",
+    "message": "hints on how  to get Nvidia driver to work?",
+    "sentiment": 0,
+    "timestamp": "2010-08-11T04:58:00.000Z",
+    "responseTime": 110220
+  },
+  {
+    "date": "11/8/2010",
+    "time": "10:29:00 am",
+    "sender": "ilovefairuz",
+    "receiver": "EDinNY",
+    "message": "https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia",
+    "sentiment": 2,
+    "timestamp": "2010-08-11T04:59:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "11/8/2010",
+    "time": "10:29:00 am",
+    "sender": "EDinNY",
+    "receiver": "ilovefairuz",
+    "message": "thanks",
+    "sentiment": 2,
+    "timestamp": "2010-08-11T04:59:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "25/8/2010",
+    "time": "1:26:00 am",
+    "sender": "pozic",
+    "receiver": "Somelauw",
+    "message": "the algorithms from aptitude were ported to apt-get, AFAIK.",
+    "sentiment": 0,
+    "timestamp": "2010-08-24T19:56:00.000Z",
+    "responseTime": 1177020
+  },
+  {
+    "date": "25/8/2010",
+    "time": "1:26:00 am",
+    "sender": "pozic",
+    "receiver": "Somelauw",
+    "message": "aptitude was more advanced at some point.",
+    "sentiment": 1,
+    "timestamp": "2010-08-24T19:56:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "27/8/2010",
+    "time": "4:59:00 pm",
+    "sender": "mjwalker",
+    "receiver": "",
+    "message": " itsux2bu i use Deskyop version",
+    "sentiment": 0,
+    "timestamp": "2010-08-27T11:29:00.000Z",
+    "responseTime": 228780
+  },
+  {
+    "date": "27/8/2010",
+    "time": "4:59:00 pm",
+    "sender": "mjwalker",
+    "receiver": "",
+    "message": "shall i use Server one",
+    "sentiment": 0,
+    "timestamp": "2010-08-27T11:29:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "27/8/2010",
+    "time": "5:01:00 pm",
+    "sender": "KB1JWQ",
+    "receiver": "mjwalker",
+    "message": "Yes.  Postfix + Dovecot tend to make a decent email stack.",
+    "sentiment": 1,
+    "timestamp": "2010-08-27T11:31:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "2/9/2010",
+    "time": "5:01:00 am",
+    "sender": "asdzek",
+    "receiver": "",
+    "message": "Hi. I have a windows xp iso file, I would like to copy content of this .iso file to my pendrive and make it bootable. How can I do that under ubuntu?",
+    "sentiment": 2,
+    "timestamp": "2010-09-01T23:31:00.000Z",
+    "responseTime": 475200
+  },
+  {
+    "date": "2/9/2010",
+    "time": "5:02:00 am",
+    "sender": "asdzek",
+    "receiver": "",
+    "message": "are you kidding me? making bootable USB stick is 'highly  windows specific issue'?",
+    "sentiment": 0,
+    "timestamp": "2010-09-01T23:32:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "2/9/2010",
+    "time": "5:03:00 am",
+    "sender": "Muelli",
+    "receiver": "asdzek",
+    "message": "making a *Windows* bootable off a pendrive is.",
+    "sentiment": 0,
+    "timestamp": "2010-09-01T23:33:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "4/9/2010",
+    "time": "12:11:00 am",
+    "sender": "pozic",
+    "receiver": "Somelauw",
+    "message": "convert probably can do that.",
+    "sentiment": 0,
+    "timestamp": "2010-09-03T18:41:00.000Z",
+    "responseTime": 155280
+  },
+  {
+    "date": "27/9/2010",
+    "time": "9:31:00 am",
+    "sender": "thanis1200",
+    "receiver": "",
+    "message": "does anyone know how FF can use 99-100% CPU ?",
+    "sentiment": 0,
+    "timestamp": "2010-09-27T04:01:00.000Z",
+    "responseTime": 2020800
+  },
+  {
+    "date": "27/9/2010",
+    "time": "9:32:00 am",
+    "sender": "thanis1200",
+    "receiver": "",
+    "message": "no flash usage at all",
+    "sentiment": -1,
+    "timestamp": "2010-09-27T04:02:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "27/9/2010",
+    "time": "9:32:00 am",
+    "sender": "jrib",
+    "receiver": "thanis1200",
+    "message": "javascript",
+    "sentiment": 0,
+    "timestamp": "2010-09-27T04:02:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "10/10/2010",
+    "time": "10:38:00 pm",
+    "sender": "weeman",
+    "receiver": "",
+    "message": "Trying to install 10+ distros on HD each booted by Grub1  title Empty @ hda1 chainloader (hd0,0)+1  and so on. Problem 'Error 1: Filename must be either an absolute pathname or blocklist'",
+    "sentiment": -3,
+    "timestamp": "2010-10-10T17:08:00.000Z",
+    "responseTime": 1170360
+  },
+  {
+    "date": "10/10/2010",
+    "time": "10:39:00 pm",
+    "sender": "weeman",
+    "receiver": "",
+    "message": "I am following the JustLinux Saikee tutorial are newer distros broken for grub1 ?",
+    "sentiment": -1,
+    "timestamp": "2010-10-10T17:09:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "10/10/2010",
+    "time": "10:39:00 pm",
+    "sender": "maurer_1",
+    "receiver": "weeman",
+    "message": "Curiosity, why are you using grub1?",
+    "sentiment": 0,
+    "timestamp": "2010-10-10T17:09:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "19/10/2010",
+    "time": "8:14:00 pm",
+    "sender": "Krishnandu",
+    "receiver": "anjoe",
+    "message": "look at the download page",
+    "sentiment": 0,
+    "timestamp": "2010-10-19T14:44:00.000Z",
+    "responseTime": 768900
+  },
+  {
+    "date": "19/10/2010",
+    "time": "8:14:00 pm",
+    "sender": "Krishnandu",
+    "receiver": "anjoe",
+    "message": "without live desktop and the gui",
+    "sentiment": 0,
+    "timestamp": "2010-10-19T14:44:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "19/10/2010",
+    "time": "8:26:00 pm",
+    "sender": "Krishnandu",
+    "receiver": "anjoe",
+    "message": "grub.cfg",
+    "sentiment": 0,
+    "timestamp": "2010-10-19T14:56:00.000Z",
+    "responseTime": 720
+  },
+  {
+    "date": "1/11/2010",
+    "time": "9:26:00 am",
+    "sender": "CaneToad",
+    "receiver": "",
+    "message": "when I upgraded from 10.04 to 10.10, the upgrade process put the UUID of the wrong partition in /boot/grub/menu.lst ... which package should I report a bug against?",
+    "sentiment": -2,
+    "timestamp": "2010-11-01T03:56:00.000Z",
+    "responseTime": 1083600
+  },
+  {
+    "date": "1/11/2010",
+    "time": "9:27:00 am",
+    "sender": "Devilz_108",
+    "receiver": "CaneToad",
+    "message": "Against the upgrade tool",
+    "sentiment": 0,
+    "timestamp": "2010-11-01T03:57:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "1/11/2010",
+    "time": "9:28:00 am",
+    "sender": "CaneToad",
+    "receiver": "Devilz_108",
+    "message": "thanks",
+    "sentiment": 2,
+    "timestamp": "2010-11-01T03:58:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "11/11/2010",
+    "time": "12:09:00 am",
+    "sender": "k-rad",
+    "receiver": "",
+    "message": "does Ubuntu outsource india ?",
+    "sentiment": 0,
+    "timestamp": "2010-11-10T18:39:00.000Z",
+    "responseTime": 830460
+  },
+  {
+    "date": "11/11/2010",
+    "time": "12:10:00 am",
+    "sender": "sipior",
+    "receiver": "k-rad",
+    "message": "i think the Indians might have something to say about that.",
+    "sentiment": 0,
+    "timestamp": "2010-11-10T18:40:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "11/11/2010",
+    "time": "12:11:00 am",
+    "sender": "sipior",
+    "receiver": "k-rad",
+    "message": "what difference does it make? did you have an ubuntu-related question?",
+    "sentiment": 0,
+    "timestamp": "2010-11-10T18:41:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "14/12/2010",
+    "time": "5:40:00 pm",
+    "sender": "methylenedioxy",
+    "receiver": "",
+    "message": "Hm, what kinds of risks does it lead to?",
+    "sentiment": -2,
+    "timestamp": "2010-12-14T12:10:00.000Z",
+    "responseTime": 2914140
+  },
+  {
+    "date": "14/12/2010",
+    "time": "5:41:00 pm",
+    "sender": "methylenedioxy",
+    "receiver": "",
+    "message": "(If that's off-topic, don't worry about it :)",
+    "sentiment": 3,
+    "timestamp": "2010-12-14T12:11:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "14/12/2010",
+    "time": "5:42:00 pm",
+    "sender": "maco",
+    "receiver": "methylenedioxy",
+    "message": "i think the worry is about $bad_person executing things $admin hasn't installed/approved",
+    "sentiment": -4,
+    "timestamp": "2010-12-14T12:12:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "21/12/2010",
+    "time": "5:53:00 am",
+    "sender": "burt_",
+    "receiver": "",
+    "message": "It's easy if install first windows 7  and after it ubuntu.",
+    "sentiment": 1,
+    "timestamp": "2010-12-21T00:23:00.000Z",
+    "responseTime": 562260
+  },
+  {
+    "date": "21/12/2010",
+    "time": "5:55:00 am",
+    "sender": "burt_",
+    "receiver": "",
+    "message": "So as last is ubuntu it find all other operating files to startup.",
+    "sentiment": 0,
+    "timestamp": "2010-12-21T00:25:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "21/12/2010",
+    "time": "5:56:00 am",
+    "sender": "lancel",
+    "receiver": "burt_",
+    "message": "yes windows lost the bootloader or whatever it is but using liveCD it can be re-enabled",
+    "sentiment": -2,
+    "timestamp": "2010-12-21T00:26:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "8/1/2011",
+    "time": "5:34:00 am",
+    "sender": "Nesto1000",
+    "receiver": "",
+    "message": "Hi, can anyone help me? I am trying to encode a video using CLI and ffmpeg and x264. The thing is that I want to trim, deinterlace, and maybe resize the video... any help would be appreciated...",
+    "sentiment": 7,
+    "timestamp": "2011-01-08T00:04:00.000Z",
+    "responseTime": 1553880
+  },
+  {
+    "date": "8/1/2011",
+    "time": "5:35:00 am",
+    "sender": "Nesto1000",
+    "receiver": "",
+    "message": "MKV",
+    "sentiment": 0,
+    "timestamp": "2011-01-08T00:05:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "8/1/2011",
+    "time": "5:35:00 am",
+    "sender": "sam-_-",
+    "receiver": "Nesto1000",
+    "message": "man ffmpeg ?",
+    "sentiment": 0,
+    "timestamp": "2011-01-08T00:05:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "13/2/2011",
+    "time": "12:11:00 am",
+    "sender": "ncxcude",
+    "receiver": "",
+    "message": "how to clean remove wine and app that installs.... i try remove with 'apt-get purge wine' but my apps that install on wine still there... any help please :).",
+    "sentiment": 5,
+    "timestamp": "2011-02-12T18:41:00.000Z",
+    "responseTime": 3090960
+  },
+  {
+    "date": "13/2/2011",
+    "time": "12:12:00 am",
+    "sender": "rumpe1_",
+    "receiver": "ncxcude",
+    "message": "they are usually stored in $HOME/.wine",
+    "sentiment": 0,
+    "timestamp": "2011-02-12T18:42:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "13/2/2011",
+    "time": "12:12:00 am",
+    "sender": "rumpe1_",
+    "receiver": "ncxcude",
+    "message": "so the package-manager hasn't anything to do with it",
+    "sentiment": 0,
+    "timestamp": "2011-02-12T18:42:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "4/3/2011",
+    "time": "1:25:00 am",
+    "sender": "troulouliou",
+    "receiver": "",
+    "message": "hi i would like to upgrade to 11.04 from 10.04 but update-manager -d propose me only 10.10",
+    "sentiment": 2,
+    "timestamp": "2011-03-03T19:55:00.000Z",
+    "responseTime": 1645980
+  },
+  {
+    "date": "4/3/2011",
+    "time": "1:25:00 am",
+    "sender": "troulouliou",
+    "receiver": "",
+    "message": "should i change my preference to testing  or something like that ?",
+    "sentiment": 2,
+    "timestamp": "2011-03-03T19:55:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "4/3/2011",
+    "time": "1:27:00 am",
+    "sender": "Pici",
+    "receiver": "troulouliou",
+    "message": "Also, natty/11.04 support/discussion is only in #ubuntu+1",
+    "sentiment": 2,
+    "timestamp": "2011-03-03T19:57:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "15/4/2011",
+    "time": "12:11:00 am",
+    "sender": "karlo",
+    "receiver": "",
+    "message": "how I can change the computer name? I tried to change '/etc/hosts' and '/etc/hostname' but nothing",
+    "sentiment": 0,
+    "timestamp": "2011-04-14T18:41:00.000Z",
+    "responseTime": 3624240
+  },
+  {
+    "date": "15/4/2011",
+    "time": "12:11:00 am",
+    "sender": "KNUBBIG",
+    "receiver": "karlo",
+    "message": "sudo nano /etc/hostname helps certainly (after a reboot)",
+    "sentiment": 2,
+    "timestamp": "2011-04-14T18:41:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "15/4/2011",
+    "time": "12:12:00 am",
+    "sender": "KNUBBIG",
+    "receiver": "karlo",
+    "message": "yes afaik",
+    "sentiment": 1,
+    "timestamp": "2011-04-14T18:42:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "29/4/2011",
+    "time": "5:10:00 am",
+    "sender": "rcmaehl",
+    "receiver": "ubuntu",
+    "message": "11.04 today an ring ceremony tomorrow which means I get to leave school after it and be excused",
+    "sentiment": -1,
+    "timestamp": "2011-04-28T23:40:00.000Z",
+    "responseTime": 1227480
+  },
+  {
+    "date": "30/4/2011",
+    "time": "8:54:00 pm",
+    "sender": "zak_",
+    "receiver": "",
+    "message": "how to transfer files (250 GB) from my pc and my new laptop?",
+    "sentiment": 0,
+    "timestamp": "2011-04-30T15:24:00.000Z",
+    "responseTime": 143040
+  },
+  {
+    "date": "30/4/2011",
+    "time": "8:54:00 pm",
+    "sender": "zak_",
+    "receiver": "",
+    "message": "how to transfer files (250 GB) from my pc to my new laptop?",
+    "sentiment": 0,
+    "timestamp": "2011-04-30T15:24:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "30/4/2011",
+    "time": "8:54:00 pm",
+    "sender": "rly",
+    "receiver": "zak_",
+    "message": "not by getting kicked from the channel, I suppose.",
+    "sentiment": 0,
+    "timestamp": "2011-04-30T15:24:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "20/5/2011",
+    "time": "2:03:00 am",
+    "sender": "wasikevin",
+    "receiver": "",
+    "message": "Technoviking, ping",
+    "sentiment": 0,
+    "timestamp": "2011-05-19T20:33:00.000Z",
+    "responseTime": 1660140
+  },
+  {
+    "date": "20/5/2011",
+    "time": "2:04:00 am",
+    "sender": "Pici",
+    "receiver": "wasikevin",
+    "message": "Hes not normally active that much in this channel, you may want to pm him if you need to speak to him.",
+    "sentiment": 2,
+    "timestamp": "2011-05-19T20:34:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "20/5/2011",
+    "time": "2:04:00 am",
+    "sender": "wasikevin",
+    "receiver": "Pici",
+    "message": "thank you",
+    "sentiment": 2,
+    "timestamp": "2011-05-19T20:34:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "24/6/2011",
+    "time": "3:10:00 am",
+    "sender": "Faustus2",
+    "receiver": "",
+    "message": "is there a way to tell ubuntu not to show icon for a specific external hdd on the desktop? (but i want others to show up on the desktop)",
+    "sentiment": 1,
+    "timestamp": "2011-06-23T21:40:00.000Z",
+    "responseTime": 3027960
+  },
+  {
+    "date": "24/6/2011",
+    "time": "3:10:00 am",
+    "sender": "RedRobot",
+    "receiver": "Faustus2",
+    "message": "can use a udev rule for it",
+    "sentiment": 0,
+    "timestamp": "2011-06-23T21:40:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "24/6/2011",
+    "time": "3:13:00 am",
+    "sender": "Faustus2",
+    "receiver": "RedRobot",
+    "message": "thanks :)",
+    "sentiment": 2,
+    "timestamp": "2011-06-23T21:43:00.000Z",
+    "responseTime": 180
+  },
+  {
+    "date": "29/6/2011",
+    "time": "1:32:00 pm",
+    "sender": "IdleOne",
+    "receiver": "",
+    "message": " mikevPussyboy Please change your nick to a family friendly one",
+    "sentiment": 3,
+    "timestamp": "2011-06-29T08:02:00.000Z",
+    "responseTime": 469140
+  },
+  {
+    "date": "29/6/2011",
+    "time": "1:33:00 pm",
+    "sender": "IdleOne",
+    "receiver": "",
+    "message": "or /part :)",
+    "sentiment": 0,
+    "timestamp": "2011-06-29T08:03:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "29/6/2011",
+    "time": "1:33:00 pm",
+    "sender": "Tekk_",
+    "receiver": "IdleOne",
+    "message": "stupit MIT guys seeing how long they can idle and get away with it :p",
+    "sentiment": 0,
+    "timestamp": "2011-06-29T08:03:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "3/8/2011",
+    "time": "9:29:00 pm",
+    "sender": "Pici",
+    "receiver": "ortsvorsteher",
+    "message": "This should be helpful too: http://mywiki.wooledge.org/BashFAQ/037",
+    "sentiment": 2,
+    "timestamp": "2011-08-03T15:59:00.000Z",
+    "responseTime": 3052560
+  },
+  {
+    "date": "9/8/2011",
+    "time": "11:47:00 am",
+    "sender": "Matryx",
+    "receiver": "",
+    "message": "hi, can someone help me install a dual boot for windows 7 and ubuntu. I've installed Win7 and I've installed ubuntu and made a /boot, /home, /root, and swap partitions. The /boot is a primary partition and the rest is logical. I set the device boot loader to /boot and when I restart I get a error grub rescue message",
+    "sentiment": 2,
+    "timestamp": "2011-08-09T06:17:00.000Z",
+    "responseTime": 483480
+  },
+  {
+    "date": "9/8/2011",
+    "time": "11:48:00 am",
+    "sender": "Matryx",
+    "receiver": "",
+    "message": "am i supposed to set the device boot loader to /dev/sda or sda3? where the /boot partition is",
+    "sentiment": 0,
+    "timestamp": "2011-08-09T06:18:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "9/8/2011",
+    "time": "11:49:00 am",
+    "sender": "rww",
+    "receiver": "Matryx",
+    "message": "/dev/sda, as a general rule",
+    "sentiment": 0,
+    "timestamp": "2011-08-09T06:19:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "18/10/2011",
+    "time": "9:56:00 pm",
+    "sender": "nsahoo",
+    "receiver": "",
+    "message": "hi, I can't open cdrom drive. running ubuntu 11.10 now",
+    "sentiment": 0,
+    "timestamp": "2011-10-18T16:26:00.000Z",
+    "responseTime": 6084420
+  },
+  {
+    "date": "18/10/2011",
+    "time": "9:57:00 pm",
+    "sender": "nsahoo",
+    "receiver": "",
+    "message": "how should I go about trouble shooting now",
+    "sentiment": -2,
+    "timestamp": "2011-10-18T16:27:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "18/10/2011",
+    "time": "9:57:00 pm",
+    "sender": "gr33n7007h",
+    "receiver": "nsahoo",
+    "message": "type 'eject' in terminal",
+    "sentiment": 0,
+    "timestamp": "2011-10-18T16:27:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "25/11/2011",
+    "time": "3:21:00 am",
+    "sender": "ubuntunoob",
+    "receiver": "",
+    "message": "actually",
+    "sentiment": 0,
+    "timestamp": "2011-11-24T21:51:00.000Z",
+    "responseTime": 3216240
+  },
+  {
+    "date": "25/11/2011",
+    "time": "3:21:00 am",
+    "sender": "ubuntunoob",
+    "receiver": "",
+    "message": "just a sec i have an idea",
+    "sentiment": 0,
+    "timestamp": "2011-11-24T21:51:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "25/11/2011",
+    "time": "3:23:00 am",
+    "sender": "Juggernaut",
+    "receiver": "ubuntunoob",
+    "message": "I'm going to try out the steps detailed in the first link",
+    "sentiment": 0,
+    "timestamp": "2011-11-24T21:53:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "28/12/2011",
+    "time": "6:47:00 am",
+    "sender": "bhk0",
+    "receiver": "",
+    "message": "Moin. If I open bash there always appears a update notification. How can I remove it (or where is the skript??)?",
+    "sentiment": 0,
+    "timestamp": "2011-12-28T01:17:00.000Z",
+    "responseTime": 2863440
+  },
+  {
+    "date": "28/12/2011",
+    "time": "6:48:00 am",
+    "sender": "bhk0",
+    "receiver": "",
+    "message": "ups...",
+    "sentiment": 0,
+    "timestamp": "2011-12-28T01:18:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "28/12/2011",
+    "time": "6:50:00 am",
+    "sender": "trism",
+    "receiver": "bhk0",
+    "message": "/etc/update-motd.d/90-updates-available I believe (if I understand you correctly)",
+    "sentiment": 0,
+    "timestamp": "2011-12-28T01:20:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "31/12/2011",
+    "time": "10:25:00 pm",
+    "sender": "d4nt3",
+    "receiver": "",
+    "message": "can somebody help me....how to recover file in formatted ntfs external HD?",
+    "sentiment": 2,
+    "timestamp": "2011-12-31T16:55:00.000Z",
+    "responseTime": 315300
+  },
+  {
+    "date": "31/12/2011",
+    "time": "10:25:00 pm",
+    "sender": "d4nt3",
+    "receiver": "",
+    "message": "can somebody help me....how to recover file in formatted ntfs external HD?",
+    "sentiment": 2,
+    "timestamp": "2011-12-31T16:55:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "31/12/2011",
+    "time": "10:26:00 pm",
+    "sender": "Adrian_",
+    "receiver": "d4nt3",
+    "message": "can try recover my files it on torrent I have always had some results, just install and select drive and run.",
+    "sentiment": 0,
+    "timestamp": "2011-12-31T16:56:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "7/1/2012",
+    "time": "3:34:00 am",
+    "sender": "rcmaehl",
+    "receiver": "ubuntu",
+    "message": "11.10 uses grub2 right?",
+    "sentiment": 0,
+    "timestamp": "2012-01-06T22:04:00.000Z",
+    "responseTime": 536880
+  },
+  {
+    "date": "2/2/2012",
+    "time": "11:21:00 am",
+    "sender": "Descra",
+    "receiver": "",
+    "message": "Hi, i have just read that you can shop Kinect for PC (windows 7). Do you think that we will have a linux driver soon?",
+    "sentiment": 0,
+    "timestamp": "2012-02-02T05:51:00.000Z",
+    "responseTime": 2274420
+  },
+  {
+    "date": "2/2/2012",
+    "time": "11:22:00 am",
+    "sender": "scarleo",
+    "receiver": "Descra",
+    "message": "check this: http://openkinect.org/wiki/Main_Page",
+    "sentiment": 0,
+    "timestamp": "2012-02-02T05:52:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "2/2/2012",
+    "time": "11:26:00 am",
+    "sender": "Descra",
+    "receiver": "scarleo",
+    "message": "oh, ok. It seems a project that dates long time ago. Never heard about. Thx",
+    "sentiment": 0,
+    "timestamp": "2012-02-02T05:56:00.000Z",
+    "responseTime": 240
+  },
+  {
+    "date": "3/3/2012",
+    "time": "11:34:00 pm",
+    "sender": "bobweaver",
+    "receiver": "bosong",
+    "message": "do you have the shoetcuts already /usr/share/applications/<name of program.desktop> but after reading above seems like Dr_willis  got you going",
+    "sentiment": 3,
+    "timestamp": "2012-03-03T18:04:00.000Z",
+    "responseTime": 2635680
+  },
+  {
+    "date": "3/3/2012",
+    "time": "11:35:00 pm",
+    "sender": "bobweaver",
+    "receiver": "bosong",
+    "message": "if you want something running as a supersuser just add that or create a new .desktopfile and use gksudo in the execute part",
+    "sentiment": 1,
+    "timestamp": "2012-03-03T18:05:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "3/3/2012",
+    "time": "11:41:00 pm",
+    "sender": "bobweaver",
+    "receiver": "bosong",
+    "message": "a good example may be found in the program 'bleachbit '  as there are 2 .desktop files one for reg user's and one for root  under /usr/share/applications/bleachbit.desktop   /usr/share/applications/bleachbit.root.desktop  or wireshark is a good different example   look at those files and pay close attention  to the part that looks like' Exec= '  that is how and where and what all right there hope that this help",
+    "sentiment": 11,
+    "timestamp": "2012-03-03T18:11:00.000Z",
+    "responseTime": 360
+  },
+  {
+    "date": "18/3/2012",
+    "time": "2:27:00 am",
+    "sender": "compute",
+    "receiver": "",
+    "message": "how can i make me real good unbutu desk top",
+    "sentiment": 5,
+    "timestamp": "2012-03-17T20:57:00.000Z",
+    "responseTime": 1219560
+  },
+  {
+    "date": "18/3/2012",
+    "time": "2:29:00 am",
+    "sender": "compute",
+    "receiver": "",
+    "message": "is unity no good and how you get read of it",
+    "sentiment": 2,
+    "timestamp": "2012-03-17T20:59:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "18/3/2012",
+    "time": "2:31:00 am",
+    "sender": "snowballsteve",
+    "receiver": "compute",
+    "message": "it is all user preference. I use unity+xmonad",
+    "sentiment": 0,
+    "timestamp": "2012-03-17T21:01:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "18/3/2012",
+    "time": "3:48:00 am",
+    "sender": "Dynamit",
+    "receiver": "",
+    "message": "yay i Have MeeGo as Second OS on my phone but it need to be Develop more, is slow as *** (sure I'm using micro-sd but still it should not be that slow)and is many problem with the OS",
+    "sentiment": -2,
+    "timestamp": "2012-03-17T22:18:00.000Z",
+    "responseTime": 4620
+  },
+  {
+    "date": "18/3/2012",
+    "time": "3:49:00 am",
+    "sender": "bazhang",
+    "receiver": "Dynamit",
+    "message": "connection to ubuntu support?",
+    "sentiment": 2,
+    "timestamp": "2012-03-17T22:19:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "18/3/2012",
+    "time": "3:50:00 am",
+    "sender": "Dynamit",
+    "receiver": "bazhang",
+    "message": "o man sorry i have to much in my head forget some time's the rules for all channels i'm in.",
+    "sentiment": -2,
+    "timestamp": "2012-03-17T22:20:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "19/5/2012",
+    "time": "8:49:00 pm",
+    "sender": "mr^swift",
+    "receiver": "",
+    "message": "is it possible to remove bottom shelf in gnome classic?",
+    "sentiment": 0,
+    "timestamp": "2012-05-19T15:19:00.000Z",
+    "responseTime": 5417940
+  },
+  {
+    "date": "19/5/2012",
+    "time": "8:49:00 pm",
+    "sender": "mr^swift",
+    "receiver": "",
+    "message": "fair enough ... .thanks",
+    "sentiment": 4,
+    "timestamp": "2012-05-19T15:19:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "19/5/2012",
+    "time": "8:50:00 pm",
+    "sender": "ActionParsnip",
+    "receiver": "mr^swift",
+    "message": "i believe it's ALT+Shift+right click -> delete",
+    "sentiment": 0,
+    "timestamp": "2012-05-19T15:20:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "23/5/2012",
+    "time": "3:42:00 pm",
+    "sender": "Tm_T",
+    "receiver": "ryanturner",
+    "message": "this is wrong channel for such 'laughs', so please stick in channel topic",
+    "sentiment": -1,
+    "timestamp": "2012-05-23T10:12:00.000Z",
+    "responseTime": 327120
+  },
+  {
+    "date": "23/5/2012",
+    "time": "3:42:00 pm",
+    "sender": "ryanturner",
+    "receiver": "",
+    "message": "if you just want to mount a foreign share then you dont need samba on the local machine",
+    "sentiment": 2,
+    "timestamp": "2012-05-23T10:12:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "23/5/2012",
+    "time": "3:44:00 pm",
+    "sender": "ryanturner",
+    "receiver": "Tm_T",
+    "message": "Ok.",
+    "sentiment": 0,
+    "timestamp": "2012-05-23T10:14:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "4/9/2012",
+    "time": "10:07:00 am",
+    "sender": "jamar",
+    "receiver": "",
+    "message": "it not doing anything just show this http://paste.ubuntu.com/1184732/",
+    "sentiment": 0,
+    "timestamp": "2012-09-04T04:37:00.000Z",
+    "responseTime": 8965380
+  },
+  {
+    "date": "4/9/2012",
+    "time": "10:09:00 am",
+    "sender": "jamar",
+    "receiver": "",
+    "message": "http://paste.ubuntu.com/1184732/",
+    "sentiment": 0,
+    "timestamp": "2012-09-04T04:39:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "4/9/2012",
+    "time": "10:10:00 am",
+    "sender": "bazhang",
+    "receiver": "jamar",
+    "message": "no need to repaste that 6 times",
+    "sentiment": -1,
+    "timestamp": "2012-09-04T04:40:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "27/9/2012",
+    "time": "8:41:00 pm",
+    "sender": "quetzacotl",
+    "receiver": "",
+    "message": "I have to do this on every system, or just make one in run directory and it will work for everyone who download this app?",
+    "sentiment": 0,
+    "timestamp": "2012-09-27T15:11:00.000Z",
+    "responseTime": 2025060
+  },
+  {
+    "date": "27/9/2012",
+    "time": "8:43:00 pm",
+    "sender": "quetzacotl",
+    "receiver": "",
+    "message": "I'm new to ubuntu, how can do I make hidden files visible?",
+    "sentiment": 0,
+    "timestamp": "2012-09-27T15:13:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "27/9/2012",
+    "time": "8:44:00 pm",
+    "sender": "fidel",
+    "receiver": "quetzacotl",
+    "message": "depends on what app / viewer you are talking about. nautilus offers a menu option for that",
+    "sentiment": 0,
+    "timestamp": "2012-09-27T15:14:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "17/10/2012",
+    "time": "10:12:00 pm",
+    "sender": "Ashael",
+    "receiver": "",
+    "message": "hello",
+    "sentiment": 0,
+    "timestamp": "2012-10-17T16:42:00.000Z",
+    "responseTime": 1733280
+  },
+  {
+    "date": "17/10/2012",
+    "time": "10:12:00 pm",
+    "sender": "Ashael",
+    "receiver": "",
+    "message": "is 12.10 coming out tomorrow as expected?",
+    "sentiment": 0,
+    "timestamp": "2012-10-17T16:42:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "17/10/2012",
+    "time": "10:13:00 pm",
+    "sender": "actionParsnip",
+    "receiver": "Ashael",
+    "message": "ask in #ubuntu+1 as the channel motd states",
+    "sentiment": 0,
+    "timestamp": "2012-10-17T16:43:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "7/11/2012",
+    "time": "2:10:00 am",
+    "sender": "dathui",
+    "receiver": "",
+    "message": "where is the bash history stored?",
+    "sentiment": 0,
+    "timestamp": "2012-11-06T20:40:00.000Z",
+    "responseTime": 1742220
+  },
+  {
+    "date": "7/11/2012",
+    "time": "2:11:00 am",
+    "sender": "dathui",
+    "receiver": "",
+    "message": "i have a rather long list of commands i want to store in a text file for future use",
+    "sentiment": 1,
+    "timestamp": "2012-11-06T20:41:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "7/11/2012",
+    "time": "2:11:00 am",
+    "sender": "zykotick9",
+    "receiver": "dathui",
+    "message": "~/.bash_history",
+    "sentiment": 0,
+    "timestamp": "2012-11-06T20:41:00.000Z",
+    "responseTime": 0
+  },
+  {
+    "date": "19/11/2012",
+    "time": "9:40:00 am",
+    "sender": "almoxarife",
+    "receiver": "",
+    "message": "sorry subcool",
+    "sentiment": -1,
+    "timestamp": "2012-11-19T04:10:00.000Z",
+    "responseTime": 1063740
+  },
+  {
+    "date": "19/11/2012",
+    "time": "9:42:00 am",
+    "sender": "almoxarife",
+    "receiver": "",
+    "message": "whats a light DM without compiz that will still have game capability?",
+    "sentiment": 1,
+    "timestamp": "2012-11-19T04:12:00.000Z",
+    "responseTime": 120
+  },
+  {
+    "date": "19/11/2012",
+    "time": "9:43:00 am",
+    "sender": "Bl4cklisted",
+    "receiver": "almoxarife",
+    "message": "XFCE is also pretty lightweight",
+    "sentiment": 1,
+    "timestamp": "2012-11-19T04:13:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "30/11/2012",
+    "time": "11:18:00 pm",
+    "sender": "satya",
+    "receiver": "",
+    "message": "hello we are running ubuntu 10.10 server .. we are facing issue related to connection getting reset when we access port 80 .. all other ports are accessed properly. we have disabled iptables and all other firewall ufw but still no luck",
+    "sentiment": 2,
+    "timestamp": "2012-11-30T17:48:00.000Z",
+    "responseTime": 999300
+  },
+  {
+    "date": "30/11/2012",
+    "time": "11:19:00 pm",
+    "sender": "MonkeyDust",
+    "receiver": "satya",
+    "message": "10.10 is no longer supported*",
+    "sentiment": 1,
+    "timestamp": "2012-11-30T17:49:00.000Z",
+    "responseTime": 60
+  },
+  {
+    "date": "30/11/2012",
+    "time": "11:20:00 pm",
+    "sender": "MonkeyDust",
+    "receiver": "satya",
+    "message": "there's also #ubuntu-server",
+    "sentiment": 0,
+    "timestamp": "2012-11-30T17:50:00.000Z",
+    "responseTime": 60
+  }
+]
