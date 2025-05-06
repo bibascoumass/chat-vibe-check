@@ -51,8 +51,8 @@
 
 
 import React, { useEffect, useState } from 'react';
-import './App.css';
-import './Dashboard.css';
+import './assets/App.css';
+import './assets/Dashboard.css'
 
 function SentimentAnalyser() {
     const [messages, setMessages] = useState([]);
