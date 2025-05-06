@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import logo from './images.jpeg';
-import './Dashboard.css';
+import logo from './assets/images.jpeg';
+import './assets/Dashboard.css';
 
 function Dashboard() {
   const [file, setFile] = useState(null);

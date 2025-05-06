@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import './App.css';
-import './Dashboard.css'
+import './assets/App.css';
+import './assets/Dashboard.css'
 
 function SentimentAnalyser() {
     const ref = useRef();

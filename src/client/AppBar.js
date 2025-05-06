@@ -1,5 +1,5 @@
 import React from 'react';
-import './AppBar.css';
+import './assets/AppBar.css';
 
 function AppBar() {
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import './App.css';
+import './assets/App.css';
 
 function SentimentHeatmap() {
   const ref = useRef();
