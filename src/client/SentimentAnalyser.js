@@ -53,6 +53,7 @@
 import React, { useEffect, useState } from 'react';
 import './assets/App.css';
 import './assets/Dashboard.css'
+import config from '../config';
 
 function SentimentAnalyser() {
     const [messages, setMessages] = useState([]);
@@ -63,7 +64,7 @@ function SentimentAnalyser() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:5001/api/plots');
+                const response = await fetch(config.apiPlotsEndpoint);
                 const result = await response.json();
                 setMessages(result);
                 findLongestConversation(result);

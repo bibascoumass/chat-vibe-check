@@ -3,13 +3,13 @@ const multer = require('multer');
 const cors = require('cors');
 const Sentiment = require('sentiment');
 const fs = require('fs');
-
+const config = require('../config');
 const csv = require('csv-parser');
 
 const { Readable } = require('stream');
 
 const app = express();
-const port = 5001;
+const port = config.serverPort;
 const sentiment = new Sentiment();
 
 app.use(cors());
