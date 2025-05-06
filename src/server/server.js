@@ -6,6 +6,7 @@ const fs = require('fs');
 const config = require('../config');
 const dataManager = require('./dataManager');
 const csv = require('csv-parser');
+const path = require('path');
 
 const { Readable } = require('stream');
 
@@ -41,6 +42,39 @@ app.get('/api/plots', (req, res) => {
     console.error('Error fetching messages:', error);
     res.status(500).json({ error: 'Failed to fetch messages' });
   }
+});
+
+
+// cleanup logic 
+const messagesFilePath = path.join(__dirname, 'messages.json');
+async function cleanup() {
+  try {
+    await fsPromises.unlink(messagesFilePath);
+    console.log('cleaned up messages.json file.');
+  } catch (err) {
+    if (err.code !== 'ENOENT') {  // it's fine if file doesn't exist
+      console.error('Error cleaning up messages.json:', err);
+    }
+  }
+}
+// clear processed messages on exit
+process.on('exit', (code) => {
+  try {
+    if (fs.existsSync(messagesFilePath)) {
+      fs.unlinkSync(messagesFilePath);
+      console.log('Process exit: messages.json has been deleted.');
+    }
+  } catch (err) {
+    console.error('Process exit: error deleting messages.json', err);
+  }
+});
+
+['SIGINT', 'SIGTERM', 'SIGUSR2'].forEach((signal) => {
+  process.on(signal, async () => {
+    console.log(`Received ${signal}, cleaning up...`);
+    await cleanup();
+    process.exit(0);
+  });
 });
 
 // preload packaged CSV data on init.
