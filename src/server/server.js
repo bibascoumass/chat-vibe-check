@@ -7,9 +7,10 @@ const fs = require('fs');
 const csv = require('csv-parser');
 
 const { Readable } = require('stream');
+const config = require('../../config.json');
 
 const app = express();
-const port = 5001;
+const port = config.serverPort;
 const sentiment = new Sentiment();
 
 app.use(cors());

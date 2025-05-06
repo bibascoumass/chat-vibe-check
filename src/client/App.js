@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import config from '../config';
 import logo from './assets/images.jpeg';
 import './assets/Dashboard.css';
 
@@ -14,7 +15,7 @@ function Dashboard() {
     formData.append('chat', file);
 
     try {
-      const res = await axios.post('http://localhost:5001/upload', formData);
+      const res = await axios.post(config.uploadEndpoint, formData);
       setMessages(res.data.messages);
       setShowBackdrop(true);
     } catch (err) {

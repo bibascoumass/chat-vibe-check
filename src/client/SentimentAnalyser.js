@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import './assets/App.css';
 import './assets/Dashboard.css'
+import config from '../config';
 
 function SentimentAnalyser() {
     const ref = useRef();
@@ -10,7 +11,7 @@ function SentimentAnalyser() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:5001/api/plots');
+                const response = await fetch(config.apiPlotsEndpoint);
                 const result = await response.json();
 
                 console.log(result);

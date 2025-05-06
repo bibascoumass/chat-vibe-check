@@ -1,0 +1,6 @@
+{
+  "serverPort": 5001,
+  "uploadEndpoint": "http://localhost:5001/upload",
+  "apiPlotsEndpoint": "http://localhost:5001/api/plots",
+  "clientPort": 3000
+}

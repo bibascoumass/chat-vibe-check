@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AppBar from './client/AppBar';
 import SentimentAnalyser from './client/SentimentAnalyser';
 import SentimentScatterPlot from './client/SentimentScatterPlot';
+ import config from './config.json';
+ export default config;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
