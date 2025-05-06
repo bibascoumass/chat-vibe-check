@@ -16,7 +16,8 @@ body {
 }
 
 .heat-container {
-  max-width: 1500px;
+  width: 1500px;
+  overflow-x: auto;
   margin: 40px auto;
   background: white;
   padding: 30px;
@@ -142,3 +143,4 @@ li {
   text-align: center;
   margin-top: 50px;
 }
+

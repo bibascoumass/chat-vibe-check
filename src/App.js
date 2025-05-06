@@ -37,7 +37,7 @@ function Dashboard() {
           <input
             id="fileUpload"
             type="file"
-            accept=".csv"
+            accept=".txt"
             onChange={(e) => setFile(e.target.files[0])}
             className="fileInputHidden"
           />
@@ -57,7 +57,7 @@ function Dashboard() {
           <div className="backdropContent">
             <h2>🎉 Upload Successful!</h2>
             <p>Your chat file has been processed successfully.</p>
-            <button className="closeButton" onClick={() => setShowBackdrop(false)}>Close</button>
+            <button className="closeButton1" onClick={() => setShowBackdrop(false)}>Close</button>
           </div>
         </div>
       )}

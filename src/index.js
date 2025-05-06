@@ -4,7 +4,7 @@ import './index.css';
 import Dashboard from './App';
 import reportWebVitals from './reportWebVitals';
 import SentimentHeatmap from './SentimentHeatmap';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AppBar from './AppBar';
 import SentimentAnalyser from './SentimentAnalyser';
 import SentimentScatterPlot from './SentimentScatterPlot';
@@ -15,11 +15,12 @@ root.render(
     <BrowserRouter>
       <AppBar />
       <Routes>
-        <Route exact path="/" element={<Dashboard />} />
-        <Route path="/heatmap" element={<SentimentHeatmap />} />
+        {/* <Route exact path="/" element={<Dashboard />} /> */}
+        <Route path="/" element={<Navigate to="/heatmap" replace />} />
+        <Route exact path="/heatmap" element={<SentimentHeatmap />} />
         <Route path="/scatterplots" element={<SentimentScatterPlot />} />
         <Route path="/sentiment_analyser" element={<SentimentAnalyser />} />
-      </Routes>
+      </Routes> 
     </BrowserRouter>
   </React.StrictMode>
 );
