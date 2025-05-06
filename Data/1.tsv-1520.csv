@@ -1,0 +1,1521 @@
+date,from,to,text
+2009-04-27T15:04:00.000Z,indus,,i think medibuntu has realplayer also no?
+2009-04-27T15:05:00.000Z,ActionParsnip,indus,it does indeed
+2009-05-04T14:39:00.000Z,indus,ActionParsnip,not advisable disabling acpi
+2009-05-04T14:39:00.000Z,ActionParsnip,indus,why not?
+2009-05-04T14:40:00.000Z,indus,ActionParsnip,acpi is important for all
+2009-05-04T14:40:00.000Z,ActionParsnip,indus,not if it makes hardware not detect
+2009-05-04T14:40:00.000Z,indus,ActionParsnip,But his system boots fine
+2009-05-04T14:40:00.000Z,indus,ActionParsnip,i told you its just a silly bug
+2009-05-04T14:41:00.000Z,ActionParsnip,indus,"its only to test, if you do it with ctrl+e its only for that boot"
+2009-05-04T14:41:00.000Z,ActionParsnip,indus,its free to try
+2009-05-04T14:41:00.000Z,indus,ActionParsnip,aah ok its good to try things i guess
+2009-05-04T14:41:00.000Z,ActionParsnip,indus,exactly
+2009-05-04T14:42:00.000Z,indus,ActionParsnip,"but if a system boots perfectly fine, should we tell people to try boot options ?thats unnecessary no?"
+2009-05-04T14:43:00.000Z,ActionParsnip,indus,it may supress the error
+2009-05-04T14:43:00.000Z,indus,ActionParsnip,ko / ok
+2009-05-04T14:43:00.000Z,ActionParsnip,indus,"and if it doesnt, just reboot and you'll have lost nothing"
+2009-05-04T14:43:00.000Z,indus,ActionParsnip,ctl -e is it? ya you mean it edits grub for that session yes?
+2009-05-04T14:44:00.000Z,ActionParsnip,indus,"its in the boot options factoid, i think you highlight the entry and press e or ^e"
+2009-05-04T14:44:00.000Z,ActionParsnip,indus,then you can add bootoptions just for that session
+2009-05-04T14:44:00.000Z,indus,ActionParsnip,"yes correct, when grub shows up press e does it"
+2009-05-04T14:45:00.000Z,ActionParsnip,indus,"its only for 1 boot, unless you add it permanently in menu.lst"
+2009-05-04T14:46:00.000Z,indus,ActionParsnip,is parsnip a vegetable?
+2009-05-04T14:47:00.000Z,ActionParsnip,indus,its a sweeter white carrot
+2009-05-04T14:51:00.000Z,ActionParsnip,indus,"aye, get it roasted with salt and honey and you have a winner"
+2009-05-04T14:51:00.000Z,indus,ActionParsnip,wonder whether it grows in india
+2009-05-04T15:02:00.000Z,indus,ActionParsnip,i dont think he is having boot issues?? !' is he
+2009-05-04T15:02:00.000Z,ActionParsnip,indus,no but if he renames the file he can se where it comes in with the bootup
+2009-05-04T15:05:00.000Z,indus,ActionParsnip,i see you here always :)
+2009-05-04T15:05:00.000Z,ActionParsnip,indus,work is dead
+2009-05-04T15:07:00.000Z,ActionParsnip,indus,i just like to give to the community as the community has given to me
+2009-05-04T15:08:00.000Z,indus,ActionParsnip,"nothing against compiz, but it gives me a headache and cant run games with it"
+2009-05-05T12:42:00.000Z,indus,ActionParsnip,i never use gksudo
+2009-05-05T12:48:00.000Z,indus,ActionParsnip,hi
+2009-05-07T16:17:00.000Z,indus,ActionParsnip,it does?
+2009-05-07T16:17:00.000Z,indus,ActionParsnip,flash 64 bit alpha
+2009-05-07T16:17:00.000Z,ActionParsnip,indus,isnt that what i said?
+2009-05-07T16:27:00.000Z,indus,ActionParsnip,hi how are you today
+2009-05-07T16:27:00.000Z,ActionParsnip,indus,"not bad, waiting for my colleagues to arrive"
+2009-05-08T11:57:00.000Z,indus,ActionParsnip,not adviced? isnt it officially in universe now?
+2009-05-08T14:18:00.000Z,indus,ActionParsnip,does xfce take less space than gnome?
+2009-05-08T14:19:00.000Z,ActionParsnip,indus,"the DE does, yes"
+2009-05-08T14:19:00.000Z,ActionParsnip,indus,the ubuntu underneath wil be identical if you mean xubuntu / ubuntu
+2009-05-08T14:20:00.000Z,ActionParsnip,indus,i guess so yeah
+2009-05-08T14:20:00.000Z,ActionParsnip,indus,i'd just use something less bloated like puppy or DSL
+2009-05-08T14:21:00.000Z,indus,ActionParsnip,"ya i agree, puppy is nice,"
+2009-05-08T14:36:00.000Z,indus,ActionParsnip,baah
+2009-05-19T14:16:00.000Z,indus,ActionParsnip,hi
+2009-05-19T15:51:00.000Z,indus,ActionParsnip,"this was what iam wondering.I planned to get a tv tuner card,but now isp's are offering it through the internet, so if i could get that on the pc monitor directly"
+2009-05-19T15:52:00.000Z,ActionParsnip,indus,"may not have all the channels a tv card would provide, you could also use a slingbox / sony tv-anywhere if you want to share your cable tv connection :D"
+2009-05-19T15:52:00.000Z,indus,ActionParsnip,no isp is offering much more channels with much better quality
+2009-05-19T15:52:00.000Z,indus,ActionParsnip,also i hear tv tuner cards quality sucks
+2009-05-19T15:53:00.000Z,ActionParsnip,indus,"some do, some are ok"
+2009-05-19T15:53:00.000Z,indus,ActionParsnip,"for same price ,isp offering connection to digital tv"
+2009-05-19T15:53:00.000Z,indus,ActionParsnip,price of a tuner that is
+2009-05-19T15:54:00.000Z,ActionParsnip,indus,then your choice is obvious
+2009-05-19T15:55:00.000Z,indus,ActionParsnip,"hmm i believe it shouldnt be a problem to get that digital tv on my monitor , but right now cant seem to do it without a tv card"
+2009-05-19T15:55:00.000Z,indus,ActionParsnip,"aah IPTV its called , the tech name of the service"
+2009-05-19T15:56:00.000Z,indus,ActionParsnip,ok from the site :    
+2009-05-19T15:57:00.000Z,indus,ActionParsnip,and i hear mythtv works with set top box?
+2009-05-19T16:44:00.000Z,ActionParsnip,indus,recovery mode console or with an x server?
+2009-05-19T16:46:00.000Z,indus,ActionParsnip,i thought recovery mode is only console no? Or i can get gui with start x?
+2009-05-20T16:55:00.000Z,indus,ActionParsnip,what about the sudo apt-get -f update
+2009-05-20T16:56:00.000Z,indus,ActionParsnip,what about the sudo apt-get -f install  i mean
+2009-05-20T16:56:00.000Z,indus,ActionParsnip,is that a force install
+2009-05-20T16:56:00.000Z,ActionParsnip,indus,fixes broken deps to make a stable system
+2009-05-20T16:57:00.000Z,ActionParsnip,indus,man apt-get ;)
+2009-05-20T16:57:00.000Z,indus,ActionParsnip,heh was just about to do that
+2009-06-02T13:36:00.000Z,ActionParsnip,indus,its --force-architecture ;)
+2009-06-02T13:36:00.000Z,indus,ActionParsnip,damn !
+2009-06-16T17:39:00.000Z,indus,ActionParsnip,hi u replied to my launchpad question startup apps
+2009-06-16T17:39:00.000Z,ActionParsnip,indus,I'm good on there :)
+2009-06-16T17:40:00.000Z,ActionParsnip,indus,if the text is all in a big block its off my g1 phone ;)
+2009-06-16T17:40:00.000Z,indus,ActionParsnip,hmm?
+2009-06-16T17:41:00.000Z,ActionParsnip,indus,"i web browse from bed on my G1 and type on launchpad, good fun"
+2009-06-16T17:42:00.000Z,indus,ActionParsnip,"i was pleasantly surprised to read ur reply,since u were helping me on irc too"
+2009-06-16T17:44:00.000Z,indus,ActionParsnip,also cd ~/.config/autostart;clean what does this do?
+2009-06-16T17:45:00.000Z,ActionParsnip,indus,some startup stuff is defined in there
+2009-06-16T17:45:00.000Z,indus,ActionParsnip,i mean the syntax with semicolon and clean is what is intriguing
+2009-06-16T17:46:00.000Z,indus,ActionParsnip,Draglor:ya i did figure out when i saw the output
+2009-06-16T17:46:00.000Z,ActionParsnip,indus,"clear just clears the screen, makes life readable"
+2009-06-16T17:47:00.000Z,indus,ActionParsnip,"but, its true, i have ticked the 'remember programs when quit' box but it still keeps running again"
+2009-06-16T17:47:00.000Z,indus,ActionParsnip,although today it hasnt autorun totem or firefox
+2009-06-16T17:52:00.000Z,ActionParsnip,indus,I'd watch it for a few day. See what sort of things cause the next boot to make it load automagically
+2009-06-16T17:53:00.000Z,indus,ActionParsnip,yes i have been watching it for a month now and diff programs keep launching
+2009-06-16T17:54:00.000Z,ActionParsnip,indus,watch what programs are used before you log off. and which ones are running when you log off
+2009-06-16T17:58:00.000Z,ActionParsnip,indus,http://en.wikipedia.org/wiki/I386  http://en.wikipedia.org/wiki/Intel_P6_(microarchitecture)
+2009-06-16T17:59:00.000Z,ActionParsnip,indus,i386 is for dog old CPUs basically.
+2009-06-16T18:05:00.000Z,indus,ActionParsnip,Draglor : i have so many minor irritants with 9.04
+2009-06-16T18:05:00.000Z,ActionParsnip,indus,its all been identical for me since gutsy
+2009-06-16T18:06:00.000Z,indus,ActionParsnip,for me feisty was great but i fell in love with hardy
+2009-06-16T18:06:00.000Z,indus,ActionParsnip,have been thinking going back  to it
+2009-06-16T18:07:00.000Z,ActionParsnip,indus,mandrake 7 for me :)
+2009-06-17T11:31:00.000Z,indus,ActionParsnip,hello
+2009-06-17T11:31:00.000Z,ActionParsnip,indus,holla
+2009-07-03T11:33:00.000Z,indus,ActionParsnip,hello
+2009-07-06T15:45:00.000Z,indus,ActionParsnip,"xchat makes it easier for you,"
+2009-07-06T15:45:00.000Z,ActionParsnip,indus,no thats not te point. no irc  client is preffered is the point
+2009-07-06T15:39:00.000Z,ActionParsnip,indus,why is xchat 'preffered'
+2009-07-06T15:40:00.000Z,ActionParsnip,indus,i've used pidgin for irc since it was gaim
+2009-07-06T15:40:00.000Z,indus,ActionParsnip,cos it easier to configure for irc?
+2009-07-06T15:40:00.000Z,ActionParsnip,indus,not really
+2009-07-06T15:40:00.000Z,ActionParsnip,indus,"add an account, set irc then add server and screen name"
+2009-07-06T15:40:00.000Z,indus,ActionParsnip,it doesnt even show you list of irc servers or channels
+2009-07-06T15:41:00.000Z,indus,ActionParsnip,"sorry,but i cant figure it out, and since a lot of ppl here do use x chat, i said its preferred"
+2009-07-06T15:41:00.000Z,ActionParsnip,indus,you can go to main window. tools -> room list
+2009-07-06T15:41:00.000Z,ActionParsnip,indus,then select the account you want te room list for
+2009-07-06T15:42:00.000Z,ActionParsnip,indus,"in the computer community, windows is more used. Is that 'preffered' too"
+2009-07-06T15:42:00.000Z,indus,ActionParsnip,"what are you talking about? add account irc, then what"
+2009-07-06T15:42:00.000Z,indus,ActionParsnip,there is no server list at all
+2009-07-06T15:42:00.000Z,ActionParsnip,indus,if you add an account and connect
+2009-07-06T15:43:00.000Z,ActionParsnip,indus,then in the main window click tools -> room list
+2009-07-06T15:43:00.000Z,indus,ActionParsnip,i dont think you understand? how do i select a server ?
+2009-07-06T15:44:00.000Z,ActionParsnip,indus,you type its name
+2009-07-06T15:44:00.000Z,indus,ActionParsnip,all it shows is irc.ubuntu.com
+2009-07-06T15:44:00.000Z,indus,ActionParsnip,and who will give me the name?
+2009-07-06T15:44:00.000Z,ActionParsnip,indus,you find the server you want to connect to
+2009-07-06T15:44:00.000Z,indus,ActionParsnip,from where?
+2009-07-06T15:44:00.000Z,ActionParsnip,indus,the web
+2009-07-06T15:44:00.000Z,indus,ActionParsnip,"xchat has that list, pidgin doesnt"
+2009-07-06T15:44:00.000Z,ActionParsnip,indus,never said it didnt
+2009-07-06T15:45:00.000Z,indus,ActionParsnip,"haha the web , so i hope you get the point now"
+2009-07-06T15:45:00.000Z,indus,ActionParsnip,"well, so now its back to that point then"
+2009-07-06T15:46:00.000Z,ActionParsnip,indus,i'm not comparing functionlity. you are saying just because something is more used it is 'preffered' which is preposterous
+2009-07-06T15:46:00.000Z,indus,ActionParsnip,"whatever the case, pidgin is not preferred surely"
+2009-07-06T15:46:00.000Z,ActionParsnip,indus,it is to me
+2009-07-06T15:46:00.000Z,ActionParsnip,indus,i only use pidgin for all chats
+2009-07-06T15:47:00.000Z,indus,ActionParsnip,no offence
+2009-07-06T15:48:00.000Z,ActionParsnip,indus,i'm not i'm just saying what you are saying is false.
+2009-07-06T15:48:00.000Z,indus,ActionParsnip,and what you are saying is not true either
+2009-07-06T15:51:00.000Z,ActionParsnip,indus,"any you prefer, notice how I had stopped and you started up again"
+2009-07-06T15:52:00.000Z,ActionParsnip,indus,imho no
+2009-07-06T15:52:00.000Z,ActionParsnip,indus,but i use about 6 other protocols so it makes sense to use the irc functionality rather than have 2 apps
+2009-07-06T15:53:00.000Z,indus,ActionParsnip,"yes i too prefer pidgin, but i had to waste quite a bit of time googling for the undernet server name"
+2009-07-06T15:53:00.000Z,ActionParsnip,indus,i'm sure you had to 'google' a bit as well to get your pc setup after the install
+2009-07-06T15:53:00.000Z,indus,ActionParsnip,"so i was forced to go to xchat ,which is great btw, but i will try chatzilla too"
+2009-07-06T15:54:00.000Z,indus,ActionParsnip,"true, so this saves time doesnt it"
+2009-07-06T15:54:00.000Z,ActionParsnip,indus,"same process, same mentality"
+2009-07-06T15:54:00.000Z,indus,ActionParsnip,leave it.
+2009-07-06T15:55:00.000Z,ActionParsnip,indus,"i did, you started it p again. i was talking to prathamesh"
+2009-07-06T15:58:00.000Z,indus,ActionParsnip,pm
+2009-07-08T15:38:00.000Z,indus,ActionParsnip,in theory yes
+2009-07-08T15:39:00.000Z,ActionParsnip,indus,"i think its a snap to do and very wrth it, the md5 isnt there for kicks so I use it. Ive helped many on answers.launchpad.net with MD5 checks"
+2009-07-08T15:39:00.000Z,indus,ActionParsnip,the procedure seems reallylong and complicated
+2009-07-08T15:39:00.000Z,ActionParsnip,indus,md5sum ./<isofile>
+2009-07-08T15:40:00.000Z,ActionParsnip,indus,then simply download the file and run: cat ./MD5SUM | grep <some of the file name>
+2009-07-08T15:40:00.000Z,indus,ActionParsnip,hmm ok thats it? the community docs list a lengthy procedure
+2009-07-08T15:40:00.000Z,ActionParsnip,indus,its really not
+2009-07-08T15:42:00.000Z,ActionParsnip,indus,e.g.: wget http://cdimage.ubuntu.com/releases/jaunty/release/ubuntu-9.04-dvd-i386.iso; wget http://cdimage.ubuntu.com/releases/jaunty/release/MD5SUMS; md5sum ./ubuntu-9.04-dvd-i386.iso; cat ./MD5SUMS | grep dvd-i386
+2009-07-08T15:42:00.000Z,ActionParsnip,indus,"then walk away, file will be downloaded and md5 checked when you get back"
+2009-07-08T15:43:00.000Z,indus,ActionParsnip,"why cant we have a gui md5 check like in windows? i never ask new users or even mention md5 checks,i burn and give them the cd myself,and of the 100 i have burned , just say 5 havent worked"
+2009-07-08T15:44:00.000Z,ActionParsnip,indus,"not sure, i dont use gui"
+2009-07-08T15:44:00.000Z,ActionParsnip,indus,well for something like that anyhoo
+2009-07-08T15:44:00.000Z,ActionParsnip,indus,the CD has a self checker too which has an MD5SUM on it also
+2009-07-08T15:45:00.000Z,indus,ActionParsnip,hmm now why didnt i see that
+2009-07-08T15:45:00.000Z,indus,ActionParsnip,ya i think i have seen that yes.Its in live cd correct?
+2009-07-08T15:46:00.000Z,ActionParsnip,indus,on all
+2009-07-08T15:55:00.000Z,ActionParsnip,indus,andy@fileserver:~$ gksu[tab] yields    gksu             gksudo           gksu-properties
+2009-07-08T15:56:00.000Z,indus,ActionParsnip,yes but i dont get what you mean
+2009-07-08T15:57:00.000Z,ActionParsnip,indus,you put 'gksu gksu gksu' and confused me
+2009-07-08T15:57:00.000Z,indus,ActionParsnip,heh ya ok just was emphasizing
+2009-07-08T15:59:00.000Z,ActionParsnip,indus,please do. I actually have a link to one guy i helped on launchpad with the same thing: https://answers.launchpad.net/ubuntu/+source/azureus/+question/72151
+2009-07-08T15:59:00.000Z,ActionParsnip,indus,i keep it for idiots who say 'sudo is fine for gui' etc
+2009-07-08T16:00:00.000Z,indus,ActionParsnip,"i still can be called one , cos i still use sudo"
+2009-07-08T16:01:00.000Z,ActionParsnip,indus,"read that link, you'll see hat you will get, as well as you just saw joeM with the same thiing"
+2009-07-08T16:01:00.000Z,indus,ActionParsnip,"yes i know, iam starting to remember to use gksu now,but i do remember always to say it here"
+2009-07-08T16:02:00.000Z,ActionParsnip,indus,"thats good, not helping people break there systems is cool"
+2009-07-08T16:03:00.000Z,indus,ActionParsnip,i did nt understand the question on launchpad clearly though
+2009-07-08T16:03:00.000Z,ActionParsnip,indus,"basically vuze wouldnt run: if you scroll down you'll see his files were owned by root due to bad sudo use, so i chowned his files back to him and it was fine"
+2009-07-08T16:06:00.000Z,indus,ActionParsnip,hmm i see that many of his hidden files are owned by root
+2009-07-08T16:06:00.000Z,ActionParsnip,indus,exactly
+2009-07-08T16:07:00.000Z,indus,ActionParsnip,"i think this can be a wishlist or feature for 9.10, not to allow sudo on graphical, like not to allow rm -rf on the root"
+2009-07-08T16:11:00.000Z,indus,ActionParsnip,"iam beginning to think what a huge mess my system is probably in,works fine , but you think some issues with sound etc could be related to this ?"
+2009-07-15T15:50:00.000Z,indus,ActionParsnip,yeah yeah ok ok
+2009-07-15T15:50:00.000Z,indus,ActionParsnip,man pages dont list typing install again so...
+2009-07-15T16:02:00.000Z,indus,ActionParsnip,whats taht irc command line thing called
+2009-07-15T16:02:00.000Z,ActionParsnip,indus,can you expand please
+2009-07-15T16:02:00.000Z,indus,ActionParsnip,nvm
+2009-07-15T16:06:00.000Z,indus,ActionParsnip,cant run doom 3 without it :)
+2009-07-15T16:07:00.000Z,ActionParsnip,indus,"exactly, start with the basics"
+2009-07-15T16:58:00.000Z,indus,ActionParsnip,firefox 3.5 is much better
+2009-07-15T16:59:00.000Z,ActionParsnip,indus,"yeah, gonna compile it when i get in"
+2009-07-15T17:41:00.000Z,ActionParsnip,indus,i kinda am
+2009-07-15T17:42:00.000Z,indus,ActionParsnip,whats up
+2009-07-15T17:42:00.000Z,indus,ActionParsnip,your problem must be complicated :)
+2009-07-15T17:42:00.000Z,ActionParsnip,indus,is it possible to get a 64bit kernel in the netbook remix without first installing ubuntu then installing the frontend?
+2009-07-15T17:42:00.000Z,ActionParsnip,indus,like a 64bit netook remix
+2009-07-15T17:43:00.000Z,indus,ActionParsnip,isnt there a unr 64 available?
+2009-07-15T17:45:00.000Z,indus,ActionParsnip,"hmm well,not sure what you want to do here,you want to use the netbook remix kernel and compile for your system? then add the frontend?"
+2009-07-15T17:45:00.000Z,ActionParsnip,indus,"thats what i thought, oh well"
+2009-07-15T18:09:00.000Z,ActionParsnip,indus,im with you dude
+2009-07-15T18:10:00.000Z,indus,ActionParsnip,thanks man
+2009-07-15T18:10:00.000Z,ActionParsnip,indus,"if windows suits your needs use it, if linux fits the need, use that"
+2009-07-15T18:11:00.000Z,ActionParsnip,indus,"penumbra demo is awesome, urban terror if you like CounterStrike"
+2009-07-16T11:33:00.000Z,indus,ActionParsnip,single sudo to run multiple commands
+2009-07-16T11:33:00.000Z,indus,ActionParsnip,not 3 on a single line
+2009-07-16T11:33:00.000Z,ActionParsnip,indus,"sudo -i then, but both will work"
+2009-07-16T11:34:00.000Z,indus,ActionParsnip,i thought we coul dsudo &&?
+2009-07-16T11:34:00.000Z,ActionParsnip,indus,the ; and && can be used to string multiple commands on one line
+2009-07-16T11:34:00.000Z,ActionParsnip,indus,&& means 'do the next step ONLY if the previous passed'   ; means 'do the next step'
+2009-07-21T15:05:00.000Z,indus,ActionParsnip,ya ubottu very slow today
+2009-07-27T15:48:00.000Z,indus,ActionParsnip,really? how can i increase speed?
+2009-07-27T15:48:00.000Z,ActionParsnip,indus,read the guide i pasted
+2009-07-27T16:34:00.000Z,indus,ActionParsnip,isnt nm-applet a gui for configuring pppoe also? since 9.04
+2009-07-27T16:34:00.000Z,ActionParsnip,indus,"i dont use pppoe, i just know of pppoeconf"
+2009-08-12T15:26:00.000Z,ActionParsnip,indus,they just care about users
+2009-08-13T14:34:00.000Z,indus,ActionParsnip,yes he gave u uname -a i think
+2009-08-13T14:34:00.000Z,ActionParsnip,indus,its been a long day :(
+2009-08-13T14:34:00.000Z,indus,ActionParsnip,"hey get some rest, ill take over a little:)"
+2009-08-13T14:41:00.000Z,indus,ActionParsnip,"thats not the recommended procedure,shouldnt it be /usr/lib/ozilla/plugins"
+2009-08-13T14:41:00.000Z,indus,ActionParsnip,system wide i mean
+2009-08-13T14:42:00.000Z,ActionParsnip,indus,"you can install it on a per user basis in ~ if you like, you'll find most home users only have 1 user so it works fine, but for system wide you are right"
+2009-08-13T14:42:00.000Z,indus,ActionParsnip,is crzedmonk's problem solved now? what was his problem exactly?
+2009-08-13T14:43:00.000Z,ActionParsnip,indus,flash
+2009-08-13T14:48:00.000Z,indus,ActionParsnip,which one?
+2009-08-13T14:49:00.000Z,indus,ActionParsnip,i want the fastest browser. which one u recommend
+2009-08-13T14:49:00.000Z,indus,ActionParsnip,scrollling should be butter smooth
+2009-08-13T14:49:00.000Z,ActionParsnip,indus,"firepup, kazehakase, swiftfox"
+2009-08-13T14:50:00.000Z,indus,ActionParsnip,are these webkit based?
+2009-08-13T14:50:00.000Z,ActionParsnip,indus,all gecko based
+2009-08-17T16:03:00.000Z,indus,ActionParsnip,well what do u mean it isnt free?
+2009-08-17T16:04:00.000Z,indus,ActionParsnip,"the software is free, its the support which is paid"
+2009-08-17T16:04:00.000Z,ActionParsnip,indus,i see
+2009-08-17T16:05:00.000Z,ActionParsnip,indus,whty can i only find the redhat isos on torrent sites...
+2009-08-17T16:06:00.000Z,ActionParsnip,indus,gotcha
+2009-08-17T16:06:00.000Z,ActionParsnip,indus,learning all the way
+2009-08-17T16:07:00.000Z,indus,ActionParsnip,usually its good for those enterprise stuff where systems are common or intel ? configs
+2009-08-19T14:58:00.000Z,ActionParsnip,indus,sup?
+2009-08-19T14:58:00.000Z,indus,ActionParsnip,hello u familiar with chroot?
+2009-08-19T14:58:00.000Z,ActionParsnip,indus,"i use it in gentoo installs, otherwise no"
+2009-08-19T15:29:00.000Z,indus,ActionParsnip,"root isnt disabled is it,"
+2009-08-19T15:37:00.000Z,indus,ActionParsnip,"i have a suggestion, system should automatically use gksu for graphical applications"
+2009-08-19T15:37:00.000Z,indus,ActionParsnip,iam gonna put it on brainstorm
+2009-08-19T15:38:00.000Z,ActionParsnip,indus,"you can just use gksu for both cli and gui apps, easier"
+2009-08-27T14:27:00.000Z,indus,ActionParsnip,Hi
+2009-08-27T14:37:00.000Z,indus,ActionParsnip,"no thats not needed, it doesnt harm existing data"
+2009-08-27T14:38:00.000Z,indus,ActionParsnip,u mean unetbootin right?
+2009-08-27T14:44:00.000Z,indus,ActionParsnip,hmm could u be more specific ?
+2009-08-27T14:44:00.000Z,indus,ActionParsnip,with phone? how
+2009-08-27T14:44:00.000Z,ActionParsnip,indus,"my g1 phone can web browse, if i click on a torrent it loads the app and tells my pc at home to download the files"
+2009-08-27T14:47:00.000Z,ActionParsnip,indus,i was rounding ;)
+2009-08-27T14:47:00.000Z,indus,ActionParsnip,i get exactly 256 but sometimes goes upto 260 275
+2009-08-27T14:49:00.000Z,indus,ActionParsnip,does dpkg -r als oremove the cached package file?
+2009-08-27T14:50:00.000Z,ActionParsnip,indus,"no only the app, -r will also leave the confi that isnt in home, so will then require dpkg -P <package to shift it"
+2009-08-27T14:50:00.000Z,indus,ActionParsnip,how about dpkg -r --purge? does taht work?
+2009-08-27T14:50:00.000Z,ActionParsnip,indus,"sounds ok, or you can use dpkg -rP <package>"
+2009-08-27T15:12:00.000Z,indus,ActionParsnip,ok ill help irc_irc
+2009-08-27T15:23:00.000Z,indus,ActionParsnip,"hmm really, all newer ones aer SATA"
+2009-08-27T15:24:00.000Z,ActionParsnip,indus,ide == itegrated drive electronics
+2009-08-27T15:24:00.000Z,indus,ActionParsnip,hmm so its not a standard?
+2009-08-27T15:24:00.000Z,ActionParsnip,indus,the littel chip that gives drive cache etc. Old drives that were not IDE relied entirely on the controller
+2009-08-27T15:25:00.000Z,indus,ActionParsnip,iam talking about the interface IDE
+2009-08-27T15:41:00.000Z,indus,ActionParsnip,why is skype ghastly?
+2009-08-27T15:41:00.000Z,indus,ActionParsnip,its the best voip app on linux
+2009-08-27T15:42:00.000Z,indus,ActionParsnip,aah for that
+2009-08-27T15:42:00.000Z,ActionParsnip,indus,ekiga is another option. i just hate skype and broadcom and apple
+2009-08-27T15:42:00.000Z,indus,ActionParsnip,"ekiga is downright pathetic, but its off topic now"
+2009-08-27T15:43:00.000Z,indus,ActionParsnip,and they will drop it in future anyway
+2009-08-27T15:46:00.000Z,ActionParsnip,indus,"many would agree, many would disagree"
+2009-08-27T15:46:00.000Z,indus,ActionParsnip,hmm not many would disagree iam sure
+2009-08-27T15:47:00.000Z,ActionParsnip,indus,"well most people use windows OS, maybe you should use that as they tink its best...."
+2009-08-27T15:48:00.000Z,indus,ActionParsnip," mickster04 skype is encrypted end to end for both video and voice, no ther voip app even exists that can do it"
+2009-08-27T15:49:00.000Z,ActionParsnip,indus,i dont wear a tinfoil hat so that doesnt interest me
+2009-08-28T15:55:00.000Z,indus,ActionParsnip,hi
+2009-09-10T16:42:00.000Z,indus,ActionParsnip, you know anything about lvm :)
+2009-09-10T16:42:00.000Z,ActionParsnip,indus,zero
+2009-09-10T17:32:00.000Z,ActionParsnip,indus,gutsy installed but isnt supported
+2009-09-10T17:34:00.000Z,ActionParsnip,indus,could edit sources.list to say hardy instead of gutsy then run dist-upgrade
+2009-09-10T17:35:00.000Z,indus,ActionParsnip,"no because i think that wont upgrade? hmm not sure ,i thought since gutsy is eol, that method too fails"
+2009-09-10T17:37:00.000Z,indus,ActionParsnip,does he have the option of burning new cd version?
+2009-09-10T17:41:00.000Z,ActionParsnip,indus,not sure and too much
+2009-09-14T14:43:00.000Z,ActionParsnip,indus,get video drivers in
+2009-09-14T15:29:00.000Z,indus,ActionParsnip,i hope you got the link RaaG pasted
+2009-09-14T15:30:00.000Z,ActionParsnip,indus,indeed
+2009-09-14T15:41:00.000Z,ActionParsnip,indus,"as long as the kubuntu release cd matches the installed version, sure"
+2009-09-14T15:42:00.000Z,indus,ActionParsnip,"also, what do you mean using the cd asa repo? he is trying to install isnt it?"
+2009-09-14T15:42:00.000Z,ActionParsnip,indus,"you can use the CD in the tray as a repo, much like the online ones"
+2009-09-14T15:43:00.000Z,indus,ActionParsnip,hmm isnt cd old compared to online versions of software
+2009-09-14T15:43:00.000Z,indus,ActionParsnip,"hmm install something from cd, then update same from onlline updates?"
+2009-09-14T15:44:00.000Z,ActionParsnip,indus,yes but s/he said s/he wanted to install from cd. Maybe their is no web connection
+2009-09-14T16:08:00.000Z,indus,ActionParsnip,tnt2 :) i remember the days
+2009-09-14T16:13:00.000Z,ActionParsnip,indus,selecting it from the menu IS running it
+2009-09-14T16:13:00.000Z,indus,ActionParsnip,and pressing quit is saving and quitting
+2009-09-14T16:14:00.000Z,ActionParsnip,indus,i always write to xorg.conf
+2009-09-14T16:14:00.000Z,indus,ActionParsnip,you are different i know :D
+2009-09-15T18:38:00.000Z,indus,ActionParsnip,what is harisund looking for?
+2009-09-17T17:23:00.000Z,indus,ActionParsnip,check with command mount whether it is mounted first
+2009-09-17T17:23:00.000Z,indus,ActionParsnip,oops sorry
+2009-09-17T17:33:00.000Z,indus,ActionParsnip,: its possible to have corrupt iso at source? Maybe report it then i guess
+2009-09-17T17:34:00.000Z,ActionParsnip,indus,if there is noise on the line at some point in transmission it cna arbage the data. It jut needs redownloading
+2009-09-17T17:34:00.000Z,ActionParsnip,indus,its nothing to do with ubuntu
+2009-09-17T17:34:00.000Z,indus,ActionParsnip,what if the build itself is faulty? i guess we would come to know as many would be downloading it
+2009-09-17T17:35:00.000Z,ActionParsnip,indus,"if the md5 passes ok then the cd is as it should be, the build will only be faulty if its a daily build or karmic. the release cd of jaunty is fine"
+2009-09-17T17:36:00.000Z,indus,ActionParsnip,hmm ya true
+2009-09-17T17:36:00.000Z,indus,ActionParsnip,thanks
+2009-09-17T17:39:00.000Z,ActionParsnip,indus,http://www.unix.com/unix-dummies-questions-answers/19604-create-pw-protect-tar-files.html
+2009-09-17T17:39:00.000Z,indus,ActionParsnip,gui tool i mean
+2009-09-17T17:40:00.000Z,ActionParsnip,indus,not sure on that. i use cli nearly all the time
+2009-09-17T17:40:00.000Z,indus,ActionParsnip,i dont understaqnd why we cant right clic kand do it yet
+2009-09-17T17:40:00.000Z,ActionParsnip,indus,write a service menu for it
+2009-09-17T17:41:00.000Z,ActionParsnip,indus,you can you just havnt found or made it
+2009-09-17T17:41:00.000Z,indus,ActionParsnip,yeah ! JUST found encript
+2009-09-17T17:41:00.000Z,indus,ActionParsnip,wow cool
+2009-09-17T17:42:00.000Z,ActionParsnip,indus,"like i said, you can, you just hadnt found it"
+2009-09-17T17:42:00.000Z,indus,ActionParsnip,yeah well said
+2009-09-17T17:45:00.000Z,indus,ActionParsnip,thats ssh pgp etc
+2009-09-17T17:46:00.000Z,indus,ActionParsnip,simple passwords does it do?
+2009-09-18T15:04:00.000Z,ActionParsnip,indus,not something i use
+2009-09-18T15:04:00.000Z,ActionParsnip,indus,some folks like gui
+2009-09-18T15:04:00.000Z,indus,ActionParsnip,"maybe,but havent heard ppl use it for subversion yet"
+2009-09-21T14:50:00.000Z,ActionParsnip,indus,bet its some creative thing
+2009-09-21T15:34:00.000Z,indus,ActionParsnip,there is a way to choose alsa over pulseaudio
+2009-09-21T15:36:00.000Z,ActionParsnip,indus,there is. I just never used it as whatever is default always works with my cards
+2009-09-21T16:30:00.000Z,indus,ActionParsnip,garage? its in universe
+2009-09-21T16:30:00.000Z,ActionParsnip,indus,"its not supported by the community, like ubottu says"
+2009-09-21T16:30:00.000Z,indus,ActionParsnip,"well, vlc is in universe too , how come that is supported?"
+2009-09-21T16:31:00.000Z,ActionParsnip,indus, Mobile 4 Series Chipset Integrated Graphics Controller   is an intel chip
+2009-09-21T16:32:00.000Z,indus,ActionParsnip,"oh, thanks for that"
+2009-09-21T16:36:00.000Z,ActionParsnip,indus,its not even for those either
+2009-09-21T16:36:00.000Z,indus,ActionParsnip,what? why not
+2009-09-21T16:36:00.000Z,ActionParsnip,indus,its not a supported application and not advised
+2009-09-21T16:37:00.000Z,indus,ActionParsnip,"i dont agree with this at all, let the ops take a call on it"
+2009-09-21T16:37:00.000Z,ActionParsnip,indus,sure
+2009-09-21T16:44:00.000Z,indus,ActionParsnip,aah no vista option is bad :) xp is better always
+2009-09-21T16:45:00.000Z,ActionParsnip,indus,not for Postal2
+2009-09-21T16:45:00.000Z,ActionParsnip,indus,i had to have it as vista and restricted desktop 1024x768 to make it playable
+2009-09-21T16:46:00.000Z,indus,ActionParsnip,you woke up Amaranth :D
+2009-09-21T16:47:00.000Z,ActionParsnip,indus,well stuff needed clarifying :)
+2009-09-21T16:54:00.000Z,ActionParsnip,indus,not windows forsure ;)
+2009-09-21T16:55:00.000Z,ActionParsnip,indus,eto: as well as polling for new hardware at runtime
+2009-09-21T16:55:00.000Z,ActionParsnip,indus,it helps
+2009-09-21T16:57:00.000Z,indus,ActionParsnip,so i should keep that bios option on? or it wont detect devices?
+2009-09-21T16:57:00.000Z,ActionParsnip,indus,"doesnt hurt to have it on, makes sense too"
+2009-09-22T14:23:00.000Z,indus,ActionParsnip,hplip is installed by default
+2009-09-22T14:23:00.000Z,ActionParsnip,indus,might be old though
+2009-09-22T14:30:00.000Z,indus,ActionParsnip,wake up some ops will ya :)
+2009-09-22T14:31:00.000Z,ActionParsnip,indus,jussio01 is in the house
+2009-09-22T14:32:00.000Z,ActionParsnip,indus,potage == apt-build
+2009-09-22T14:36:00.000Z,indus,ActionParsnip,where is applet?
+2009-09-22T14:36:00.000Z,indus,ActionParsnip,i dont see any such thing
+2009-09-22T14:37:00.000Z,ActionParsnip,indus,"just found that on a forum, i cant see my desktop from here"
+2009-09-22T14:37:00.000Z,ActionParsnip,indus,and the forums are down
+2009-09-22T14:57:00.000Z,indus,ActionParsnip,cool advice steven_
+2009-09-22T14:59:00.000Z,indus,ActionParsnip,i dont think that level of advice is recommended
+2009-09-22T14:59:00.000Z,ActionParsnip,indus,steven_: ok here is the guide. Go crazy: http://tuxtraining.com/2008/09/28/how-to-make-ubuntu-extremely-fast/
+2009-09-22T15:00:00.000Z,ActionParsnip,indus,mine takes as fast as my monitor turns off as I never shutdown ;)
+2009-09-22T15:00:00.000Z,indus,ActionParsnip,i dont use nm-applet either
+2009-09-22T15:00:00.000Z,indus,ActionParsnip,i always thought that icon is a waste
+2009-09-22T15:01:00.000Z,ActionParsnip,indus,"i use interfaces file, so much faster"
+2009-09-22T15:53:00.000Z,ActionParsnip,indus,still works though :)
+2009-09-22T15:53:00.000Z,ActionParsnip,indus,i have old pci sis cards in my servers
+2009-09-22T16:05:00.000Z,indus,ActionParsnip,is that correct syntax?
+2009-09-22T16:05:00.000Z,ActionParsnip,indus,looks good :D
+2009-09-22T16:14:00.000Z,ActionParsnip,indus,su makes you root and home is /root  sudo -i makes you root and home is /home/$USER
+2009-09-22T16:14:00.000Z,indus,ActionParsnip,<gulp>
+2009-09-22T16:14:00.000Z,ActionParsnip,indus,so all apps use your settings rather than roots which will most likely be stock
+2009-09-22T18:43:00.000Z,indus,ActionParsnip,"no need for it at all, its all open source"
+2009-09-22T18:44:00.000Z,ActionParsnip,indus,thats the open source for the drivers ;) so 'i know' ;)
+2009-09-22T18:47:00.000Z,indus,ActionParsnip,configure linux drivers? what is that supposed to mean
+2009-09-22T18:47:00.000Z,ActionParsnip,indus,"the drivers need installing and configuring to be effective, they may need certain options etc. The install instructions will detail"
+2009-09-22T18:50:00.000Z,ActionParsnip,indus,"why not, its the official driver from the cchip manufacturers site"
+2009-09-22T18:51:00.000Z,indus,ActionParsnip,"compile , its too much i think, ubuntu already has done it for us, also not like amd where you really need latest stuff"
+2009-09-22T18:51:00.000Z,indus,ActionParsnip,realtek is a breeze really
+2009-09-22T18:51:00.000Z,indus,ActionParsnip,iam sure his problem is simpler than  what it appears
+2009-09-22T18:52:00.000Z,ActionParsnip,indus,"if you can find a way, be my guest. The drivers are a cinch to compile"
+2009-09-22T18:52:00.000Z,indus,ActionParsnip,"no offence, its upto him"
+2009-09-22T18:52:00.000Z,indus,ActionParsnip,whatever it takes to get his internet working :)
+2009-09-22T18:53:00.000Z,indus,ActionParsnip,notice how beautifully realtek lists all the source for almost every hardware without a fuss
+2009-09-22T18:53:00.000Z,indus,ActionParsnip,nice chaps
+2009-09-22T18:53:00.000Z,ActionParsnip,indus,"indeed, thats why they rock"
+2009-09-22T18:54:00.000Z,indus,ActionParsnip,"and they do it so quietly without gimmicks etc, no marketing hype"
+2009-09-22T18:55:00.000Z,indus,ActionParsnip,ya help him
+2009-09-23T12:53:00.000Z,indus,ActionParsnip,"hmm not really true, they have opened the drivers now and x fi works out of the box in karmic"
+2009-09-23T12:54:00.000Z,indus,ActionParsnip,not as angelic as realtek though :)
+2009-09-23T12:54:00.000Z,ActionParsnip,indus,"indeed, all my onboad stuff works out of the box"
+2009-09-23T14:33:00.000Z,ActionParsnip,indus,maybe they dont need help
+2009-09-23T14:35:00.000Z,indus,ActionParsnip,i think when using purge remove is not required?
+2009-09-23T14:35:00.000Z,ActionParsnip,indus,"i've heard of people doing it, its kinda offtopic though"
+2009-09-23T14:36:00.000Z,ActionParsnip,indus,"if you just purge, i think it only wipes the config but leaves the app,let me check man file"
+2009-09-23T14:36:00.000Z,indus,ActionParsnip,aah no sorry wrong syntax
+2009-09-23T14:36:00.000Z,ActionParsnip,indus,purge is identical to remove except that packages are removed and purged (any configuration files are deleted too).
+2009-09-23T14:36:00.000Z,indus,ActionParsnip,no no it works
+2009-09-23T14:36:00.000Z,ActionParsnip,indus,"from man apt-get, looks like you were right"
+2009-09-23T14:37:00.000Z,indus,ActionParsnip,ya dont need to specify remove
+2009-09-23T14:37:00.000Z,ActionParsnip,indus,i have learned :D
+2009-09-23T14:37:00.000Z,indus,ActionParsnip,"ya just no need to use -- , instead use purge instead of remove"
+2009-09-23T14:37:00.000Z,ActionParsnip,indus,"sweet, thanks"
+2009-09-23T14:38:00.000Z,ActionParsnip,indus,i always purge
+2009-09-23T14:38:00.000Z,indus,ActionParsnip,ya so you can omit the 'remove' now and directly purge
+2009-09-23T14:39:00.000Z,ActionParsnip,indus,http://www.ngine.de/article/id/8
+2009-09-23T14:39:00.000Z,ActionParsnip,indus,for windows on usb
+2009-09-23T16:13:00.000Z,ActionParsnip,indus,thats all i enter in my clients for chat
+2009-09-23T16:56:00.000Z,ActionParsnip,indus,depends on needs
+2009-09-23T16:56:00.000Z,indus,ActionParsnip,"i dont store any movies etc, just predatorand alien :)"
+2009-09-23T16:56:00.000Z,ActionParsnip,indus,"if you need space, buy it, if you dont, buy something smaller to save cash"
+2009-09-23T16:57:00.000Z,ActionParsnip,indus,no
+2009-09-23T17:41:00.000Z,indus,ActionParsnip,your are tireless in your efforts :)
+2009-09-23T17:41:00.000Z,ActionParsnip,indus,i try
+2009-09-23T17:41:00.000Z,ActionParsnip,indus,bravo to you too sir
+2009-09-23T17:41:00.000Z,indus,ActionParsnip,naah i dont know anything really
+2009-09-23T19:09:00.000Z,ActionParsnip,indus,can't pastebinit be used?
+2009-09-23T19:09:00.000Z,indus,ActionParsnip,too tired
+2009-09-23T19:13:00.000Z,ActionParsnip,indus,verify first
+2009-09-23T19:13:00.000Z,indus,ActionParsnip,"ya Nishok please verify it first, btw how to do that :)"
+2009-09-23T19:14:00.000Z,indus,ActionParsnip,this md5 is there in live cd itself isnt it
+2009-09-23T19:17:00.000Z,ActionParsnip,indus,yes md5 checks are needed to check the data before use Nishok
+2009-09-23T19:18:00.000Z,indus,ActionParsnip,i think the iso can be checked after burning to cd?
+2009-09-23T19:29:00.000Z,indus,ActionParsnip,i think his iso is fine
+2009-09-23T19:30:00.000Z,indus,ActionParsnip,bye
+2009-09-23T19:30:00.000Z,ActionParsnip,indus,peace
+2009-09-24T16:42:00.000Z,indus,ActionParsnip,no need to run nvidia-settings with sudo
+2009-09-24T16:43:00.000Z,ActionParsnip,indus,is if you want to write to xorg.conf to make the boot screen the same res as the desktop
+2009-09-24T16:43:00.000Z,indus,ActionParsnip,aah thats nvidia-xconfig
+2009-09-24T16:43:00.000Z,ActionParsnip,indus,no thats to give a stock xorg.conf with nvidia oodnes
+2009-09-24T16:44:00.000Z,ActionParsnip,indus,"me neither, i ignore it"
+2009-09-24T16:44:00.000Z,indus,ActionParsnip,dpkg is good enough
+2009-09-24T17:49:00.000Z,indus,ActionParsnip,heard of silicon doc? :)
+2009-09-24T17:49:00.000Z,ActionParsnip,indus,"never, what is it?"
+2009-09-24T17:49:00.000Z,indus,ActionParsnip,think and try to remember
+2009-09-29T14:54:00.000Z,indus,ActionParsnip,whats up
+2009-09-29T14:54:00.000Z,ActionParsnip,indus,just saying howdy
+2009-09-29T19:03:00.000Z,ActionParsnip,indus,chance would be a fine thing
+2009-09-29T19:03:00.000Z,indus,ActionParsnip,yeah
+2009-09-29T19:34:00.000Z,ActionParsnip,indus, its ! then !0 then !!
+2009-09-29T19:34:00.000Z,indus,ActionParsnip,what is that mean
+2009-10-05T17:24:00.000Z,ActionParsnip,indus,not when your nick says mirchisalad
+2009-10-05T18:48:00.000Z,indus,ActionParsnip,try skype is cams creep you out]
+2009-10-05T18:48:00.000Z,ActionParsnip,indus,i dont use voice stuff. i like text
+2009-10-05T18:53:00.000Z,ActionParsnip,indus,"read what ubottu said, answer = yes"
+2009-10-05T18:59:00.000Z,indus,ActionParsnip,do you know how i can repair grub with alternate cd
+2009-10-05T19:04:00.000Z,ActionParsnip,indus,"not sure, never had to do it. any live cd will do"
+2009-10-13T14:26:00.000Z,indus,ActionParsnip,thats my question
+2009-10-13T14:26:00.000Z,ActionParsnip,indus,then its offtopic
+2009-10-13T14:27:00.000Z,indus,ActionParsnip,"i solved yesterday's problem, nvidia driver was not installing properly"
+2009-10-13T14:28:00.000Z,indus,ActionParsnip,"once activated, i could boot in again"
+2009-10-13T14:28:00.000Z,ActionParsnip,indus,"aweosme, good one :)"
+2009-10-13T14:28:00.000Z,indus,ActionParsnip,i believe restricted kernel modules had not made in for the .13 kernel
+2009-10-13T14:28:00.000Z,indus,ActionParsnip,i installed driver ver 173
+2009-10-13T14:30:00.000Z,ActionParsnip,indus,i use the 190 beta driver with my 6150 onboard nvidia
+2009-10-13T14:30:00.000Z,indus,ActionParsnip,why
+2009-10-13T14:30:00.000Z,ActionParsnip,indus,"laughs, i'm a real massochist as I dont care about my systems"
+2009-10-13T14:31:00.000Z,ActionParsnip,indus,i also have bleeding edge xorg and alpha flash plugin running in firefox-3.7
+2009-10-14T11:56:00.000Z,indus,ActionParsnip,hello
+2009-10-14T12:02:00.000Z,ActionParsnip,indus,try disabling unnecessary hardware in bios like sound and lan
+2009-10-14T12:02:00.000Z,indus,ActionParsnip,"ya i know all that, it doesnt work"
+2009-10-14T12:02:00.000Z,indus,ActionParsnip,"what happens is, live cd shows boot menu, then reads HDD thinking it is cd rom drive"
+2009-10-14T12:02:00.000Z,ActionParsnip,indus,got the latest bios?
+2009-10-14T12:03:00.000Z,indus,ActionParsnip,"well,yeah"
+2009-10-14T12:03:00.000Z,ActionParsnip,indus,"set bios to failsafe defaults, kill sound and lan"
+2009-10-14T12:03:00.000Z,indus,ActionParsnip,works in windows
+2009-10-14T12:03:00.000Z,ActionParsnip,indus,"and usb too, unless you are installing from it"
+2009-10-14T12:03:00.000Z,ActionParsnip,indus,have you checked your ram health
+2009-10-14T12:04:00.000Z,indus,ActionParsnip,DJ-Nomad the usb is the only way iam able to install ubuntu ever since intrepid
+2009-10-14T12:04:00.000Z,ActionParsnip,indus,do other distros work ok?
+2009-10-14T12:04:00.000Z,indus,ActionParsnip,windows works great :)
+2009-10-14T12:04:00.000Z,ActionParsnip,indus,windows isnt a distro of linux is it
+2009-10-14T12:05:00.000Z,ActionParsnip,indus,"could try an older release, or knoppix for example"
+2009-10-14T12:05:00.000Z,indus,ActionParsnip,there is a fix upstream in kernel which fixes it it seams
+2009-10-14T12:05:00.000Z,indus,ActionParsnip,"if i can modify boot options, i can make kernel see cd rom , tried once with intrepid"
+2009-10-14T12:06:00.000Z,ActionParsnip,indus,try karmic daily then :)
+2009-10-14T12:06:00.000Z,indus,ActionParsnip,latest karmic
+2009-10-14T12:06:00.000Z,indus,ActionParsnip,wait hold on
+2009-10-14T12:09:00.000Z,indus,ActionParsnip,asus support sucks
+2009-10-14T12:09:00.000Z,ActionParsnip,indus,my asus pundit works sweeeeeet
+2009-10-14T12:10:00.000Z,indus,ActionParsnip,their driver page is full of poor english
+2009-10-14T12:10:00.000Z,indus,ActionParsnip,they are way behind gigabyte for support
+2009-10-14T12:10:00.000Z,ActionParsnip,indus,"depends on the product you buy, should have checked support before purchasing"
+2009-10-14T12:10:00.000Z,indus,ActionParsnip,"some new athlon x2 has come out and asus has no official support for my board , while same ones on gigabyte is updated"
+2009-10-14T12:11:00.000Z,indus,ActionParsnip,iam talking about upgrading
+2009-10-14T12:11:00.000Z,ActionParsnip,indus,"still, check what works instead of whats cheapest or even fastest, less heartache then"
+2009-10-14T12:12:00.000Z,indus,ActionParsnip,"amd made the new athlons x2 for this kind of boards, it works but bios says unknown processor, gigabyte is very innovative for this, has updated bios for this"
+2009-10-14T12:12:00.000Z,indus,ActionParsnip,my board is only 2 year old
+2009-10-14T12:13:00.000Z,ActionParsnip,indus,then buy a gigabyte board if you think they are so great
+2009-10-14T12:13:00.000Z,indus,ActionParsnip,ya next upgrade is that one
+2009-10-14T12:14:00.000Z,ActionParsnip,indus,"i check the hcl and online forums for what works 100% out of the box, and buy that. I have never had to install a single driver as the kernel in the distro on the system or the modules on the install cd always support what i buy"
+2009-10-14T12:15:00.000Z,indus,ActionParsnip,your point is different to what iam saying
+2009-10-14T12:15:00.000Z,indus,ActionParsnip,"it worked 100 percent before, but later it didnt"
+2009-10-14T12:16:00.000Z,ActionParsnip,indus,so what changed in between?
+2009-10-14T12:16:00.000Z,indus,ActionParsnip,"i was just talking about manufacturers in general, here it complaisn about bios bug"
+2009-10-14T12:16:00.000Z,ActionParsnip,indus,could try an older bios maybe
+2009-10-14T12:17:00.000Z,indus,ActionParsnip,"ya i think you are right, maybe"
+2009-10-14T12:17:00.000Z,indus,ActionParsnip,there was a good old bios which worked fine
+2009-10-14T12:17:00.000Z,indus,ActionParsnip,"ill do that today later and update you,"
+2009-10-14T12:17:00.000Z,indus,ActionParsnip,"do watch out for M2A VM board questions, i would be glad to hear"
+2009-10-14T12:18:00.000Z,indus,ActionParsnip,i kinda forgot the fix i tried a year ago
+2009-10-14T12:35:00.000Z,indus,ActionParsnip,check this
+2009-10-14T12:35:00.000Z,ActionParsnip,indus,check what?
+2009-10-14T12:36:00.000Z,indus,ActionParsnip,"its my fix , i ll add it to my launchpad bug page"
+2009-10-14T12:37:00.000Z,ActionParsnip,indus,i dont see any url pasted by you..?
+2009-10-14T12:37:00.000Z,indus,ActionParsnip, yikes http://kerneltrap.org/mailarchive/git-commits-head/2008/6/14/2122314
+2009-10-14T12:38:00.000Z,ActionParsnip,indus,looks perfect
+2009-10-14T12:38:00.000Z,indus,ActionParsnip, :) ya but iam taking your suggesstion and using an older bios
+2009-10-14T12:38:00.000Z,ActionParsnip,indus,i wont be buying one of those..mmm never
+2009-10-14T12:39:00.000Z,indus,ActionParsnip,"btw, i have some news for you, remember the plug and play option in bios ? setting it to yes wouldnt boot windows"
+2009-10-14T12:39:00.000Z,ActionParsnip,indus,"weird, the board sounds like a real white elephant to me"
+2009-10-14T12:39:00.000Z,indus,ActionParsnip,"that chipset is great for gaming , it is very good"
+2009-10-14T12:40:00.000Z,indus,ActionParsnip,way better than nv 6150 i had
+2009-10-14T12:40:00.000Z,indus,ActionParsnip,no all new stuff will have bugs
+2009-10-14T12:40:00.000Z,indus,ActionParsnip,its impressive when it was launched
+2009-10-14T12:40:00.000Z,indus,ActionParsnip,call of duty worked so good on the igp
+2009-10-14T12:42:00.000Z,indus,ActionParsnip,"if you notice, the patch is from amd guy, they are good with open stuff"
+2009-10-14T12:42:00.000Z,ActionParsnip,indus,"i dont get excited by gaming boards, i like looking at lower power consumption desktops like linutop"
+2009-10-14T12:42:00.000Z,indus,ActionParsnip,yes this is also very low power
+2009-10-14T12:43:00.000Z,ActionParsnip,indus,not 6W for the whole system its not
+2009-10-14T12:43:00.000Z,indus,ActionParsnip,ya cos the igp takes a little more
+2009-10-14T12:43:00.000Z,indus,ActionParsnip,but it had some network card issues
+2009-10-14T12:43:00.000Z,indus,ActionParsnip,no good for servers i heard
+2009-10-14T12:43:00.000Z,ActionParsnip,indus,"exactly, gaming boards have been done forever, low power is a new thing and people are trying to get lower and lower power consumption"
+2009-10-14T12:44:00.000Z,indus,ActionParsnip,"oh no , mine is not a gaming board , its vm series, very low cost and stripped down"
+2009-10-14T12:44:00.000Z,indus,ActionParsnip,a low cost gameing option for all
+2009-10-14T12:44:00.000Z,indus,ActionParsnip,thats why i said the 690 g waas introduced with that purpose
+2009-10-14T12:45:00.000Z,ActionParsnip,indus,"yes but it pulls more than a lot of power, http://www.fit-pc.com/fit-pc1/ is pretty cool too"
+2009-10-14T12:46:00.000Z,ActionParsnip,indus,"6W for a desktop PC, thats pretty special"
+2009-10-14T12:48:00.000Z,indus,ActionParsnip,6 w is low isnt it
+2009-10-14T12:48:00.000Z,ActionParsnip,indus,less than a lightbulb
+2009-10-14T12:49:00.000Z,ActionParsnip,indus,i find that stuff more interesting than systems with 16 CPUs and 2tb RAM
+2009-10-14T15:18:00.000Z,indus,ActionParsnip,ya probably
+2009-10-14T15:18:00.000Z,indus,ActionParsnip,could you give whole syntax to denmark? please
+2009-10-14T16:55:00.000Z,indus,ActionParsnip,give him the link
+2009-10-14T16:55:00.000Z,indus,ActionParsnip,i know you have it :)
+2009-10-14T17:06:00.000Z,indus,ActionParsnip,"suppose i update bios  and something goes wrong, howdo i revert back"
+2009-10-14T17:07:00.000Z,ActionParsnip,indus,if it goes really wrong you may brick your motherboard
+2009-10-14T17:07:00.000Z,ActionParsnip,indus,most flashers have a backup feature so you can backup the original bios
+2009-10-14T17:08:00.000Z,indus,ActionParsnip,hmm the mobo does have a backup but not sure if it works
+2009-10-14T17:09:00.000Z,ActionParsnip,indus,bios updates are not without risk
+2009-10-14T17:10:00.000Z,indus,ActionParsnip,"anyways after the bios update, iam gonna try a mainline kernel"
+2009-10-15T11:42:00.000Z,indus,ActionParsnip,yeah -v also does the same
+2009-10-15T11:42:00.000Z,ActionParsnip,indus,gotcha
+2009-10-15T12:26:00.000Z,indus,ActionParsnip,there is no need to go to recovery console for that
+2009-10-15T14:33:00.000Z,ActionParsnip,indus,x1200
+2009-10-15T14:33:00.000Z,ActionParsnip,indus,ati consider it legacy now
+2009-10-15T14:34:00.000Z,ActionParsnip,indus,"basically because its old ati drop it like its something contagious, ati suck"
+2009-10-15T14:34:00.000Z,ActionParsnip,indus,"but people buy their shoddy wares, go figure"
+2009-10-15T14:34:00.000Z,indus,ActionParsnip,"they dont suck,"
+2009-10-15T14:34:00.000Z,indus,ActionParsnip,"superb cards, its a linux poiunt of view"
+2009-10-15T14:35:00.000Z,ActionParsnip,indus,"i'd always buy nvidia, even in a windows system"
+2009-10-15T14:35:00.000Z,indus,ActionParsnip,their drivers are as abad as ati now
+2009-10-15T14:35:00.000Z,indus,ActionParsnip,time has changed
+2009-10-15T15:05:00.000Z,indus,ActionParsnip,windows xp is best
+2009-10-15T15:06:00.000Z,ActionParsnip,indus,"thats your opinion, millions would agree, millions would disagree, doesnt make it any truer than me saying something else is best :)"
+2009-10-15T15:08:00.000Z,indus,ActionParsnip,millions are on the xp side btw :) very few linux users aha :D
+2009-10-15T15:08:00.000Z,ActionParsnip,indus,"doesnt make it truer, just means more are in agreement. For some people, even living isnt best"
+2009-10-15T15:09:00.000Z,ActionParsnip,indus,"best is a comparison of a product to your own needs, everyones needs differ so there will never be an outright best, its a very immature ideology to bandy round (I feel)"
+2009-10-15T17:59:00.000Z,ActionParsnip,indus,?
+2009-10-15T18:00:00.000Z,indus,ActionParsnip,686 is 32 bit right?
+2009-10-15T18:00:00.000Z,ActionParsnip,indus,indeed
+2009-10-15T18:00:00.000Z,indus,ActionParsnip,ok i dont see any messages from coffeej how come you are replying to him?
+2009-10-15T18:01:00.000Z,ActionParsnip,indus,i just got out of a meeting and looked at the channel
+2009-10-15T18:03:00.000Z,ActionParsnip,indus,isnt skype in the medibuntu repo?
+2009-10-15T18:04:00.000Z,ActionParsnip,indus,"look at your palm then slap it on your face, then shout 'd'oh'"
+2009-10-15T18:05:00.000Z,ActionParsnip,indus,http://www.youtube.com/watch?v=A3KyXCBrAfg
+2009-10-15T18:05:00.000Z,indus,ActionParsnip,"sorry, restricted acess"
+2009-10-15T18:05:00.000Z,indus,ActionParsnip,"btw, i downgraded the bios after we spoke yesterday, no go"
+2009-10-15T18:05:00.000Z,ActionParsnip,indus,http://scienceblogs.com/insolence/facepalm.jpg
+2009-10-15T18:06:00.000Z,ActionParsnip,indus,bah
+2009-10-15T18:06:00.000Z,indus,ActionParsnip,ok that one
+2009-10-15T18:08:00.000Z,indus,ActionParsnip,scary command :)
+2009-10-15T18:08:00.000Z,ActionParsnip,indus,gets stuff done
+2009-10-15T18:09:00.000Z,ActionParsnip,indus,and its a high level package so wont break the OS
+2009-10-15T18:11:00.000Z,indus,ActionParsnip, there is somethinhg wrong here
+2009-10-15T18:11:00.000Z,indus,ActionParsnip,his system is a 32 bit
+2009-10-15T18:11:00.000Z,ActionParsnip,indus,"thats what i thought, its very weird"
+2009-10-15T18:12:00.000Z,indus,ActionParsnip,nooooooooo
+2009-10-15T18:12:00.000Z,indus,ActionParsnip,ok that will tell for sure if that package is present :D
+2009-10-15T18:18:00.000Z,indus,ActionParsnip,"ok i dont get it, you try help him"
+2009-10-15T18:18:00.000Z,indus,ActionParsnip,her
+2009-10-15T18:22:00.000Z,indus,ActionParsnip,maybe its an ubuntu netbook remix
+2009-10-15T18:22:00.000Z,indus,ActionParsnip,excellent
+2009-10-16T17:00:00.000Z,indus,ActionParsnip,cli man
+2009-10-20T18:59:00.000Z,ActionParsnip,indus,you wish ;)
+2009-10-21T12:02:00.000Z,ActionParsnip,indus,moot = meaningless or pointless
+2009-10-26T15:40:00.000Z,indus,ActionParsnip,hi
+2009-10-26T15:40:00.000Z,indus,ActionParsnip,good day and welcome
+2009-10-26T15:41:00.000Z,ActionParsnip,indus,thanks :)
+2009-10-27T11:21:00.000Z,indus,ActionParsnip,hello good day
+2009-10-27T15:28:00.000Z,ActionParsnip,indus,i'd head to #ubuntu-offtopic
+2009-10-27T15:29:00.000Z,ActionParsnip,indus,or maybe #politics
+2009-10-27T15:29:00.000Z,indus,ActionParsnip,"aah no, ubuntu folks are nice people, i need serious discussion, also region specific, ubuntu is western"
+2009-10-27T17:27:00.000Z,ActionParsnip,indus,"modprobe loads modules, you can use modprobe -r to remove them"
+2009-10-27T17:27:00.000Z,indus,ActionParsnip,thanks a lot
+2009-10-27T17:29:00.000Z,indus,ActionParsnip,bye
+2009-11-06T15:20:00.000Z,indus,ActionParsnip,the nvidia 5200 is legacy driver i think
+2009-11-06T15:21:00.000Z,ActionParsnip,indus,http://packages.ubuntu.com/karmic/nvidia-glx-173   search for 5600XT
+2009-11-06T15:21:00.000Z,indus,ActionParsnip,yes searching now
+2009-11-06T15:22:00.000Z,indus,ActionParsnip,yeah supported
+2009-11-06T15:22:00.000Z,ActionParsnip,indus,jeeves knows much :D
+2009-11-06T15:28:00.000Z,ActionParsnip,indus,i'm just suggesting :D
+2009-11-06T15:30:00.000Z,indus,ActionParsnip,modaliases i think is automatically installed? no?
+2009-11-06T15:30:00.000Z,ActionParsnip,indus,"not sure, i always tell it, its in a few guides ive read too so I always explicitly install it"
+2009-11-06T15:30:00.000Z,indus,ActionParsnip,"actually its only required so that driver appears in hardware drivers, i remember"
+2009-11-06T15:33:00.000Z,ActionParsnip,indus,"i use 190, not too bad at all"
+2009-11-06T17:45:00.000Z,ActionParsnip,indus,played quakelive ?
+2009-11-06T17:45:00.000Z,indus,ActionParsnip,bah no i dont like it
+2009-11-06T17:45:00.000Z,indus,ActionParsnip,"its old,i rather play open arena"
+2009-11-06T17:46:00.000Z,indus,ActionParsnip,iam addicted to quake4
+2009-11-06T17:46:00.000Z,ActionParsnip,indus,"its a great idea though, and well executed"
+2009-11-06T17:46:00.000Z,indus,ActionParsnip,"only thing i play 99 % of the time, no time for anything else"
+2009-11-06T17:46:00.000Z,indus,ActionParsnip,"yeah i like the idea too, need for speed is coming free now"
+2009-11-10T18:43:00.000Z,indus,ActionParsnip,hi whats up
+2009-11-10T18:44:00.000Z,indus,ActionParsnip,what was that trick of using more swap space or other way round
+2009-11-11T14:08:00.000Z,indus,ActionParsnip,if i dont configure drivers? why should anyone need to
+2009-11-11T14:08:00.000Z,ActionParsnip,indus,"well its not doing it automatically, so some sort of intervention is needed, isnt it"
+2009-11-11T14:09:00.000Z,indus,ActionParsnip,yeah it sucks really
+2009-11-11T14:09:00.000Z,ActionParsnip,indus,bet its an ati thing
+2009-11-11T14:09:00.000Z,indus,ActionParsnip,its intel
+2009-11-11T14:09:00.000Z,indus,ActionParsnip,"intel is worst in this case since 9.04, i thought they took care of it in karmic"
+2009-11-11T14:09:00.000Z,ActionParsnip,indus,specially since they removed xorg.conf
+2009-11-11T14:10:00.000Z,indus,ActionParsnip,"yes exactly, how on earth do we fix this now :("
+2009-11-11T14:16:00.000Z,ActionParsnip,indus,"hard raid has a dedicated piece of hardware and cache to make things go really fast, softraid sucks in comparison and uses the system ram and cpu to manage the disks"
+2009-11-11T14:16:00.000Z,ActionParsnip,indus,"you can get some very decent raid cards with half a gig of disk cache, you get some killer speed off them"
+2009-11-11T14:30:00.000Z,indus,ActionParsnip,"opera used to be there, but i think some license changed"
+2009-11-11T14:30:00.000Z,ActionParsnip,indus,its proprietary so opera will call all the shots afaik
+2009-11-11T14:30:00.000Z,indus,ActionParsnip,remember the goodold days of flash 8 and 9
+2009-11-11T16:27:00.000Z,ActionParsnip,indus,"it is if its only confined to LAN, then its fine"
+2009-11-11T17:53:00.000Z,indus,ActionParsnip,"iam telling him about ubuntu one, and yes the link does support ubuntu"
+2009-11-11T18:17:00.000Z,indus,ActionParsnip,this needs a lot of patience :|
+2009-11-11T18:18:00.000Z,ActionParsnip,indus,sometimes it does
+2009-11-12T14:46:00.000Z,indus,ActionParsnip,can you help frull
+2009-11-12T14:46:00.000Z,indus,ActionParsnip,he has been around since morning
+2009-11-12T14:47:00.000Z,ActionParsnip,indus,nice
+2009-11-12T14:47:00.000Z,ActionParsnip,indus,sup
+2009-11-12T14:48:00.000Z,indus,ActionParsnip,hi sorry to bother you
+2009-11-12T14:48:00.000Z,ActionParsnip,indus,np
+2009-11-12T14:48:00.000Z,indus,ActionParsnip,i have a seminar i gtg now
+2009-11-12T16:28:00.000Z,indus,ActionParsnip,"there is a moer simplified way for adding ppas now, just add ppa:some name and no need of keys either"
+2009-11-12T16:28:00.000Z,indus,ActionParsnip,ppa:pidgin-developers/ppa
+2009-11-12T16:28:00.000Z,indus,ActionParsnip,"thats it and reload,"
+2009-11-12T16:29:00.000Z,ActionParsnip,indus,"i'm old school, what can i say, i dont use gui tools for repos, too clunky imho"
+2009-11-12T16:30:00.000Z,indus,ActionParsnip,"only with karmic that works, i have empathy added ppa:empathy something"
+2009-11-12T16:30:00.000Z,ActionParsnip,indus,true but i use cli so much i find it easier to add the lines manually
+2009-11-12T16:30:00.000Z,indus,ActionParsnip,no need of gpg keys in case of karmic at least for empathy
+2009-11-12T16:30:00.000Z,indus,ActionParsnip,hmm  any idea how to change server for download from cli
+2009-11-12T16:31:00.000Z,ActionParsnip,indus,"not sure, you could have multiple sources files and cp them into the main seat when needed"
+2009-11-12T16:32:00.000Z,ActionParsnip,indus,i'll so it manual til its not an option
+2009-11-13T14:58:00.000Z,indus,ActionParsnip,:)
+2009-11-18T18:02:00.000Z,ActionParsnip,indus,sure if you can find it
+2009-11-18T18:02:00.000Z,indus,ActionParsnip,ya its in older releases
+2009-11-18T18:02:00.000Z,ActionParsnip,indus,if you are using 32bit you can try the alpha 10.1 flash
+2009-11-18T18:03:00.000Z,indus,ActionParsnip,"nah its 64 bit, but iam willing to try the wrapper"
+2009-11-18T18:03:00.000Z,indus,ActionParsnip,is it any good?
+2009-11-18T18:03:00.000Z,indus,ActionParsnip,"ill install nspluginwrapper separately, then move flash 10.1 to /usr/lib/mozilla"
+2009-11-18T18:04:00.000Z,ActionParsnip,indus,"not sure, i use the 64bit one, there is scope to make 64bit soon, some guy posted a guide up about installing flashplugin-nonfree then replacing the .so with the 10.1 one (32bit)"
+2009-11-18T18:04:00.000Z,ActionParsnip,indus,it uses gpu instead of cpu for some stuff
+2009-11-18T18:06:00.000Z,indus,ActionParsnip,many sites still work with 9 fine or with 8 too
+2009-11-24T18:31:00.000Z,indus,ActionParsnip, comes with ubuntu?
+2009-11-24T18:31:00.000Z,ActionParsnip,indus,can be installed from repo
+2009-11-24T18:32:00.000Z,ActionParsnip,indus,its in gnu-fdisk
+2009-11-24T18:32:00.000Z,indus,ActionParsnip,"not sure if fdisk can erase a partition, i thought parted did that"
+2009-11-24T18:33:00.000Z,ActionParsnip,indus,"sure it can, you can add and delete partitons in fdisk, cfdisk, parted, gparted"
+2009-11-24T18:33:00.000Z,ActionParsnip,indus,theres more than one app for the job
+2009-11-24T18:36:00.000Z,indus,ActionParsnip,so myung guy left i guess
+2009-11-24T18:36:00.000Z,indus,ActionParsnip,"anyways in case you need , http://www.cyberciti.biz/faq/linux-how-to-delete-a-partition-with-fdisk-command/"
+2009-11-24T18:37:00.000Z,ActionParsnip,indus,thanks
+2009-11-25T14:08:00.000Z,ActionParsnip,indus,?
+2009-11-25T14:08:00.000Z,indus,ActionParsnip,is 3 monitors work in ubuntu?
+2009-11-25T14:08:00.000Z,ActionParsnip,indus,not used 3 monitors in linux
+2009-11-25T14:09:00.000Z,indus,ActionParsnip,"both cards detected, but only 2 monitors"
+2009-11-25T15:07:00.000Z,indus,ActionParsnip,info overload maybe
+2009-11-25T15:07:00.000Z,ActionParsnip,indus,maybe but if you want it fixed you have to walk through the fire
+2009-11-25T15:08:00.000Z,indus,ActionParsnip,blkid what does that do
+2009-11-25T15:08:00.000Z,ActionParsnip,indus,"plus the / will be the root ofthe live CD, not the installed system as the system doesnt boot so allthis will have to be done in live cd"
+2009-11-25T15:35:00.000Z,ActionParsnip,indus,"koffice, star office"
+2009-11-25T15:37:00.000Z,ActionParsnip,indus,staroffice
+2009-11-25T15:37:00.000Z,indus,ActionParsnip,that open source?
+2009-11-25T15:37:00.000Z,indus,ActionParsnip,paid sun product isnt it
+2009-11-25T15:38:00.000Z,ActionParsnip,indus,https://help.ubuntu.com/community/StarOffice
+2009-11-25T15:39:00.000Z,ActionParsnip,indus,seems so $34 USD
+2009-11-26T14:15:00.000Z,indus,ActionParsnip,wow seesm to run fine with wine
+2009-11-26T14:10:00.000Z,ActionParsnip,indus,"william hague, kent I think"
+2009-11-26T14:14:00.000Z,indus,ActionParsnip,what link
+2009-11-26T14:14:00.000Z,ActionParsnip,indus,manas: http://appdb.winehq.org/objectManager.php?sClass=version&iId=4992
+2009-11-26T14:16:00.000Z,ActionParsnip,indus,"does, just takes a little effort"
+2009-11-26T14:16:00.000Z,ActionParsnip,indus,its also a 4Gb install
+2009-11-26T14:17:00.000Z,indus,ActionParsnip,"4 gb for ms office , lol why"
+2009-11-26T14:18:00.000Z,ActionParsnip,indus,ask MS
+2009-11-26T14:22:00.000Z,ActionParsnip,indus,yep and abiword + gnumeric is around 30Mb
+2009-11-26T14:23:00.000Z,indus,ActionParsnip,"i use abiword,its nice, messes formatting a little , i hear gnumeric is even better as an application"
+2009-11-26T14:29:00.000Z,indus,ActionParsnip,"so ftab selected drop me into root sheell wth networking, then"
+2009-11-26T14:29:00.000Z,ActionParsnip,indus,doesnt really need networking but doesnt hurt
+2009-11-26T14:30:00.000Z,ActionParsnip,indus,has a root pass been set?
+2009-12-08T15:10:00.000Z,indus,ActionParsnip,wine is capable of infection
+2009-12-08T15:10:00.000Z,ActionParsnip,indus,"unless its an actual windows binary, the .exe doesnt automatically denote a binary"
+2009-12-08T15:10:00.000Z,indus,ActionParsnip,yea sure
+2009-12-08T15:23:00.000Z,indus,ActionParsnip,is his partition visible in fdisk?
+2009-12-08T18:18:00.000Z,indus,ActionParsnip,it says mtp is implemented
+2009-12-08T18:19:00.000Z,indus,ActionParsnip,well i got ATI 4850 works great
+2009-12-08T18:19:00.000Z,ActionParsnip,indus,its not something I use. I use devices which display as partitions rather than some garbage coind by microsoft
+2009-12-08T18:20:00.000Z,ActionParsnip,indus,note: some areas ;)
+2009-12-08T18:29:00.000Z,indus,ActionParsnip,his question is about booting
+2009-12-08T18:32:00.000Z,ActionParsnip,indus,if your ubuntu is 32bit theres the 10.1 flash which supports hardware rendering
+2009-12-08T18:35:00.000Z,indus,ActionParsnip,ill use nswrapper
+2009-12-08T18:36:00.000Z,indus,ActionParsnip,flash only supports it wit hthe latest catalyst 9.11 driver
+2009-12-08T18:38:00.000Z,indus,ActionParsnip,thanks :)
+2009-12-08T18:44:00.000Z,indus,ActionParsnip,"ah no, i can make a deb from it"
+2009-12-08T18:44:00.000Z,ActionParsnip,indus,"i have a script to install it rather than a deb, there are PPAs with the flash already packaged"
+2009-12-08T18:45:00.000Z,indus,ActionParsnip,ther are? with the 64 bit flash?
+2009-12-08T18:45:00.000Z,ActionParsnip,indus,"yes, its just that file in a conventient system, kinda pointless but whatever floats your boat"
+2009-12-11T15:40:00.000Z,indus,ActionParsnip,beta 64 bit? where
+2009-12-11T15:40:00.000Z,ActionParsnip,indus,http://labs.adobe.com/downloads/flashplayer10_64bit.html
+2009-12-11T15:41:00.000Z,ActionParsnip,indus,runs well in chromium :)
+2009-12-11T15:41:00.000Z,indus,ActionParsnip,aah thanks did nt know this :) dec 8
+2009-12-11T15:41:00.000Z,indus,ActionParsnip,chromium? chrome beta is out now
+2009-12-11T15:42:00.000Z,ActionParsnip,indus,"i like the daily updates, makes me feel warm and fuzzy"
+2009-12-11T15:42:00.000Z,indus,ActionParsnip,http://www.google.com/chrome
+2009-12-11T15:42:00.000Z,indus,ActionParsnip,i have ditched crappy firefox for it
+2009-12-11T15:43:00.000Z,indus,ActionParsnip,"and yes, flash runs great on it"
+2009-12-11T15:43:00.000Z,ActionParsnip,indus,the bugs folks report under chromium feed the devolopment of chrome
+2009-12-11T15:46:00.000Z,indus,ActionParsnip,what open source version?
+2009-12-11T15:47:00.000Z,ActionParsnip,indus,the ppa I posted has a daily build and lets users log bugs which feed the daily project and chrome
+2009-12-11T15:49:00.000Z,ActionParsnip,indus,"its the same, just the open source version"
+2009-12-11T15:50:00.000Z,indus,ActionParsnip,"i dont think thats true, chrome is based on the open project chromium"
+2009-12-11T15:50:00.000Z,indus,ActionParsnip,google just calls it chrome
+2009-12-11T15:50:00.000Z,indus,ActionParsnip,http://code.google.com/chromium/
+2009-12-11T15:51:00.000Z,ActionParsnip,indus,http://www.computer-aid.com.au/blog/2009/03/12/google-chrome-vs-chromium/
+2009-12-11T15:52:00.000Z,indus,ActionParsnip,yea so its the same
+2009-12-11T15:52:00.000Z,indus,ActionParsnip,and open source
+2009-12-11T15:53:00.000Z,indus,ActionParsnip,crappy site btw :D
+2009-12-11T15:53:00.000Z,ActionParsnip,indus,lays out the info so who cares
+2009-12-11T15:53:00.000Z,ActionParsnip,indus,or http://www.google.com/support/forum/p/Chrome/thread?tid=380b7ffc5d845696&hl=en
+2009-12-11T15:54:00.000Z,ActionParsnip,indus,provided the info is accurate it doesnt matter how crappy it looks
+2009-12-11T15:54:00.000Z,indus,ActionParsnip,nvm yes
+2009-12-11T15:58:00.000Z,ActionParsnip,indus,"i use command line a lot, gets your typing speed up"
+2009-12-11T16:04:00.000Z,indus,ActionParsnip,can u confirm that second option is like alternate cd?
+2009-12-11T16:04:00.000Z,indus,ActionParsnip,install ubuntu
+2009-12-11T16:05:00.000Z,ActionParsnip,indus,second option?
+2009-12-11T16:05:00.000Z,indus,ActionParsnip,"in live cd boot options,"
+2009-12-11T16:06:00.000Z,ActionParsnip,indus,not sure
+2009-12-11T16:38:00.000Z,indus,ActionParsnip,i dont think x1600 is supported with prop drivers
+2010-02-18T12:46:00.000Z,indus,ActionParsnip,whats up .
+2010-02-19T12:45:00.000Z,indus,ActionParsnip,yo yo
+2010-02-19T12:47:00.000Z,indus,ActionParsnip,werd? iam fine thanks
+2010-02-19T12:47:00.000Z,indus,ActionParsnip,good day?
+2010-03-08T16:37:00.000Z,indus,ActionParsnip,hi
+2010-03-08T16:37:00.000Z,ActionParsnip,indus,yo yo yo
+2010-03-08T16:37:00.000Z,ActionParsnip,indus,"mine is fine, how art thee"
+2010-03-08T16:40:00.000Z,ActionParsnip,indus,if you took all the porn off the web there would only be one website called www.bringbacktheporn.com
+2010-05-04T17:25:00.000Z,indus,ActionParsnip,heya
+2010-05-04T17:25:00.000Z,ActionParsnip,indus,yo yo yo
+2010-06-15T11:12:00.000Z,indus,ActionParsnip,hello good day to you :)
+2010-06-23T15:08:00.000Z,indus,ActionParsnip,power can be misused :D
+2010-06-23T15:12:00.000Z,indus,ActionParsnip,"i know , i know a few commands but iam not a sys admin"
+2010-06-23T15:13:00.000Z,indus,ActionParsnip,tell me some 5 cool scripts you use for everyday use
+2010-06-23T15:16:00.000Z,ActionParsnip,indus,backupsys puts all the stuff from my system to my fileserver using rsync.
+2010-06-23T15:16:00.000Z,ActionParsnip,indus,I've made a few to make playlists from folders
+2010-06-23T15:17:00.000Z,ActionParsnip,indus,if you shirk away from scripts and command line you are missing out dude
+2010-06-23T15:18:00.000Z,ActionParsnip,indus,"I guess, makes the world go around"
+2010-06-23T15:18:00.000Z,indus,ActionParsnip,"true heh , i do use command line sometimes , back in ubuntu 6.06 had to use a lot of those"
+2010-06-24T12:55:00.000Z,indus,ActionParsnip,i thought iraq has a whitehouse today :)
+2010-06-24T12:55:00.000Z,indus,ActionParsnip,arent they ruled by americans
+2010-06-24T12:56:00.000Z,ActionParsnip,indus,"no, they have their own democratic government"
+2010-06-24T12:56:00.000Z,indus,ActionParsnip,yeah right
+2010-06-24T12:58:00.000Z,ActionParsnip,indus,its just to test
+2010-06-24T12:58:00.000Z,indus,ActionParsnip,ok but a dicey situation none the less
+2010-06-24T12:58:00.000Z,indus,ActionParsnip,is he trying to use flash ?
+2010-06-24T12:59:00.000Z,ActionParsnip,indus,can't even get to the page
+2010-06-24T13:04:00.000Z,indus,ActionParsnip,"ya thanks please help him , i have to go have lunch :)"
+2010-06-28T18:46:00.000Z,indus,ActionParsnip,hi
+2010-06-28T18:46:00.000Z,ActionParsnip,indus,"its offtopic, the factoid is a great way to inform as it's 3 characters"
+2010-07-08T19:01:00.000Z,indus,ActionParsnip,"hi , but also gtg so bye, good day"
+2010-07-08T19:04:00.000Z,indus,ActionParsnip,hi
+2010-07-08T19:04:00.000Z,indus,ActionParsnip,"good day, got to go now so bye"
+2009-04-27T15:04:00.000Z,indus,,i think medibuntu has realplayer also no?
+2009-04-27T15:05:00.000Z,ActionParsnip,indus,it does indeed
+2009-05-04T14:39:00.000Z,indus,ActionParsnip,not advisable disabling acpi
+2009-05-04T14:39:00.000Z,ActionParsnip,indus,why not?
+2009-05-04T14:40:00.000Z,indus,ActionParsnip,acpi is important for all
+2009-05-04T14:40:00.000Z,ActionParsnip,indus,not if it makes hardware not detect
+2009-05-04T14:40:00.000Z,indus,ActionParsnip,But his system boots fine
+2009-05-04T14:40:00.000Z,indus,ActionParsnip,i told you its just a silly bug
+2009-05-04T14:41:00.000Z,ActionParsnip,indus,"its only to test, if you do it with ctrl+e its only for that boot"
+2009-05-04T14:41:00.000Z,ActionParsnip,indus,its free to try
+2009-05-04T14:41:00.000Z,indus,ActionParsnip,aah ok its good to try things i guess
+2009-05-04T14:41:00.000Z,ActionParsnip,indus,exactly
+2009-05-04T14:42:00.000Z,indus,ActionParsnip,"but if a system boots perfectly fine, should we tell people to try boot options ?thats unnecessary no?"
+2009-05-04T14:43:00.000Z,ActionParsnip,indus,it may supress the error
+2009-05-04T14:43:00.000Z,indus,ActionParsnip,ko / ok
+2009-05-04T14:43:00.000Z,ActionParsnip,indus,"and if it doesnt, just reboot and you'll have lost nothing"
+2009-05-04T14:43:00.000Z,indus,ActionParsnip,ctl -e is it? ya you mean it edits grub for that session yes?
+2009-05-04T14:44:00.000Z,ActionParsnip,indus,"its in the boot options factoid, i think you highlight the entry and press e or ^e"
+2009-05-04T14:44:00.000Z,ActionParsnip,indus,then you can add bootoptions just for that session
+2009-05-04T14:44:00.000Z,indus,ActionParsnip,"yes correct, when grub shows up press e does it"
+2009-05-04T14:45:00.000Z,ActionParsnip,indus,"its only for 1 boot, unless you add it permanently in menu.lst"
+2009-05-04T14:46:00.000Z,indus,ActionParsnip,is parsnip a vegetable?
+2009-05-04T14:47:00.000Z,ActionParsnip,indus,its a sweeter white carrot
+2009-05-04T14:51:00.000Z,ActionParsnip,indus,"aye, get it roasted with salt and honey and you have a winner"
+2009-05-04T14:51:00.000Z,indus,ActionParsnip,wonder whether it grows in india
+2009-05-04T15:02:00.000Z,indus,ActionParsnip,i dont think he is having boot issues?? !' is he
+2009-05-04T15:02:00.000Z,ActionParsnip,indus,no but if he renames the file he can se where it comes in with the bootup
+2009-05-04T15:05:00.000Z,indus,ActionParsnip,i see you here always :)
+2009-05-04T15:05:00.000Z,ActionParsnip,indus,work is dead
+2009-05-04T15:07:00.000Z,ActionParsnip,indus,i just like to give to the community as the community has given to me
+2009-05-04T15:08:00.000Z,indus,ActionParsnip,"nothing against compiz, but it gives me a headache and cant run games with it"
+2009-05-05T12:42:00.000Z,indus,ActionParsnip,i never use gksudo
+2009-05-05T12:48:00.000Z,indus,ActionParsnip,hi
+2009-05-07T16:17:00.000Z,indus,ActionParsnip,it does?
+2009-05-07T16:17:00.000Z,indus,ActionParsnip,flash 64 bit alpha
+2009-05-07T16:17:00.000Z,ActionParsnip,indus,isnt that what i said?
+2009-05-07T16:27:00.000Z,indus,ActionParsnip,hi how are you today
+2009-05-07T16:27:00.000Z,ActionParsnip,indus,"not bad, waiting for my colleagues to arrive"
+2009-05-08T11:57:00.000Z,indus,ActionParsnip,not adviced? isnt it officially in universe now?
+2009-05-08T14:18:00.000Z,indus,ActionParsnip,does xfce take less space than gnome?
+2009-05-08T14:19:00.000Z,ActionParsnip,indus,"the DE does, yes"
+2009-05-08T14:19:00.000Z,ActionParsnip,indus,the ubuntu underneath wil be identical if you mean xubuntu / ubuntu
+2009-05-08T14:20:00.000Z,ActionParsnip,indus,i guess so yeah
+2009-05-08T14:20:00.000Z,ActionParsnip,indus,i'd just use something less bloated like puppy or DSL
+2009-05-08T14:21:00.000Z,indus,ActionParsnip,"ya i agree, puppy is nice,"
+2009-05-08T14:36:00.000Z,indus,ActionParsnip,baah
+2009-05-19T14:16:00.000Z,indus,ActionParsnip,hi
+2009-05-19T15:51:00.000Z,indus,ActionParsnip,"this was what iam wondering.I planned to get a tv tuner card,but now isp's are offering it through the internet, so if i could get that on the pc monitor directly"
+2009-05-19T15:52:00.000Z,ActionParsnip,indus,"may not have all the channels a tv card would provide, you could also use a slingbox / sony tv-anywhere if you want to share your cable tv connection :D"
+2009-05-19T15:52:00.000Z,indus,ActionParsnip,no isp is offering much more channels with much better quality
+2009-05-19T15:52:00.000Z,indus,ActionParsnip,also i hear tv tuner cards quality sucks
+2009-05-19T15:53:00.000Z,ActionParsnip,indus,"some do, some are ok"
+2009-05-19T15:53:00.000Z,indus,ActionParsnip,"for same price ,isp offering connection to digital tv"
+2009-05-19T15:53:00.000Z,indus,ActionParsnip,price of a tuner that is
+2009-05-19T15:54:00.000Z,ActionParsnip,indus,then your choice is obvious
+2009-05-19T15:55:00.000Z,indus,ActionParsnip,"hmm i believe it shouldnt be a problem to get that digital tv on my monitor , but right now cant seem to do it without a tv card"
+2009-05-19T15:55:00.000Z,indus,ActionParsnip,"aah IPTV its called , the tech name of the service"
+2009-05-19T15:56:00.000Z,indus,ActionParsnip,ok from the site :    
+2009-05-19T15:57:00.000Z,indus,ActionParsnip,and i hear mythtv works with set top box?
+2009-05-19T16:44:00.000Z,ActionParsnip,indus,recovery mode console or with an x server?
+2009-05-19T16:46:00.000Z,indus,ActionParsnip,i thought recovery mode is only console no? Or i can get gui with start x?
+2009-05-20T16:55:00.000Z,indus,ActionParsnip,what about the sudo apt-get -f update
+2009-05-20T16:56:00.000Z,indus,ActionParsnip,what about the sudo apt-get -f install  i mean
+2009-05-20T16:56:00.000Z,indus,ActionParsnip,is that a force install
+2009-05-20T16:56:00.000Z,ActionParsnip,indus,fixes broken deps to make a stable system
+2009-05-20T16:57:00.000Z,ActionParsnip,indus,man apt-get ;)
+2009-05-20T16:57:00.000Z,indus,ActionParsnip,heh was just about to do that
+2009-06-02T13:36:00.000Z,ActionParsnip,indus,its --force-architecture ;)
+2009-06-02T13:36:00.000Z,indus,ActionParsnip,damn !
+2009-06-16T17:39:00.000Z,indus,ActionParsnip,hi u replied to my launchpad question startup apps
+2009-06-16T17:39:00.000Z,ActionParsnip,indus,I'm good on there :)
+2009-06-16T17:40:00.000Z,ActionParsnip,indus,if the text is all in a big block its off my g1 phone ;)
+2009-06-16T17:40:00.000Z,indus,ActionParsnip,hmm?
+2009-06-16T17:41:00.000Z,ActionParsnip,indus,"i web browse from bed on my G1 and type on launchpad, good fun"
+2009-06-16T17:42:00.000Z,indus,ActionParsnip,"i was pleasantly surprised to read ur reply,since u were helping me on irc too"
+2009-06-16T17:44:00.000Z,indus,ActionParsnip,also cd ~/.config/autostart;clean what does this do?
+2009-06-16T17:45:00.000Z,ActionParsnip,indus,some startup stuff is defined in there
+2009-06-16T17:45:00.000Z,indus,ActionParsnip,i mean the syntax with semicolon and clean is what is intriguing
+2009-06-16T17:46:00.000Z,indus,ActionParsnip,Draglor:ya i did figure out when i saw the output
+2009-06-16T17:46:00.000Z,ActionParsnip,indus,"clear just clears the screen, makes life readable"
+2009-06-16T17:47:00.000Z,indus,ActionParsnip,"but, its true, i have ticked the 'remember programs when quit' box but it still keeps running again"
+2009-06-16T17:47:00.000Z,indus,ActionParsnip,although today it hasnt autorun totem or firefox
+2009-06-16T17:52:00.000Z,ActionParsnip,indus,I'd watch it for a few day. See what sort of things cause the next boot to make it load automagically
+2009-06-16T17:53:00.000Z,indus,ActionParsnip,yes i have been watching it for a month now and diff programs keep launching
+2009-06-16T17:54:00.000Z,ActionParsnip,indus,watch what programs are used before you log off. and which ones are running when you log off
+2009-06-16T17:58:00.000Z,ActionParsnip,indus,http://en.wikipedia.org/wiki/I386  http://en.wikipedia.org/wiki/Intel_P6_(microarchitecture)
+2009-06-16T17:59:00.000Z,ActionParsnip,indus,i386 is for dog old CPUs basically.
+2009-06-16T18:05:00.000Z,indus,ActionParsnip,Draglor : i have so many minor irritants with 9.04
+2009-06-16T18:05:00.000Z,ActionParsnip,indus,its all been identical for me since gutsy
+2009-06-16T18:06:00.000Z,indus,ActionParsnip,for me feisty was great but i fell in love with hardy
+2009-06-16T18:06:00.000Z,indus,ActionParsnip,have been thinking going back  to it
+2009-06-16T18:07:00.000Z,ActionParsnip,indus,mandrake 7 for me :)
+2009-06-17T11:31:00.000Z,indus,ActionParsnip,hello
+2009-06-17T11:31:00.000Z,ActionParsnip,indus,holla
+2009-07-03T11:33:00.000Z,indus,ActionParsnip,hello
+2009-07-06T15:45:00.000Z,indus,ActionParsnip,"xchat makes it easier for you,"
+2009-07-06T15:45:00.000Z,ActionParsnip,indus,no thats not te point. no irc  client is preffered is the point
+2009-07-06T15:39:00.000Z,ActionParsnip,indus,why is xchat 'preffered'
+2009-07-06T15:40:00.000Z,ActionParsnip,indus,i've used pidgin for irc since it was gaim
+2009-07-06T15:40:00.000Z,indus,ActionParsnip,cos it easier to configure for irc?
+2009-07-06T15:40:00.000Z,ActionParsnip,indus,not really
+2009-07-06T15:40:00.000Z,ActionParsnip,indus,"add an account, set irc then add server and screen name"
+2009-07-06T15:40:00.000Z,indus,ActionParsnip,it doesnt even show you list of irc servers or channels
+2009-07-06T15:41:00.000Z,indus,ActionParsnip,"sorry,but i cant figure it out, and since a lot of ppl here do use x chat, i said its preferred"
+2009-07-06T15:41:00.000Z,ActionParsnip,indus,you can go to main window. tools -> room list
+2009-07-06T15:41:00.000Z,ActionParsnip,indus,then select the account you want te room list for
+2009-07-06T15:42:00.000Z,ActionParsnip,indus,"in the computer community, windows is more used. Is that 'preffered' too"
+2009-07-06T15:42:00.000Z,indus,ActionParsnip,"what are you talking about? add account irc, then what"
+2009-07-06T15:42:00.000Z,indus,ActionParsnip,there is no server list at all
+2009-07-06T15:42:00.000Z,ActionParsnip,indus,if you add an account and connect
+2009-07-06T15:43:00.000Z,ActionParsnip,indus,then in the main window click tools -> room list
+2009-07-06T15:43:00.000Z,indus,ActionParsnip,i dont think you understand? how do i select a server ?
+2009-07-06T15:44:00.000Z,ActionParsnip,indus,you type its name
+2009-07-06T15:44:00.000Z,indus,ActionParsnip,all it shows is irc.ubuntu.com
+2009-07-06T15:44:00.000Z,indus,ActionParsnip,and who will give me the name?
+2009-07-06T15:44:00.000Z,ActionParsnip,indus,you find the server you want to connect to
+2009-07-06T15:44:00.000Z,indus,ActionParsnip,from where?
+2009-07-06T15:44:00.000Z,ActionParsnip,indus,the web
+2009-07-06T15:44:00.000Z,indus,ActionParsnip,"xchat has that list, pidgin doesnt"
+2009-07-06T15:44:00.000Z,ActionParsnip,indus,never said it didnt
+2009-07-06T15:45:00.000Z,indus,ActionParsnip,"haha the web , so i hope you get the point now"
+2009-07-06T15:45:00.000Z,indus,ActionParsnip,"well, so now its back to that point then"
+2009-07-06T15:46:00.000Z,ActionParsnip,indus,i'm not comparing functionlity. you are saying just because something is more used it is 'preffered' which is preposterous
+2009-07-06T15:46:00.000Z,indus,ActionParsnip,"whatever the case, pidgin is not preferred surely"
+2009-07-06T15:46:00.000Z,ActionParsnip,indus,it is to me
+2009-07-06T15:46:00.000Z,ActionParsnip,indus,i only use pidgin for all chats
+2009-07-06T15:47:00.000Z,indus,ActionParsnip,no offence
+2009-07-06T15:48:00.000Z,ActionParsnip,indus,i'm not i'm just saying what you are saying is false.
+2009-07-06T15:48:00.000Z,indus,ActionParsnip,and what you are saying is not true either
+2009-07-06T15:51:00.000Z,ActionParsnip,indus,"any you prefer, notice how I had stopped and you started up again"
+2009-07-06T15:52:00.000Z,ActionParsnip,indus,imho no
+2009-07-06T15:52:00.000Z,ActionParsnip,indus,but i use about 6 other protocols so it makes sense to use the irc functionality rather than have 2 apps
+2009-07-06T15:53:00.000Z,indus,ActionParsnip,"yes i too prefer pidgin, but i had to waste quite a bit of time googling for the undernet server name"
+2009-07-06T15:53:00.000Z,ActionParsnip,indus,i'm sure you had to 'google' a bit as well to get your pc setup after the install
+2009-07-06T15:53:00.000Z,indus,ActionParsnip,"so i was forced to go to xchat ,which is great btw, but i will try chatzilla too"
+2009-07-06T15:54:00.000Z,indus,ActionParsnip,"true, so this saves time doesnt it"
+2009-07-06T15:54:00.000Z,ActionParsnip,indus,"same process, same mentality"
+2009-07-06T15:54:00.000Z,indus,ActionParsnip,leave it.
+2009-07-06T15:55:00.000Z,ActionParsnip,indus,"i did, you started it p again. i was talking to prathamesh"
+2009-07-06T15:58:00.000Z,indus,ActionParsnip,pm
+2009-07-08T15:38:00.000Z,indus,ActionParsnip,in theory yes
+2009-07-08T15:39:00.000Z,ActionParsnip,indus,"i think its a snap to do and very wrth it, the md5 isnt there for kicks so I use it. Ive helped many on answers.launchpad.net with MD5 checks"
+2009-07-08T15:39:00.000Z,indus,ActionParsnip,the procedure seems reallylong and complicated
+2009-07-08T15:39:00.000Z,ActionParsnip,indus,md5sum ./<isofile>
+2009-07-08T15:40:00.000Z,ActionParsnip,indus,then simply download the file and run: cat ./MD5SUM | grep <some of the file name>
+2009-07-08T15:40:00.000Z,indus,ActionParsnip,hmm ok thats it? the community docs list a lengthy procedure
+2009-07-08T15:40:00.000Z,ActionParsnip,indus,its really not
+2009-07-08T15:42:00.000Z,ActionParsnip,indus,e.g.: wget http://cdimage.ubuntu.com/releases/jaunty/release/ubuntu-9.04-dvd-i386.iso; wget http://cdimage.ubuntu.com/releases/jaunty/release/MD5SUMS; md5sum ./ubuntu-9.04-dvd-i386.iso; cat ./MD5SUMS | grep dvd-i386
+2009-07-08T15:42:00.000Z,ActionParsnip,indus,"then walk away, file will be downloaded and md5 checked when you get back"
+2009-07-08T15:43:00.000Z,indus,ActionParsnip,"why cant we have a gui md5 check like in windows? i never ask new users or even mention md5 checks,i burn and give them the cd myself,and of the 100 i have burned , just say 5 havent worked"
+2009-07-08T15:44:00.000Z,ActionParsnip,indus,"not sure, i dont use gui"
+2009-07-08T15:44:00.000Z,ActionParsnip,indus,well for something like that anyhoo
+2009-07-08T15:44:00.000Z,ActionParsnip,indus,the CD has a self checker too which has an MD5SUM on it also
+2009-07-08T15:45:00.000Z,indus,ActionParsnip,hmm now why didnt i see that
+2009-07-08T15:45:00.000Z,indus,ActionParsnip,ya i think i have seen that yes.Its in live cd correct?
+2009-07-08T15:46:00.000Z,ActionParsnip,indus,on all
+2009-07-08T15:55:00.000Z,ActionParsnip,indus,andy@fileserver:~$ gksu[tab] yields    gksu             gksudo           gksu-properties
+2009-07-08T15:56:00.000Z,indus,ActionParsnip,yes but i dont get what you mean
+2009-07-08T15:57:00.000Z,ActionParsnip,indus,you put 'gksu gksu gksu' and confused me
+2009-07-08T15:57:00.000Z,indus,ActionParsnip,heh ya ok just was emphasizing
+2009-07-08T15:59:00.000Z,ActionParsnip,indus,please do. I actually have a link to one guy i helped on launchpad with the same thing: https://answers.launchpad.net/ubuntu/+source/azureus/+question/72151
+2009-07-08T15:59:00.000Z,ActionParsnip,indus,i keep it for idiots who say 'sudo is fine for gui' etc
+2009-07-08T16:00:00.000Z,indus,ActionParsnip,"i still can be called one , cos i still use sudo"
+2009-07-08T16:01:00.000Z,ActionParsnip,indus,"read that link, you'll see hat you will get, as well as you just saw joeM with the same thiing"
+2009-07-08T16:01:00.000Z,indus,ActionParsnip,"yes i know, iam starting to remember to use gksu now,but i do remember always to say it here"
+2009-07-08T16:02:00.000Z,ActionParsnip,indus,"thats good, not helping people break there systems is cool"
+2009-07-08T16:03:00.000Z,indus,ActionParsnip,i did nt understand the question on launchpad clearly though
+2009-07-08T16:03:00.000Z,ActionParsnip,indus,"basically vuze wouldnt run: if you scroll down you'll see his files were owned by root due to bad sudo use, so i chowned his files back to him and it was fine"
+2009-07-08T16:06:00.000Z,indus,ActionParsnip,hmm i see that many of his hidden files are owned by root
+2009-07-08T16:06:00.000Z,ActionParsnip,indus,exactly
+2009-07-08T16:07:00.000Z,indus,ActionParsnip,"i think this can be a wishlist or feature for 9.10, not to allow sudo on graphical, like not to allow rm -rf on the root"
+2009-07-08T16:11:00.000Z,indus,ActionParsnip,"iam beginning to think what a huge mess my system is probably in,works fine , but you think some issues with sound etc could be related to this ?"
+2009-07-15T15:50:00.000Z,indus,ActionParsnip,yeah yeah ok ok
+2009-07-15T15:50:00.000Z,indus,ActionParsnip,man pages dont list typing install again so...
+2009-07-15T16:02:00.000Z,indus,ActionParsnip,whats taht irc command line thing called
+2009-07-15T16:02:00.000Z,ActionParsnip,indus,can you expand please
+2009-07-15T16:02:00.000Z,indus,ActionParsnip,nvm
+2009-07-15T16:06:00.000Z,indus,ActionParsnip,cant run doom 3 without it :)
+2009-07-15T16:07:00.000Z,ActionParsnip,indus,"exactly, start with the basics"
+2009-07-15T16:58:00.000Z,indus,ActionParsnip,firefox 3.5 is much better
+2009-07-15T16:59:00.000Z,ActionParsnip,indus,"yeah, gonna compile it when i get in"
+2009-07-15T17:41:00.000Z,ActionParsnip,indus,i kinda am
+2009-07-15T17:42:00.000Z,indus,ActionParsnip,whats up
+2009-07-15T17:42:00.000Z,indus,ActionParsnip,your problem must be complicated :)
+2009-07-15T17:42:00.000Z,ActionParsnip,indus,is it possible to get a 64bit kernel in the netbook remix without first installing ubuntu then installing the frontend?
+2009-07-15T17:42:00.000Z,ActionParsnip,indus,like a 64bit netook remix
+2009-07-15T17:43:00.000Z,indus,ActionParsnip,isnt there a unr 64 available?
+2009-07-15T17:45:00.000Z,indus,ActionParsnip,"hmm well,not sure what you want to do here,you want to use the netbook remix kernel and compile for your system? then add the frontend?"
+2009-07-15T17:45:00.000Z,ActionParsnip,indus,"thats what i thought, oh well"
+2009-07-15T18:09:00.000Z,ActionParsnip,indus,im with you dude
+2009-07-15T18:10:00.000Z,indus,ActionParsnip,thanks man
+2009-07-15T18:10:00.000Z,ActionParsnip,indus,"if windows suits your needs use it, if linux fits the need, use that"
+2009-07-15T18:11:00.000Z,ActionParsnip,indus,"penumbra demo is awesome, urban terror if you like CounterStrike"
+2009-07-16T11:33:00.000Z,indus,ActionParsnip,single sudo to run multiple commands
+2009-07-16T11:33:00.000Z,indus,ActionParsnip,not 3 on a single line
+2009-07-16T11:33:00.000Z,ActionParsnip,indus,"sudo -i then, but both will work"
+2009-07-16T11:34:00.000Z,indus,ActionParsnip,i thought we coul dsudo &&?
+2009-07-16T11:34:00.000Z,ActionParsnip,indus,the ; and && can be used to string multiple commands on one line
+2009-07-16T11:34:00.000Z,ActionParsnip,indus,&& means 'do the next step ONLY if the previous passed'   ; means 'do the next step'
+2009-07-21T15:05:00.000Z,indus,ActionParsnip,ya ubottu very slow today
+2009-07-27T15:48:00.000Z,indus,ActionParsnip,really? how can i increase speed?
+2009-07-27T15:48:00.000Z,ActionParsnip,indus,read the guide i pasted
+2009-07-27T16:34:00.000Z,indus,ActionParsnip,isnt nm-applet a gui for configuring pppoe also? since 9.04
+2009-07-27T16:34:00.000Z,ActionParsnip,indus,"i dont use pppoe, i just know of pppoeconf"
+2009-08-12T15:26:00.000Z,ActionParsnip,indus,they just care about users
+2009-08-13T14:34:00.000Z,indus,ActionParsnip,yes he gave u uname -a i think
+2009-08-13T14:34:00.000Z,ActionParsnip,indus,its been a long day :(
+2009-08-13T14:34:00.000Z,indus,ActionParsnip,"hey get some rest, ill take over a little:)"
+2009-08-13T14:41:00.000Z,indus,ActionParsnip,"thats not the recommended procedure,shouldnt it be /usr/lib/ozilla/plugins"
+2009-08-13T14:41:00.000Z,indus,ActionParsnip,system wide i mean
+2009-08-13T14:42:00.000Z,ActionParsnip,indus,"you can install it on a per user basis in ~ if you like, you'll find most home users only have 1 user so it works fine, but for system wide you are right"
+2009-08-13T14:42:00.000Z,indus,ActionParsnip,is crzedmonk's problem solved now? what was his problem exactly?
+2009-08-13T14:43:00.000Z,ActionParsnip,indus,flash
+2009-08-13T14:48:00.000Z,indus,ActionParsnip,which one?
+2009-08-13T14:49:00.000Z,indus,ActionParsnip,i want the fastest browser. which one u recommend
+2009-08-13T14:49:00.000Z,indus,ActionParsnip,scrollling should be butter smooth
+2009-08-13T14:49:00.000Z,ActionParsnip,indus,"firepup, kazehakase, swiftfox"
+2009-08-13T14:50:00.000Z,indus,ActionParsnip,are these webkit based?
+2009-08-13T14:50:00.000Z,ActionParsnip,indus,all gecko based
+2009-08-17T16:03:00.000Z,indus,ActionParsnip,well what do u mean it isnt free?
+2009-08-17T16:04:00.000Z,indus,ActionParsnip,"the software is free, its the support which is paid"
+2009-08-17T16:04:00.000Z,ActionParsnip,indus,i see
+2009-08-17T16:05:00.000Z,ActionParsnip,indus,whty can i only find the redhat isos on torrent sites...
+2009-08-17T16:06:00.000Z,ActionParsnip,indus,gotcha
+2009-08-17T16:06:00.000Z,ActionParsnip,indus,learning all the way
+2009-08-17T16:07:00.000Z,indus,ActionParsnip,usually its good for those enterprise stuff where systems are common or intel ? configs
+2009-08-19T14:58:00.000Z,ActionParsnip,indus,sup?
+2009-08-19T14:58:00.000Z,indus,ActionParsnip,hello u familiar with chroot?
+2009-08-19T14:58:00.000Z,ActionParsnip,indus,"i use it in gentoo installs, otherwise no"
+2009-08-19T15:29:00.000Z,indus,ActionParsnip,"root isnt disabled is it,"
+2009-08-19T15:37:00.000Z,indus,ActionParsnip,"i have a suggestion, system should automatically use gksu for graphical applications"
+2009-08-19T15:37:00.000Z,indus,ActionParsnip,iam gonna put it on brainstorm
+2009-08-19T15:38:00.000Z,ActionParsnip,indus,"you can just use gksu for both cli and gui apps, easier"
+2009-08-27T14:27:00.000Z,indus,ActionParsnip,Hi
+2009-08-27T14:37:00.000Z,indus,ActionParsnip,"no thats not needed, it doesnt harm existing data"
+2009-08-27T14:38:00.000Z,indus,ActionParsnip,u mean unetbootin right?
+2009-08-27T14:44:00.000Z,indus,ActionParsnip,hmm could u be more specific ?
+2009-08-27T14:44:00.000Z,indus,ActionParsnip,with phone? how
+2009-08-27T14:44:00.000Z,ActionParsnip,indus,"my g1 phone can web browse, if i click on a torrent it loads the app and tells my pc at home to download the files"
+2009-08-27T14:47:00.000Z,ActionParsnip,indus,i was rounding ;)
+2009-08-27T14:47:00.000Z,indus,ActionParsnip,i get exactly 256 but sometimes goes upto 260 275
+2009-08-27T14:49:00.000Z,indus,ActionParsnip,does dpkg -r als oremove the cached package file?
+2009-08-27T14:50:00.000Z,ActionParsnip,indus,"no only the app, -r will also leave the confi that isnt in home, so will then require dpkg -P <package to shift it"
+2009-08-27T14:50:00.000Z,indus,ActionParsnip,how about dpkg -r --purge? does taht work?
+2009-08-27T14:50:00.000Z,ActionParsnip,indus,"sounds ok, or you can use dpkg -rP <package>"
+2009-08-27T15:12:00.000Z,indus,ActionParsnip,ok ill help irc_irc
+2009-08-27T15:23:00.000Z,indus,ActionParsnip,"hmm really, all newer ones aer SATA"
+2009-08-27T15:24:00.000Z,ActionParsnip,indus,ide == itegrated drive electronics
+2009-08-27T15:24:00.000Z,indus,ActionParsnip,hmm so its not a standard?
+2009-08-27T15:24:00.000Z,ActionParsnip,indus,the littel chip that gives drive cache etc. Old drives that were not IDE relied entirely on the controller
+2009-08-27T15:25:00.000Z,indus,ActionParsnip,iam talking about the interface IDE
+2009-08-27T15:41:00.000Z,indus,ActionParsnip,why is skype ghastly?
+2009-08-27T15:41:00.000Z,indus,ActionParsnip,its the best voip app on linux
+2009-08-27T15:42:00.000Z,indus,ActionParsnip,aah for that
+2009-08-27T15:42:00.000Z,ActionParsnip,indus,ekiga is another option. i just hate skype and broadcom and apple
+2009-08-27T15:42:00.000Z,indus,ActionParsnip,"ekiga is downright pathetic, but its off topic now"
+2009-08-27T15:43:00.000Z,indus,ActionParsnip,and they will drop it in future anyway
+2009-08-27T15:46:00.000Z,ActionParsnip,indus,"many would agree, many would disagree"
+2009-08-27T15:46:00.000Z,indus,ActionParsnip,hmm not many would disagree iam sure
+2009-08-27T15:47:00.000Z,ActionParsnip,indus,"well most people use windows OS, maybe you should use that as they tink its best...."
+2009-08-27T15:48:00.000Z,indus,ActionParsnip," mickster04 skype is encrypted end to end for both video and voice, no ther voip app even exists that can do it"
+2009-08-27T15:49:00.000Z,ActionParsnip,indus,i dont wear a tinfoil hat so that doesnt interest me
+2009-08-28T15:55:00.000Z,indus,ActionParsnip,hi
+2009-09-10T16:42:00.000Z,indus,ActionParsnip, you know anything about lvm :)
+2009-09-10T16:42:00.000Z,ActionParsnip,indus,zero
+2009-09-10T17:32:00.000Z,ActionParsnip,indus,gutsy installed but isnt supported
+2009-09-10T17:34:00.000Z,ActionParsnip,indus,could edit sources.list to say hardy instead of gutsy then run dist-upgrade
+2009-09-10T17:35:00.000Z,indus,ActionParsnip,"no because i think that wont upgrade? hmm not sure ,i thought since gutsy is eol, that method too fails"
+2009-09-10T17:37:00.000Z,indus,ActionParsnip,does he have the option of burning new cd version?
+2009-09-10T17:41:00.000Z,ActionParsnip,indus,not sure and too much
+2009-09-14T14:43:00.000Z,ActionParsnip,indus,get video drivers in
+2009-09-14T15:29:00.000Z,indus,ActionParsnip,i hope you got the link RaaG pasted
+2009-09-14T15:30:00.000Z,ActionParsnip,indus,indeed
+2009-09-14T15:41:00.000Z,ActionParsnip,indus,"as long as the kubuntu release cd matches the installed version, sure"
+2009-09-14T15:42:00.000Z,indus,ActionParsnip,"also, what do you mean using the cd asa repo? he is trying to install isnt it?"
+2009-09-14T15:42:00.000Z,ActionParsnip,indus,"you can use the CD in the tray as a repo, much like the online ones"
+2009-09-14T15:43:00.000Z,indus,ActionParsnip,hmm isnt cd old compared to online versions of software
+2009-09-14T15:43:00.000Z,indus,ActionParsnip,"hmm install something from cd, then update same from onlline updates?"
+2009-09-14T15:44:00.000Z,ActionParsnip,indus,yes but s/he said s/he wanted to install from cd. Maybe their is no web connection
+2009-09-14T16:08:00.000Z,indus,ActionParsnip,tnt2 :) i remember the days
+2009-09-14T16:13:00.000Z,ActionParsnip,indus,selecting it from the menu IS running it
+2009-09-14T16:13:00.000Z,indus,ActionParsnip,and pressing quit is saving and quitting
+2009-09-14T16:14:00.000Z,ActionParsnip,indus,i always write to xorg.conf
+2009-09-14T16:14:00.000Z,indus,ActionParsnip,you are different i know :D
+2009-09-15T18:38:00.000Z,indus,ActionParsnip,what is harisund looking for?
+2009-09-17T17:23:00.000Z,indus,ActionParsnip,check with command mount whether it is mounted first
+2009-09-17T17:23:00.000Z,indus,ActionParsnip,oops sorry
+2009-09-17T17:33:00.000Z,indus,ActionParsnip,: its possible to have corrupt iso at source? Maybe report it then i guess
+2009-09-17T17:34:00.000Z,ActionParsnip,indus,if there is noise on the line at some point in transmission it cna arbage the data. It jut needs redownloading
+2009-09-17T17:34:00.000Z,ActionParsnip,indus,its nothing to do with ubuntu
+2009-09-17T17:34:00.000Z,indus,ActionParsnip,what if the build itself is faulty? i guess we would come to know as many would be downloading it
+2009-09-17T17:35:00.000Z,ActionParsnip,indus,"if the md5 passes ok then the cd is as it should be, the build will only be faulty if its a daily build or karmic. the release cd of jaunty is fine"
+2009-09-17T17:36:00.000Z,indus,ActionParsnip,hmm ya true
+2009-09-17T17:36:00.000Z,indus,ActionParsnip,thanks
+2009-09-17T17:39:00.000Z,ActionParsnip,indus,http://www.unix.com/unix-dummies-questions-answers/19604-create-pw-protect-tar-files.html
+2009-09-17T17:39:00.000Z,indus,ActionParsnip,gui tool i mean
+2009-09-17T17:40:00.000Z,ActionParsnip,indus,not sure on that. i use cli nearly all the time
+2009-09-17T17:40:00.000Z,indus,ActionParsnip,i dont understaqnd why we cant right clic kand do it yet
+2009-09-17T17:40:00.000Z,ActionParsnip,indus,write a service menu for it
+2009-09-17T17:41:00.000Z,ActionParsnip,indus,you can you just havnt found or made it
+2009-09-17T17:41:00.000Z,indus,ActionParsnip,yeah ! JUST found encript
+2009-09-17T17:41:00.000Z,indus,ActionParsnip,wow cool
+2009-09-17T17:42:00.000Z,ActionParsnip,indus,"like i said, you can, you just hadnt found it"
+2009-09-17T17:42:00.000Z,indus,ActionParsnip,yeah well said
+2009-09-17T17:45:00.000Z,indus,ActionParsnip,thats ssh pgp etc
+2009-09-17T17:46:00.000Z,indus,ActionParsnip,simple passwords does it do?
+2009-09-18T15:04:00.000Z,ActionParsnip,indus,not something i use
+2009-09-18T15:04:00.000Z,ActionParsnip,indus,some folks like gui
+2009-09-18T15:04:00.000Z,indus,ActionParsnip,"maybe,but havent heard ppl use it for subversion yet"
+2009-09-21T14:50:00.000Z,ActionParsnip,indus,bet its some creative thing
+2009-09-21T15:34:00.000Z,indus,ActionParsnip,there is a way to choose alsa over pulseaudio
+2009-09-21T15:36:00.000Z,ActionParsnip,indus,there is. I just never used it as whatever is default always works with my cards
+2009-09-21T16:30:00.000Z,indus,ActionParsnip,garage? its in universe
+2009-09-21T16:30:00.000Z,ActionParsnip,indus,"its not supported by the community, like ubottu says"
+2009-09-21T16:30:00.000Z,indus,ActionParsnip,"well, vlc is in universe too , how come that is supported?"
+2009-09-21T16:31:00.000Z,ActionParsnip,indus, Mobile 4 Series Chipset Integrated Graphics Controller   is an intel chip
+2009-09-21T16:32:00.000Z,indus,ActionParsnip,"oh, thanks for that"
+2009-09-21T16:36:00.000Z,ActionParsnip,indus,its not even for those either
+2009-09-21T16:36:00.000Z,indus,ActionParsnip,what? why not
+2009-09-21T16:36:00.000Z,ActionParsnip,indus,its not a supported application and not advised
+2009-09-21T16:37:00.000Z,indus,ActionParsnip,"i dont agree with this at all, let the ops take a call on it"
+2009-09-21T16:37:00.000Z,ActionParsnip,indus,sure
+2009-09-21T16:44:00.000Z,indus,ActionParsnip,aah no vista option is bad :) xp is better always
+2009-09-21T16:45:00.000Z,ActionParsnip,indus,not for Postal2
+2009-09-21T16:45:00.000Z,ActionParsnip,indus,i had to have it as vista and restricted desktop 1024x768 to make it playable
+2009-09-21T16:46:00.000Z,indus,ActionParsnip,you woke up Amaranth :D
+2009-09-21T16:47:00.000Z,ActionParsnip,indus,well stuff needed clarifying :)
+2009-09-21T16:54:00.000Z,ActionParsnip,indus,not windows forsure ;)
+2009-09-21T16:55:00.000Z,ActionParsnip,indus,eto: as well as polling for new hardware at runtime
+2009-09-21T16:55:00.000Z,ActionParsnip,indus,it helps
+2009-09-21T16:57:00.000Z,indus,ActionParsnip,so i should keep that bios option on? or it wont detect devices?
+2009-09-21T16:57:00.000Z,ActionParsnip,indus,"doesnt hurt to have it on, makes sense too"
+2009-09-22T14:23:00.000Z,indus,ActionParsnip,hplip is installed by default
+2009-09-22T14:23:00.000Z,ActionParsnip,indus,might be old though
+2009-09-22T14:30:00.000Z,indus,ActionParsnip,wake up some ops will ya :)
+2009-09-22T14:31:00.000Z,ActionParsnip,indus,jussio01 is in the house
+2009-09-22T14:32:00.000Z,ActionParsnip,indus,potage == apt-build
+2009-09-22T14:36:00.000Z,indus,ActionParsnip,where is applet?
+2009-09-22T14:36:00.000Z,indus,ActionParsnip,i dont see any such thing
+2009-09-22T14:37:00.000Z,ActionParsnip,indus,"just found that on a forum, i cant see my desktop from here"
+2009-09-22T14:37:00.000Z,ActionParsnip,indus,and the forums are down
+2009-09-22T14:57:00.000Z,indus,ActionParsnip,cool advice steven_
+2009-09-22T14:59:00.000Z,indus,ActionParsnip,i dont think that level of advice is recommended
+2009-09-22T14:59:00.000Z,ActionParsnip,indus,steven_: ok here is the guide. Go crazy: http://tuxtraining.com/2008/09/28/how-to-make-ubuntu-extremely-fast/
+2009-09-22T15:00:00.000Z,ActionParsnip,indus,mine takes as fast as my monitor turns off as I never shutdown ;)
+2009-09-22T15:00:00.000Z,indus,ActionParsnip,i dont use nm-applet either
+2009-09-22T15:00:00.000Z,indus,ActionParsnip,i always thought that icon is a waste
+2009-09-22T15:01:00.000Z,ActionParsnip,indus,"i use interfaces file, so much faster"
+2009-09-22T15:53:00.000Z,ActionParsnip,indus,still works though :)
+2009-09-22T15:53:00.000Z,ActionParsnip,indus,i have old pci sis cards in my servers
+2009-09-22T16:05:00.000Z,indus,ActionParsnip,is that correct syntax?
+2009-09-22T16:05:00.000Z,ActionParsnip,indus,looks good :D
+2009-09-22T16:14:00.000Z,ActionParsnip,indus,su makes you root and home is /root  sudo -i makes you root and home is /home/$USER
+2009-09-22T16:14:00.000Z,indus,ActionParsnip,<gulp>
+2009-09-22T16:14:00.000Z,ActionParsnip,indus,so all apps use your settings rather than roots which will most likely be stock
+2009-09-22T18:43:00.000Z,indus,ActionParsnip,"no need for it at all, its all open source"
+2009-09-22T18:44:00.000Z,ActionParsnip,indus,thats the open source for the drivers ;) so 'i know' ;)
+2009-09-22T18:47:00.000Z,indus,ActionParsnip,configure linux drivers? what is that supposed to mean
+2009-09-22T18:47:00.000Z,ActionParsnip,indus,"the drivers need installing and configuring to be effective, they may need certain options etc. The install instructions will detail"
+2009-09-22T18:50:00.000Z,ActionParsnip,indus,"why not, its the official driver from the cchip manufacturers site"
+2009-09-22T18:51:00.000Z,indus,ActionParsnip,"compile , its too much i think, ubuntu already has done it for us, also not like amd where you really need latest stuff"
+2009-09-22T18:51:00.000Z,indus,ActionParsnip,realtek is a breeze really
+2009-09-22T18:51:00.000Z,indus,ActionParsnip,iam sure his problem is simpler than  what it appears
+2009-09-22T18:52:00.000Z,ActionParsnip,indus,"if you can find a way, be my guest. The drivers are a cinch to compile"
+2009-09-22T18:52:00.000Z,indus,ActionParsnip,"no offence, its upto him"
+2009-09-22T18:52:00.000Z,indus,ActionParsnip,whatever it takes to get his internet working :)
+2009-09-22T18:53:00.000Z,indus,ActionParsnip,notice how beautifully realtek lists all the source for almost every hardware without a fuss
+2009-09-22T18:53:00.000Z,indus,ActionParsnip,nice chaps
+2009-09-22T18:53:00.000Z,ActionParsnip,indus,"indeed, thats why they rock"
+2009-09-22T18:54:00.000Z,indus,ActionParsnip,"and they do it so quietly without gimmicks etc, no marketing hype"
+2009-09-22T18:55:00.000Z,indus,ActionParsnip,ya help him
+2009-09-23T12:53:00.000Z,indus,ActionParsnip,"hmm not really true, they have opened the drivers now and x fi works out of the box in karmic"
+2009-09-23T12:54:00.000Z,indus,ActionParsnip,not as angelic as realtek though :)
+2009-09-23T12:54:00.000Z,ActionParsnip,indus,"indeed, all my onboad stuff works out of the box"
+2009-09-23T14:33:00.000Z,ActionParsnip,indus,maybe they dont need help
+2009-09-23T14:35:00.000Z,indus,ActionParsnip,i think when using purge remove is not required?
+2009-09-23T14:35:00.000Z,ActionParsnip,indus,"i've heard of people doing it, its kinda offtopic though"
+2009-09-23T14:36:00.000Z,ActionParsnip,indus,"if you just purge, i think it only wipes the config but leaves the app,let me check man file"
+2009-09-23T14:36:00.000Z,indus,ActionParsnip,aah no sorry wrong syntax
+2009-09-23T14:36:00.000Z,ActionParsnip,indus,purge is identical to remove except that packages are removed and purged (any configuration files are deleted too).
+2009-09-23T14:36:00.000Z,indus,ActionParsnip,no no it works
+2009-09-23T14:36:00.000Z,ActionParsnip,indus,"from man apt-get, looks like you were right"
+2009-09-23T14:37:00.000Z,indus,ActionParsnip,ya dont need to specify remove
+2009-09-23T14:37:00.000Z,ActionParsnip,indus,i have learned :D
+2009-09-23T14:37:00.000Z,indus,ActionParsnip,"ya just no need to use -- , instead use purge instead of remove"
+2009-09-23T14:37:00.000Z,ActionParsnip,indus,"sweet, thanks"
+2009-09-23T14:38:00.000Z,ActionParsnip,indus,i always purge
+2009-09-23T14:38:00.000Z,indus,ActionParsnip,ya so you can omit the 'remove' now and directly purge
+2009-09-23T14:39:00.000Z,ActionParsnip,indus,http://www.ngine.de/article/id/8
+2009-09-23T14:39:00.000Z,ActionParsnip,indus,for windows on usb
+2009-09-23T16:13:00.000Z,ActionParsnip,indus,thats all i enter in my clients for chat
+2009-09-23T16:56:00.000Z,ActionParsnip,indus,depends on needs
+2009-09-23T16:56:00.000Z,indus,ActionParsnip,"i dont store any movies etc, just predatorand alien :)"
+2009-09-23T16:56:00.000Z,ActionParsnip,indus,"if you need space, buy it, if you dont, buy something smaller to save cash"
+2009-09-23T16:57:00.000Z,ActionParsnip,indus,no
+2009-09-23T17:41:00.000Z,indus,ActionParsnip,your are tireless in your efforts :)
+2009-09-23T17:41:00.000Z,ActionParsnip,indus,i try
+2009-09-23T17:41:00.000Z,ActionParsnip,indus,bravo to you too sir
+2009-09-23T17:41:00.000Z,indus,ActionParsnip,naah i dont know anything really
+2009-09-23T19:09:00.000Z,ActionParsnip,indus,can't pastebinit be used?
+2009-09-23T19:09:00.000Z,indus,ActionParsnip,too tired
+2009-09-23T19:13:00.000Z,ActionParsnip,indus,verify first
+2009-09-23T19:13:00.000Z,indus,ActionParsnip,"ya Nishok please verify it first, btw how to do that :)"
+2009-09-23T19:14:00.000Z,indus,ActionParsnip,this md5 is there in live cd itself isnt it
+2009-09-23T19:17:00.000Z,ActionParsnip,indus,yes md5 checks are needed to check the data before use Nishok
+2009-09-23T19:18:00.000Z,indus,ActionParsnip,i think the iso can be checked after burning to cd?
+2009-09-23T19:29:00.000Z,indus,ActionParsnip,i think his iso is fine
+2009-09-23T19:30:00.000Z,indus,ActionParsnip,bye
+2009-09-23T19:30:00.000Z,ActionParsnip,indus,peace
+2009-09-24T16:42:00.000Z,indus,ActionParsnip,no need to run nvidia-settings with sudo
+2009-09-24T16:43:00.000Z,ActionParsnip,indus,is if you want to write to xorg.conf to make the boot screen the same res as the desktop
+2009-09-24T16:43:00.000Z,indus,ActionParsnip,aah thats nvidia-xconfig
+2009-09-24T16:43:00.000Z,ActionParsnip,indus,no thats to give a stock xorg.conf with nvidia oodnes
+2009-09-24T16:44:00.000Z,ActionParsnip,indus,"me neither, i ignore it"
+2009-09-24T16:44:00.000Z,indus,ActionParsnip,dpkg is good enough
+2009-09-24T17:49:00.000Z,indus,ActionParsnip,heard of silicon doc? :)
+2009-09-24T17:49:00.000Z,ActionParsnip,indus,"never, what is it?"
+2009-09-24T17:49:00.000Z,indus,ActionParsnip,think and try to remember
+2009-09-29T14:54:00.000Z,indus,ActionParsnip,whats up
+2009-09-29T14:54:00.000Z,ActionParsnip,indus,just saying howdy
+2009-09-29T19:03:00.000Z,ActionParsnip,indus,chance would be a fine thing
+2009-09-29T19:03:00.000Z,indus,ActionParsnip,yeah
+2009-09-29T19:34:00.000Z,ActionParsnip,indus, its ! then !0 then !!
+2009-09-29T19:34:00.000Z,indus,ActionParsnip,what is that mean
+2009-10-05T17:24:00.000Z,ActionParsnip,indus,not when your nick says mirchisalad
+2009-10-05T18:48:00.000Z,indus,ActionParsnip,try skype is cams creep you out]
+2009-10-05T18:48:00.000Z,ActionParsnip,indus,i dont use voice stuff. i like text
+2009-10-05T18:53:00.000Z,ActionParsnip,indus,"read what ubottu said, answer = yes"
+2009-10-05T18:59:00.000Z,indus,ActionParsnip,do you know how i can repair grub with alternate cd
+2009-10-05T19:04:00.000Z,ActionParsnip,indus,"not sure, never had to do it. any live cd will do"
+2009-10-13T14:26:00.000Z,indus,ActionParsnip,thats my question
+2009-10-13T14:26:00.000Z,ActionParsnip,indus,then its offtopic
+2009-10-13T14:27:00.000Z,indus,ActionParsnip,"i solved yesterday's problem, nvidia driver was not installing properly"
+2009-10-13T14:28:00.000Z,indus,ActionParsnip,"once activated, i could boot in again"
+2009-10-13T14:28:00.000Z,ActionParsnip,indus,"aweosme, good one :)"
+2009-10-13T14:28:00.000Z,indus,ActionParsnip,i believe restricted kernel modules had not made in for the .13 kernel
+2009-10-13T14:28:00.000Z,indus,ActionParsnip,i installed driver ver 173
+2009-10-13T14:30:00.000Z,ActionParsnip,indus,i use the 190 beta driver with my 6150 onboard nvidia
+2009-10-13T14:30:00.000Z,indus,ActionParsnip,why
+2009-10-13T14:30:00.000Z,ActionParsnip,indus,"laughs, i'm a real massochist as I dont care about my systems"
+2009-10-13T14:31:00.000Z,ActionParsnip,indus,i also have bleeding edge xorg and alpha flash plugin running in firefox-3.7
+2009-10-14T11:56:00.000Z,indus,ActionParsnip,hello
+2009-10-14T12:02:00.000Z,ActionParsnip,indus,try disabling unnecessary hardware in bios like sound and lan
+2009-10-14T12:02:00.000Z,indus,ActionParsnip,"ya i know all that, it doesnt work"
+2009-10-14T12:02:00.000Z,indus,ActionParsnip,"what happens is, live cd shows boot menu, then reads HDD thinking it is cd rom drive"
+2009-10-14T12:02:00.000Z,ActionParsnip,indus,got the latest bios?
+2009-10-14T12:03:00.000Z,indus,ActionParsnip,"well,yeah"
+2009-10-14T12:03:00.000Z,ActionParsnip,indus,"set bios to failsafe defaults, kill sound and lan"
+2009-10-14T12:03:00.000Z,indus,ActionParsnip,works in windows
+2009-10-14T12:03:00.000Z,ActionParsnip,indus,"and usb too, unless you are installing from it"
+2009-10-14T12:03:00.000Z,ActionParsnip,indus,have you checked your ram health
+2009-10-14T12:04:00.000Z,indus,ActionParsnip,DJ-Nomad the usb is the only way iam able to install ubuntu ever since intrepid
+2009-10-14T12:04:00.000Z,ActionParsnip,indus,do other distros work ok?
+2009-10-14T12:04:00.000Z,indus,ActionParsnip,windows works great :)
+2009-10-14T12:04:00.000Z,ActionParsnip,indus,windows isnt a distro of linux is it
+2009-10-14T12:05:00.000Z,ActionParsnip,indus,"could try an older release, or knoppix for example"
+2009-10-14T12:05:00.000Z,indus,ActionParsnip,there is a fix upstream in kernel which fixes it it seams
+2009-10-14T12:05:00.000Z,indus,ActionParsnip,"if i can modify boot options, i can make kernel see cd rom , tried once with intrepid"
+2009-10-14T12:06:00.000Z,ActionParsnip,indus,try karmic daily then :)
+2009-10-14T12:06:00.000Z,indus,ActionParsnip,latest karmic
+2009-10-14T12:06:00.000Z,indus,ActionParsnip,wait hold on
+2009-10-14T12:09:00.000Z,indus,ActionParsnip,asus support sucks
+2009-10-14T12:09:00.000Z,ActionParsnip,indus,my asus pundit works sweeeeeet
+2009-10-14T12:10:00.000Z,indus,ActionParsnip,their driver page is full of poor english
+2009-10-14T12:10:00.000Z,indus,ActionParsnip,they are way behind gigabyte for support
+2009-10-14T12:10:00.000Z,ActionParsnip,indus,"depends on the product you buy, should have checked support before purchasing"
+2009-10-14T12:10:00.000Z,indus,ActionParsnip,"some new athlon x2 has come out and asus has no official support for my board , while same ones on gigabyte is updated"
+2009-10-14T12:11:00.000Z,indus,ActionParsnip,iam talking about upgrading
+2009-10-14T12:11:00.000Z,ActionParsnip,indus,"still, check what works instead of whats cheapest or even fastest, less heartache then"
+2009-10-14T12:12:00.000Z,indus,ActionParsnip,"amd made the new athlons x2 for this kind of boards, it works but bios says unknown processor, gigabyte is very innovative for this, has updated bios for this"
+2009-10-14T12:12:00.000Z,indus,ActionParsnip,my board is only 2 year old
+2009-10-14T12:13:00.000Z,ActionParsnip,indus,then buy a gigabyte board if you think they are so great
+2009-10-14T12:13:00.000Z,indus,ActionParsnip,ya next upgrade is that one
+2009-10-14T12:14:00.000Z,ActionParsnip,indus,"i check the hcl and online forums for what works 100% out of the box, and buy that. I have never had to install a single driver as the kernel in the distro on the system or the modules on the install cd always support what i buy"
+2009-10-14T12:15:00.000Z,indus,ActionParsnip,your point is different to what iam saying
+2009-10-14T12:15:00.000Z,indus,ActionParsnip,"it worked 100 percent before, but later it didnt"
+2009-10-14T12:16:00.000Z,ActionParsnip,indus,so what changed in between?
+2009-10-14T12:16:00.000Z,indus,ActionParsnip,"i was just talking about manufacturers in general, here it complaisn about bios bug"
+2009-10-14T12:16:00.000Z,ActionParsnip,indus,could try an older bios maybe
+2009-10-14T12:17:00.000Z,indus,ActionParsnip,"ya i think you are right, maybe"
+2009-10-14T12:17:00.000Z,indus,ActionParsnip,there was a good old bios which worked fine
+2009-10-14T12:17:00.000Z,indus,ActionParsnip,"ill do that today later and update you,"
+2009-10-14T12:17:00.000Z,indus,ActionParsnip,"do watch out for M2A VM board questions, i would be glad to hear"
+2009-10-14T12:18:00.000Z,indus,ActionParsnip,i kinda forgot the fix i tried a year ago
+2009-10-14T12:35:00.000Z,indus,ActionParsnip,check this
+2009-10-14T12:35:00.000Z,ActionParsnip,indus,check what?
+2009-10-14T12:36:00.000Z,indus,ActionParsnip,"its my fix , i ll add it to my launchpad bug page"
+2009-10-14T12:37:00.000Z,ActionParsnip,indus,i dont see any url pasted by you..?
+2009-10-14T12:37:00.000Z,indus,ActionParsnip, yikes http://kerneltrap.org/mailarchive/git-commits-head/2008/6/14/2122314
+2009-10-14T12:38:00.000Z,ActionParsnip,indus,looks perfect
+2009-10-14T12:38:00.000Z,indus,ActionParsnip, :) ya but iam taking your suggesstion and using an older bios
+2009-10-14T12:38:00.000Z,ActionParsnip,indus,i wont be buying one of those..mmm never
+2009-10-14T12:39:00.000Z,indus,ActionParsnip,"btw, i have some news for you, remember the plug and play option in bios ? setting it to yes wouldnt boot windows"
+2009-10-14T12:39:00.000Z,ActionParsnip,indus,"weird, the board sounds like a real white elephant to me"
+2009-10-14T12:39:00.000Z,indus,ActionParsnip,"that chipset is great for gaming , it is very good"
+2009-10-14T12:40:00.000Z,indus,ActionParsnip,way better than nv 6150 i had
+2009-10-14T12:40:00.000Z,indus,ActionParsnip,no all new stuff will have bugs
+2009-10-14T12:40:00.000Z,indus,ActionParsnip,its impressive when it was launched
+2009-10-14T12:40:00.000Z,indus,ActionParsnip,call of duty worked so good on the igp
+2009-10-14T12:42:00.000Z,indus,ActionParsnip,"if you notice, the patch is from amd guy, they are good with open stuff"
+2009-10-14T12:42:00.000Z,ActionParsnip,indus,"i dont get excited by gaming boards, i like looking at lower power consumption desktops like linutop"
+2009-10-14T12:42:00.000Z,indus,ActionParsnip,yes this is also very low power
+2009-10-14T12:43:00.000Z,ActionParsnip,indus,not 6W for the whole system its not
+2009-10-14T12:43:00.000Z,indus,ActionParsnip,ya cos the igp takes a little more
+2009-10-14T12:43:00.000Z,indus,ActionParsnip,but it had some network card issues
+2009-10-14T12:43:00.000Z,indus,ActionParsnip,no good for servers i heard
+2009-10-14T12:43:00.000Z,ActionParsnip,indus,"exactly, gaming boards have been done forever, low power is a new thing and people are trying to get lower and lower power consumption"
+2009-10-14T12:44:00.000Z,indus,ActionParsnip,"oh no , mine is not a gaming board , its vm series, very low cost and stripped down"
+2009-10-14T12:44:00.000Z,indus,ActionParsnip,a low cost gameing option for all
+2009-10-14T12:44:00.000Z,indus,ActionParsnip,thats why i said the 690 g waas introduced with that purpose
+2009-10-14T12:45:00.000Z,ActionParsnip,indus,"yes but it pulls more than a lot of power, http://www.fit-pc.com/fit-pc1/ is pretty cool too"
+2009-10-14T12:46:00.000Z,ActionParsnip,indus,"6W for a desktop PC, thats pretty special"
+2009-10-14T12:48:00.000Z,indus,ActionParsnip,6 w is low isnt it
+2009-10-14T12:48:00.000Z,ActionParsnip,indus,less than a lightbulb
+2009-10-14T12:49:00.000Z,ActionParsnip,indus,i find that stuff more interesting than systems with 16 CPUs and 2tb RAM
+2009-10-14T15:18:00.000Z,indus,ActionParsnip,ya probably
+2009-10-14T15:18:00.000Z,indus,ActionParsnip,could you give whole syntax to denmark? please
+2009-10-14T16:55:00.000Z,indus,ActionParsnip,give him the link
+2009-10-14T16:55:00.000Z,indus,ActionParsnip,i know you have it :)
+2009-10-14T17:06:00.000Z,indus,ActionParsnip,"suppose i update bios  and something goes wrong, howdo i revert back"
+2009-10-14T17:07:00.000Z,ActionParsnip,indus,if it goes really wrong you may brick your motherboard
+2009-10-14T17:07:00.000Z,ActionParsnip,indus,most flashers have a backup feature so you can backup the original bios
+2009-10-14T17:08:00.000Z,indus,ActionParsnip,hmm the mobo does have a backup but not sure if it works
+2009-10-14T17:09:00.000Z,ActionParsnip,indus,bios updates are not without risk
+2009-10-14T17:10:00.000Z,indus,ActionParsnip,"anyways after the bios update, iam gonna try a mainline kernel"
+2009-10-15T11:42:00.000Z,indus,ActionParsnip,yeah -v also does the same
+2009-10-15T11:42:00.000Z,ActionParsnip,indus,gotcha
+2009-10-15T12:26:00.000Z,indus,ActionParsnip,there is no need to go to recovery console for that
+2009-10-15T14:33:00.000Z,ActionParsnip,indus,x1200
+2009-10-15T14:33:00.000Z,ActionParsnip,indus,ati consider it legacy now
+2009-10-15T14:34:00.000Z,ActionParsnip,indus,"basically because its old ati drop it like its something contagious, ati suck"
+2009-10-15T14:34:00.000Z,ActionParsnip,indus,"but people buy their shoddy wares, go figure"
+2009-10-15T14:34:00.000Z,indus,ActionParsnip,"they dont suck,"
+2009-10-15T14:34:00.000Z,indus,ActionParsnip,"superb cards, its a linux poiunt of view"
+2009-10-15T14:35:00.000Z,ActionParsnip,indus,"i'd always buy nvidia, even in a windows system"
+2009-10-15T14:35:00.000Z,indus,ActionParsnip,their drivers are as abad as ati now
+2009-10-15T14:35:00.000Z,indus,ActionParsnip,time has changed
+2009-10-15T15:05:00.000Z,indus,ActionParsnip,windows xp is best
+2009-10-15T15:06:00.000Z,ActionParsnip,indus,"thats your opinion, millions would agree, millions would disagree, doesnt make it any truer than me saying something else is best :)"
+2009-10-15T15:08:00.000Z,indus,ActionParsnip,millions are on the xp side btw :) very few linux users aha :D
+2009-10-15T15:08:00.000Z,ActionParsnip,indus,"doesnt make it truer, just means more are in agreement. For some people, even living isnt best"
+2009-10-15T15:09:00.000Z,ActionParsnip,indus,"best is a comparison of a product to your own needs, everyones needs differ so there will never be an outright best, its a very immature ideology to bandy round (I feel)"
+2009-10-15T17:59:00.000Z,ActionParsnip,indus,?
+2009-10-15T18:00:00.000Z,indus,ActionParsnip,686 is 32 bit right?
+2009-10-15T18:00:00.000Z,ActionParsnip,indus,indeed
+2009-10-15T18:00:00.000Z,indus,ActionParsnip,ok i dont see any messages from coffeej how come you are replying to him?
+2009-10-15T18:01:00.000Z,ActionParsnip,indus,i just got out of a meeting and looked at the channel
+2009-10-15T18:03:00.000Z,ActionParsnip,indus,isnt skype in the medibuntu repo?
+2009-10-15T18:04:00.000Z,ActionParsnip,indus,"look at your palm then slap it on your face, then shout 'd'oh'"
+2009-10-15T18:05:00.000Z,ActionParsnip,indus,http://www.youtube.com/watch?v=A3KyXCBrAfg
+2009-10-15T18:05:00.000Z,indus,ActionParsnip,"sorry, restricted acess"
+2009-10-15T18:05:00.000Z,indus,ActionParsnip,"btw, i downgraded the bios after we spoke yesterday, no go"
+2009-10-15T18:05:00.000Z,ActionParsnip,indus,http://scienceblogs.com/insolence/facepalm.jpg
+2009-10-15T18:06:00.000Z,ActionParsnip,indus,bah
+2009-10-15T18:06:00.000Z,indus,ActionParsnip,ok that one
+2009-10-15T18:08:00.000Z,indus,ActionParsnip,scary command :)
+2009-10-15T18:08:00.000Z,ActionParsnip,indus,gets stuff done
+2009-10-15T18:09:00.000Z,ActionParsnip,indus,and its a high level package so wont break the OS
+2009-10-15T18:11:00.000Z,indus,ActionParsnip, there is somethinhg wrong here
+2009-10-15T18:11:00.000Z,indus,ActionParsnip,his system is a 32 bit
+2009-10-15T18:11:00.000Z,ActionParsnip,indus,"thats what i thought, its very weird"
+2009-10-15T18:12:00.000Z,indus,ActionParsnip,nooooooooo
+2009-10-15T18:12:00.000Z,indus,ActionParsnip,ok that will tell for sure if that package is present :D
+2009-10-15T18:18:00.000Z,indus,ActionParsnip,"ok i dont get it, you try help him"
+2009-10-15T18:18:00.000Z,indus,ActionParsnip,her
+2009-10-15T18:22:00.000Z,indus,ActionParsnip,maybe its an ubuntu netbook remix
+2009-10-15T18:22:00.000Z,indus,ActionParsnip,excellent
+2009-10-16T17:00:00.000Z,indus,ActionParsnip,cli man
+2009-10-20T18:59:00.000Z,ActionParsnip,indus,you wish ;)
+2009-10-21T12:02:00.000Z,ActionParsnip,indus,moot = meaningless or pointless
+2009-10-26T15:40:00.000Z,indus,ActionParsnip,hi
+2009-10-26T15:40:00.000Z,indus,ActionParsnip,good day and welcome
+2009-10-26T15:41:00.000Z,ActionParsnip,indus,thanks :)
+2009-10-27T11:21:00.000Z,indus,ActionParsnip,hello good day
+2009-10-27T15:28:00.000Z,ActionParsnip,indus,i'd head to #ubuntu-offtopic
+2009-10-27T15:29:00.000Z,ActionParsnip,indus,or maybe #politics
+2009-10-27T15:29:00.000Z,indus,ActionParsnip,"aah no, ubuntu folks are nice people, i need serious discussion, also region specific, ubuntu is western"
+2009-10-27T17:27:00.000Z,ActionParsnip,indus,"modprobe loads modules, you can use modprobe -r to remove them"
+2009-10-27T17:27:00.000Z,indus,ActionParsnip,thanks a lot
+2009-10-27T17:29:00.000Z,indus,ActionParsnip,bye
+2009-11-06T15:20:00.000Z,indus,ActionParsnip,the nvidia 5200 is legacy driver i think
+2009-11-06T15:21:00.000Z,ActionParsnip,indus,http://packages.ubuntu.com/karmic/nvidia-glx-173   search for 5600XT
+2009-11-06T15:21:00.000Z,indus,ActionParsnip,yes searching now
+2009-11-06T15:22:00.000Z,indus,ActionParsnip,yeah supported
+2009-11-06T15:22:00.000Z,ActionParsnip,indus,jeeves knows much :D
+2009-11-06T15:28:00.000Z,ActionParsnip,indus,i'm just suggesting :D
+2009-11-06T15:30:00.000Z,indus,ActionParsnip,modaliases i think is automatically installed? no?
+2009-11-06T15:30:00.000Z,ActionParsnip,indus,"not sure, i always tell it, its in a few guides ive read too so I always explicitly install it"
+2009-11-06T15:30:00.000Z,indus,ActionParsnip,"actually its only required so that driver appears in hardware drivers, i remember"
+2009-11-06T15:33:00.000Z,ActionParsnip,indus,"i use 190, not too bad at all"
+2009-11-06T17:45:00.000Z,ActionParsnip,indus,played quakelive ?
+2009-11-06T17:45:00.000Z,indus,ActionParsnip,bah no i dont like it
+2009-11-06T17:45:00.000Z,indus,ActionParsnip,"its old,i rather play open arena"
+2009-11-06T17:46:00.000Z,indus,ActionParsnip,iam addicted to quake4
+2009-11-06T17:46:00.000Z,ActionParsnip,indus,"its a great idea though, and well executed"
+2009-11-06T17:46:00.000Z,indus,ActionParsnip,"only thing i play 99 % of the time, no time for anything else"
+2009-11-06T17:46:00.000Z,indus,ActionParsnip,"yeah i like the idea too, need for speed is coming free now"
+2009-11-10T18:43:00.000Z,indus,ActionParsnip,hi whats up
+2009-11-10T18:44:00.000Z,indus,ActionParsnip,what was that trick of using more swap space or other way round
+2009-11-11T14:08:00.000Z,indus,ActionParsnip,if i dont configure drivers? why should anyone need to
+2009-11-11T14:08:00.000Z,ActionParsnip,indus,"well its not doing it automatically, so some sort of intervention is needed, isnt it"
+2009-11-11T14:09:00.000Z,indus,ActionParsnip,yeah it sucks really
+2009-11-11T14:09:00.000Z,ActionParsnip,indus,bet its an ati thing
+2009-11-11T14:09:00.000Z,indus,ActionParsnip,its intel
+2009-11-11T14:09:00.000Z,indus,ActionParsnip,"intel is worst in this case since 9.04, i thought they took care of it in karmic"
+2009-11-11T14:09:00.000Z,ActionParsnip,indus,specially since they removed xorg.conf
+2009-11-11T14:10:00.000Z,indus,ActionParsnip,"yes exactly, how on earth do we fix this now :("
+2009-11-11T14:16:00.000Z,ActionParsnip,indus,"hard raid has a dedicated piece of hardware and cache to make things go really fast, softraid sucks in comparison and uses the system ram and cpu to manage the disks"
+2009-11-11T14:16:00.000Z,ActionParsnip,indus,"you can get some very decent raid cards with half a gig of disk cache, you get some killer speed off them"
+2009-11-11T14:30:00.000Z,indus,ActionParsnip,"opera used to be there, but i think some license changed"
+2009-11-11T14:30:00.000Z,ActionParsnip,indus,its proprietary so opera will call all the shots afaik
+2009-11-11T14:30:00.000Z,indus,ActionParsnip,remember the goodold days of flash 8 and 9
+2009-11-11T16:27:00.000Z,ActionParsnip,indus,"it is if its only confined to LAN, then its fine"
+2009-11-11T17:53:00.000Z,indus,ActionParsnip,"iam telling him about ubuntu one, and yes the link does support ubuntu"
+2009-11-11T18:17:00.000Z,indus,ActionParsnip,this needs a lot of patience :|
+2009-11-11T18:18:00.000Z,ActionParsnip,indus,sometimes it does
+2009-11-12T14:46:00.000Z,indus,ActionParsnip,can you help frull
+2009-11-12T14:46:00.000Z,indus,ActionParsnip,he has been around since morning
+2009-11-12T14:47:00.000Z,ActionParsnip,indus,nice
+2009-11-12T14:47:00.000Z,ActionParsnip,indus,sup
+2009-11-12T14:48:00.000Z,indus,ActionParsnip,hi sorry to bother you
+2009-11-12T14:48:00.000Z,ActionParsnip,indus,np
+2009-11-12T14:48:00.000Z,indus,ActionParsnip,i have a seminar i gtg now
+2009-11-12T16:28:00.000Z,indus,ActionParsnip,"there is a moer simplified way for adding ppas now, just add ppa:some name and no need of keys either"
+2009-11-12T16:28:00.000Z,indus,ActionParsnip,ppa:pidgin-developers/ppa
+2009-11-12T16:28:00.000Z,indus,ActionParsnip,"thats it and reload,"
+2009-11-12T16:29:00.000Z,ActionParsnip,indus,"i'm old school, what can i say, i dont use gui tools for repos, too clunky imho"
+2009-11-12T16:30:00.000Z,indus,ActionParsnip,"only with karmic that works, i have empathy added ppa:empathy something"
+2009-11-12T16:30:00.000Z,ActionParsnip,indus,true but i use cli so much i find it easier to add the lines manually
+2009-11-12T16:30:00.000Z,indus,ActionParsnip,no need of gpg keys in case of karmic at least for empathy
+2009-11-12T16:30:00.000Z,indus,ActionParsnip,hmm  any idea how to change server for download from cli
+2009-11-12T16:31:00.000Z,ActionParsnip,indus,"not sure, you could have multiple sources files and cp them into the main seat when needed"
+2009-11-12T16:32:00.000Z,ActionParsnip,indus,i'll so it manual til its not an option
+2009-11-13T14:58:00.000Z,indus,ActionParsnip,:)
+2009-11-18T18:02:00.000Z,ActionParsnip,indus,sure if you can find it
+2009-11-18T18:02:00.000Z,indus,ActionParsnip,ya its in older releases
+2009-11-18T18:02:00.000Z,ActionParsnip,indus,if you are using 32bit you can try the alpha 10.1 flash
+2009-11-18T18:03:00.000Z,indus,ActionParsnip,"nah its 64 bit, but iam willing to try the wrapper"
+2009-11-18T18:03:00.000Z,indus,ActionParsnip,is it any good?
+2009-11-18T18:03:00.000Z,indus,ActionParsnip,"ill install nspluginwrapper separately, then move flash 10.1 to /usr/lib/mozilla"
+2009-11-18T18:04:00.000Z,ActionParsnip,indus,"not sure, i use the 64bit one, there is scope to make 64bit soon, some guy posted a guide up about installing flashplugin-nonfree then replacing the .so with the 10.1 one (32bit)"
+2009-11-18T18:04:00.000Z,ActionParsnip,indus,it uses gpu instead of cpu for some stuff
+2009-11-18T18:06:00.000Z,indus,ActionParsnip,many sites still work with 9 fine or with 8 too
+2009-11-24T18:31:00.000Z,indus,ActionParsnip, comes with ubuntu?
+2009-11-24T18:31:00.000Z,ActionParsnip,indus,can be installed from repo
+2009-11-24T18:32:00.000Z,ActionParsnip,indus,its in gnu-fdisk
+2009-11-24T18:32:00.000Z,indus,ActionParsnip,"not sure if fdisk can erase a partition, i thought parted did that"
+2009-11-24T18:33:00.000Z,ActionParsnip,indus,"sure it can, you can add and delete partitons in fdisk, cfdisk, parted, gparted"
+2009-11-24T18:33:00.000Z,ActionParsnip,indus,theres more than one app for the job
+2009-11-24T18:36:00.000Z,indus,ActionParsnip,so myung guy left i guess
+2009-11-24T18:36:00.000Z,indus,ActionParsnip,"anyways in case you need , http://www.cyberciti.biz/faq/linux-how-to-delete-a-partition-with-fdisk-command/"
+2009-11-24T18:37:00.000Z,ActionParsnip,indus,thanks
+2009-11-25T14:08:00.000Z,ActionParsnip,indus,?
+2009-11-25T14:08:00.000Z,indus,ActionParsnip,is 3 monitors work in ubuntu?
+2009-11-25T14:08:00.000Z,ActionParsnip,indus,not used 3 monitors in linux
+2009-11-25T14:09:00.000Z,indus,ActionParsnip,"both cards detected, but only 2 monitors"
+2009-11-25T15:07:00.000Z,indus,ActionParsnip,info overload maybe
+2009-11-25T15:07:00.000Z,ActionParsnip,indus,maybe but if you want it fixed you have to walk through the fire
+2009-11-25T15:08:00.000Z,indus,ActionParsnip,blkid what does that do
+2009-11-25T15:08:00.000Z,ActionParsnip,indus,"plus the / will be the root ofthe live CD, not the installed system as the system doesnt boot so allthis will have to be done in live cd"
+2009-11-25T15:35:00.000Z,ActionParsnip,indus,"koffice, star office"
+2009-11-25T15:37:00.000Z,ActionParsnip,indus,staroffice
+2009-11-25T15:37:00.000Z,indus,ActionParsnip,that open source?
+2009-11-25T15:37:00.000Z,indus,ActionParsnip,paid sun product isnt it
+2009-11-25T15:38:00.000Z,ActionParsnip,indus,https://help.ubuntu.com/community/StarOffice
+2009-11-25T15:39:00.000Z,ActionParsnip,indus,seems so $34 USD
+2009-11-26T14:15:00.000Z,indus,ActionParsnip,wow seesm to run fine with wine
+2009-11-26T14:10:00.000Z,ActionParsnip,indus,"william hague, kent I think"
+2009-11-26T14:14:00.000Z,indus,ActionParsnip,what link
+2009-11-26T14:14:00.000Z,ActionParsnip,indus,manas: http://appdb.winehq.org/objectManager.php?sClass=version&iId=4992
+2009-11-26T14:16:00.000Z,ActionParsnip,indus,"does, just takes a little effort"
+2009-11-26T14:16:00.000Z,ActionParsnip,indus,its also a 4Gb install
+2009-11-26T14:17:00.000Z,indus,ActionParsnip,"4 gb for ms office , lol why"
+2009-11-26T14:18:00.000Z,ActionParsnip,indus,ask MS
+2009-11-26T14:22:00.000Z,ActionParsnip,indus,yep and abiword + gnumeric is around 30Mb
+2009-11-26T14:23:00.000Z,indus,ActionParsnip,"i use abiword,its nice, messes formatting a little , i hear gnumeric is even better as an application"
+2009-11-26T14:29:00.000Z,indus,ActionParsnip,"so ftab selected drop me into root sheell wth networking, then"
+2009-11-26T14:29:00.000Z,ActionParsnip,indus,doesnt really need networking but doesnt hurt
+2009-11-26T14:30:00.000Z,ActionParsnip,indus,has a root pass been set?
+2009-12-08T15:10:00.000Z,indus,ActionParsnip,wine is capable of infection
+2009-12-08T15:10:00.000Z,ActionParsnip,indus,"unless its an actual windows binary, the .exe doesnt automatically denote a binary"
+2009-12-08T15:10:00.000Z,indus,ActionParsnip,yea sure
+2009-12-08T15:23:00.000Z,indus,ActionParsnip,is his partition visible in fdisk?
+2009-12-08T18:18:00.000Z,indus,ActionParsnip,it says mtp is implemented
+2009-12-08T18:19:00.000Z,indus,ActionParsnip,well i got ATI 4850 works great
+2009-12-08T18:19:00.000Z,ActionParsnip,indus,its not something I use. I use devices which display as partitions rather than some garbage coind by microsoft
+2009-12-08T18:20:00.000Z,ActionParsnip,indus,note: some areas ;)
+2009-12-08T18:29:00.000Z,indus,ActionParsnip,his question is about booting
+2009-12-08T18:32:00.000Z,ActionParsnip,indus,if your ubuntu is 32bit theres the 10.1 flash which supports hardware rendering
+2009-12-08T18:35:00.000Z,indus,ActionParsnip,ill use nswrapper
+2009-12-08T18:36:00.000Z,indus,ActionParsnip,flash only supports it wit hthe latest catalyst 9.11 driver
+2009-12-08T18:38:00.000Z,indus,ActionParsnip,thanks :)
+2009-12-08T18:44:00.000Z,indus,ActionParsnip,"ah no, i can make a deb from it"
+2009-12-08T18:44:00.000Z,ActionParsnip,indus,"i have a script to install it rather than a deb, there are PPAs with the flash already packaged"
+2009-12-08T18:45:00.000Z,indus,ActionParsnip,ther are? with the 64 bit flash?
+2009-12-08T18:45:00.000Z,ActionParsnip,indus,"yes, its just that file in a conventient system, kinda pointless but whatever floats your boat"
+2009-12-11T15:40:00.000Z,indus,ActionParsnip,beta 64 bit? where
+2009-12-11T15:40:00.000Z,ActionParsnip,indus,http://labs.adobe.com/downloads/flashplayer10_64bit.html
+2009-12-11T15:41:00.000Z,ActionParsnip,indus,runs well in chromium :)
+2009-12-11T15:41:00.000Z,indus,ActionParsnip,aah thanks did nt know this :) dec 8
+2009-12-11T15:41:00.000Z,indus,ActionParsnip,chromium? chrome beta is out now
+2009-12-11T15:42:00.000Z,ActionParsnip,indus,"i like the daily updates, makes me feel warm and fuzzy"
+2009-12-11T15:42:00.000Z,indus,ActionParsnip,http://www.google.com/chrome
+2009-12-11T15:42:00.000Z,indus,ActionParsnip,i have ditched crappy firefox for it
+2009-12-11T15:43:00.000Z,indus,ActionParsnip,"and yes, flash runs great on it"
+2009-12-11T15:43:00.000Z,ActionParsnip,indus,the bugs folks report under chromium feed the devolopment of chrome
+2009-12-11T15:46:00.000Z,indus,ActionParsnip,what open source version?
+2009-12-11T15:47:00.000Z,ActionParsnip,indus,the ppa I posted has a daily build and lets users log bugs which feed the daily project and chrome
+2009-12-11T15:49:00.000Z,ActionParsnip,indus,"its the same, just the open source version"
+2009-12-11T15:50:00.000Z,indus,ActionParsnip,"i dont think thats true, chrome is based on the open project chromium"
+2009-12-11T15:50:00.000Z,indus,ActionParsnip,google just calls it chrome
+2009-12-11T15:50:00.000Z,indus,ActionParsnip,http://code.google.com/chromium/
+2009-12-11T15:51:00.000Z,ActionParsnip,indus,http://www.computer-aid.com.au/blog/2009/03/12/google-chrome-vs-chromium/
+2009-12-11T15:52:00.000Z,indus,ActionParsnip,yea so its the same
+2009-12-11T15:52:00.000Z,indus,ActionParsnip,and open source
+2009-12-11T15:53:00.000Z,indus,ActionParsnip,crappy site btw :D
+2009-12-11T15:53:00.000Z,ActionParsnip,indus,lays out the info so who cares
+2009-12-11T15:53:00.000Z,ActionParsnip,indus,or http://www.google.com/support/forum/p/Chrome/thread?tid=380b7ffc5d845696&hl=en
+2009-12-11T15:54:00.000Z,ActionParsnip,indus,provided the info is accurate it doesnt matter how crappy it looks
+2009-12-11T15:54:00.000Z,indus,ActionParsnip,nvm yes
+2009-12-11T15:58:00.000Z,ActionParsnip,indus,"i use command line a lot, gets your typing speed up"
+2009-12-11T16:04:00.000Z,indus,ActionParsnip,can u confirm that second option is like alternate cd?
+2009-12-11T16:04:00.000Z,indus,ActionParsnip,install ubuntu
+2009-12-11T16:05:00.000Z,ActionParsnip,indus,second option?
+2009-12-11T16:05:00.000Z,indus,ActionParsnip,"in live cd boot options,"
+2009-12-11T16:06:00.000Z,ActionParsnip,indus,not sure
+2009-12-11T16:38:00.000Z,indus,ActionParsnip,i dont think x1600 is supported with prop drivers
+2010-02-18T12:46:00.000Z,indus,ActionParsnip,whats up .
+2010-02-19T12:45:00.000Z,indus,ActionParsnip,yo yo
+2010-02-19T12:47:00.000Z,indus,ActionParsnip,werd? iam fine thanks
+2010-02-19T12:47:00.000Z,indus,ActionParsnip,good day?
+2010-03-08T16:37:00.000Z,indus,ActionParsnip,hi
+2010-03-08T16:37:00.000Z,ActionParsnip,indus,yo yo yo
+2010-03-08T16:37:00.000Z,ActionParsnip,indus,"mine is fine, how art thee"
+2010-03-08T16:40:00.000Z,ActionParsnip,indus,if you took all the porn off the web there would only be one website called www.bringbacktheporn.com
+2010-05-04T17:25:00.000Z,indus,ActionParsnip,heya
+2010-05-04T17:25:00.000Z,ActionParsnip,indus,yo yo yo
+2010-06-15T11:12:00.000Z,indus,ActionParsnip,hello good day to you :)
+2010-06-23T15:08:00.000Z,indus,ActionParsnip,power can be misused :D
+2010-06-23T15:12:00.000Z,indus,ActionParsnip,"i know , i know a few commands but iam not a sys admin"
+2010-06-23T15:13:00.000Z,indus,ActionParsnip,tell me some 5 cool scripts you use for everyday use
+2010-06-23T15:16:00.000Z,ActionParsnip,indus,backupsys puts all the stuff from my system to my fileserver using rsync.
+2010-06-23T15:16:00.000Z,ActionParsnip,indus,I've made a few to make playlists from folders
+2010-06-23T15:17:00.000Z,ActionParsnip,indus,if you shirk away from scripts and command line you are missing out dude
+2010-06-23T15:18:00.000Z,ActionParsnip,indus,"I guess, makes the world go around"
+2010-06-23T15:18:00.000Z,indus,ActionParsnip,"true heh , i do use command line sometimes , back in ubuntu 6.06 had to use a lot of those"
+2010-06-24T12:55:00.000Z,indus,ActionParsnip,i thought iraq has a whitehouse today :)
+2010-06-24T12:55:00.000Z,indus,ActionParsnip,arent they ruled by americans
+2010-06-24T12:56:00.000Z,ActionParsnip,indus,"no, they have their own democratic government"
+2010-06-24T12:56:00.000Z,indus,ActionParsnip,yeah right
+2010-06-24T12:58:00.000Z,ActionParsnip,indus,its just to test
+2010-06-24T12:58:00.000Z,indus,ActionParsnip,ok but a dicey situation none the less
+2010-06-24T12:58:00.000Z,indus,ActionParsnip,is he trying to use flash ?
+2010-06-24T12:59:00.000Z,ActionParsnip,indus,can't even get to the page
+2010-06-24T13:04:00.000Z,indus,ActionParsnip,"ya thanks please help him , i have to go have lunch :)"
+2010-06-28T18:46:00.000Z,indus,ActionParsnip,hi
+2010-06-28T18:46:00.000Z,ActionParsnip,indus,"its offtopic, the factoid is a great way to inform as it's 3 characters"
+2010-07-08T19:01:00.000Z,indus,ActionParsnip,"hi , but also gtg so bye, good day"
+2010-07-08T19:04:00.000Z,indus,ActionParsnip,hi
+2010-07-08T19:04:00.000Z,indus,ActionParsnip,"good day, got to go now so bye"

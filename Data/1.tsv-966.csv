@@ -1,0 +1,967 @@
+date,from,to,text
+2011-02-25T20:16:00.000Z,Roasted_,,"If I were to roll out Ubuntu in a network environment with a Windows server, is there a way to make Ubuntu 'read' LDAP so users can log in with domain accounts?"
+2011-02-25T20:16:00.000Z,ikonia,Roasted_,"sure, but it is a read only connection, not read/write for password updates"
+2011-02-25T20:17:00.000Z,ikonia,Roasted_,you need an ldap proxy or a service such as redhats directory service to do updates
+2011-02-25T20:17:00.000Z,Roasted_,ikonia,I'm not sure I understand what you just said there...
+2011-02-25T20:17:00.000Z,Roasted_,ikonia,what updates?
+2011-02-25T20:17:00.000Z,ikonia,Roasted_,to users passwords for example
+2011-02-25T20:17:00.000Z,Roasted_,ikonia,I'm not following what you're referring to in regard to user password updates. What gets updated? What needs updated?
+2011-02-25T20:18:00.000Z,ikonia,Roasted_,"when a user changes their password it is updated in the ldap schema, if you are using AD only windows machines can update it, the Linux ones can auth against it, but not update it"
+2011-02-25T20:18:00.000Z,Roasted_,ikonia,are you talking in reference to when passwords expire?
+2011-02-25T20:19:00.000Z,ikonia,Roasted_,"no, just any reason for a user to change their password, eg: they just want to"
+2011-02-25T20:19:00.000Z,Roasted_,ikonia,"oh, we're in a school district here. We don't allow users to just change passwords, however we force automatic password changes every 90 days."
+2011-02-25T20:19:00.000Z,Roasted_,ikonia,excluding students.
+2011-02-25T20:19:00.000Z,Roasted_,ikonia,all teachers/staff get the auto change.
+2011-02-25T20:19:00.000Z,ikonia,Roasted_,"ok, so they would have to change that from a windows machine, or you'd have to have a linux ldap-> windows AD proxy"
+2011-02-25T20:20:00.000Z,Roasted_,ikonia,so it COULD work - they just wouldnt auto-change the passwords when prompted through ubuntu.
+2011-02-25T20:20:00.000Z,Roasted_,ikonia,"however, we're talking ubuntu for students, so they would never see password changes on the ubuntu systems."
+2011-02-25T20:20:00.000Z,ikonia,Roasted_,sounds fine
+2011-02-25T20:21:00.000Z,Roasted_,ikonia,"my main concern is in windows, we auto-redirect their my documents to be the \\server\student\john_smith. I'm wondering if there's a way to re-direct their home folder, or at least a folder on the desktop to do the same thing."
+2011-02-25T20:23:00.000Z,Roasted_,ikonia,do you by chance know if thats a possibility?
+2011-02-25T20:23:00.000Z,ikonia,Roasted_,"yes, that should be do-able, the AD-ldap schema is quite configurable"
+2011-03-07T21:27:00.000Z,ikonia,Roasted_,you set the PS1 variable to what ever you want the prompt to be
+2011-03-07T21:22:00.000Z,ikonia,Roasted_,need what changed
+2011-03-07T21:22:00.000Z,Roasted_,ikonia,"I ran a gvfs-mount command in terminal, and now it changed my prompt to a simple $"
+2011-03-07T21:23:00.000Z,ikonia,Roasted_,"ok, why is the prompt being $ a problem"
+2011-03-07T21:24:00.000Z,Roasted_,ikonia,"because this may be a production machine, and I do not want $ as the prompt."
+2011-03-07T21:24:00.000Z,ikonia,Roasted_,"the prompt being $ is not an issue, it doesn't change anything"
+2011-03-07T21:24:00.000Z,Roasted_,ikonia,I would like my prompt changed to default. Do you know how? If not I will ask somebody else.
+2011-03-07T21:24:00.000Z,ikonia,Roasted_,use the PS1 varible to change the prompt to whatever you want
+2011-03-07T21:25:00.000Z,ikonia,Roasted_,"however, again it makes no difference to the machines use"
+2011-03-07T21:25:00.000Z,Roasted_,ikonia,PS1?
+2011-03-07T21:26:00.000Z,ikonia,Roasted_,"yes, the PS1 environment variable"
+2011-03-07T21:26:00.000Z,Roasted_,ikonia,"I apologize, I have no idea what that means."
+2011-03-07T21:26:00.000Z,ikonia,Roasted_,"it's just an environment variable, like PATH for example"
+2011-03-07T21:27:00.000Z,Roasted_,ikonia,I see. not sure if I'm following... how do I flip it back?
+2011-03-07T21:27:00.000Z,ikonia,Roasted_,"I'm not sure why doing a mount command has changed it, also look at peep`'s suggestion, that is a simpler way"
+2011-03-07T21:28:00.000Z,Roasted_,ikonia,okay. So I need to set the PS1 variable. How do I go about that?
+2011-03-07T21:28:00.000Z,ikonia,Roasted_,"it's an environment variable, same as any other, peep`'s suggestion is easier though"
+2011-03-07T21:28:00.000Z,Roasted_,ikonia,peep didn't have a suggestion. he just made a comment.
+2011-03-07T21:28:00.000Z,ikonia,Roasted_,you need to not use network manager as that won't make a connection until you login and activate it
+2011-03-07T21:29:00.000Z,ikonia,Roasted_,"he made an excellent suggestion, re-read it"
+2011-03-07T21:29:00.000Z,Roasted_,ikonia,"according to google, that is incorrect, as 'allow for all users' supposedly allows that SSID to connect with network manager prior to logging in."
+2011-03-07T21:29:00.000Z,Roasted_,ikonia,"I think I may have just been impatient, as I was able to log in just now. Rebooting and I'll wait 30 seconds to see if it'll pick up the wifi"
+2011-03-07T21:29:00.000Z,ikonia,Roasted_,it won't though
+2011-03-07T21:29:00.000Z,ikonia,Roasted_,it will need to bond
+2011-03-07T21:29:00.000Z,Roasted_,ikonia,how do you know it wont. I think it just worked for me.
+2011-03-07T21:29:00.000Z,ikonia,Roasted_,it takes time
+2011-03-07T21:30:00.000Z,ikonia,Roasted_,"they keys have to be saved though,"
+2011-03-07T21:30:00.000Z,Roasted_,ikonia,bingo.
+2011-03-07T21:30:00.000Z,Roasted_,ikonia,it worked just now.
+2011-03-07T21:30:00.000Z,ikonia,Roasted_,if you do it outside of network manager it will be a lot quicker
+2011-03-07T21:30:00.000Z,Roasted_,ikonia,outside of network manager? as in using what instead?
+2011-03-07T21:30:00.000Z,ikonia,Roasted_,using the interfaces file
+2011-03-07T21:31:00.000Z,Roasted_,ikonia,for wireless?
+2011-03-07T21:31:00.000Z,Roasted_,ikonia,"that stores the passwords in plain text though, doesnt it."
+2011-03-07T21:32:00.000Z,ikonia,Roasted_,what directory are you in when you run it
+2011-03-07T21:32:00.000Z,Roasted_,ikonia,"I have no idea, as I'm at the.... $ prompt...."
+2011-03-07T21:32:00.000Z,ikonia,Roasted_,type 'pwd' to know what directory you are in
+2011-03-07T21:34:00.000Z,ikonia,Roasted_,what directory are you in ?
+2011-03-07T21:35:00.000Z,Roasted_,ikonia,my home directory. Mind you this is a domain account too
+2011-03-07T21:35:00.000Z,ikonia,Roasted_,it should be in your home dir then
+2011-03-07T21:37:00.000Z,ikonia,Roasted_,it's up to you what you do
+2011-03-07T21:37:00.000Z,ikonia,Roasted_,"if you don't want to deploy it because the prompt isn't what you want and you don't know how to set the prompt to what you want, don't deploy it"
+2011-03-07T21:37:00.000Z,Roasted_,ikonia,that's not the point.
+2011-03-07T21:37:00.000Z,ikonia,Roasted_,it is
+2011-03-07T21:38:00.000Z,Roasted_,ikonia,I want ubuntu to act predictably and sensibly if I'm going to manage it.
+2011-03-07T21:38:00.000Z,Roasted_,ikonia,retarded issues like this make me think twice unless I know a work around.
+2011-03-07T21:38:00.000Z,Roasted_,ikonia,"SO, I'm going to find a work around. I'm sorry you have a problem with that, but you are not managing these systems."
+2011-03-07T21:38:00.000Z,ikonia,Roasted_,"if you are unable to set an environment varible, you should not be in a position to make deployment decisions or in a position where you admin a server"
+2011-03-07T21:38:00.000Z,ikonia,Roasted_,show me the output of 'id' in your terminal
+2011-03-07T21:38:00.000Z,Roasted_,ikonia,"well then explain to me what I am doing wrong? After all, I'm using your suggestions that are not working."
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,"appreciate it if you don't insult me, by the way."
+2011-03-07T21:39:00.000Z,ikonia,Roasted_,"you've not set the PS1 environment variable, that is the problem, however it should be sourced from your home directory, however it's not so there is th bug"
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,"I have a lot of experience in mass deployment of systems, as I have 2,000 to manage."
+2011-03-07T21:39:00.000Z,ikonia,Roasted_,"I'm not insulting you, I'm stating fact"
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,thanks for understanding.
+2011-03-07T21:39:00.000Z,ikonia,Roasted_,yet you can't set an environment varible
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,"no, you did. and I'm letting you know."
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,also keep in mind we dont run linux here.
+2011-03-07T21:39:00.000Z,ikonia,Roasted_,it's up to you how you take it
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,"we run windows, and we are trying to put linux into the mix."
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,"and this is my job, to figure it out and deploy it accordingly."
+2011-03-07T21:40:00.000Z,ikonia,Roasted_,"ok, so show me the output of 'id'"
+2011-03-07T21:40:00.000Z,Roasted_,ikonia,"it's a long, long string."
+2011-03-07T21:40:00.000Z,ikonia,Roasted_,"ok, paste it"
+2011-03-07T21:42:00.000Z,ikonia,Roasted_,"if you want help, you need to cut the attitude out a little"
+2011-03-07T21:44:00.000Z,Roasted_,ikonia,"keep the smart comments at bay, and we'll have no issues. thank you."
+2011-03-07T21:45:00.000Z,ikonia,Roasted_,"tell you what, help yourself, I'm out"
+2011-03-07T22:24:00.000Z,Roasted_,ikonia,you seeing this?
+2011-03-07T22:25:00.000Z,ikonia,Roasted_,I'm not interested
+2011-03-07T22:25:00.000Z,Roasted_,ikonia,just wanted to make you aware that it clearly has nothing to do with bashrc after all.
+2011-03-07T22:25:00.000Z,Roasted_,ikonia,"you know, in case anyone else asks. ;)"
+2011-03-07T22:25:00.000Z,ikonia,Roasted_,not interested
+2011-03-07T22:25:00.000Z,Roasted_,ikonia,just trying to be pro active in case anybody else has the same issue.
+2011-03-07T22:25:00.000Z,Roasted_,ikonia,that's all :)
+2011-03-07T23:07:00.000Z,ikonia,Roasted_,"I didn't think it was local to the machine, more so as your directory is network mounted at a domain level,"
+2011-03-07T23:08:00.000Z,Roasted_,ikonia,"yar. I'm just not sure what's sticking it. AD has nothing that stands out as being weird, and nothing is in my share on the server either."
+2011-03-24T21:07:00.000Z,Roasted_,ikonia,I am.
+2011-03-24T21:00:00.000Z,ikonia,Roasted_,can you paste your configs for both in a pastebin please.
+2011-03-24T21:01:00.000Z,Roasted_,ikonia,http://pastebin.com/jzKs5XFy
+2011-03-24T21:02:00.000Z,ikonia,Roasted_,"ok, this is common in RHEL and I'd assume it's the same here, you need an entry for both your other NIC's confirming they are nothing, eg: so they are 'blanked' before going into the bond"
+2011-03-24T21:03:00.000Z,ikonia,Roasted_,also check out and make sure nothing like network manager has a grip on one of them also
+2011-03-24T21:03:00.000Z,Roasted_,ikonia,do I need a 2nd entry with bond0:0 for the 2nd card? I thought they'd both point (etho and eth1) to the same bond.
+2011-03-24T21:03:00.000Z,Roasted_,ikonia,there is no network manager.
+2011-03-24T21:03:00.000Z,ikonia,Roasted_,"bond0:0 is a virtual interface on the bond, so no, you shouldn't need that"
+2011-03-24T21:03:00.000Z,ikonia,Roasted_,however an entry for eth0 and eth1 to 'null' them may help
+2011-03-24T21:03:00.000Z,Roasted_,ikonia,"hm, then I'm completely lost. EVERY guide I've read has said to do what I did here, with 1 or 2 mentioning bond0:0"
+2011-03-24T21:04:00.000Z,ikonia,Roasted_,you understand what :1 or:0 after a network card does in general yes/no ?
+2011-03-24T21:04:00.000Z,Roasted_,ikonia,my goal is to have both NICs on the same IP to boost speed for our thin client lab.
+2011-03-24T21:04:00.000Z,Roasted_,ikonia,I knew it was a virtual interface. I just wasn't sure if that was needed for bonding.
+2011-03-24T21:04:00.000Z,Roasted_,ikonia,"the guides I read mentioning bond0:0 also had a separate IP for the virtual interface, which I don't really want. I'd like to have 1 IP for both NICs to handle the load."
+2011-03-24T21:05:00.000Z,ikonia,Roasted_,"ok cool, so you're not starting from scratch, bond0 is your virtual nic, so that's what has the IP's you want to add eth0 and eth1 so no need to reference bond0:0"
+2011-03-24T21:05:00.000Z,ikonia,Roasted_,"you also need a mii-mode so the cards no if it's round robin, load balanced mode etc"
+2011-03-24T21:06:00.000Z,Roasted_,ikonia,well I did create a file somewhere with a miimode entry... downdelay updelay etc...
+2011-03-24T21:06:00.000Z,Roasted_,ikonia,I forget where it was tho. let me see if I can find that guide. It was /etc/modprobe.d or something
+2011-03-24T21:06:00.000Z,ikonia,Roasted_,"great, that's an important bit"
+2011-03-24T21:06:00.000Z,Roasted_,ikonia,ifenslave.conf
+2011-03-24T21:06:00.000Z,ikonia,Roasted_,"perfect, in module config makes sense"
+2011-03-24T21:06:00.000Z,Roasted_,ikonia,heres the contents of the ifenslave.conf alias bond0 bonding
+2011-03-24T21:06:00.000Z,ikonia,Roasted_,https://help.ubuntu.com/community/UbuntuBonding
+2011-03-24T21:07:00.000Z,ikonia,Roasted_,"that is a great way of doing it, simple and obvious,"
+2011-03-24T21:07:00.000Z,Roasted_,ikonia,"wait, I still need an auto eth0 entry?"
+2011-03-24T21:07:00.000Z,Roasted_,ikonia,auto eth0 and auto bond0
+2011-03-24T21:07:00.000Z,ikonia,Roasted_,"no, look at the example"
+2011-03-24T21:07:00.000Z,Roasted_,ikonia,that's where I read it.
+2011-03-24T21:08:00.000Z,Roasted_,ikonia,under 10.04 and newer.
+2011-03-24T21:08:00.000Z,ikonia,Roasted_,"eth1 and eth2 are in the bond, eth0 is just a nic"
+2011-03-24T21:08:00.000Z,Roasted_,ikonia,so I need miimon in the interface file under the bond listing?
+2011-03-24T21:08:00.000Z,ikonia,Roasted_,"that exmaple has 3 nics, eth0 just on it's own and a bond with eth1 and 2 in it in load balancing mode"
+2011-03-24T21:08:00.000Z,Roasted_,ikonia,oh I see.
+2011-03-24T21:08:00.000Z,Roasted_,ikonia,I took that the wrong way.
+2011-03-24T21:09:00.000Z,Roasted_,ikonia,"I'll be honest, I'm not really understanding where I went wrong then."
+2011-03-24T21:09:00.000Z,ikonia,Roasted_,"that's just an example of a guys box, not copy this file for a bonding cvonfig, you'll need to apply that config to your config"
+2011-03-24T21:09:00.000Z,Roasted_,ikonia,right. I'd just have to plug my numbers in.
+2011-03-24T21:09:00.000Z,ikonia,Roasted_,"correct, and remove what you don't need, eth0 doing dhcp"
+2011-03-24T21:09:00.000Z,Roasted_,ikonia,"oh, I see bond-slaves there. I didnt have that before."
+2011-03-24T21:09:00.000Z,Roasted_,ikonia,it'd be nice if these fricken guides said to do some of this stuff.
+2011-03-24T21:09:00.000Z,ikonia,Roasted_,"because you are doing the adding as a slave option, which from my experience is poor"
+2011-03-24T21:10:00.000Z,ikonia,Roasted_,"always use official ubuntu guides, they do tell you the right way of doing things"
+2011-03-24T21:10:00.000Z,ikonia,Roasted_,the way you seem to be trying to do it is quite dirty in my opinion
+2011-03-24T21:10:00.000Z,Roasted_,ikonia,"wait, what I'm doing is a poor idea?"
+2011-03-24T21:10:00.000Z,ikonia,Roasted_,"no no, bonding is great, no complaint, I mean how you are implementing bonding"
+2011-03-24T21:10:00.000Z,Roasted_,ikonia,"well, what's the best way of doing it?"
+2011-03-24T21:10:00.000Z,ikonia,Roasted_,the guide I've just given you
+2011-03-24T21:11:00.000Z,ikonia,Roasted_,"make sure you read it all though, so you understand the modes etc"
+2011-03-24T21:11:00.000Z,Roasted_,ikonia,"oh. But it mentions bond-slave in the interface file that you just gave me. Then you mentioned slave is poor, so I got confused."
+2011-03-24T21:11:00.000Z,ikonia,Roasted_,"no, I mentioned the way you are adding a slave in your example is poor"
+2011-03-24T21:11:00.000Z,ikonia,Roasted_,if you are doing a bond you need slaves
+2011-03-24T21:15:00.000Z,Roasted_,ikonia,do you think the bond-slaves entry alone is why eth1 didnt attach to bond0?
+2011-03-24T21:23:00.000Z,Roasted_,ikonia,"well I copied that config exactly, now I have 0 connectivity. :("
+2011-03-24T21:30:00.000Z,ikonia,Roasted_,"it's not just copying that config, did you read the whole thing as I suggested ?"
+2011-03-24T21:30:00.000Z,ikonia,Roasted_,sorry for the slow response I was away from the keyboard
+2011-03-24T21:31:00.000Z,Roasted_,ikonia,"yes, I read it. I didn't COPY the data. I just wrote my own based on that template."
+2011-03-24T21:31:00.000Z,ikonia,Roasted_,can you pastebin it for me please ?
+2011-03-24T21:31:00.000Z,ikonia,Roasted_,did you update /etc/modprove.d/bonding.conf
+2011-03-24T21:32:00.000Z,Roasted_,ikonia,I can't. I have no internet on the server now...
+2011-03-24T21:32:00.000Z,Roasted_,ikonia,bonding.conf?
+2011-03-24T21:32:00.000Z,Roasted_,ikonia,it was ifenslave.conf
+2011-03-24T21:32:00.000Z,ikonia,Roasted_,"yes,"
+2011-03-24T21:32:00.000Z,Roasted_,ikonia,should I name it bonding?
+2011-03-24T21:32:00.000Z,ikonia,Roasted_,where in that guide does it say use ifenslave.conf ?
+2011-03-24T21:32:00.000Z,ikonia,Roasted_,I told you to read the guide not just change that one config file
+2011-03-24T21:32:00.000Z,Roasted_,ikonia,the other guide is where I created ifenslave.conf. Maybe that's where it got crossed up.
+2011-03-24T21:32:00.000Z,ikonia,Roasted_,"yes, I have no doubt which is why I said to read it"
+2011-03-24T21:33:00.000Z,Roasted_,ikonia,I did read it. :P
+2011-03-24T21:33:00.000Z,ikonia,Roasted_,you didn't or you wouldn't have put info in the wrong file
+2011-03-24T21:33:00.000Z,Roasted_,ikonia,still no internet.
+2011-03-24T21:34:00.000Z,ikonia,Roasted_,"of course not, if your config is messed up there will be no interenet, that is no surprise"
+2011-03-24T21:34:00.000Z,Roasted_,ikonia,what config file are you referring to. interfaces or bonding?
+2011-03-24T21:34:00.000Z,Roasted_,ikonia,sec.
+2011-03-24T21:34:00.000Z,ikonia,Roasted_,"what ? how do I know what config files your using, you're meant to use the config files in the guide"
+2011-03-24T21:34:00.000Z,ikonia,Roasted_,"you can use bonding.conf or the interfaces file if your using 10.04 or later, but don't create a conflict"
+2011-03-24T21:35:00.000Z,Roasted_,ikonia,"so overall, I need /etc/modprobe.d/bonding.conf with those 2 alias lines, and I need ifenslave installed, and I need to edit my network interface file accordingly to what was said in your link. Right?"
+2011-03-24T21:35:00.000Z,ikonia,Roasted_,no
+2011-03-24T21:35:00.000Z,ikonia,Roasted_,you may not need either
+2011-03-24T21:36:00.000Z,Roasted_,ikonia,"I appreciate your help, but I've read your guide. I'll ask someone else who may know the answer. Thank you anyway."
+2011-03-24T21:36:00.000Z,ikonia,Roasted_,"I know the answer, I have bonding working"
+2011-03-24T21:36:00.000Z,Roasted_,ikonia,well I'm following your guide.
+2011-03-24T21:36:00.000Z,ikonia,Roasted_,ok so why are you talking about bonding.conf or ifenslave.conf
+2011-03-24T21:37:00.000Z,Roasted_,ikonia,but hang on. I'll go over my configs a 3rd time. Give me a moment.
+2011-03-24T21:37:00.000Z,ikonia,Roasted_,what version of ubuntu ar eyou using
+2011-03-24T21:37:00.000Z,ikonia,Roasted_,"ok, so were does it say to put the config"
+2011-03-24T21:37:00.000Z,Roasted_,ikonia,bonding.conf existed from the previous guide. It has no bearing here unless its existence could be why its fouling out.
+2011-03-24T21:37:00.000Z,ikonia,Roasted_,it will be conflictint
+2011-03-24T21:37:00.000Z,Roasted_,ikonia,let me nuke this file then
+2011-03-24T21:38:00.000Z,Roasted_,ikonia,file deleted. restarted network service. no internet.
+2011-03-24T21:38:00.000Z,ikonia,Roasted_,"ok, so can you show me your interfaces file please ?"
+2011-03-24T21:39:00.000Z,Roasted_,ikonia,I'll have to retype it... since I have no internet on the server... sec
+2011-03-24T21:39:00.000Z,ikonia,Roasted_,copy it to a usb stick and pastebin it on your current machine
+2011-03-24T21:39:00.000Z,ikonia,Roasted_,or something to that effect
+2011-03-24T21:40:00.000Z,Roasted_,ikonia,I have no usb stick here. I'll just type it.
+2011-03-24T21:41:00.000Z,Roasted_,ikonia,http://pastebin.com/1WxPGD09
+2011-03-24T21:42:00.000Z,ikonia,Roasted_,why have you got bond mode 802.3ad ?
+2011-03-24T21:42:00.000Z,Roasted_,ikonia,because it was in your link
+2011-03-24T21:42:00.000Z,ikonia,Roasted_,I told you to read the link so you understood the bond modes
+2011-03-24T21:42:00.000Z,ikonia,Roasted_,you said you had read it
+2011-03-24T21:43:00.000Z,ikonia,Roasted_,"you need a bond mode, but not 802.3ad"
+2011-03-24T21:43:00.000Z,ikonia,Roasted_,depends on your requirements
+2011-03-24T21:43:00.000Z,ikonia,Roasted_,"good luck getting this working, I can't be bothered anymore, you've said you've read the guide and yet you clearly haven't and have just messed around with the config file"
+2011-03-24T21:44:00.000Z,Roasted_,ikonia,"thanks for your help, bro. I'll ask somebody else who may be able to help."
+2011-03-24T21:44:00.000Z,Roasted_,ikonia,"again, thanks for your time"
+2011-03-24T21:47:00.000Z,ikonia,Roasted_,"please stop repeating, leave it 15 minutes between repeats please"
+2011-03-24T21:47:00.000Z,Roasted_,ikonia,I'll consider it.
+2011-03-24T21:48:00.000Z,ikonia,Roasted_,"no, you'll do it"
+2011-03-24T21:48:00.000Z,Roasted_,ikonia,"you were very helpful today, and very friendly. I'd like to thank you again."
+2011-03-24T21:48:00.000Z,ikonia,Roasted_,more than welcome
+2011-03-24T22:04:00.000Z,ikonia,Roasted_,because you didn't tell me what mode you where using
+2011-03-24T22:04:00.000Z,ikonia,Roasted_,don't get smart
+2011-03-24T22:04:00.000Z,Roasted_,ikonia,how do you know I was referring to you?
+2011-03-24T22:05:00.000Z,ikonia,Roasted_,I asked you multiple times to read for the mode options and you kept saying you had
+2011-03-24T22:17:00.000Z,ikonia,Roasted_,"your staying a bit into budgets and the like, that's why he suggested offtopic"
+2011-03-24T22:17:00.000Z,Roasted_,ikonia,"we were discussing network gear, which directly links to my question at hand."
+2011-03-24T22:17:00.000Z,ikonia,Roasted_,"yes, but it was deviating to budgets and the like, that's why he suggested it"
+2011-03-24T22:22:00.000Z,ikonia,Roasted_,"which user is that, it would be interesting to hear his experiences"
+2011-03-24T22:23:00.000Z,Roasted_,ikonia,It's okay. You did your part helping me earlier.
+2011-03-24T22:23:00.000Z,ikonia,Roasted_,I'm curious to which other user has it
+2011-03-24T22:23:00.000Z,Roasted_,ikonia,"well, let me see if I can get it working first, and we'll go from there."
+2011-03-24T22:23:00.000Z,ikonia,Roasted_,what user is it ?
+2011-03-24T22:24:00.000Z,Roasted_,ikonia,he's not from this room.
+2011-03-24T22:24:00.000Z,ikonia,Roasted_,"ok, but what username is he"
+2011-03-24T22:24:00.000Z,ikonia,Roasted_,which user ?
+2011-03-24T22:27:00.000Z,ikonia,Roasted_,"that makes no sense if you are only using %10 of one card, putting it onto two is a waste of time"
+2011-03-24T22:27:00.000Z,ikonia,Roasted_,you should only bond if you have a reason to
+2011-03-24T22:28:00.000Z,Roasted_,ikonia,"I really just want to have both 'just because.' They're both here, why not use both if it'll only help? After all, that single NIC would be serving 30+ clients at a single time, and that number may rise heavily if Ubuntu works nicely in our environment."
+2011-03-24T22:29:00.000Z,ikonia,Roasted_,it won't help
+2011-03-24T22:29:00.000Z,Roasted_,ikonia,theres a team of developers for LTSP that disagree with you.
+2011-03-24T22:29:00.000Z,Roasted_,ikonia,but I appreciate your concern.
+2011-03-24T22:29:00.000Z,ikonia,Roasted_,"ok, so then you 'need' it,"
+2011-03-24T22:29:00.000Z,ikonia,Roasted_,"if you have a 1GB nic, and you've using %70 of it, putting %35 and %35 won't help,"
+2011-03-24T22:30:00.000Z,ikonia,Roasted_,"it won't help, unless you card is flooded, in which case you need it"
+2011-03-24T22:30:00.000Z,Roasted_,ikonia,"I understand. But even still, if it's THERE and empty, why not use it just in case?"
+2011-03-24T22:30:00.000Z,ikonia,Roasted_,because they create an overhead on the server
+2011-03-24T22:30:00.000Z,ikonia,Roasted_,and as you've discovered problems in switching
+2011-03-24T22:31:00.000Z,ikonia,Roasted_,that doesn't mean it can handle iot
+2011-03-24T22:31:00.000Z,ikonia,Roasted_,it's in the guide I gave you
+2011-03-24T22:31:00.000Z,ikonia,Roasted_,it's also default
+2012-02-20T22:23:00.000Z,ikonia,Roasted_,what's up ?
+2012-02-20T22:23:00.000Z,Roasted_,ikonia,"well, really just the basics of the entire method behind this. Like if I run ssh-keygen, am I doing this on my file server, or the client system outside of the LAN?"
+2012-02-20T22:24:00.000Z,ikonia,Roasted_,"really simple, ssh-keygen (man it - and chose your options) public key put in the ~/.ssh/authorized_keys file on the server - private key, keep on your local machine, ssh $user@$server, enter private key password, you are done"
+2012-02-20T22:25:00.000Z,ikonia,Roasted_,make sure the ~/.ssh/authorized_key file on the server has 600 permissions
+2012-02-20T22:25:00.000Z,Roasted_,ikonia,I was under the impression I was to copy the public key physically off of that system and onto the client system outside of the LAN.
+2012-02-20T22:25:00.000Z,ikonia,Roasted_,"correct, public key onto the destination server, in the .ssh directory in their home file, and put the contents into a file called 'authorized keys'"
+2012-02-20T22:26:00.000Z,ikonia,Roasted_,"authorized_keys sorry, hit spoace by accident"
+2012-02-20T22:26:00.000Z,Roasted_,ikonia,"just to recap... ssh-keygen on server, find the public key, copy it to the client. Then the client should be able to SSH in without asking for a pw. correct?"
+2012-02-20T22:26:00.000Z,ikonia,Roasted_,"ssh keygen on client,"
+2012-02-20T22:26:00.000Z,ikonia,Roasted_,that creates public and private keys
+2012-02-20T22:27:00.000Z,Roasted_,ikonia,"see, I did that, and Ithought I did it wrong. I found it so backwards to do it from the client and successfully SSH into it with ZERO server input. It confused me...."
+2012-02-20T22:27:00.000Z,ikonia,Roasted_,private key in your .ssh directory (call the file id_dsa or or_rsa depending on encyrption)
+2012-02-20T22:27:00.000Z,ikonia,Roasted_,"put the contents (not the file - the contents) into a file called 'authorized_keys' on the server, in the users home directory/.ssh"
+2012-02-20T22:27:00.000Z,ikonia,Roasted_,"change the permissions of the authorized_key file to 600 on the server, bang you are done"
+2012-02-20T22:28:00.000Z,Roasted_,ikonia,"so in essence I was looking at it 100% backwards. I generate the keys on client, and move the private key contents to server.... whereas I thought I would keygen on server, and move public to client...."
+2012-02-20T22:28:00.000Z,ikonia,Roasted_,public key contents tot he server
+2012-02-20T22:28:00.000Z,ikonia,Roasted_,private key stays safe on the client
+2012-02-20T22:28:00.000Z,Roasted_,ikonia,>_<
+2012-02-20T22:29:00.000Z,ikonia,Roasted_,want to do this step by step ?
+2012-02-20T22:29:00.000Z,Roasted_,ikonia,"eh, I'm trying it out on my own, but I'm still very gray about it. Hate to be a bug though."
+2012-02-20T22:29:00.000Z,Roasted_,ikonia,youtube videos weren't as explicit as I had hoped :(
+2012-02-20T22:30:00.000Z,ikonia,Roasted_,"want to walk through this - it will take 5 minutes max, it's really easy"
+2012-02-20T22:30:00.000Z,Roasted_,ikonia,if you wouldn't mind...
+2012-02-20T22:30:00.000Z,ikonia,Roasted_,"lets do the client first, got a terminal open ?"
+2012-02-20T22:31:00.000Z,Roasted_,ikonia,sure do
+2012-02-20T22:32:00.000Z,ikonia,Roasted_,"ok, 'ssh-keygen -b 2048 '"
+2012-02-20T22:33:00.000Z,ikonia,Roasted_,"that should create two files, a public and a private key in your current working directory"
+2012-02-20T22:33:00.000Z,Roasted_,ikonia,just enter/enter/enter thruogh the prompts?
+2012-02-20T22:33:00.000Z,ikonia,Roasted_,"yeah, set a password though"
+2012-02-20T22:34:00.000Z,ikonia,Roasted_,you want your key to be passworded
+2012-02-20T22:34:00.000Z,ikonia,Roasted_,"the prompts are pretty self explanintory, so if you want to change something to match your needs, please do so"
+2012-02-20T22:39:00.000Z,Roasted_,ikonia,"now that the keygen is made, what should my plan of action be?"
+2012-02-20T22:39:00.000Z,ikonia,Roasted_,"ok, you have a public and a private key, yes no ?"
+2012-02-20T22:40:00.000Z,Roasted_,ikonia,would it be in .ssh?
+2012-02-20T22:40:00.000Z,ikonia,Roasted_,should be in your current working directory (unless you told it to put it somewhere else)
+2012-02-20T22:41:00.000Z,Roasted_,ikonia,I'm not seeing anything besides typical home dir folders.
+2012-02-20T22:41:00.000Z,ikonia,Roasted_,did it ask you for output file names ?
+2012-02-20T22:41:00.000Z,Roasted_,ikonia,"besides pw, I just enter'd everything else"
+2012-02-20T22:42:00.000Z,ikonia,Roasted_,look in .ssh
+2012-02-20T22:42:00.000Z,ikonia,Roasted_,~/.ssh
+2012-02-20T22:42:00.000Z,ikonia,Roasted_,you sould have id_rsa and id_rsa.pub
+2012-02-20T22:42:00.000Z,ikonia,Roasted_,"great, your id_rsa is your private key, guard it with your life"
+2012-02-20T22:42:00.000Z,ikonia,Roasted_,"your .public key, copy that onto your remote server, to the ~/.ssh directory"
+2012-02-20T22:43:00.000Z,Roasted_,ikonia,"that's where I copy the contents, but not the entire .pub itself, right?"
+2012-02-20T22:43:00.000Z,ikonia,Roasted_,"as this is the first key, we'll copy the whole file (you'll see why, it will make sense in a moment)"
+2012-02-20T22:43:00.000Z,ikonia,Roasted_,copy the physical file (.pub) to ~/.ssh on the remote server
+2012-02-20T22:45:00.000Z,ikonia,Roasted_,you following ok ?
+2012-02-20T22:46:00.000Z,Roasted_,ikonia,"yeah, just trying to push the pub over to server."
+2012-02-20T22:46:00.000Z,Roasted_,ikonia,the hdd I have shared on my router is being a brat.
+2012-02-20T22:46:00.000Z,ikonia,Roasted_,"that's fine, just checking your ok"
+2012-02-20T22:47:00.000Z,Roasted_,ikonia,maybe it was nautilus. gnome 3 just crashed and reset on my laptop. haaa??
+2012-02-20T22:47:00.000Z,Roasted_,ikonia,copied over. are we done??
+2012-02-20T22:48:00.000Z,ikonia,Roasted_,very close
+2012-02-20T22:48:00.000Z,ikonia,Roasted_,"now, change the file name on the remote server from 'id_rsa.pub' to 'authorized_keys'"
+2012-02-20T22:48:00.000Z,Roasted_,ikonia,done
+2012-02-20T22:48:00.000Z,ikonia,Roasted_,"normally the plan is to copy the contents of id_rsa.pub to the file authorized_keys, but as this is your only / first key, it's easier to just rename it"
+2012-02-20T22:48:00.000Z,ikonia,Roasted_,change the permissions on it to 600
+2012-02-20T22:49:00.000Z,ikonia,Roasted_,change permissions on authorized_keys to 600
+2012-02-20T22:49:00.000Z,Roasted_,ikonia,can I throw out a curve ball first?
+2012-02-20T22:49:00.000Z,ikonia,Roasted_,please
+2012-02-20T23:20:00.000Z,ikonia,Roasted_,no problem
+2012-02-20T22:50:00.000Z,Roasted_,ikonia,"there will be a total of 4 systems connecting to this server via ssh. Each user will be backing their files up to it with an automated program, etiher syncback or deja dup depending on windows or ubuntu. Now, I see the ssh key is kept in ~/.ssh... how would this effect other users?"
+2012-02-20T22:50:00.000Z,ikonia,Roasted_,are all the users using the same username ?
+2012-02-20T22:50:00.000Z,Roasted_,ikonia,no.
+2012-02-20T22:50:00.000Z,ikonia,Roasted_,"then no,"
+2012-02-20T22:50:00.000Z,ikonia,Roasted_,that will cause no added complication
+2012-02-20T22:51:00.000Z,ikonia,Roasted_,"either way, you're done, just ssh in now from the client"
+2012-02-20T22:51:00.000Z,Roasted_,ikonia,what about the fact that the ssh keys are stored in the users home directory?
+2012-02-20T22:51:00.000Z,ikonia,Roasted_,why is it bad that the keys are stored in the users home directory
+2012-02-20T22:51:00.000Z,ikonia,Roasted_,should ask you for your key password
+2012-02-20T22:52:00.000Z,Roasted_,ikonia,"I don't consider it bad. I just want to make sure it'll work. Like, I now have a file on the admin account of my file server called authorized_keys. that's just 1 key. What about when I add 3 more? do I just add them in the same file?"
+2012-02-20T22:53:00.000Z,ikonia,Roasted_,"no, each user has their own authorized_keys file in their home directory"
+2012-02-20T22:53:00.000Z,ikonia,Roasted_,"if you want others to share the same username, but with different keys, then you just add more public keys to the single authorized_keys file"
+2012-02-20T22:53:00.000Z,Roasted_,ikonia,separated by anything in aprticular?
+2012-02-20T22:53:00.000Z,ikonia,Roasted_,"nope, no spaces, end of line, start a new line"
+2012-02-20T22:54:00.000Z,Roasted_,ikonia,good deal
+2012-02-20T22:55:00.000Z,Roasted_,ikonia,"so I don't assign these keys as per user individually. I could just generate 4 keys and just make sure I drop 1 private key per user and they'll be associated accordingly,r ight? I mean there's no marriage between sshkey1 and Frank, or sshkey2 and Bob, it's just sshkey1pub - sshkey1priv, right?"
+2012-02-20T22:55:00.000Z,ikonia,Roasted_,"yup, look at the ssh keygen options, eg: -c (comment) is useful to show users keys eg: -c 'Roasteds key' - helps in a file with multiple keys"
+2012-02-20T22:56:00.000Z,Roasted_,ikonia,"I see. so I could just barf out 4 keys, stack them in authorized keys, and freely distribute the private keys to each user and bam - good togo. eh?"
+2012-02-20T22:56:00.000Z,ikonia,Roasted_,for example here is my key
+2012-02-20T22:56:00.000Z,ikonia,Roasted_,http://pastebin.ubuntu.com/850269/
+2012-02-20T22:57:00.000Z,ikonia,Roasted_,"if you look at the end, it has my name, which in a file with many keys, shows it is obviously mine, so if I need to remove it, I know which one to remove"
+2012-02-20T22:57:00.000Z,ikonia,Roasted_,"but, yes, it's that simple"
+2012-02-20T22:58:00.000Z,ikonia,Roasted_,get it ?
+2012-02-20T22:58:00.000Z,Roasted_,ikonia,I'm not sure if I did this right. I just tried to SSH to it from client and it said authenticity of host can't be established. are you sure you want to continue connecting.
+2012-02-20T22:58:00.000Z,ikonia,Roasted_,"first connection, just cliek yes"
+2012-02-20T22:58:00.000Z,Roasted_,ikonia,"oh, I thought it wouldnt ask for anything at all"
+2012-02-20T22:59:00.000Z,ikonia,Roasted_,you need to disable host based auth in sshd_config to stop that
+2012-02-20T22:59:00.000Z,ikonia,Roasted_,"or put the hosts in the ~/.ssh/known_hosts file, whatever works best for you"
+2012-02-20T22:59:00.000Z,Roasted_,ikonia,"it's fine, I just thought using priv pub sshkeys I wouldn't get ANY prompts."
+2012-02-20T22:59:00.000Z,ikonia,Roasted_,it will only ask that one
+2012-02-20T22:59:00.000Z,Roasted_,ikonia,it just confused me is all.
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,"you won't get any prompts if you set it up correctly, eg: disable host based auth, OR put the host keys in the known_hosts file"
+2012-02-20T23:00:00.000Z,Roasted_,ikonia,"had my sshkeys not been working properly, it would have generated a new ssh key in .ssh, correct?"
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,no
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,no new keys
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,you are now 'setup'
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,when you connected it will add a host key to ~/.ssh/known_hosts
+2012-02-20T23:00:00.000Z,Roasted_,ikonia,"but if I hadn't set these keys up, and ssh'd anyway, it would have generated one on the fly, right?"
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,god no
+2012-02-20T23:01:00.000Z,ikonia,Roasted_,that would be an amazingly large security hole
+2012-02-20T23:01:00.000Z,Roasted_,ikonia,so how does ssh work if I don't set up ssh keys? I never did it before and I could ssh just fine (but that was on the LAN)
+2012-02-20T23:01:00.000Z,ikonia,Roasted_,it just wouldn't have let you login with key based auth
+2012-02-20T23:01:00.000Z,ikonia,Roasted_,that is user/password authentication
+2012-02-20T23:01:00.000Z,Roasted_,ikonia,"ah, different beast?"
+2012-02-20T23:01:00.000Z,ikonia,Roasted_,if you disable user/password authentication and don't have an ssh key it won't let you login
+2012-02-20T23:02:00.000Z,Roasted_,ikonia,where's that done at out of curiosity?
+2012-02-20T23:02:00.000Z,ikonia,Roasted_,"password authentication hits /etc/passwd -> /etc/shadow on the server, for auth, ssh keys uses the keys you created for auth and ignores /etc/passwd"
+2012-02-20T23:02:00.000Z,Roasted_,ikonia,I see.
+2012-02-20T23:02:00.000Z,Roasted_,ikonia,so I just have to repeat this process 3 more times and I should be good?
+2012-02-20T23:03:00.000Z,ikonia,Roasted_,pretty much
+2012-02-20T23:03:00.000Z,Roasted_,ikonia,nice. thanks for your help.
+2012-02-20T23:03:00.000Z,Roasted_,ikonia,it's appreciated.
+2012-02-20T23:03:00.000Z,ikonia,Roasted_,"you may want to improve it, eg: add comments to the key, disable host based auth, etc etc"
+2012-02-20T23:03:00.000Z,ikonia,Roasted_,"but at a highlevel, yes, it's that simple"
+2012-02-20T23:03:00.000Z,Roasted_,ikonia,# comments?
+2012-02-20T23:03:00.000Z,ikonia,Roasted_,"yes, -c 'jimmys key' so it's obvious who owns what key in the authorized_keys file"
+2012-02-20T23:04:00.000Z,Roasted_,ikonia,do these keys ever have to be refreshed?
+2012-02-20T23:04:00.000Z,Roasted_,ikonia,can I expect to redo this next month or something?
+2012-02-20T23:04:00.000Z,ikonia,Roasted_,nope
+2012-02-20T23:04:00.000Z,ikonia,Roasted_,I've had the same key for 12 years
+2012-02-20T23:04:00.000Z,Roasted_,ikonia,lol
+2012-02-20T23:04:00.000Z,Roasted_,ikonia,impressive.
+2012-02-20T23:04:00.000Z,ikonia,Roasted_,it's a very effective method
+2012-02-20T23:04:00.000Z,Roasted_,ikonia,its simple when you think about it...
+2012-02-20T23:05:00.000Z,ikonia,Roasted_,"eg: you want to give me access to your machine, I give you my public key, bang we are done"
+2012-02-20T23:05:00.000Z,Roasted_,ikonia,"ssh-keygen, type pw, it barfs out 2 files, .pub contents to server in authorized_keys"
+2012-02-20T23:05:00.000Z,ikonia,Roasted_,"you want me to not have access, you remove it, bang your done"
+2012-02-20T23:05:00.000Z,ikonia,Roasted_,we don't have to know passwords etc etc
+2012-02-20T23:05:00.000Z,ikonia,Roasted_,correct
+2012-02-20T23:05:00.000Z,Roasted_,ikonia,very nice.
+2012-02-20T23:05:00.000Z,Roasted_,ikonia,thanks for the help. I'm gonna get to creating these quick.
+2012-02-20T23:06:00.000Z,Roasted_,ikonia,"just to recap, client is ALWAYS private, right?"
+2012-02-20T23:06:00.000Z,ikonia,Roasted_,guard it with your life
+2012-02-20T23:06:00.000Z,Roasted_,ikonia,"see, that makes no sense to me. I would think server would be private..."
+2012-02-20T23:06:00.000Z,ikonia,Roasted_,"no, you are the user who moves around, this is your data"
+2012-02-20T23:06:00.000Z,ikonia,Roasted_,you take the private key with you
+2012-02-20T23:07:00.000Z,Roasted_,ikonia,"however, even if someone steals mom's laptop, I can just nuke her public key on the server and all is well"
+2012-02-20T23:07:00.000Z,Roasted_,ikonia,"not to mention, her user doesn't have root access, so itd be limited, albeit still bad"
+2012-02-20T23:07:00.000Z,ikonia,Roasted_,correct
+2012-02-20T23:07:00.000Z,ikonia,Roasted_,"plus if you password the private key, it's pretty much worthless too"
+2012-02-20T23:07:00.000Z,Roasted_,ikonia,sounds good.
+2012-02-20T23:07:00.000Z,ikonia,Roasted_,"eg: if someone steals my private key, they can't use it unless they know the password, they can try to brute force it, but they will be trying for 128years"
+2012-02-20T23:08:00.000Z,Roasted_,ikonia,a good way to invest precious time
+2012-02-20T23:08:00.000Z,ikonia,Roasted_,"take 2 minutes to setup, lasts 8 years and counting"
+2012-02-20T23:20:00.000Z,Roasted_,ikonia,unless you by cahnce know how to incorporate the private key into a windows box :/
+2012-02-20T23:13:00.000Z,Roasted_,ikonia,might I bug you again real quick?
+2012-02-20T23:13:00.000Z,ikonia,Roasted_,sure
+2012-02-20T23:14:00.000Z,Roasted_,ikonia,"maybe I was misunderstanding. I generated 4 keys from my laptop thinking I could jsut swap them to the clients. Can I do that? I see my laptops hostname at the end of each pub file. Can I just erase it, or do I need to generate the keys from each individual system?"
+2012-02-20T23:14:00.000Z,ikonia,Roasted_,"no, the hostname at the end is because you didn't specify a comment so it creates something to identify"
+2012-02-20T23:15:00.000Z,Roasted_,ikonia,so are these keys useless?
+2012-02-20T23:15:00.000Z,ikonia,Roasted_,not at all
+2012-02-20T23:15:00.000Z,Roasted_,ikonia,can I just erase the laptop hostname at the end?
+2012-02-20T23:15:00.000Z,ikonia,Roasted_,think of your laptop hostname as a pointless comment
+2012-02-20T23:15:00.000Z,ikonia,Roasted_,nothing more
+2012-02-20T23:15:00.000Z,ikonia,Roasted_,no
+2012-02-20T23:15:00.000Z,ikonia,Roasted_,that's part of the key - but it is not a factor
+2012-02-20T23:16:00.000Z,Roasted_,ikonia,"k, so I MUST leave it alone?"
+2012-02-20T23:16:00.000Z,ikonia,Roasted_, http://pastebin.ubuntu.com/850269/
+2012-02-20T23:16:00.000Z,ikonia,Roasted_,that's my public key
+2012-02-20T23:16:00.000Z,ikonia,Roasted_,look at the very end
+2012-02-20T23:16:00.000Z,Roasted_,ikonia,"yeah, I see it."
+2012-02-20T23:16:00.000Z,ikonia,Roasted_,"ok - so I set a comment of my name, you didn't set a comment so it defaults to $user@$host type format"
+2012-02-20T23:16:00.000Z,ikonia,Roasted_,it's just an identifier
+2012-02-20T23:17:00.000Z,ikonia,Roasted_,if you set a comment that will be your identifier
+2012-02-20T23:17:00.000Z,Roasted_,ikonia,but can I not erase my hostname and put 'curt key' or whatever?
+2012-02-20T23:17:00.000Z,ikonia,Roasted_,"no, you do that when you create the key as I advised you 3 times to do"
+2012-02-20T23:17:00.000Z,Roasted_,ikonia,gotcha.
+2012-02-20T23:17:00.000Z,ikonia,Roasted_,-c 'curts key'
+2012-02-20T23:18:00.000Z,Roasted_,ikonia,-c being a ssh-keygen flag?
+2012-02-20T23:18:00.000Z,ikonia,Roasted_,correct
+2012-02-20T23:19:00.000Z,ikonia,Roasted_,"ahh sorry, working from memory here"
+2012-02-20T23:19:00.000Z,Roasted_,ikonia,all good. I was like now what in the world am I doing wrong now :P
+2012-02-20T23:19:00.000Z,ikonia,Roasted_,got it clear in your head now though ?
+2012-02-20T23:20:00.000Z,Roasted_,ikonia,pretty sure I do. thanks again!
+2012-02-20T23:20:00.000Z,ikonia,Roasted_,"sure, look at putty"
+2012-02-20T23:20:00.000Z,ikonia,Roasted_,pagent is the daemon tool for putty
+2012-02-20T23:21:00.000Z,ikonia,Roasted_,putty-keygen will convert your key to a format putty can use too
+2012-02-20T23:21:00.000Z,ikonia,Roasted_,sorry puttygen
+2012-02-20T23:21:00.000Z,ikonia,Roasted_,not putty-keygen
+2012-02-20T23:22:00.000Z,ikonia,Roasted_,"launch puttygen to convert the key, (1 time process) load it into pagent, then just connect using putty, zero issue"
+2012-02-20T23:22:00.000Z,Roasted_,ikonia,I'm hoping syncback se supports ssh... that's my goal is to have the windows boxes back up over ssh to my box via that utility
+2012-02-20T23:22:00.000Z,ikonia,Roasted_,that part I don't know/can't help with
+2012-02-20T23:26:00.000Z,Roasted_,ikonia,the multiple user confusion is settling in...
+2012-02-20T23:26:00.000Z,ikonia,Roasted_,excellent
+2012-02-20T23:26:00.000Z,ikonia,Roasted_,getting clearer ?
+2012-02-20T23:27:00.000Z,Roasted_,ikonia,"well, due to samba, I have 4 users on my file server since samba relies on local user accounts. I have admin, mom, 2 brothers. I just added all of the public ssh keys into authorized_keys in the admin .ssh dir... but should I not be putting the public ssh key in each user home dir?"
+2012-02-20T23:27:00.000Z,ikonia,Roasted_,correct yes
+2012-02-20T23:27:00.000Z,ikonia,Roasted_,"for your setup, each user would have an authorized_key file in their own home dirrecotry"
+2012-02-20T23:27:00.000Z,Roasted_,ikonia,gotcha
+2012-02-20T23:27:00.000Z,ikonia,Roasted_,that authorized_key file would contain their public key only
+2012-02-20T23:28:00.000Z,ikonia,Roasted_,"about to leave, - you got it clear in your head now before I go ?"
+2012-02-20T23:30:00.000Z,Roasted_,ikonia,"I think I'm good, for now. :P Thanks again!"
+2012-02-20T23:30:00.000Z,ikonia,Roasted_,no problem
+2012-02-21T03:54:00.000Z,ikonia,Roasted_,"one is user based, the other is host based"
+2012-02-21T03:54:00.000Z,Roasted_,ikonia,revisiting the thing I was trying to do earlier. :P
+2012-02-21T03:54:00.000Z,ikonia,Roasted_,I guessed
+2012-02-21T03:55:00.000Z,Roasted_,ikonia,"considering I can ssh without any key (I assume thanks to known hosts) it becomes confusing to me on how I can stage my setup, because I'd like to see it fail without the keys so I can understand it"
+2012-02-21T03:56:00.000Z,ikonia,Roasted_,I explained this to you before
+2012-02-21T03:56:00.000Z,ikonia,Roasted_,that is getting authed against /etc/passwd
+2012-02-21T03:56:00.000Z,ikonia,Roasted_,that is nothing to do with host keys
+2012-02-21T03:56:00.000Z,ikonia,Roasted_,you need to disable non-key based auth if you want it to be keys only
+2012-02-21T03:56:00.000Z,Roasted_,ikonia,"I see. Sorry it's just a gray area to me, but I remember that now."
+2012-02-21T03:57:00.000Z,Roasted_,ikonia,"I guess I just don't trust the keys since I can't test it if it fails, but I'll look into disabling non-key based auth to test."
+2012-02-21T03:57:00.000Z,Roasted_,ikonia,do you know by chance how to disable it offhand?
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,/etc/ssh/sshd_config
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,PasswordAuthentication no
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,it is set to PasswordAuthentication yes
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,change it to no
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,restart sshd
+2012-02-21T03:58:00.000Z,Roasted_,ikonia,doesn't exist
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,"no, sshd_config on the server"
+2012-02-21T03:59:00.000Z,ikonia,Roasted_,on the server ?
+2012-02-21T03:59:00.000Z,Roasted_,ikonia,on the server I have both (sorry I was on my desktop)
+2012-02-21T03:59:00.000Z,Roasted_,ikonia,why would the server have different than my desktop?
+2012-02-21T03:59:00.000Z,ikonia,Roasted_,think it through - how can changing settings on the client change how the server authenticates
+2012-02-21T04:00:00.000Z,ikonia,Roasted_,"you're not running sshd on your client, that's why you don't have an sshd config"
+2012-02-21T04:00:00.000Z,Roasted_,ikonia,"my desktop was never acting as the client, which makes me wonder why the server would ahve anything different. Besides swapping keys in and out I changed nothing else on the server."
+2012-02-21T04:01:00.000Z,ikonia,Roasted_,what ???
+2012-02-21T04:01:00.000Z,ikonia,Roasted_,we ssh'd in from your desktop earlier
+2012-02-21T04:01:00.000Z,ikonia,Roasted_,how can it have 'never been a client' we ssh'd in from it earlier
+2012-02-21T04:01:00.000Z,Roasted_,ikonia,that was using my laptop
+2012-02-21T04:01:00.000Z,ikonia,Roasted_,does your desktop have 'ssh' on it
+2012-02-21T04:01:00.000Z,Roasted_,ikonia,yes
+2012-02-21T04:01:00.000Z,ikonia,Roasted_,then it is an ssh client - it has /etc/ssh_config
+2012-02-21T04:02:00.000Z,ikonia,Roasted_,"it's that simple, ssh needs that config to work"
+2012-02-21T04:02:00.000Z,Roasted_,ikonia,so the sshd_config is generated when someone ssh's into the box in question?
+2012-02-21T04:02:00.000Z,ikonia,Roasted_,no
+2012-02-21T04:02:00.000Z,ikonia,Roasted_,sshd_config is required before a ssh server can start
+2012-02-21T04:02:00.000Z,ikonia,Roasted_,ssh generates nothing dynamically
+2012-02-21T04:03:00.000Z,Roasted_,ikonia,"sec, my desktop didn't have openssh-server installed actually..."
+2012-02-21T04:03:00.000Z,ikonia,Roasted_,of course it won't
+2012-02-21T04:03:00.000Z,ikonia,Roasted_,it's CLIENT not a SERVER
+2012-02-21T04:03:00.000Z,Roasted_,ikonia,I just split the tasks of my desktop vs file server. my desktop used to be myd esktop + server in 1
+2012-02-21T04:03:00.000Z,ikonia,Roasted_,openssh-server installs the SERVER - hence the name of the package openssh-SERVER
+2012-02-21T04:04:00.000Z,Roasted_,ikonia,now I have sshd_config. gotcha...
+2012-02-21T04:06:00.000Z,Roasted_,ikonia,I see now. denied (publickey)
+2012-02-21T04:06:00.000Z,ikonia,Roasted_,there you go
+2012-02-21T04:09:00.000Z,Roasted_,ikonia,"generated a new key, added the pub contents to authorized_keys, now I get the yes/no prompt I did before. However, since the passwordauthentication is set to no, this clearly suggests it's just adding this entry to known hosts. eh? am I on the right path?"
+2012-02-21T04:09:00.000Z,Roasted_,ikonia,"ha, still denied. cancel that."
+2012-02-21T04:11:00.000Z,ikonia,Roasted_,see how it works now ?
+2012-02-21T04:11:00.000Z,Roasted_,ikonia,"I'm getting the hang of it, still denied tho even though I have keys set up..."
+2012-02-21T04:11:00.000Z,ikonia,Roasted_,"take a look through the sshd_config file and you'll see the settings for allowing key based auth, host based auth, password based auth etc"
+2012-02-21T04:12:00.000Z,ikonia,Roasted_,"it sounds silly, but the settings are quite obvious in how they are named, have a read through"
+2012-02-21T04:14:00.000Z,Roasted_,ikonia,thanks. there doesn't seem to be that much meat in this config though. I'll google around though. appreciate it.
+2012-02-21T04:15:00.000Z,ikonia,Roasted_,there should be enough 'obvious' settings in there to help you get the basic setup and then search for more detailed stuff
+2012-02-21T04:15:00.000Z,Roasted_,ikonia,"from what I understand, the only authentication possible right now is key based authentication, which is denying me. Ic an't help but to wonder I goofed up the key stuff as a result."
+2012-02-21T04:16:00.000Z,ikonia,Roasted_,possibly
+2011-02-25T20:16:00.000Z,Roasted_,,"If I were to roll out Ubuntu in a network environment with a Windows server, is there a way to make Ubuntu 'read' LDAP so users can log in with domain accounts?"
+2011-02-25T20:16:00.000Z,ikonia,Roasted_,"sure, but it is a read only connection, not read/write for password updates"
+2011-02-25T20:17:00.000Z,ikonia,Roasted_,you need an ldap proxy or a service such as redhats directory service to do updates
+2011-02-25T20:17:00.000Z,Roasted_,ikonia,I'm not sure I understand what you just said there...
+2011-02-25T20:17:00.000Z,Roasted_,ikonia,what updates?
+2011-02-25T20:17:00.000Z,ikonia,Roasted_,to users passwords for example
+2011-02-25T20:17:00.000Z,Roasted_,ikonia,I'm not following what you're referring to in regard to user password updates. What gets updated? What needs updated?
+2011-02-25T20:18:00.000Z,ikonia,Roasted_,"when a user changes their password it is updated in the ldap schema, if you are using AD only windows machines can update it, the Linux ones can auth against it, but not update it"
+2011-02-25T20:18:00.000Z,Roasted_,ikonia,are you talking in reference to when passwords expire?
+2011-02-25T20:19:00.000Z,ikonia,Roasted_,"no, just any reason for a user to change their password, eg: they just want to"
+2011-02-25T20:19:00.000Z,Roasted_,ikonia,"oh, we're in a school district here. We don't allow users to just change passwords, however we force automatic password changes every 90 days."
+2011-02-25T20:19:00.000Z,Roasted_,ikonia,excluding students.
+2011-02-25T20:19:00.000Z,Roasted_,ikonia,all teachers/staff get the auto change.
+2011-02-25T20:19:00.000Z,ikonia,Roasted_,"ok, so they would have to change that from a windows machine, or you'd have to have a linux ldap-> windows AD proxy"
+2011-02-25T20:20:00.000Z,Roasted_,ikonia,so it COULD work - they just wouldnt auto-change the passwords when prompted through ubuntu.
+2011-02-25T20:20:00.000Z,Roasted_,ikonia,"however, we're talking ubuntu for students, so they would never see password changes on the ubuntu systems."
+2011-02-25T20:20:00.000Z,ikonia,Roasted_,sounds fine
+2011-02-25T20:21:00.000Z,Roasted_,ikonia,"my main concern is in windows, we auto-redirect their my documents to be the \\server\student\john_smith. I'm wondering if there's a way to re-direct their home folder, or at least a folder on the desktop to do the same thing."
+2011-02-25T20:23:00.000Z,Roasted_,ikonia,do you by chance know if thats a possibility?
+2011-02-25T20:23:00.000Z,ikonia,Roasted_,"yes, that should be do-able, the AD-ldap schema is quite configurable"
+2011-03-07T21:27:00.000Z,ikonia,Roasted_,you set the PS1 variable to what ever you want the prompt to be
+2011-03-07T21:22:00.000Z,ikonia,Roasted_,need what changed
+2011-03-07T21:22:00.000Z,Roasted_,ikonia,"I ran a gvfs-mount command in terminal, and now it changed my prompt to a simple $"
+2011-03-07T21:23:00.000Z,ikonia,Roasted_,"ok, why is the prompt being $ a problem"
+2011-03-07T21:24:00.000Z,Roasted_,ikonia,"because this may be a production machine, and I do not want $ as the prompt."
+2011-03-07T21:24:00.000Z,ikonia,Roasted_,"the prompt being $ is not an issue, it doesn't change anything"
+2011-03-07T21:24:00.000Z,Roasted_,ikonia,I would like my prompt changed to default. Do you know how? If not I will ask somebody else.
+2011-03-07T21:24:00.000Z,ikonia,Roasted_,use the PS1 varible to change the prompt to whatever you want
+2011-03-07T21:25:00.000Z,ikonia,Roasted_,"however, again it makes no difference to the machines use"
+2011-03-07T21:25:00.000Z,Roasted_,ikonia,PS1?
+2011-03-07T21:26:00.000Z,ikonia,Roasted_,"yes, the PS1 environment variable"
+2011-03-07T21:26:00.000Z,Roasted_,ikonia,"I apologize, I have no idea what that means."
+2011-03-07T21:26:00.000Z,ikonia,Roasted_,"it's just an environment variable, like PATH for example"
+2011-03-07T21:27:00.000Z,Roasted_,ikonia,I see. not sure if I'm following... how do I flip it back?
+2011-03-07T21:27:00.000Z,ikonia,Roasted_,"I'm not sure why doing a mount command has changed it, also look at peep`'s suggestion, that is a simpler way"
+2011-03-07T21:28:00.000Z,Roasted_,ikonia,okay. So I need to set the PS1 variable. How do I go about that?
+2011-03-07T21:28:00.000Z,ikonia,Roasted_,"it's an environment variable, same as any other, peep`'s suggestion is easier though"
+2011-03-07T21:28:00.000Z,Roasted_,ikonia,peep didn't have a suggestion. he just made a comment.
+2011-03-07T21:28:00.000Z,ikonia,Roasted_,you need to not use network manager as that won't make a connection until you login and activate it
+2011-03-07T21:29:00.000Z,ikonia,Roasted_,"he made an excellent suggestion, re-read it"
+2011-03-07T21:29:00.000Z,Roasted_,ikonia,"according to google, that is incorrect, as 'allow for all users' supposedly allows that SSID to connect with network manager prior to logging in."
+2011-03-07T21:29:00.000Z,Roasted_,ikonia,"I think I may have just been impatient, as I was able to log in just now. Rebooting and I'll wait 30 seconds to see if it'll pick up the wifi"
+2011-03-07T21:29:00.000Z,ikonia,Roasted_,it won't though
+2011-03-07T21:29:00.000Z,ikonia,Roasted_,it will need to bond
+2011-03-07T21:29:00.000Z,Roasted_,ikonia,how do you know it wont. I think it just worked for me.
+2011-03-07T21:29:00.000Z,ikonia,Roasted_,it takes time
+2011-03-07T21:30:00.000Z,ikonia,Roasted_,"they keys have to be saved though,"
+2011-03-07T21:30:00.000Z,Roasted_,ikonia,bingo.
+2011-03-07T21:30:00.000Z,Roasted_,ikonia,it worked just now.
+2011-03-07T21:30:00.000Z,ikonia,Roasted_,if you do it outside of network manager it will be a lot quicker
+2011-03-07T21:30:00.000Z,Roasted_,ikonia,outside of network manager? as in using what instead?
+2011-03-07T21:30:00.000Z,ikonia,Roasted_,using the interfaces file
+2011-03-07T21:31:00.000Z,Roasted_,ikonia,for wireless?
+2011-03-07T21:31:00.000Z,Roasted_,ikonia,"that stores the passwords in plain text though, doesnt it."
+2011-03-07T21:32:00.000Z,ikonia,Roasted_,what directory are you in when you run it
+2011-03-07T21:32:00.000Z,Roasted_,ikonia,"I have no idea, as I'm at the.... $ prompt...."
+2011-03-07T21:32:00.000Z,ikonia,Roasted_,type 'pwd' to know what directory you are in
+2011-03-07T21:34:00.000Z,ikonia,Roasted_,what directory are you in ?
+2011-03-07T21:35:00.000Z,Roasted_,ikonia,my home directory. Mind you this is a domain account too
+2011-03-07T21:35:00.000Z,ikonia,Roasted_,it should be in your home dir then
+2011-03-07T21:37:00.000Z,ikonia,Roasted_,it's up to you what you do
+2011-03-07T21:37:00.000Z,ikonia,Roasted_,"if you don't want to deploy it because the prompt isn't what you want and you don't know how to set the prompt to what you want, don't deploy it"
+2011-03-07T21:37:00.000Z,Roasted_,ikonia,that's not the point.
+2011-03-07T21:37:00.000Z,ikonia,Roasted_,it is
+2011-03-07T21:38:00.000Z,Roasted_,ikonia,I want ubuntu to act predictably and sensibly if I'm going to manage it.
+2011-03-07T21:38:00.000Z,Roasted_,ikonia,retarded issues like this make me think twice unless I know a work around.
+2011-03-07T21:38:00.000Z,Roasted_,ikonia,"SO, I'm going to find a work around. I'm sorry you have a problem with that, but you are not managing these systems."
+2011-03-07T21:38:00.000Z,ikonia,Roasted_,"if you are unable to set an environment varible, you should not be in a position to make deployment decisions or in a position where you admin a server"
+2011-03-07T21:38:00.000Z,ikonia,Roasted_,show me the output of 'id' in your terminal
+2011-03-07T21:38:00.000Z,Roasted_,ikonia,"well then explain to me what I am doing wrong? After all, I'm using your suggestions that are not working."
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,"appreciate it if you don't insult me, by the way."
+2011-03-07T21:39:00.000Z,ikonia,Roasted_,"you've not set the PS1 environment variable, that is the problem, however it should be sourced from your home directory, however it's not so there is th bug"
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,"I have a lot of experience in mass deployment of systems, as I have 2,000 to manage."
+2011-03-07T21:39:00.000Z,ikonia,Roasted_,"I'm not insulting you, I'm stating fact"
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,thanks for understanding.
+2011-03-07T21:39:00.000Z,ikonia,Roasted_,yet you can't set an environment varible
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,"no, you did. and I'm letting you know."
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,also keep in mind we dont run linux here.
+2011-03-07T21:39:00.000Z,ikonia,Roasted_,it's up to you how you take it
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,"we run windows, and we are trying to put linux into the mix."
+2011-03-07T21:39:00.000Z,Roasted_,ikonia,"and this is my job, to figure it out and deploy it accordingly."
+2011-03-07T21:40:00.000Z,ikonia,Roasted_,"ok, so show me the output of 'id'"
+2011-03-07T21:40:00.000Z,Roasted_,ikonia,"it's a long, long string."
+2011-03-07T21:40:00.000Z,ikonia,Roasted_,"ok, paste it"
+2011-03-07T21:42:00.000Z,ikonia,Roasted_,"if you want help, you need to cut the attitude out a little"
+2011-03-07T21:44:00.000Z,Roasted_,ikonia,"keep the smart comments at bay, and we'll have no issues. thank you."
+2011-03-07T21:45:00.000Z,ikonia,Roasted_,"tell you what, help yourself, I'm out"
+2011-03-07T22:24:00.000Z,Roasted_,ikonia,you seeing this?
+2011-03-07T22:25:00.000Z,ikonia,Roasted_,I'm not interested
+2011-03-07T22:25:00.000Z,Roasted_,ikonia,just wanted to make you aware that it clearly has nothing to do with bashrc after all.
+2011-03-07T22:25:00.000Z,Roasted_,ikonia,"you know, in case anyone else asks. ;)"
+2011-03-07T22:25:00.000Z,ikonia,Roasted_,not interested
+2011-03-07T22:25:00.000Z,Roasted_,ikonia,just trying to be pro active in case anybody else has the same issue.
+2011-03-07T22:25:00.000Z,Roasted_,ikonia,that's all :)
+2011-03-07T23:07:00.000Z,ikonia,Roasted_,"I didn't think it was local to the machine, more so as your directory is network mounted at a domain level,"
+2011-03-07T23:08:00.000Z,Roasted_,ikonia,"yar. I'm just not sure what's sticking it. AD has nothing that stands out as being weird, and nothing is in my share on the server either."
+2011-03-24T21:07:00.000Z,Roasted_,ikonia,I am.
+2011-03-24T21:00:00.000Z,ikonia,Roasted_,can you paste your configs for both in a pastebin please.
+2011-03-24T21:01:00.000Z,Roasted_,ikonia,http://pastebin.com/jzKs5XFy
+2011-03-24T21:02:00.000Z,ikonia,Roasted_,"ok, this is common in RHEL and I'd assume it's the same here, you need an entry for both your other NIC's confirming they are nothing, eg: so they are 'blanked' before going into the bond"
+2011-03-24T21:03:00.000Z,ikonia,Roasted_,also check out and make sure nothing like network manager has a grip on one of them also
+2011-03-24T21:03:00.000Z,Roasted_,ikonia,do I need a 2nd entry with bond0:0 for the 2nd card? I thought they'd both point (etho and eth1) to the same bond.
+2011-03-24T21:03:00.000Z,Roasted_,ikonia,there is no network manager.
+2011-03-24T21:03:00.000Z,ikonia,Roasted_,"bond0:0 is a virtual interface on the bond, so no, you shouldn't need that"
+2011-03-24T21:03:00.000Z,ikonia,Roasted_,however an entry for eth0 and eth1 to 'null' them may help
+2011-03-24T21:03:00.000Z,Roasted_,ikonia,"hm, then I'm completely lost. EVERY guide I've read has said to do what I did here, with 1 or 2 mentioning bond0:0"
+2011-03-24T21:04:00.000Z,ikonia,Roasted_,you understand what :1 or:0 after a network card does in general yes/no ?
+2011-03-24T21:04:00.000Z,Roasted_,ikonia,my goal is to have both NICs on the same IP to boost speed for our thin client lab.
+2011-03-24T21:04:00.000Z,Roasted_,ikonia,I knew it was a virtual interface. I just wasn't sure if that was needed for bonding.
+2011-03-24T21:04:00.000Z,Roasted_,ikonia,"the guides I read mentioning bond0:0 also had a separate IP for the virtual interface, which I don't really want. I'd like to have 1 IP for both NICs to handle the load."
+2011-03-24T21:05:00.000Z,ikonia,Roasted_,"ok cool, so you're not starting from scratch, bond0 is your virtual nic, so that's what has the IP's you want to add eth0 and eth1 so no need to reference bond0:0"
+2011-03-24T21:05:00.000Z,ikonia,Roasted_,"you also need a mii-mode so the cards no if it's round robin, load balanced mode etc"
+2011-03-24T21:06:00.000Z,Roasted_,ikonia,well I did create a file somewhere with a miimode entry... downdelay updelay etc...
+2011-03-24T21:06:00.000Z,Roasted_,ikonia,I forget where it was tho. let me see if I can find that guide. It was /etc/modprobe.d or something
+2011-03-24T21:06:00.000Z,ikonia,Roasted_,"great, that's an important bit"
+2011-03-24T21:06:00.000Z,Roasted_,ikonia,ifenslave.conf
+2011-03-24T21:06:00.000Z,ikonia,Roasted_,"perfect, in module config makes sense"
+2011-03-24T21:06:00.000Z,Roasted_,ikonia,heres the contents of the ifenslave.conf alias bond0 bonding
+2011-03-24T21:06:00.000Z,ikonia,Roasted_,https://help.ubuntu.com/community/UbuntuBonding
+2011-03-24T21:07:00.000Z,ikonia,Roasted_,"that is a great way of doing it, simple and obvious,"
+2011-03-24T21:07:00.000Z,Roasted_,ikonia,"wait, I still need an auto eth0 entry?"
+2011-03-24T21:07:00.000Z,Roasted_,ikonia,auto eth0 and auto bond0
+2011-03-24T21:07:00.000Z,ikonia,Roasted_,"no, look at the example"
+2011-03-24T21:07:00.000Z,Roasted_,ikonia,that's where I read it.
+2011-03-24T21:08:00.000Z,Roasted_,ikonia,under 10.04 and newer.
+2011-03-24T21:08:00.000Z,ikonia,Roasted_,"eth1 and eth2 are in the bond, eth0 is just a nic"
+2011-03-24T21:08:00.000Z,Roasted_,ikonia,so I need miimon in the interface file under the bond listing?
+2011-03-24T21:08:00.000Z,ikonia,Roasted_,"that exmaple has 3 nics, eth0 just on it's own and a bond with eth1 and 2 in it in load balancing mode"
+2011-03-24T21:08:00.000Z,Roasted_,ikonia,oh I see.
+2011-03-24T21:08:00.000Z,Roasted_,ikonia,I took that the wrong way.
+2011-03-24T21:09:00.000Z,Roasted_,ikonia,"I'll be honest, I'm not really understanding where I went wrong then."
+2011-03-24T21:09:00.000Z,ikonia,Roasted_,"that's just an example of a guys box, not copy this file for a bonding cvonfig, you'll need to apply that config to your config"
+2011-03-24T21:09:00.000Z,Roasted_,ikonia,right. I'd just have to plug my numbers in.
+2011-03-24T21:09:00.000Z,ikonia,Roasted_,"correct, and remove what you don't need, eth0 doing dhcp"
+2011-03-24T21:09:00.000Z,Roasted_,ikonia,"oh, I see bond-slaves there. I didnt have that before."
+2011-03-24T21:09:00.000Z,Roasted_,ikonia,it'd be nice if these fricken guides said to do some of this stuff.
+2011-03-24T21:09:00.000Z,ikonia,Roasted_,"because you are doing the adding as a slave option, which from my experience is poor"
+2011-03-24T21:10:00.000Z,ikonia,Roasted_,"always use official ubuntu guides, they do tell you the right way of doing things"
+2011-03-24T21:10:00.000Z,ikonia,Roasted_,the way you seem to be trying to do it is quite dirty in my opinion
+2011-03-24T21:10:00.000Z,Roasted_,ikonia,"wait, what I'm doing is a poor idea?"
+2011-03-24T21:10:00.000Z,ikonia,Roasted_,"no no, bonding is great, no complaint, I mean how you are implementing bonding"
+2011-03-24T21:10:00.000Z,Roasted_,ikonia,"well, what's the best way of doing it?"
+2011-03-24T21:10:00.000Z,ikonia,Roasted_,the guide I've just given you
+2011-03-24T21:11:00.000Z,ikonia,Roasted_,"make sure you read it all though, so you understand the modes etc"
+2011-03-24T21:11:00.000Z,Roasted_,ikonia,"oh. But it mentions bond-slave in the interface file that you just gave me. Then you mentioned slave is poor, so I got confused."
+2011-03-24T21:11:00.000Z,ikonia,Roasted_,"no, I mentioned the way you are adding a slave in your example is poor"
+2011-03-24T21:11:00.000Z,ikonia,Roasted_,if you are doing a bond you need slaves
+2011-03-24T21:15:00.000Z,Roasted_,ikonia,do you think the bond-slaves entry alone is why eth1 didnt attach to bond0?
+2011-03-24T21:23:00.000Z,Roasted_,ikonia,"well I copied that config exactly, now I have 0 connectivity. :("
+2011-03-24T21:30:00.000Z,ikonia,Roasted_,"it's not just copying that config, did you read the whole thing as I suggested ?"
+2011-03-24T21:30:00.000Z,ikonia,Roasted_,sorry for the slow response I was away from the keyboard
+2011-03-24T21:31:00.000Z,Roasted_,ikonia,"yes, I read it. I didn't COPY the data. I just wrote my own based on that template."
+2011-03-24T21:31:00.000Z,ikonia,Roasted_,can you pastebin it for me please ?
+2011-03-24T21:31:00.000Z,ikonia,Roasted_,did you update /etc/modprove.d/bonding.conf
+2011-03-24T21:32:00.000Z,Roasted_,ikonia,I can't. I have no internet on the server now...
+2011-03-24T21:32:00.000Z,Roasted_,ikonia,bonding.conf?
+2011-03-24T21:32:00.000Z,Roasted_,ikonia,it was ifenslave.conf
+2011-03-24T21:32:00.000Z,ikonia,Roasted_,"yes,"
+2011-03-24T21:32:00.000Z,Roasted_,ikonia,should I name it bonding?
+2011-03-24T21:32:00.000Z,ikonia,Roasted_,where in that guide does it say use ifenslave.conf ?
+2011-03-24T21:32:00.000Z,ikonia,Roasted_,I told you to read the guide not just change that one config file
+2011-03-24T21:32:00.000Z,Roasted_,ikonia,the other guide is where I created ifenslave.conf. Maybe that's where it got crossed up.
+2011-03-24T21:32:00.000Z,ikonia,Roasted_,"yes, I have no doubt which is why I said to read it"
+2011-03-24T21:33:00.000Z,Roasted_,ikonia,I did read it. :P
+2011-03-24T21:33:00.000Z,ikonia,Roasted_,you didn't or you wouldn't have put info in the wrong file
+2011-03-24T21:33:00.000Z,Roasted_,ikonia,still no internet.
+2011-03-24T21:34:00.000Z,ikonia,Roasted_,"of course not, if your config is messed up there will be no interenet, that is no surprise"
+2011-03-24T21:34:00.000Z,Roasted_,ikonia,what config file are you referring to. interfaces or bonding?
+2011-03-24T21:34:00.000Z,Roasted_,ikonia,sec.
+2011-03-24T21:34:00.000Z,ikonia,Roasted_,"what ? how do I know what config files your using, you're meant to use the config files in the guide"
+2011-03-24T21:34:00.000Z,ikonia,Roasted_,"you can use bonding.conf or the interfaces file if your using 10.04 or later, but don't create a conflict"
+2011-03-24T21:35:00.000Z,Roasted_,ikonia,"so overall, I need /etc/modprobe.d/bonding.conf with those 2 alias lines, and I need ifenslave installed, and I need to edit my network interface file accordingly to what was said in your link. Right?"
+2011-03-24T21:35:00.000Z,ikonia,Roasted_,no
+2011-03-24T21:35:00.000Z,ikonia,Roasted_,you may not need either
+2011-03-24T21:36:00.000Z,Roasted_,ikonia,"I appreciate your help, but I've read your guide. I'll ask someone else who may know the answer. Thank you anyway."
+2011-03-24T21:36:00.000Z,ikonia,Roasted_,"I know the answer, I have bonding working"
+2011-03-24T21:36:00.000Z,Roasted_,ikonia,well I'm following your guide.
+2011-03-24T21:36:00.000Z,ikonia,Roasted_,ok so why are you talking about bonding.conf or ifenslave.conf
+2011-03-24T21:37:00.000Z,Roasted_,ikonia,but hang on. I'll go over my configs a 3rd time. Give me a moment.
+2011-03-24T21:37:00.000Z,ikonia,Roasted_,what version of ubuntu ar eyou using
+2011-03-24T21:37:00.000Z,ikonia,Roasted_,"ok, so were does it say to put the config"
+2011-03-24T21:37:00.000Z,Roasted_,ikonia,bonding.conf existed from the previous guide. It has no bearing here unless its existence could be why its fouling out.
+2011-03-24T21:37:00.000Z,ikonia,Roasted_,it will be conflictint
+2011-03-24T21:37:00.000Z,Roasted_,ikonia,let me nuke this file then
+2011-03-24T21:38:00.000Z,Roasted_,ikonia,file deleted. restarted network service. no internet.
+2011-03-24T21:38:00.000Z,ikonia,Roasted_,"ok, so can you show me your interfaces file please ?"
+2011-03-24T21:39:00.000Z,Roasted_,ikonia,I'll have to retype it... since I have no internet on the server... sec
+2011-03-24T21:39:00.000Z,ikonia,Roasted_,copy it to a usb stick and pastebin it on your current machine
+2011-03-24T21:39:00.000Z,ikonia,Roasted_,or something to that effect
+2011-03-24T21:40:00.000Z,Roasted_,ikonia,I have no usb stick here. I'll just type it.
+2011-03-24T21:41:00.000Z,Roasted_,ikonia,http://pastebin.com/1WxPGD09
+2011-03-24T21:42:00.000Z,ikonia,Roasted_,why have you got bond mode 802.3ad ?
+2011-03-24T21:42:00.000Z,Roasted_,ikonia,because it was in your link
+2011-03-24T21:42:00.000Z,ikonia,Roasted_,I told you to read the link so you understood the bond modes
+2011-03-24T21:42:00.000Z,ikonia,Roasted_,you said you had read it
+2011-03-24T21:43:00.000Z,ikonia,Roasted_,"you need a bond mode, but not 802.3ad"
+2011-03-24T21:43:00.000Z,ikonia,Roasted_,depends on your requirements
+2011-03-24T21:43:00.000Z,ikonia,Roasted_,"good luck getting this working, I can't be bothered anymore, you've said you've read the guide and yet you clearly haven't and have just messed around with the config file"
+2011-03-24T21:44:00.000Z,Roasted_,ikonia,"thanks for your help, bro. I'll ask somebody else who may be able to help."
+2011-03-24T21:44:00.000Z,Roasted_,ikonia,"again, thanks for your time"
+2011-03-24T21:47:00.000Z,ikonia,Roasted_,"please stop repeating, leave it 15 minutes between repeats please"
+2011-03-24T21:47:00.000Z,Roasted_,ikonia,I'll consider it.
+2011-03-24T21:48:00.000Z,ikonia,Roasted_,"no, you'll do it"
+2011-03-24T21:48:00.000Z,Roasted_,ikonia,"you were very helpful today, and very friendly. I'd like to thank you again."
+2011-03-24T21:48:00.000Z,ikonia,Roasted_,more than welcome
+2011-03-24T22:04:00.000Z,ikonia,Roasted_,because you didn't tell me what mode you where using
+2011-03-24T22:04:00.000Z,ikonia,Roasted_,don't get smart
+2011-03-24T22:04:00.000Z,Roasted_,ikonia,how do you know I was referring to you?
+2011-03-24T22:05:00.000Z,ikonia,Roasted_,I asked you multiple times to read for the mode options and you kept saying you had
+2011-03-24T22:17:00.000Z,ikonia,Roasted_,"your staying a bit into budgets and the like, that's why he suggested offtopic"
+2011-03-24T22:17:00.000Z,Roasted_,ikonia,"we were discussing network gear, which directly links to my question at hand."
+2011-03-24T22:17:00.000Z,ikonia,Roasted_,"yes, but it was deviating to budgets and the like, that's why he suggested it"
+2011-03-24T22:22:00.000Z,ikonia,Roasted_,"which user is that, it would be interesting to hear his experiences"
+2011-03-24T22:23:00.000Z,Roasted_,ikonia,It's okay. You did your part helping me earlier.
+2011-03-24T22:23:00.000Z,ikonia,Roasted_,I'm curious to which other user has it
+2011-03-24T22:23:00.000Z,Roasted_,ikonia,"well, let me see if I can get it working first, and we'll go from there."
+2011-03-24T22:23:00.000Z,ikonia,Roasted_,what user is it ?
+2011-03-24T22:24:00.000Z,Roasted_,ikonia,he's not from this room.
+2011-03-24T22:24:00.000Z,ikonia,Roasted_,"ok, but what username is he"
+2011-03-24T22:24:00.000Z,ikonia,Roasted_,which user ?
+2011-03-24T22:27:00.000Z,ikonia,Roasted_,"that makes no sense if you are only using %10 of one card, putting it onto two is a waste of time"
+2011-03-24T22:27:00.000Z,ikonia,Roasted_,you should only bond if you have a reason to
+2011-03-24T22:28:00.000Z,Roasted_,ikonia,"I really just want to have both 'just because.' They're both here, why not use both if it'll only help? After all, that single NIC would be serving 30+ clients at a single time, and that number may rise heavily if Ubuntu works nicely in our environment."
+2011-03-24T22:29:00.000Z,ikonia,Roasted_,it won't help
+2011-03-24T22:29:00.000Z,Roasted_,ikonia,theres a team of developers for LTSP that disagree with you.
+2011-03-24T22:29:00.000Z,Roasted_,ikonia,but I appreciate your concern.
+2011-03-24T22:29:00.000Z,ikonia,Roasted_,"ok, so then you 'need' it,"
+2011-03-24T22:29:00.000Z,ikonia,Roasted_,"if you have a 1GB nic, and you've using %70 of it, putting %35 and %35 won't help,"
+2011-03-24T22:30:00.000Z,ikonia,Roasted_,"it won't help, unless you card is flooded, in which case you need it"
+2011-03-24T22:30:00.000Z,Roasted_,ikonia,"I understand. But even still, if it's THERE and empty, why not use it just in case?"
+2011-03-24T22:30:00.000Z,ikonia,Roasted_,because they create an overhead on the server
+2011-03-24T22:30:00.000Z,ikonia,Roasted_,and as you've discovered problems in switching
+2011-03-24T22:31:00.000Z,ikonia,Roasted_,that doesn't mean it can handle iot
+2011-03-24T22:31:00.000Z,ikonia,Roasted_,it's in the guide I gave you
+2011-03-24T22:31:00.000Z,ikonia,Roasted_,it's also default
+2012-02-20T22:23:00.000Z,ikonia,Roasted_,what's up ?
+2012-02-20T22:23:00.000Z,Roasted_,ikonia,"well, really just the basics of the entire method behind this. Like if I run ssh-keygen, am I doing this on my file server, or the client system outside of the LAN?"
+2012-02-20T22:24:00.000Z,ikonia,Roasted_,"really simple, ssh-keygen (man it - and chose your options) public key put in the ~/.ssh/authorized_keys file on the server - private key, keep on your local machine, ssh $user@$server, enter private key password, you are done"
+2012-02-20T22:25:00.000Z,ikonia,Roasted_,make sure the ~/.ssh/authorized_key file on the server has 600 permissions
+2012-02-20T22:25:00.000Z,Roasted_,ikonia,I was under the impression I was to copy the public key physically off of that system and onto the client system outside of the LAN.
+2012-02-20T22:25:00.000Z,ikonia,Roasted_,"correct, public key onto the destination server, in the .ssh directory in their home file, and put the contents into a file called 'authorized keys'"
+2012-02-20T22:26:00.000Z,ikonia,Roasted_,"authorized_keys sorry, hit spoace by accident"
+2012-02-20T22:26:00.000Z,Roasted_,ikonia,"just to recap... ssh-keygen on server, find the public key, copy it to the client. Then the client should be able to SSH in without asking for a pw. correct?"
+2012-02-20T22:26:00.000Z,ikonia,Roasted_,"ssh keygen on client,"
+2012-02-20T22:26:00.000Z,ikonia,Roasted_,that creates public and private keys
+2012-02-20T22:27:00.000Z,Roasted_,ikonia,"see, I did that, and Ithought I did it wrong. I found it so backwards to do it from the client and successfully SSH into it with ZERO server input. It confused me...."
+2012-02-20T22:27:00.000Z,ikonia,Roasted_,private key in your .ssh directory (call the file id_dsa or or_rsa depending on encyrption)
+2012-02-20T22:27:00.000Z,ikonia,Roasted_,"put the contents (not the file - the contents) into a file called 'authorized_keys' on the server, in the users home directory/.ssh"
+2012-02-20T22:27:00.000Z,ikonia,Roasted_,"change the permissions of the authorized_key file to 600 on the server, bang you are done"
+2012-02-20T22:28:00.000Z,Roasted_,ikonia,"so in essence I was looking at it 100% backwards. I generate the keys on client, and move the private key contents to server.... whereas I thought I would keygen on server, and move public to client...."
+2012-02-20T22:28:00.000Z,ikonia,Roasted_,public key contents tot he server
+2012-02-20T22:28:00.000Z,ikonia,Roasted_,private key stays safe on the client
+2012-02-20T22:28:00.000Z,Roasted_,ikonia,>_<
+2012-02-20T22:29:00.000Z,ikonia,Roasted_,want to do this step by step ?
+2012-02-20T22:29:00.000Z,Roasted_,ikonia,"eh, I'm trying it out on my own, but I'm still very gray about it. Hate to be a bug though."
+2012-02-20T22:29:00.000Z,Roasted_,ikonia,youtube videos weren't as explicit as I had hoped :(
+2012-02-20T22:30:00.000Z,ikonia,Roasted_,"want to walk through this - it will take 5 minutes max, it's really easy"
+2012-02-20T22:30:00.000Z,Roasted_,ikonia,if you wouldn't mind...
+2012-02-20T22:30:00.000Z,ikonia,Roasted_,"lets do the client first, got a terminal open ?"
+2012-02-20T22:31:00.000Z,Roasted_,ikonia,sure do
+2012-02-20T22:32:00.000Z,ikonia,Roasted_,"ok, 'ssh-keygen -b 2048 '"
+2012-02-20T22:33:00.000Z,ikonia,Roasted_,"that should create two files, a public and a private key in your current working directory"
+2012-02-20T22:33:00.000Z,Roasted_,ikonia,just enter/enter/enter thruogh the prompts?
+2012-02-20T22:33:00.000Z,ikonia,Roasted_,"yeah, set a password though"
+2012-02-20T22:34:00.000Z,ikonia,Roasted_,you want your key to be passworded
+2012-02-20T22:34:00.000Z,ikonia,Roasted_,"the prompts are pretty self explanintory, so if you want to change something to match your needs, please do so"
+2012-02-20T22:39:00.000Z,Roasted_,ikonia,"now that the keygen is made, what should my plan of action be?"
+2012-02-20T22:39:00.000Z,ikonia,Roasted_,"ok, you have a public and a private key, yes no ?"
+2012-02-20T22:40:00.000Z,Roasted_,ikonia,would it be in .ssh?
+2012-02-20T22:40:00.000Z,ikonia,Roasted_,should be in your current working directory (unless you told it to put it somewhere else)
+2012-02-20T22:41:00.000Z,Roasted_,ikonia,I'm not seeing anything besides typical home dir folders.
+2012-02-20T22:41:00.000Z,ikonia,Roasted_,did it ask you for output file names ?
+2012-02-20T22:41:00.000Z,Roasted_,ikonia,"besides pw, I just enter'd everything else"
+2012-02-20T22:42:00.000Z,ikonia,Roasted_,look in .ssh
+2012-02-20T22:42:00.000Z,ikonia,Roasted_,~/.ssh
+2012-02-20T22:42:00.000Z,ikonia,Roasted_,you sould have id_rsa and id_rsa.pub
+2012-02-20T22:42:00.000Z,ikonia,Roasted_,"great, your id_rsa is your private key, guard it with your life"
+2012-02-20T22:42:00.000Z,ikonia,Roasted_,"your .public key, copy that onto your remote server, to the ~/.ssh directory"
+2012-02-20T22:43:00.000Z,Roasted_,ikonia,"that's where I copy the contents, but not the entire .pub itself, right?"
+2012-02-20T22:43:00.000Z,ikonia,Roasted_,"as this is the first key, we'll copy the whole file (you'll see why, it will make sense in a moment)"
+2012-02-20T22:43:00.000Z,ikonia,Roasted_,copy the physical file (.pub) to ~/.ssh on the remote server
+2012-02-20T22:45:00.000Z,ikonia,Roasted_,you following ok ?
+2012-02-20T22:46:00.000Z,Roasted_,ikonia,"yeah, just trying to push the pub over to server."
+2012-02-20T22:46:00.000Z,Roasted_,ikonia,the hdd I have shared on my router is being a brat.
+2012-02-20T22:46:00.000Z,ikonia,Roasted_,"that's fine, just checking your ok"
+2012-02-20T22:47:00.000Z,Roasted_,ikonia,maybe it was nautilus. gnome 3 just crashed and reset on my laptop. haaa??
+2012-02-20T22:47:00.000Z,Roasted_,ikonia,copied over. are we done??
+2012-02-20T22:48:00.000Z,ikonia,Roasted_,very close
+2012-02-20T22:48:00.000Z,ikonia,Roasted_,"now, change the file name on the remote server from 'id_rsa.pub' to 'authorized_keys'"
+2012-02-20T22:48:00.000Z,Roasted_,ikonia,done
+2012-02-20T22:48:00.000Z,ikonia,Roasted_,"normally the plan is to copy the contents of id_rsa.pub to the file authorized_keys, but as this is your only / first key, it's easier to just rename it"
+2012-02-20T22:48:00.000Z,ikonia,Roasted_,change the permissions on it to 600
+2012-02-20T22:49:00.000Z,ikonia,Roasted_,change permissions on authorized_keys to 600
+2012-02-20T22:49:00.000Z,Roasted_,ikonia,can I throw out a curve ball first?
+2012-02-20T22:49:00.000Z,ikonia,Roasted_,please
+2012-02-20T23:20:00.000Z,ikonia,Roasted_,no problem
+2012-02-20T22:50:00.000Z,Roasted_,ikonia,"there will be a total of 4 systems connecting to this server via ssh. Each user will be backing their files up to it with an automated program, etiher syncback or deja dup depending on windows or ubuntu. Now, I see the ssh key is kept in ~/.ssh... how would this effect other users?"
+2012-02-20T22:50:00.000Z,ikonia,Roasted_,are all the users using the same username ?
+2012-02-20T22:50:00.000Z,Roasted_,ikonia,no.
+2012-02-20T22:50:00.000Z,ikonia,Roasted_,"then no,"
+2012-02-20T22:50:00.000Z,ikonia,Roasted_,that will cause no added complication
+2012-02-20T22:51:00.000Z,ikonia,Roasted_,"either way, you're done, just ssh in now from the client"
+2012-02-20T22:51:00.000Z,Roasted_,ikonia,what about the fact that the ssh keys are stored in the users home directory?
+2012-02-20T22:51:00.000Z,ikonia,Roasted_,why is it bad that the keys are stored in the users home directory
+2012-02-20T22:51:00.000Z,ikonia,Roasted_,should ask you for your key password
+2012-02-20T22:52:00.000Z,Roasted_,ikonia,"I don't consider it bad. I just want to make sure it'll work. Like, I now have a file on the admin account of my file server called authorized_keys. that's just 1 key. What about when I add 3 more? do I just add them in the same file?"
+2012-02-20T22:53:00.000Z,ikonia,Roasted_,"no, each user has their own authorized_keys file in their home directory"
+2012-02-20T22:53:00.000Z,ikonia,Roasted_,"if you want others to share the same username, but with different keys, then you just add more public keys to the single authorized_keys file"
+2012-02-20T22:53:00.000Z,Roasted_,ikonia,separated by anything in aprticular?
+2012-02-20T22:53:00.000Z,ikonia,Roasted_,"nope, no spaces, end of line, start a new line"
+2012-02-20T22:54:00.000Z,Roasted_,ikonia,good deal
+2012-02-20T22:55:00.000Z,Roasted_,ikonia,"so I don't assign these keys as per user individually. I could just generate 4 keys and just make sure I drop 1 private key per user and they'll be associated accordingly,r ight? I mean there's no marriage between sshkey1 and Frank, or sshkey2 and Bob, it's just sshkey1pub - sshkey1priv, right?"
+2012-02-20T22:55:00.000Z,ikonia,Roasted_,"yup, look at the ssh keygen options, eg: -c (comment) is useful to show users keys eg: -c 'Roasteds key' - helps in a file with multiple keys"
+2012-02-20T22:56:00.000Z,Roasted_,ikonia,"I see. so I could just barf out 4 keys, stack them in authorized keys, and freely distribute the private keys to each user and bam - good togo. eh?"
+2012-02-20T22:56:00.000Z,ikonia,Roasted_,for example here is my key
+2012-02-20T22:56:00.000Z,ikonia,Roasted_,http://pastebin.ubuntu.com/850269/
+2012-02-20T22:57:00.000Z,ikonia,Roasted_,"if you look at the end, it has my name, which in a file with many keys, shows it is obviously mine, so if I need to remove it, I know which one to remove"
+2012-02-20T22:57:00.000Z,ikonia,Roasted_,"but, yes, it's that simple"
+2012-02-20T22:58:00.000Z,ikonia,Roasted_,get it ?
+2012-02-20T22:58:00.000Z,Roasted_,ikonia,I'm not sure if I did this right. I just tried to SSH to it from client and it said authenticity of host can't be established. are you sure you want to continue connecting.
+2012-02-20T22:58:00.000Z,ikonia,Roasted_,"first connection, just cliek yes"
+2012-02-20T22:58:00.000Z,Roasted_,ikonia,"oh, I thought it wouldnt ask for anything at all"
+2012-02-20T22:59:00.000Z,ikonia,Roasted_,you need to disable host based auth in sshd_config to stop that
+2012-02-20T22:59:00.000Z,ikonia,Roasted_,"or put the hosts in the ~/.ssh/known_hosts file, whatever works best for you"
+2012-02-20T22:59:00.000Z,Roasted_,ikonia,"it's fine, I just thought using priv pub sshkeys I wouldn't get ANY prompts."
+2012-02-20T22:59:00.000Z,ikonia,Roasted_,it will only ask that one
+2012-02-20T22:59:00.000Z,Roasted_,ikonia,it just confused me is all.
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,"you won't get any prompts if you set it up correctly, eg: disable host based auth, OR put the host keys in the known_hosts file"
+2012-02-20T23:00:00.000Z,Roasted_,ikonia,"had my sshkeys not been working properly, it would have generated a new ssh key in .ssh, correct?"
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,no
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,no new keys
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,you are now 'setup'
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,when you connected it will add a host key to ~/.ssh/known_hosts
+2012-02-20T23:00:00.000Z,Roasted_,ikonia,"but if I hadn't set these keys up, and ssh'd anyway, it would have generated one on the fly, right?"
+2012-02-20T23:00:00.000Z,ikonia,Roasted_,god no
+2012-02-20T23:01:00.000Z,ikonia,Roasted_,that would be an amazingly large security hole
+2012-02-20T23:01:00.000Z,Roasted_,ikonia,so how does ssh work if I don't set up ssh keys? I never did it before and I could ssh just fine (but that was on the LAN)
+2012-02-20T23:01:00.000Z,ikonia,Roasted_,it just wouldn't have let you login with key based auth
+2012-02-20T23:01:00.000Z,ikonia,Roasted_,that is user/password authentication
+2012-02-20T23:01:00.000Z,Roasted_,ikonia,"ah, different beast?"
+2012-02-20T23:01:00.000Z,ikonia,Roasted_,if you disable user/password authentication and don't have an ssh key it won't let you login
+2012-02-20T23:02:00.000Z,Roasted_,ikonia,where's that done at out of curiosity?
+2012-02-20T23:02:00.000Z,ikonia,Roasted_,"password authentication hits /etc/passwd -> /etc/shadow on the server, for auth, ssh keys uses the keys you created for auth and ignores /etc/passwd"
+2012-02-20T23:02:00.000Z,Roasted_,ikonia,I see.
+2012-02-20T23:02:00.000Z,Roasted_,ikonia,so I just have to repeat this process 3 more times and I should be good?
+2012-02-20T23:03:00.000Z,ikonia,Roasted_,pretty much
+2012-02-20T23:03:00.000Z,Roasted_,ikonia,nice. thanks for your help.
+2012-02-20T23:03:00.000Z,Roasted_,ikonia,it's appreciated.
+2012-02-20T23:03:00.000Z,ikonia,Roasted_,"you may want to improve it, eg: add comments to the key, disable host based auth, etc etc"
+2012-02-20T23:03:00.000Z,ikonia,Roasted_,"but at a highlevel, yes, it's that simple"
+2012-02-20T23:03:00.000Z,Roasted_,ikonia,# comments?
+2012-02-20T23:03:00.000Z,ikonia,Roasted_,"yes, -c 'jimmys key' so it's obvious who owns what key in the authorized_keys file"
+2012-02-20T23:04:00.000Z,Roasted_,ikonia,do these keys ever have to be refreshed?
+2012-02-20T23:04:00.000Z,Roasted_,ikonia,can I expect to redo this next month or something?
+2012-02-20T23:04:00.000Z,ikonia,Roasted_,nope
+2012-02-20T23:04:00.000Z,ikonia,Roasted_,I've had the same key for 12 years
+2012-02-20T23:04:00.000Z,Roasted_,ikonia,lol
+2012-02-20T23:04:00.000Z,Roasted_,ikonia,impressive.
+2012-02-20T23:04:00.000Z,ikonia,Roasted_,it's a very effective method
+2012-02-20T23:04:00.000Z,Roasted_,ikonia,its simple when you think about it...
+2012-02-20T23:05:00.000Z,ikonia,Roasted_,"eg: you want to give me access to your machine, I give you my public key, bang we are done"
+2012-02-20T23:05:00.000Z,Roasted_,ikonia,"ssh-keygen, type pw, it barfs out 2 files, .pub contents to server in authorized_keys"
+2012-02-20T23:05:00.000Z,ikonia,Roasted_,"you want me to not have access, you remove it, bang your done"
+2012-02-20T23:05:00.000Z,ikonia,Roasted_,we don't have to know passwords etc etc
+2012-02-20T23:05:00.000Z,ikonia,Roasted_,correct
+2012-02-20T23:05:00.000Z,Roasted_,ikonia,very nice.
+2012-02-20T23:05:00.000Z,Roasted_,ikonia,thanks for the help. I'm gonna get to creating these quick.
+2012-02-20T23:06:00.000Z,Roasted_,ikonia,"just to recap, client is ALWAYS private, right?"
+2012-02-20T23:06:00.000Z,ikonia,Roasted_,guard it with your life
+2012-02-20T23:06:00.000Z,Roasted_,ikonia,"see, that makes no sense to me. I would think server would be private..."
+2012-02-20T23:06:00.000Z,ikonia,Roasted_,"no, you are the user who moves around, this is your data"
+2012-02-20T23:06:00.000Z,ikonia,Roasted_,you take the private key with you
+2012-02-20T23:07:00.000Z,Roasted_,ikonia,"however, even if someone steals mom's laptop, I can just nuke her public key on the server and all is well"
+2012-02-20T23:07:00.000Z,Roasted_,ikonia,"not to mention, her user doesn't have root access, so itd be limited, albeit still bad"
+2012-02-20T23:07:00.000Z,ikonia,Roasted_,correct
+2012-02-20T23:07:00.000Z,ikonia,Roasted_,"plus if you password the private key, it's pretty much worthless too"
+2012-02-20T23:07:00.000Z,Roasted_,ikonia,sounds good.
+2012-02-20T23:07:00.000Z,ikonia,Roasted_,"eg: if someone steals my private key, they can't use it unless they know the password, they can try to brute force it, but they will be trying for 128years"
+2012-02-20T23:08:00.000Z,Roasted_,ikonia,a good way to invest precious time
+2012-02-20T23:08:00.000Z,ikonia,Roasted_,"take 2 minutes to setup, lasts 8 years and counting"
+2012-02-20T23:20:00.000Z,Roasted_,ikonia,unless you by cahnce know how to incorporate the private key into a windows box :/
+2012-02-20T23:13:00.000Z,Roasted_,ikonia,might I bug you again real quick?
+2012-02-20T23:13:00.000Z,ikonia,Roasted_,sure
+2012-02-20T23:14:00.000Z,Roasted_,ikonia,"maybe I was misunderstanding. I generated 4 keys from my laptop thinking I could jsut swap them to the clients. Can I do that? I see my laptops hostname at the end of each pub file. Can I just erase it, or do I need to generate the keys from each individual system?"
+2012-02-20T23:14:00.000Z,ikonia,Roasted_,"no, the hostname at the end is because you didn't specify a comment so it creates something to identify"
+2012-02-20T23:15:00.000Z,Roasted_,ikonia,so are these keys useless?
+2012-02-20T23:15:00.000Z,ikonia,Roasted_,not at all
+2012-02-20T23:15:00.000Z,Roasted_,ikonia,can I just erase the laptop hostname at the end?
+2012-02-20T23:15:00.000Z,ikonia,Roasted_,think of your laptop hostname as a pointless comment
+2012-02-20T23:15:00.000Z,ikonia,Roasted_,nothing more
+2012-02-20T23:15:00.000Z,ikonia,Roasted_,no
+2012-02-20T23:15:00.000Z,ikonia,Roasted_,that's part of the key - but it is not a factor
+2012-02-20T23:16:00.000Z,Roasted_,ikonia,"k, so I MUST leave it alone?"
+2012-02-20T23:16:00.000Z,ikonia,Roasted_, http://pastebin.ubuntu.com/850269/
+2012-02-20T23:16:00.000Z,ikonia,Roasted_,that's my public key
+2012-02-20T23:16:00.000Z,ikonia,Roasted_,look at the very end
+2012-02-20T23:16:00.000Z,Roasted_,ikonia,"yeah, I see it."
+2012-02-20T23:16:00.000Z,ikonia,Roasted_,"ok - so I set a comment of my name, you didn't set a comment so it defaults to $user@$host type format"
+2012-02-20T23:16:00.000Z,ikonia,Roasted_,it's just an identifier
+2012-02-20T23:17:00.000Z,ikonia,Roasted_,if you set a comment that will be your identifier
+2012-02-20T23:17:00.000Z,Roasted_,ikonia,but can I not erase my hostname and put 'curt key' or whatever?
+2012-02-20T23:17:00.000Z,ikonia,Roasted_,"no, you do that when you create the key as I advised you 3 times to do"
+2012-02-20T23:17:00.000Z,Roasted_,ikonia,gotcha.
+2012-02-20T23:17:00.000Z,ikonia,Roasted_,-c 'curts key'
+2012-02-20T23:18:00.000Z,Roasted_,ikonia,-c being a ssh-keygen flag?
+2012-02-20T23:18:00.000Z,ikonia,Roasted_,correct
+2012-02-20T23:19:00.000Z,ikonia,Roasted_,"ahh sorry, working from memory here"
+2012-02-20T23:19:00.000Z,Roasted_,ikonia,all good. I was like now what in the world am I doing wrong now :P
+2012-02-20T23:19:00.000Z,ikonia,Roasted_,got it clear in your head now though ?
+2012-02-20T23:20:00.000Z,Roasted_,ikonia,pretty sure I do. thanks again!
+2012-02-20T23:20:00.000Z,ikonia,Roasted_,"sure, look at putty"
+2012-02-20T23:20:00.000Z,ikonia,Roasted_,pagent is the daemon tool for putty
+2012-02-20T23:21:00.000Z,ikonia,Roasted_,putty-keygen will convert your key to a format putty can use too
+2012-02-20T23:21:00.000Z,ikonia,Roasted_,sorry puttygen
+2012-02-20T23:21:00.000Z,ikonia,Roasted_,not putty-keygen
+2012-02-20T23:22:00.000Z,ikonia,Roasted_,"launch puttygen to convert the key, (1 time process) load it into pagent, then just connect using putty, zero issue"
+2012-02-20T23:22:00.000Z,Roasted_,ikonia,I'm hoping syncback se supports ssh... that's my goal is to have the windows boxes back up over ssh to my box via that utility
+2012-02-20T23:22:00.000Z,ikonia,Roasted_,that part I don't know/can't help with
+2012-02-20T23:26:00.000Z,Roasted_,ikonia,the multiple user confusion is settling in...
+2012-02-20T23:26:00.000Z,ikonia,Roasted_,excellent
+2012-02-20T23:26:00.000Z,ikonia,Roasted_,getting clearer ?
+2012-02-20T23:27:00.000Z,Roasted_,ikonia,"well, due to samba, I have 4 users on my file server since samba relies on local user accounts. I have admin, mom, 2 brothers. I just added all of the public ssh keys into authorized_keys in the admin .ssh dir... but should I not be putting the public ssh key in each user home dir?"
+2012-02-20T23:27:00.000Z,ikonia,Roasted_,correct yes
+2012-02-20T23:27:00.000Z,ikonia,Roasted_,"for your setup, each user would have an authorized_key file in their own home dirrecotry"
+2012-02-20T23:27:00.000Z,Roasted_,ikonia,gotcha
+2012-02-20T23:27:00.000Z,ikonia,Roasted_,that authorized_key file would contain their public key only
+2012-02-20T23:28:00.000Z,ikonia,Roasted_,"about to leave, - you got it clear in your head now before I go ?"
+2012-02-20T23:30:00.000Z,Roasted_,ikonia,"I think I'm good, for now. :P Thanks again!"
+2012-02-20T23:30:00.000Z,ikonia,Roasted_,no problem
+2012-02-21T03:54:00.000Z,ikonia,Roasted_,"one is user based, the other is host based"
+2012-02-21T03:54:00.000Z,Roasted_,ikonia,revisiting the thing I was trying to do earlier. :P
+2012-02-21T03:54:00.000Z,ikonia,Roasted_,I guessed
+2012-02-21T03:55:00.000Z,Roasted_,ikonia,"considering I can ssh without any key (I assume thanks to known hosts) it becomes confusing to me on how I can stage my setup, because I'd like to see it fail without the keys so I can understand it"
+2012-02-21T03:56:00.000Z,ikonia,Roasted_,I explained this to you before
+2012-02-21T03:56:00.000Z,ikonia,Roasted_,that is getting authed against /etc/passwd
+2012-02-21T03:56:00.000Z,ikonia,Roasted_,that is nothing to do with host keys
+2012-02-21T03:56:00.000Z,ikonia,Roasted_,you need to disable non-key based auth if you want it to be keys only
+2012-02-21T03:56:00.000Z,Roasted_,ikonia,"I see. Sorry it's just a gray area to me, but I remember that now."
+2012-02-21T03:57:00.000Z,Roasted_,ikonia,"I guess I just don't trust the keys since I can't test it if it fails, but I'll look into disabling non-key based auth to test."
+2012-02-21T03:57:00.000Z,Roasted_,ikonia,do you know by chance how to disable it offhand?
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,/etc/ssh/sshd_config
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,PasswordAuthentication no
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,it is set to PasswordAuthentication yes
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,change it to no
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,restart sshd
+2012-02-21T03:58:00.000Z,Roasted_,ikonia,doesn't exist
+2012-02-21T03:58:00.000Z,ikonia,Roasted_,"no, sshd_config on the server"
+2012-02-21T03:59:00.000Z,ikonia,Roasted_,on the server ?
+2012-02-21T03:59:00.000Z,Roasted_,ikonia,on the server I have both (sorry I was on my desktop)
+2012-02-21T03:59:00.000Z,Roasted_,ikonia,why would the server have different than my desktop?
+2012-02-21T03:59:00.000Z,ikonia,Roasted_,think it through - how can changing settings on the client change how the server authenticates
+2012-02-21T04:00:00.000Z,ikonia,Roasted_,"you're not running sshd on your client, that's why you don't have an sshd config"
+2012-02-21T04:00:00.000Z,Roasted_,ikonia,"my desktop was never acting as the client, which makes me wonder why the server would ahve anything different. Besides swapping keys in and out I changed nothing else on the server."
+2012-02-21T04:01:00.000Z,ikonia,Roasted_,what ???
+2012-02-21T04:01:00.000Z,ikonia,Roasted_,we ssh'd in from your desktop earlier
+2012-02-21T04:01:00.000Z,ikonia,Roasted_,how can it have 'never been a client' we ssh'd in from it earlier
+2012-02-21T04:01:00.000Z,Roasted_,ikonia,that was using my laptop
+2012-02-21T04:01:00.000Z,ikonia,Roasted_,does your desktop have 'ssh' on it
+2012-02-21T04:01:00.000Z,Roasted_,ikonia,yes
+2012-02-21T04:01:00.000Z,ikonia,Roasted_,then it is an ssh client - it has /etc/ssh_config
+2012-02-21T04:02:00.000Z,ikonia,Roasted_,"it's that simple, ssh needs that config to work"
+2012-02-21T04:02:00.000Z,Roasted_,ikonia,so the sshd_config is generated when someone ssh's into the box in question?
+2012-02-21T04:02:00.000Z,ikonia,Roasted_,no
+2012-02-21T04:02:00.000Z,ikonia,Roasted_,sshd_config is required before a ssh server can start
+2012-02-21T04:02:00.000Z,ikonia,Roasted_,ssh generates nothing dynamically
+2012-02-21T04:03:00.000Z,Roasted_,ikonia,"sec, my desktop didn't have openssh-server installed actually..."
+2012-02-21T04:03:00.000Z,ikonia,Roasted_,of course it won't
+2012-02-21T04:03:00.000Z,ikonia,Roasted_,it's CLIENT not a SERVER
+2012-02-21T04:03:00.000Z,Roasted_,ikonia,I just split the tasks of my desktop vs file server. my desktop used to be myd esktop + server in 1
+2012-02-21T04:03:00.000Z,ikonia,Roasted_,openssh-server installs the SERVER - hence the name of the package openssh-SERVER
+2012-02-21T04:04:00.000Z,Roasted_,ikonia,now I have sshd_config. gotcha...
+2012-02-21T04:06:00.000Z,Roasted_,ikonia,I see now. denied (publickey)
+2012-02-21T04:06:00.000Z,ikonia,Roasted_,there you go
+2012-02-21T04:09:00.000Z,Roasted_,ikonia,"generated a new key, added the pub contents to authorized_keys, now I get the yes/no prompt I did before. However, since the passwordauthentication is set to no, this clearly suggests it's just adding this entry to known hosts. eh? am I on the right path?"
+2012-02-21T04:09:00.000Z,Roasted_,ikonia,"ha, still denied. cancel that."
+2012-02-21T04:11:00.000Z,ikonia,Roasted_,see how it works now ?
+2012-02-21T04:11:00.000Z,Roasted_,ikonia,"I'm getting the hang of it, still denied tho even though I have keys set up..."
+2012-02-21T04:11:00.000Z,ikonia,Roasted_,"take a look through the sshd_config file and you'll see the settings for allowing key based auth, host based auth, password based auth etc"
+2012-02-21T04:12:00.000Z,ikonia,Roasted_,"it sounds silly, but the settings are quite obvious in how they are named, have a read through"
+2012-02-21T04:14:00.000Z,Roasted_,ikonia,thanks. there doesn't seem to be that much meat in this config though. I'll google around though. appreciate it.
+2012-02-21T04:15:00.000Z,ikonia,Roasted_,there should be enough 'obvious' settings in there to help you get the basic setup and then search for more detailed stuff
+2012-02-21T04:15:00.000Z,Roasted_,ikonia,"from what I understand, the only authentication possible right now is key based authentication, which is denying me. Ic an't help but to wonder I goofed up the key stuff as a result."
+2012-02-21T04:16:00.000Z,ikonia,Roasted_,possibly

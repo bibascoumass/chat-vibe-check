@@ -1,0 +1,1033 @@
+date,from,to,text
+2005-01-01T16:16:00.000Z,crimsun,,"hey occy, how's the triath training going?"
+2005-01-01T16:16:00.000Z,occy,crimsun,did my first 21 miler sunday!
+2005-01-01T16:35:00.000Z,occy,crimsun,thanks for asking :)
+2005-01-01T16:36:00.000Z,crimsun,occy,"np, I remember my own marathon training. :)"
+2005-01-01T16:36:00.000Z,occy,crimsun,yeah?
+2005-01-01T16:37:00.000Z,occy,crimsun,how come you don't hang out in #fitgeek?
+2005-01-01T16:37:00.000Z,crimsun,occy,didn't know of it til just now :)
+2005-01-02T17:41:00.000Z,crimsun,occy,what's your lspci line for the sound chipset?
+2005-01-02T17:41:00.000Z,occy,crimsun,sec
+2005-01-02T17:42:00.000Z,crimsun,occy,lsmod|grep snd_intel8x0
+2005-01-02T17:42:00.000Z,occy,crimsun,it found some stuff :)
+2005-01-02T17:43:00.000Z,occy,crimsun,"a bunch of stuff, should I paste in /msg?"
+2005-01-02T17:43:00.000Z,crimsun,occy,or in #flood
+2005-01-02T17:43:00.000Z,crimsun,occy,either.
+2005-01-02T17:43:00.000Z,crimsun,occy,alsamixer(1) should work
+2005-01-02T17:44:00.000Z,occy,crimsun,see it?
+2005-01-02T17:44:00.000Z,crimsun,occy,"indeed, sec."
+2005-01-02T17:45:00.000Z,occy,crimsun,tx sorry to bug you :)
+2005-01-02T17:45:00.000Z,occy,crimsun,take your time
+2005-01-02T17:45:00.000Z,crimsun,occy,what happens when you use alsamixer?
+2005-01-02T17:45:00.000Z,crimsun,occy,"actually, have we established that snd-intel8x0 is loaded?"
+2005-01-02T17:46:00.000Z,occy,crimsun,#flood again
+2005-01-02T17:46:00.000Z,occy,crimsun,there you go.
+2005-01-02T17:47:00.000Z,crimsun,occy,and now run alsamixer
+2005-01-02T17:48:00.000Z,crimsun,occy,sudo echo 'snd-intel8x0m' >> /etc/hotplug/blacklist
+2005-01-02T17:49:00.000Z,crimsun,occy,"when you reboot, it should work"
+2005-01-02T17:49:00.000Z,occy,crimsun,k... not working atm though after removing that module.  ( ogra )
+2005-01-02T17:52:00.000Z,occy,crimsun,occy.net is back up btw.... check out the new changes ;)
+2005-01-02T17:55:00.000Z,crimsun,occy,contents of /proc/asound/cards ?
+2005-01-02T17:55:00.000Z,occy,crimsun,looking
+2005-01-02T17:55:00.000Z,occy,crimsun,no soundcards
+2005-01-02T17:55:00.000Z,crimsun,occy,is this a laptop?
+2005-01-02T17:56:00.000Z,occy,crimsun,yessir
+2005-01-02T17:56:00.000Z,crimsun,occy,dell?
+2005-01-02T17:56:00.000Z,occy,crimsun,yup.  Dell inspiron 8200
+2005-01-02T17:56:00.000Z,crimsun,occy,"reboot, disable the modem and printer port in bios."
+2005-01-02T17:56:00.000Z,occy,crimsun,on it 007
+2005-01-02T06:00:00.000Z,crimsun,occy,the best thing to do is to use the acpi boot param
+2005-01-02T06:00:00.000Z,crimsun,occy,the harder hack is to disable stuff in bios
+2005-01-02T06:01:00.000Z,crimsun,occy,the recommended procedure is to use the acpi boot param as outlined in the url ogra pasted.
+2005-01-02T06:02:00.000Z,occy,crimsun, ogra tx bunches guys.  You are both a peach. :)
+2005-01-02T06:08:00.000Z,crimsun,occy,"you're using Warty, correct?"
+2005-01-02T06:08:00.000Z,occy,crimsun,yup
+2005-01-02T06:09:00.000Z,crimsun,occy,"for a permanent solution, sudo $EDITOR /boot/grub/menu.list"
+2005-01-02T06:09:00.000Z,crimsun,occy,scroll to the line marked with # kopt=....
+2005-01-02T06:09:00.000Z,crimsun,occy,and add the acpi_... to the end
+2005-01-02T06:09:00.000Z,crimsun,occy,then run `sudo update-grub'
+2005-01-02T06:13:00.000Z,crimsun,occy,it should be at the end of the commented kopt line
+2005-01-02T06:14:00.000Z,crimsun,occy,yep. Make sure there's a hash mark at the beginning.
+2005-01-02T06:20:00.000Z,occy,crimsun,"so whenever you like, drop by #fitgeek ;)"
+2005-01-02T06:21:00.000Z,occy,crimsun,"oh, have you heard my band yet?  ( ogra too )"
+2005-01-02T07:54:00.000Z,occy,crimsun,you have a personal website?
+2005-01-02T09:00:00.000Z,occy,crimsun,tx again for your help yesterday evening.
+2005-01-02T09:00:00.000Z,occy,crimsun,occy.net (left sidebar)
+2005-01-02T09:00:00.000Z,crimsun,occy,"np :) No, I don't maintain a web page. Yes, I'm the same one on debianplanet.org et al."
+2005-01-02T09:00:00.000Z,occy,crimsun,haha
+2005-01-02T09:00:00.000Z,occy,crimsun,you read my mind..
+2005-01-02T09:03:00.000Z,crimsun,occy,possibly. Does the jvm tell you which applet fails to init?
+2005-01-02T09:03:00.000Z,occy,crimsun,"hmmm, is there a console I can initiate or something to ascertain that?"
+2005-01-02T09:04:00.000Z,crimsun,occy,sometimes the error is printed in the space on the web page where the applet should have loaded; sometimes it creates a log file in ~
+2005-01-02T09:04:00.000Z,crimsun,occy,"yep, that works, too."
+2005-01-02T09:07:00.000Z,occy,crimsun,does that look bad?
+2005-01-02T09:07:00.000Z,crimsun,occy,which jre/jdk are you using?
+2005-01-02T09:08:00.000Z,crimsun,occy,hmm. 1.4.x?
+2005-01-02T09:08:00.000Z,occy,crimsun,yah... sec
+2005-01-02T09:09:00.000Z,crimsun,occy,"for the moz-firefox plugin, just the symlink is sufficient"
+2005-01-02T09:10:00.000Z,occy,crimsun,"right, but if it needs some sort of local system java stuff, won't it need the path to be set?"
+2005-01-02T09:10:00.000Z,crimsun,occy,"actually in that case, $CLASSPATH would need to be set"
+2005-01-02T09:10:00.000Z,occy,crimsun,how can I do that. (man you are a busy guy)
+2005-01-02T09:11:00.000Z,crimsun,occy,"prepending the $JAVA_HOME/bin path to your $PATH may help, too"
+2005-01-02T09:13:00.000Z,crimsun,occy,export PATH=/usr/local/bin/j2re1.4.2/bin:$PATH
+2005-01-02T09:18:00.000Z,crimsun,occy,usually I edit /etc/X11/XF86Config-4 and do what Pozac said.
+2005-01-02T09:18:00.000Z,crimsun,occy,then `sudo invoke-rc.d gdm restart'
+2005-01-02T09:28:00.000Z,crimsun,occy,got the gdm straightened out?
+2005-01-02T09:40:00.000Z,occy,crimsun,:/
+2005-01-02T09:40:00.000Z,occy,crimsun,can't seem to keep 1024x768 in 24bpp but 1400x1050 does
+2005-01-02T09:41:00.000Z,crimsun,occy,"in Section 'Screen' of /etc/X11/XF86Config-4, did you modify the Modes line in Depth 24?"
+2005-01-02T09:41:00.000Z,crimsun,occy,and you have a 'DefaultDepth 24'?
+2005-01-02T09:42:00.000Z,crimsun,occy,what's the Modes line?
+2005-01-02T09:44:00.000Z,crimsun,occy,can you alter that to: Modes '1024x768' '1400x1050'
+2005-01-03T08:10:00.000Z,crimsun,occy,"have you tried jre 1.5.0, for instance?"
+2005-01-03T08:11:00.000Z,occy,crimsun,hmmm I am on 1.5.0
+2005-01-03T08:13:00.000Z,occy,crimsun,any ideas on a url for 1.5.0?   The java.sun.com site is a nightmare
+2005-01-03T08:14:00.000Z,crimsun,occy,sec.
+2005-01-03T08:14:00.000Z,occy,crimsun,k bud
+2005-01-03T08:14:00.000Z,crimsun,occy,http://java.sun.com/j2se/1.5.0/download.jsp and choose JRE 5.0 Update 1
+2005-01-03T08:16:00.000Z,occy,crimsun,got it :)
+2005-01-03T08:16:00.000Z,occy,crimsun,did you check out my bands site?
+2005-01-03T08:17:00.000Z,crimsun,occy,"haven't had time, sorry. I've been working on syllabi."
+2005-01-03T08:17:00.000Z,occy,crimsun,"ahh, no worries mate."
+2005-01-03T08:22:00.000Z,crimsun,occy,"gotta do a bit of manual rearranging with the symlink and $PATH, too"
+2005-01-03T08:24:00.000Z,occy,crimsun,yeah?
+2005-01-03T08:27:00.000Z,occy,crimsun,"oh, right.  Sorry, I catch you now."
+2005-01-03T07:17:00.000Z,occy,crimsun,around?
+2005-01-03T10:12:00.000Z,crimsun,occy,"hmm, I don't believe you're supposed to run java_vm directly, but it's good practice to set $JAVA_HOME, to add $JAVA_HOME/bin to your $PATH, and to set $CLASSPATH as well"
+2005-01-05T10:11:00.000Z,crimsun,occy,what precisely is broken with it?
+2005-01-05T10:11:00.000Z,occy,crimsun,heyaz bud.
+2005-01-05T10:11:00.000Z,occy,crimsun,"can't launch the java app.  The sad thing is, it's with a company that I can't let anyone have access to it."
+2005-01-05T10:12:00.000Z,crimsun,occy,"heya. Sorry, my responses will be erratic 'cos I'm at work."
+2005-01-05T10:12:00.000Z,occy,crimsun,java can run on other websites just fine.  Yahoo games for example.
+2005-01-05T10:12:00.000Z,occy,crimsun,no worries ;)
+2005-01-05T12:44:00.000Z,crimsun,occy,depends on what you need to develop
+2005-01-05T12:44:00.000Z,occy,crimsun,need to compile latest qemu :)
+2005-01-05T12:45:00.000Z,crimsun,occy,I presume you have the 'universe' repo enabled?
+2005-01-05T12:45:00.000Z,occy,crimsun,"yessir, universe and multiverse"
+2005-01-05T12:45:00.000Z,crimsun,occy,`sudo apt-get build-dep qemu'
+2005-01-05T12:46:00.000Z,occy,crimsun,that'll build from cvs?
+2005-01-05T12:46:00.000Z,crimsun,occy,"no, that installs all the necessary packages for you to compile 'qemu'"
+2005-01-05T12:46:00.000Z,crimsun,occy,it's up to you to retrieve qemu's source
+2005-01-05T12:46:00.000Z,occy,crimsun,sweet
+2005-01-05T12:47:00.000Z,occy,crimsun,that is very nice
+2005-01-09T07:06:00.000Z,crimsun,occy,better purge the FC1 ;)
+2005-01-09T07:06:00.000Z,occy,crimsun,hehe
+2005-01-09T07:07:00.000Z,occy,crimsun,"trust me, I want to.  I can't seem to get past that one install issue where it hangs when trying to start the installl."
+2005-01-09T08:01:00.000Z,occy,crimsun,you here still ?
+2005-01-09T08:05:00.000Z,crimsun,occy,"yep, still here (sorry, editing a wiki page)"
+2005-01-09T08:05:00.000Z,occy,crimsun,np bud.
+2005-01-09T08:06:00.000Z,occy,crimsun,really want to get Ubuntu on it. :(
+2005-01-09T08:41:00.000Z,crimsun,occy,thankfully it's transparent under Ubuntu
+2005-01-09T08:41:00.000Z,occy,crimsun,"yah, very nice under Ubuntu."
+2005-01-09T08:41:00.000Z,occy,crimsun,burning Hoary atm.
+2005-01-09T08:41:00.000Z,crimsun,occy,g'luck
+2005-01-09T08:42:00.000Z,occy,crimsun,heh
+2005-01-09T08:42:00.000Z,crimsun,occy,"I'm out for 1.5 hours, but I'll be back. Feel free to ping me then if you're still awake."
+2005-01-09T08:42:00.000Z,occy,crimsun,later bud. ;)
+2005-01-13T08:43:00.000Z,occy,crimsun,heyaz bud.  It was pretty good.  We played a private party.
+2005-01-13T08:43:00.000Z,occy,crimsun,our band that is.
+2005-01-13T08:44:00.000Z,crimsun,occy,cool :)
+2005-01-13T08:44:00.000Z,occy,crimsun,"nomasteryoda <-- lives near me and has the same laptop.  Going to either swap hard drives for an install, or use his cd."
+2005-01-13T08:45:00.000Z,crimsun,occy,excellent :)
+2005-01-13T08:46:00.000Z,occy,crimsun,does apt-get update and apt-get dist-upgrade keep your kernel up-to-date.... or do you have to manually do that?
+2005-01-13T08:46:00.000Z,crimsun,occy,update & upgrade will do fine
+2005-01-13T08:46:00.000Z,crimsun,occy,"you're running warty, correct?"
+2005-01-13T08:47:00.000Z,occy,crimsun,ahh ok.
+2005-01-13T08:47:00.000Z,occy,crimsun,yah... I should probably stick with it instead of hoary.
+2005-01-13T08:47:00.000Z,occy,crimsun,or do you feel it might be stable enough?
+2005-01-13T08:48:00.000Z,crimsun,occy,not quite stable enough yet
+2005-01-13T08:48:00.000Z,crimsun,occy,"it tends to be even more bleeding-edge than sid+experimental, which is impressive"
+2005-01-13T08:48:00.000Z,occy,crimsun,the cool thing would be... You could have people do voting to say how they feel things are working for them at present.
+2005-01-13T08:48:00.000Z,occy,crimsun,hehe
+2005-01-13T08:48:00.000Z,occy,crimsun,did that make sense?
+2005-01-13T08:49:00.000Z,crimsun,occy,sure.
+2005-01-13T08:52:00.000Z,occy,crimsun,ubuntu has me feeling like I'm back in the Linux community again. :)
+2005-01-13T08:53:00.000Z,crimsun,occy,are you familiar with apt-listbugs(1) ?
+2005-01-13T08:53:00.000Z,occy,crimsun,I reckon not buddy.
+2005-01-13T08:54:00.000Z,crimsun,occy,it does something in the vein of what you seek for upgrades
+2005-01-13T08:54:00.000Z,occy,crimsun,ahhh
+2005-01-13T08:54:00.000Z,crimsun,occy,"highly, highly recommended in addition to apt-listchanges(8)"
+2005-01-13T08:54:00.000Z,occy,crimsun,what does the (1) signify?
+2005-01-13T08:55:00.000Z,crimsun,occy,I just use it to denote what type of program it is; sometimes I use it to denote a man page.
+2005-01-13T08:55:00.000Z,occy,crimsun,"ahhh, nice."
+2005-01-13T08:55:00.000Z,occy,crimsun,figured that was what you were hinting at ;)
+2005-01-29T12:29:00.000Z,crimsun,occy,"if you're absolutely teeting for it, uupdate & family."
+2005-01-29T12:29:00.000Z,occy,crimsun,heyaz bud.
+2005-01-29T12:29:00.000Z,crimsun,occy,"otherwise, wait an afternoon or two and it'll be pulled in."
+2005-01-29T12:30:00.000Z,occy,crimsun,family?
+2005-01-29T12:30:00.000Z,crimsun,occy,"heya, how's life?"
+2005-01-29T12:30:00.000Z,occy,crimsun,never heard that term before
+2005-01-29T12:31:00.000Z,crimsun,occy,"'uupdate' is part of the 'devscripts' package, which you can use to generate the infrastructure for creating a deb from a new upstream source revision."
+2005-01-29T12:37:00.000Z,crimsun,occy,are you running Hoary?
+2005-01-29T12:37:00.000Z,occy,crimsun,no sir
+2005-01-29T12:38:00.000Z,occy,crimsun,hoary horked on me the other day.
+2005-01-29T12:38:00.000Z,occy,crimsun,safe to upgrade at the moment?
+2005-01-29T12:38:00.000Z,crimsun,occy,now? yes. I'd stick w/ Warty unless you like blood. ;-)
+2005-01-29T12:38:00.000Z,occy,crimsun,"heh, no blood please."
+2005-01-29T12:43:00.000Z,crimsun,occy,"if you'd like, I'd build you a bzflag 2.0 deb."
+2005-01-29T12:43:00.000Z,occy,crimsun,that would rock bud.
+2005-01-29T12:44:00.000Z,occy,crimsun,save me some extreme headaches
+2005-01-29T12:46:00.000Z,occy,crimsun,how do I 'un-apt-get source bzflag' heh.
+2005-01-29T12:46:00.000Z,occy,crimsun,I want to get rid of the old source I just apt-get installed
+2005-01-29T12:46:00.000Z,crimsun,occy,just erase it from `pwd`
+2005-01-29T12:48:00.000Z,crimsun,occy,actually you can just pull the debs from incoming if you do it _really_ fast-like.
+2005-01-29T12:48:00.000Z,occy,crimsun,where?
+2005-01-29T12:48:00.000Z,occy,crimsun,msg me
+2005-01-29T12:49:00.000Z,crimsun,occy,wget http://incoming.debian.org/bzflag_2.0.0.20050118_i386.deb http://incoming.debian.org/bzflag-server_2.0.0.20050118_i386.deb
+2005-01-29T12:49:00.000Z,crimsun,occy,you have less than one minute before the daily run begins ;)
+2005-01-29T12:51:00.000Z,occy,crimsun,same thing with the bzflag-server
+2005-01-29T12:52:00.000Z,crimsun,occy,"ok, then I'll build it this afternoon if you don't mind. Can you check back around 4:30 PM EST?"
+2005-01-29T12:52:00.000Z,occy,crimsun,yessir
+2005-01-29T12:52:00.000Z,occy,crimsun,sure will bud.
+2005-01-29T13:02:00.000Z,crimsun,occy,what cpu do you use?
+2005-01-29T13:12:00.000Z,crimsun,occy,ping. I have your debs ready and am generating Packages.gz for you.
+2005-01-29T13:14:00.000Z,occy,crimsun,back
+2005-01-29T13:14:00.000Z,occy,crimsun,you rock :)[tm] 
+2005-01-29T13:19:00.000Z,crimsun,occy,"sec, I'm rearranging my dir structure."
+2005-01-29T13:20:00.000Z,occy,crimsun,yessir
+2005-01-29T13:20:00.000Z,occy,crimsun,no worries mate ;)
+2005-01-29T13:28:00.000Z,crimsun,occy,deb http://www.sh.nu/~crimsun/ ./
+2005-01-29T13:29:00.000Z,occy,crimsun,add that to sources.list
+2005-01-29T13:29:00.000Z,crimsun,occy,"yep, and then update and bz away."
+2005-01-29T13:29:00.000Z,occy,crimsun,w00p
+2005-01-29T13:29:00.000Z,occy,crimsun,"thanks bunches,  Do you play bzflag too?"
+2005-01-29T13:30:00.000Z,crimsun,occy,"I did a few times, but I'm horrible at video games."
+2005-01-29T13:36:00.000Z,occy,crimsun,cool :) tx.
+2005-01-29T14:02:00.000Z,crimsun,occy,how are my packages working out?
+2005-01-29T14:11:00.000Z,occy,crimsun,"they are working ok it seems... 2.0.0 though... heh, it seems to be lacking something."
+2005-01-29T14:11:00.000Z,occy,crimsun,I may just switch back to 1.4.x
+2005-01-29T14:11:00.000Z,crimsun,occy,anything visibly wrong with the program itself?
+2005-01-29T14:11:00.000Z,crimsun,occy,"(e.g., in my backport)"
+2005-01-29T14:11:00.000Z,crimsun,occy,...such as?
+2005-01-29T14:12:00.000Z,occy,crimsun,fonts are just icky.  (I'm understanding this is an 'improvement'
+2005-01-29T14:14:00.000Z,occy,crimsun,thanks for making it for me.  That was very nice of you.
+2005-01-29T14:14:00.000Z,crimsun,occy,"no sweat. I have a farm of P4s here, didn't take but a few minutes."
+2005-01-29T14:14:00.000Z,occy,crimsun,hehe
+2005-01-30T12:39:00.000Z,crimsun,occy,what's sucking about it?
+2005-01-30T12:42:00.000Z,occy,crimsun,hey bud.
+2005-01-30T12:42:00.000Z,occy,crimsun,"well, there is this older lady who I'm trying to save her some money by getting Linux on this laptop.    X is working but in like 8 bit color or something."
+2005-01-30T12:43:00.000Z,occy,crimsun,I would think you should be able to get at least 800x600 on it @16bpp
+2005-01-30T12:46:00.000Z,crimsun,occy,not necessarily. Paste the log onto pastebin.
+2005-01-30T12:46:00.000Z,occy,crimsun,Okies...
+2005-01-30T12:46:00.000Z,crimsun,occy,that chipset is also known to have problems with locking up completely.
+2005-01-30T12:47:00.000Z,occy,crimsun,fun fun
+2005-01-30T12:54:00.000Z,occy,crimsun,http://pastebin.com/230916
+2005-01-30T14:18:00.000Z,occy,crimsun,did you ever check out my pastebin?
+2005-01-30T14:18:00.000Z,occy,crimsun,you were helping the other guy... so I thought I'd wait. ;)
+2005-01-30T16:42:00.000Z,crimsun,occy,I am now. What's up?
+2005-01-31T17:08:00.000Z,crimsun,occy,what did you need?
+2005-01-31T17:09:00.000Z,occy,crimsun,"heh, tag you are it!"
+2005-01-31T17:09:00.000Z,occy,crimsun,;)  Let me dig up my pastebin url.
+2005-01-31T17:09:00.000Z,crimsun,occy,k. You may have to repaste; pastebin expires quickly.
+2005-01-31T17:10:00.000Z,crimsun,occy,k.
+2005-01-31T17:11:00.000Z,occy,crimsun,"I'll have to catch you later, the laptop is down.. and I don't have that X log just now.  no worries buddy.  tx for checking back with me."
+2005-01-31T17:12:00.000Z,crimsun,occy,"k, just ping me."
+2005-02-02T08:42:00.000Z,occy,crimsun,still awake?
+2005-02-02T11:06:00.000Z,crimsun,occy,pong
+2005-02-02T11:11:00.000Z,occy,crimsun,howdy
+2005-02-02T11:12:00.000Z,occy,crimsun,"tag, yer it."
+2005-02-03T12:19:00.000Z,occy,crimsun,"howdy, did you ever get that ltconf application ubunti-ified?"
+2005-02-03T12:56:00.000Z,occy,crimsun,at the risk of sounding annoying.....  ltconf?  :)
+2005-02-03T13:27:00.000Z,crimsun,occy,"hmm, the compilation failed due to a syntax error. I'll have to look at uic."
+2005-02-03T13:39:00.000Z,occy,crimsun,okies.  Just wanted to see what was up ;)
+2005-02-09T14:49:00.000Z,occy,crimsun,boo
+2005-02-09T14:49:00.000Z,occy,crimsun,you awake?
+2005-02-09T14:49:00.000Z,crimsun,occy,back in ~10 mins
+2005-02-09T14:50:00.000Z,occy,crimsun,yessir
+2005-02-09T15:06:00.000Z,crimsun,occy,pong
+2005-02-09T15:11:00.000Z,crimsun,occy,"please ping me again in 2 hours, I'm out til then. Thanks."
+2005-02-09T15:28:00.000Z,occy,crimsun,"sounds good man, no hurry."
+2005-02-11T12:23:00.000Z,occy,crimsun,I was just bugging you the other day about that ltconf app you were going to setup.  (still having funky issues on me lappie)
+2005-02-11T12:23:00.000Z,occy,crimsun,"you are busy now, so no worries."
+2005-02-11T12:23:00.000Z,occy,crimsun,we'll get it figured out one of these days :)
+2005-02-11T12:24:00.000Z,crimsun,occy,sorry I didn't get back to you in a timely fashion
+2005-02-11T12:24:00.000Z,occy,crimsun,Triple my money back if I ain't happy with your tech support. :)
+2005-02-11T12:24:00.000Z,occy,crimsun, nub nub
+2005-02-18T08:27:00.000Z,occy,crimsun,you watching the Super Bowl?
+2005-02-18T08:27:00.000Z,crimsun,occy,"no, I'm at work."
+2005-02-18T08:29:00.000Z,occy,crimsun,work???!!!
+2005-02-18T08:29:00.000Z,occy,crimsun,;)
+2005-02-18T08:29:00.000Z,occy,crimsun,"hey, is it a bad idea to use this with warty:  deb http://ubuntu-bp.sourceforge.net/ubuntu warty-backports main universe"
+2005-02-18T08:30:00.000Z,crimsun,occy,"it's discouraged, but you own your own computer."
+2005-02-18T08:30:00.000Z,occy,crimsun,"heh.  Welll, I don't want to hork my futur upgrades"
+2005-02-18T08:30:00.000Z,crimsun,occy,the standard caveat is that the packages from ubuntu-bp are poorly versioned and will cause problems when dist-upgrading from Warty to Hoary.
+2005-02-18T08:30:00.000Z,occy,crimsun,danke buddy
+2005-02-18T08:31:00.000Z,crimsun,occy,bitte
+2005-02-18T08:47:00.000Z,occy,crimsun,you here?
+2005-02-18T08:47:00.000Z,occy,crimsun, you an op?
+2005-02-18T08:47:00.000Z,crimsun,occy,nope
+2005-02-18T08:48:00.000Z,occy,crimsun,hmmm want me to try and get Lilo?
+2005-02-18T11:57:00.000Z,occy,crimsun,FINALLY figured out the stupid touchpad issues...
+2005-02-18T11:57:00.000Z,occy,crimsun,http://fedoraforum.org/forum/showthread.php?t=27870&page=1
+2005-02-18T11:58:00.000Z,occy,crimsun,october@distance:~ > synclient HorizScrollDelta=0  <-- worked.
+2005-02-18T12:36:00.000Z,occy,crimsun,sorry
+2005-02-18T12:36:00.000Z,crimsun,occy,"you're fine, you're not interrupting at all"
+2005-02-18T12:44:00.000Z,occy,crimsun,Any earthly idea how I'd get this to be permanant?       synclient HorizScrollDelta=0 UpDownScrolling=0 RTCornerButton=0 RBCornerButton=0 VertScrollDelta=0
+2005-02-18T12:45:00.000Z,crimsun,occy,is synclient a userspace utility?
+2005-02-18T12:46:00.000Z,crimsun,occy,is it an X Window System application?
+2005-02-18T12:46:00.000Z,occy,crimsun,"Yeah, I tried that and gnomesession wouldn't start. :("
+2005-03-24T07:17:00.000Z,occy,crimsun,heyaz ;)
+2005-03-24T07:17:00.000Z,crimsun,occy,pong ;-)
+2005-03-24T07:17:00.000Z,occy,crimsun,I've been trying to lurk and help people from time to time.
+2005-03-24T07:17:00.000Z,occy,crimsun,at least I'm lurking. ;)
+2005-03-24T07:20:00.000Z,crimsun,occy,excellent! nice to see you back. :-)
+2005-03-24T07:21:00.000Z,occy,crimsun,I've never left. :)
+2005-03-24T07:26:00.000Z,crimsun,occy,"oh, I know you didn't leave :-)"
+2005-03-24T07:26:00.000Z,crimsun,occy,"how's training going, btw?"
+2005-03-24T07:27:00.000Z,occy,crimsun,doing good... working on my 1/2 Ironman training now.
+2005-03-24T07:27:00.000Z,crimsun,occy,great
+2005-03-24T07:27:00.000Z,occy,crimsun,12 weeks to go.
+2005-03-25T07:19:00.000Z,occy,crimsun,you about?
+2005-04-18T05:23:00.000Z,occy,crimsun,heyaz
+2005-04-18T05:23:00.000Z,crimsun,occy,hi
+2005-04-18T05:23:00.000Z,occy,crimsun,just apt-get install that huh.
+2005-04-18T05:30:00.000Z,occy,crimsun,think I'll need to dist-upgrade to get linux-headers?
+2005-04-18T06:31:00.000Z,occy,crimsun,any faster mirrors I can use.  This one is slooooow:   14% [88 kaddressbook 1133124/2062kB 54%]                       19.8kB/s 5h23m16s
+2005-04-18T06:32:00.000Z,occy,crimsun,I'd want to use an official mirror (if there is such a thing)
+2005-04-18T06:35:00.000Z,crimsun,occy,there are a number of different country-based mirrors
+2005-04-18T06:35:00.000Z,occy,crimsun,got a url handy?
+2005-04-18T06:35:00.000Z,occy,crimsun,something that lists them?
+2005-04-18T06:37:00.000Z,occy,crimsun,don't see them on the site... (not anything that would indicate what I'd need to put in my /etc/apt/sources.list that is.
+2005-04-18T06:37:00.000Z,crimsun,occy,http://www.ubuntulinux.org/wiki/Archive
+2005-04-18T06:54:00.000Z,crimsun,occy,please consider what time it is
+2005-04-18T06:55:00.000Z,occy,crimsun,time to get ill?
+2005-04-18T06:55:00.000Z,occy,crimsun,;)
+2005-04-18T06:55:00.000Z,crimsun,occy,"it's barely one day before release, there's a lot of syncing occurring"
+2005-04-18T06:55:00.000Z,occy,crimsun,ahhh
+2005-04-18T06:55:00.000Z,occy,crimsun,did not know that.
+2005-05-16T05:50:00.000Z,occy,crimsun,got a good networking printing howto?  I've tried to follow this:  http://www.ubuntulinux.org/wiki/FrequentlyAskedQuestions  ->  How can I share my printer on my LAN?   But it doesn't seem to work.
+2005-05-16T05:51:00.000Z,crimsun,occy,"'lo, we keep missing each other. Sorry, don't have one off the top of my head."
+2005-05-16T05:52:00.000Z,occy,crimsun,howdy.  np bud.  ;)
+2005-05-16T07:39:00.000Z,occy,crimsun,trying to.
+2005-05-16T07:40:00.000Z,occy,crimsun,just trying to get printing to work remotely.
+2005-06-12T05:47:00.000Z,occy,crimsun,:)
+2005-06-12T05:47:00.000Z,crimsun,occy,g'luck
+2005-06-12T05:47:00.000Z,occy,crimsun,:)
+2005-06-12T05:47:00.000Z,occy,crimsun,I'll let you know how it all works out.
+2005-06-12T05:47:00.000Z,crimsun,occy,excellent
+2005-07-27T06:53:00.000Z,crimsun,occy,try killing nautilus (it'll restart)
+2005-07-27T06:53:00.000Z,crimsun,occy,nautilus being naughty?
+2005-07-27T06:53:00.000Z,occy,crimsun,I think so...
+2005-07-27T06:53:00.000Z,occy,crimsun,hey buddy.
+2005-07-27T06:53:00.000Z,occy,crimsun,first 100 mile bike last Saturday!
+2005-07-27T06:53:00.000Z,crimsun,occy,excellent!
+2005-07-27T06:53:00.000Z,occy,crimsun,gearing up for Ironman Florida! w00p
+2005-07-27T06:54:00.000Z,occy,crimsun,"hmmm, killed nautilus"
+2005-07-27T06:54:00.000Z,crimsun,occy,"you don't have some app with /mnt open, do you?"
+2005-07-27T06:55:00.000Z,occy,crimsun,"I did before, not anymore."
+2005-07-27T06:59:00.000Z,occy,crimsun,what is gam_server ?
+2005-07-27T06:59:00.000Z,crimsun,occy,monitors changes to files
+2005-07-27T06:59:00.000Z,occy,crimsun,or how do I restart it?
+2005-07-27T07:01:00.000Z,crimsun,occy,there's an init script in /etc/init.d/
+2005-07-27T07:01:00.000Z,occy,crimsun,root@atomic:/etc/init.d # ls gam*
+2005-07-27T07:04:00.000Z,crimsun,occy,what about /usr/lib/gam* ?
+2005-07-29T16:36:00.000Z,occy,crimsun,any word on when Ubuntu Firefox will be fixed?
+2005-07-29T16:36:00.000Z,crimsun,occy,1.0.x? It's being worked over.
+2005-07-29T16:38:00.000Z,occy,crimsun,why wouldn't they roll back the version to the previous stable (under a differnt version number)
+2005-07-29T16:38:00.000Z,occy,crimsun,that seems like it'd make sense to me.
+2005-07-29T16:51:00.000Z,occy,crimsun,whatcha mean?
+2005-07-29T16:51:00.000Z,crimsun,occy,"eh, it's a 64-bit cpu :)"
+2005-08-07T07:31:00.000Z,occy,crimsun,hey bud... Have you ever heard of an 'IBM think pad like' USB input device?
+2005-08-07T07:31:00.000Z,occy,crimsun,those little nipple thingies...
+2005-08-07T07:31:00.000Z,crimsun,occy,"hey. I have no idea what you're referring to, unfortunately."
+2005-09-16T14:26:00.000Z,occy,crimsun,you about?
+2005-09-16T14:27:00.000Z,crimsun,occy,"yes, but I need to move wifi points"
+2005-09-16T14:27:00.000Z,occy,crimsun,no worries
+2005-09-16T14:27:00.000Z,crimsun,occy,I should be back in ~20 mins
+2005-09-16T14:28:00.000Z,occy,crimsun,yessir
+2005-09-16T15:26:00.000Z,occy,crimsun,"time for dinner now.  I'll be back in a bit.  The question I have is, how can I completely purge my kernel and re-install it.  I need to have my kerenl and firmware stuff all back to the original install state.   (I upgraded my wireless firmware -- http://kerneltrap.org/node/5414  {trying to undo all that})"
+2005-09-17T16:01:00.000Z,crimsun,occy,search for any linux-image* and linux-restricted-modules* packages and purge them
+2005-09-17T16:24:00.000Z,occy,crimsun,occy: search for any linux-image* and linux-restricted-modules* packages and purge them
+2005-09-17T16:25:00.000Z,occy,crimsun,did you happen to see that?  apt-get --purge linux-image`uname -r` linux-restricted-modules`uname -r`
+2005-09-17T16:26:00.000Z,crimsun,occy,dpkg -l linux-image\* linux-restricted-modules\* linux-headers\*|grep ^ii
+2005-09-17T16:27:00.000Z,occy,crimsun,http://pastebin.com/361050
+2005-09-17T16:30:00.000Z,crimsun,occy,keep in mind that purging those packages won't erase the directories into which you've installed additional files
+2005-09-17T16:30:00.000Z,occy,crimsun,I've only done the dpkg -l thingy for now.
+2005-09-17T16:30:00.000Z,occy,crimsun,didn't want to screw up anything.
+2005-09-17T16:30:00.000Z,crimsun,occy,you'd have to manually rm -rf those directories in /lib/modules/
+2005-09-17T16:31:00.000Z,occy,crimsun, so... root@sometimes:/lib/modules/2.6.10-5-386/drivers/net # pwd
+2005-09-17T16:32:00.000Z,crimsun,occy,what dir did those extra kernel modules install into?
+2005-09-17T16:32:00.000Z,occy,crimsun,I'm guessing that was the dir.  :/
+2005-09-17T16:32:00.000Z,occy,crimsun,no way to just purge and then reinstall forcing the original state of things?
+2005-09-17T16:33:00.000Z,occy,crimsun,I was using a default Ubuntu kernel setup just peachy.
+2005-09-17T16:33:00.000Z,crimsun,occy,"change out of that dir, then sudo aptitude purge linux-restricted-modules-$(uname -r) linux-image-$(uname -r)"
+2005-09-17T16:34:00.000Z,crimsun,occy,then sudo rm -rf /lib/modules/$(uname -r)
+2005-09-17T16:35:00.000Z,occy,crimsun,"yess, done"
+2005-09-17T16:35:00.000Z,occy,crimsun,yessir
+2005-09-17T16:36:00.000Z,occy,crimsun,I've completed those commands.
+2005-09-17T16:36:00.000Z,occy,crimsun,was documenting so I can post a mini-howto on my site. ;)
+2005-09-17T16:36:00.000Z,crimsun,occy,then sudo apt-get --reinstall install linux-image-$(uname -r) linux-restricted-modules-$(uname -r) linux-headers-$(uname -r)
+2005-09-17T16:37:00.000Z,occy,crimsun,coolio  doing now
+2005-09-17T16:37:00.000Z,occy,crimsun,I guess I just need to reboot now?
+2005-09-17T16:37:00.000Z,crimsun,occy,yep
+2005-09-17T16:37:00.000Z,occy,crimsun,okies bud.  be back in a bit.
+2005-09-17T16:37:00.000Z,occy,crimsun,thanks tons.
+2005-09-17T16:38:00.000Z,crimsun,occy,yw
+2005-09-17T16:42:00.000Z,occy,crimsun,gonna go make a 'tips and tricks' post on http://occy.net/ about it.
+2005-09-17T16:49:00.000Z,occy,crimsun,http://occy.net/node/142
+2005-09-17T16:50:00.000Z,occy,crimsun,I might want to include Reboot to be complete.
+2005-09-17T16:51:00.000Z,occy,crimsun,thank you again.  I do appreciate all your time and help.
+2005-09-17T06:21:00.000Z,occy,crimsun,scroll down
+2005-09-17T06:19:00.000Z,crimsun,occy,"if Breezy is _that_ broken that a new user has a disastrous experience, then that's a critical issue, and testing will help iron that out before the final release."
+2005-09-17T06:20:00.000Z,occy,crimsun,:/
+2005-09-17T06:20:00.000Z,occy,crimsun,"well, good point but... do we really want to displace advocacy with new users as guinie pigs?"
+2005-09-17T06:21:00.000Z,crimsun,occy,"afaict, it's the ONLY listing under Downloads, which is bad"
+2005-09-17T06:21:00.000Z,occy,crimsun,stable is waaaay down there.
+2005-09-17T06:22:00.000Z,occy,crimsun,watching the Ironman Wisconsin finishers coming in now.
+2005-09-17T06:22:00.000Z,occy,crimsun,freakin' crazy
+2005-09-17T06:23:00.000Z,occy,crimsun,8 weeks till Ironman Florida!
+2005-10-17T13:17:00.000Z,occy,crimsun,:P
+2005-10-18T16:55:00.000Z,occy,crimsun,is breezy out yet?
+2005-10-18T13:40:00.000Z,occy,crimsun,breezy++
+2005-10-18T13:40:00.000Z,crimsun,occy,indeed
+2005-10-18T13:40:00.000Z,occy,crimsun,no issues at all this time.
+2005-10-18T13:40:00.000Z,occy,crimsun,not 1!
+2005-10-18T14:20:00.000Z,occy,crimsun,they nuked the old beep-media-player skin. :(
+2005-10-18T14:20:00.000Z,occy,crimsun,"(heh, and left the old preview in place for it)"
+2005-10-18T14:20:00.000Z,crimsun,occy,I nuked it and didn't update the preview by accident.
+2005-10-18T14:20:00.000Z,occy,crimsun,"grrr, it's YOU I can blame!%@#%#@%"
+2005-10-18T14:21:00.000Z,occy,crimsun,the old theme was inspiration for occy.net !
+2005-10-18T14:21:00.000Z,crimsun,occy,which old theme?
+2005-10-18T14:21:00.000Z,crimsun,occy,the debian one?
+2005-10-18T14:21:00.000Z,occy,crimsun,the old beep-media-player theme.
+2005-10-18T14:21:00.000Z,occy,crimsun,nod
+2005-10-18T14:21:00.000Z,crimsun,occy,it was better to have a Ubuntu-oriented one (requested)
+2005-10-18T14:22:00.000Z,occy,crimsun,I can understand that for default...  do you have a copy of the old one?
+2005-10-18T14:22:00.000Z,crimsun,occy,"it's retrievable from the orig.tar.gz of the Debian tarball, which you'll need to grab from packages.debian.org/beep-media-player"
+2005-10-18T14:23:00.000Z,occy,crimsun,"k, danke"
+2005-10-18T14:27:00.000Z,occy,crimsun,"wow, there's another cool skin in there."
+2005-10-18T14:27:00.000Z,occy,crimsun,I smell a new revision of occy.net coming
+2005-10-18T14:27:00.000Z,crimsun,occy,which?
+2005-10-18T14:28:00.000Z,crimsun,occy,the blue one?
+2005-10-18T14:28:00.000Z,occy,crimsun,sec
+2005-10-18T14:28:00.000Z,occy,crimsun,nod
+2005-10-18T14:28:00.000Z,crimsun,occy,that's non-free
+2005-10-18T14:28:00.000Z,occy,crimsun,the darker blue one
+2005-10-18T14:28:00.000Z,occy,crimsun,really?
+2005-10-18T14:28:00.000Z,crimsun,occy,that's why the Debian tarball ships the Debian skin as the default. Read README.Debian
+2005-10-18T14:29:00.000Z,occy,crimsun,"ahhh, well, I've already been 'inspired' by it."
+2005-10-18T14:29:00.000Z,crimsun,occy,whatever works :-)
+2005-10-18T14:29:00.000Z,occy,crimsun,I can't unsee a thing.
+2005-10-22T05:36:00.000Z,occy,crimsun,"howdy, got anything on sharing printers easily?"
+2005-10-22T05:36:00.000Z,crimsun,occy,"I don't, sorry. The wiki and mailing list archives?"
+2005-10-22T05:48:00.000Z,crimsun,occy,"if you like theming, you should check out bmpx 0.12RC11"
+2005-10-22T05:48:00.000Z,occy,crimsun,yeah?
+2005-10-22T05:48:00.000Z,occy,crimsun,where can I get it?
+2005-10-22T05:49:00.000Z,crimsun,occy,http://bmpx.berlios.de
+2005-10-22T05:49:00.000Z,occy,crimsun,"since we don't have a printing network thing, think you might add this url as a network printing thing for ubotu?  http://occy.net/printing"
+2005-10-22T05:49:00.000Z,occy,crimsun,I ain't touching ubotu though.  Seveas has me scared.
+2005-10-22T05:49:00.000Z,crimsun,occy,slap it onto the bot.
+2005-10-22T05:50:00.000Z,occy,crimsun,it'd be nice to get that onto the wikie
+2005-10-22T05:50:00.000Z,occy,crimsun,I'll try and do that
+2005-10-22T05:50:00.000Z,crimsun,occy,then log in and put it on the wiki :-)
+2005-10-22T05:50:00.000Z,occy,crimsun,:P~
+2005-11-01T13:02:00.000Z,occy,crimsun,heh
+2005-11-01T13:02:00.000Z,occy,crimsun,9 days to IMFL
+2005-11-01T13:02:00.000Z,crimsun,occy,nice
+2005-11-02T13:54:00.000Z,occy,crimsun,:)
+2005-11-02T13:54:00.000Z,occy,crimsun,what I wrote for cribbon up above.
+2005-11-02T13:55:00.000Z,crimsun,occy,"yes, it's compiled as a module"
+2005-11-02T13:55:00.000Z,occy,crimsun,so I probably don't want to remove it.
+2005-11-02T13:57:00.000Z,crimsun,occy,"if you're using sshfs, no you wouldn't want to"
+2005-11-02T13:58:00.000Z,occy,crimsun,I am getting rid of sshfs  it didn't work.
+2005-11-02T13:58:00.000Z,occy,crimsun,so I'm trying to purge unecessary cruft from my system.
+2005-11-02T13:58:00.000Z,crimsun,occy,sshfs worked fine when I used it
+2005-11-02T13:58:00.000Z,occy,crimsun,wanted to make sure that the fuse-utils wasn't something that came with ubuntu by default
+2005-11-02T13:59:00.000Z,occy,crimsun,didn't work for me[tm]     :(
+2005-11-02T14:01:00.000Z,crimsun,occy,"sorry to hear that, got any diagnostics?"
+2005-11-02T14:01:00.000Z,occy,crimsun,pm
+2005-11-02T14:01:00.000Z,crimsun,occy,"sec, being bombarded..."
+2005-11-02T14:03:00.000Z,occy,crimsun,hahaha
+2005-11-02T14:03:00.000Z,occy,crimsun,;)
+2005-11-02T14:10:00.000Z,occy,crimsun,http://pastebin.com/409230
+2005-11-02T14:15:00.000Z,occy,crimsun,help!
+2005-11-02T14:47:00.000Z,crimsun,occy,sec
+2005-11-10T07:04:00.000Z,occy,crimsun,you here?
+2005-11-19T07:51:00.000Z,occy,crimsun,I am an Ironman!   http://occy.net/ironman
+2005-11-19T07:51:00.000Z,crimsun,occy,congrats!
+2005-11-19T07:51:00.000Z,occy,crimsun,it was a super fun day.
+2005-11-19T07:51:00.000Z,occy,crimsun,14:09:18
+2005-11-19T07:52:00.000Z,crimsun,occy,"ooh, excellent"
+2005-11-19T07:52:00.000Z,occy,crimsun,and I wasn't very tired at the end.
+2005-11-19T07:53:00.000Z,occy,crimsun,think it could be my gtk theme?
+2005-11-19T07:53:00.000Z,crimsun,occy,"hmm, but then it would be manifest across all gtk apps"
+2005-11-19T07:53:00.000Z,occy,crimsun,I never had problems with it under Hoary though.
+2005-11-19T07:53:00.000Z,crimsun,occy,can you reproduce the instability with a new user?
+2005-11-19T07:54:00.000Z,occy,crimsun,"interesting point, I did copy over my preferences"
+2005-11-19T07:54:00.000Z,occy,crimsun,"meaning, I used the old ~"
+2005-11-19T07:55:00.000Z,occy,crimsun,"so you are saying, try and operate as another user, see if I have any problems, if I don't then, it's probably my prefs config files."
+2005-11-20T09:54:00.000Z,occy,crimsun,Since nuking my prefs things seem stable with Firefox.
+2005-11-20T14:39:00.000Z,crimsun,occy,good to hear
+2005-12-07T09:17:00.000Z,occy,crimsun,hey... is there a default char limit on the topic of a channel?
+2005-12-07T14:37:00.000Z,crimsun,occy,bad occy. You should not be using that ff deb.
+2005-12-07T14:38:00.000Z,occy,crimsun,it's not a deb
+2005-12-07T14:38:00.000Z,crimsun,occy,from the offical site?
+2005-12-07T14:38:00.000Z,occy,crimsun,"heh, it's the tarball"
+2005-12-07T14:38:00.000Z,crimsun,occy,"oh no, even worse"
+2005-12-07T14:38:00.000Z,occy,crimsun,that's the official tarball
+2005-12-07T14:38:00.000Z,occy,crimsun,"well, I just downloaded it"
+2005-12-07T14:38:00.000Z,occy,crimsun,so Ubuntu people are SOL for FF 1.5 ?
+2005-12-07T14:39:00.000Z,crimsun,occy,"absolutely, until Ian finishes the proper packaging."
+2005-12-07T14:39:00.000Z,occy,crimsun,topic says 1.5 won't be in until April when Dapper is released.
+2005-12-07T14:41:00.000Z,occy,crimsun,"so the bottom line is, 'Wait until April for Dapper Drake to get FF 1.5+?'"
+2005-12-07T14:41:00.000Z,crimsun,occy,"no. When it enters Dapper, it'll be backported to Breezy."
+2005-12-07T14:42:00.000Z,crimsun,occy,"i.e., breezy-backports"
+2005-12-07T14:42:00.000Z,occy,crimsun,I thought backports were bad?  I'm so confused.
+2005-12-07T14:42:00.000Z,crimsun,occy,unofficial backports are questionable at best.
+2005-12-07T14:42:00.000Z,crimsun,occy,the ones in the -backports repositories hosted on archive.ubuntu.com are fine
+2005-12-08T08:04:00.000Z,occy,crimsun,"btw, after nuking my personal prefs, it didn't seem to help, as FF started back crashing again not too long afterwards."
+2005-12-13T14:20:00.000Z,occy,crimsun,grrr
+2005-12-13T14:20:00.000Z,occy,crimsun,I nukd all my prefs too
+2005-12-13T14:20:00.000Z,occy,crimsun,so that can't be it
+2005-12-13T14:21:00.000Z,occy,crimsun,hey btw. :)
+2005-12-13T14:21:00.000Z,crimsun,occy,hi
+2005-12-13T14:21:00.000Z,occy,crimsun,it really sucks when I'm trying to get work done and stuff just keeps crashing on me for no reason. :(
+2005-12-13T14:22:00.000Z,occy,crimsun,I'm getting close to just nuking it and trying to use another distro till Dapper comes out.
+2005-12-13T14:22:00.000Z,crimsun,occy,you could also be insane and run Dapper like those of us who are insane.
+2005-12-13T14:22:00.000Z,occy,crimsun,hehe
+2005-12-13T14:22:00.000Z,occy,crimsun,"true, it'd probably be no less stable than my setup now."
+2005-12-13T14:23:00.000Z,occy,crimsun,good to always see you :)
+2005-12-13T14:23:00.000Z,crimsun,occy,ditto
+2005-12-13T14:28:00.000Z,crimsun,occy,"haven't had any here, but I don't use any extensions"
+2005-12-13T14:29:00.000Z,occy,crimsun,hmmm
+2005-12-13T14:29:00.000Z,occy,crimsun,I wonder... maybe it's the stupid web developer plugin
+2005-12-28T08:00:00.000Z,occy,crimsun,heyaz
+2005-12-28T08:00:00.000Z,crimsun,occy,h.
+2005-12-28T08:00:00.000Z,occy,crimsun,things finally seem somewhat stable
+2005-12-28T08:00:00.000Z,occy,crimsun,back on gnome.  heh.
+2005-12-28T08:01:00.000Z,occy,crimsun,"what I did was, I went into synaptic, and nuked all my entries to my sources.list,  and then added each of the binary options and checked all of the available solutions.  then upgraded and things are stable now."
+2005-12-28T08:02:00.000Z,occy,crimsun,I bet you there are a lot of people who would do what I didn't do.
+2005-12-28T08:02:00.000Z,crimsun,occy,sounds good.
+2005-12-28T08:03:00.000Z,occy,crimsun,"things got so bad, I nuked my sytem, tried gentoo, tried Suse 10.0, and tried kubuntu.  got fed up and came back to ubuntu and gnome,  figured I'd stick with the bugginess.  But, then I figured that out.  Things have been rock solid for like 4 days."
+2005-12-28T08:04:00.000Z,occy,crimsun,"anyway, I know you don't lay awake at night worrying about whether or not I am having problems but thought I'd share my thoughts with you. ;)"
+2005-12-28T08:05:00.000Z,crimsun,occy,glad to read they've been resolved (fingers crossed)
+2005-12-31T10:11:00.000Z,occy,crimsun,"howdy, you know how to do the set-selections and get-selections stuff?  I was able to do:  dpkg --get-selections > pkg.txt"
+2005-12-31T10:11:00.000Z,occy,crimsun,do I do this in reverse:  dpkg --set-selections < pkg.txt
+2005-12-31T10:12:00.000Z,crimsun,occy,it's read from stdin. cat and pipe.
+2005-12-31T10:12:00.000Z,occy,crimsun,for the non-programmer that means?
+2005-12-31T10:12:00.000Z,occy,crimsun,:)
+2005-12-31T10:13:00.000Z,crimsun,occy,cat foo|dpkg [..] 
+2005-12-31T10:13:00.000Z,occy,crimsun,ahhhh
+2005-12-31T10:19:00.000Z,crimsun,occy,"you know about debian-administration.org, correct?"
+2005-12-31T10:22:00.000Z,occy,crimsun,what's this?
+2005-12-31T10:22:00.000Z,occy,crimsun,I'll check it out.
+2005-12-31T10:22:00.000Z,occy,crimsun,tx ;)
+2006-04-01T07:24:00.000Z,occy,crimsun,"heyaz, ltns :)"
+2006-04-01T07:24:00.000Z,occy,crimsun,I'm going over to the dark side... Got an iMac...
+2006-04-01T07:24:00.000Z,crimsun,occy,slick
+2005-01-01T16:16:00.000Z,crimsun,,"hey occy, how's the triath training going?"
+2005-01-01T16:16:00.000Z,occy,crimsun,did my first 21 miler sunday!
+2005-01-01T16:35:00.000Z,occy,crimsun,thanks for asking :)
+2005-01-01T16:36:00.000Z,crimsun,occy,"np, I remember my own marathon training. :)"
+2005-01-01T16:36:00.000Z,occy,crimsun,yeah?
+2005-01-01T16:37:00.000Z,occy,crimsun,how come you don't hang out in #fitgeek?
+2005-01-01T16:37:00.000Z,crimsun,occy,didn't know of it til just now :)
+2005-01-02T17:41:00.000Z,crimsun,occy,what's your lspci line for the sound chipset?
+2005-01-02T17:41:00.000Z,occy,crimsun,sec
+2005-01-02T17:42:00.000Z,crimsun,occy,lsmod|grep snd_intel8x0
+2005-01-02T17:42:00.000Z,occy,crimsun,it found some stuff :)
+2005-01-02T17:43:00.000Z,occy,crimsun,"a bunch of stuff, should I paste in /msg?"
+2005-01-02T17:43:00.000Z,crimsun,occy,or in #flood
+2005-01-02T17:43:00.000Z,crimsun,occy,either.
+2005-01-02T17:43:00.000Z,crimsun,occy,alsamixer(1) should work
+2005-01-02T17:44:00.000Z,occy,crimsun,see it?
+2005-01-02T17:44:00.000Z,crimsun,occy,"indeed, sec."
+2005-01-02T17:45:00.000Z,occy,crimsun,tx sorry to bug you :)
+2005-01-02T17:45:00.000Z,occy,crimsun,take your time
+2005-01-02T17:45:00.000Z,crimsun,occy,what happens when you use alsamixer?
+2005-01-02T17:45:00.000Z,crimsun,occy,"actually, have we established that snd-intel8x0 is loaded?"
+2005-01-02T17:46:00.000Z,occy,crimsun,#flood again
+2005-01-02T17:46:00.000Z,occy,crimsun,there you go.
+2005-01-02T17:47:00.000Z,crimsun,occy,and now run alsamixer
+2005-01-02T17:48:00.000Z,crimsun,occy,sudo echo 'snd-intel8x0m' >> /etc/hotplug/blacklist
+2005-01-02T17:49:00.000Z,crimsun,occy,"when you reboot, it should work"
+2005-01-02T17:49:00.000Z,occy,crimsun,k... not working atm though after removing that module.  ( ogra )
+2005-01-02T17:52:00.000Z,occy,crimsun,occy.net is back up btw.... check out the new changes ;)
+2005-01-02T17:55:00.000Z,crimsun,occy,contents of /proc/asound/cards ?
+2005-01-02T17:55:00.000Z,occy,crimsun,looking
+2005-01-02T17:55:00.000Z,occy,crimsun,no soundcards
+2005-01-02T17:55:00.000Z,crimsun,occy,is this a laptop?
+2005-01-02T17:56:00.000Z,occy,crimsun,yessir
+2005-01-02T17:56:00.000Z,crimsun,occy,dell?
+2005-01-02T17:56:00.000Z,occy,crimsun,yup.  Dell inspiron 8200
+2005-01-02T17:56:00.000Z,crimsun,occy,"reboot, disable the modem and printer port in bios."
+2005-01-02T17:56:00.000Z,occy,crimsun,on it 007
+2005-01-02T06:00:00.000Z,crimsun,occy,the best thing to do is to use the acpi boot param
+2005-01-02T06:00:00.000Z,crimsun,occy,the harder hack is to disable stuff in bios
+2005-01-02T06:01:00.000Z,crimsun,occy,the recommended procedure is to use the acpi boot param as outlined in the url ogra pasted.
+2005-01-02T06:02:00.000Z,occy,crimsun, ogra tx bunches guys.  You are both a peach. :)
+2005-01-02T06:08:00.000Z,crimsun,occy,"you're using Warty, correct?"
+2005-01-02T06:08:00.000Z,occy,crimsun,yup
+2005-01-02T06:09:00.000Z,crimsun,occy,"for a permanent solution, sudo $EDITOR /boot/grub/menu.list"
+2005-01-02T06:09:00.000Z,crimsun,occy,scroll to the line marked with # kopt=....
+2005-01-02T06:09:00.000Z,crimsun,occy,and add the acpi_... to the end
+2005-01-02T06:09:00.000Z,crimsun,occy,then run `sudo update-grub'
+2005-01-02T06:13:00.000Z,crimsun,occy,it should be at the end of the commented kopt line
+2005-01-02T06:14:00.000Z,crimsun,occy,yep. Make sure there's a hash mark at the beginning.
+2005-01-02T06:20:00.000Z,occy,crimsun,"so whenever you like, drop by #fitgeek ;)"
+2005-01-02T06:21:00.000Z,occy,crimsun,"oh, have you heard my band yet?  ( ogra too )"
+2005-01-02T07:54:00.000Z,occy,crimsun,you have a personal website?
+2005-01-02T09:00:00.000Z,occy,crimsun,tx again for your help yesterday evening.
+2005-01-02T09:00:00.000Z,occy,crimsun,occy.net (left sidebar)
+2005-01-02T09:00:00.000Z,crimsun,occy,"np :) No, I don't maintain a web page. Yes, I'm the same one on debianplanet.org et al."
+2005-01-02T09:00:00.000Z,occy,crimsun,haha
+2005-01-02T09:00:00.000Z,occy,crimsun,you read my mind..
+2005-01-02T09:03:00.000Z,crimsun,occy,possibly. Does the jvm tell you which applet fails to init?
+2005-01-02T09:03:00.000Z,occy,crimsun,"hmmm, is there a console I can initiate or something to ascertain that?"
+2005-01-02T09:04:00.000Z,crimsun,occy,sometimes the error is printed in the space on the web page where the applet should have loaded; sometimes it creates a log file in ~
+2005-01-02T09:04:00.000Z,crimsun,occy,"yep, that works, too."
+2005-01-02T09:07:00.000Z,occy,crimsun,does that look bad?
+2005-01-02T09:07:00.000Z,crimsun,occy,which jre/jdk are you using?
+2005-01-02T09:08:00.000Z,crimsun,occy,hmm. 1.4.x?
+2005-01-02T09:08:00.000Z,occy,crimsun,yah... sec
+2005-01-02T09:09:00.000Z,crimsun,occy,"for the moz-firefox plugin, just the symlink is sufficient"
+2005-01-02T09:10:00.000Z,occy,crimsun,"right, but if it needs some sort of local system java stuff, won't it need the path to be set?"
+2005-01-02T09:10:00.000Z,crimsun,occy,"actually in that case, $CLASSPATH would need to be set"
+2005-01-02T09:10:00.000Z,occy,crimsun,how can I do that. (man you are a busy guy)
+2005-01-02T09:11:00.000Z,crimsun,occy,"prepending the $JAVA_HOME/bin path to your $PATH may help, too"
+2005-01-02T09:13:00.000Z,crimsun,occy,export PATH=/usr/local/bin/j2re1.4.2/bin:$PATH
+2005-01-02T09:18:00.000Z,crimsun,occy,usually I edit /etc/X11/XF86Config-4 and do what Pozac said.
+2005-01-02T09:18:00.000Z,crimsun,occy,then `sudo invoke-rc.d gdm restart'
+2005-01-02T09:28:00.000Z,crimsun,occy,got the gdm straightened out?
+2005-01-02T09:40:00.000Z,occy,crimsun,:/
+2005-01-02T09:40:00.000Z,occy,crimsun,can't seem to keep 1024x768 in 24bpp but 1400x1050 does
+2005-01-02T09:41:00.000Z,crimsun,occy,"in Section 'Screen' of /etc/X11/XF86Config-4, did you modify the Modes line in Depth 24?"
+2005-01-02T09:41:00.000Z,crimsun,occy,and you have a 'DefaultDepth 24'?
+2005-01-02T09:42:00.000Z,crimsun,occy,what's the Modes line?
+2005-01-02T09:44:00.000Z,crimsun,occy,can you alter that to: Modes '1024x768' '1400x1050'
+2005-01-03T08:10:00.000Z,crimsun,occy,"have you tried jre 1.5.0, for instance?"
+2005-01-03T08:11:00.000Z,occy,crimsun,hmmm I am on 1.5.0
+2005-01-03T08:13:00.000Z,occy,crimsun,any ideas on a url for 1.5.0?   The java.sun.com site is a nightmare
+2005-01-03T08:14:00.000Z,crimsun,occy,sec.
+2005-01-03T08:14:00.000Z,occy,crimsun,k bud
+2005-01-03T08:14:00.000Z,crimsun,occy,http://java.sun.com/j2se/1.5.0/download.jsp and choose JRE 5.0 Update 1
+2005-01-03T08:16:00.000Z,occy,crimsun,got it :)
+2005-01-03T08:16:00.000Z,occy,crimsun,did you check out my bands site?
+2005-01-03T08:17:00.000Z,crimsun,occy,"haven't had time, sorry. I've been working on syllabi."
+2005-01-03T08:17:00.000Z,occy,crimsun,"ahh, no worries mate."
+2005-01-03T08:22:00.000Z,crimsun,occy,"gotta do a bit of manual rearranging with the symlink and $PATH, too"
+2005-01-03T08:24:00.000Z,occy,crimsun,yeah?
+2005-01-03T08:27:00.000Z,occy,crimsun,"oh, right.  Sorry, I catch you now."
+2005-01-03T07:17:00.000Z,occy,crimsun,around?
+2005-01-03T10:12:00.000Z,crimsun,occy,"hmm, I don't believe you're supposed to run java_vm directly, but it's good practice to set $JAVA_HOME, to add $JAVA_HOME/bin to your $PATH, and to set $CLASSPATH as well"
+2005-01-05T10:11:00.000Z,crimsun,occy,what precisely is broken with it?
+2005-01-05T10:11:00.000Z,occy,crimsun,heyaz bud.
+2005-01-05T10:11:00.000Z,occy,crimsun,"can't launch the java app.  The sad thing is, it's with a company that I can't let anyone have access to it."
+2005-01-05T10:12:00.000Z,crimsun,occy,"heya. Sorry, my responses will be erratic 'cos I'm at work."
+2005-01-05T10:12:00.000Z,occy,crimsun,java can run on other websites just fine.  Yahoo games for example.
+2005-01-05T10:12:00.000Z,occy,crimsun,no worries ;)
+2005-01-05T12:44:00.000Z,crimsun,occy,depends on what you need to develop
+2005-01-05T12:44:00.000Z,occy,crimsun,need to compile latest qemu :)
+2005-01-05T12:45:00.000Z,crimsun,occy,I presume you have the 'universe' repo enabled?
+2005-01-05T12:45:00.000Z,occy,crimsun,"yessir, universe and multiverse"
+2005-01-05T12:45:00.000Z,crimsun,occy,`sudo apt-get build-dep qemu'
+2005-01-05T12:46:00.000Z,occy,crimsun,that'll build from cvs?
+2005-01-05T12:46:00.000Z,crimsun,occy,"no, that installs all the necessary packages for you to compile 'qemu'"
+2005-01-05T12:46:00.000Z,crimsun,occy,it's up to you to retrieve qemu's source
+2005-01-05T12:46:00.000Z,occy,crimsun,sweet
+2005-01-05T12:47:00.000Z,occy,crimsun,that is very nice
+2005-01-09T07:06:00.000Z,crimsun,occy,better purge the FC1 ;)
+2005-01-09T07:06:00.000Z,occy,crimsun,hehe
+2005-01-09T07:07:00.000Z,occy,crimsun,"trust me, I want to.  I can't seem to get past that one install issue where it hangs when trying to start the installl."
+2005-01-09T08:01:00.000Z,occy,crimsun,you here still ?
+2005-01-09T08:05:00.000Z,crimsun,occy,"yep, still here (sorry, editing a wiki page)"
+2005-01-09T08:05:00.000Z,occy,crimsun,np bud.
+2005-01-09T08:06:00.000Z,occy,crimsun,really want to get Ubuntu on it. :(
+2005-01-09T08:41:00.000Z,crimsun,occy,thankfully it's transparent under Ubuntu
+2005-01-09T08:41:00.000Z,occy,crimsun,"yah, very nice under Ubuntu."
+2005-01-09T08:41:00.000Z,occy,crimsun,burning Hoary atm.
+2005-01-09T08:41:00.000Z,crimsun,occy,g'luck
+2005-01-09T08:42:00.000Z,occy,crimsun,heh
+2005-01-09T08:42:00.000Z,crimsun,occy,"I'm out for 1.5 hours, but I'll be back. Feel free to ping me then if you're still awake."
+2005-01-09T08:42:00.000Z,occy,crimsun,later bud. ;)
+2005-01-13T08:43:00.000Z,occy,crimsun,heyaz bud.  It was pretty good.  We played a private party.
+2005-01-13T08:43:00.000Z,occy,crimsun,our band that is.
+2005-01-13T08:44:00.000Z,crimsun,occy,cool :)
+2005-01-13T08:44:00.000Z,occy,crimsun,"nomasteryoda <-- lives near me and has the same laptop.  Going to either swap hard drives for an install, or use his cd."
+2005-01-13T08:45:00.000Z,crimsun,occy,excellent :)
+2005-01-13T08:46:00.000Z,occy,crimsun,does apt-get update and apt-get dist-upgrade keep your kernel up-to-date.... or do you have to manually do that?
+2005-01-13T08:46:00.000Z,crimsun,occy,update & upgrade will do fine
+2005-01-13T08:46:00.000Z,crimsun,occy,"you're running warty, correct?"
+2005-01-13T08:47:00.000Z,occy,crimsun,ahh ok.
+2005-01-13T08:47:00.000Z,occy,crimsun,yah... I should probably stick with it instead of hoary.
+2005-01-13T08:47:00.000Z,occy,crimsun,or do you feel it might be stable enough?
+2005-01-13T08:48:00.000Z,crimsun,occy,not quite stable enough yet
+2005-01-13T08:48:00.000Z,crimsun,occy,"it tends to be even more bleeding-edge than sid+experimental, which is impressive"
+2005-01-13T08:48:00.000Z,occy,crimsun,the cool thing would be... You could have people do voting to say how they feel things are working for them at present.
+2005-01-13T08:48:00.000Z,occy,crimsun,hehe
+2005-01-13T08:48:00.000Z,occy,crimsun,did that make sense?
+2005-01-13T08:49:00.000Z,crimsun,occy,sure.
+2005-01-13T08:52:00.000Z,occy,crimsun,ubuntu has me feeling like I'm back in the Linux community again. :)
+2005-01-13T08:53:00.000Z,crimsun,occy,are you familiar with apt-listbugs(1) ?
+2005-01-13T08:53:00.000Z,occy,crimsun,I reckon not buddy.
+2005-01-13T08:54:00.000Z,crimsun,occy,it does something in the vein of what you seek for upgrades
+2005-01-13T08:54:00.000Z,occy,crimsun,ahhh
+2005-01-13T08:54:00.000Z,crimsun,occy,"highly, highly recommended in addition to apt-listchanges(8)"
+2005-01-13T08:54:00.000Z,occy,crimsun,what does the (1) signify?
+2005-01-13T08:55:00.000Z,crimsun,occy,I just use it to denote what type of program it is; sometimes I use it to denote a man page.
+2005-01-13T08:55:00.000Z,occy,crimsun,"ahhh, nice."
+2005-01-13T08:55:00.000Z,occy,crimsun,figured that was what you were hinting at ;)
+2005-01-29T12:29:00.000Z,crimsun,occy,"if you're absolutely teeting for it, uupdate & family."
+2005-01-29T12:29:00.000Z,occy,crimsun,heyaz bud.
+2005-01-29T12:29:00.000Z,crimsun,occy,"otherwise, wait an afternoon or two and it'll be pulled in."
+2005-01-29T12:30:00.000Z,occy,crimsun,family?
+2005-01-29T12:30:00.000Z,crimsun,occy,"heya, how's life?"
+2005-01-29T12:30:00.000Z,occy,crimsun,never heard that term before
+2005-01-29T12:31:00.000Z,crimsun,occy,"'uupdate' is part of the 'devscripts' package, which you can use to generate the infrastructure for creating a deb from a new upstream source revision."
+2005-01-29T12:37:00.000Z,crimsun,occy,are you running Hoary?
+2005-01-29T12:37:00.000Z,occy,crimsun,no sir
+2005-01-29T12:38:00.000Z,occy,crimsun,hoary horked on me the other day.
+2005-01-29T12:38:00.000Z,occy,crimsun,safe to upgrade at the moment?
+2005-01-29T12:38:00.000Z,crimsun,occy,now? yes. I'd stick w/ Warty unless you like blood. ;-)
+2005-01-29T12:38:00.000Z,occy,crimsun,"heh, no blood please."
+2005-01-29T12:43:00.000Z,crimsun,occy,"if you'd like, I'd build you a bzflag 2.0 deb."
+2005-01-29T12:43:00.000Z,occy,crimsun,that would rock bud.
+2005-01-29T12:44:00.000Z,occy,crimsun,save me some extreme headaches
+2005-01-29T12:46:00.000Z,occy,crimsun,how do I 'un-apt-get source bzflag' heh.
+2005-01-29T12:46:00.000Z,occy,crimsun,I want to get rid of the old source I just apt-get installed
+2005-01-29T12:46:00.000Z,crimsun,occy,just erase it from `pwd`
+2005-01-29T12:48:00.000Z,crimsun,occy,actually you can just pull the debs from incoming if you do it _really_ fast-like.
+2005-01-29T12:48:00.000Z,occy,crimsun,where?
+2005-01-29T12:48:00.000Z,occy,crimsun,msg me
+2005-01-29T12:49:00.000Z,crimsun,occy,wget http://incoming.debian.org/bzflag_2.0.0.20050118_i386.deb http://incoming.debian.org/bzflag-server_2.0.0.20050118_i386.deb
+2005-01-29T12:49:00.000Z,crimsun,occy,you have less than one minute before the daily run begins ;)
+2005-01-29T12:51:00.000Z,occy,crimsun,same thing with the bzflag-server
+2005-01-29T12:52:00.000Z,crimsun,occy,"ok, then I'll build it this afternoon if you don't mind. Can you check back around 4:30 PM EST?"
+2005-01-29T12:52:00.000Z,occy,crimsun,yessir
+2005-01-29T12:52:00.000Z,occy,crimsun,sure will bud.
+2005-01-29T13:02:00.000Z,crimsun,occy,what cpu do you use?
+2005-01-29T13:12:00.000Z,crimsun,occy,ping. I have your debs ready and am generating Packages.gz for you.
+2005-01-29T13:14:00.000Z,occy,crimsun,back
+2005-01-29T13:14:00.000Z,occy,crimsun,you rock :)[tm] 
+2005-01-29T13:19:00.000Z,crimsun,occy,"sec, I'm rearranging my dir structure."
+2005-01-29T13:20:00.000Z,occy,crimsun,yessir
+2005-01-29T13:20:00.000Z,occy,crimsun,no worries mate ;)
+2005-01-29T13:28:00.000Z,crimsun,occy,deb http://www.sh.nu/~crimsun/ ./
+2005-01-29T13:29:00.000Z,occy,crimsun,add that to sources.list
+2005-01-29T13:29:00.000Z,crimsun,occy,"yep, and then update and bz away."
+2005-01-29T13:29:00.000Z,occy,crimsun,w00p
+2005-01-29T13:29:00.000Z,occy,crimsun,"thanks bunches,  Do you play bzflag too?"
+2005-01-29T13:30:00.000Z,crimsun,occy,"I did a few times, but I'm horrible at video games."
+2005-01-29T13:36:00.000Z,occy,crimsun,cool :) tx.
+2005-01-29T14:02:00.000Z,crimsun,occy,how are my packages working out?
+2005-01-29T14:11:00.000Z,occy,crimsun,"they are working ok it seems... 2.0.0 though... heh, it seems to be lacking something."
+2005-01-29T14:11:00.000Z,occy,crimsun,I may just switch back to 1.4.x
+2005-01-29T14:11:00.000Z,crimsun,occy,anything visibly wrong with the program itself?
+2005-01-29T14:11:00.000Z,crimsun,occy,"(e.g., in my backport)"
+2005-01-29T14:11:00.000Z,crimsun,occy,...such as?
+2005-01-29T14:12:00.000Z,occy,crimsun,fonts are just icky.  (I'm understanding this is an 'improvement'
+2005-01-29T14:14:00.000Z,occy,crimsun,thanks for making it for me.  That was very nice of you.
+2005-01-29T14:14:00.000Z,crimsun,occy,"no sweat. I have a farm of P4s here, didn't take but a few minutes."
+2005-01-29T14:14:00.000Z,occy,crimsun,hehe
+2005-01-30T12:39:00.000Z,crimsun,occy,what's sucking about it?
+2005-01-30T12:42:00.000Z,occy,crimsun,hey bud.
+2005-01-30T12:42:00.000Z,occy,crimsun,"well, there is this older lady who I'm trying to save her some money by getting Linux on this laptop.    X is working but in like 8 bit color or something."
+2005-01-30T12:43:00.000Z,occy,crimsun,I would think you should be able to get at least 800x600 on it @16bpp
+2005-01-30T12:46:00.000Z,crimsun,occy,not necessarily. Paste the log onto pastebin.
+2005-01-30T12:46:00.000Z,occy,crimsun,Okies...
+2005-01-30T12:46:00.000Z,crimsun,occy,that chipset is also known to have problems with locking up completely.
+2005-01-30T12:47:00.000Z,occy,crimsun,fun fun
+2005-01-30T12:54:00.000Z,occy,crimsun,http://pastebin.com/230916
+2005-01-30T14:18:00.000Z,occy,crimsun,did you ever check out my pastebin?
+2005-01-30T14:18:00.000Z,occy,crimsun,you were helping the other guy... so I thought I'd wait. ;)
+2005-01-30T16:42:00.000Z,crimsun,occy,I am now. What's up?
+2005-01-31T17:08:00.000Z,crimsun,occy,what did you need?
+2005-01-31T17:09:00.000Z,occy,crimsun,"heh, tag you are it!"
+2005-01-31T17:09:00.000Z,occy,crimsun,;)  Let me dig up my pastebin url.
+2005-01-31T17:09:00.000Z,crimsun,occy,k. You may have to repaste; pastebin expires quickly.
+2005-01-31T17:10:00.000Z,crimsun,occy,k.
+2005-01-31T17:11:00.000Z,occy,crimsun,"I'll have to catch you later, the laptop is down.. and I don't have that X log just now.  no worries buddy.  tx for checking back with me."
+2005-01-31T17:12:00.000Z,crimsun,occy,"k, just ping me."
+2005-02-02T08:42:00.000Z,occy,crimsun,still awake?
+2005-02-02T11:06:00.000Z,crimsun,occy,pong
+2005-02-02T11:11:00.000Z,occy,crimsun,howdy
+2005-02-02T11:12:00.000Z,occy,crimsun,"tag, yer it."
+2005-02-03T12:19:00.000Z,occy,crimsun,"howdy, did you ever get that ltconf application ubunti-ified?"
+2005-02-03T12:56:00.000Z,occy,crimsun,at the risk of sounding annoying.....  ltconf?  :)
+2005-02-03T13:27:00.000Z,crimsun,occy,"hmm, the compilation failed due to a syntax error. I'll have to look at uic."
+2005-02-03T13:39:00.000Z,occy,crimsun,okies.  Just wanted to see what was up ;)
+2005-02-09T14:49:00.000Z,occy,crimsun,boo
+2005-02-09T14:49:00.000Z,occy,crimsun,you awake?
+2005-02-09T14:49:00.000Z,crimsun,occy,back in ~10 mins
+2005-02-09T14:50:00.000Z,occy,crimsun,yessir
+2005-02-09T15:06:00.000Z,crimsun,occy,pong
+2005-02-09T15:11:00.000Z,crimsun,occy,"please ping me again in 2 hours, I'm out til then. Thanks."
+2005-02-09T15:28:00.000Z,occy,crimsun,"sounds good man, no hurry."
+2005-02-11T12:23:00.000Z,occy,crimsun,I was just bugging you the other day about that ltconf app you were going to setup.  (still having funky issues on me lappie)
+2005-02-11T12:23:00.000Z,occy,crimsun,"you are busy now, so no worries."
+2005-02-11T12:23:00.000Z,occy,crimsun,we'll get it figured out one of these days :)
+2005-02-11T12:24:00.000Z,crimsun,occy,sorry I didn't get back to you in a timely fashion
+2005-02-11T12:24:00.000Z,occy,crimsun,Triple my money back if I ain't happy with your tech support. :)
+2005-02-11T12:24:00.000Z,occy,crimsun, nub nub
+2005-02-18T08:27:00.000Z,occy,crimsun,you watching the Super Bowl?
+2005-02-18T08:27:00.000Z,crimsun,occy,"no, I'm at work."
+2005-02-18T08:29:00.000Z,occy,crimsun,work???!!!
+2005-02-18T08:29:00.000Z,occy,crimsun,;)
+2005-02-18T08:29:00.000Z,occy,crimsun,"hey, is it a bad idea to use this with warty:  deb http://ubuntu-bp.sourceforge.net/ubuntu warty-backports main universe"
+2005-02-18T08:30:00.000Z,crimsun,occy,"it's discouraged, but you own your own computer."
+2005-02-18T08:30:00.000Z,occy,crimsun,"heh.  Welll, I don't want to hork my futur upgrades"
+2005-02-18T08:30:00.000Z,crimsun,occy,the standard caveat is that the packages from ubuntu-bp are poorly versioned and will cause problems when dist-upgrading from Warty to Hoary.
+2005-02-18T08:30:00.000Z,occy,crimsun,danke buddy
+2005-02-18T08:31:00.000Z,crimsun,occy,bitte
+2005-02-18T08:47:00.000Z,occy,crimsun,you here?
+2005-02-18T08:47:00.000Z,occy,crimsun, you an op?
+2005-02-18T08:47:00.000Z,crimsun,occy,nope
+2005-02-18T08:48:00.000Z,occy,crimsun,hmmm want me to try and get Lilo?
+2005-02-18T11:57:00.000Z,occy,crimsun,FINALLY figured out the stupid touchpad issues...
+2005-02-18T11:57:00.000Z,occy,crimsun,http://fedoraforum.org/forum/showthread.php?t=27870&page=1
+2005-02-18T11:58:00.000Z,occy,crimsun,october@distance:~ > synclient HorizScrollDelta=0  <-- worked.
+2005-02-18T12:36:00.000Z,occy,crimsun,sorry
+2005-02-18T12:36:00.000Z,crimsun,occy,"you're fine, you're not interrupting at all"
+2005-02-18T12:44:00.000Z,occy,crimsun,Any earthly idea how I'd get this to be permanant?       synclient HorizScrollDelta=0 UpDownScrolling=0 RTCornerButton=0 RBCornerButton=0 VertScrollDelta=0
+2005-02-18T12:45:00.000Z,crimsun,occy,is synclient a userspace utility?
+2005-02-18T12:46:00.000Z,crimsun,occy,is it an X Window System application?
+2005-02-18T12:46:00.000Z,occy,crimsun,"Yeah, I tried that and gnomesession wouldn't start. :("
+2005-03-24T07:17:00.000Z,occy,crimsun,heyaz ;)
+2005-03-24T07:17:00.000Z,crimsun,occy,pong ;-)
+2005-03-24T07:17:00.000Z,occy,crimsun,I've been trying to lurk and help people from time to time.
+2005-03-24T07:17:00.000Z,occy,crimsun,at least I'm lurking. ;)
+2005-03-24T07:20:00.000Z,crimsun,occy,excellent! nice to see you back. :-)
+2005-03-24T07:21:00.000Z,occy,crimsun,I've never left. :)
+2005-03-24T07:26:00.000Z,crimsun,occy,"oh, I know you didn't leave :-)"
+2005-03-24T07:26:00.000Z,crimsun,occy,"how's training going, btw?"
+2005-03-24T07:27:00.000Z,occy,crimsun,doing good... working on my 1/2 Ironman training now.
+2005-03-24T07:27:00.000Z,crimsun,occy,great
+2005-03-24T07:27:00.000Z,occy,crimsun,12 weeks to go.
+2005-03-25T07:19:00.000Z,occy,crimsun,you about?
+2005-04-18T05:23:00.000Z,occy,crimsun,heyaz
+2005-04-18T05:23:00.000Z,crimsun,occy,hi
+2005-04-18T05:23:00.000Z,occy,crimsun,just apt-get install that huh.
+2005-04-18T05:30:00.000Z,occy,crimsun,think I'll need to dist-upgrade to get linux-headers?
+2005-04-18T06:31:00.000Z,occy,crimsun,any faster mirrors I can use.  This one is slooooow:   14% [88 kaddressbook 1133124/2062kB 54%]                       19.8kB/s 5h23m16s
+2005-04-18T06:32:00.000Z,occy,crimsun,I'd want to use an official mirror (if there is such a thing)
+2005-04-18T06:35:00.000Z,crimsun,occy,there are a number of different country-based mirrors
+2005-04-18T06:35:00.000Z,occy,crimsun,got a url handy?
+2005-04-18T06:35:00.000Z,occy,crimsun,something that lists them?
+2005-04-18T06:37:00.000Z,occy,crimsun,don't see them on the site... (not anything that would indicate what I'd need to put in my /etc/apt/sources.list that is.
+2005-04-18T06:37:00.000Z,crimsun,occy,http://www.ubuntulinux.org/wiki/Archive
+2005-04-18T06:54:00.000Z,crimsun,occy,please consider what time it is
+2005-04-18T06:55:00.000Z,occy,crimsun,time to get ill?
+2005-04-18T06:55:00.000Z,occy,crimsun,;)
+2005-04-18T06:55:00.000Z,crimsun,occy,"it's barely one day before release, there's a lot of syncing occurring"
+2005-04-18T06:55:00.000Z,occy,crimsun,ahhh
+2005-04-18T06:55:00.000Z,occy,crimsun,did not know that.
+2005-05-16T05:50:00.000Z,occy,crimsun,got a good networking printing howto?  I've tried to follow this:  http://www.ubuntulinux.org/wiki/FrequentlyAskedQuestions  ->  How can I share my printer on my LAN?   But it doesn't seem to work.
+2005-05-16T05:51:00.000Z,crimsun,occy,"'lo, we keep missing each other. Sorry, don't have one off the top of my head."
+2005-05-16T05:52:00.000Z,occy,crimsun,howdy.  np bud.  ;)
+2005-05-16T07:39:00.000Z,occy,crimsun,trying to.
+2005-05-16T07:40:00.000Z,occy,crimsun,just trying to get printing to work remotely.
+2005-06-12T05:47:00.000Z,occy,crimsun,:)
+2005-06-12T05:47:00.000Z,crimsun,occy,g'luck
+2005-06-12T05:47:00.000Z,occy,crimsun,:)
+2005-06-12T05:47:00.000Z,occy,crimsun,I'll let you know how it all works out.
+2005-06-12T05:47:00.000Z,crimsun,occy,excellent
+2005-07-27T06:53:00.000Z,crimsun,occy,try killing nautilus (it'll restart)
+2005-07-27T06:53:00.000Z,crimsun,occy,nautilus being naughty?
+2005-07-27T06:53:00.000Z,occy,crimsun,I think so...
+2005-07-27T06:53:00.000Z,occy,crimsun,hey buddy.
+2005-07-27T06:53:00.000Z,occy,crimsun,first 100 mile bike last Saturday!
+2005-07-27T06:53:00.000Z,crimsun,occy,excellent!
+2005-07-27T06:53:00.000Z,occy,crimsun,gearing up for Ironman Florida! w00p
+2005-07-27T06:54:00.000Z,occy,crimsun,"hmmm, killed nautilus"
+2005-07-27T06:54:00.000Z,crimsun,occy,"you don't have some app with /mnt open, do you?"
+2005-07-27T06:55:00.000Z,occy,crimsun,"I did before, not anymore."
+2005-07-27T06:59:00.000Z,occy,crimsun,what is gam_server ?
+2005-07-27T06:59:00.000Z,crimsun,occy,monitors changes to files
+2005-07-27T06:59:00.000Z,occy,crimsun,or how do I restart it?
+2005-07-27T07:01:00.000Z,crimsun,occy,there's an init script in /etc/init.d/
+2005-07-27T07:01:00.000Z,occy,crimsun,root@atomic:/etc/init.d # ls gam*
+2005-07-27T07:04:00.000Z,crimsun,occy,what about /usr/lib/gam* ?
+2005-07-29T16:36:00.000Z,occy,crimsun,any word on when Ubuntu Firefox will be fixed?
+2005-07-29T16:36:00.000Z,crimsun,occy,1.0.x? It's being worked over.
+2005-07-29T16:38:00.000Z,occy,crimsun,why wouldn't they roll back the version to the previous stable (under a differnt version number)
+2005-07-29T16:38:00.000Z,occy,crimsun,that seems like it'd make sense to me.
+2005-07-29T16:51:00.000Z,occy,crimsun,whatcha mean?
+2005-07-29T16:51:00.000Z,crimsun,occy,"eh, it's a 64-bit cpu :)"
+2005-08-07T07:31:00.000Z,occy,crimsun,hey bud... Have you ever heard of an 'IBM think pad like' USB input device?
+2005-08-07T07:31:00.000Z,occy,crimsun,those little nipple thingies...
+2005-08-07T07:31:00.000Z,crimsun,occy,"hey. I have no idea what you're referring to, unfortunately."
+2005-09-16T14:26:00.000Z,occy,crimsun,you about?
+2005-09-16T14:27:00.000Z,crimsun,occy,"yes, but I need to move wifi points"
+2005-09-16T14:27:00.000Z,occy,crimsun,no worries
+2005-09-16T14:27:00.000Z,crimsun,occy,I should be back in ~20 mins
+2005-09-16T14:28:00.000Z,occy,crimsun,yessir
+2005-09-16T15:26:00.000Z,occy,crimsun,"time for dinner now.  I'll be back in a bit.  The question I have is, how can I completely purge my kernel and re-install it.  I need to have my kerenl and firmware stuff all back to the original install state.   (I upgraded my wireless firmware -- http://kerneltrap.org/node/5414  {trying to undo all that})"
+2005-09-17T16:01:00.000Z,crimsun,occy,search for any linux-image* and linux-restricted-modules* packages and purge them
+2005-09-17T16:24:00.000Z,occy,crimsun,occy: search for any linux-image* and linux-restricted-modules* packages and purge them
+2005-09-17T16:25:00.000Z,occy,crimsun,did you happen to see that?  apt-get --purge linux-image`uname -r` linux-restricted-modules`uname -r`
+2005-09-17T16:26:00.000Z,crimsun,occy,dpkg -l linux-image\* linux-restricted-modules\* linux-headers\*|grep ^ii
+2005-09-17T16:27:00.000Z,occy,crimsun,http://pastebin.com/361050
+2005-09-17T16:30:00.000Z,crimsun,occy,keep in mind that purging those packages won't erase the directories into which you've installed additional files
+2005-09-17T16:30:00.000Z,occy,crimsun,I've only done the dpkg -l thingy for now.
+2005-09-17T16:30:00.000Z,occy,crimsun,didn't want to screw up anything.
+2005-09-17T16:30:00.000Z,crimsun,occy,you'd have to manually rm -rf those directories in /lib/modules/
+2005-09-17T16:31:00.000Z,occy,crimsun, so... root@sometimes:/lib/modules/2.6.10-5-386/drivers/net # pwd
+2005-09-17T16:32:00.000Z,crimsun,occy,what dir did those extra kernel modules install into?
+2005-09-17T16:32:00.000Z,occy,crimsun,I'm guessing that was the dir.  :/
+2005-09-17T16:32:00.000Z,occy,crimsun,no way to just purge and then reinstall forcing the original state of things?
+2005-09-17T16:33:00.000Z,occy,crimsun,I was using a default Ubuntu kernel setup just peachy.
+2005-09-17T16:33:00.000Z,crimsun,occy,"change out of that dir, then sudo aptitude purge linux-restricted-modules-$(uname -r) linux-image-$(uname -r)"
+2005-09-17T16:34:00.000Z,crimsun,occy,then sudo rm -rf /lib/modules/$(uname -r)
+2005-09-17T16:35:00.000Z,occy,crimsun,"yess, done"
+2005-09-17T16:35:00.000Z,occy,crimsun,yessir
+2005-09-17T16:36:00.000Z,occy,crimsun,I've completed those commands.
+2005-09-17T16:36:00.000Z,occy,crimsun,was documenting so I can post a mini-howto on my site. ;)
+2005-09-17T16:36:00.000Z,crimsun,occy,then sudo apt-get --reinstall install linux-image-$(uname -r) linux-restricted-modules-$(uname -r) linux-headers-$(uname -r)
+2005-09-17T16:37:00.000Z,occy,crimsun,coolio  doing now
+2005-09-17T16:37:00.000Z,occy,crimsun,I guess I just need to reboot now?
+2005-09-17T16:37:00.000Z,crimsun,occy,yep
+2005-09-17T16:37:00.000Z,occy,crimsun,okies bud.  be back in a bit.
+2005-09-17T16:37:00.000Z,occy,crimsun,thanks tons.
+2005-09-17T16:38:00.000Z,crimsun,occy,yw
+2005-09-17T16:42:00.000Z,occy,crimsun,gonna go make a 'tips and tricks' post on http://occy.net/ about it.
+2005-09-17T16:49:00.000Z,occy,crimsun,http://occy.net/node/142
+2005-09-17T16:50:00.000Z,occy,crimsun,I might want to include Reboot to be complete.
+2005-09-17T16:51:00.000Z,occy,crimsun,thank you again.  I do appreciate all your time and help.
+2005-09-17T06:21:00.000Z,occy,crimsun,scroll down
+2005-09-17T06:19:00.000Z,crimsun,occy,"if Breezy is _that_ broken that a new user has a disastrous experience, then that's a critical issue, and testing will help iron that out before the final release."
+2005-09-17T06:20:00.000Z,occy,crimsun,:/
+2005-09-17T06:20:00.000Z,occy,crimsun,"well, good point but... do we really want to displace advocacy with new users as guinie pigs?"
+2005-09-17T06:21:00.000Z,crimsun,occy,"afaict, it's the ONLY listing under Downloads, which is bad"
+2005-09-17T06:21:00.000Z,occy,crimsun,stable is waaaay down there.
+2005-09-17T06:22:00.000Z,occy,crimsun,watching the Ironman Wisconsin finishers coming in now.
+2005-09-17T06:22:00.000Z,occy,crimsun,freakin' crazy
+2005-09-17T06:23:00.000Z,occy,crimsun,8 weeks till Ironman Florida!
+2005-10-17T13:17:00.000Z,occy,crimsun,:P
+2005-10-18T16:55:00.000Z,occy,crimsun,is breezy out yet?
+2005-10-18T13:40:00.000Z,occy,crimsun,breezy++
+2005-10-18T13:40:00.000Z,crimsun,occy,indeed
+2005-10-18T13:40:00.000Z,occy,crimsun,no issues at all this time.
+2005-10-18T13:40:00.000Z,occy,crimsun,not 1!
+2005-10-18T14:20:00.000Z,occy,crimsun,they nuked the old beep-media-player skin. :(
+2005-10-18T14:20:00.000Z,occy,crimsun,"(heh, and left the old preview in place for it)"
+2005-10-18T14:20:00.000Z,crimsun,occy,I nuked it and didn't update the preview by accident.
+2005-10-18T14:20:00.000Z,occy,crimsun,"grrr, it's YOU I can blame!%@#%#@%"
+2005-10-18T14:21:00.000Z,occy,crimsun,the old theme was inspiration for occy.net !
+2005-10-18T14:21:00.000Z,crimsun,occy,which old theme?
+2005-10-18T14:21:00.000Z,crimsun,occy,the debian one?
+2005-10-18T14:21:00.000Z,occy,crimsun,the old beep-media-player theme.
+2005-10-18T14:21:00.000Z,occy,crimsun,nod
+2005-10-18T14:21:00.000Z,crimsun,occy,it was better to have a Ubuntu-oriented one (requested)
+2005-10-18T14:22:00.000Z,occy,crimsun,I can understand that for default...  do you have a copy of the old one?
+2005-10-18T14:22:00.000Z,crimsun,occy,"it's retrievable from the orig.tar.gz of the Debian tarball, which you'll need to grab from packages.debian.org/beep-media-player"
+2005-10-18T14:23:00.000Z,occy,crimsun,"k, danke"
+2005-10-18T14:27:00.000Z,occy,crimsun,"wow, there's another cool skin in there."
+2005-10-18T14:27:00.000Z,occy,crimsun,I smell a new revision of occy.net coming
+2005-10-18T14:27:00.000Z,crimsun,occy,which?
+2005-10-18T14:28:00.000Z,crimsun,occy,the blue one?
+2005-10-18T14:28:00.000Z,occy,crimsun,sec
+2005-10-18T14:28:00.000Z,occy,crimsun,nod
+2005-10-18T14:28:00.000Z,crimsun,occy,that's non-free
+2005-10-18T14:28:00.000Z,occy,crimsun,the darker blue one
+2005-10-18T14:28:00.000Z,occy,crimsun,really?
+2005-10-18T14:28:00.000Z,crimsun,occy,that's why the Debian tarball ships the Debian skin as the default. Read README.Debian
+2005-10-18T14:29:00.000Z,occy,crimsun,"ahhh, well, I've already been 'inspired' by it."
+2005-10-18T14:29:00.000Z,crimsun,occy,whatever works :-)
+2005-10-18T14:29:00.000Z,occy,crimsun,I can't unsee a thing.
+2005-10-22T05:36:00.000Z,occy,crimsun,"howdy, got anything on sharing printers easily?"
+2005-10-22T05:36:00.000Z,crimsun,occy,"I don't, sorry. The wiki and mailing list archives?"
+2005-10-22T05:48:00.000Z,crimsun,occy,"if you like theming, you should check out bmpx 0.12RC11"
+2005-10-22T05:48:00.000Z,occy,crimsun,yeah?
+2005-10-22T05:48:00.000Z,occy,crimsun,where can I get it?
+2005-10-22T05:49:00.000Z,crimsun,occy,http://bmpx.berlios.de
+2005-10-22T05:49:00.000Z,occy,crimsun,"since we don't have a printing network thing, think you might add this url as a network printing thing for ubotu?  http://occy.net/printing"
+2005-10-22T05:49:00.000Z,occy,crimsun,I ain't touching ubotu though.  Seveas has me scared.
+2005-10-22T05:49:00.000Z,crimsun,occy,slap it onto the bot.
+2005-10-22T05:50:00.000Z,occy,crimsun,it'd be nice to get that onto the wikie
+2005-10-22T05:50:00.000Z,occy,crimsun,I'll try and do that
+2005-10-22T05:50:00.000Z,crimsun,occy,then log in and put it on the wiki :-)
+2005-10-22T05:50:00.000Z,occy,crimsun,:P~
+2005-11-01T13:02:00.000Z,occy,crimsun,heh
+2005-11-01T13:02:00.000Z,occy,crimsun,9 days to IMFL
+2005-11-01T13:02:00.000Z,crimsun,occy,nice
+2005-11-02T13:54:00.000Z,occy,crimsun,:)
+2005-11-02T13:54:00.000Z,occy,crimsun,what I wrote for cribbon up above.
+2005-11-02T13:55:00.000Z,crimsun,occy,"yes, it's compiled as a module"
+2005-11-02T13:55:00.000Z,occy,crimsun,so I probably don't want to remove it.
+2005-11-02T13:57:00.000Z,crimsun,occy,"if you're using sshfs, no you wouldn't want to"
+2005-11-02T13:58:00.000Z,occy,crimsun,I am getting rid of sshfs  it didn't work.
+2005-11-02T13:58:00.000Z,occy,crimsun,so I'm trying to purge unecessary cruft from my system.
+2005-11-02T13:58:00.000Z,crimsun,occy,sshfs worked fine when I used it
+2005-11-02T13:58:00.000Z,occy,crimsun,wanted to make sure that the fuse-utils wasn't something that came with ubuntu by default
+2005-11-02T13:59:00.000Z,occy,crimsun,didn't work for me[tm]     :(
+2005-11-02T14:01:00.000Z,crimsun,occy,"sorry to hear that, got any diagnostics?"
+2005-11-02T14:01:00.000Z,occy,crimsun,pm
+2005-11-02T14:01:00.000Z,crimsun,occy,"sec, being bombarded..."
+2005-11-02T14:03:00.000Z,occy,crimsun,hahaha
+2005-11-02T14:03:00.000Z,occy,crimsun,;)
+2005-11-02T14:10:00.000Z,occy,crimsun,http://pastebin.com/409230
+2005-11-02T14:15:00.000Z,occy,crimsun,help!
+2005-11-02T14:47:00.000Z,crimsun,occy,sec
+2005-11-10T07:04:00.000Z,occy,crimsun,you here?
+2005-11-19T07:51:00.000Z,occy,crimsun,I am an Ironman!   http://occy.net/ironman
+2005-11-19T07:51:00.000Z,crimsun,occy,congrats!
+2005-11-19T07:51:00.000Z,occy,crimsun,it was a super fun day.
+2005-11-19T07:51:00.000Z,occy,crimsun,14:09:18
+2005-11-19T07:52:00.000Z,crimsun,occy,"ooh, excellent"
+2005-11-19T07:52:00.000Z,occy,crimsun,and I wasn't very tired at the end.
+2005-11-19T07:53:00.000Z,occy,crimsun,think it could be my gtk theme?
+2005-11-19T07:53:00.000Z,crimsun,occy,"hmm, but then it would be manifest across all gtk apps"
+2005-11-19T07:53:00.000Z,occy,crimsun,I never had problems with it under Hoary though.
+2005-11-19T07:53:00.000Z,crimsun,occy,can you reproduce the instability with a new user?
+2005-11-19T07:54:00.000Z,occy,crimsun,"interesting point, I did copy over my preferences"
+2005-11-19T07:54:00.000Z,occy,crimsun,"meaning, I used the old ~"
+2005-11-19T07:55:00.000Z,occy,crimsun,"so you are saying, try and operate as another user, see if I have any problems, if I don't then, it's probably my prefs config files."
+2005-11-20T09:54:00.000Z,occy,crimsun,Since nuking my prefs things seem stable with Firefox.
+2005-11-20T14:39:00.000Z,crimsun,occy,good to hear
+2005-12-07T09:17:00.000Z,occy,crimsun,hey... is there a default char limit on the topic of a channel?
+2005-12-07T14:37:00.000Z,crimsun,occy,bad occy. You should not be using that ff deb.
+2005-12-07T14:38:00.000Z,occy,crimsun,it's not a deb
+2005-12-07T14:38:00.000Z,crimsun,occy,from the offical site?
+2005-12-07T14:38:00.000Z,occy,crimsun,"heh, it's the tarball"
+2005-12-07T14:38:00.000Z,crimsun,occy,"oh no, even worse"
+2005-12-07T14:38:00.000Z,occy,crimsun,that's the official tarball
+2005-12-07T14:38:00.000Z,occy,crimsun,"well, I just downloaded it"
+2005-12-07T14:38:00.000Z,occy,crimsun,so Ubuntu people are SOL for FF 1.5 ?
+2005-12-07T14:39:00.000Z,crimsun,occy,"absolutely, until Ian finishes the proper packaging."
+2005-12-07T14:39:00.000Z,occy,crimsun,topic says 1.5 won't be in until April when Dapper is released.
+2005-12-07T14:41:00.000Z,occy,crimsun,"so the bottom line is, 'Wait until April for Dapper Drake to get FF 1.5+?'"
+2005-12-07T14:41:00.000Z,crimsun,occy,"no. When it enters Dapper, it'll be backported to Breezy."
+2005-12-07T14:42:00.000Z,crimsun,occy,"i.e., breezy-backports"
+2005-12-07T14:42:00.000Z,occy,crimsun,I thought backports were bad?  I'm so confused.
+2005-12-07T14:42:00.000Z,crimsun,occy,unofficial backports are questionable at best.
+2005-12-07T14:42:00.000Z,crimsun,occy,the ones in the -backports repositories hosted on archive.ubuntu.com are fine
+2005-12-08T08:04:00.000Z,occy,crimsun,"btw, after nuking my personal prefs, it didn't seem to help, as FF started back crashing again not too long afterwards."
+2005-12-13T14:20:00.000Z,occy,crimsun,grrr
+2005-12-13T14:20:00.000Z,occy,crimsun,I nukd all my prefs too
+2005-12-13T14:20:00.000Z,occy,crimsun,so that can't be it
+2005-12-13T14:21:00.000Z,occy,crimsun,hey btw. :)
+2005-12-13T14:21:00.000Z,crimsun,occy,hi
+2005-12-13T14:21:00.000Z,occy,crimsun,it really sucks when I'm trying to get work done and stuff just keeps crashing on me for no reason. :(
+2005-12-13T14:22:00.000Z,occy,crimsun,I'm getting close to just nuking it and trying to use another distro till Dapper comes out.
+2005-12-13T14:22:00.000Z,crimsun,occy,you could also be insane and run Dapper like those of us who are insane.
+2005-12-13T14:22:00.000Z,occy,crimsun,hehe
+2005-12-13T14:22:00.000Z,occy,crimsun,"true, it'd probably be no less stable than my setup now."
+2005-12-13T14:23:00.000Z,occy,crimsun,good to always see you :)
+2005-12-13T14:23:00.000Z,crimsun,occy,ditto
+2005-12-13T14:28:00.000Z,crimsun,occy,"haven't had any here, but I don't use any extensions"
+2005-12-13T14:29:00.000Z,occy,crimsun,hmmm
+2005-12-13T14:29:00.000Z,occy,crimsun,I wonder... maybe it's the stupid web developer plugin
+2005-12-28T08:00:00.000Z,occy,crimsun,heyaz
+2005-12-28T08:00:00.000Z,crimsun,occy,h.
+2005-12-28T08:00:00.000Z,occy,crimsun,things finally seem somewhat stable
+2005-12-28T08:00:00.000Z,occy,crimsun,back on gnome.  heh.
+2005-12-28T08:01:00.000Z,occy,crimsun,"what I did was, I went into synaptic, and nuked all my entries to my sources.list,  and then added each of the binary options and checked all of the available solutions.  then upgraded and things are stable now."
+2005-12-28T08:02:00.000Z,occy,crimsun,I bet you there are a lot of people who would do what I didn't do.
+2005-12-28T08:02:00.000Z,crimsun,occy,sounds good.
+2005-12-28T08:03:00.000Z,occy,crimsun,"things got so bad, I nuked my sytem, tried gentoo, tried Suse 10.0, and tried kubuntu.  got fed up and came back to ubuntu and gnome,  figured I'd stick with the bugginess.  But, then I figured that out.  Things have been rock solid for like 4 days."
+2005-12-28T08:04:00.000Z,occy,crimsun,"anyway, I know you don't lay awake at night worrying about whether or not I am having problems but thought I'd share my thoughts with you. ;)"
+2005-12-28T08:05:00.000Z,crimsun,occy,glad to read they've been resolved (fingers crossed)
+2005-12-31T10:11:00.000Z,occy,crimsun,"howdy, you know how to do the set-selections and get-selections stuff?  I was able to do:  dpkg --get-selections > pkg.txt"
+2005-12-31T10:11:00.000Z,occy,crimsun,do I do this in reverse:  dpkg --set-selections < pkg.txt
+2005-12-31T10:12:00.000Z,crimsun,occy,it's read from stdin. cat and pipe.
+2005-12-31T10:12:00.000Z,occy,crimsun,for the non-programmer that means?
+2005-12-31T10:12:00.000Z,occy,crimsun,:)
+2005-12-31T10:13:00.000Z,crimsun,occy,cat foo|dpkg [..] 
+2005-12-31T10:13:00.000Z,occy,crimsun,ahhhh
+2005-12-31T10:19:00.000Z,crimsun,occy,"you know about debian-administration.org, correct?"
+2005-12-31T10:22:00.000Z,occy,crimsun,what's this?
+2005-12-31T10:22:00.000Z,occy,crimsun,I'll check it out.
+2005-12-31T10:22:00.000Z,occy,crimsun,tx ;)
+2006-04-01T07:24:00.000Z,occy,crimsun,"heyaz, ltns :)"
+2006-04-01T07:24:00.000Z,occy,crimsun,I'm going over to the dark side... Got an iMac...
+2006-04-01T07:24:00.000Z,crimsun,occy,slick
