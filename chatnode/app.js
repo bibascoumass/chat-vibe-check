@@ -49,6 +49,7 @@ app.post('/upload', upload.single('chat'), async (req, res) => {
                     const time = timestamp.toLocaleTimeString(); 
 
                     const sender = row.from;
+                    const receiver = row.to;
                     const message = row.text;
                     const sentimentScore = sentiment.analyze(message).score;
 
@@ -59,6 +60,7 @@ app.post('/upload', upload.single('chat'), async (req, res) => {
                         date,
                         time,
                         sender,
+                        receiver,
                         message,
                         sentiment: sentimentScore,
                         timestamp,
@@ -87,3 +89,4 @@ app.get('/api/plots', (req, res) => {
 app.listen(port, () => {
     console.log(`🚀 Server running at http://localhost:${port}`);
 });
+
