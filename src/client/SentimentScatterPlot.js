@@ -173,6 +173,10 @@ function SentimentScatterPlot() {
     const [filteredData, setFilteredData] = useState([]);
     const [selectedTopic, setSelectedTopic] = useState('All');
     const [allTopics, setAllTopics] = useState(['All']); // Dynamic topic list
+  
+  // New conversation filter state.
+  const [selectedConversation, setSelectedConversation] = useState('All');
+  const [conversationList, setConversationList] = useState(['All']);
 
     const timestampRef = useRef();
     const responseTimeRef = useRef();
@@ -232,7 +236,9 @@ function SentimentScatterPlot() {
                     timestamp: new Date(d.timestamp),
                     sentiment: +d.sentiment,
                     responseTime: +d.responseTime,
-                    topic: assignTopic(d.message)
+          topic: assignTopic(d.message),
+          // Use existing conversation property if available, or set to "Default".
+          conversation: d.conversation || "Default"
                 }));
 
                 setData(parsed);
@@ -240,6 +246,13 @@ function SentimentScatterPlot() {
 
                 const uniqueTopics = Array.from(new Set(parsed.map(d => d.topic))).sort();
                 setAllTopics(['All', ...uniqueTopics]);
+
+        // Build conversation dropdown list.
+        const uniqueConversations = Array.from(new Set(parsed.map(d => d.conversation))).sort();
+        setConversationList(['All', ...uniqueConversations]);
+
+        // Set initial filtered data.
+        setFilteredData(parsed);
             } catch (err) {
                 console.error("Error fetching data:", err);
             }
@@ -249,12 +262,16 @@ function SentimentScatterPlot() {
     }, []);
 
     useEffect(() => {
-        if (selectedTopic === "All") {
-            setFilteredData(data);
-        } else {
-            setFilteredData(data.filter(d => d.topic === selectedTopic));
+    let filtered = data;
+    
+    if (selectedTopic !== "All") {
+      filtered = filtered.filter(d => d.topic === selectedTopic);
+    }
+    if (selectedConversation !== "All") {
+      filtered = filtered.filter(d => d.conversation === selectedConversation);
         }
-    }, [selectedTopic, data]);
+    setFilteredData(filtered);
+  }, [selectedTopic, selectedConversation, data]);
 
     const drawChart = (ref, xKey, xLabel) => {
         if (filteredData.length === 0) return;
@@ -274,7 +291,8 @@ function SentimentScatterPlot() {
         const innerWidth = width - margin.left - margin.right;
         const innerHeight = height - margin.top - margin.bottom;
 
-        const g = svg.append("g").attr("transform", `translate(${margin.left}, ${margin.top})`);
+    const g = svg.append("g")
+      .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
         const x = xKey === 'timestamp'
             ? d3.scaleTime().domain(d3.extent(filteredData, d => d[xKey])).range([0, innerWidth])
@@ -347,7 +365,8 @@ function SentimentScatterPlot() {
             .attr("transform", `translate(${width - margin.right + 10}, ${margin.top})`);
 
         users.forEach((user, i) => {
-            const row = legend.append("g").attr("transform", `translate(0, ${i * 25})`);
+      const row = legend.append("g")
+        .attr("transform", `translate(0, ${i * 25})`);
 
             row.append("rect")
                 .attr("width", 18)
@@ -370,7 +389,8 @@ function SentimentScatterPlot() {
 
     return (
         <div style={{ marginTop: "50px" }}>
-            <div style={{ marginBottom: "20px", marginLeft: "20px" }}>
+      {/* Dropdown to select Topic */}
+      <div style={{ marginBottom: "10px", marginLeft: "20px" }}>
                 <label style={{ marginRight: "10px" }}>Filter by Topic:</label>
                 <select value={selectedTopic} onChange={(e) => setSelectedTopic(e.target.value)}>
                     {allTopics.map(topic => (
@@ -378,6 +398,17 @@ function SentimentScatterPlot() {
                     ))}
                 </select>
             </div>
+      
+      {/* Dropdown to select Conversation */}
+      <div style={{ marginBottom: "20px", marginLeft: "20px" }}>
+        <label style={{ marginRight: "10px" }}>Filter by Conversation:</label>
+        <select value={selectedConversation} onChange={(e) => setSelectedConversation(e.target.value)}>
+          {conversationList.map(conv => (
+            <option key={conv} value={conv}>{conv}</option>
+          ))}
+        </select>
+      </div>
+
             <div className='scatter-container'>
                 <svg ref={timestampRef} width={1000} height={500}></svg>
             </div>
