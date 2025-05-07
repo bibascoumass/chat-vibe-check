@@ -348,7 +348,8 @@ function SentimentScatterPlot() {
                 tooltip.transition().duration(200).style("opacity", 1);
                 tooltip.html(`<strong>Sender:</strong> ${d.sender}<br/>
                               <strong>Sentiment:</strong> ${d.sentiment}<br/>
-                              <strong>${xLabel}:</strong> ${xKey === 'timestamp' ? d.timestamp.toLocaleString() : d.responseTime + "s"}`)
+                              <strong>${xLabel}:</strong> ${xKey === 'timestamp' ? d.timestamp.toLocaleString() : d.responseTime + "s"}<br/>
+                              <strong>Message:</strong> ${d.message}`)
                     .style("left", `${event.pageX + 10}px`)
                     .style("top", `${event.pageY - 28}px`);
             })
