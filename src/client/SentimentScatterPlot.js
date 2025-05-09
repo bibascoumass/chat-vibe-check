@@ -188,7 +188,7 @@ function SentimentScatterPlot() {
         if (lower.includes("meeting") || lower.includes("event") || lower.includes("work") || lower.includes("project") || lower.includes("task") || lower.includes("office")) return "Work";
         if (lower.includes("happy") || lower.includes("sad") || lower.includes("excited") || lower.includes("angry") || lower.includes("upset") || lower.includes("joy")) return "Emotion";
         if (lower.includes("deadline") || lower.includes("assignment") || lower.includes("workload") || lower.includes("job")) return "Task";
-        if (lower.includes("how") || lower.includes("what") || lower.includes("why") || lower.includes("where") || lower.includes("when") || lower.includes("which")) return "Question";
+        if (lower.includes("how") || lower.includes("what") || lower.includes("why") || lower.includes("where") || lower.includes("when") || lower.includes("which") || lower.includes("?")) return "Question";
         if (lower.includes("please") || lower.includes("help") || lower.includes("assist") || lower.includes("support") || lower.includes("need") || lower.includes("want")) return "Request";
         if (lower.includes("time") || lower.includes("schedule") || lower.includes("hours") || lower.includes("clock") || lower.includes("date")) return "Time";
         if (lower.includes("location") || lower.includes("place") || lower.includes("address") || lower.includes("city") || lower.includes("country")) return "Location";
