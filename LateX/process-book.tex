@@ -6,68 +6,66 @@
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}
 
-\title{\textbf{Chat Vibe Check: Project Proposal}}
+\title{\textbf{Chat Vibe Check: Process Book}}
 \begin{document}
 \maketitle
 
 \section{Project Metadata}
 \begin{itemize}
     \item \textbf{Project Title:} Chat Vibe Check
-    \item \textbf{Team Members Name:} 
+    \item \textbf{Team Members:} 
     \begin{itemize}
         \item Deepa Rukmini Mahalingappa (34040788, drukminimaha@umass.edu)
         \item Benjamin Ibasco (28561432, bibasco@umass.edu)
         \item Javin Mendiratta (33328658, jmendiratta@umass.edu)
     \end{itemize}
    
-    \item \textbf{Project Repository:} \href{https://github.com/bibascoumass/chat-vibe-check}{GitHub Repository Link}
+    \item \textbf{Project Repository:} \href{https://github.com/bibascoumass/chat-vibe-check}{Link}
 \end{itemize}
 
-\section*{Overview and Motivation}
-Everyone chats. Everyone texts. But we don't all text the same- and the way we text can tell us a lot not only about ourselves, but also the people with whom we converse. Current chat visualization tools focus on the quantitative- how often you text, what times you text most often, who you text the most, and so on. But texting, and conversation in general, is inherently emotional and qualitative in nature. We wanted to design and create a platform that can analyze not only the quantitative, but also the qualitative. More specifically, our motivation is to build a website that can not only provide information on your chat/texting specifics, but also provide deeper insight into your interpersonal relationships and various sentiments across conversations. To give our analysis a focus and structure, we wanted to analyze chats based on the principles defined by modern psychological frameworks, such as attachment style and behavioral analysis.
-\\\\
-Some more specific goals include:
+\section{Overview and Motivation}
+In the current technical climate, everyone is messaging everyone. The messages we send and receive can have everlasting impacts on our social, personal, and even professional life. We believe it is very important to understand the intricacies of text conversations with others. As we explore the various metrics of these messages, it becomes important to interpret associated behavioral patterns, insights, and attachment styles to facilitate personal and interpersonal growth and communication. Most modern chat visualization tools primarily provide visualizations on simple metrics such as popular word counts, and message counts over time. In reality, however, there are many intricacies when it comes to trying to break down what may seem like a simple conversation. Response times, sentiment, and the overall flow of conversation can help with understanding hidden nuances in interpersonal relationships, and even hidden facets of our own personalities. As such, we aim to create a tool that can begin bridging that gap- to approach these messages from a more psychological perspective- analyzing not just what you're saying, but what you mean. We are complex beings, and we hope this creation of ours can help, even just a little bit, in better understanding ourselves.
+
+\section{Related Work}
+We were inspired by looking at our own lives. We all have many different messaging apps with various people and personalities. Even our group chat for this project falls under this purview! Additionally, while looking into articles such as \href{https://www.businessinsider.com/chatgpt-analyze-chat-history-between-girlfriend-boyfriend-2025-3}{I asked Chat-GPT to analyze my texts}, and \href{https://www.youtube.com/watch?v=PROIhoYPaXM}{What does your chat history reveal about you?}, we saw that this conundrum was something on the minds of many people. With the advent of social media, we wanted to be able to contribute towards answering this complex, intricate ask with our own understandings from class lectures on using visualizations to communicate information and understandings to others.
+
+
+\section{Questions}
+Our project initially focused on answering the following questions:
 \begin{itemize}
-    \item Comparing overall sentiment in a conversation (group and individual) over various time periods
-    \item Analyzing sentiments expressed across various conversation topics to provide insight into individual/group perspectives 
-    \item Displaying response times at various points in the day and for different topics
-    \item Estimating behavioral tendencies and attachment style of chat members using the aforementioned metrics
+  \item \textbf{What about conversations can we analyze} that may indicate what a person's attachment style is? 
+  \item \textbf{How do sentiments change based on time}? 
+  \item \textbf{How have response times changed over time?} 
+  \item What is each user's estimated attachment style? 
 \end{itemize}
-
-\section*{Related Work}
-The main inspiration of the project mainly came from the fact that there is growing empirical evidence that arranged marriages are scoring better on metrics like satisfaction and divorce rates compared to traditional marriages (\href{https://www.psychologytoday.com/us/blog/the-science-behind-behavior/201511/why-are-so-many-indian-arranged-marriages-successful}{PyschologyToday.com article}). At the time, we were interested in exploring the reasons why and quickly realized this would be a challenging goal . We then explored narrowing the scope but staying on the theme of understanding relationships and was inspired by personal chat visualizations done by users analyzing trends in their relationship (\href{https://github.com/bibascoumass/chat-vibe-check}{Example from Reddit}). From the examples we noticed the visualizations or insights were very surface level and thought that there might be use for a tool that tried to explore more meaningful behavioral patterns from the chat data. To get a better direction on how or what we would try to observe from the chat data, we decided to base our analysis around an actual psychological framework and we chose Attachment Theory for this.  
-
-\section*{Questions}
-The main question we're trying to answer is what behavioral patterns can we observe from chat message interactions between people two get a better understanding of their attachment styles? As we explored this idea, we focused on two key derived attributes: Sentiment and engagement. From this realization we focused on having our visualizations answer the following questions:
+After working on the project, we were able to answer and expand upon the first three questions:
 \begin{itemize}
-    \item How does the sentiment of my conversation evolve over time?
-    \item Are there certain conversation topics that are intensly positve or negative? 
-    \item Are there periods of time or topics in my conversation when a person is less responsive than usual or tries to avoid or change the topic? 
+  \item \textbf{What about conversations can we analyze?}- We focused on analyzing the sentiment and response times. As we worked on this question, we also game across the question of \textbf{How large of conversations can we analyze, and how many people can be in these conversations?}
+  \item \textbf{How do sentiments change based on time?} We realized that another key aspect to consider is the topic of conversations, adding the question of \textbf{How do sentiments change based on the topic of conversation?} 
+  \item \textbf{How have response times changed over time?} Similar to the previous, we also begun to ask \textbf{How do response-times} (or more specifically, sparsity of active conversation) \textbf{change based on the topic of conversation?} 
+  \item What is each user's estimated attachment style? 
 \end{itemize}
+Unfortunately, we did not truly get to solidly answering the fourth question. We learned that \textbf{Analyzing an attachment style is extremely complex}- we did not have the time nor capabilities to do so with realistic accuracy in our provided time-frame. While shallow analysis is possible by viewing our presented graphics, we could not devise an algorithm that could take in the data or analyzed metrics and yield and "attachment style".
 
-\section*{Data}
-To prototype the data pre-processing and ingestion implementations, we decided to just work with our own Whatsapp group chat data as we just needed to work with the data format for the messaging platform we wanted to support. 
-\\\\ To prototype the visualizations, it was difficult to find a WhatsApp chat dataset in English so we settled on using a dataset from Kaggle of over one million two-person chat logs related to Ubuntu technical support: https://www.kaggle.com/datasets/rtatman/ubuntu-dialogue-corpus/data . At this early stage, there hasn't been a need to do any pre-processing on this dataset. 
-\\\\ The following datasets were also considered:
-\begin{itemize}
-    \item \href{https://github.com/dhfbk/WhatsApp-Dataset}{Movie Dialogue Corpus} - Initially chosen as a backup in the worst case scenario wherein we couldn't find two person conversation chat data in English. 
-    \item The following WhatsApp chat datasets were considered and although there are analysis libararies that support multiple languages (e.g. multilang-sentiment) we ultimately avoided these as we wouldn't be able to compare the results of our analysis to what we thought the data was actually expressing. 
-    \begin{itemize}
-        \item \href{https://www.kaggle.com/datasets/Cornell-University/movie-dialog-corpus/data}{WhatsApp Chat used for studying cyberbullying in Italy}
-        \item \href{https://www.kaggle.com/datasets/mmuhammetcavus/whatsapp-chat/data}{WhatsApp Group Chat in Hindi}
-    \end{itemize}
-\end{itemize}
 
-\section*{Exploratory Data Analysis}
-\begin{itemize}
-    \item \textbf{Download:} We'll need to make sure that our website references instructions on how to download the data from our supported platforms.
-    \item \textbf{Cleanup:} We'll need to ingest data from multiple formats and store it such that we can at least query for the message itself and the following metadata: sender, receiver, send time, seen time (this may not be available on all platforms).
-    \item \textbf{Quantities:} The quantities we expect to derive from the data are sentiment, response time, engagement, and conflict resolution metrics relative to topics and time.
-    \item \textbf{Analysis:} We've decided for now that we'll keep the scope simple in the beginning and only focus on text messages and emojis. Video, audio, GIFs, and images will be ignored in the onset.
-\end{itemize}
+\section{Data}
+We were unfortunately not able to get any users to volunteer to share their own data which was understandable. In retrospect, we realize basing the project primarily on static data should've been the focus as we realize that a working prototype of the visualizations would've been the bare minimum requirement needed to get users interested or comfortable to share their data and so really the upload should've been a goal in the next phase of this project if it were to continue.\newline
+
+So we pivoted to relying on static data and settled on a dataset of over one million two-person chat logs related to Ubuntu technical support (\href{https://www.kaggle.com/datasets/rtatman/ubuntu-dialogue-corpus/data}{Kaggle URL for Ubuntu Dialogue Corpus}). We chose this dataset because the conversations were one-on-one only, the longest conversations had a lot of data (over ~1K messages), and it was really the only chat based dataset we could find in English as all other chat based datasets we found were in different languages. 
+
+\section{Data Processing}
+The chat conversation data is over 2.7Gb and composed of over 26 million messages split across 3 CSV files. We had issues implementing data handling to ingest all of the data so we the only pre-processing we did was to extracting the 50 longest conversations into their own CSV files using a Python script which amounted to over 38 thousand messages and 4.1Mb. \newline
+
+We primarily used two derived attributes for our visualizations, sentiment score and response time. Sentiment score for a message was the average sentiment score for all the words in the message which was measured using the Sentiment Node.js module which uses AFINN-165 wordlist and the Emoji Sentiment Ranking to perform sentiment analysis. Response time for each message was simply getting the time elapsed since the last message from the other user. 
+\newline
+
+Finally in retrospect, as we worked on this project we realized that we should've ensured that our visualization do not entirely rely on derived data and that we could've made it easier for ourselves to find a dataset that already had some of the data we were trying to visualize. We realized that trying to dynamically measure and then visualize derived attributes like sentiment and engagement ate time away from experimenting with visualizing the data in different ways.     
+
+\section{Visualization Design}
 
 \section*{Design Evolution}
 The project aimed to extract and visualize emotional patterns from chat data in a way that is easy to interpret, interactive, and actionable. Our design evolved significantly from the initial proposal as we explored more effective ways to represent time-based and user-based sentiment trends.
+
 
 \begin{itemize}
     \item \textbf{Initial Visualizations Considered:}
@@ -176,38 +174,25 @@ Before any of the views can be made, the user must upload their chat log to the 
     \item \includegraphics[width=10cm]{./Latex Images/Chat log ss.png}
 \end{itemize}
 
-\section*{Optional Features}
-\begin{itemize}
-    \item Message Grouping: We’ll need to decide if we’ll try to group messages together as part of the same conversation.
-        \begin{itemize}
-            \item We can base this off two criteria: topic and time. Starting with time-based grouping and then later by topic if time permitting.
-        \end{itemize}
-    \item Conflict Resolution Snakey Diagram: Depicting the flow of conversation state transitions from neutral to conflict to resolution.
-    \item Give an attachment style assessment with a confidence score.
-    \item Show each user's perceived attachment style over time.
-    \item Show patterns of behavior based on sentiment and attachment style analysis relative to time and topics.
-\end{itemize}
-(Note: We’ve decided to make visualizations that try to use a derived attachment style metric optional, as we currently have no guarantee if the derived attributes conclusively determine attachment style.)
 
-\section*{Security}
+\section{Evaluation}
+We learned many things, and learned that we do not know many things, in the process of constructing our visualizations. When it comes to our research questions, we answered them using three visualizations:
 \begin{itemize}
-    \item Client-side processing such that our data consists only of the messages, the timestamps and a generic username assigned like "User A" or "User B".
-    \item Use our chosen hosting platform's (like Heroku) built-in HTTPS.
-    \item Then we always want to delete the data once the user who has uploaded ends their session, so we're planning on using an in-memory datastore (like Redis) configured with TLS and disable any of its features that write the data to disk (like backups). This way we avoid needing to encrypt data on disk.
-\end{itemize}
-
-\section*{Tech Stack}
-\begin{itemize}
-    \item Front End: React, D3, Modal overlay library (react-modal?)
-    \item Back End: Node.js + Express.js (Express for data ingestion REST APIs), Redis, some NLP library
-    \item Deployment: Heroku, GitHub
-\end{itemize}
-
-\section*{Evaluation}
-\begin{itemize}
-    \item For such a project that asks users to require them to upload potentially sensitive data, the tool for sanitizing and removing that data needs to be within their control and trust. This was the main reason why we weren't able to initially get data from real people within our networks. 
-    \item We still need to fix how we're identifying topics as the current implementation is finding it hard to identify specific topics in the content and just labeling a lot of data as "Other"
-    \item Admittedly, we may have spent too much time expirmenting with applying the visualizations even in group settings and trying to group messages by topic/conversation so we still need to finetune the scatter plot visualization as well in terms of scoping the data to specific conversations to have more meaningful insights. 
+    \item Sentiment Heatmap: 
+    \begin{itemize}
+        \item We designed a sentiment heatmap that displays the sentiments associated with topic. This aimed to answer our \textbf{How do sentiments change based on topic of conversation?} and \textbf{How do response-times change over time based on the topic of conversation?} questions. We learned that many topics, when looking at their average sentiment, were actually more negative or neutral in nature. We believe that this may have been in part due to the way in which we split our topics, and also due to the data itself. We noticed that topics such as food and emoticons had a much higher average sentiment, as those are things usually associated with relaxation and positive experiences. On the other hand, topics such as Education and Tech Support has much more negative sentiment, likely due to the fact that messages on those topics typically deal with frustrations and troubles. Finally, we noticed that topics that fell under Requests were the most positive- politeness when asking for help is part of common decency, and this seems to reflect in our data- our group chatters were quite polite.
+        \item Our visualization does have some limitations and imperfections. Our heatmap has a limited number of hard-coded topics that we try to assign to the messages. We attempted to use ML to do topic-matching and text analysis, but were unable to get desirable results. Our time scatterplot is but finicky with display and get extremely crowded if a high-volume element is displayed.   
+    \end{itemize}
+    \item Scatterplot of Sentiment over Time:
+    \begin{itemize}
+        \item We created two scatterplot that display the sentiments and response-times of messages over time. The data displayed can be filtered based on topic and conversation. This aimed to answer our \textbf{How do sentiments change based on time?} and \textbf{How do response-times change over time?} questions. Our data provided a lot of insight on how certain topics had more or less responses, and how some of the conversations (when filtered), showed a different spread of sentiment and response-time, leading to us finding different correlations between the two dependent metrics. For example, longer response-times usually meant that there was a lower neutral sentiment associated with the message, as either the responder was upset or disinterested in the conversation, leading to the larger lag in response. 
+        \item Our scatterplot limitations primarily fall under the limits of our data itself. As previously mentioned, we did not implement the most effect topic-analysis into our code, and our data could have been larger in size to provide for variety and thus more insight. However, we believe our scatter-plots are a great proof-of-concept towards our ultimate vision regarding this project.
+    \end{itemize}
+    \item Conversation Log:
+    \begin{itemize}
+        \item This was a much simpler visualization that simply displays the chat logs used for the visualization as a scroll-able text format, along with the ability to see the "longest conversation", something we were interested in when approaching the \textbf{How large of conversations can we analyze, and how many people can be in these conversations?} question. 
+        \item The main limitation with this visualization is the inability to filter or search through the display logs, making it difficult to actually gain any insight just by looking at it (besides the longest conversation). This is something we wanted to implement, but did not prioritize as it was not the main focus of our website.
+    \end{itemize}
 \end{itemize}
 
 
