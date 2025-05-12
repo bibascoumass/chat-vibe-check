@@ -64,7 +64,7 @@ function SentimentAnalyser() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(config.apiPlotsEndpoint);
+                const response = await fetch(process.env.PUBLIC_URL+ '/messages.json');
                 const result = await response.json();
                 setMessages(result);
                 findLongestConversation(result);

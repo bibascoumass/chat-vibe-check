@@ -228,7 +228,7 @@ function SentimentScatterPlot() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch("http://localhost:5001/api/plots");
+                const res = await fetch(process.env.PUBLIC_URL+ '/messages.json');
                 const json = await res.json();
 
                 const parsed = json.map(d => ({

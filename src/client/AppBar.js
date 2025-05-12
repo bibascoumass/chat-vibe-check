@@ -9,9 +9,9 @@ function AppBar() {
       <span className="appName">Chat Vibe Analyser</span>
       </div>
       <nav className="navMenu">
-        <button onClick={() => window.location.href = "/heatmap"}>📊 HeatMap</button>
-        <button onClick={() => window.location.href = "/scatterplots"}>📊 ScatterPlot</button>
-        <button onClick={() => window.location.href = "/sentiment_analyser"}>📈 Sentiment Analyzer</button>
+        <button onClick={() => window.location.href = "#/heatmap"}>📊 HeatMap</button>
+        <button onClick={() => window.location.href = "#/scatterplots"}>📊 ScatterPlot</button>
+        <button onClick={() => window.location.href = "#/sentiment_analyser"}>📈 Sentiment Analyzer</button>
       </nav>
     </header>
   );

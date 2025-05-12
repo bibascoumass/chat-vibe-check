@@ -4,7 +4,7 @@ import './client/assets/index.css';
 import Dashboard from './client/App';
 import reportWebVitals from './client/reportWebVitals';
 import SentimentHeatmap from './client/SentimentHeatmap';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import AppBar from './client/AppBar';
 import SentimentAnalyser from './client/SentimentAnalyser';
 import SentimentScatterPlot from './client/SentimentScatterPlot';
@@ -14,7 +14,7 @@ export default config;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <AppBar />
       <Routes>
         {/* <Route exact path="/" element={<Dashboard />} /> */}
@@ -23,7 +23,7 @@ root.render(
         <Route path="/scatterplots" element={<SentimentScatterPlot />} />
         <Route path="/sentiment_analyser" element={<SentimentAnalyser />} />
       </Routes> 
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 

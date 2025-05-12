@@ -292,7 +292,7 @@ function SentimentHeatmap() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5001/api/plots');
+        const response = await fetch(process.env.PUBLIC_URL+ '/messages.json');
         const result = await response.json();
 
         const enriched = result.map(d => ({
