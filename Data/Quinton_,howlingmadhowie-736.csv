@@ -1,0 +1,737 @@
+date,from,to,text
+2007-07-26T16:16:00.000Z,Quinton_,howlingmadhowie,howlingmadhowie: if thats what sony says
+2007-07-26T16:09:00.000Z,howlingmadhowie,Quinton_,"what tells you to enter a command? does some sort of graphical interface start, or does it look like an old dos window?"
+2007-07-26T16:10:00.000Z,howlingmadhowie,Quinton_,please don't use <enter> for punctuation :)
+2007-07-26T16:12:00.000Z,howlingmadhowie,Quinton_,"then you are now on the command line. what sort of graphics card do you have, and what command did it suggest exactly?"
+2007-07-26T16:12:00.000Z,Quinton_,howlingmadhowie,fixable?
+2007-07-26T16:13:00.000Z,howlingmadhowie,Quinton_,don't know yet. probably. if you saw a windowing environment when you installed (i.e. you installed from a standard live cd) then it most definately is fixable
+2007-07-26T16:13:00.000Z,Quinton_,howlingmadhowie,installed from text mode
+2007-07-26T16:14:00.000Z,howlingmadhowie,Quinton_,so what's your graphics card? 'lspci | grep VGA'
+2007-07-26T16:14:00.000Z,Quinton_,howlingmadhowie,nvidia
+2007-07-26T16:14:00.000Z,howlingmadhowie,Quinton_,which model?
+2007-07-26T16:15:00.000Z,Quinton_,howlingmadhowie,no clue.... sony vaio vgn-ar520e
+2007-07-26T16:15:00.000Z,Quinton_,howlingmadhowie,is the computer model number
+2007-07-26T16:16:00.000Z,howlingmadhowie,Quinton_,GeForce 8400M GT
+2007-07-26T16:16:00.000Z,Quinton_,howlingmadhowie,but thats supported isnt it?
+2007-07-26T16:17:00.000Z,howlingmadhowie,Quinton_,"i'd suggest changing the video driver back to something very simple. like 'vesa'. can you manage that yourself, or should i tell you how to do that?"
+2007-07-26T16:18:00.000Z,Quinton_,howlingmadhowie,please tell
+2007-07-26T16:18:00.000Z,howlingmadhowie,Quinton_,"okay. from where you are now, type the following: cp /etc/X11/xorg.conf /etc/X11/xorg.conf.old"
+2007-07-26T16:20:00.000Z,Quinton_,howlingmadhowie,/etc/X11/xorg.conf permission denied
+2007-07-26T16:20:00.000Z,howlingmadhowie,Quinton_,"oh, sorry. my bad: 'sudo cp /etc/X11/xorg.conf /etc/X11/xorg.conf.old' then enter your password when it asks for it"
+2007-07-26T16:21:00.000Z,Quinton_,howlingmadhowie,do i type all of that in one enter?
+2007-07-26T16:21:00.000Z,howlingmadhowie,Quinton_,"yep. hangon, i'll paste something on pastebin"
+2007-07-26T16:23:00.000Z,Quinton_,howlingmadhowie,it says the commands not found
+2007-07-26T16:23:00.000Z,Quinton_,howlingmadhowie,guide me through how to enter all this.... lol
+2007-07-26T16:26:00.000Z,howlingmadhowie,Quinton_,http://paste.ubuntu-nl.org/31377/
+2007-07-26T16:26:00.000Z,Quinton_,howlingmadhowie,i will try
+2007-07-26T16:27:00.000Z,howlingmadhowie,Quinton_,let me know how far you get
+2007-07-26T16:27:00.000Z,Quinton_,howlingmadhowie,stuck
+2007-07-26T16:27:00.000Z,Quinton_,howlingmadhowie,i enter >sudo -i and it says command not found
+2007-07-26T16:30:00.000Z,howlingmadhowie,Quinton_,enter 'which sudo'. does it say something or does the prompt come straight back?
+2007-07-26T16:31:00.000Z,Quinton_,howlingmadhowie,now it says root@ubuntu:~# so what do i type now?
+2007-07-26T16:31:00.000Z,Quinton_,howlingmadhowie,they didnt work... i dont know what im doing wrong.... what exactly do i type after that?
+2007-07-26T16:32:00.000Z,howlingmadhowie,Quinton_,"after you have root access (which you now have), type 'cd /etc/X11'"
+2007-07-26T16:34:00.000Z,Quinton_,howlingmadhowie,cp /etc/X11  CP: missing destination file operand after '/etc/X11
+2007-07-26T16:34:00.000Z,howlingmadhowie,Quinton_,"'cd /etc/X11', not 'cp /etc/X11...' this time. i'm just moving you to the directory so the filenames are shorter"
+2007-07-26T16:35:00.000Z,howlingmadhowie,Quinton_,"cd = change directory, cp = copy"
+2007-07-26T16:35:00.000Z,Quinton_,howlingmadhowie,ok now what?
+2007-07-26T16:36:00.000Z,howlingmadhowie,Quinton_,"type 'ls'. do you see an xorg.conf? do you see any other files starting with xorg.conf (for example xorg.conf.backup)? if so, what are they called?"
+2007-07-26T16:36:00.000Z,Quinton_,howlingmadhowie,xorg.conf and xorg.conf.old
+2007-07-26T16:37:00.000Z,howlingmadhowie,Quinton_,"okay. try the following: 'cat xorg.conf | grep Device'. do you see the word 'nvidia', 'nv', or 'vesa'? if so, which one?"
+2007-07-26T16:38:00.000Z,Quinton_,howlingmadhowie,it just loaded the same roo ubuntu etc x11 thingy and shown nothing
+2007-07-26T16:39:00.000Z,howlingmadhowie,Quinton_,"hang on. if you enter 'cat xorg.conf', do you get a lot of text whizzing by?"
+2007-07-26T16:40:00.000Z,Quinton_,howlingmadhowie,yeah....
+2007-07-26T16:40:00.000Z,howlingmadhowie,Quinton_,"okay, we're going to open a text editor and edit xorg.conf. enter the following: 'nano -w xorg.conf'"
+2007-07-26T16:41:00.000Z,Quinton_,howlingmadhowie,now?
+2007-07-26T16:42:00.000Z,howlingmadhowie,Quinton_,use the arrow keys to scroll down the text until you find the Section 'Device'
+2007-07-26T16:43:00.000Z,Quinton_,howlingmadhowie,inputdevice?
+2007-07-26T16:43:00.000Z,Quinton_,howlingmadhowie,oh nvm... found it
+2007-07-26T16:43:00.000Z,howlingmadhowie,Quinton_,what's the name of the Driver?
+2007-07-26T16:43:00.000Z,Quinton_,howlingmadhowie,nv
+2007-07-26T16:44:00.000Z,howlingmadhowie,Quinton_,okay. change the driver to 'vesa'
+2007-07-26T16:44:00.000Z,Quinton_,howlingmadhowie,just backspace and type it in?
+2007-07-26T16:44:00.000Z,howlingmadhowie,Quinton_,exactly
+2007-07-26T16:44:00.000Z,Quinton_,howlingmadhowie,ok... now what?
+2007-07-26T16:45:00.000Z,howlingmadhowie,Quinton_,"type Ctrl+O to save, and Ctrl+X to quit"
+2007-07-26T16:45:00.000Z,Quinton_,howlingmadhowie,is that zero or a o ?
+2007-07-26T16:45:00.000Z,howlingmadhowie,Quinton_,that's an 'o' like oscar :)
+2007-07-26T16:46:00.000Z,Quinton_,howlingmadhowie,ok all saved and i ctrl-x now what?
+2007-07-26T16:46:00.000Z,Quinton_,howlingmadhowie,oh yeah it wrote 159 lines
+2007-07-26T16:46:00.000Z,howlingmadhowie,Quinton_,type '/etc/init.d/?dm restart'
+2007-07-26T16:47:00.000Z,Quinton_,howlingmadhowie,works so far
+2007-07-26T16:47:00.000Z,Quinton_,howlingmadhowie,=D wow
+2007-07-26T16:48:00.000Z,howlingmadhowie,Quinton_,"you should get some sort of windowing environment. the resolution is probably awful, but it's a start. the next job is to install the correct driver (vesa is just there to help you out in an emergency)"
+2007-07-26T16:48:00.000Z,Quinton_,howlingmadhowie,how do i turn on all the cool windows effects?
+2007-07-26T16:50:00.000Z,howlingmadhowie,Quinton_,"until you've installed the correct driver, the 3d effects won't work. as i don't have a modern nvidia card, i don't know which driver you should install now. try searching ubuntuforums.org. something else you can try is System->Administration->'management of limited drivers' (or whatever it's called in your system language (I'm using german myself, so that's just a rough translation))"
+2007-07-26T16:50:00.000Z,Quinton_,howlingmadhowie,why is it have horrible speed issues on 2000ddr memory?
+2007-07-26T16:51:00.000Z,howlingmadhowie,Quinton_,"if the windowing environment is slow, it's because you're using the vesa driver. it's just there to help out in an emergency. these issues will be resolved when you instlal the correct driver"
+2007-07-26T16:51:00.000Z,Quinton_,howlingmadhowie,from the nvidia website?
+2007-07-26T16:52:00.000Z,howlingmadhowie,Quinton_,i'd be surprised if you have to go to the bother to go to the nvidia website. i'd imagine you can install them using synaptic packet manager
+2007-07-26T16:53:00.000Z,Quinton_,howlingmadhowie,i have a sony vaio vgn-ar520e model.... errr any idea what my driver is and if synaptic will have it?
+2007-07-26T16:56:00.000Z,howlingmadhowie,Quinton_,i imagine that will be the newest nvidia driver
+2007-07-26T16:56:00.000Z,Quinton_,howlingmadhowie,is that driver compatible?
+2007-07-26T16:56:00.000Z,Quinton_,howlingmadhowie,im on 6.10 ghusty....
+2007-07-26T16:56:00.000Z,Quinton_,howlingmadhowie,someone told me too... ><;
+2007-07-26T16:57:00.000Z,howlingmadhowie,Quinton_,"6.10 edgy eft, or 7.10 gutsy gibbon?"
+2007-07-26T16:57:00.000Z,Quinton_,howlingmadhowie,edgy thats is
+2007-07-26T16:57:00.000Z,Quinton_,howlingmadhowie,whats the difference in all of them?
+2007-07-26T16:58:00.000Z,howlingmadhowie,Quinton_,"i'd try opening 'System->Administration->Synaptic package manager', search for 'nvidia' and then select 'nvidia-glx'. click on install"
+2007-07-26T16:58:00.000Z,howlingmadhowie,Quinton_,"well, the first two numbers tell you the date the distribution was launched (6.10 is october 2006)"
+2007-07-26T16:59:00.000Z,Quinton_,howlingmadhowie,it asked for acd so im letting it load =] 
+2007-07-26T05:00:00.000Z,howlingmadhowie,Quinton_,"i'd really install 7.04 in your case. there's no point using older software. if you have a fast internet connection, you can update 6.10 to 7.04 without needing to reinstall. what's acd?"
+2007-07-26T05:00:00.000Z,howlingmadhowie,Quinton_,"oh, a cd :)"
+2007-07-26T05:00:00.000Z,Quinton_,howlingmadhowie,and this will install the driver and add a better visual to the screen also make the screen resolution fit?
+2007-07-26T05:00:00.000Z,howlingmadhowie,Quinton_,"if this works, this will mean you are using the official nvidia display driver"
+2007-07-26T05:01:00.000Z,howlingmadhowie,Quinton_,you may have to set the resolution yourself (i'm not sure how good the driver is at guessing the right resolution to use)
+2007-07-26T05:01:00.000Z,Quinton_,howlingmadhowie,i did the restart like it asked
+2007-07-26T05:02:00.000Z,howlingmadhowie,Quinton_,and did it work?
+2007-07-26T05:02:00.000Z,Quinton_,howlingmadhowie,i dunno its booting =p
+2007-07-26T05:02:00.000Z,Quinton_,howlingmadhowie,yeah it shows picture still...
+2007-07-26T05:03:00.000Z,howlingmadhowie,Quinton_,that's a good sign. let's see if 3d acceleration is working. what happens if you do the following: Alt+F2: 'glxgears' <enter>
+2007-07-26T05:03:00.000Z,Quinton_,howlingmadhowie,soooo how do i go about adding them cool effects to burn the screen away when closed and make them wobble and alternate and stuff all cool?
+2007-07-26T05:05:00.000Z,howlingmadhowie,Quinton_,i'd recommend updating to 7.04 before you do anything else. did you try the command i gave you?
+2007-07-26T05:05:00.000Z,Quinton_,howlingmadhowie,hm? what command? im installing updates =D
+2007-07-26T05:18:00.000Z,Quinton_,howlingmadhowie,my wireless internet i havent tried yet.... photoshop.... and the upgrade wont work
+2007-07-26T05:06:00.000Z,howlingmadhowie,Quinton_,Alt+F2: 'glxgears' <enter>
+2007-07-26T05:06:00.000Z,Quinton_,howlingmadhowie,its just doing nothing?
+2007-07-26T05:08:00.000Z,howlingmadhowie,Quinton_,that's not a good sign. try: Alt+F2 'nvidia-settings' <enter>
+2007-07-26T05:08:00.000Z,Quinton_,howlingmadhowie,loaded
+2007-07-26T05:10:00.000Z,howlingmadhowie,Quinton_,i think i'd really recommend updating to 7.04. (so either installing new or using the system update option in the update manager)
+2007-07-26T05:10:00.000Z,Quinton_,howlingmadhowie,i am right after the updates.... whys it so important to upgrade?
+2007-07-26T05:11:00.000Z,howlingmadhowie,Quinton_,because 7.04 is better than 6.10 :)
+2007-07-26T05:11:00.000Z,Quinton_,howlingmadhowie,alrighty
+2007-07-26T05:11:00.000Z,howlingmadhowie,Quinton_,and there's no reason not to
+2007-07-26T05:11:00.000Z,Quinton_,howlingmadhowie,will i have the cool screen effects?
+2007-07-26T05:12:00.000Z,howlingmadhowie,Quinton_,"but updating will probably take about an hour. you should be able to activate the cube and wobbly-windows straight away. i've only got a really old graphics card myself, so i don't use them (i also find some software which i use doesn't like the cube effects)"
+2007-07-26T05:13:00.000Z,Quinton_,howlingmadhowie,i love the cube and wobbly windows.... then i want it to where when i close a windows it like glows from bottom to top... like its glowing it away and when a windows minimized or maximized it like squished up and stufff
+2007-07-26T05:18:00.000Z,Quinton_,howlingmadhowie,there are only 3 more problems
+2007-07-26T05:20:00.000Z,howlingmadhowie,Quinton_,"wireless: depends on what wireless card you have. support is a lot better in 7.04 than in 6.10. photoshop: there isn't a linux version of this. you can try to use the windows version in an emulator or install windows in a virtual machine inside linux, or use the gimp (which is about as powerful, but the GUI is very different). if the upgrade isn't working, i'd suggest downloading the 7.04 cd and installing new"
+2007-07-26T05:21:00.000Z,Quinton_,howlingmadhowie,upgrades working now...
+2007-07-26T05:22:00.000Z,Quinton_,howlingmadhowie,theres a linux version of photoshop?
+2007-07-26T05:22:00.000Z,howlingmadhowie,Quinton_,not in this century there isn't.
+2007-07-26T05:22:00.000Z,Quinton_,howlingmadhowie,so im guessing i would use wine.... ?
+2007-07-26T05:23:00.000Z,howlingmadhowie,Quinton_,"you can try wine, it may work. installing it inside a windows virtual machine is the sure fire answer. that will always work. however, i'd recommend having a look at the gimp at some stage. it is extremely powerful (it is used for example to touch up the special effects for the harry potter films amongst others)"
+2007-07-26T05:24:00.000Z,Quinton_,howlingmadhowie,I am not very fond of the gimp and dont really like it
+2007-07-26T05:24:00.000Z,howlingmadhowie,Quinton_,then you're going to have to jump through some hoops to get photoshop installed.
+2007-07-26T05:25:00.000Z,Quinton_,howlingmadhowie,i see.... may i go take a quike shower? its morning here....
+2007-07-26T05:27:00.000Z,howlingmadhowie,Quinton_,i hearby confer upon Quinton the right to partake in one (1) shower without let or hindrance :)
+2007-07-26T05:42:00.000Z,howlingmadhowie,Quinton_,and i also wouldn't encourage sony by buying their products :(
+2007-07-26T05:33:00.000Z,Quinton_,howlingmadhowie,"lmao i read your message, funny. SO the update is almost done"
+2007-07-26T05:34:00.000Z,howlingmadhowie,Quinton_,"after it's updated, you'll have to restart the computer"
+2007-07-26T05:34:00.000Z,Quinton_,howlingmadhowie,of course
+2007-07-26T05:35:00.000Z,Quinton_,howlingmadhowie,so after this all i need is to make adobe dreamweaver... photoshop... and pidgin with wireless work... then im set
+2007-07-26T05:40:00.000Z,howlingmadhowie,Quinton_,"dreamweaver is also windows/mac only. a virtual machine looks increasingly to be your best bet here. if you really want to use dreamweaver and photoshop, you should know that adobe doesn't support linux. there is native linux software which is as capable, but you'd have to learn to do things new. in your case, i'd recommend dual-booting and trying out the linux versions, while retaining the windows versions in a wi"
+2007-07-26T05:41:00.000Z,Quinton_,howlingmadhowie,i would love to dual boot but sony vaio STRICTLY has the harddrive like pined down to not let anyone install xp... only vista
+2007-07-26T05:41:00.000Z,Quinton_,howlingmadhowie,thus why i got linux
+2007-07-26T05:42:00.000Z,howlingmadhowie,Quinton_,"then your next step will be installing windows xp in a virtual machine inside linux. i've never done that myself, so i can't help much. i'd recommend looking into qemu and kvm"
+2007-07-26T05:43:00.000Z,Quinton_,howlingmadhowie,the only thing with 2000ddr for 1200$ rather than like 2500$
+2007-07-26T05:44:00.000Z,Quinton_,howlingmadhowie,17' also
+2007-07-26T05:45:00.000Z,Quinton_,howlingmadhowie,so howd you learn this much about linux?
+2007-07-26T05:46:00.000Z,howlingmadhowie,Quinton_,http://lxer.com/module/db/viewby.php?uid=124&sort=120&option=1&value=on&offset=0&dbn=14
+2007-07-26T05:47:00.000Z,Quinton_,howlingmadhowie,>>; ohhh... yeah i knew that... do you think it will be hard to get photoshop on here?
+2007-07-26T05:47:00.000Z,howlingmadhowie,Quinton_,I've been using linux for about 3 years now. and i'm very interested in computers. there are however hundreds of thousands of people who know a lot more than i do
+2007-07-26T05:48:00.000Z,howlingmadhowie,Quinton_,it shouldn't be impossible. first install windows in a virtual machine (check out qemu and kvm). then install photoshop in windows
+2007-07-26T05:49:00.000Z,Quinton_,howlingmadhowie,mhm...
+2007-07-26T05:52:00.000Z,Quinton_,howlingmadhowie,Do you have a gf?
+2007-07-26T05:52:00.000Z,Quinton_,howlingmadhowie,or bf...
+2007-07-26T05:52:00.000Z,howlingmadhowie,Quinton_,off-topic: i sort of have a bf
+2007-07-26T05:53:00.000Z,Quinton_,howlingmadhowie,"sooo, so we wont be off topic have an aim?"
+2007-07-26T05:53:00.000Z,howlingmadhowie,Quinton_,"yes, but i'm busy."
+2007-07-26T05:54:00.000Z,Quinton_,howlingmadhowie,"No offence ( I dont know your gender ) just saying that because almost all of my friends are bi-sexual... but so im not offencive. your a female or male?, also sorry for being off topic"
+2007-07-26T05:55:00.000Z,howlingmadhowie,Quinton_,way too off-topic.
+2007-07-26T05:56:00.000Z,Quinton_,howlingmadhowie,=p
+2007-07-26T05:57:00.000Z,Quinton_,howlingmadhowie,"my appolagies, btw that update is almost done... I had mistaken the time."
+2007-07-26T06:00:00.000Z,howlingmadhowie,Quinton_,"don't worry about it. just bear in mind, that #ubuntu is an international chat channel and that there are some cultures which find the word 'bisexual' offensive and some cultures which find the idea that 'god is watching you' offensive. let's just stay on-topic"
+2007-07-26T06:01:00.000Z,Quinton_,howlingmadhowie,=]  okey
+2007-07-26T06:01:00.000Z,Quinton_,howlingmadhowie,i removed the obsolete packages during the upgrade is that ok?
+2007-07-26T06:02:00.000Z,howlingmadhowie,Quinton_,"apt-get (the program which controls upgrades and manages the install packages) is pretty mature software, so i imagine it's fine"
+2007-07-26T06:03:00.000Z,Quinton_,howlingmadhowie,"alright, it still boots good! a little slower though"
+2007-07-26T06:04:00.000Z,Quinton_,howlingmadhowie,=[ it says desktop effects cannot be enabled =[
+2007-07-26T06:05:00.000Z,howlingmadhowie,Quinton_,sounds like the right nvidia driver hasn't been installed. go to 'System->Administration->Manage Restricted Drivers' (or whatever it's called in english)
+2007-07-26T06:06:00.000Z,Quinton_,howlingmadhowie,gotta install the package?
+2007-07-26T06:06:00.000Z,howlingmadhowie,Quinton_,sounds good
+2007-07-26T06:06:00.000Z,Quinton_,howlingmadhowie,no i mean to get into it
+2007-07-26T06:07:00.000Z,howlingmadhowie,Quinton_,"due to licensing restrictions, some drivers can not be installed automatically"
+2007-07-26T06:07:00.000Z,Quinton_,howlingmadhowie,i see
+2007-07-26T06:09:00.000Z,Quinton_,howlingmadhowie,wireless doesnt work
+2007-07-26T06:09:00.000Z,howlingmadhowie,Quinton_,how about the nvidia driver? did that install okay?
+2007-07-26T06:10:00.000Z,Quinton_,howlingmadhowie,it says my hardware doesnt need any restricted drivers
+2007-07-26T06:10:00.000Z,howlingmadhowie,Quinton_,strange. the nvidia 8400 most definitely needs restricted drivers
+2007-07-26T06:11:00.000Z,Quinton_,howlingmadhowie,no clue here...
+2007-07-26T06:14:00.000Z,howlingmadhowie,Quinton_,according to http://www.nvidia.com/object/linux_display_ia32_100.14.09.html the 8400M GT is supported in the current nvidia driver. it may well be in 'System->Administration->Synaptic Package Manager'
+2007-07-26T06:15:00.000Z,Quinton_,howlingmadhowie,i found restricted drivers
+2007-07-26T06:16:00.000Z,Quinton_,howlingmadhowie,lucent/agere linmodem controller driver?
+2007-07-26T06:17:00.000Z,howlingmadhowie,Quinton_,for your internal modem.
+2007-07-26T06:17:00.000Z,Quinton_,howlingmadhowie,like my wireless?
+2007-07-26T06:18:00.000Z,howlingmadhowie,Quinton_,"nope. just the modem. getting the wireless to work could be tricky, depending on what chipset sony decided to use"
+2007-07-26T06:19:00.000Z,Quinton_,howlingmadhowie,I have no idea what chipset they used
+2007-07-26T06:19:00.000Z,howlingmadhowie,Quinton_,have you found the current nvidia driver in Synaptic Package Manager?
+2007-07-26T06:19:00.000Z,Quinton_,howlingmadhowie,oh download it from synaptic?
+2007-07-26T06:20:00.000Z,Quinton_,howlingmadhowie,has lots of restricted things under nvidia
+2007-07-26T06:21:00.000Z,Quinton_,howlingmadhowie,so d/l nvidia glx new ?
+2007-07-26T06:21:00.000Z,howlingmadhowie,Quinton_,yep :)
+2007-07-26T06:23:00.000Z,Quinton_,howlingmadhowie,changes applies...
+2007-07-26T06:24:00.000Z,howlingmadhowie,Quinton_,sounds good. now you can restart the windowing system ('Ctrl+Alt+Backspace')
+2007-07-26T06:25:00.000Z,Quinton_,howlingmadhowie,MUCH faster
+2007-07-26T06:26:00.000Z,Quinton_,howlingmadhowie,thats so fast....
+2007-07-26T06:26:00.000Z,howlingmadhowie,Quinton_,"good. that's probably a good sign. just to make sure, can you do the following: Alt+F2, 'glxgears' <enter>"
+2007-07-26T06:26:00.000Z,Quinton_,howlingmadhowie,are compiz and beryl ubuntu screen effects?
+2007-07-26T06:27:00.000Z,Quinton_,howlingmadhowie,it did not do anything
+2007-07-26T06:27:00.000Z,howlingmadhowie,Quinton_,"yeah. the situation with beryl and compiz is quite complicated at the moment. beryl was a fork of the compiz project, now they're getting back together again in something called 'compizfusion' if i recall correctly"
+2007-07-26T06:28:00.000Z,howlingmadhowie,Quinton_,then maybe you don't have the test program installed. try searching for glxgears in the Synaptic Package Manager and installing it. then repeat Alt+F2 'glxgears' <enter>
+2007-07-26T06:29:00.000Z,Quinton_,howlingmadhowie,mesa-utils ?
+2007-07-26T06:29:00.000Z,howlingmadhowie,Quinton_,sounds good
+2007-07-26T06:30:00.000Z,Quinton_,howlingmadhowie,nope still doesnt do anything
+2007-07-26T06:32:00.000Z,Quinton_,howlingmadhowie,as shown from videos on youtube compiz fusion work nice...
+2007-07-26T06:33:00.000Z,howlingmadhowie,Quinton_,then let's get more information. go to 'Applications->Accessories->Terminal'. wait till a terminal appears then enter 'glxgears'.
+2007-07-26T06:34:00.000Z,Quinton_,howlingmadhowie,"it says 'GLX' missing on display ':0.0'. Error couldnt get an RGB, double-buffered visual"
+2007-07-26T06:35:00.000Z,howlingmadhowie,Quinton_,"i have the feeling this could all go very wrong. one of your main motivations for using ubuntu seems to be the eye candy. i can understand that, but if we can't get photophop and dreamweaver installed in a windows virtual machine, then it doesn't matter how good the eye-candy is"
+2007-07-26T06:35:00.000Z,howlingmadhowie,Quinton_,that's not a good sign. can you try rebooting the computer?
+2007-07-26T06:35:00.000Z,Quinton_,howlingmadhowie,of course
+2007-07-26T06:36:00.000Z,Quinton_,howlingmadhowie,works very quikly... and is now booting back up...
+2007-07-26T06:36:00.000Z,Quinton_,howlingmadhowie,no.. I never have... even on the preinstalled vista
+2007-07-26T06:37:00.000Z,howlingmadhowie,Quinton_,"as far as i know, before the windowing sysem starts, a big nvidia splash screen appears if you're using the nvida driver"
+2007-07-26T06:38:00.000Z,howlingmadhowie,Quinton_,"as far as i can tell, this means that the nvidia driver still isn't being used. try running 'nvidia-settings'"
+2007-07-26T06:38:00.000Z,Quinton_,howlingmadhowie,never has...
+2007-07-26T06:38:00.000Z,Quinton_,howlingmadhowie,works... now what ?
+2007-07-26T06:39:00.000Z,howlingmadhowie,Quinton_,set the screen resolution you want (in X server display configuration) and then  'Save to X Configuation File'
+2007-07-26T06:40:00.000Z,Quinton_,howlingmadhowie,thats not there...
+2007-07-26T06:41:00.000Z,howlingmadhowie,Quinton_,did you manage to start the nvidia-settings program?
+2007-07-26T06:42:00.000Z,Quinton_,howlingmadhowie,it did
+2007-07-26T06:42:00.000Z,howlingmadhowie,Quinton_,and you can see a nice grafical software where you can configure your graphics card?
+2007-07-26T06:43:00.000Z,Quinton_,howlingmadhowie,it just says... enable tooltips.... display status bar. slider text entires. show 'really quit' dialog and unchecked is include c display names in config file
+2007-07-26T06:44:00.000Z,howlingmadhowie,Quinton_,that sounds like the last page in the software. is there a menu on the left in the window? (X server information... x server display configuration...)
+2007-07-26T06:45:00.000Z,Quinton_,howlingmadhowie,nvidia-settings configuration: and thats all it says
+2007-07-26T06:46:00.000Z,howlingmadhowie,Quinton_,and nvidia-settings is installed?
+2007-07-26T06:46:00.000Z,Quinton_,howlingmadhowie,yeah and when i type a little box pops up
+2007-07-26T06:49:00.000Z,howlingmadhowie,Quinton_,one second
+2007-07-26T06:49:00.000Z,Quinton_,howlingmadhowie,ok
+2007-07-26T06:54:00.000Z,howlingmadhowie,Quinton_,"when i enter nvidia-settings, this program is started: http://img228.imageshack.us/img228/2949/bildschirmfotoij2.png"
+2007-07-26T06:55:00.000Z,Quinton_,howlingmadhowie,not me
+2007-07-26T06:57:00.000Z,howlingmadhowie,Quinton_,"strange. okay. let's do this the direct way. open a terminal, 'sudo -i' 'cd /etc/X11' 'nano -w xorg.conf'"
+2007-07-26T06:58:00.000Z,Quinton_,howlingmadhowie,got it
+2007-07-26T06:58:00.000Z,howlingmadhowie,Quinton_,"oh, hang on. i've found something interesting. just try in a terminal: 'sudo nvidia-xconfig'"
+2007-07-26T07:00:00.000Z,Quinton_,howlingmadhowie,doesnt give any options just says 3 lines about using x configuration
+2007-07-26T07:00:00.000Z,howlingmadhowie,Quinton_,perfect. now restart the windowing system ('Ctrl+Alt+Backspace')
+2007-07-26T07:01:00.000Z,Quinton_,howlingmadhowie,its just.... black
+2007-07-26T07:01:00.000Z,howlingmadhowie,Quinton_,nothing?
+2007-07-26T07:01:00.000Z,Quinton_,howlingmadhowie,nope
+2007-07-26T07:01:00.000Z,howlingmadhowie,Quinton_,i'm starting to get annoyed with this nvidia driver
+2007-07-26T07:01:00.000Z,Quinton_,howlingmadhowie,sorry
+2007-07-26T07:02:00.000Z,Quinton_,howlingmadhowie,ctrl+alt+f2 didnt do anything
+2007-07-26T07:03:00.000Z,howlingmadhowie,Quinton_,oh
+2007-07-26T07:03:00.000Z,Quinton_,howlingmadhowie,left alt doesnt work
+2007-07-26T07:04:00.000Z,howlingmadhowie,Quinton_,"okay, restart the computer :("
+2007-07-26T07:05:00.000Z,Quinton_,howlingmadhowie,it will work .... i think....
+2007-07-26T07:05:00.000Z,Quinton_,howlingmadhowie,nope... now were back where we began...
+2007-07-26T07:05:00.000Z,Quinton_,howlingmadhowie,blackscreen after it boots
+2007-07-26T07:06:00.000Z,howlingmadhowie,Quinton_,and does Ctrl+Alt+F2 do anything?
+2007-07-26T07:06:00.000Z,Quinton_,howlingmadhowie,no... and this is a laptop
+2007-07-26T07:07:00.000Z,howlingmadhowie,Quinton_,okay. things have gone pear-shaped. Ctrl-Alt-Backspace doesn't do anything either?
+2007-07-26T07:07:00.000Z,Quinton_,howlingmadhowie,no
+2007-07-26T07:09:00.000Z,Quinton_,howlingmadhowie,what to do?
+2007-07-26T07:09:00.000Z,howlingmadhowie,Quinton_,"oh boy. i think the easy way out is to install ubuntu again. looks like the nvidia driver has claimed another victim. if you still think my advice is any good, download the new version (7.04) and install from that disk"
+2007-07-26T07:09:00.000Z,Quinton_,howlingmadhowie,i cant
+2007-07-26T07:10:00.000Z,Quinton_,howlingmadhowie,i HAVE to text base install or tty cannot be accesed and job control is turned off...
+2007-07-26T07:11:00.000Z,Quinton_,howlingmadhowie,plus it wont recognize nvidia just like this time... besides that im already on ver 7.04
+2007-07-26T07:11:00.000Z,howlingmadhowie,Quinton_,then the alternative install cd for 7.04?
+2007-07-26T07:13:00.000Z,Quinton_,howlingmadhowie,what do I do?
+2007-07-26T07:13:00.000Z,howlingmadhowie,Quinton_,"hang on, i think we can rescue it."
+2007-07-26T07:14:00.000Z,howlingmadhowie,Quinton_,"restart, and press escape when it tells you to"
+2007-07-26T07:14:00.000Z,Quinton_,howlingmadhowie,recoverymode?
+2007-07-26T07:15:00.000Z,howlingmadhowie,Quinton_,nope. change the options for standard boot mode by deleting 'splash' and 'quiet' and adding 'runlevel=3'
+2007-07-26T07:16:00.000Z,Quinton_,howlingmadhowie,i hit esc... so now what?
+2007-07-26T07:16:00.000Z,howlingmadhowie,Quinton_,press e
+2007-07-26T07:17:00.000Z,howlingmadhowie,Quinton_,press e again
+2007-07-26T07:17:00.000Z,Quinton_,howlingmadhowie,now... ?
+2007-07-26T07:18:00.000Z,howlingmadhowie,Quinton_,deleted 'quiet' and 'splash' and add 'runlevel=3'
+2007-07-26T07:18:00.000Z,Quinton_,howlingmadhowie,"i got grub edit> root (hd0,0)"
+2007-07-26T07:19:00.000Z,howlingmadhowie,Quinton_,"oh, sorry. press escape"
+2007-07-26T07:19:00.000Z,Quinton_,howlingmadhowie,ok now?
+2007-07-26T07:19:00.000Z,howlingmadhowie,Quinton_,and press escape again until you get up to the top menu
+2007-07-26T07:19:00.000Z,howlingmadhowie,Quinton_,let's try recovery mode :)
+2007-07-26T07:20:00.000Z,Quinton_,howlingmadhowie,loading it...
+2007-07-26T07:20:00.000Z,howlingmadhowie,Quinton_,lots of text should go flying by
+2007-07-26T07:21:00.000Z,Quinton_,howlingmadhowie,it stoppped and sayysss root@ubuntu:~# select () to /dev/rtc to wait for clock tick timed out
+2007-07-26T07:21:00.000Z,howlingmadhowie,Quinton_,good. enter 'cd /etc/X11'
+2007-07-26T07:22:00.000Z,howlingmadhowie,Quinton_,does it complain at all?
+2007-07-26T07:22:00.000Z,Quinton_,howlingmadhowie,no
+2007-07-26T07:22:00.000Z,howlingmadhowie,Quinton_,good. let's check to see it did that. enter 'pwd'. do you see /etc/X11 ?
+2007-07-26T07:23:00.000Z,Quinton_,howlingmadhowie,yeah
+2007-07-26T07:23:00.000Z,howlingmadhowie,Quinton_,good :) now enter the following 'mv xorg.conf.backup xorg.conf'
+2007-07-26T07:23:00.000Z,Quinton_,howlingmadhowie,didnt do anything
+2007-07-26T07:24:00.000Z,howlingmadhowie,Quinton_,maybe it did :) 'ls -lh' what's the date of xorg.conf?
+2007-07-26T07:25:00.000Z,Quinton_,howlingmadhowie,08:59
+2007-07-26T07:25:00.000Z,howlingmadhowie,Quinton_,"mm, hang on. when you enter 'ls' what files to you see which start with 'xorg.conf'?"
+2007-07-26T07:26:00.000Z,Quinton_,howlingmadhowie,conf and conf old
+2007-07-26T07:27:00.000Z,howlingmadhowie,Quinton_,sounds good. 'reboot'
+2007-07-26T07:27:00.000Z,Quinton_,howlingmadhowie,how?
+2007-07-26T07:27:00.000Z,howlingmadhowie,Quinton_,enter the word 'reboot'
+2007-07-26T07:28:00.000Z,howlingmadhowie,Quinton_,"if the computer doesn't boot again to where we were before we started playing around with the nvidia driver, we'll have to boot again in recovery mode and edit xorg.conf by hand using a text editor (nano)"
+2007-07-26T07:28:00.000Z,Quinton_,howlingmadhowie,booted
+2007-07-26T07:28:00.000Z,howlingmadhowie,Quinton_,have you got the windowing environment running? (X server)
+2007-07-26T07:29:00.000Z,Quinton_,howlingmadhowie,i guess.... ?
+2007-07-26T07:29:00.000Z,howlingmadhowie,Quinton_,so you can log in normally ?
+2007-07-26T07:29:00.000Z,Quinton_,howlingmadhowie,yeah
+2007-07-26T07:29:00.000Z,howlingmadhowie,Quinton_,cool :)
+2007-07-26T07:30:00.000Z,howlingmadhowie,Quinton_,now then. what do you see under 'System->Administration->Restricted Drivers Manager'?
+2007-07-26T07:31:00.000Z,Quinton_,howlingmadhowie,the modem thing still
+2007-07-26T07:31:00.000Z,howlingmadhowie,Quinton_,and still no reference to a graphics card?
+2007-07-26T07:32:00.000Z,Quinton_,howlingmadhowie,no
+2007-07-26T07:32:00.000Z,howlingmadhowie,Quinton_,can you open a terminal and type the following: 'lspci | grep VGA'
+2007-07-26T07:33:00.000Z,Quinton_,howlingmadhowie,says VGA compatible controle nvidia coorp unkown device 0426 (rev a 1)
+2007-07-26T07:34:00.000Z,howlingmadhowie,Quinton_,it really shouldn't be an unknown device by now. i wonder what's up with the driver. did you get the driver from the cd or from the internet?
+2007-07-26T07:35:00.000Z,Quinton_,howlingmadhowie,cd...
+2007-07-26T07:35:00.000Z,howlingmadhowie,Quinton_,a-ha! that could be what's going wrong. the version on the cd is really old.
+2007-07-26T07:36:00.000Z,howlingmadhowie,Quinton_,start the Synaptic Package Manager and go to Settings->sources
+2007-07-26T07:37:00.000Z,Quinton_,howlingmadhowie,there is no sources?
+2007-07-26T07:38:00.000Z,howlingmadhowie,Quinton_,whatever it's called in the language you're using. maybe it's 'package sources' or something similar (under Settings in the navigation for the Synaptic Package Management window)
+2007-07-26T07:38:00.000Z,Quinton_,howlingmadhowie,"preferences, respriotires, filters, set internal option, toolbar"
+2007-07-26T07:39:00.000Z,howlingmadhowie,Quinton_,repositories :)
+2007-07-26T07:39:00.000Z,Quinton_,howlingmadhowie,now?
+2007-07-26T07:40:00.000Z,howlingmadhowie,Quinton_,"activate 'main', 'universe', 'restricted' and 'multiverse'. on one of the tabs of that window there could be a way to switch off the cd as a software source. if you can, do this."
+2007-07-26T07:41:00.000Z,Quinton_,howlingmadhowie,how do i turn off the cd?
+2007-07-26T07:42:00.000Z,howlingmadhowie,Quinton_,hang on. my laptop is in english. i'll just boot it and see how to do that
+2007-07-26T07:43:00.000Z,Quinton_,howlingmadhowie,ok i removed cd option and turned o nwhat you said now what?
+2007-07-26T07:44:00.000Z,howlingmadhowie,Quinton_,shut the repositories dialog screen and click 'Reload' on the main Synaptic Package Management screen
+2007-07-26T07:45:00.000Z,howlingmadhowie,Quinton_,shut Synaptic Package Manager and start 'System->Administration->Update Manager'
+2007-07-26T07:46:00.000Z,Quinton_,howlingmadhowie,nothing
+2007-07-26T07:47:00.000Z,howlingmadhowie,Quinton_,click 'Check'
+2007-07-26T07:47:00.000Z,Quinton_,howlingmadhowie,nothing
+2007-07-26T07:48:00.000Z,howlingmadhowie,Quinton_,then it must have got the new nvidia version from the net. which of course doesn't answer the question as to why it doesn't appear in the restricted drivers list
+2007-07-26T07:50:00.000Z,howlingmadhowie,Quinton_,okay. the next approach would be to download the nvidia driver directly from nvidia.com and install it.
+2007-07-26T07:51:00.000Z,Quinton_,howlingmadhowie,find the driver for me? =[ I think I will mess up
+2007-07-26T07:55:00.000Z,howlingmadhowie,Quinton_,have a look at http://ubuntuforums.org/showthread.php?t=441658&highlight=8400m and https://help.ubuntu.com/community/NvidiaManual
+2007-07-26T07:55:00.000Z,howlingmadhowie,Quinton_,"if you have any problems, let me know. i should really be getting to do some work now"
+2007-07-26T08:03:00.000Z,Quinton_,howlingmadhowie,i tired the instructions and it says i cannot find the file i downloaded after following nvidias strict instructions
+2007-07-26T08:05:00.000Z,howlingmadhowie,Quinton_,where did you download the file to? can you see it on your desktop?
+2007-07-26T08:05:00.000Z,Quinton_,howlingmadhowie,yes
+2007-07-26T08:06:00.000Z,howlingmadhowie,Quinton_,good. then open a terminal and enter 'cd Desktop'. you should now be able to see the driver (enter 'ls')
+2007-07-26T08:07:00.000Z,Quinton_,howlingmadhowie,no such file or drectory
+2007-07-26T08:07:00.000Z,howlingmadhowie,Quinton_,what does 'pwd' say?
+2007-07-26T08:08:00.000Z,Quinton_,howlingmadhowie,/home/quinton
+2007-07-26T08:08:00.000Z,howlingmadhowie,Quinton_,'cd Desktop'
+2007-07-26T08:09:00.000Z,Quinton_,howlingmadhowie,no such file or drectory
+2007-07-26T08:10:00.000Z,howlingmadhowie,Quinton_,'ls' what do you see?
+2007-07-26T08:10:00.000Z,Quinton_,howlingmadhowie,desktop examples sudo
+2007-07-26T08:15:00.000Z,howlingmadhowie,Quinton_,"sorry, my boss just called :) so, where were we? 'ls' replies that there is a file called 'desktop' (which surprises me because it is usually called 'Desktop') and when you enter 'cd Desktop' it replies 'no such file or directory'."
+2007-07-26T08:16:00.000Z,Quinton_,howlingmadhowie,i just need step by step for beryl and nvidia?
+2007-07-26T08:17:00.000Z,Quinton_,howlingmadhowie,i can do everything else on my own
+2007-07-26T08:17:00.000Z,howlingmadhowie,Quinton_,and you're sure you entered 'cd Desktop' and not 'cd desktop'?
+2007-07-26T08:18:00.000Z,Quinton_,howlingmadhowie,oh... ok so whats next lol ?
+2007-07-26T08:19:00.000Z,howlingmadhowie,Quinton_,i'd move the driver to the /root directory.
+2007-07-26T08:19:00.000Z,Quinton_,howlingmadhowie,wheres that?
+2007-07-26T08:20:00.000Z,howlingmadhowie,Quinton_,enter 'sudo -i' and your password. then 'mv /home/quinton/Desktop/NVIDIA* $HOME'
+2007-07-26T08:21:00.000Z,Quinton_,howlingmadhowie,just put a >
+2007-07-26T08:23:00.000Z,howlingmadhowie,Quinton_,sounds good. enter 'cd $HOME'
+2007-07-26T08:23:00.000Z,Quinton_,howlingmadhowie,just loaded root@ubuntu again
+2007-07-26T08:25:00.000Z,howlingmadhowie,Quinton_,and what do 'pwd' and 'ls' now say?
+2007-07-26T08:26:00.000Z,Quinton_,howlingmadhowie,/root and root@ubuntu:~#
+2007-07-26T08:27:00.000Z,howlingmadhowie,Quinton_,"there's nothing in the directory? strange. 'ls /home/quinton/Desktop'. is the driver you downloaded from the nvidia website still there? if yes, can you write the first 5 letters?"
+2007-07-26T08:28:00.000Z,Quinton_,howlingmadhowie,write the first 5 letters?
+2007-07-26T08:29:00.000Z,howlingmadhowie,Quinton_,just tell me the first 5 letters
+2007-07-26T08:30:00.000Z,Quinton_,howlingmadhowie,NVIDI ?
+2007-07-26T08:31:00.000Z,howlingmadhowie,Quinton_,okay. now on the console (assuming you still have a root prompt) enter 'mv /home/quinton/Desktop/NVIDI* $HOME'
+2007-07-26T08:32:00.000Z,Quinton_,howlingmadhowie,no destination
+2007-07-26T08:34:00.000Z,howlingmadhowie,Quinton_,"okay, you're typing something wrongly. try this 'mv /home/quinton/Desktop/NVIDI* /root'"
+2007-07-26T08:34:00.000Z,Quinton_,howlingmadhowie,says root@ubuntu etc...
+2007-07-26T08:35:00.000Z,Quinton_,howlingmadhowie,now what?
+2007-07-26T08:36:00.000Z,howlingmadhowie,Quinton_,okay: 'cd' and 'ls'. you should see the NVIDIA driver
+2007-07-26T08:36:00.000Z,Quinton_,howlingmadhowie,yes
+2007-07-26T08:39:00.000Z,Quinton_,howlingmadhowie,now?
+2007-07-26T08:40:00.000Z,howlingmadhowie,Quinton_,"cool. now you can carry on with the instructions on the nvidia site ( or on https://help.ubuntu.com/community/NvidiaManual ). just remember to 'sudo -i' to get to a root window, and then 'cd /root' to get to the directory with the driver in it before running 'sh ./NVIDIA*' again, otherwise you won't find it"
+2007-07-26T08:42:00.000Z,Quinton_,howlingmadhowie,it say to turn off x server before install ?
+2007-07-26T08:44:00.000Z,howlingmadhowie,Quinton_,"to do that, enter 'Ctrl+Alt+F2'. log in. 'sudo -i', enter password. '/etc/init.d/gdm stop'"
+2007-07-26T08:45:00.000Z,Quinton_,howlingmadhowie,then how do i get back to the nvidia installer?
+2007-07-26T08:46:00.000Z,howlingmadhowie,Quinton_,now enter 'sh ./NVIDIA*'
+2007-07-26T08:46:00.000Z,howlingmadhowie,Quinton_,and follow the on screen instructions
+2007-07-26T08:47:00.000Z,Quinton_,howlingmadhowie,wtf... no matching precompiled kernel interface was found on NVIDIA
+2007-07-26T08:47:00.000Z,Quinton_,howlingmadhowie,it cant find a precompiled kernel
+2007-07-26T08:48:00.000Z,Quinton_,howlingmadhowie,ERROR: you do not appear to have libc header files installed on your system. Please install your distibution's libc development package ?
+2007-07-26T08:49:00.000Z,howlingmadhowie,Quinton_,okay. you'll need that. quit the installation and follow the instructions on https://help.ubuntu.com/community/NvidiaManual
+2007-07-26T08:50:00.000Z,howlingmadhowie,Quinton_,you can return to the X server by entering ctrl+alt+f7
+2007-07-26T08:54:00.000Z,Quinton_,howlingmadhowie,upon installing the essentials it says it couldnt find the package
+2007-07-26T08:56:00.000Z,howlingmadhowie,Quinton_,i'm wondering if i can dial in from outside and do this for you. it's starting to take way to long
+2007-07-26T08:57:00.000Z,Quinton_,howlingmadhowie,please?
+2007-07-26T08:58:00.000Z,howlingmadhowie,Quinton_,build-essential should be in the apt cache. did you cut and paste the line from the webpage into a terminal?
+2007-07-26T08:59:00.000Z,Quinton_,howlingmadhowie,not cut and paste...
+2007-07-26T08:59:00.000Z,howlingmadhowie,Quinton_,then try it and see if it works
+2007-07-26T09:02:00.000Z,Quinton_,howlingmadhowie,it just says to isnert the edgy cd and hit enter so i do and then it doesnt load the cd or work
+2007-07-26T09:06:00.000Z,howlingmadhowie,Quinton_,"i've really got to be getting to do some work now. the package manager is still trying to get packages from the cd, which isn't good. you can open /etc/apt/sources.list in a text editor 'sudo nano -w /etc/apt/sources.list' and comment out (add a '#' at the start of the line) any lines which look like they refer to a cd. then run 'sudo apt-get update'"
+2007-07-26T09:06:00.000Z,howlingmadhowie,Quinton_,"lots of luck, i gotta be going."
+2007-07-26T15:27:00.000Z,howlingmadhowie,Quinton_,now in Synaptic click 'refresh' and then try to install the same packages again
+2007-07-26T15:52:00.000Z,howlingmadhowie,Quinton_,not yet. enter '/etc/init.d/gdm stop'
+2007-07-26T15:57:00.000Z,howlingmadhowie,Quinton_,what does it say when it fails? it should first offer to download a kernel from nvidia.org
+2007-07-26T15:58:00.000Z,howlingmadhowie,Quinton_,and then what did it do? it shoudl offer to build the correct interface to the kernel itself
+2007-07-26T16:01:00.000Z,howlingmadhowie,Quinton_,okay. and then?
+2007-07-27T16:03:00.000Z,howlingmadhowie,Quinton_,"okay, that's the error message i needed"
+2007-07-27T16:03:00.000Z,howlingmadhowie,Quinton_,enter the following: 'apt-get install linux-source-`uname -r`
+2007-07-27T16:35:00.000Z,howlingmadhowie,Quinton_,cool :) okay: 'cd' just by itself. and then 'sh NVIDIA*'
+2007-07-26T16:16:00.000Z,Quinton_,howlingmadhowie,howlingmadhowie: if thats what sony says
+2007-07-26T16:09:00.000Z,howlingmadhowie,Quinton_,"what tells you to enter a command? does some sort of graphical interface start, or does it look like an old dos window?"
+2007-07-26T16:10:00.000Z,howlingmadhowie,Quinton_,please don't use <enter> for punctuation :)
+2007-07-26T16:12:00.000Z,howlingmadhowie,Quinton_,"then you are now on the command line. what sort of graphics card do you have, and what command did it suggest exactly?"
+2007-07-26T16:12:00.000Z,Quinton_,howlingmadhowie,fixable?
+2007-07-26T16:13:00.000Z,howlingmadhowie,Quinton_,don't know yet. probably. if you saw a windowing environment when you installed (i.e. you installed from a standard live cd) then it most definately is fixable
+2007-07-26T16:13:00.000Z,Quinton_,howlingmadhowie,installed from text mode
+2007-07-26T16:14:00.000Z,howlingmadhowie,Quinton_,so what's your graphics card? 'lspci | grep VGA'
+2007-07-26T16:14:00.000Z,Quinton_,howlingmadhowie,nvidia
+2007-07-26T16:14:00.000Z,howlingmadhowie,Quinton_,which model?
+2007-07-26T16:15:00.000Z,Quinton_,howlingmadhowie,no clue.... sony vaio vgn-ar520e
+2007-07-26T16:15:00.000Z,Quinton_,howlingmadhowie,is the computer model number
+2007-07-26T16:16:00.000Z,howlingmadhowie,Quinton_,GeForce 8400M GT
+2007-07-26T16:16:00.000Z,Quinton_,howlingmadhowie,but thats supported isnt it?
+2007-07-26T16:17:00.000Z,howlingmadhowie,Quinton_,"i'd suggest changing the video driver back to something very simple. like 'vesa'. can you manage that yourself, or should i tell you how to do that?"
+2007-07-26T16:18:00.000Z,Quinton_,howlingmadhowie,please tell
+2007-07-26T16:18:00.000Z,howlingmadhowie,Quinton_,"okay. from where you are now, type the following: cp /etc/X11/xorg.conf /etc/X11/xorg.conf.old"
+2007-07-26T16:20:00.000Z,Quinton_,howlingmadhowie,/etc/X11/xorg.conf permission denied
+2007-07-26T16:20:00.000Z,howlingmadhowie,Quinton_,"oh, sorry. my bad: 'sudo cp /etc/X11/xorg.conf /etc/X11/xorg.conf.old' then enter your password when it asks for it"
+2007-07-26T16:21:00.000Z,Quinton_,howlingmadhowie,do i type all of that in one enter?
+2007-07-26T16:21:00.000Z,howlingmadhowie,Quinton_,"yep. hangon, i'll paste something on pastebin"
+2007-07-26T16:23:00.000Z,Quinton_,howlingmadhowie,it says the commands not found
+2007-07-26T16:23:00.000Z,Quinton_,howlingmadhowie,guide me through how to enter all this.... lol
+2007-07-26T16:26:00.000Z,howlingmadhowie,Quinton_,http://paste.ubuntu-nl.org/31377/
+2007-07-26T16:26:00.000Z,Quinton_,howlingmadhowie,i will try
+2007-07-26T16:27:00.000Z,howlingmadhowie,Quinton_,let me know how far you get
+2007-07-26T16:27:00.000Z,Quinton_,howlingmadhowie,stuck
+2007-07-26T16:27:00.000Z,Quinton_,howlingmadhowie,i enter >sudo -i and it says command not found
+2007-07-26T16:30:00.000Z,howlingmadhowie,Quinton_,enter 'which sudo'. does it say something or does the prompt come straight back?
+2007-07-26T16:31:00.000Z,Quinton_,howlingmadhowie,now it says root@ubuntu:~# so what do i type now?
+2007-07-26T16:31:00.000Z,Quinton_,howlingmadhowie,they didnt work... i dont know what im doing wrong.... what exactly do i type after that?
+2007-07-26T16:32:00.000Z,howlingmadhowie,Quinton_,"after you have root access (which you now have), type 'cd /etc/X11'"
+2007-07-26T16:34:00.000Z,Quinton_,howlingmadhowie,cp /etc/X11  CP: missing destination file operand after '/etc/X11
+2007-07-26T16:34:00.000Z,howlingmadhowie,Quinton_,"'cd /etc/X11', not 'cp /etc/X11...' this time. i'm just moving you to the directory so the filenames are shorter"
+2007-07-26T16:35:00.000Z,howlingmadhowie,Quinton_,"cd = change directory, cp = copy"
+2007-07-26T16:35:00.000Z,Quinton_,howlingmadhowie,ok now what?
+2007-07-26T16:36:00.000Z,howlingmadhowie,Quinton_,"type 'ls'. do you see an xorg.conf? do you see any other files starting with xorg.conf (for example xorg.conf.backup)? if so, what are they called?"
+2007-07-26T16:36:00.000Z,Quinton_,howlingmadhowie,xorg.conf and xorg.conf.old
+2007-07-26T16:37:00.000Z,howlingmadhowie,Quinton_,"okay. try the following: 'cat xorg.conf | grep Device'. do you see the word 'nvidia', 'nv', or 'vesa'? if so, which one?"
+2007-07-26T16:38:00.000Z,Quinton_,howlingmadhowie,it just loaded the same roo ubuntu etc x11 thingy and shown nothing
+2007-07-26T16:39:00.000Z,howlingmadhowie,Quinton_,"hang on. if you enter 'cat xorg.conf', do you get a lot of text whizzing by?"
+2007-07-26T16:40:00.000Z,Quinton_,howlingmadhowie,yeah....
+2007-07-26T16:40:00.000Z,howlingmadhowie,Quinton_,"okay, we're going to open a text editor and edit xorg.conf. enter the following: 'nano -w xorg.conf'"
+2007-07-26T16:41:00.000Z,Quinton_,howlingmadhowie,now?
+2007-07-26T16:42:00.000Z,howlingmadhowie,Quinton_,use the arrow keys to scroll down the text until you find the Section 'Device'
+2007-07-26T16:43:00.000Z,Quinton_,howlingmadhowie,inputdevice?
+2007-07-26T16:43:00.000Z,Quinton_,howlingmadhowie,oh nvm... found it
+2007-07-26T16:43:00.000Z,howlingmadhowie,Quinton_,what's the name of the Driver?
+2007-07-26T16:43:00.000Z,Quinton_,howlingmadhowie,nv
+2007-07-26T16:44:00.000Z,howlingmadhowie,Quinton_,okay. change the driver to 'vesa'
+2007-07-26T16:44:00.000Z,Quinton_,howlingmadhowie,just backspace and type it in?
+2007-07-26T16:44:00.000Z,howlingmadhowie,Quinton_,exactly
+2007-07-26T16:44:00.000Z,Quinton_,howlingmadhowie,ok... now what?
+2007-07-26T16:45:00.000Z,howlingmadhowie,Quinton_,"type Ctrl+O to save, and Ctrl+X to quit"
+2007-07-26T16:45:00.000Z,Quinton_,howlingmadhowie,is that zero or a o ?
+2007-07-26T16:45:00.000Z,howlingmadhowie,Quinton_,that's an 'o' like oscar :)
+2007-07-26T16:46:00.000Z,Quinton_,howlingmadhowie,ok all saved and i ctrl-x now what?
+2007-07-26T16:46:00.000Z,Quinton_,howlingmadhowie,oh yeah it wrote 159 lines
+2007-07-26T16:46:00.000Z,howlingmadhowie,Quinton_,type '/etc/init.d/?dm restart'
+2007-07-26T16:47:00.000Z,Quinton_,howlingmadhowie,works so far
+2007-07-26T16:47:00.000Z,Quinton_,howlingmadhowie,=D wow
+2007-07-26T16:48:00.000Z,howlingmadhowie,Quinton_,"you should get some sort of windowing environment. the resolution is probably awful, but it's a start. the next job is to install the correct driver (vesa is just there to help you out in an emergency)"
+2007-07-26T16:48:00.000Z,Quinton_,howlingmadhowie,how do i turn on all the cool windows effects?
+2007-07-26T16:50:00.000Z,howlingmadhowie,Quinton_,"until you've installed the correct driver, the 3d effects won't work. as i don't have a modern nvidia card, i don't know which driver you should install now. try searching ubuntuforums.org. something else you can try is System->Administration->'management of limited drivers' (or whatever it's called in your system language (I'm using german myself, so that's just a rough translation))"
+2007-07-26T16:50:00.000Z,Quinton_,howlingmadhowie,why is it have horrible speed issues on 2000ddr memory?
+2007-07-26T16:51:00.000Z,howlingmadhowie,Quinton_,"if the windowing environment is slow, it's because you're using the vesa driver. it's just there to help out in an emergency. these issues will be resolved when you instlal the correct driver"
+2007-07-26T16:51:00.000Z,Quinton_,howlingmadhowie,from the nvidia website?
+2007-07-26T16:52:00.000Z,howlingmadhowie,Quinton_,i'd be surprised if you have to go to the bother to go to the nvidia website. i'd imagine you can install them using synaptic packet manager
+2007-07-26T16:53:00.000Z,Quinton_,howlingmadhowie,i have a sony vaio vgn-ar520e model.... errr any idea what my driver is and if synaptic will have it?
+2007-07-26T16:56:00.000Z,howlingmadhowie,Quinton_,i imagine that will be the newest nvidia driver
+2007-07-26T16:56:00.000Z,Quinton_,howlingmadhowie,is that driver compatible?
+2007-07-26T16:56:00.000Z,Quinton_,howlingmadhowie,im on 6.10 ghusty....
+2007-07-26T16:56:00.000Z,Quinton_,howlingmadhowie,someone told me too... ><;
+2007-07-26T16:57:00.000Z,howlingmadhowie,Quinton_,"6.10 edgy eft, or 7.10 gutsy gibbon?"
+2007-07-26T16:57:00.000Z,Quinton_,howlingmadhowie,edgy thats is
+2007-07-26T16:57:00.000Z,Quinton_,howlingmadhowie,whats the difference in all of them?
+2007-07-26T16:58:00.000Z,howlingmadhowie,Quinton_,"i'd try opening 'System->Administration->Synaptic package manager', search for 'nvidia' and then select 'nvidia-glx'. click on install"
+2007-07-26T16:58:00.000Z,howlingmadhowie,Quinton_,"well, the first two numbers tell you the date the distribution was launched (6.10 is october 2006)"
+2007-07-26T16:59:00.000Z,Quinton_,howlingmadhowie,it asked for acd so im letting it load =] 
+2007-07-26T05:00:00.000Z,howlingmadhowie,Quinton_,"i'd really install 7.04 in your case. there's no point using older software. if you have a fast internet connection, you can update 6.10 to 7.04 without needing to reinstall. what's acd?"
+2007-07-26T05:00:00.000Z,howlingmadhowie,Quinton_,"oh, a cd :)"
+2007-07-26T05:00:00.000Z,Quinton_,howlingmadhowie,and this will install the driver and add a better visual to the screen also make the screen resolution fit?
+2007-07-26T05:00:00.000Z,howlingmadhowie,Quinton_,"if this works, this will mean you are using the official nvidia display driver"
+2007-07-26T05:01:00.000Z,howlingmadhowie,Quinton_,you may have to set the resolution yourself (i'm not sure how good the driver is at guessing the right resolution to use)
+2007-07-26T05:01:00.000Z,Quinton_,howlingmadhowie,i did the restart like it asked
+2007-07-26T05:02:00.000Z,howlingmadhowie,Quinton_,and did it work?
+2007-07-26T05:02:00.000Z,Quinton_,howlingmadhowie,i dunno its booting =p
+2007-07-26T05:02:00.000Z,Quinton_,howlingmadhowie,yeah it shows picture still...
+2007-07-26T05:03:00.000Z,howlingmadhowie,Quinton_,that's a good sign. let's see if 3d acceleration is working. what happens if you do the following: Alt+F2: 'glxgears' <enter>
+2007-07-26T05:03:00.000Z,Quinton_,howlingmadhowie,soooo how do i go about adding them cool effects to burn the screen away when closed and make them wobble and alternate and stuff all cool?
+2007-07-26T05:05:00.000Z,howlingmadhowie,Quinton_,i'd recommend updating to 7.04 before you do anything else. did you try the command i gave you?
+2007-07-26T05:05:00.000Z,Quinton_,howlingmadhowie,hm? what command? im installing updates =D
+2007-07-26T05:18:00.000Z,Quinton_,howlingmadhowie,my wireless internet i havent tried yet.... photoshop.... and the upgrade wont work
+2007-07-26T05:06:00.000Z,howlingmadhowie,Quinton_,Alt+F2: 'glxgears' <enter>
+2007-07-26T05:06:00.000Z,Quinton_,howlingmadhowie,its just doing nothing?
+2007-07-26T05:08:00.000Z,howlingmadhowie,Quinton_,that's not a good sign. try: Alt+F2 'nvidia-settings' <enter>
+2007-07-26T05:08:00.000Z,Quinton_,howlingmadhowie,loaded
+2007-07-26T05:10:00.000Z,howlingmadhowie,Quinton_,i think i'd really recommend updating to 7.04. (so either installing new or using the system update option in the update manager)
+2007-07-26T05:10:00.000Z,Quinton_,howlingmadhowie,i am right after the updates.... whys it so important to upgrade?
+2007-07-26T05:11:00.000Z,howlingmadhowie,Quinton_,because 7.04 is better than 6.10 :)
+2007-07-26T05:11:00.000Z,Quinton_,howlingmadhowie,alrighty
+2007-07-26T05:11:00.000Z,howlingmadhowie,Quinton_,and there's no reason not to
+2007-07-26T05:11:00.000Z,Quinton_,howlingmadhowie,will i have the cool screen effects?
+2007-07-26T05:12:00.000Z,howlingmadhowie,Quinton_,"but updating will probably take about an hour. you should be able to activate the cube and wobbly-windows straight away. i've only got a really old graphics card myself, so i don't use them (i also find some software which i use doesn't like the cube effects)"
+2007-07-26T05:13:00.000Z,Quinton_,howlingmadhowie,i love the cube and wobbly windows.... then i want it to where when i close a windows it like glows from bottom to top... like its glowing it away and when a windows minimized or maximized it like squished up and stufff
+2007-07-26T05:18:00.000Z,Quinton_,howlingmadhowie,there are only 3 more problems
+2007-07-26T05:20:00.000Z,howlingmadhowie,Quinton_,"wireless: depends on what wireless card you have. support is a lot better in 7.04 than in 6.10. photoshop: there isn't a linux version of this. you can try to use the windows version in an emulator or install windows in a virtual machine inside linux, or use the gimp (which is about as powerful, but the GUI is very different). if the upgrade isn't working, i'd suggest downloading the 7.04 cd and installing new"
+2007-07-26T05:21:00.000Z,Quinton_,howlingmadhowie,upgrades working now...
+2007-07-26T05:22:00.000Z,Quinton_,howlingmadhowie,theres a linux version of photoshop?
+2007-07-26T05:22:00.000Z,howlingmadhowie,Quinton_,not in this century there isn't.
+2007-07-26T05:22:00.000Z,Quinton_,howlingmadhowie,so im guessing i would use wine.... ?
+2007-07-26T05:23:00.000Z,howlingmadhowie,Quinton_,"you can try wine, it may work. installing it inside a windows virtual machine is the sure fire answer. that will always work. however, i'd recommend having a look at the gimp at some stage. it is extremely powerful (it is used for example to touch up the special effects for the harry potter films amongst others)"
+2007-07-26T05:24:00.000Z,Quinton_,howlingmadhowie,I am not very fond of the gimp and dont really like it
+2007-07-26T05:24:00.000Z,howlingmadhowie,Quinton_,then you're going to have to jump through some hoops to get photoshop installed.
+2007-07-26T05:25:00.000Z,Quinton_,howlingmadhowie,i see.... may i go take a quike shower? its morning here....
+2007-07-26T05:27:00.000Z,howlingmadhowie,Quinton_,i hearby confer upon Quinton the right to partake in one (1) shower without let or hindrance :)
+2007-07-26T05:42:00.000Z,howlingmadhowie,Quinton_,and i also wouldn't encourage sony by buying their products :(
+2007-07-26T05:33:00.000Z,Quinton_,howlingmadhowie,"lmao i read your message, funny. SO the update is almost done"
+2007-07-26T05:34:00.000Z,howlingmadhowie,Quinton_,"after it's updated, you'll have to restart the computer"
+2007-07-26T05:34:00.000Z,Quinton_,howlingmadhowie,of course
+2007-07-26T05:35:00.000Z,Quinton_,howlingmadhowie,so after this all i need is to make adobe dreamweaver... photoshop... and pidgin with wireless work... then im set
+2007-07-26T05:40:00.000Z,howlingmadhowie,Quinton_,"dreamweaver is also windows/mac only. a virtual machine looks increasingly to be your best bet here. if you really want to use dreamweaver and photoshop, you should know that adobe doesn't support linux. there is native linux software which is as capable, but you'd have to learn to do things new. in your case, i'd recommend dual-booting and trying out the linux versions, while retaining the windows versions in a wi"
+2007-07-26T05:41:00.000Z,Quinton_,howlingmadhowie,i would love to dual boot but sony vaio STRICTLY has the harddrive like pined down to not let anyone install xp... only vista
+2007-07-26T05:41:00.000Z,Quinton_,howlingmadhowie,thus why i got linux
+2007-07-26T05:42:00.000Z,howlingmadhowie,Quinton_,"then your next step will be installing windows xp in a virtual machine inside linux. i've never done that myself, so i can't help much. i'd recommend looking into qemu and kvm"
+2007-07-26T05:43:00.000Z,Quinton_,howlingmadhowie,the only thing with 2000ddr for 1200$ rather than like 2500$
+2007-07-26T05:44:00.000Z,Quinton_,howlingmadhowie,17' also
+2007-07-26T05:45:00.000Z,Quinton_,howlingmadhowie,so howd you learn this much about linux?
+2007-07-26T05:46:00.000Z,howlingmadhowie,Quinton_,http://lxer.com/module/db/viewby.php?uid=124&sort=120&option=1&value=on&offset=0&dbn=14
+2007-07-26T05:47:00.000Z,Quinton_,howlingmadhowie,>>; ohhh... yeah i knew that... do you think it will be hard to get photoshop on here?
+2007-07-26T05:47:00.000Z,howlingmadhowie,Quinton_,I've been using linux for about 3 years now. and i'm very interested in computers. there are however hundreds of thousands of people who know a lot more than i do
+2007-07-26T05:48:00.000Z,howlingmadhowie,Quinton_,it shouldn't be impossible. first install windows in a virtual machine (check out qemu and kvm). then install photoshop in windows
+2007-07-26T05:49:00.000Z,Quinton_,howlingmadhowie,mhm...
+2007-07-26T05:52:00.000Z,Quinton_,howlingmadhowie,Do you have a gf?
+2007-07-26T05:52:00.000Z,Quinton_,howlingmadhowie,or bf...
+2007-07-26T05:52:00.000Z,howlingmadhowie,Quinton_,off-topic: i sort of have a bf
+2007-07-26T05:53:00.000Z,Quinton_,howlingmadhowie,"sooo, so we wont be off topic have an aim?"
+2007-07-26T05:53:00.000Z,howlingmadhowie,Quinton_,"yes, but i'm busy."
+2007-07-26T05:54:00.000Z,Quinton_,howlingmadhowie,"No offence ( I dont know your gender ) just saying that because almost all of my friends are bi-sexual... but so im not offencive. your a female or male?, also sorry for being off topic"
+2007-07-26T05:55:00.000Z,howlingmadhowie,Quinton_,way too off-topic.
+2007-07-26T05:56:00.000Z,Quinton_,howlingmadhowie,=p
+2007-07-26T05:57:00.000Z,Quinton_,howlingmadhowie,"my appolagies, btw that update is almost done... I had mistaken the time."
+2007-07-26T06:00:00.000Z,howlingmadhowie,Quinton_,"don't worry about it. just bear in mind, that #ubuntu is an international chat channel and that there are some cultures which find the word 'bisexual' offensive and some cultures which find the idea that 'god is watching you' offensive. let's just stay on-topic"
+2007-07-26T06:01:00.000Z,Quinton_,howlingmadhowie,=]  okey
+2007-07-26T06:01:00.000Z,Quinton_,howlingmadhowie,i removed the obsolete packages during the upgrade is that ok?
+2007-07-26T06:02:00.000Z,howlingmadhowie,Quinton_,"apt-get (the program which controls upgrades and manages the install packages) is pretty mature software, so i imagine it's fine"
+2007-07-26T06:03:00.000Z,Quinton_,howlingmadhowie,"alright, it still boots good! a little slower though"
+2007-07-26T06:04:00.000Z,Quinton_,howlingmadhowie,=[ it says desktop effects cannot be enabled =[
+2007-07-26T06:05:00.000Z,howlingmadhowie,Quinton_,sounds like the right nvidia driver hasn't been installed. go to 'System->Administration->Manage Restricted Drivers' (or whatever it's called in english)
+2007-07-26T06:06:00.000Z,Quinton_,howlingmadhowie,gotta install the package?
+2007-07-26T06:06:00.000Z,howlingmadhowie,Quinton_,sounds good
+2007-07-26T06:06:00.000Z,Quinton_,howlingmadhowie,no i mean to get into it
+2007-07-26T06:07:00.000Z,howlingmadhowie,Quinton_,"due to licensing restrictions, some drivers can not be installed automatically"
+2007-07-26T06:07:00.000Z,Quinton_,howlingmadhowie,i see
+2007-07-26T06:09:00.000Z,Quinton_,howlingmadhowie,wireless doesnt work
+2007-07-26T06:09:00.000Z,howlingmadhowie,Quinton_,how about the nvidia driver? did that install okay?
+2007-07-26T06:10:00.000Z,Quinton_,howlingmadhowie,it says my hardware doesnt need any restricted drivers
+2007-07-26T06:10:00.000Z,howlingmadhowie,Quinton_,strange. the nvidia 8400 most definitely needs restricted drivers
+2007-07-26T06:11:00.000Z,Quinton_,howlingmadhowie,no clue here...
+2007-07-26T06:14:00.000Z,howlingmadhowie,Quinton_,according to http://www.nvidia.com/object/linux_display_ia32_100.14.09.html the 8400M GT is supported in the current nvidia driver. it may well be in 'System->Administration->Synaptic Package Manager'
+2007-07-26T06:15:00.000Z,Quinton_,howlingmadhowie,i found restricted drivers
+2007-07-26T06:16:00.000Z,Quinton_,howlingmadhowie,lucent/agere linmodem controller driver?
+2007-07-26T06:17:00.000Z,howlingmadhowie,Quinton_,for your internal modem.
+2007-07-26T06:17:00.000Z,Quinton_,howlingmadhowie,like my wireless?
+2007-07-26T06:18:00.000Z,howlingmadhowie,Quinton_,"nope. just the modem. getting the wireless to work could be tricky, depending on what chipset sony decided to use"
+2007-07-26T06:19:00.000Z,Quinton_,howlingmadhowie,I have no idea what chipset they used
+2007-07-26T06:19:00.000Z,howlingmadhowie,Quinton_,have you found the current nvidia driver in Synaptic Package Manager?
+2007-07-26T06:19:00.000Z,Quinton_,howlingmadhowie,oh download it from synaptic?
+2007-07-26T06:20:00.000Z,Quinton_,howlingmadhowie,has lots of restricted things under nvidia
+2007-07-26T06:21:00.000Z,Quinton_,howlingmadhowie,so d/l nvidia glx new ?
+2007-07-26T06:21:00.000Z,howlingmadhowie,Quinton_,yep :)
+2007-07-26T06:23:00.000Z,Quinton_,howlingmadhowie,changes applies...
+2007-07-26T06:24:00.000Z,howlingmadhowie,Quinton_,sounds good. now you can restart the windowing system ('Ctrl+Alt+Backspace')
+2007-07-26T06:25:00.000Z,Quinton_,howlingmadhowie,MUCH faster
+2007-07-26T06:26:00.000Z,Quinton_,howlingmadhowie,thats so fast....
+2007-07-26T06:26:00.000Z,howlingmadhowie,Quinton_,"good. that's probably a good sign. just to make sure, can you do the following: Alt+F2, 'glxgears' <enter>"
+2007-07-26T06:26:00.000Z,Quinton_,howlingmadhowie,are compiz and beryl ubuntu screen effects?
+2007-07-26T06:27:00.000Z,Quinton_,howlingmadhowie,it did not do anything
+2007-07-26T06:27:00.000Z,howlingmadhowie,Quinton_,"yeah. the situation with beryl and compiz is quite complicated at the moment. beryl was a fork of the compiz project, now they're getting back together again in something called 'compizfusion' if i recall correctly"
+2007-07-26T06:28:00.000Z,howlingmadhowie,Quinton_,then maybe you don't have the test program installed. try searching for glxgears in the Synaptic Package Manager and installing it. then repeat Alt+F2 'glxgears' <enter>
+2007-07-26T06:29:00.000Z,Quinton_,howlingmadhowie,mesa-utils ?
+2007-07-26T06:29:00.000Z,howlingmadhowie,Quinton_,sounds good
+2007-07-26T06:30:00.000Z,Quinton_,howlingmadhowie,nope still doesnt do anything
+2007-07-26T06:32:00.000Z,Quinton_,howlingmadhowie,as shown from videos on youtube compiz fusion work nice...
+2007-07-26T06:33:00.000Z,howlingmadhowie,Quinton_,then let's get more information. go to 'Applications->Accessories->Terminal'. wait till a terminal appears then enter 'glxgears'.
+2007-07-26T06:34:00.000Z,Quinton_,howlingmadhowie,"it says 'GLX' missing on display ':0.0'. Error couldnt get an RGB, double-buffered visual"
+2007-07-26T06:35:00.000Z,howlingmadhowie,Quinton_,"i have the feeling this could all go very wrong. one of your main motivations for using ubuntu seems to be the eye candy. i can understand that, but if we can't get photophop and dreamweaver installed in a windows virtual machine, then it doesn't matter how good the eye-candy is"
+2007-07-26T06:35:00.000Z,howlingmadhowie,Quinton_,that's not a good sign. can you try rebooting the computer?
+2007-07-26T06:35:00.000Z,Quinton_,howlingmadhowie,of course
+2007-07-26T06:36:00.000Z,Quinton_,howlingmadhowie,works very quikly... and is now booting back up...
+2007-07-26T06:36:00.000Z,Quinton_,howlingmadhowie,no.. I never have... even on the preinstalled vista
+2007-07-26T06:37:00.000Z,howlingmadhowie,Quinton_,"as far as i know, before the windowing sysem starts, a big nvidia splash screen appears if you're using the nvida driver"
+2007-07-26T06:38:00.000Z,howlingmadhowie,Quinton_,"as far as i can tell, this means that the nvidia driver still isn't being used. try running 'nvidia-settings'"
+2007-07-26T06:38:00.000Z,Quinton_,howlingmadhowie,never has...
+2007-07-26T06:38:00.000Z,Quinton_,howlingmadhowie,works... now what ?
+2007-07-26T06:39:00.000Z,howlingmadhowie,Quinton_,set the screen resolution you want (in X server display configuration) and then  'Save to X Configuation File'
+2007-07-26T06:40:00.000Z,Quinton_,howlingmadhowie,thats not there...
+2007-07-26T06:41:00.000Z,howlingmadhowie,Quinton_,did you manage to start the nvidia-settings program?
+2007-07-26T06:42:00.000Z,Quinton_,howlingmadhowie,it did
+2007-07-26T06:42:00.000Z,howlingmadhowie,Quinton_,and you can see a nice grafical software where you can configure your graphics card?
+2007-07-26T06:43:00.000Z,Quinton_,howlingmadhowie,it just says... enable tooltips.... display status bar. slider text entires. show 'really quit' dialog and unchecked is include c display names in config file
+2007-07-26T06:44:00.000Z,howlingmadhowie,Quinton_,that sounds like the last page in the software. is there a menu on the left in the window? (X server information... x server display configuration...)
+2007-07-26T06:45:00.000Z,Quinton_,howlingmadhowie,nvidia-settings configuration: and thats all it says
+2007-07-26T06:46:00.000Z,howlingmadhowie,Quinton_,and nvidia-settings is installed?
+2007-07-26T06:46:00.000Z,Quinton_,howlingmadhowie,yeah and when i type a little box pops up
+2007-07-26T06:49:00.000Z,howlingmadhowie,Quinton_,one second
+2007-07-26T06:49:00.000Z,Quinton_,howlingmadhowie,ok
+2007-07-26T06:54:00.000Z,howlingmadhowie,Quinton_,"when i enter nvidia-settings, this program is started: http://img228.imageshack.us/img228/2949/bildschirmfotoij2.png"
+2007-07-26T06:55:00.000Z,Quinton_,howlingmadhowie,not me
+2007-07-26T06:57:00.000Z,howlingmadhowie,Quinton_,"strange. okay. let's do this the direct way. open a terminal, 'sudo -i' 'cd /etc/X11' 'nano -w xorg.conf'"
+2007-07-26T06:58:00.000Z,Quinton_,howlingmadhowie,got it
+2007-07-26T06:58:00.000Z,howlingmadhowie,Quinton_,"oh, hang on. i've found something interesting. just try in a terminal: 'sudo nvidia-xconfig'"
+2007-07-26T07:00:00.000Z,Quinton_,howlingmadhowie,doesnt give any options just says 3 lines about using x configuration
+2007-07-26T07:00:00.000Z,howlingmadhowie,Quinton_,perfect. now restart the windowing system ('Ctrl+Alt+Backspace')
+2007-07-26T07:01:00.000Z,Quinton_,howlingmadhowie,its just.... black
+2007-07-26T07:01:00.000Z,howlingmadhowie,Quinton_,nothing?
+2007-07-26T07:01:00.000Z,Quinton_,howlingmadhowie,nope
+2007-07-26T07:01:00.000Z,howlingmadhowie,Quinton_,i'm starting to get annoyed with this nvidia driver
+2007-07-26T07:01:00.000Z,Quinton_,howlingmadhowie,sorry
+2007-07-26T07:02:00.000Z,Quinton_,howlingmadhowie,ctrl+alt+f2 didnt do anything
+2007-07-26T07:03:00.000Z,howlingmadhowie,Quinton_,oh
+2007-07-26T07:03:00.000Z,Quinton_,howlingmadhowie,left alt doesnt work
+2007-07-26T07:04:00.000Z,howlingmadhowie,Quinton_,"okay, restart the computer :("
+2007-07-26T07:05:00.000Z,Quinton_,howlingmadhowie,it will work .... i think....
+2007-07-26T07:05:00.000Z,Quinton_,howlingmadhowie,nope... now were back where we began...
+2007-07-26T07:05:00.000Z,Quinton_,howlingmadhowie,blackscreen after it boots
+2007-07-26T07:06:00.000Z,howlingmadhowie,Quinton_,and does Ctrl+Alt+F2 do anything?
+2007-07-26T07:06:00.000Z,Quinton_,howlingmadhowie,no... and this is a laptop
+2007-07-26T07:07:00.000Z,howlingmadhowie,Quinton_,okay. things have gone pear-shaped. Ctrl-Alt-Backspace doesn't do anything either?
+2007-07-26T07:07:00.000Z,Quinton_,howlingmadhowie,no
+2007-07-26T07:09:00.000Z,Quinton_,howlingmadhowie,what to do?
+2007-07-26T07:09:00.000Z,howlingmadhowie,Quinton_,"oh boy. i think the easy way out is to install ubuntu again. looks like the nvidia driver has claimed another victim. if you still think my advice is any good, download the new version (7.04) and install from that disk"
+2007-07-26T07:09:00.000Z,Quinton_,howlingmadhowie,i cant
+2007-07-26T07:10:00.000Z,Quinton_,howlingmadhowie,i HAVE to text base install or tty cannot be accesed and job control is turned off...
+2007-07-26T07:11:00.000Z,Quinton_,howlingmadhowie,plus it wont recognize nvidia just like this time... besides that im already on ver 7.04
+2007-07-26T07:11:00.000Z,howlingmadhowie,Quinton_,then the alternative install cd for 7.04?
+2007-07-26T07:13:00.000Z,Quinton_,howlingmadhowie,what do I do?
+2007-07-26T07:13:00.000Z,howlingmadhowie,Quinton_,"hang on, i think we can rescue it."
+2007-07-26T07:14:00.000Z,howlingmadhowie,Quinton_,"restart, and press escape when it tells you to"
+2007-07-26T07:14:00.000Z,Quinton_,howlingmadhowie,recoverymode?
+2007-07-26T07:15:00.000Z,howlingmadhowie,Quinton_,nope. change the options for standard boot mode by deleting 'splash' and 'quiet' and adding 'runlevel=3'
+2007-07-26T07:16:00.000Z,Quinton_,howlingmadhowie,i hit esc... so now what?
+2007-07-26T07:16:00.000Z,howlingmadhowie,Quinton_,press e
+2007-07-26T07:17:00.000Z,howlingmadhowie,Quinton_,press e again
+2007-07-26T07:17:00.000Z,Quinton_,howlingmadhowie,now... ?
+2007-07-26T07:18:00.000Z,howlingmadhowie,Quinton_,deleted 'quiet' and 'splash' and add 'runlevel=3'
+2007-07-26T07:18:00.000Z,Quinton_,howlingmadhowie,"i got grub edit> root (hd0,0)"
+2007-07-26T07:19:00.000Z,howlingmadhowie,Quinton_,"oh, sorry. press escape"
+2007-07-26T07:19:00.000Z,Quinton_,howlingmadhowie,ok now?
+2007-07-26T07:19:00.000Z,howlingmadhowie,Quinton_,and press escape again until you get up to the top menu
+2007-07-26T07:19:00.000Z,howlingmadhowie,Quinton_,let's try recovery mode :)
+2007-07-26T07:20:00.000Z,Quinton_,howlingmadhowie,loading it...
+2007-07-26T07:20:00.000Z,howlingmadhowie,Quinton_,lots of text should go flying by
+2007-07-26T07:21:00.000Z,Quinton_,howlingmadhowie,it stoppped and sayysss root@ubuntu:~# select () to /dev/rtc to wait for clock tick timed out
+2007-07-26T07:21:00.000Z,howlingmadhowie,Quinton_,good. enter 'cd /etc/X11'
+2007-07-26T07:22:00.000Z,howlingmadhowie,Quinton_,does it complain at all?
+2007-07-26T07:22:00.000Z,Quinton_,howlingmadhowie,no
+2007-07-26T07:22:00.000Z,howlingmadhowie,Quinton_,good. let's check to see it did that. enter 'pwd'. do you see /etc/X11 ?
+2007-07-26T07:23:00.000Z,Quinton_,howlingmadhowie,yeah
+2007-07-26T07:23:00.000Z,howlingmadhowie,Quinton_,good :) now enter the following 'mv xorg.conf.backup xorg.conf'
+2007-07-26T07:23:00.000Z,Quinton_,howlingmadhowie,didnt do anything
+2007-07-26T07:24:00.000Z,howlingmadhowie,Quinton_,maybe it did :) 'ls -lh' what's the date of xorg.conf?
+2007-07-26T07:25:00.000Z,Quinton_,howlingmadhowie,08:59
+2007-07-26T07:25:00.000Z,howlingmadhowie,Quinton_,"mm, hang on. when you enter 'ls' what files to you see which start with 'xorg.conf'?"
+2007-07-26T07:26:00.000Z,Quinton_,howlingmadhowie,conf and conf old
+2007-07-26T07:27:00.000Z,howlingmadhowie,Quinton_,sounds good. 'reboot'
+2007-07-26T07:27:00.000Z,Quinton_,howlingmadhowie,how?
+2007-07-26T07:27:00.000Z,howlingmadhowie,Quinton_,enter the word 'reboot'
+2007-07-26T07:28:00.000Z,howlingmadhowie,Quinton_,"if the computer doesn't boot again to where we were before we started playing around with the nvidia driver, we'll have to boot again in recovery mode and edit xorg.conf by hand using a text editor (nano)"
+2007-07-26T07:28:00.000Z,Quinton_,howlingmadhowie,booted
+2007-07-26T07:28:00.000Z,howlingmadhowie,Quinton_,have you got the windowing environment running? (X server)
+2007-07-26T07:29:00.000Z,Quinton_,howlingmadhowie,i guess.... ?
+2007-07-26T07:29:00.000Z,howlingmadhowie,Quinton_,so you can log in normally ?
+2007-07-26T07:29:00.000Z,Quinton_,howlingmadhowie,yeah
+2007-07-26T07:29:00.000Z,howlingmadhowie,Quinton_,cool :)
+2007-07-26T07:30:00.000Z,howlingmadhowie,Quinton_,now then. what do you see under 'System->Administration->Restricted Drivers Manager'?
+2007-07-26T07:31:00.000Z,Quinton_,howlingmadhowie,the modem thing still
+2007-07-26T07:31:00.000Z,howlingmadhowie,Quinton_,and still no reference to a graphics card?
+2007-07-26T07:32:00.000Z,Quinton_,howlingmadhowie,no
+2007-07-26T07:32:00.000Z,howlingmadhowie,Quinton_,can you open a terminal and type the following: 'lspci | grep VGA'
+2007-07-26T07:33:00.000Z,Quinton_,howlingmadhowie,says VGA compatible controle nvidia coorp unkown device 0426 (rev a 1)
+2007-07-26T07:34:00.000Z,howlingmadhowie,Quinton_,it really shouldn't be an unknown device by now. i wonder what's up with the driver. did you get the driver from the cd or from the internet?
+2007-07-26T07:35:00.000Z,Quinton_,howlingmadhowie,cd...
+2007-07-26T07:35:00.000Z,howlingmadhowie,Quinton_,a-ha! that could be what's going wrong. the version on the cd is really old.
+2007-07-26T07:36:00.000Z,howlingmadhowie,Quinton_,start the Synaptic Package Manager and go to Settings->sources
+2007-07-26T07:37:00.000Z,Quinton_,howlingmadhowie,there is no sources?
+2007-07-26T07:38:00.000Z,howlingmadhowie,Quinton_,whatever it's called in the language you're using. maybe it's 'package sources' or something similar (under Settings in the navigation for the Synaptic Package Management window)
+2007-07-26T07:38:00.000Z,Quinton_,howlingmadhowie,"preferences, respriotires, filters, set internal option, toolbar"
+2007-07-26T07:39:00.000Z,howlingmadhowie,Quinton_,repositories :)
+2007-07-26T07:39:00.000Z,Quinton_,howlingmadhowie,now?
+2007-07-26T07:40:00.000Z,howlingmadhowie,Quinton_,"activate 'main', 'universe', 'restricted' and 'multiverse'. on one of the tabs of that window there could be a way to switch off the cd as a software source. if you can, do this."
+2007-07-26T07:41:00.000Z,Quinton_,howlingmadhowie,how do i turn off the cd?
+2007-07-26T07:42:00.000Z,howlingmadhowie,Quinton_,hang on. my laptop is in english. i'll just boot it and see how to do that
+2007-07-26T07:43:00.000Z,Quinton_,howlingmadhowie,ok i removed cd option and turned o nwhat you said now what?
+2007-07-26T07:44:00.000Z,howlingmadhowie,Quinton_,shut the repositories dialog screen and click 'Reload' on the main Synaptic Package Management screen
+2007-07-26T07:45:00.000Z,howlingmadhowie,Quinton_,shut Synaptic Package Manager and start 'System->Administration->Update Manager'
+2007-07-26T07:46:00.000Z,Quinton_,howlingmadhowie,nothing
+2007-07-26T07:47:00.000Z,howlingmadhowie,Quinton_,click 'Check'
+2007-07-26T07:47:00.000Z,Quinton_,howlingmadhowie,nothing
+2007-07-26T07:48:00.000Z,howlingmadhowie,Quinton_,then it must have got the new nvidia version from the net. which of course doesn't answer the question as to why it doesn't appear in the restricted drivers list
+2007-07-26T07:50:00.000Z,howlingmadhowie,Quinton_,okay. the next approach would be to download the nvidia driver directly from nvidia.com and install it.
+2007-07-26T07:51:00.000Z,Quinton_,howlingmadhowie,find the driver for me? =[ I think I will mess up
+2007-07-26T07:55:00.000Z,howlingmadhowie,Quinton_,have a look at http://ubuntuforums.org/showthread.php?t=441658&highlight=8400m and https://help.ubuntu.com/community/NvidiaManual
+2007-07-26T07:55:00.000Z,howlingmadhowie,Quinton_,"if you have any problems, let me know. i should really be getting to do some work now"
+2007-07-26T08:03:00.000Z,Quinton_,howlingmadhowie,i tired the instructions and it says i cannot find the file i downloaded after following nvidias strict instructions
+2007-07-26T08:05:00.000Z,howlingmadhowie,Quinton_,where did you download the file to? can you see it on your desktop?
+2007-07-26T08:05:00.000Z,Quinton_,howlingmadhowie,yes
+2007-07-26T08:06:00.000Z,howlingmadhowie,Quinton_,good. then open a terminal and enter 'cd Desktop'. you should now be able to see the driver (enter 'ls')
+2007-07-26T08:07:00.000Z,Quinton_,howlingmadhowie,no such file or drectory
+2007-07-26T08:07:00.000Z,howlingmadhowie,Quinton_,what does 'pwd' say?
+2007-07-26T08:08:00.000Z,Quinton_,howlingmadhowie,/home/quinton
+2007-07-26T08:08:00.000Z,howlingmadhowie,Quinton_,'cd Desktop'
+2007-07-26T08:09:00.000Z,Quinton_,howlingmadhowie,no such file or drectory
+2007-07-26T08:10:00.000Z,howlingmadhowie,Quinton_,'ls' what do you see?
+2007-07-26T08:10:00.000Z,Quinton_,howlingmadhowie,desktop examples sudo
+2007-07-26T08:15:00.000Z,howlingmadhowie,Quinton_,"sorry, my boss just called :) so, where were we? 'ls' replies that there is a file called 'desktop' (which surprises me because it is usually called 'Desktop') and when you enter 'cd Desktop' it replies 'no such file or directory'."
+2007-07-26T08:16:00.000Z,Quinton_,howlingmadhowie,i just need step by step for beryl and nvidia?
+2007-07-26T08:17:00.000Z,Quinton_,howlingmadhowie,i can do everything else on my own
+2007-07-26T08:17:00.000Z,howlingmadhowie,Quinton_,and you're sure you entered 'cd Desktop' and not 'cd desktop'?
+2007-07-26T08:18:00.000Z,Quinton_,howlingmadhowie,oh... ok so whats next lol ?
+2007-07-26T08:19:00.000Z,howlingmadhowie,Quinton_,i'd move the driver to the /root directory.
+2007-07-26T08:19:00.000Z,Quinton_,howlingmadhowie,wheres that?
+2007-07-26T08:20:00.000Z,howlingmadhowie,Quinton_,enter 'sudo -i' and your password. then 'mv /home/quinton/Desktop/NVIDIA* $HOME'
+2007-07-26T08:21:00.000Z,Quinton_,howlingmadhowie,just put a >
+2007-07-26T08:23:00.000Z,howlingmadhowie,Quinton_,sounds good. enter 'cd $HOME'
+2007-07-26T08:23:00.000Z,Quinton_,howlingmadhowie,just loaded root@ubuntu again
+2007-07-26T08:25:00.000Z,howlingmadhowie,Quinton_,and what do 'pwd' and 'ls' now say?
+2007-07-26T08:26:00.000Z,Quinton_,howlingmadhowie,/root and root@ubuntu:~#
+2007-07-26T08:27:00.000Z,howlingmadhowie,Quinton_,"there's nothing in the directory? strange. 'ls /home/quinton/Desktop'. is the driver you downloaded from the nvidia website still there? if yes, can you write the first 5 letters?"
+2007-07-26T08:28:00.000Z,Quinton_,howlingmadhowie,write the first 5 letters?
+2007-07-26T08:29:00.000Z,howlingmadhowie,Quinton_,just tell me the first 5 letters
+2007-07-26T08:30:00.000Z,Quinton_,howlingmadhowie,NVIDI ?
+2007-07-26T08:31:00.000Z,howlingmadhowie,Quinton_,okay. now on the console (assuming you still have a root prompt) enter 'mv /home/quinton/Desktop/NVIDI* $HOME'
+2007-07-26T08:32:00.000Z,Quinton_,howlingmadhowie,no destination
+2007-07-26T08:34:00.000Z,howlingmadhowie,Quinton_,"okay, you're typing something wrongly. try this 'mv /home/quinton/Desktop/NVIDI* /root'"
+2007-07-26T08:34:00.000Z,Quinton_,howlingmadhowie,says root@ubuntu etc...
+2007-07-26T08:35:00.000Z,Quinton_,howlingmadhowie,now what?
+2007-07-26T08:36:00.000Z,howlingmadhowie,Quinton_,okay: 'cd' and 'ls'. you should see the NVIDIA driver
+2007-07-26T08:36:00.000Z,Quinton_,howlingmadhowie,yes
+2007-07-26T08:39:00.000Z,Quinton_,howlingmadhowie,now?
+2007-07-26T08:40:00.000Z,howlingmadhowie,Quinton_,"cool. now you can carry on with the instructions on the nvidia site ( or on https://help.ubuntu.com/community/NvidiaManual ). just remember to 'sudo -i' to get to a root window, and then 'cd /root' to get to the directory with the driver in it before running 'sh ./NVIDIA*' again, otherwise you won't find it"
+2007-07-26T08:42:00.000Z,Quinton_,howlingmadhowie,it say to turn off x server before install ?
+2007-07-26T08:44:00.000Z,howlingmadhowie,Quinton_,"to do that, enter 'Ctrl+Alt+F2'. log in. 'sudo -i', enter password. '/etc/init.d/gdm stop'"
+2007-07-26T08:45:00.000Z,Quinton_,howlingmadhowie,then how do i get back to the nvidia installer?
+2007-07-26T08:46:00.000Z,howlingmadhowie,Quinton_,now enter 'sh ./NVIDIA*'
+2007-07-26T08:46:00.000Z,howlingmadhowie,Quinton_,and follow the on screen instructions
+2007-07-26T08:47:00.000Z,Quinton_,howlingmadhowie,wtf... no matching precompiled kernel interface was found on NVIDIA
+2007-07-26T08:47:00.000Z,Quinton_,howlingmadhowie,it cant find a precompiled kernel
+2007-07-26T08:48:00.000Z,Quinton_,howlingmadhowie,ERROR: you do not appear to have libc header files installed on your system. Please install your distibution's libc development package ?
+2007-07-26T08:49:00.000Z,howlingmadhowie,Quinton_,okay. you'll need that. quit the installation and follow the instructions on https://help.ubuntu.com/community/NvidiaManual
+2007-07-26T08:50:00.000Z,howlingmadhowie,Quinton_,you can return to the X server by entering ctrl+alt+f7
+2007-07-26T08:54:00.000Z,Quinton_,howlingmadhowie,upon installing the essentials it says it couldnt find the package
+2007-07-26T08:56:00.000Z,howlingmadhowie,Quinton_,i'm wondering if i can dial in from outside and do this for you. it's starting to take way to long
+2007-07-26T08:57:00.000Z,Quinton_,howlingmadhowie,please?
+2007-07-26T08:58:00.000Z,howlingmadhowie,Quinton_,build-essential should be in the apt cache. did you cut and paste the line from the webpage into a terminal?
+2007-07-26T08:59:00.000Z,Quinton_,howlingmadhowie,not cut and paste...
+2007-07-26T08:59:00.000Z,howlingmadhowie,Quinton_,then try it and see if it works
+2007-07-26T09:02:00.000Z,Quinton_,howlingmadhowie,it just says to isnert the edgy cd and hit enter so i do and then it doesnt load the cd or work
+2007-07-26T09:06:00.000Z,howlingmadhowie,Quinton_,"i've really got to be getting to do some work now. the package manager is still trying to get packages from the cd, which isn't good. you can open /etc/apt/sources.list in a text editor 'sudo nano -w /etc/apt/sources.list' and comment out (add a '#' at the start of the line) any lines which look like they refer to a cd. then run 'sudo apt-get update'"
+2007-07-26T09:06:00.000Z,howlingmadhowie,Quinton_,"lots of luck, i gotta be going."
+2007-07-26T15:27:00.000Z,howlingmadhowie,Quinton_,now in Synaptic click 'refresh' and then try to install the same packages again
+2007-07-26T15:52:00.000Z,howlingmadhowie,Quinton_,not yet. enter '/etc/init.d/gdm stop'
+2007-07-26T15:57:00.000Z,howlingmadhowie,Quinton_,what does it say when it fails? it should first offer to download a kernel from nvidia.org
+2007-07-26T15:58:00.000Z,howlingmadhowie,Quinton_,and then what did it do? it shoudl offer to build the correct interface to the kernel itself
+2007-07-26T16:01:00.000Z,howlingmadhowie,Quinton_,okay. and then?
+2007-07-27T16:03:00.000Z,howlingmadhowie,Quinton_,"okay, that's the error message i needed"
+2007-07-27T16:03:00.000Z,howlingmadhowie,Quinton_,enter the following: 'apt-get install linux-source-`uname -r`
+2007-07-27T16:35:00.000Z,howlingmadhowie,Quinton_,cool :) okay: 'cd' just by itself. and then 'sh NVIDIA*'

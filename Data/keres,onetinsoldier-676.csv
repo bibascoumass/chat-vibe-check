@@ -1,0 +1,677 @@
+date,from,to,text
+2008-12-11T08:57:00.000Z,keres,,"how do you install this dependency: 'gtk+ >= 2.4.0 (requires glib, atk, pango, iconv, etc)'"
+2008-12-11T08:59:00.000Z,onetinsoldier,keres,try  aptitude why glib (ect)
+2008-12-14T05:30:00.000Z,onetinsoldier,keres,for one thing.. you have a typo.. you're first quote was a 'single' quote... you want both quotes to be double quotes
+2008-12-14T05:38:00.000Z,onetinsoldier,keres, export PKG_CONFIG_PATH='/usr/PKG_CONFIG'   is the way to do that properly.. just an fyi
+2008-12-14T05:39:00.000Z,onetinsoldier,keres,then to check that you have done it properly do...   echo '$PKG_CONFIG_PATH'
+2008-12-14T05:40:00.000Z,onetinsoldier,keres,not in here tho.. on the command line
+2008-12-14T05:40:00.000Z,keres,onetinsoldier,duh? lol
+2008-12-14T05:40:00.000Z,onetinsoldier,keres, export PKG_CONFIG_PATH='/usr/PKG_CONFIG'   -CHECK YOUR QUOTES- is the way to do that properly.. just an fyi
+2008-12-14T05:41:00.000Z,keres,onetinsoldier,same thing
+2008-12-14T05:45:00.000Z,onetinsoldier,keres,it's the shell waiting for more input(after the single quote you had) because your quotes were wrong
+2008-12-14T05:46:00.000Z,keres,onetinsoldier,what are the right quotes then?
+2008-12-14T05:46:00.000Z,onetinsoldier,keres,export PKG_CONFIG_PATH='/usr/PKG_CONFIG'   echo '$PKG_CONFIG_PATH'   ...returns   /usr/PKG_CONFIG
+2008-12-14T05:47:00.000Z,keres,onetinsoldier,so type '        export PKG_CONFIG_PATH='/usr/PKG_CONFIG'         '            ?
+2008-12-14T05:47:00.000Z,onetinsoldier,keres,use double quotes in BOTH places
+2008-12-14T05:47:00.000Z,onetinsoldier,keres,yes
+2008-12-14T05:47:00.000Z,keres,onetinsoldier,"ok, now what?"
+2008-12-14T05:48:00.000Z,onetinsoldier,keres,"then check it, with   echo '$PKG_CONFIG_PATH'"
+2008-12-14T05:48:00.000Z,onetinsoldier,keres,ok.. there you go.. you got it now
+2008-12-14T05:48:00.000Z,keres,onetinsoldier,now?
+2008-12-14T05:49:00.000Z,onetinsoldier,keres,"well, all i was trying to do was show you how to do that environment variable properly..."
+2008-12-14T05:49:00.000Z,keres,onetinsoldier,"thank you, though"
+2008-12-14T05:50:00.000Z,onetinsoldier,keres,you're welcome.. i can try to help further tho.. what's happening now?
+2008-12-14T05:50:00.000Z,keres,onetinsoldier,http://pastebin.com/d7654dbd6
+2008-12-14T05:50:00.000Z,onetinsoldier,keres,ok.. i'll look
+2008-12-14T05:50:00.000Z,keres,onetinsoldier,"i have mesa-common-dev, too"
+2008-12-14T05:51:00.000Z,onetinsoldier,keres,ok.. hang on
+2008-12-14T05:52:00.000Z,onetinsoldier,keres,hmmm. try   make clean ....and then run again  ./configure
+2008-12-14T05:52:00.000Z,onetinsoldier,keres,doh!   make distclean
+2008-12-14T05:53:00.000Z,onetinsoldier,keres,try running   make distclean...  then ./configure
+2008-12-14T05:53:00.000Z,keres,onetinsoldier,make: *** No rule to make target `distclean'.  Stop.
+2008-12-14T05:54:00.000Z,onetinsoldier,keres,"hmmm... dangit, i'm rusty at this. thought that would work to clean up all the ./configure settings. it should have a distclean target i would think"
+2008-12-14T05:54:00.000Z,onetinsoldier,keres,"how about removing the dir and then unpacking it again, then running the ./configure"
+2008-12-14T05:57:00.000Z,onetinsoldier,keres,did you unpack it again and go into the dir?
+2008-12-14T05:58:00.000Z,keres,onetinsoldier,yes
+2008-12-14T05:59:00.000Z,onetinsoldier,keres,how did you get the configure script to begin with? what is this source(what are you trying to compile)? I will download it and try to compile here
+2008-12-14T05:59:00.000Z,onetinsoldier,keres,netradiant???
+2008-12-14T05:59:00.000Z,keres,onetinsoldier,http://www.icculus.org/netradiant/#What%20is%20NetRadiant?
+2008-12-14T06:03:00.000Z,onetinsoldier,keres,you will probably need to give me a little time
+2008-12-14T06:03:00.000Z,keres,onetinsoldier,take as much as you need
+2008-12-14T06:03:00.000Z,onetinsoldier,keres,i have it unpacked though... going in
+2008-12-14T06:09:00.000Z,onetinsoldier,keres,you were running a configure script at some point somewhere weren't you?
+2008-12-14T06:10:00.000Z,onetinsoldier,keres,or just the 'make' command.. i guess there never was a configure script eh?
+2008-12-14T06:10:00.000Z,keres,onetinsoldier,my pastebin is the output from make
+2008-12-14T06:10:00.000Z,keres,onetinsoldier,http://pastebin.com/d7654dbd6
+2008-12-14T06:10:00.000Z,onetinsoldier,keres,i don't even see a Makefile in there.. you know where it is?
+2008-12-14T06:10:00.000Z,keres,onetinsoldier,no. hmmmm
+2008-12-14T06:11:00.000Z,onetinsoldier,keres,weird.. mine dowsn have one.. i must have downloaded the binary by mistake.. hang on
+2008-12-14T06:13:00.000Z,onetinsoldier,keres,"ok, i was expecting to download a file from the web page"
+2008-12-14T06:14:00.000Z,keres,onetinsoldier,"there is a precompiled package, but it doesn't run on intrepid"
+2008-12-14T06:14:00.000Z,onetinsoldier,keres,nope.. it's made for Win32... how do i get the source?
+2008-12-14T06:15:00.000Z,keres,onetinsoldier,"i ran rsync, i got a makefile ???"
+2008-12-14T06:15:00.000Z,onetinsoldier,keres,yes.. ok. tell me whast you did to get it
+2008-12-14T06:15:00.000Z,keres,onetinsoldier,"a bunch of conf, py, and sh files"
+2008-12-14T06:16:00.000Z,onetinsoldier,keres,dang.. do you have all the steps you took? did you remove the source from your system?
+2008-12-14T06:16:00.000Z,onetinsoldier,keres,or do you still have the source dir on your system?
+2008-12-14T06:17:00.000Z,keres,onetinsoldier,yes
+2008-12-14T06:17:00.000Z,onetinsoldier,keres,go into it and type... make clean
+2008-12-14T06:17:00.000Z,keres,onetinsoldier,http://pastebin.com/mcadc499
+2008-12-14T06:18:00.000Z,onetinsoldier,keres,"ok, looks all normal there... hang on"
+2008-12-14T06:20:00.000Z,onetinsoldier,keres,do the following...   export DEPENDENCIES_CHECK='verbose'  ...then run 'make' again
+2008-12-14T06:21:00.000Z,onetinsoldier,keres,that will take me a minute to examine... hang on
+2008-12-14T06:24:00.000Z,onetinsoldier,keres,i'm not sure why it not finding gl.h... i'm still looking it over.. while i do you can try it with your PKG_CONFIG_PATH unset if you want.
+2008-12-14T06:25:00.000Z,onetinsoldier,keres,you DO have the 'pkg-config' package installed don't you?
+2008-12-14T06:25:00.000Z,onetinsoldier,keres,dpkg -l pkg-config
+2008-12-14T06:28:00.000Z,onetinsoldier,keres,unset your environment variable..   export PKG_CONFIG_PATH=''   then   export DEPENDENCIES_CHECK=''
+2008-12-14T06:29:00.000Z,onetinsoldier,keres,now try   make
+2008-12-14T06:29:00.000Z,onetinsoldier,keres,just checking.. i'm thinking
+2008-12-14T06:30:00.000Z,onetinsoldier,keres,can you DCC send me the Makefile?
+2008-12-14T06:31:00.000Z,keres,onetinsoldier,dcc?
+2008-12-14T06:31:00.000Z,onetinsoldier,keres,it's a way to send people file over IRC
+2008-12-14T06:32:00.000Z,keres,onetinsoldier,how?
+2008-12-14T06:34:00.000Z,onetinsoldier,keres,is there a list of nicks in the channel in your IRC client?
+2008-12-14T06:35:00.000Z,onetinsoldier,keres,"ok, i got it... hang on"
+2008-12-14T06:40:00.000Z,onetinsoldier,keres,i am pretty rusty at this... but try   export LDFAGS='/usr/include/GL'     then try make again
+2008-12-14T06:40:00.000Z,onetinsoldier,keres,oops.. typo!
+2008-12-14T06:40:00.000Z,onetinsoldier,keres,i am pretty rusty at this... but try   export LDFLAGS='/usr/include/GL'     then try make again
+2008-12-14T06:43:00.000Z,onetinsoldier,keres,dpkg -l libglib2.0-dev  ..do you have it installed?
+2008-12-14T06:43:00.000Z,keres,onetinsoldier,yes
+2008-12-14T06:44:00.000Z,onetinsoldier,keres,"grrr... ok. well, we got it to recognize that you have the gl.h   i'm thinking again"
+2008-12-14T06:45:00.000Z,onetinsoldier,keres,try the following...   export  LDFLAGS='/usr/include/GL /usr/include/glib-2.0/glib'   ...and then try make again
+2008-12-14T06:46:00.000Z,onetinsoldier,keres,really!!??? dangit
+2008-12-14T06:47:00.000Z,onetinsoldier,keres,make sure you have the file....   ls -l /usr/include/glib-2.0/glib/gutils.h
+2008-12-14T06:48:00.000Z,keres,onetinsoldier,http://pastebin.com/m12bc7bda
+2008-12-14T06:49:00.000Z,onetinsoldier,keres,"ok, you didn't need to use pastebin for that. i just need to see that one line. but ok, you have it... thinking"
+2008-12-14T06:54:00.000Z,onetinsoldier,keres,"ok.. the whole time you were trying to set the PKG_CONFIG_PATH, i think it was being set to the wrong path.. so we will try that again... ok?"
+2008-12-14T06:56:00.000Z,onetinsoldier,keres,do...  export PKG_CONFIG_PATH='/usr/bin'
+2008-12-14T06:57:00.000Z,keres,onetinsoldier,then?
+2008-12-14T06:57:00.000Z,onetinsoldier,keres,try make again
+2008-12-14T06:58:00.000Z,keres,onetinsoldier,same thing :S
+2008-12-14T06:58:00.000Z,onetinsoldier,keres,i give up for now... but i'll keep thinking about it. i will look into downloading the source and seeing if i can get it to compile on my system
+2008-12-14T06:59:00.000Z,onetinsoldier,keres,"you're welcome... sorry i couldn't get it, yet"
+2008-12-14T07:13:00.000Z,onetinsoldier,keres,"ok, i now have the source downloaded with svn"
+2008-12-14T08:00:00.000Z,onetinsoldier,keres,still here?
+2008-12-14T08:02:00.000Z,keres,onetinsoldier,yes
+2008-12-14T08:03:00.000Z,onetinsoldier,keres,"ok, i'm still trying... i do know of a dirty way of doing it. but i was trying to do it properly"
+2008-12-14T08:03:00.000Z,keres,onetinsoldier,which would be easier?
+2008-12-14T08:04:00.000Z,onetinsoldier,keres,"well, at this point the dirty way, although it's not that dirty"
+2008-12-14T08:04:00.000Z,keres,onetinsoldier,let's go
+2008-12-14T08:05:00.000Z,onetinsoldier,keres,"ok, there my be a little trial and error here too"
+2008-12-14T08:06:00.000Z,onetinsoldier,keres,export LDFLAGS='-l LIBS_GL=/usr/include/GL'
+2008-12-14T08:07:00.000Z,keres,onetinsoldier,2 double quotes on the end?
+2008-12-14T08:07:00.000Z,onetinsoldier,keres,yes
+2008-12-14T08:07:00.000Z,onetinsoldier,keres,two? no..! sorry
+2008-12-14T08:07:00.000Z,onetinsoldier,keres,export LDFLAGS='-l LIBS_GL=/usr/include/GL'
+2008-12-14T08:07:00.000Z,onetinsoldier,keres,that has one set of double quotes on the end...
+2008-12-14T08:08:00.000Z,keres,onetinsoldier,what do type for the ' > ' dialog?
+2008-12-14T08:08:00.000Z,onetinsoldier,keres,just press enter and try again...        export LDFLAGS='-l LIBS_GL=/usr/include/GL'
+2008-12-14T08:09:00.000Z,onetinsoldier,keres,ok...    sudo mkdir /usr/include/glib
+2008-12-14T08:10:00.000Z,onetinsoldier,keres,cp -v /usr/include/glib-2.0/glib/gutils.h /usr/include/glib
+2008-12-14T08:10:00.000Z,keres,onetinsoldier,then?
+2008-12-14T08:10:00.000Z,onetinsoldier,keres,done? try make
+2008-12-14T08:11:00.000Z,keres,onetinsoldier,i put sudo in front of it
+2008-12-14T08:12:00.000Z,onetinsoldier,keres,in front of the make command?
+2008-12-14T08:12:00.000Z,onetinsoldier,keres,oh.. nvm.. you meant the cp -v command
+2008-12-14T08:13:00.000Z,keres,onetinsoldier,http://pastebin.com/m60ff6866
+2008-12-14T08:13:00.000Z,onetinsoldier,keres,"if you get an error when trying make now, just copy and paste the single line that has the error in here"
+2008-12-14T08:13:00.000Z,keres,onetinsoldier,"that is the whole output, was it successful?"
+2008-12-14T08:13:00.000Z,onetinsoldier,keres,i'm pretty sure it was
+2008-12-14T08:14:00.000Z,onetinsoldier,keres,you might want to use a util called    checkinstall to actually install it
+2008-12-14T08:14:00.000Z,onetinsoldier,keres,"but if you don't use checkinstall, then it's just    make install"
+2008-12-14T08:15:00.000Z,onetinsoldier,keres,as root!
+2008-12-14T08:18:00.000Z,keres,onetinsoldier,http://pastebin.com/m1e190e9b
+2008-12-14T08:19:00.000Z,onetinsoldier,keres,go into the dir and type   make clean
+2008-12-14T08:19:00.000Z,onetinsoldier,keres,you don't need to show me the output of   make clean
+2008-12-14T08:19:00.000Z,keres,onetinsoldier,"no errors, but should i do install now?"
+2008-12-14T08:20:00.000Z,onetinsoldier,keres,no... there's nothing to install now that you did the make clean anyway
+2008-12-14T08:20:00.000Z,keres,onetinsoldier,now what?
+2008-12-14T08:20:00.000Z,onetinsoldier,keres,let's try the GL environment variable again...
+2008-12-14T08:20:00.000Z,onetinsoldier,keres,export LDFLAGS='-l GL=/usr/include/GL'
+2008-12-14T08:21:00.000Z,keres,onetinsoldier,then?
+2008-12-14T08:21:00.000Z,onetinsoldier,keres,  make
+2008-12-14T08:21:00.000Z,onetinsoldier,keres,then...  make install
+2008-12-14T08:23:00.000Z,keres,onetinsoldier,the last few lines are the same as before
+2008-12-14T08:24:00.000Z,onetinsoldier,keres,ok.. hang on
+2008-12-14T08:25:00.000Z,onetinsoldier,keres,let's meake sure you have the actual library installed...   dpkg -l '*mesa*' | grep '^ii'
+2008-12-14T08:26:00.000Z,keres,onetinsoldier,that has output
+2008-12-14T08:27:00.000Z,onetinsoldier,keres,ok.. do have these installed?   libgl1-mesa-dri  libgl1-mesa-glx  libglu1-mesa  mesa-common-dev  mesa-utils
+2008-12-14T08:28:00.000Z,keres,onetinsoldier,i have all of those
+2008-12-14T08:30:00.000Z,onetinsoldier,keres,what's up?
+2008-12-14T08:52:00.000Z,onetinsoldier,keres,do you have the following package installed?   libgtkglext1-dev
+2008-12-14T08:54:00.000Z,keres,onetinsoldier,yes
+2008-12-14T08:56:00.000Z,onetinsoldier,keres,hello.. you still here?
+2008-12-14T08:57:00.000Z,onetinsoldier,keres,go back into the source dir.. tell me when you are there
+2008-12-14T08:57:00.000Z,keres,onetinsoldier,yes
+2008-12-14T08:57:00.000Z,keres,onetinsoldier,ok
+2008-12-14T08:57:00.000Z,onetinsoldier,keres,make clean
+2008-12-14T08:57:00.000Z,onetinsoldier,keres,    export LDFLAGS=''
+2008-12-14T08:57:00.000Z,keres,onetinsoldier,"that lists an output, but no actual effect"
+2008-12-14T08:58:00.000Z,onetinsoldier,keres,ok.. works for me
+2008-12-14T08:58:00.000Z,keres,onetinsoldier,ok
+2008-12-14T08:59:00.000Z,onetinsoldier,keres,make certain you have all the packages listed on the website installed
+2008-12-14T08:59:00.000Z,keres,onetinsoldier,i'm 99% sure
+2008-12-14T09:00:00.000Z,onetinsoldier,keres,ok.. you know what to do...  make
+2008-12-14T09:00:00.000Z,onetinsoldier,keres,when finished...  make install
+2008-12-14T09:01:00.000Z,keres,onetinsoldier,http://pastebin.com/m4cc47d85
+2008-12-14T09:02:00.000Z,keres,onetinsoldier,make: *** [dependencies-check] Error 1
+2008-12-14T09:02:00.000Z,onetinsoldier,keres,"i'mnot sure what's wrong.. both me and raylu just made sure we had all the packages listed on the site installed, and it compiled on the first try, for both me and him"
+2008-12-14T09:05:00.000Z,onetinsoldier,keres,"why don't you try the following... just to make sure,    apt-get install --reinstall pkg-config"
+2008-12-14T09:06:00.000Z,keres,onetinsoldier,can you do something for me?
+2008-12-14T09:06:00.000Z,onetinsoldier,keres,sure
+2008-12-14T09:12:00.000Z,onetinsoldier,keres,so what's up?
+2008-12-14T09:12:00.000Z,keres,onetinsoldier,"it seems i have libglib2.0-dev, but when i try make it says it can't find it"
+2008-12-14T09:12:00.000Z,keres,onetinsoldier,"so i reinstallled it with aptitude, same thing"
+2008-12-14T09:16:00.000Z,keres,onetinsoldier,"Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?"
+2008-12-14T09:17:00.000Z,onetinsoldier,keres,"you have apt-get or aptitude, or synaptic running somewhere else apparently"
+2008-12-14T09:17:00.000Z,keres,onetinsoldier,really?
+2008-12-14T09:19:00.000Z,keres,onetinsoldier,http://pastebin.com/m774749d5
+2008-12-14T09:20:00.000Z,onetinsoldier,keres,i don't know what's wrong on your system. compiled for me and raylu just fine.. on the first try. i don't know what to tell you.
+2008-12-14T09:20:00.000Z,keres,onetinsoldier,should i just install 8.4 regardless?
+2008-12-14T09:21:00.000Z,onetinsoldier,keres,"i cannot recommend one way or the other on that, because that's entirely up to you"
+2008-12-14T09:22:00.000Z,onetinsoldier,keres,8.10 is working great here.. did you upgrade frmo 8.4? is that how you got 8.10? an upgrade?
+2008-12-17T08:23:00.000Z,onetinsoldier,keres,hi!
+2008-12-17T08:23:00.000Z,keres,onetinsoldier,"i'm starting with a fresh install again. if netradiant doesn't work, i'll try it on arch"
+2008-12-17T08:25:00.000Z,onetinsoldier,keres,"oh... roger that? you know, one thing about the other day, is you cold have updated the source through svn. you never know, prhaps it was updated between the time you downloaded it, and the time that i downloaded it. but that probably wasn't the problem. but you never know!"
+2008-12-17T08:25:00.000Z,keres,onetinsoldier,you could be right ;)
+2008-12-17T08:28:00.000Z,onetinsoldier,keres,anyway.. i wish you better luck this time :)
+2008-12-17T08:52:00.000Z,onetinsoldier,keres,awesome! i was hoping badly that your reinstall wouldn't be in vein
+2008-12-17T08:48:00.000Z,onetinsoldier,keres,how's it going? having any luck?
+2008-12-17T08:48:00.000Z,keres,onetinsoldier,just got subversion installed
+2008-12-17T08:49:00.000Z,onetinsoldier,keres,roger
+2008-12-17T08:51:00.000Z,keres,onetinsoldier,success!!!!
+2008-12-17T08:51:00.000Z,onetinsoldier,keres,W00t!
+2008-12-17T08:52:00.000Z,keres,onetinsoldier,i needed to anyway. :P but thanks :)
+2008-12-17T08:52:00.000Z,onetinsoldier,keres,"ok, cool :-)"
+2008-12-17T09:11:00.000Z,keres,onetinsoldier,it's the error that prevents me from changing views in the 2d viewport
+2008-12-17T09:16:00.000Z,onetinsoldier,keres,"sorry, what's happening?"
+2008-12-17T09:17:00.000Z,onetinsoldier,keres,"oh.. i see...  a Warning. usually you can ignore 'warnings', but sometimes they do mean something that needs paying attention too"
+2008-12-17T09:17:00.000Z,keres,onetinsoldier,can i msg you
+2008-12-17T09:18:00.000Z,onetinsoldier,keres,ok
+2008-12-18T04:16:00.000Z,keres,onetinsoldier,gtkradiant works perfect on 8.04
+2008-12-18T04:17:00.000Z,onetinsoldier,keres,"oh. roger. well, that's good at least. i forget, what happened after you successfully compiled it in 8.10 yesterday?"
+2008-12-18T04:18:00.000Z,keres,onetinsoldier,"it was missing gtk+ dependancies, ones that you can't possibly change, but are in 8.04."
+2008-12-18T04:18:00.000Z,onetinsoldier,keres,"oh yeah, now i remember"
+2008-12-18T04:19:00.000Z,keres,onetinsoldier,the missing gtk+ files made the change views inopprable.
+2008-12-18T04:19:00.000Z,onetinsoldier,keres,cool
+2008-12-18T04:21:00.000Z,onetinsoldier,keres,"anyway... you can run it in 8.04 for now so it's all good, correct? you know that probably considered an actual bug in the gtk libs available in 8.10 and you could file a bug report"
+2008-12-18T05:00:00.000Z,keres,onetinsoldier,do you have experience in fstab?
+2008-12-18T05:00:00.000Z,onetinsoldier,keres,"i'm a little rusty with it, but yes"
+2008-12-18T05:00:00.000Z,keres,onetinsoldier,UUID=B2284CC7284C8BF3 /media/windows/ ntfs-3g defaults 0 0
+2008-12-18T05:00:00.000Z,keres,onetinsoldier,will that mount without format?
+2008-12-18T05:01:00.000Z,onetinsoldier,keres,you mean that partition is not formatted?
+2008-12-18T05:01:00.000Z,keres,onetinsoldier,it is my partition i use to store files between linux formats
+2008-12-18T05:02:00.000Z,onetinsoldier,keres,ok
+2008-12-18T05:02:00.000Z,keres,onetinsoldier,wil that work?
+2008-12-18T05:02:00.000Z,onetinsoldier,keres,you mean that partition is not formatted?
+2008-12-18T05:02:00.000Z,keres,onetinsoldier,"formatted? as in empty? no, it's near full of files."
+2008-12-18T05:03:00.000Z,onetinsoldier,keres,what does this mean.. will that mount.. without format?  without format????
+2008-12-18T05:04:00.000Z,keres,onetinsoldier,i don't want any files on there to be deleted. will the syntax 'UUID=B2284CC7284C8BF3 /media/windows/ ntfs-3g defaults 0 0' mount it?
+2008-12-18T05:04:00.000Z,onetinsoldier,keres,"yes, i believe it should"
+2008-12-18T05:05:00.000Z,keres,onetinsoldier,it says i am not privelaged to mount Storage disk
+2008-12-18T05:06:00.000Z,onetinsoldier,keres,are you trying as root user? if not. you will need to change the permissions in fstab to change who is allowed to mount it
+2008-12-18T05:06:00.000Z,keres,onetinsoldier,how do you set permissions in fstab?
+2008-12-18T05:08:00.000Z,onetinsoldier,keres,"this is where i am rusty... it's called a umask. it's something like...  defaults,umask=0022"
+2008-12-18T05:09:00.000Z,keres,onetinsoldier,umask=0022 doesn't work
+2008-12-18T05:10:00.000Z,onetinsoldier,keres,try  umask=022
+2008-12-18T05:10:00.000Z,keres,onetinsoldier,same
+2008-12-18T05:11:00.000Z,onetinsoldier,keres,i would need to google it.. doing so now
+2008-12-18T05:12:00.000Z,onetinsoldier,keres,try  umask=0222
+2008-12-18T05:13:00.000Z,keres,onetinsoldier,same result :(
+2008-12-18T05:13:00.000Z,onetinsoldier,keres,hmmm. ok. i'll do more searching
+2008-12-18T05:13:00.000Z,keres,onetinsoldier,"full syntax: 'UUID=B2284CC7284C8BF3 /media/windows/ ntfs-3g defaults,umask=0222 0 0'"
+2008-12-18T05:14:00.000Z,onetinsoldier,keres,"looks correct to me, but, ineed to read some more"
+2008-12-18T05:17:00.000Z,keres,onetinsoldier,222?
+2008-12-18T05:18:00.000Z,keres,onetinsoldier,i'll try reboot. i got to go anyway
+2008-12-18T05:18:00.000Z,onetinsoldier,keres,ok
+2008-12-18T05:19:00.000Z,onetinsoldier,keres,the problem may be with your mount point permissions
+2008-12-18T05:22:00.000Z,keres,onetinsoldier,what should i set mount point to?
+2008-12-18T05:23:00.000Z,onetinsoldier,keres,"ok, try this in fstab in    noauto,ro,umask=0222"
+2008-12-18T05:23:00.000Z,onetinsoldier,keres,then we will set the permissions for the mount point
+2008-12-18T05:25:00.000Z,onetinsoldier,keres,so to do that...  cd /media  chmod go+rx windows
+2008-12-18T05:25:00.000Z,onetinsoldier,keres,sorry.. i had that wrong
+2008-12-18T05:25:00.000Z,onetinsoldier,keres,so to do that...  cd /media  chmod go+wx windows
+2008-12-18T08:12:00.000Z,onetinsoldier,keres,"well, i've tried to work on it myself some, but have run into a big issue. you are wanting a regular use to be able to mount it, correct?"
+2008-12-18T08:10:00.000Z,onetinsoldier,keres,hello. i just got back how's it going?
+2008-12-18T08:11:00.000Z,keres,onetinsoldier,still messing with fstab. just got back too ;)
+2008-12-18T08:12:00.000Z,keres,onetinsoldier,yes?
+2008-12-18T08:13:00.000Z,onetinsoldier,keres,and you keep getting the message that only root can do that?
+2008-12-18T08:13:00.000Z,keres,onetinsoldier,should i force it?
+2008-12-18T08:14:00.000Z,keres,onetinsoldier,will it format/delete data if i force it?
+2008-12-18T08:14:00.000Z,onetinsoldier,keres,"the question is, are you trying to make it so a regular user can mount it? if yes, are you getting the message that only root can 'mount' it?"
+2008-12-18T08:15:00.000Z,keres,onetinsoldier,it doesn't say only root can. it just says my user doesn't have privelages
+2008-12-18T08:16:00.000Z,keres,onetinsoldier,http://img67.imageshack.us/my.php?image=screenshotpp6.png
+2008-12-18T08:16:00.000Z,onetinsoldier,keres,"oh, i see. i wouldn't think that using a force option would hurt it, but i'm not certain. i wonder if the regular user can even force the mount if they wanted to."
+2008-12-18T08:17:00.000Z,keres,onetinsoldier,then should i force it?
+2008-12-18T08:18:00.000Z,onetinsoldier,keres,"i get a blank page for that image link, just fyi"
+2008-12-18T08:19:00.000Z,onetinsoldier,keres,i can't really answer whether you should try to force it or not. that's entirely up to you
+2008-12-18T08:19:00.000Z,keres,onetinsoldier,http://tinypic.com/view.php?pic=2ev3xhg&s=5
+2008-12-18T08:20:00.000Z,onetinsoldier,keres,"ok, that one worked"
+2008-12-18T08:25:00.000Z,keres,onetinsoldier,are you getting only root can do that or you don't have privelages
+2008-12-18T08:26:00.000Z,onetinsoldier,keres,i'm getting that 'only root can do that'
+2008-12-18T08:29:00.000Z,keres,onetinsoldier,my current fstab: http://pastebin.com/m254b29ca
+2008-12-18T08:30:00.000Z,onetinsoldier,keres,"ok, cool. i'll check it out. however, does fstab even matter if trying to mount it manually on the command line? i don't think it does"
+2008-12-18T08:31:00.000Z,keres,onetinsoldier,i did 'sudo chown keres:keres  -R /media/windows'
+2008-12-18T08:39:00.000Z,keres,onetinsoldier,is thera a risk with force?
+2008-12-18T08:39:00.000Z,onetinsoldier,keres,"i doubt it, but i'm not certain"
+2008-12-18T09:04:00.000Z,onetinsoldier,keres,so are you still trying?
+2008-12-18T09:04:00.000Z,keres,onetinsoldier,force worked
+2008-12-18T09:04:00.000Z,onetinsoldier,keres,"roger that, cool"
+2008-12-18T09:05:00.000Z,onetinsoldier,keres,"here's the message i'm getting now.. Unprivileged user can not mount NTFS block devices using the external FUSE library. Either mount the volume as root, or rebuild NTFS-3G with integrated FUSE support and make it setuid root."
+2008-12-18T09:05:00.000Z,keres,onetinsoldier,did you force it?
+2008-12-18T09:06:00.000Z,onetinsoldier,keres,nope.. haven't tried or done that yet
+2008-12-18T09:06:00.000Z,keres,onetinsoldier,and did you try 'sudo chown YOURUSER:YOURUSER media/windows'
+2008-12-18T09:06:00.000Z,onetinsoldier,keres,did you ever get 'that' message?
+2008-12-18T09:07:00.000Z,keres,onetinsoldier,no. but i did get a longer one when i had all my UIDs and sdb1's commented out.
+2008-12-18T09:08:00.000Z,onetinsoldier,keres,i get that message whether the 'windows' dir is owned by root or regular user... strange that we are having different messages/responses
+2008-12-18T09:09:00.000Z,keres,onetinsoldier,why not just chown it?
+2008-12-18T09:09:00.000Z,onetinsoldier,keres,did you read what i said?
+2008-12-18T09:09:00.000Z,onetinsoldier,keres,i get that message whether the 'windows' dir is owned by root or regular user...
+2008-12-18T09:09:00.000Z,onetinsoldier,keres,that means i used 'chown'
+2008-12-18T09:09:00.000Z,keres,onetinsoldier,what does your fstab look like?
+2008-12-18T09:12:00.000Z,onetinsoldier,keres,"this is the only line in it that matters... /dev/sda1      /media/WinXP   ntfs-3g noatuo,ro,user,umask=0222 0 2"
+2008-12-18T09:12:00.000Z,onetinsoldier,keres,how do you get the UUID?
+2008-12-18T09:12:00.000Z,keres,onetinsoldier,change it to NTFS
+2008-12-18T09:13:00.000Z,onetinsoldier,keres,"ok... that what i always used to use.. but when i saw yours earlier this evening, i thought i needed to make it ntfs-3g"
+2008-12-18T09:13:00.000Z,keres,onetinsoldier,sudo blkid
+2008-12-18T09:13:00.000Z,keres,onetinsoldier,"ntfs-3g is only loaded when you log in, ntfs is realtime i was told"
+2008-12-18T09:14:00.000Z,onetinsoldier,keres,"ok, roger."
+2008-12-18T09:17:00.000Z,keres,onetinsoldier,"which partition are you trying to mount? by default, the home partition is sda1 iirc. A secondary hard drive always ended up like sdb* or sda* here"
+2008-12-19T03:11:00.000Z,keres,onetinsoldier,"radiant is still screwing up, i take back waht i said about it working :("
+2008-12-19T03:12:00.000Z,onetinsoldier,keres,oh. perhaps it's an issue withusing a beta version from svn! you could always contact the developer and tell him of the issue. that will help him!
+2008-12-19T03:12:00.000Z,keres,onetinsoldier,i'm gonna try that. i'll also try gtkradiant
+2008-12-19T03:19:00.000Z,keres,onetinsoldier,what is gpedit?
+2008-12-19T03:20:00.000Z,onetinsoldier,keres,sorry. i don't know. bust trying to help someone with major problem right now
+2008-12-19T04:04:00.000Z,keres,onetinsoldier,or raylu: could you send me the intrepid wallpaper?
+2008-12-19T04:47:00.000Z,keres,onetinsoldier,i now notice gtkradiant will only run in debug mode now :(
+2008-12-19T04:47:00.000Z,keres,onetinsoldier,which means it is unstable and a bunch of orange crap is everywhere
+2008-12-19T04:47:00.000Z,onetinsoldier,keres,roger that is a  :-(
+2008-12-19T04:48:00.000Z,onetinsoldier,keres,yeah... i hear you. you have to expect that when using svn sources
+2008-12-19T04:50:00.000Z,keres,onetinsoldier,you have to compile from the svn though...
+2008-12-19T04:50:00.000Z,keres,onetinsoldier,and most people have success.
+2008-12-19T04:50:00.000Z,onetinsoldier,keres,oh.. i see
+2008-12-19T21:45:00.000Z,keres,onetinsoldier,"later today, could you compile something for me and then try to see why it crashes?"
+2008-12-19T21:46:00.000Z,onetinsoldier,keres,"it's highly unlikely that i could figure why something crashes. i am willing to try. however, i'm not sure how much longer i'll be around today. probably not much longer"
+2008-12-19T21:47:00.000Z,onetinsoldier,keres,what is it anyway?
+2008-12-19T21:47:00.000Z,keres,onetinsoldier,ok. whenenenver you have a moment within today or tommorow :)
+2008-12-19T21:48:00.000Z,keres,onetinsoldier,"i got radiant to work functionally without debug mode, but when i turn the camera view to see the large portion of my map, it crashes. no errors or nothing"
+2008-12-19T21:48:00.000Z,onetinsoldier,keres,"tomorrow might be better, as actually, i'm leaving now."
+2008-12-19T21:49:00.000Z,onetinsoldier,keres,ok.. roger that. i will try it out tomorrow
+2008-12-19T21:49:00.000Z,onetinsoldier,keres, bye bye for now!
+2008-12-25T08:54:00.000Z,keres,onetinsoldier,no? what is it?
+2008-12-25T08:52:00.000Z,onetinsoldier,keres,merry christmas keres!
+2008-12-25T08:54:00.000Z,onetinsoldier,keres,you ever have need for the 'find' command?
+2008-12-25T08:56:00.000Z,onetinsoldier,keres,you've never needed to use the find command? --> man find  ...i'm not good with the command though. but i found a great front-end for it that shows by example :-)
+2008-12-25T08:56:00.000Z,keres,onetinsoldier,what is it's usage?
+2008-12-25T08:57:00.000Z,keres,onetinsoldier,i typed it in the console there was a huge output
+2008-12-25T08:57:00.000Z,keres,onetinsoldier,"oh, it lists files within a dir"
+2008-12-25T08:59:00.000Z,onetinsoldier,keres,yes. here's the front-end if you're interested in it  -->  http://www.kbrandt.com/2008/06/pygnomefind-gui-frontend-to-gnu-find.html
+2008-12-25T08:59:00.000Z,keres,onetinsoldier,cool :)
+2008-12-26T01:59:00.000Z,onetinsoldier,keres,hello and Merry Christmas! what util are you using to try and convert?
+2008-12-26T01:59:00.000Z,keres,onetinsoldier,hi! i forgot. i just use the cmd 'convert'
+2008-12-26T02:01:00.000Z,onetinsoldier,keres,"although i've never used them, you'll probably want to take a look at and use one of these  -->  imagemagick, graphicsmagick, gimp"
+2008-12-31T03:25:00.000Z,keres,onetinsoldier,i got a new site!
+2008-12-31T03:25:00.000Z,keres,onetinsoldier,http://keres.satgnu.net
+2009-01-01T08:17:00.000Z,onetinsoldier,keres,happy new year!
+2009-01-01T08:23:00.000Z,onetinsoldier,keres,"so, you still waiting on a good working version of radiant?"
+2009-01-01T08:23:00.000Z,keres,onetinsoldier,already got one :) working in it right now
+2009-01-01T08:24:00.000Z,onetinsoldier,keres,oh! cool :-) what name and version? or what did you have to do?
+2009-01-01T08:25:00.000Z,keres,onetinsoldier,"it's the default gtk1.5 release. the problem was scons builds the debug version by default, so someone told me to do scons build='release'"
+2009-01-01T08:26:00.000Z,onetinsoldier,keres,"oh, i see. seems i have heard of scons, but i forget what it is. - ok, just looked it up, replacement for 'make'"
+2009-01-01T08:26:00.000Z,keres,onetinsoldier,a sloppy one ;)
+2009-01-01T08:27:00.000Z,onetinsoldier,keres,oh
+2009-01-01T08:27:00.000Z,onetinsoldier,keres,so are you making maps now?
+2009-01-01T08:27:00.000Z,keres,onetinsoldier,"well, it's just not as easy as make"
+2009-01-01T08:27:00.000Z,keres,onetinsoldier,yes
+2009-01-01T08:27:00.000Z,keres,onetinsoldier,http://keres.satgnu.net/maps/index.html
+2009-01-01T08:27:00.000Z,onetinsoldier,keres,"ok, looking now"
+2009-01-01T08:29:00.000Z,onetinsoldier,keres,"hey, looks great! lot of people still play that? quake2 is a fairly old version isn't it?"
+2009-01-01T08:30:00.000Z,onetinsoldier,keres,"in fact, i can't believe how good that map looks if it's for quake2"
+2009-01-01T08:30:00.000Z,keres,onetinsoldier,quake2world is an in-developement q2-based game. it's got really good graphics
+2009-01-01T08:30:00.000Z,keres,onetinsoldier,"it has bump/normal maps, realtime lighitng"
+2009-01-01T08:30:00.000Z,keres,onetinsoldier,really fast pased combat. it's like all good things quake combined.
+2009-01-01T08:30:00.000Z,onetinsoldier,keres,"ah-ha! i see, well, very sweet looking"
+2009-01-01T08:31:00.000Z,keres,onetinsoldier,thank you :)
+2009-01-01T08:31:00.000Z,keres,onetinsoldier,are you a good 2d artist by any chance?
+2009-01-01T08:31:00.000Z,onetinsoldier,keres,nope
+2009-01-01T08:32:00.000Z,keres,onetinsoldier,#quetoo is their irc channel. you're welcome to join it :)
+2009-01-01T08:32:00.000Z,onetinsoldier,keres,thanks :-)
+2009-01-01T11:06:00.000Z,keres,onetinsoldier,west coast?
+2008-12-11T08:57:00.000Z,keres,,"how do you install this dependency: 'gtk+ >= 2.4.0 (requires glib, atk, pango, iconv, etc)'"
+2008-12-11T08:59:00.000Z,onetinsoldier,keres,try  aptitude why glib (ect)
+2008-12-14T05:30:00.000Z,onetinsoldier,keres,for one thing.. you have a typo.. you're first quote was a 'single' quote... you want both quotes to be double quotes
+2008-12-14T05:38:00.000Z,onetinsoldier,keres, export PKG_CONFIG_PATH='/usr/PKG_CONFIG'   is the way to do that properly.. just an fyi
+2008-12-14T05:39:00.000Z,onetinsoldier,keres,then to check that you have done it properly do...   echo '$PKG_CONFIG_PATH'
+2008-12-14T05:40:00.000Z,onetinsoldier,keres,not in here tho.. on the command line
+2008-12-14T05:40:00.000Z,keres,onetinsoldier,duh? lol
+2008-12-14T05:40:00.000Z,onetinsoldier,keres, export PKG_CONFIG_PATH='/usr/PKG_CONFIG'   -CHECK YOUR QUOTES- is the way to do that properly.. just an fyi
+2008-12-14T05:41:00.000Z,keres,onetinsoldier,same thing
+2008-12-14T05:45:00.000Z,onetinsoldier,keres,it's the shell waiting for more input(after the single quote you had) because your quotes were wrong
+2008-12-14T05:46:00.000Z,keres,onetinsoldier,what are the right quotes then?
+2008-12-14T05:46:00.000Z,onetinsoldier,keres,export PKG_CONFIG_PATH='/usr/PKG_CONFIG'   echo '$PKG_CONFIG_PATH'   ...returns   /usr/PKG_CONFIG
+2008-12-14T05:47:00.000Z,keres,onetinsoldier,so type '        export PKG_CONFIG_PATH='/usr/PKG_CONFIG'         '            ?
+2008-12-14T05:47:00.000Z,onetinsoldier,keres,use double quotes in BOTH places
+2008-12-14T05:47:00.000Z,onetinsoldier,keres,yes
+2008-12-14T05:47:00.000Z,keres,onetinsoldier,"ok, now what?"
+2008-12-14T05:48:00.000Z,onetinsoldier,keres,"then check it, with   echo '$PKG_CONFIG_PATH'"
+2008-12-14T05:48:00.000Z,onetinsoldier,keres,ok.. there you go.. you got it now
+2008-12-14T05:48:00.000Z,keres,onetinsoldier,now?
+2008-12-14T05:49:00.000Z,onetinsoldier,keres,"well, all i was trying to do was show you how to do that environment variable properly..."
+2008-12-14T05:49:00.000Z,keres,onetinsoldier,"thank you, though"
+2008-12-14T05:50:00.000Z,onetinsoldier,keres,you're welcome.. i can try to help further tho.. what's happening now?
+2008-12-14T05:50:00.000Z,keres,onetinsoldier,http://pastebin.com/d7654dbd6
+2008-12-14T05:50:00.000Z,onetinsoldier,keres,ok.. i'll look
+2008-12-14T05:50:00.000Z,keres,onetinsoldier,"i have mesa-common-dev, too"
+2008-12-14T05:51:00.000Z,onetinsoldier,keres,ok.. hang on
+2008-12-14T05:52:00.000Z,onetinsoldier,keres,hmmm. try   make clean ....and then run again  ./configure
+2008-12-14T05:52:00.000Z,onetinsoldier,keres,doh!   make distclean
+2008-12-14T05:53:00.000Z,onetinsoldier,keres,try running   make distclean...  then ./configure
+2008-12-14T05:53:00.000Z,keres,onetinsoldier,make: *** No rule to make target `distclean'.  Stop.
+2008-12-14T05:54:00.000Z,onetinsoldier,keres,"hmmm... dangit, i'm rusty at this. thought that would work to clean up all the ./configure settings. it should have a distclean target i would think"
+2008-12-14T05:54:00.000Z,onetinsoldier,keres,"how about removing the dir and then unpacking it again, then running the ./configure"
+2008-12-14T05:57:00.000Z,onetinsoldier,keres,did you unpack it again and go into the dir?
+2008-12-14T05:58:00.000Z,keres,onetinsoldier,yes
+2008-12-14T05:59:00.000Z,onetinsoldier,keres,how did you get the configure script to begin with? what is this source(what are you trying to compile)? I will download it and try to compile here
+2008-12-14T05:59:00.000Z,onetinsoldier,keres,netradiant???
+2008-12-14T05:59:00.000Z,keres,onetinsoldier,http://www.icculus.org/netradiant/#What%20is%20NetRadiant?
+2008-12-14T06:03:00.000Z,onetinsoldier,keres,you will probably need to give me a little time
+2008-12-14T06:03:00.000Z,keres,onetinsoldier,take as much as you need
+2008-12-14T06:03:00.000Z,onetinsoldier,keres,i have it unpacked though... going in
+2008-12-14T06:09:00.000Z,onetinsoldier,keres,you were running a configure script at some point somewhere weren't you?
+2008-12-14T06:10:00.000Z,onetinsoldier,keres,or just the 'make' command.. i guess there never was a configure script eh?
+2008-12-14T06:10:00.000Z,keres,onetinsoldier,my pastebin is the output from make
+2008-12-14T06:10:00.000Z,keres,onetinsoldier,http://pastebin.com/d7654dbd6
+2008-12-14T06:10:00.000Z,onetinsoldier,keres,i don't even see a Makefile in there.. you know where it is?
+2008-12-14T06:10:00.000Z,keres,onetinsoldier,no. hmmmm
+2008-12-14T06:11:00.000Z,onetinsoldier,keres,weird.. mine dowsn have one.. i must have downloaded the binary by mistake.. hang on
+2008-12-14T06:13:00.000Z,onetinsoldier,keres,"ok, i was expecting to download a file from the web page"
+2008-12-14T06:14:00.000Z,keres,onetinsoldier,"there is a precompiled package, but it doesn't run on intrepid"
+2008-12-14T06:14:00.000Z,onetinsoldier,keres,nope.. it's made for Win32... how do i get the source?
+2008-12-14T06:15:00.000Z,keres,onetinsoldier,"i ran rsync, i got a makefile ???"
+2008-12-14T06:15:00.000Z,onetinsoldier,keres,yes.. ok. tell me whast you did to get it
+2008-12-14T06:15:00.000Z,keres,onetinsoldier,"a bunch of conf, py, and sh files"
+2008-12-14T06:16:00.000Z,onetinsoldier,keres,dang.. do you have all the steps you took? did you remove the source from your system?
+2008-12-14T06:16:00.000Z,onetinsoldier,keres,or do you still have the source dir on your system?
+2008-12-14T06:17:00.000Z,keres,onetinsoldier,yes
+2008-12-14T06:17:00.000Z,onetinsoldier,keres,go into it and type... make clean
+2008-12-14T06:17:00.000Z,keres,onetinsoldier,http://pastebin.com/mcadc499
+2008-12-14T06:18:00.000Z,onetinsoldier,keres,"ok, looks all normal there... hang on"
+2008-12-14T06:20:00.000Z,onetinsoldier,keres,do the following...   export DEPENDENCIES_CHECK='verbose'  ...then run 'make' again
+2008-12-14T06:21:00.000Z,onetinsoldier,keres,that will take me a minute to examine... hang on
+2008-12-14T06:24:00.000Z,onetinsoldier,keres,i'm not sure why it not finding gl.h... i'm still looking it over.. while i do you can try it with your PKG_CONFIG_PATH unset if you want.
+2008-12-14T06:25:00.000Z,onetinsoldier,keres,you DO have the 'pkg-config' package installed don't you?
+2008-12-14T06:25:00.000Z,onetinsoldier,keres,dpkg -l pkg-config
+2008-12-14T06:28:00.000Z,onetinsoldier,keres,unset your environment variable..   export PKG_CONFIG_PATH=''   then   export DEPENDENCIES_CHECK=''
+2008-12-14T06:29:00.000Z,onetinsoldier,keres,now try   make
+2008-12-14T06:29:00.000Z,onetinsoldier,keres,just checking.. i'm thinking
+2008-12-14T06:30:00.000Z,onetinsoldier,keres,can you DCC send me the Makefile?
+2008-12-14T06:31:00.000Z,keres,onetinsoldier,dcc?
+2008-12-14T06:31:00.000Z,onetinsoldier,keres,it's a way to send people file over IRC
+2008-12-14T06:32:00.000Z,keres,onetinsoldier,how?
+2008-12-14T06:34:00.000Z,onetinsoldier,keres,is there a list of nicks in the channel in your IRC client?
+2008-12-14T06:35:00.000Z,onetinsoldier,keres,"ok, i got it... hang on"
+2008-12-14T06:40:00.000Z,onetinsoldier,keres,i am pretty rusty at this... but try   export LDFAGS='/usr/include/GL'     then try make again
+2008-12-14T06:40:00.000Z,onetinsoldier,keres,oops.. typo!
+2008-12-14T06:40:00.000Z,onetinsoldier,keres,i am pretty rusty at this... but try   export LDFLAGS='/usr/include/GL'     then try make again
+2008-12-14T06:43:00.000Z,onetinsoldier,keres,dpkg -l libglib2.0-dev  ..do you have it installed?
+2008-12-14T06:43:00.000Z,keres,onetinsoldier,yes
+2008-12-14T06:44:00.000Z,onetinsoldier,keres,"grrr... ok. well, we got it to recognize that you have the gl.h   i'm thinking again"
+2008-12-14T06:45:00.000Z,onetinsoldier,keres,try the following...   export  LDFLAGS='/usr/include/GL /usr/include/glib-2.0/glib'   ...and then try make again
+2008-12-14T06:46:00.000Z,onetinsoldier,keres,really!!??? dangit
+2008-12-14T06:47:00.000Z,onetinsoldier,keres,make sure you have the file....   ls -l /usr/include/glib-2.0/glib/gutils.h
+2008-12-14T06:48:00.000Z,keres,onetinsoldier,http://pastebin.com/m12bc7bda
+2008-12-14T06:49:00.000Z,onetinsoldier,keres,"ok, you didn't need to use pastebin for that. i just need to see that one line. but ok, you have it... thinking"
+2008-12-14T06:54:00.000Z,onetinsoldier,keres,"ok.. the whole time you were trying to set the PKG_CONFIG_PATH, i think it was being set to the wrong path.. so we will try that again... ok?"
+2008-12-14T06:56:00.000Z,onetinsoldier,keres,do...  export PKG_CONFIG_PATH='/usr/bin'
+2008-12-14T06:57:00.000Z,keres,onetinsoldier,then?
+2008-12-14T06:57:00.000Z,onetinsoldier,keres,try make again
+2008-12-14T06:58:00.000Z,keres,onetinsoldier,same thing :S
+2008-12-14T06:58:00.000Z,onetinsoldier,keres,i give up for now... but i'll keep thinking about it. i will look into downloading the source and seeing if i can get it to compile on my system
+2008-12-14T06:59:00.000Z,onetinsoldier,keres,"you're welcome... sorry i couldn't get it, yet"
+2008-12-14T07:13:00.000Z,onetinsoldier,keres,"ok, i now have the source downloaded with svn"
+2008-12-14T08:00:00.000Z,onetinsoldier,keres,still here?
+2008-12-14T08:02:00.000Z,keres,onetinsoldier,yes
+2008-12-14T08:03:00.000Z,onetinsoldier,keres,"ok, i'm still trying... i do know of a dirty way of doing it. but i was trying to do it properly"
+2008-12-14T08:03:00.000Z,keres,onetinsoldier,which would be easier?
+2008-12-14T08:04:00.000Z,onetinsoldier,keres,"well, at this point the dirty way, although it's not that dirty"
+2008-12-14T08:04:00.000Z,keres,onetinsoldier,let's go
+2008-12-14T08:05:00.000Z,onetinsoldier,keres,"ok, there my be a little trial and error here too"
+2008-12-14T08:06:00.000Z,onetinsoldier,keres,export LDFLAGS='-l LIBS_GL=/usr/include/GL'
+2008-12-14T08:07:00.000Z,keres,onetinsoldier,2 double quotes on the end?
+2008-12-14T08:07:00.000Z,onetinsoldier,keres,yes
+2008-12-14T08:07:00.000Z,onetinsoldier,keres,two? no..! sorry
+2008-12-14T08:07:00.000Z,onetinsoldier,keres,export LDFLAGS='-l LIBS_GL=/usr/include/GL'
+2008-12-14T08:07:00.000Z,onetinsoldier,keres,that has one set of double quotes on the end...
+2008-12-14T08:08:00.000Z,keres,onetinsoldier,what do type for the ' > ' dialog?
+2008-12-14T08:08:00.000Z,onetinsoldier,keres,just press enter and try again...        export LDFLAGS='-l LIBS_GL=/usr/include/GL'
+2008-12-14T08:09:00.000Z,onetinsoldier,keres,ok...    sudo mkdir /usr/include/glib
+2008-12-14T08:10:00.000Z,onetinsoldier,keres,cp -v /usr/include/glib-2.0/glib/gutils.h /usr/include/glib
+2008-12-14T08:10:00.000Z,keres,onetinsoldier,then?
+2008-12-14T08:10:00.000Z,onetinsoldier,keres,done? try make
+2008-12-14T08:11:00.000Z,keres,onetinsoldier,i put sudo in front of it
+2008-12-14T08:12:00.000Z,onetinsoldier,keres,in front of the make command?
+2008-12-14T08:12:00.000Z,onetinsoldier,keres,oh.. nvm.. you meant the cp -v command
+2008-12-14T08:13:00.000Z,keres,onetinsoldier,http://pastebin.com/m60ff6866
+2008-12-14T08:13:00.000Z,onetinsoldier,keres,"if you get an error when trying make now, just copy and paste the single line that has the error in here"
+2008-12-14T08:13:00.000Z,keres,onetinsoldier,"that is the whole output, was it successful?"
+2008-12-14T08:13:00.000Z,onetinsoldier,keres,i'm pretty sure it was
+2008-12-14T08:14:00.000Z,onetinsoldier,keres,you might want to use a util called    checkinstall to actually install it
+2008-12-14T08:14:00.000Z,onetinsoldier,keres,"but if you don't use checkinstall, then it's just    make install"
+2008-12-14T08:15:00.000Z,onetinsoldier,keres,as root!
+2008-12-14T08:18:00.000Z,keres,onetinsoldier,http://pastebin.com/m1e190e9b
+2008-12-14T08:19:00.000Z,onetinsoldier,keres,go into the dir and type   make clean
+2008-12-14T08:19:00.000Z,onetinsoldier,keres,you don't need to show me the output of   make clean
+2008-12-14T08:19:00.000Z,keres,onetinsoldier,"no errors, but should i do install now?"
+2008-12-14T08:20:00.000Z,onetinsoldier,keres,no... there's nothing to install now that you did the make clean anyway
+2008-12-14T08:20:00.000Z,keres,onetinsoldier,now what?
+2008-12-14T08:20:00.000Z,onetinsoldier,keres,let's try the GL environment variable again...
+2008-12-14T08:20:00.000Z,onetinsoldier,keres,export LDFLAGS='-l GL=/usr/include/GL'
+2008-12-14T08:21:00.000Z,keres,onetinsoldier,then?
+2008-12-14T08:21:00.000Z,onetinsoldier,keres,  make
+2008-12-14T08:21:00.000Z,onetinsoldier,keres,then...  make install
+2008-12-14T08:23:00.000Z,keres,onetinsoldier,the last few lines are the same as before
+2008-12-14T08:24:00.000Z,onetinsoldier,keres,ok.. hang on
+2008-12-14T08:25:00.000Z,onetinsoldier,keres,let's meake sure you have the actual library installed...   dpkg -l '*mesa*' | grep '^ii'
+2008-12-14T08:26:00.000Z,keres,onetinsoldier,that has output
+2008-12-14T08:27:00.000Z,onetinsoldier,keres,ok.. do have these installed?   libgl1-mesa-dri  libgl1-mesa-glx  libglu1-mesa  mesa-common-dev  mesa-utils
+2008-12-14T08:28:00.000Z,keres,onetinsoldier,i have all of those
+2008-12-14T08:30:00.000Z,onetinsoldier,keres,what's up?
+2008-12-14T08:52:00.000Z,onetinsoldier,keres,do you have the following package installed?   libgtkglext1-dev
+2008-12-14T08:54:00.000Z,keres,onetinsoldier,yes
+2008-12-14T08:56:00.000Z,onetinsoldier,keres,hello.. you still here?
+2008-12-14T08:57:00.000Z,onetinsoldier,keres,go back into the source dir.. tell me when you are there
+2008-12-14T08:57:00.000Z,keres,onetinsoldier,yes
+2008-12-14T08:57:00.000Z,keres,onetinsoldier,ok
+2008-12-14T08:57:00.000Z,onetinsoldier,keres,make clean
+2008-12-14T08:57:00.000Z,onetinsoldier,keres,    export LDFLAGS=''
+2008-12-14T08:57:00.000Z,keres,onetinsoldier,"that lists an output, but no actual effect"
+2008-12-14T08:58:00.000Z,onetinsoldier,keres,ok.. works for me
+2008-12-14T08:58:00.000Z,keres,onetinsoldier,ok
+2008-12-14T08:59:00.000Z,onetinsoldier,keres,make certain you have all the packages listed on the website installed
+2008-12-14T08:59:00.000Z,keres,onetinsoldier,i'm 99% sure
+2008-12-14T09:00:00.000Z,onetinsoldier,keres,ok.. you know what to do...  make
+2008-12-14T09:00:00.000Z,onetinsoldier,keres,when finished...  make install
+2008-12-14T09:01:00.000Z,keres,onetinsoldier,http://pastebin.com/m4cc47d85
+2008-12-14T09:02:00.000Z,keres,onetinsoldier,make: *** [dependencies-check] Error 1
+2008-12-14T09:02:00.000Z,onetinsoldier,keres,"i'mnot sure what's wrong.. both me and raylu just made sure we had all the packages listed on the site installed, and it compiled on the first try, for both me and him"
+2008-12-14T09:05:00.000Z,onetinsoldier,keres,"why don't you try the following... just to make sure,    apt-get install --reinstall pkg-config"
+2008-12-14T09:06:00.000Z,keres,onetinsoldier,can you do something for me?
+2008-12-14T09:06:00.000Z,onetinsoldier,keres,sure
+2008-12-14T09:12:00.000Z,onetinsoldier,keres,so what's up?
+2008-12-14T09:12:00.000Z,keres,onetinsoldier,"it seems i have libglib2.0-dev, but when i try make it says it can't find it"
+2008-12-14T09:12:00.000Z,keres,onetinsoldier,"so i reinstallled it with aptitude, same thing"
+2008-12-14T09:16:00.000Z,keres,onetinsoldier,"Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?"
+2008-12-14T09:17:00.000Z,onetinsoldier,keres,"you have apt-get or aptitude, or synaptic running somewhere else apparently"
+2008-12-14T09:17:00.000Z,keres,onetinsoldier,really?
+2008-12-14T09:19:00.000Z,keres,onetinsoldier,http://pastebin.com/m774749d5
+2008-12-14T09:20:00.000Z,onetinsoldier,keres,i don't know what's wrong on your system. compiled for me and raylu just fine.. on the first try. i don't know what to tell you.
+2008-12-14T09:20:00.000Z,keres,onetinsoldier,should i just install 8.4 regardless?
+2008-12-14T09:21:00.000Z,onetinsoldier,keres,"i cannot recommend one way or the other on that, because that's entirely up to you"
+2008-12-14T09:22:00.000Z,onetinsoldier,keres,8.10 is working great here.. did you upgrade frmo 8.4? is that how you got 8.10? an upgrade?
+2008-12-17T08:23:00.000Z,onetinsoldier,keres,hi!
+2008-12-17T08:23:00.000Z,keres,onetinsoldier,"i'm starting with a fresh install again. if netradiant doesn't work, i'll try it on arch"
+2008-12-17T08:25:00.000Z,onetinsoldier,keres,"oh... roger that? you know, one thing about the other day, is you cold have updated the source through svn. you never know, prhaps it was updated between the time you downloaded it, and the time that i downloaded it. but that probably wasn't the problem. but you never know!"
+2008-12-17T08:25:00.000Z,keres,onetinsoldier,you could be right ;)
+2008-12-17T08:28:00.000Z,onetinsoldier,keres,anyway.. i wish you better luck this time :)
+2008-12-17T08:52:00.000Z,onetinsoldier,keres,awesome! i was hoping badly that your reinstall wouldn't be in vein
+2008-12-17T08:48:00.000Z,onetinsoldier,keres,how's it going? having any luck?
+2008-12-17T08:48:00.000Z,keres,onetinsoldier,just got subversion installed
+2008-12-17T08:49:00.000Z,onetinsoldier,keres,roger
+2008-12-17T08:51:00.000Z,keres,onetinsoldier,success!!!!
+2008-12-17T08:51:00.000Z,onetinsoldier,keres,W00t!
+2008-12-17T08:52:00.000Z,keres,onetinsoldier,i needed to anyway. :P but thanks :)
+2008-12-17T08:52:00.000Z,onetinsoldier,keres,"ok, cool :-)"
+2008-12-17T09:11:00.000Z,keres,onetinsoldier,it's the error that prevents me from changing views in the 2d viewport
+2008-12-17T09:16:00.000Z,onetinsoldier,keres,"sorry, what's happening?"
+2008-12-17T09:17:00.000Z,onetinsoldier,keres,"oh.. i see...  a Warning. usually you can ignore 'warnings', but sometimes they do mean something that needs paying attention too"
+2008-12-17T09:17:00.000Z,keres,onetinsoldier,can i msg you
+2008-12-17T09:18:00.000Z,onetinsoldier,keres,ok
+2008-12-18T04:16:00.000Z,keres,onetinsoldier,gtkradiant works perfect on 8.04
+2008-12-18T04:17:00.000Z,onetinsoldier,keres,"oh. roger. well, that's good at least. i forget, what happened after you successfully compiled it in 8.10 yesterday?"
+2008-12-18T04:18:00.000Z,keres,onetinsoldier,"it was missing gtk+ dependancies, ones that you can't possibly change, but are in 8.04."
+2008-12-18T04:18:00.000Z,onetinsoldier,keres,"oh yeah, now i remember"
+2008-12-18T04:19:00.000Z,keres,onetinsoldier,the missing gtk+ files made the change views inopprable.
+2008-12-18T04:19:00.000Z,onetinsoldier,keres,cool
+2008-12-18T04:21:00.000Z,onetinsoldier,keres,"anyway... you can run it in 8.04 for now so it's all good, correct? you know that probably considered an actual bug in the gtk libs available in 8.10 and you could file a bug report"
+2008-12-18T05:00:00.000Z,keres,onetinsoldier,do you have experience in fstab?
+2008-12-18T05:00:00.000Z,onetinsoldier,keres,"i'm a little rusty with it, but yes"
+2008-12-18T05:00:00.000Z,keres,onetinsoldier,UUID=B2284CC7284C8BF3 /media/windows/ ntfs-3g defaults 0 0
+2008-12-18T05:00:00.000Z,keres,onetinsoldier,will that mount without format?
+2008-12-18T05:01:00.000Z,onetinsoldier,keres,you mean that partition is not formatted?
+2008-12-18T05:01:00.000Z,keres,onetinsoldier,it is my partition i use to store files between linux formats
+2008-12-18T05:02:00.000Z,onetinsoldier,keres,ok
+2008-12-18T05:02:00.000Z,keres,onetinsoldier,wil that work?
+2008-12-18T05:02:00.000Z,onetinsoldier,keres,you mean that partition is not formatted?
+2008-12-18T05:02:00.000Z,keres,onetinsoldier,"formatted? as in empty? no, it's near full of files."
+2008-12-18T05:03:00.000Z,onetinsoldier,keres,what does this mean.. will that mount.. without format?  without format????
+2008-12-18T05:04:00.000Z,keres,onetinsoldier,i don't want any files on there to be deleted. will the syntax 'UUID=B2284CC7284C8BF3 /media/windows/ ntfs-3g defaults 0 0' mount it?
+2008-12-18T05:04:00.000Z,onetinsoldier,keres,"yes, i believe it should"
+2008-12-18T05:05:00.000Z,keres,onetinsoldier,it says i am not privelaged to mount Storage disk
+2008-12-18T05:06:00.000Z,onetinsoldier,keres,are you trying as root user? if not. you will need to change the permissions in fstab to change who is allowed to mount it
+2008-12-18T05:06:00.000Z,keres,onetinsoldier,how do you set permissions in fstab?
+2008-12-18T05:08:00.000Z,onetinsoldier,keres,"this is where i am rusty... it's called a umask. it's something like...  defaults,umask=0022"
+2008-12-18T05:09:00.000Z,keres,onetinsoldier,umask=0022 doesn't work
+2008-12-18T05:10:00.000Z,onetinsoldier,keres,try  umask=022
+2008-12-18T05:10:00.000Z,keres,onetinsoldier,same
+2008-12-18T05:11:00.000Z,onetinsoldier,keres,i would need to google it.. doing so now
+2008-12-18T05:12:00.000Z,onetinsoldier,keres,try  umask=0222
+2008-12-18T05:13:00.000Z,keres,onetinsoldier,same result :(
+2008-12-18T05:13:00.000Z,onetinsoldier,keres,hmmm. ok. i'll do more searching
+2008-12-18T05:13:00.000Z,keres,onetinsoldier,"full syntax: 'UUID=B2284CC7284C8BF3 /media/windows/ ntfs-3g defaults,umask=0222 0 0'"
+2008-12-18T05:14:00.000Z,onetinsoldier,keres,"looks correct to me, but, ineed to read some more"
+2008-12-18T05:17:00.000Z,keres,onetinsoldier,222?
+2008-12-18T05:18:00.000Z,keres,onetinsoldier,i'll try reboot. i got to go anyway
+2008-12-18T05:18:00.000Z,onetinsoldier,keres,ok
+2008-12-18T05:19:00.000Z,onetinsoldier,keres,the problem may be with your mount point permissions
+2008-12-18T05:22:00.000Z,keres,onetinsoldier,what should i set mount point to?
+2008-12-18T05:23:00.000Z,onetinsoldier,keres,"ok, try this in fstab in    noauto,ro,umask=0222"
+2008-12-18T05:23:00.000Z,onetinsoldier,keres,then we will set the permissions for the mount point
+2008-12-18T05:25:00.000Z,onetinsoldier,keres,so to do that...  cd /media  chmod go+rx windows
+2008-12-18T05:25:00.000Z,onetinsoldier,keres,sorry.. i had that wrong
+2008-12-18T05:25:00.000Z,onetinsoldier,keres,so to do that...  cd /media  chmod go+wx windows
+2008-12-18T08:12:00.000Z,onetinsoldier,keres,"well, i've tried to work on it myself some, but have run into a big issue. you are wanting a regular use to be able to mount it, correct?"
+2008-12-18T08:10:00.000Z,onetinsoldier,keres,hello. i just got back how's it going?
+2008-12-18T08:11:00.000Z,keres,onetinsoldier,still messing with fstab. just got back too ;)
+2008-12-18T08:12:00.000Z,keres,onetinsoldier,yes?
+2008-12-18T08:13:00.000Z,onetinsoldier,keres,and you keep getting the message that only root can do that?
+2008-12-18T08:13:00.000Z,keres,onetinsoldier,should i force it?
+2008-12-18T08:14:00.000Z,keres,onetinsoldier,will it format/delete data if i force it?
+2008-12-18T08:14:00.000Z,onetinsoldier,keres,"the question is, are you trying to make it so a regular user can mount it? if yes, are you getting the message that only root can 'mount' it?"
+2008-12-18T08:15:00.000Z,keres,onetinsoldier,it doesn't say only root can. it just says my user doesn't have privelages
+2008-12-18T08:16:00.000Z,keres,onetinsoldier,http://img67.imageshack.us/my.php?image=screenshotpp6.png
+2008-12-18T08:16:00.000Z,onetinsoldier,keres,"oh, i see. i wouldn't think that using a force option would hurt it, but i'm not certain. i wonder if the regular user can even force the mount if they wanted to."
+2008-12-18T08:17:00.000Z,keres,onetinsoldier,then should i force it?
+2008-12-18T08:18:00.000Z,onetinsoldier,keres,"i get a blank page for that image link, just fyi"
+2008-12-18T08:19:00.000Z,onetinsoldier,keres,i can't really answer whether you should try to force it or not. that's entirely up to you
+2008-12-18T08:19:00.000Z,keres,onetinsoldier,http://tinypic.com/view.php?pic=2ev3xhg&s=5
+2008-12-18T08:20:00.000Z,onetinsoldier,keres,"ok, that one worked"
+2008-12-18T08:25:00.000Z,keres,onetinsoldier,are you getting only root can do that or you don't have privelages
+2008-12-18T08:26:00.000Z,onetinsoldier,keres,i'm getting that 'only root can do that'
+2008-12-18T08:29:00.000Z,keres,onetinsoldier,my current fstab: http://pastebin.com/m254b29ca
+2008-12-18T08:30:00.000Z,onetinsoldier,keres,"ok, cool. i'll check it out. however, does fstab even matter if trying to mount it manually on the command line? i don't think it does"
+2008-12-18T08:31:00.000Z,keres,onetinsoldier,i did 'sudo chown keres:keres  -R /media/windows'
+2008-12-18T08:39:00.000Z,keres,onetinsoldier,is thera a risk with force?
+2008-12-18T08:39:00.000Z,onetinsoldier,keres,"i doubt it, but i'm not certain"
+2008-12-18T09:04:00.000Z,onetinsoldier,keres,so are you still trying?
+2008-12-18T09:04:00.000Z,keres,onetinsoldier,force worked
+2008-12-18T09:04:00.000Z,onetinsoldier,keres,"roger that, cool"
+2008-12-18T09:05:00.000Z,onetinsoldier,keres,"here's the message i'm getting now.. Unprivileged user can not mount NTFS block devices using the external FUSE library. Either mount the volume as root, or rebuild NTFS-3G with integrated FUSE support and make it setuid root."
+2008-12-18T09:05:00.000Z,keres,onetinsoldier,did you force it?
+2008-12-18T09:06:00.000Z,onetinsoldier,keres,nope.. haven't tried or done that yet
+2008-12-18T09:06:00.000Z,keres,onetinsoldier,and did you try 'sudo chown YOURUSER:YOURUSER media/windows'
+2008-12-18T09:06:00.000Z,onetinsoldier,keres,did you ever get 'that' message?
+2008-12-18T09:07:00.000Z,keres,onetinsoldier,no. but i did get a longer one when i had all my UIDs and sdb1's commented out.
+2008-12-18T09:08:00.000Z,onetinsoldier,keres,i get that message whether the 'windows' dir is owned by root or regular user... strange that we are having different messages/responses
+2008-12-18T09:09:00.000Z,keres,onetinsoldier,why not just chown it?
+2008-12-18T09:09:00.000Z,onetinsoldier,keres,did you read what i said?
+2008-12-18T09:09:00.000Z,onetinsoldier,keres,i get that message whether the 'windows' dir is owned by root or regular user...
+2008-12-18T09:09:00.000Z,onetinsoldier,keres,that means i used 'chown'
+2008-12-18T09:09:00.000Z,keres,onetinsoldier,what does your fstab look like?
+2008-12-18T09:12:00.000Z,onetinsoldier,keres,"this is the only line in it that matters... /dev/sda1      /media/WinXP   ntfs-3g noatuo,ro,user,umask=0222 0 2"
+2008-12-18T09:12:00.000Z,onetinsoldier,keres,how do you get the UUID?
+2008-12-18T09:12:00.000Z,keres,onetinsoldier,change it to NTFS
+2008-12-18T09:13:00.000Z,onetinsoldier,keres,"ok... that what i always used to use.. but when i saw yours earlier this evening, i thought i needed to make it ntfs-3g"
+2008-12-18T09:13:00.000Z,keres,onetinsoldier,sudo blkid
+2008-12-18T09:13:00.000Z,keres,onetinsoldier,"ntfs-3g is only loaded when you log in, ntfs is realtime i was told"
+2008-12-18T09:14:00.000Z,onetinsoldier,keres,"ok, roger."
+2008-12-18T09:17:00.000Z,keres,onetinsoldier,"which partition are you trying to mount? by default, the home partition is sda1 iirc. A secondary hard drive always ended up like sdb* or sda* here"
+2008-12-19T03:11:00.000Z,keres,onetinsoldier,"radiant is still screwing up, i take back waht i said about it working :("
+2008-12-19T03:12:00.000Z,onetinsoldier,keres,oh. perhaps it's an issue withusing a beta version from svn! you could always contact the developer and tell him of the issue. that will help him!
+2008-12-19T03:12:00.000Z,keres,onetinsoldier,i'm gonna try that. i'll also try gtkradiant
+2008-12-19T03:19:00.000Z,keres,onetinsoldier,what is gpedit?
+2008-12-19T03:20:00.000Z,onetinsoldier,keres,sorry. i don't know. bust trying to help someone with major problem right now
+2008-12-19T04:04:00.000Z,keres,onetinsoldier,or raylu: could you send me the intrepid wallpaper?
+2008-12-19T04:47:00.000Z,keres,onetinsoldier,i now notice gtkradiant will only run in debug mode now :(
+2008-12-19T04:47:00.000Z,keres,onetinsoldier,which means it is unstable and a bunch of orange crap is everywhere
+2008-12-19T04:47:00.000Z,onetinsoldier,keres,roger that is a  :-(
+2008-12-19T04:48:00.000Z,onetinsoldier,keres,yeah... i hear you. you have to expect that when using svn sources
+2008-12-19T04:50:00.000Z,keres,onetinsoldier,you have to compile from the svn though...
+2008-12-19T04:50:00.000Z,keres,onetinsoldier,and most people have success.
+2008-12-19T04:50:00.000Z,onetinsoldier,keres,oh.. i see
+2008-12-19T21:45:00.000Z,keres,onetinsoldier,"later today, could you compile something for me and then try to see why it crashes?"
+2008-12-19T21:46:00.000Z,onetinsoldier,keres,"it's highly unlikely that i could figure why something crashes. i am willing to try. however, i'm not sure how much longer i'll be around today. probably not much longer"
+2008-12-19T21:47:00.000Z,onetinsoldier,keres,what is it anyway?
+2008-12-19T21:47:00.000Z,keres,onetinsoldier,ok. whenenenver you have a moment within today or tommorow :)
+2008-12-19T21:48:00.000Z,keres,onetinsoldier,"i got radiant to work functionally without debug mode, but when i turn the camera view to see the large portion of my map, it crashes. no errors or nothing"
+2008-12-19T21:48:00.000Z,onetinsoldier,keres,"tomorrow might be better, as actually, i'm leaving now."
+2008-12-19T21:49:00.000Z,onetinsoldier,keres,ok.. roger that. i will try it out tomorrow
+2008-12-19T21:49:00.000Z,onetinsoldier,keres, bye bye for now!
+2008-12-25T08:54:00.000Z,keres,onetinsoldier,no? what is it?
+2008-12-25T08:52:00.000Z,onetinsoldier,keres,merry christmas keres!
+2008-12-25T08:54:00.000Z,onetinsoldier,keres,you ever have need for the 'find' command?
+2008-12-25T08:56:00.000Z,onetinsoldier,keres,you've never needed to use the find command? --> man find  ...i'm not good with the command though. but i found a great front-end for it that shows by example :-)
+2008-12-25T08:56:00.000Z,keres,onetinsoldier,what is it's usage?
+2008-12-25T08:57:00.000Z,keres,onetinsoldier,i typed it in the console there was a huge output
+2008-12-25T08:57:00.000Z,keres,onetinsoldier,"oh, it lists files within a dir"
+2008-12-25T08:59:00.000Z,onetinsoldier,keres,yes. here's the front-end if you're interested in it  -->  http://www.kbrandt.com/2008/06/pygnomefind-gui-frontend-to-gnu-find.html
+2008-12-25T08:59:00.000Z,keres,onetinsoldier,cool :)
+2008-12-26T01:59:00.000Z,onetinsoldier,keres,hello and Merry Christmas! what util are you using to try and convert?
+2008-12-26T01:59:00.000Z,keres,onetinsoldier,hi! i forgot. i just use the cmd 'convert'
+2008-12-26T02:01:00.000Z,onetinsoldier,keres,"although i've never used them, you'll probably want to take a look at and use one of these  -->  imagemagick, graphicsmagick, gimp"
+2008-12-31T03:25:00.000Z,keres,onetinsoldier,i got a new site!
+2008-12-31T03:25:00.000Z,keres,onetinsoldier,http://keres.satgnu.net
+2009-01-01T08:17:00.000Z,onetinsoldier,keres,happy new year!
+2009-01-01T08:23:00.000Z,onetinsoldier,keres,"so, you still waiting on a good working version of radiant?"
+2009-01-01T08:23:00.000Z,keres,onetinsoldier,already got one :) working in it right now
+2009-01-01T08:24:00.000Z,onetinsoldier,keres,oh! cool :-) what name and version? or what did you have to do?
+2009-01-01T08:25:00.000Z,keres,onetinsoldier,"it's the default gtk1.5 release. the problem was scons builds the debug version by default, so someone told me to do scons build='release'"
+2009-01-01T08:26:00.000Z,onetinsoldier,keres,"oh, i see. seems i have heard of scons, but i forget what it is. - ok, just looked it up, replacement for 'make'"
+2009-01-01T08:26:00.000Z,keres,onetinsoldier,a sloppy one ;)
+2009-01-01T08:27:00.000Z,onetinsoldier,keres,oh
+2009-01-01T08:27:00.000Z,onetinsoldier,keres,so are you making maps now?
+2009-01-01T08:27:00.000Z,keres,onetinsoldier,"well, it's just not as easy as make"
+2009-01-01T08:27:00.000Z,keres,onetinsoldier,yes
+2009-01-01T08:27:00.000Z,keres,onetinsoldier,http://keres.satgnu.net/maps/index.html
+2009-01-01T08:27:00.000Z,onetinsoldier,keres,"ok, looking now"
+2009-01-01T08:29:00.000Z,onetinsoldier,keres,"hey, looks great! lot of people still play that? quake2 is a fairly old version isn't it?"
+2009-01-01T08:30:00.000Z,onetinsoldier,keres,"in fact, i can't believe how good that map looks if it's for quake2"
+2009-01-01T08:30:00.000Z,keres,onetinsoldier,quake2world is an in-developement q2-based game. it's got really good graphics
+2009-01-01T08:30:00.000Z,keres,onetinsoldier,"it has bump/normal maps, realtime lighitng"
+2009-01-01T08:30:00.000Z,keres,onetinsoldier,really fast pased combat. it's like all good things quake combined.
+2009-01-01T08:30:00.000Z,onetinsoldier,keres,"ah-ha! i see, well, very sweet looking"
+2009-01-01T08:31:00.000Z,keres,onetinsoldier,thank you :)
+2009-01-01T08:31:00.000Z,keres,onetinsoldier,are you a good 2d artist by any chance?
+2009-01-01T08:31:00.000Z,onetinsoldier,keres,nope
+2009-01-01T08:32:00.000Z,keres,onetinsoldier,#quetoo is their irc channel. you're welcome to join it :)
+2009-01-01T08:32:00.000Z,onetinsoldier,keres,thanks :-)
+2009-01-01T11:06:00.000Z,keres,onetinsoldier,west coast?

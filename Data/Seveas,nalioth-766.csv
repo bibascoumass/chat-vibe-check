@@ -1,0 +1,767 @@
+date,from,to,text
+2005-05-25T16:14:00.000Z,nalioth,,howdy y'all
+2005-05-25T16:15:00.000Z,nalioth,,howdy synd
+2005-05-25T16:16:00.000Z,nalioth,,"i do speak german, some french, spanish and english (i drive a taxicab)"
+2005-05-25T16:17:00.000Z,nalioth,,"Houston, Tx. driving a cab 3 years now"
+2005-05-25T16:18:00.000Z,Seveas,nalioth,seedorf?
+2005-05-25T16:18:00.000Z,nalioth,Seveas,what?
+2005-05-25T16:19:00.000Z,Seveas,nalioth,"that's a base in germany, was wondering if you were stationed there :)"
+2005-05-25T16:19:00.000Z,nalioth,Seveas,was stationed near Nurenburg
+2005-05-31T07:33:00.000Z,Seveas,nalioth,so is xchat :)
+2005-05-31T07:34:00.000Z,nalioth,Seveas,just showing that there are numerous options out there
+2005-06-01T09:37:00.000Z,Seveas,nalioth,not quite
+2005-06-01T09:38:00.000Z,nalioth,Seveas,"you mean since i installed kubuntu-desktop, i'm not running ubuntu any more?"
+2005-06-01T09:38:00.000Z,Seveas,nalioth,"ubuntu is the complete system, includeing gnome and gnome-centered tools"
+2005-06-01T09:39:00.000Z,nalioth,Seveas,"yes, and when you install kubuntu-desktop, its the same as if you went out and got KDEbase and other support debs.."
+2005-06-01T09:39:00.000Z,nalioth,Seveas,"it is still ubuntu, just with KDE"
+2005-06-01T09:40:00.000Z,nalioth,Seveas,"yes, i have multiple WMs"
+2005-06-01T09:40:00.000Z,Seveas,nalioth,i know
+2005-06-01T09:41:00.000Z,nalioth,Seveas,what is the diff? i was understanding that kubuntu was basically KDE on top of ubuntu
+2005-06-01T09:42:00.000Z,Seveas,nalioth,"well, it isn't: as i said, if you install from a kubuntu cd you get lots of things a standard ubuntu install does not have. And you don't get lots of things a standard ubuntu install has. So it's not KDE on top of ubuntu, but a KDE-centered version of ubuntu"
+2005-06-01T09:44:00.000Z,nalioth,Seveas,i was not aware there was a 'kubuntu install cd'
+2005-06-01T09:45:00.000Z,Seveas,nalioth,"there is, see www.kubuntu.org"
+2005-06-01T09:45:00.000Z,nalioth,Seveas,which is why i am of the thought that kubuntu is 'on top' of ubuntu (as it is on most everyone who installs from an ubuntu install cd)
+2005-06-14T15:47:00.000Z,Seveas,nalioth,we have established that his english is just as bad :)
+2005-06-14T15:48:00.000Z,nalioth,Seveas,ah
+2005-06-16T08:21:00.000Z,nalioth,Seveas,it all depends on what you want the end result to be
+2005-06-16T08:22:00.000Z,Seveas,nalioth,of course
+2005-06-16T08:33:00.000Z,Seveas,nalioth,smartmontools
+2005-06-18T13:04:00.000Z,nalioth,Seveas,"not only to stay away from the RPM hell, either"
+2005-06-18T13:06:00.000Z,Seveas,nalioth,very valuable lessons in how not to design a packaging system
+2005-06-18T13:06:00.000Z,nalioth,Seveas,mandrake and redhat taught me a lot about linux
+2005-06-18T13:07:00.000Z,nalioth,Seveas,a lot of 'use debian instead' lessons
+2005-06-19T09:00:00.000Z,Seveas,nalioth,mkfs
+2005-06-19T10:43:00.000Z,nalioth,Seveas,"talks more than i do, lol"
+2005-06-19T12:55:00.000Z,nalioth,Seveas,"doesnt the ubuntu live or knoppix CDs have the fdisk capability, also?"
+2005-06-20T14:23:00.000Z,nalioth,Seveas,"VESA should enable scott_'s system to display 1280x1024, correct?"
+2005-06-20T14:23:00.000Z,Seveas,nalioth,ENOCLUE
+2005-06-25T09:35:00.000Z,nalioth,Seveas,there are exceptions to all rules
+2005-06-25T13:29:00.000Z,Seveas,nalioth,completely back to windows mbr..?
+2005-06-25T13:30:00.000Z,nalioth,Seveas,"he wants NO mbr, so it loads ntldr instead"
+2005-06-25T13:31:00.000Z,Seveas,nalioth,fdisk /mbr will make it use NTLDR again...
+2005-06-25T13:31:00.000Z,nalioth,Seveas,we've been discussing all the ways for a few hours now
+2005-06-25T13:31:00.000Z,nalioth,Seveas,"he's kinda limited on his software (cds, floppys, etc)"
+2005-06-25T13:32:00.000Z,nalioth,Seveas,know the command to follow 'dd' taht will clean his mbr?
+2005-06-25T13:32:00.000Z,Seveas,nalioth,dd can restore the mbr if you have a good one
+2005-06-25T13:34:00.000Z,nalioth,Seveas,no way to wipe a mbr from within knoppix/ubuntu?
+2005-06-25T13:35:00.000Z,Seveas,nalioth,"you can wipe it with dd, but that won't restore it for windows..."
+2005-06-25T13:35:00.000Z,nalioth,Seveas,"in knoppix, would 'fdisk /dev/hd(#)/mbr work?"
+2005-06-25T13:35:00.000Z,Seveas,nalioth,nope
+2005-06-25T13:36:00.000Z,Seveas,nalioth,"i think he means access, spelling is difficult for some people ;)"
+2005-06-25T15:55:00.000Z,nalioth,Seveas,kewl! can we get a play-by-play?
+2005-06-25T15:56:00.000Z,Seveas,nalioth,"if it works, i'll publish it"
+2005-06-25T15:57:00.000Z,nalioth,Seveas,we want to hear you scream when it doesnt.. .. ..:P
+2005-06-25T15:57:00.000Z,Seveas,nalioth,lol :)
+2005-06-27T11:56:00.000Z,nalioth,Seveas,bob2 how/where do you change the point where this looks? >>>checking build system type... powerpc-unknown-linux-gnu
+2005-06-27T11:56:00.000Z,Seveas,nalioth,looks like part of the outpuf of ./configure
+2005-06-27T11:57:00.000Z,nalioth,Seveas,"yes it is, and i'm tired of being 'unknown powerpc'  what/where to i change the line so i become whatever"
+2005-06-27T11:57:00.000Z,Seveas,nalioth,what's wrong with powerpc-unknown-linux-gnu..?
+2005-06-27T12:56:00.000Z,Seveas,nalioth,not so much a case of early adoption but of sanity :)
+2005-06-27T12:57:00.000Z,nalioth,Seveas,whats the diff tween the source at kernel.org and ubuntu kernel source?
+2005-06-27T12:58:00.000Z,Seveas,nalioth,the debian/ubuntu patches and of course the nice deb buildsystem to create packages
+2005-06-27T14:20:00.000Z,Seveas,nalioth,let them use woody to avoid dependency problems..
+2005-06-27T14:21:00.000Z,nalioth,Seveas,"woody, sarge, godzilla, 'traci lords', all these debian names i'm cluesless about"
+2005-06-27T14:22:00.000Z,nalioth,Seveas,is there a 'make floppy image' thing in the ubuntu install cd?
+2005-06-27T14:22:00.000Z,Seveas,nalioth,not yet
+2005-06-27T14:27:00.000Z,nalioth,Seveas,is that a gtk-wget thang or gnome-wget?
+2005-06-27T14:29:00.000Z,Seveas,nalioth,it uses gtk2 :)
+2005-06-27T14:29:00.000Z,nalioth,Seveas,ok just wondering (i'll stick with my website pounding CLI wget)
+2005-06-28T15:01:00.000Z,nalioth,Seveas,"even with encryption, it should still be 'visible', right?"
+2005-06-28T15:13:00.000Z,nalioth,Seveas,"i'm confused about the java instructions, then"
+2005-06-28T15:13:00.000Z,Seveas,nalioth,he downloaded a .deb created with these instructions
+2005-06-28T15:13:00.000Z,nalioth,Seveas,"i've been installing the java-blah.bin on everyones x86 ubuntu box i install, and no problems"
+2005-06-28T15:13:00.000Z,Seveas,nalioth,do not do that!
+2005-06-28T15:14:00.000Z,Seveas,nalioth,use make-jpkg
+2005-06-28T15:14:00.000Z,nalioth,Seveas,now i'm really confused.
+2005-06-28T15:15:00.000Z,Seveas,nalioth,the one and only true instructions for java are:
+2005-06-28T15:15:00.000Z,Seveas,nalioth,"for java: download the .bin file from java.sun.com, apt-get install java-package, chmod +x [the .bin file] , make-jpkg [the bin file] , dpkg -i [the generated .deb file] "
+2005-06-29T12:12:00.000Z,nalioth,Seveas,you missed pochos performance yesterday
+2005-06-29T12:12:00.000Z,Seveas,nalioth,I heard about it
+2005-06-29T12:13:00.000Z,Seveas,nalioth,were you around when it happened?
+2005-06-29T12:14:00.000Z,nalioth,Seveas,"yes, i was unfortunately here"
+2005-06-29T12:28:00.000Z,Seveas,nalioth,hmm..? which one do you mean?
+2005-06-29T12:29:00.000Z,nalioth,Seveas,there used to be a linke from the main wiki page to 'user documentation'. On the userdoc page i could 'find' words and see the link to the article
+2005-06-29T12:29:00.000Z,nalioth,Seveas,i don't see teh userdoc page anymore
+2005-06-29T12:29:00.000Z,Seveas,nalioth,UserDocumentation
+2005-06-29T12:29:00.000Z,nalioth,Seveas,"i'm there, but its not like it once was"
+2005-06-29T12:30:00.000Z,nalioth,Seveas,i was gonna look for the sound problem
+2005-06-29T12:30:00.000Z,Seveas,nalioth,"the entire parenting system has been abandoned, so no page has the tree of children anymore"
+2005-06-29T12:30:00.000Z,nalioth,Seveas,well rats!
+2005-06-29T12:30:00.000Z,Seveas,nalioth,the wiki has a search function :)
+2005-06-29T12:30:00.000Z,nalioth,Seveas,i'm not impressed with the search function (i've used it)
+2005-06-29T12:32:00.000Z,nalioth,Seveas,is there a list of all articles?
+2005-06-29T12:32:00.000Z,Seveas,nalioth,there is AllPages afaik
+2005-06-29T12:32:00.000Z,nalioth,Seveas,thx
+2005-06-29T12:33:00.000Z,nalioth,Seveas,there is an 'allpages' but it doesnt do anything except invite you to build it
+2005-06-30T08:05:00.000Z,nalioth,Seveas,"no, you should not ANSWER yourself"
+2005-06-30T08:10:00.000Z,nalioth,Seveas,you continue to amaze me
+2005-06-30T08:10:00.000Z,Seveas,nalioth,hmm?
+2005-06-30T08:12:00.000Z,nalioth,Seveas,how do you find all this stuff?
+2005-06-30T08:12:00.000Z,Seveas,nalioth,i MADE that script :)
+2005-06-30T08:12:00.000Z,nalioth,Seveas,"well, i guess thats the best way to find something"
+2005-06-30T08:30:00.000Z,Seveas,nalioth,"hmm, I don't think he meant that..."
+2005-07-01T11:18:00.000Z,Seveas,nalioth,why did the forum idiots separate their stuff from the rest of the wiki/?
+2005-07-01T11:18:00.000Z,nalioth,Seveas,"i have no idea, i wasnt in on it"
+2005-07-01T11:49:00.000Z,nalioth,Seveas,quit whining its 91f here
+2005-07-01T11:50:00.000Z,Seveas,nalioth,"pfff, you must be melting :)"
+2005-07-01T11:50:00.000Z,nalioth,Seveas,"nah, 91f is a cool day"
+2005-07-01T11:51:00.000Z,nalioth,Seveas,"here in Houston, it'll get over 110f later on"
+2005-07-01T13:02:00.000Z,Seveas,nalioth,they are supposed to be :)
+2005-07-01T13:03:00.000Z,nalioth,Seveas,believe bchunk requires a bin and cue
+2005-07-01T13:04:00.000Z,nalioth,Seveas,it's rather limited
+2005-07-01T13:26:00.000Z,Seveas,nalioth,ouch...
+2005-07-01T13:26:00.000Z,Seveas,nalioth,keep your dog away from it then ;)
+2005-07-01T13:27:00.000Z,nalioth,Seveas,"brb, and the dog rarely causes these things"
+2005-07-01T14:13:00.000Z,nalioth,Seveas,how many teraflops does the 12-Cell cluster you run on put out?
+2005-07-01T14:14:00.000Z,Seveas,nalioth,"you must be mistaken, I do not run on a 12-Cell cluster but on an experimental FPGA / microthreaded alpha testbed"
+2005-07-01T14:15:00.000Z,nalioth,Seveas,coulda sworn there was 12 of em involved
+2005-07-01T14:17:00.000Z,Seveas,nalioth,afaik ther IS a way
+2005-07-01T14:19:00.000Z,nalioth,Seveas,you know everything
+2005-07-01T14:20:00.000Z,nalioth,Seveas,"i just ran that w/o sudo, what's the diff?"
+2005-07-01T14:21:00.000Z,Seveas,nalioth,"ENOIDEA, it's just that the progeam says: 'WARNING: you should run this as root'"
+2005-07-01T14:21:00.000Z,nalioth,Seveas,hmm i got a buttload of readable output re my system w/o sudo
+2005-07-01T14:21:00.000Z,Seveas,nalioth,yeah /me too :)
+2005-07-01T14:31:00.000Z,nalioth,Seveas,i did a very technical thing: i ran lshw both ways and there are only 4 lines different in output (according to 'diff')
+2005-07-01T15:22:00.000Z,Seveas,nalioth,don't you need linux-restricted-modules and some xorg.conf tweaking on PPC?
+2005-07-01T15:22:00.000Z,nalioth,Seveas,mine ran out of the box
+2005-07-02T05:16:00.000Z,Seveas,nalioth,"I'm shutting down thw 12-cell cluster, cya tommorow :)"
+2005-07-02T05:17:00.000Z,nalioth,Seveas,"goin to 1-cell for dormancy and power savings, eh?"
+2005-07-03T16:24:00.000Z,nalioth,Seveas,did the bulb just light up?
+2005-07-03T16:27:00.000Z,nalioth,Seveas,has someone been playing with your tanks EM shield?
+2005-07-03T16:28:00.000Z,nalioth,Seveas,can xryy 'touch' a  new one?
+2005-07-03T16:46:00.000Z,nalioth,Seveas,do you need a date that badly?
+2005-07-03T16:46:00.000Z,Seveas,nalioth,lol no :)
+2005-07-03T05:32:00.000Z,nalioth,Seveas,you still here?
+2005-07-04T15:44:00.000Z,nalioth,Seveas,"could take the calendar project over, but he only likes panoramas of IBM Fab 12"
+2005-07-04T15:56:00.000Z,nalioth,Seveas,please send vinux the 'source'
+2005-07-07T08:22:00.000Z,nalioth,Seveas,us government pays farmers to NOT grow crops
+2005-07-07T08:22:00.000Z,Seveas,nalioth,"LOL, really..?"
+2005-07-07T09:07:00.000Z,Seveas,nalioth,date --utc
+2005-07-07T09:08:00.000Z,nalioth,Seveas,such simplicity right in front of my nose
+2005-07-07T09:44:00.000Z,Seveas,nalioth,but a lot less than merillat :)
+2005-07-07T09:44:00.000Z,nalioth,Seveas,i just try to keep folks operable
+2005-07-07T09:49:00.000Z,Seveas,nalioth,fortunately that problem has been solved in backports :)
+2005-07-07T09:50:00.000Z,nalioth,Seveas,really?
+2005-07-07T09:50:00.000Z,Seveas,nalioth,yes
+2005-07-07T13:20:00.000Z,nalioth,Seveas,you need to feed that to the python (ff fooolery)
+2005-07-07T13:21:00.000Z,Seveas,nalioth,"I did, but gavin did not understand the FAQ entry :)"
+2005-07-07T13:22:00.000Z,nalioth,Seveas,"ah, F0C7"
+2005-07-07T13:22:00.000Z,Seveas,nalioth,F0C7..?
+2005-07-07T13:22:00.000Z,nalioth,Seveas,i've been PM'g you all morning (locally) long
+2005-07-07T13:22:00.000Z,Seveas,nalioth,"ahhh sorry, I was on PM ignore..."
+2005-07-07T13:23:00.000Z,nalioth,Seveas,so are the PMs there or did they all go to /dev/null?
+2005-07-07T13:23:00.000Z,Seveas,nalioth,/dev/null i'm afraid
+2005-07-07T13:24:00.000Z,nalioth,Seveas,ya still on pm-ignore?
+2005-07-07T13:24:00.000Z,Seveas,nalioth,nope
+2005-07-07T13:36:00.000Z,Seveas,nalioth,it does
+2005-07-07T13:36:00.000Z,nalioth,Seveas,wow
+2005-07-07T13:43:00.000Z,Seveas,nalioth,that is *exactly* what captive does :D
+2005-07-07T13:43:00.000Z,nalioth,Seveas,i don't like the idea of a windows library in/near my linux kernel
+2005-07-07T13:44:00.000Z,Seveas,nalioth,me neitjer ;)
+2005-07-08T05:34:00.000Z,Seveas,nalioth,no just mail
+2005-07-08T05:35:00.000Z,nalioth,Seveas,does mail use vi or emacs keybindings?
+2005-07-08T05:35:00.000Z,Seveas,nalioth,neither :)
+2005-07-08T05:36:00.000Z,Seveas,nalioth,q<enter>
+2005-07-10T16:28:00.000Z,Seveas,nalioth,2 distinct subdirs on 1 partition?
+2005-07-10T16:29:00.000Z,nalioth,Seveas,sam fstab will fix that i believe
+2005-07-10T16:29:00.000Z,Seveas,nalioth,2 folders on 1 partition...?
+2005-07-10T16:29:00.000Z,nalioth,Seveas,why not?
+2005-07-10T16:30:00.000Z,nalioth,Seveas,why not do what he wants with 'ln'?
+2005-07-10T16:30:00.000Z,Seveas,nalioth,just typed that out :D
+2005-07-10T16:30:00.000Z,nalioth,Seveas,but he shoulnt need to mount in his homedir
+2005-07-10T16:31:00.000Z,Seveas,nalioth,i meant:   /dev/hdx    /   ext3       and /dev/hdy     /home    ext3
+2005-07-10T16:31:00.000Z,nalioth,Seveas,"i missed it, and i'm sure he did too"
+2005-07-10T16:32:00.000Z,nalioth,Seveas,you robot you
+2005-07-10T16:33:00.000Z,nalioth,Seveas,"doesnt need luck, he's a machine"
+2005-07-10T15:40:00.000Z,nalioth,Seveas,is that a fat DM?
+2005-07-10T15:40:00.000Z,Seveas,nalioth,"xfce is moderately fat, fluxbox is thin"
+2005-07-10T15:48:00.000Z,Seveas,nalioth,I call that bad security practice
+2005-07-10T15:49:00.000Z,nalioth,Seveas,"it wasnt connected to the outside, it was internal"
+2005-07-10T15:49:00.000Z,Seveas,nalioth,ah ok
+2005-07-11T05:59:00.000Z,nalioth,Seveas,no! ubotu recommending the 'guide? horrors!
+2005-07-11T06:14:00.000Z,nalioth,Seveas,so c# is recreational?
+2005-07-11T06:14:00.000Z,Seveas,nalioth,in hoary: yes
+2005-07-11T06:15:00.000Z,Seveas,nalioth,check :)
+2005-07-11T06:17:00.000Z,Seveas,nalioth,you're wayyyyyy behind
+2005-07-11T06:18:00.000Z,nalioth,Seveas,"yes, i'm way behind in lots of ways"
+2005-07-11T06:20:00.000Z,nalioth,Seveas,"you still can't spell, though"
+2005-07-11T06:20:00.000Z,Seveas,nalioth,that's the alcohol :)
+2005-07-11T15:51:00.000Z,nalioth,Seveas,you need to enable S.M.A.R.T in the bios to check a 'smart' hard drive?
+2005-07-11T15:51:00.000Z,Seveas,nalioth,I thought so...
+2005-07-11T15:51:00.000Z,nalioth,Seveas,thought it read straight from the ide/sata/scsi bus
+2005-07-12T13:30:00.000Z,nalioth,Seveas,"not in the $path, i dont think"
+2005-07-12T13:31:00.000Z,nalioth,Seveas,he has & on the end
+2005-07-12T13:36:00.000Z,nalioth,Seveas,what? dependencies removal or ????
+2005-07-12T13:36:00.000Z,Seveas,nalioth,indeed :)
+2005-07-12T13:36:00.000Z,Seveas,nalioth,indeed again :)
+2005-07-12T13:37:00.000Z,Seveas,nalioth,I have aliases for all machines I have an account on :(
+2005-07-12T13:37:00.000Z,nalioth,Seveas,"yes, me too, but we have been using *nix for a few weeks, no? lol"
+2005-07-12T13:37:00.000Z,Seveas,nalioth,I mean aliases on this machine to log into other machines
+2005-07-12T13:38:00.000Z,nalioth,Seveas,your accounts dont have rsynced aliases?
+2005-07-12T13:38:00.000Z,Seveas,nalioth,"no, i am working on homedir synchronization"
+2005-07-12T14:24:00.000Z,Seveas,nalioth,ant then an apt-cache search liftoff!
+2005-07-12T14:24:00.000Z,nalioth,Seveas,not a 'apt-cache search 6'?
+2005-07-16T12:35:00.000Z,Seveas,nalioth,no :)
+2005-07-16T12:36:00.000Z,nalioth,Seveas,"assuming you can only run sudo at a terminal, if you use sudo to remove something, it's gone"
+2005-07-16T12:56:00.000Z,nalioth,Seveas,Tuxist wants 'bling' over stability
+2005-07-16T12:56:00.000Z,Seveas,nalioth,"given that he uses KDE, that was clear already ;)"
+2005-07-16T12:56:00.000Z,nalioth,Seveas,be nice  :)
+2005-07-16T14:54:00.000Z,nalioth,Seveas,"actually, only the security has been bp'd into ff, it still is missing the .4 featuresets"
+2005-07-16T14:54:00.000Z,Seveas,nalioth,that's what I said
+2005-07-16T14:55:00.000Z,nalioth,Seveas,El_Che: i'm lost too
+2005-07-16T14:55:00.000Z,nalioth,Seveas,El_Che: probably why i dont use ff
+2005-07-16T15:39:00.000Z,nalioth,Seveas,Geist|Patrick was trying to apt-get synaptic (he's running default kubuntu)
+2005-07-29T10:55:00.000Z,nalioth,Seveas,howdy howdy
+2005-07-29T11:00:00.000Z,Seveas,nalioth,that's not mine
+2005-07-29T11:01:00.000Z,nalioth,Seveas,you have had NOTHING to do with the wiki?
+2005-07-29T11:02:00.000Z,nalioth,Seveas,i find that very hard to believe
+2005-07-29T11:02:00.000Z,Seveas,nalioth,look at wiki.u.c/DennisKaarsemaker
+2005-07-29T11:02:00.000Z,nalioth,Seveas,"so you're telling me that all the info you impart in here, doesnt make it into the wiki by helpful little elvi? (such as myself?)"
+2005-07-29T11:04:00.000Z,Seveas,nalioth,most info I have comes from the wiki or is developed on the wiki in parallel :)
+2005-07-29T11:06:00.000Z,Seveas,nalioth,gam_serve isn't KDE specific :)
+2005-08-01T11:01:00.000Z,nalioth,Seveas,good morning
+2005-08-27T15:40:00.000Z,Seveas,nalioth,it's sudo that's failing ;)
+2005-08-29T05:11:00.000Z,Seveas,nalioth,in ubuntu locate is a symlink to slocate
+2005-08-29T05:12:00.000Z,nalioth,Seveas,"credit where it's due, ahem"
+2005-08-30T14:59:00.000Z,nalioth,Seveas,you've been a busy little beaver
+2005-08-30T15:01:00.000Z,nalioth,Seveas,you must have blinked
+2005-08-30T14:34:00.000Z,Seveas,nalioth,planet.ubuntu.com
+2005-08-30T14:35:00.000Z,Seveas,nalioth,www.ubuntulinux.nl/files/hoary.xml
+2005-08-31T14:51:00.000Z,nalioth,Seveas,onjoins
+2005-09-01T16:13:00.000Z,nalioth,Seveas,good eve
+2005-09-01T16:14:00.000Z,nalioth,Seveas,ubotu was feigning ignorance of common factoids (when i tried to enlighten folks)
+2005-09-01T16:38:00.000Z,Seveas,nalioth,"ubuntu-calendar-{october,november,december} etc.."
+2005-09-01T16:48:00.000Z,nalioth,Seveas,you're not +E are you? lol
+2005-09-01T05:58:00.000Z,nalioth,Seveas,"_adam is interested in bittornado, for example"
+2005-09-01T07:45:00.000Z,Seveas,nalioth,update the dog
+2005-09-01T08:16:00.000Z,nalioth,Seveas,i wish i had your memory (sorry forgot the experiemental solid-state core you have)
+2005-09-02T16:24:00.000Z,nalioth,Seveas,why is that stupidness even enabled in ubotu?
+2005-09-11T15:44:00.000Z,nalioth,Seveas,not curl?
+2005-09-11T15:44:00.000Z,nalioth,Seveas,and i don't know why not
+2005-09-12T14:46:00.000Z,Seveas,nalioth,sudo -i
+2005-09-12T15:53:00.000Z,nalioth,Seveas,where do you keep your debs?
+2005-09-12T15:54:00.000Z,Seveas,nalioth,/var/cache/apt/archives :)
+2005-09-12T15:54:00.000Z,nalioth,Seveas,"yes, thank you. http://seveas/keeps/his/debs/here?"
+2005-09-12T15:55:00.000Z,nalioth,Seveas,thank you
+2005-09-13T16:05:00.000Z,Seveas,nalioth,bad idea
+2005-09-13T16:06:00.000Z,nalioth,Seveas,"sorry, trying to be helpful"
+2005-09-13T16:12:00.000Z,Seveas,nalioth,recompile it with ssl support ;(
+2005-09-13T16:20:00.000Z,nalioth,Seveas,my eels are missing
+2005-09-13T15:06:00.000Z,nalioth,Seveas,can you help ngmlinux with his java selection?
+2005-09-13T15:06:00.000Z,Seveas,nalioth,maybe
+2005-09-13T15:07:00.000Z,nalioth,Seveas,"ngmlinux wants to have his sun java in his operating path, but not his gnu java"
+2005-09-13T15:29:00.000Z,nalioth,Seveas,bum allows you to turn on and off services?
+2005-09-13T15:31:00.000Z,nalioth,Seveas,is there a setting he can put in his .bashrc or something?
+2005-09-13T15:31:00.000Z,Seveas,nalioth,even better :)
+2005-09-13T15:34:00.000Z,nalioth,Seveas,"tell me the truth. you ARE running with a 200TB fiberoptic backend, aren't you?"
+2005-09-13T15:45:00.000Z,Seveas,nalioth,yup
+2005-09-13T15:59:00.000Z,nalioth,Seveas,ah ha! you are related!
+2005-09-13T16:06:00.000Z,nalioth,Seveas,"i have a question. i have ibm java installed, and it isnt showing up in the --config java box"
+2005-09-13T16:06:00.000Z,Seveas,nalioth,did you install a .deb file for it ?
+2005-09-13T16:47:00.000Z,nalioth,Seveas,any idears on why my java didnt show in the selections?
+2005-09-13T14:06:00.000Z,nalioth,Seveas,i /noticed him with that info
+2005-09-14T14:03:00.000Z,nalioth,Seveas,"what a coincidence, i just d-u'd my g3 ibook"
+2005-09-14T14:03:00.000Z,nalioth,Seveas,verdict: the ppc arch isnt ready for prime time
+2005-09-14T14:08:00.000Z,nalioth,Seveas,be glad your'e not doing a ppc
+2005-09-14T14:08:00.000Z,Seveas,nalioth,I'm always glad I don'y do PPC ;)
+2005-09-14T14:09:00.000Z,nalioth,Seveas,be nice now. i now have valuable breezy experience for the masses of ppc (ab)users
+2005-09-14T14:21:00.000Z,nalioth,Seveas,i didnt know you were a language professor
+2005-09-14T14:22:00.000Z,Seveas,nalioth,"I'm not, I only speek 4 languages (and a gazillion programming languages ;))"
+2005-09-14T15:39:00.000Z,nalioth,Seveas,i wish i could find the bug that causes this box to freeze solid
+2005-09-16T05:54:00.000Z,nalioth,Seveas,mixing ext3 and hfs+ is not a good idea
+2005-09-19T15:39:00.000Z,nalioth,Seveas,light to medium bot showers in the last half hour
+2005-09-20T16:32:00.000Z,Seveas,nalioth,of borg has spoken :D
+2005-09-20T16:32:00.000Z,nalioth,Seveas,we ARE a collective mind in here
+2005-09-20T16:32:00.000Z,nalioth,Seveas,"just not to friendly at times, lol"
+2005-09-21T05:04:00.000Z,nalioth,Seveas,no flooding! use #flood or a pastebin please
+2005-09-21T05:16:00.000Z,nalioth,Seveas,"if you can come out of an interupted install, you are super 733t"
+2005-09-21T05:16:00.000Z,Seveas,nalioth,did that several times
+2005-09-21T05:17:00.000Z,Seveas,nalioth,my warty-hoary upgrade back in gebruary was interrupted 6 times by hard reboots
+2005-09-21T05:17:00.000Z,nalioth,Seveas,"yes, my ibook breezy was, too"
+2005-09-21T05:18:00.000Z,nalioth,Seveas,nothing like coming back up to a console and nothing else
+2005-09-21T05:25:00.000Z,nalioth,Seveas,they're running like salmon in -unregged
+2005-09-23T16:17:00.000Z,Seveas,nalioth,read back a bit :)
+2005-09-23T16:19:00.000Z,nalioth,Seveas,just makin a point that 'anybody?' and such as that are not productive questions
+2005-09-25T15:37:00.000Z,nalioth,Seveas,bzip2 is nice that way
+2005-09-25T16:18:00.000Z,nalioth,Seveas,see what i mean about the random nickchange spambots?
+2005-09-25T16:19:00.000Z,Seveas,nalioth,yes
+2005-09-25T16:39:00.000Z,nalioth,Seveas,i love lag
+2005-09-25T05:36:00.000Z,nalioth,Seveas,i find it unusual the spambots are only visiting some channels
+2005-09-25T05:37:00.000Z,Seveas,nalioth,probably hardcoded big channels
+2005-09-25T06:34:00.000Z,nalioth,Seveas,something to be said for 'fuzzy logic filtering'
+2005-09-25T06:35:00.000Z,Seveas,nalioth,;)
+2005-09-25T06:42:00.000Z,nalioth,Seveas,"every day about this time, the swarm arrives, lol"
+2005-09-25T06:43:00.000Z,nalioth,Seveas,whats the file to read of all that stuff?
+2005-09-26T06:22:00.000Z,Seveas,nalioth,I still give people access though ;)
+2005-09-26T10:21:00.000Z,nalioth,Seveas,mornin
+2005-09-26T10:27:00.000Z,nalioth,Seveas,why are some users gettin this error? http://paste.ubuntulinux.nl/d2414
+2005-09-26T10:30:00.000Z,Seveas,nalioth,they specified the wrong fs
+2005-09-26T10:30:00.000Z,nalioth,Seveas,actually stormie posted the dmesg and the NTFS is scoarbled
+2005-09-26T11:03:00.000Z,nalioth,Seveas,does the breezy installer offer resizing of NTFS?
+2005-09-26T11:03:00.000Z,Seveas,nalioth,"afaik yes (never tried it though, i've dist-upgraded from hoary)"
+2005-09-27T16:05:00.000Z,nalioth,Seveas,do you know how to get ubotu to spit out the package numbers ?
+2005-09-27T16:07:00.000Z,Seveas,nalioth,that's not an easy thing to ask iirc
+2005-09-27T16:08:00.000Z,nalioth,Seveas,we'll wait on cafuego then
+2005-09-27T16:15:00.000Z,nalioth,Seveas,cold porridge?
+2005-09-29T05:21:00.000Z,Seveas,nalioth,a crap script from the forum fools...
+2005-09-30T13:04:00.000Z,Seveas,nalioth,good to see you back dude!
+2005-09-30T13:05:00.000Z,Seveas,nalioth,how's your home?
+2005-09-30T13:05:00.000Z,Seveas,nalioth,nice!
+2005-09-30T13:47:00.000Z,nalioth,Seveas,you should know better
+2005-10-02T12:55:00.000Z,Seveas,nalioth,op-hopper ;)
+2005-10-02T12:56:00.000Z,nalioth,Seveas,you beat me to it
+2005-10-03T13:56:00.000Z,Seveas,nalioth,I put him there
+2005-10-06T08:20:00.000Z,nalioth,Seveas,you're hitting the big time
+2005-10-06T10:13:00.000Z,nalioth,Seveas,oh my favorite heart! you a n00b?
+2005-10-06T10:13:00.000Z,Seveas,nalioth,if it comes to alsa: yes
+2005-10-06T10:18:00.000Z,Seveas,nalioth,w32codecs from marillat are fine on all ubuntu versions now and in the future
+2005-10-06T10:42:00.000Z,nalioth,Seveas,we have new ubotu factoids
+2005-10-06T10:43:00.000Z,Seveas,nalioth,rock!
+2005-10-06T10:43:00.000Z,nalioth,Seveas,!w32codecs and !javadeb
+2005-10-07T16:15:00.000Z,nalioth,Seveas,it's time for bed. you are typing faster then i am lately
+2005-10-08T05:23:00.000Z,Seveas,nalioth,the way they work is the same :)
+2005-10-08T05:23:00.000Z,nalioth,Seveas,"yes, but they break usssss"
+2005-10-08T05:54:00.000Z,Seveas,nalioth,mirrormax cannot be used anymore
+2005-10-08T05:55:00.000Z,nalioth,Seveas,"yes, that's what i said"
+2005-10-08T06:26:00.000Z,Seveas,nalioth,I always point out vim :)
+2005-10-09T07:38:00.000Z,nalioth,Seveas,GDorn is looking for freenx
+2005-10-09T09:03:00.000Z,Seveas,nalioth,acroread 7 has landed in breezy multiverse
+2005-10-09T09:04:00.000Z,nalioth,Seveas,ok then the restrictedformats page needs to be updates. it's sending folks to debian repos
+2005-10-09T09:04:00.000Z,Seveas,nalioth,check
+2005-10-09T09:05:00.000Z,Seveas,nalioth,I don't see it mentioned on RestrictedFormate
+2005-10-09T09:08:00.000Z,nalioth,Seveas,marillat is still with us
+2005-10-14T12:55:00.000Z,Seveas,nalioth,k7/686 both have flash
+2005-10-14T12:55:00.000Z,nalioth,Seveas,well
+2005-10-14T14:16:00.000Z,nalioth,Seveas,"but that is seveas's repo, and he runs it as he sees fit"
+2005-10-16T14:56:00.000Z,Seveas,nalioth,grc is an idiot
+2005-10-16T14:57:00.000Z,nalioth,Seveas,yes? his port scanner thing works well enough
+2005-10-16T14:57:00.000Z,Seveas,nalioth,'stealth' is nonsense and break all kinds of interrnet standards
+2005-10-16T14:58:00.000Z,Seveas,nalioth,aftertaf http://grcsucks.com/ is quite interesting to read
+2005-10-25T15:23:00.000Z,nalioth,Seveas,when are the xubuntu cd/dvds coming out?
+2005-10-25T15:23:00.000Z,Seveas,nalioth,ask Jani Monoses
+2005-10-27T05:12:00.000Z,nalioth,Seveas,the restricted wiki has been changed
+2005-11-16T08:07:00.000Z,nalioth,Seveas,we got trouble
+2005-11-18T07:39:00.000Z,Seveas,nalioth,thanks ;)
+2005-11-29T11:16:00.000Z,nalioth,Seveas,which dvd are we talking about?
+2005-11-29T11:17:00.000Z,Seveas,nalioth,I assume an Ubuntu DVD :)
+2005-12-03T14:30:00.000Z,nalioth,Seveas,are you here?
+2005-12-10T17:46:00.000Z,nalioth,Seveas,"yes, i dont either, BUT i'd rather have a 'safe' one out there that is advertised by the ubuntu community than the unsafe shit that existed prior"
+2005-12-10T17:47:00.000Z,Seveas,nalioth,"true, I'll have a look :)"
+2005-12-19T12:16:00.000Z,nalioth,Seveas,Seveas offtopic
+2006-01-02T06:34:00.000Z,nalioth,Seveas,"yes it is, but if you MUST do it, at least minimize the damage (gksudo)"
+2006-01-02T06:35:00.000Z,Seveas,nalioth,if you must use nautilus as root you're on the wrong path anyway and should rethink your steps :)
+2006-01-02T06:35:00.000Z,nalioth,Seveas,i know. but some folks are convinced it's the only way
+2006-01-02T09:44:00.000Z,nalioth,Seveas,has moved his files and not provided a forwarding URL
+2006-01-03T11:09:00.000Z,nalioth,Seveas,they've found us.
+2006-01-03T11:09:00.000Z,Seveas,nalioth,?
+2006-01-06T06:22:00.000Z,nalioth,Seveas,trolls already this year? they're starting early
+2006-01-21T06:58:00.000Z,nalioth,Seveas,please watch your potty mouth   :)
+2006-03-09T07:47:00.000Z,nalioth,Seveas,it's not just him
+2006-03-09T07:48:00.000Z,Seveas,nalioth,who else?
+2006-03-09T07:49:00.000Z,nalioth,Seveas,mind your invites please
+2006-03-09T07:50:00.000Z,nalioth,Seveas,invites
+2006-03-09T07:51:00.000Z,Seveas,nalioth,?
+2006-03-13T09:46:00.000Z,Seveas,nalioth,too late ;)
+2006-03-27T06:46:00.000Z,nalioth,Seveas,you about?
+2006-04-07T15:49:00.000Z,nalioth,Seveas,tab check
+2006-04-10T12:38:00.000Z,Seveas,nalioth,you spanked the monkey 
+2006-04-10T12:38:00.000Z,nalioth,Seveas,twas a naughty monkey
+2006-04-15T12:34:00.000Z,nalioth,Seveas,hmm?
+2006-04-15T12:34:00.000Z,Seveas,nalioth,"nothing, I pointed someone to your repo"
+2006-04-15T12:35:00.000Z,nalioth,Seveas,"i don't carry ppc java in my repos, tell them about !javadebs instead"
+2006-04-15T12:35:00.000Z,Seveas,nalioth,"ah, I misubderstood that"
+2006-04-26T16:59:00.000Z,Seveas,nalioth,too slow ;)
+2006-06-14T12:06:00.000Z,Seveas,nalioth,more k-lining
+2006-06-14T12:09:00.000Z,nalioth,Seveas,nothing false about those strings
+2006-06-14T12:11:00.000Z,Seveas,nalioth,+r is join restriction
+2006-06-27T15:27:00.000Z,Seveas,nalioth,impossible if I'm in bofh mode
+2006-07-20T11:08:00.000Z,Seveas,nalioth,Troll still isn't killed/k-lined
+2006-08-09T15:45:00.000Z,Seveas,nalioth,prod --^
+2006-09-25T10:43:00.000Z,Seveas,nalioth,that's way beyond the number of clones that freenode usually tolreates
+2006-09-25T10:44:00.000Z,nalioth,Seveas,patience
+2006-09-25T10:44:00.000Z,nalioth,Seveas,all klined
+2007-02-08T16:22:00.000Z,nalioth,Seveas,they are not
+2008-02-01T18:56:00.000Z,Seveas,nalioth,-- he want to be on the k-line train
+2005-05-25T16:14:00.000Z,nalioth,,howdy y'all
+2005-05-25T16:15:00.000Z,nalioth,,howdy synd
+2005-05-25T16:16:00.000Z,nalioth,,"i do speak german, some french, spanish and english (i drive a taxicab)"
+2005-05-25T16:17:00.000Z,nalioth,,"Houston, Tx. driving a cab 3 years now"
+2005-05-25T16:18:00.000Z,Seveas,nalioth,seedorf?
+2005-05-25T16:18:00.000Z,nalioth,Seveas,what?
+2005-05-25T16:19:00.000Z,Seveas,nalioth,"that's a base in germany, was wondering if you were stationed there :)"
+2005-05-25T16:19:00.000Z,nalioth,Seveas,was stationed near Nurenburg
+2005-05-31T07:33:00.000Z,Seveas,nalioth,so is xchat :)
+2005-05-31T07:34:00.000Z,nalioth,Seveas,just showing that there are numerous options out there
+2005-06-01T09:37:00.000Z,Seveas,nalioth,not quite
+2005-06-01T09:38:00.000Z,nalioth,Seveas,"you mean since i installed kubuntu-desktop, i'm not running ubuntu any more?"
+2005-06-01T09:38:00.000Z,Seveas,nalioth,"ubuntu is the complete system, includeing gnome and gnome-centered tools"
+2005-06-01T09:39:00.000Z,nalioth,Seveas,"yes, and when you install kubuntu-desktop, its the same as if you went out and got KDEbase and other support debs.."
+2005-06-01T09:39:00.000Z,nalioth,Seveas,"it is still ubuntu, just with KDE"
+2005-06-01T09:40:00.000Z,nalioth,Seveas,"yes, i have multiple WMs"
+2005-06-01T09:40:00.000Z,Seveas,nalioth,i know
+2005-06-01T09:41:00.000Z,nalioth,Seveas,what is the diff? i was understanding that kubuntu was basically KDE on top of ubuntu
+2005-06-01T09:42:00.000Z,Seveas,nalioth,"well, it isn't: as i said, if you install from a kubuntu cd you get lots of things a standard ubuntu install does not have. And you don't get lots of things a standard ubuntu install has. So it's not KDE on top of ubuntu, but a KDE-centered version of ubuntu"
+2005-06-01T09:44:00.000Z,nalioth,Seveas,i was not aware there was a 'kubuntu install cd'
+2005-06-01T09:45:00.000Z,Seveas,nalioth,"there is, see www.kubuntu.org"
+2005-06-01T09:45:00.000Z,nalioth,Seveas,which is why i am of the thought that kubuntu is 'on top' of ubuntu (as it is on most everyone who installs from an ubuntu install cd)
+2005-06-14T15:47:00.000Z,Seveas,nalioth,we have established that his english is just as bad :)
+2005-06-14T15:48:00.000Z,nalioth,Seveas,ah
+2005-06-16T08:21:00.000Z,nalioth,Seveas,it all depends on what you want the end result to be
+2005-06-16T08:22:00.000Z,Seveas,nalioth,of course
+2005-06-16T08:33:00.000Z,Seveas,nalioth,smartmontools
+2005-06-18T13:04:00.000Z,nalioth,Seveas,"not only to stay away from the RPM hell, either"
+2005-06-18T13:06:00.000Z,Seveas,nalioth,very valuable lessons in how not to design a packaging system
+2005-06-18T13:06:00.000Z,nalioth,Seveas,mandrake and redhat taught me a lot about linux
+2005-06-18T13:07:00.000Z,nalioth,Seveas,a lot of 'use debian instead' lessons
+2005-06-19T09:00:00.000Z,Seveas,nalioth,mkfs
+2005-06-19T10:43:00.000Z,nalioth,Seveas,"talks more than i do, lol"
+2005-06-19T12:55:00.000Z,nalioth,Seveas,"doesnt the ubuntu live or knoppix CDs have the fdisk capability, also?"
+2005-06-20T14:23:00.000Z,nalioth,Seveas,"VESA should enable scott_'s system to display 1280x1024, correct?"
+2005-06-20T14:23:00.000Z,Seveas,nalioth,ENOCLUE
+2005-06-25T09:35:00.000Z,nalioth,Seveas,there are exceptions to all rules
+2005-06-25T13:29:00.000Z,Seveas,nalioth,completely back to windows mbr..?
+2005-06-25T13:30:00.000Z,nalioth,Seveas,"he wants NO mbr, so it loads ntldr instead"
+2005-06-25T13:31:00.000Z,Seveas,nalioth,fdisk /mbr will make it use NTLDR again...
+2005-06-25T13:31:00.000Z,nalioth,Seveas,we've been discussing all the ways for a few hours now
+2005-06-25T13:31:00.000Z,nalioth,Seveas,"he's kinda limited on his software (cds, floppys, etc)"
+2005-06-25T13:32:00.000Z,nalioth,Seveas,know the command to follow 'dd' taht will clean his mbr?
+2005-06-25T13:32:00.000Z,Seveas,nalioth,dd can restore the mbr if you have a good one
+2005-06-25T13:34:00.000Z,nalioth,Seveas,no way to wipe a mbr from within knoppix/ubuntu?
+2005-06-25T13:35:00.000Z,Seveas,nalioth,"you can wipe it with dd, but that won't restore it for windows..."
+2005-06-25T13:35:00.000Z,nalioth,Seveas,"in knoppix, would 'fdisk /dev/hd(#)/mbr work?"
+2005-06-25T13:35:00.000Z,Seveas,nalioth,nope
+2005-06-25T13:36:00.000Z,Seveas,nalioth,"i think he means access, spelling is difficult for some people ;)"
+2005-06-25T15:55:00.000Z,nalioth,Seveas,kewl! can we get a play-by-play?
+2005-06-25T15:56:00.000Z,Seveas,nalioth,"if it works, i'll publish it"
+2005-06-25T15:57:00.000Z,nalioth,Seveas,we want to hear you scream when it doesnt.. .. ..:P
+2005-06-25T15:57:00.000Z,Seveas,nalioth,lol :)
+2005-06-27T11:56:00.000Z,nalioth,Seveas,bob2 how/where do you change the point where this looks? >>>checking build system type... powerpc-unknown-linux-gnu
+2005-06-27T11:56:00.000Z,Seveas,nalioth,looks like part of the outpuf of ./configure
+2005-06-27T11:57:00.000Z,nalioth,Seveas,"yes it is, and i'm tired of being 'unknown powerpc'  what/where to i change the line so i become whatever"
+2005-06-27T11:57:00.000Z,Seveas,nalioth,what's wrong with powerpc-unknown-linux-gnu..?
+2005-06-27T12:56:00.000Z,Seveas,nalioth,not so much a case of early adoption but of sanity :)
+2005-06-27T12:57:00.000Z,nalioth,Seveas,whats the diff tween the source at kernel.org and ubuntu kernel source?
+2005-06-27T12:58:00.000Z,Seveas,nalioth,the debian/ubuntu patches and of course the nice deb buildsystem to create packages
+2005-06-27T14:20:00.000Z,Seveas,nalioth,let them use woody to avoid dependency problems..
+2005-06-27T14:21:00.000Z,nalioth,Seveas,"woody, sarge, godzilla, 'traci lords', all these debian names i'm cluesless about"
+2005-06-27T14:22:00.000Z,nalioth,Seveas,is there a 'make floppy image' thing in the ubuntu install cd?
+2005-06-27T14:22:00.000Z,Seveas,nalioth,not yet
+2005-06-27T14:27:00.000Z,nalioth,Seveas,is that a gtk-wget thang or gnome-wget?
+2005-06-27T14:29:00.000Z,Seveas,nalioth,it uses gtk2 :)
+2005-06-27T14:29:00.000Z,nalioth,Seveas,ok just wondering (i'll stick with my website pounding CLI wget)
+2005-06-28T15:01:00.000Z,nalioth,Seveas,"even with encryption, it should still be 'visible', right?"
+2005-06-28T15:13:00.000Z,nalioth,Seveas,"i'm confused about the java instructions, then"
+2005-06-28T15:13:00.000Z,Seveas,nalioth,he downloaded a .deb created with these instructions
+2005-06-28T15:13:00.000Z,nalioth,Seveas,"i've been installing the java-blah.bin on everyones x86 ubuntu box i install, and no problems"
+2005-06-28T15:13:00.000Z,Seveas,nalioth,do not do that!
+2005-06-28T15:14:00.000Z,Seveas,nalioth,use make-jpkg
+2005-06-28T15:14:00.000Z,nalioth,Seveas,now i'm really confused.
+2005-06-28T15:15:00.000Z,Seveas,nalioth,the one and only true instructions for java are:
+2005-06-28T15:15:00.000Z,Seveas,nalioth,"for java: download the .bin file from java.sun.com, apt-get install java-package, chmod +x [the .bin file] , make-jpkg [the bin file] , dpkg -i [the generated .deb file] "
+2005-06-29T12:12:00.000Z,nalioth,Seveas,you missed pochos performance yesterday
+2005-06-29T12:12:00.000Z,Seveas,nalioth,I heard about it
+2005-06-29T12:13:00.000Z,Seveas,nalioth,were you around when it happened?
+2005-06-29T12:14:00.000Z,nalioth,Seveas,"yes, i was unfortunately here"
+2005-06-29T12:28:00.000Z,Seveas,nalioth,hmm..? which one do you mean?
+2005-06-29T12:29:00.000Z,nalioth,Seveas,there used to be a linke from the main wiki page to 'user documentation'. On the userdoc page i could 'find' words and see the link to the article
+2005-06-29T12:29:00.000Z,nalioth,Seveas,i don't see teh userdoc page anymore
+2005-06-29T12:29:00.000Z,Seveas,nalioth,UserDocumentation
+2005-06-29T12:29:00.000Z,nalioth,Seveas,"i'm there, but its not like it once was"
+2005-06-29T12:30:00.000Z,nalioth,Seveas,i was gonna look for the sound problem
+2005-06-29T12:30:00.000Z,Seveas,nalioth,"the entire parenting system has been abandoned, so no page has the tree of children anymore"
+2005-06-29T12:30:00.000Z,nalioth,Seveas,well rats!
+2005-06-29T12:30:00.000Z,Seveas,nalioth,the wiki has a search function :)
+2005-06-29T12:30:00.000Z,nalioth,Seveas,i'm not impressed with the search function (i've used it)
+2005-06-29T12:32:00.000Z,nalioth,Seveas,is there a list of all articles?
+2005-06-29T12:32:00.000Z,Seveas,nalioth,there is AllPages afaik
+2005-06-29T12:32:00.000Z,nalioth,Seveas,thx
+2005-06-29T12:33:00.000Z,nalioth,Seveas,there is an 'allpages' but it doesnt do anything except invite you to build it
+2005-06-30T08:05:00.000Z,nalioth,Seveas,"no, you should not ANSWER yourself"
+2005-06-30T08:10:00.000Z,nalioth,Seveas,you continue to amaze me
+2005-06-30T08:10:00.000Z,Seveas,nalioth,hmm?
+2005-06-30T08:12:00.000Z,nalioth,Seveas,how do you find all this stuff?
+2005-06-30T08:12:00.000Z,Seveas,nalioth,i MADE that script :)
+2005-06-30T08:12:00.000Z,nalioth,Seveas,"well, i guess thats the best way to find something"
+2005-06-30T08:30:00.000Z,Seveas,nalioth,"hmm, I don't think he meant that..."
+2005-07-01T11:18:00.000Z,Seveas,nalioth,why did the forum idiots separate their stuff from the rest of the wiki/?
+2005-07-01T11:18:00.000Z,nalioth,Seveas,"i have no idea, i wasnt in on it"
+2005-07-01T11:49:00.000Z,nalioth,Seveas,quit whining its 91f here
+2005-07-01T11:50:00.000Z,Seveas,nalioth,"pfff, you must be melting :)"
+2005-07-01T11:50:00.000Z,nalioth,Seveas,"nah, 91f is a cool day"
+2005-07-01T11:51:00.000Z,nalioth,Seveas,"here in Houston, it'll get over 110f later on"
+2005-07-01T13:02:00.000Z,Seveas,nalioth,they are supposed to be :)
+2005-07-01T13:03:00.000Z,nalioth,Seveas,believe bchunk requires a bin and cue
+2005-07-01T13:04:00.000Z,nalioth,Seveas,it's rather limited
+2005-07-01T13:26:00.000Z,Seveas,nalioth,ouch...
+2005-07-01T13:26:00.000Z,Seveas,nalioth,keep your dog away from it then ;)
+2005-07-01T13:27:00.000Z,nalioth,Seveas,"brb, and the dog rarely causes these things"
+2005-07-01T14:13:00.000Z,nalioth,Seveas,how many teraflops does the 12-Cell cluster you run on put out?
+2005-07-01T14:14:00.000Z,Seveas,nalioth,"you must be mistaken, I do not run on a 12-Cell cluster but on an experimental FPGA / microthreaded alpha testbed"
+2005-07-01T14:15:00.000Z,nalioth,Seveas,coulda sworn there was 12 of em involved
+2005-07-01T14:17:00.000Z,Seveas,nalioth,afaik ther IS a way
+2005-07-01T14:19:00.000Z,nalioth,Seveas,you know everything
+2005-07-01T14:20:00.000Z,nalioth,Seveas,"i just ran that w/o sudo, what's the diff?"
+2005-07-01T14:21:00.000Z,Seveas,nalioth,"ENOIDEA, it's just that the progeam says: 'WARNING: you should run this as root'"
+2005-07-01T14:21:00.000Z,nalioth,Seveas,hmm i got a buttload of readable output re my system w/o sudo
+2005-07-01T14:21:00.000Z,Seveas,nalioth,yeah /me too :)
+2005-07-01T14:31:00.000Z,nalioth,Seveas,i did a very technical thing: i ran lshw both ways and there are only 4 lines different in output (according to 'diff')
+2005-07-01T15:22:00.000Z,Seveas,nalioth,don't you need linux-restricted-modules and some xorg.conf tweaking on PPC?
+2005-07-01T15:22:00.000Z,nalioth,Seveas,mine ran out of the box
+2005-07-02T05:16:00.000Z,Seveas,nalioth,"I'm shutting down thw 12-cell cluster, cya tommorow :)"
+2005-07-02T05:17:00.000Z,nalioth,Seveas,"goin to 1-cell for dormancy and power savings, eh?"
+2005-07-03T16:24:00.000Z,nalioth,Seveas,did the bulb just light up?
+2005-07-03T16:27:00.000Z,nalioth,Seveas,has someone been playing with your tanks EM shield?
+2005-07-03T16:28:00.000Z,nalioth,Seveas,can xryy 'touch' a  new one?
+2005-07-03T16:46:00.000Z,nalioth,Seveas,do you need a date that badly?
+2005-07-03T16:46:00.000Z,Seveas,nalioth,lol no :)
+2005-07-03T05:32:00.000Z,nalioth,Seveas,you still here?
+2005-07-04T15:44:00.000Z,nalioth,Seveas,"could take the calendar project over, but he only likes panoramas of IBM Fab 12"
+2005-07-04T15:56:00.000Z,nalioth,Seveas,please send vinux the 'source'
+2005-07-07T08:22:00.000Z,nalioth,Seveas,us government pays farmers to NOT grow crops
+2005-07-07T08:22:00.000Z,Seveas,nalioth,"LOL, really..?"
+2005-07-07T09:07:00.000Z,Seveas,nalioth,date --utc
+2005-07-07T09:08:00.000Z,nalioth,Seveas,such simplicity right in front of my nose
+2005-07-07T09:44:00.000Z,Seveas,nalioth,but a lot less than merillat :)
+2005-07-07T09:44:00.000Z,nalioth,Seveas,i just try to keep folks operable
+2005-07-07T09:49:00.000Z,Seveas,nalioth,fortunately that problem has been solved in backports :)
+2005-07-07T09:50:00.000Z,nalioth,Seveas,really?
+2005-07-07T09:50:00.000Z,Seveas,nalioth,yes
+2005-07-07T13:20:00.000Z,nalioth,Seveas,you need to feed that to the python (ff fooolery)
+2005-07-07T13:21:00.000Z,Seveas,nalioth,"I did, but gavin did not understand the FAQ entry :)"
+2005-07-07T13:22:00.000Z,nalioth,Seveas,"ah, F0C7"
+2005-07-07T13:22:00.000Z,Seveas,nalioth,F0C7..?
+2005-07-07T13:22:00.000Z,nalioth,Seveas,i've been PM'g you all morning (locally) long
+2005-07-07T13:22:00.000Z,Seveas,nalioth,"ahhh sorry, I was on PM ignore..."
+2005-07-07T13:23:00.000Z,nalioth,Seveas,so are the PMs there or did they all go to /dev/null?
+2005-07-07T13:23:00.000Z,Seveas,nalioth,/dev/null i'm afraid
+2005-07-07T13:24:00.000Z,nalioth,Seveas,ya still on pm-ignore?
+2005-07-07T13:24:00.000Z,Seveas,nalioth,nope
+2005-07-07T13:36:00.000Z,Seveas,nalioth,it does
+2005-07-07T13:36:00.000Z,nalioth,Seveas,wow
+2005-07-07T13:43:00.000Z,Seveas,nalioth,that is *exactly* what captive does :D
+2005-07-07T13:43:00.000Z,nalioth,Seveas,i don't like the idea of a windows library in/near my linux kernel
+2005-07-07T13:44:00.000Z,Seveas,nalioth,me neitjer ;)
+2005-07-08T05:34:00.000Z,Seveas,nalioth,no just mail
+2005-07-08T05:35:00.000Z,nalioth,Seveas,does mail use vi or emacs keybindings?
+2005-07-08T05:35:00.000Z,Seveas,nalioth,neither :)
+2005-07-08T05:36:00.000Z,Seveas,nalioth,q<enter>
+2005-07-10T16:28:00.000Z,Seveas,nalioth,2 distinct subdirs on 1 partition?
+2005-07-10T16:29:00.000Z,nalioth,Seveas,sam fstab will fix that i believe
+2005-07-10T16:29:00.000Z,Seveas,nalioth,2 folders on 1 partition...?
+2005-07-10T16:29:00.000Z,nalioth,Seveas,why not?
+2005-07-10T16:30:00.000Z,nalioth,Seveas,why not do what he wants with 'ln'?
+2005-07-10T16:30:00.000Z,Seveas,nalioth,just typed that out :D
+2005-07-10T16:30:00.000Z,nalioth,Seveas,but he shoulnt need to mount in his homedir
+2005-07-10T16:31:00.000Z,Seveas,nalioth,i meant:   /dev/hdx    /   ext3       and /dev/hdy     /home    ext3
+2005-07-10T16:31:00.000Z,nalioth,Seveas,"i missed it, and i'm sure he did too"
+2005-07-10T16:32:00.000Z,nalioth,Seveas,you robot you
+2005-07-10T16:33:00.000Z,nalioth,Seveas,"doesnt need luck, he's a machine"
+2005-07-10T15:40:00.000Z,nalioth,Seveas,is that a fat DM?
+2005-07-10T15:40:00.000Z,Seveas,nalioth,"xfce is moderately fat, fluxbox is thin"
+2005-07-10T15:48:00.000Z,Seveas,nalioth,I call that bad security practice
+2005-07-10T15:49:00.000Z,nalioth,Seveas,"it wasnt connected to the outside, it was internal"
+2005-07-10T15:49:00.000Z,Seveas,nalioth,ah ok
+2005-07-11T05:59:00.000Z,nalioth,Seveas,no! ubotu recommending the 'guide? horrors!
+2005-07-11T06:14:00.000Z,nalioth,Seveas,so c# is recreational?
+2005-07-11T06:14:00.000Z,Seveas,nalioth,in hoary: yes
+2005-07-11T06:15:00.000Z,Seveas,nalioth,check :)
+2005-07-11T06:17:00.000Z,Seveas,nalioth,you're wayyyyyy behind
+2005-07-11T06:18:00.000Z,nalioth,Seveas,"yes, i'm way behind in lots of ways"
+2005-07-11T06:20:00.000Z,nalioth,Seveas,"you still can't spell, though"
+2005-07-11T06:20:00.000Z,Seveas,nalioth,that's the alcohol :)
+2005-07-11T15:51:00.000Z,nalioth,Seveas,you need to enable S.M.A.R.T in the bios to check a 'smart' hard drive?
+2005-07-11T15:51:00.000Z,Seveas,nalioth,I thought so...
+2005-07-11T15:51:00.000Z,nalioth,Seveas,thought it read straight from the ide/sata/scsi bus
+2005-07-12T13:30:00.000Z,nalioth,Seveas,"not in the $path, i dont think"
+2005-07-12T13:31:00.000Z,nalioth,Seveas,he has & on the end
+2005-07-12T13:36:00.000Z,nalioth,Seveas,what? dependencies removal or ????
+2005-07-12T13:36:00.000Z,Seveas,nalioth,indeed :)
+2005-07-12T13:36:00.000Z,Seveas,nalioth,indeed again :)
+2005-07-12T13:37:00.000Z,Seveas,nalioth,I have aliases for all machines I have an account on :(
+2005-07-12T13:37:00.000Z,nalioth,Seveas,"yes, me too, but we have been using *nix for a few weeks, no? lol"
+2005-07-12T13:37:00.000Z,Seveas,nalioth,I mean aliases on this machine to log into other machines
+2005-07-12T13:38:00.000Z,nalioth,Seveas,your accounts dont have rsynced aliases?
+2005-07-12T13:38:00.000Z,Seveas,nalioth,"no, i am working on homedir synchronization"
+2005-07-12T14:24:00.000Z,Seveas,nalioth,ant then an apt-cache search liftoff!
+2005-07-12T14:24:00.000Z,nalioth,Seveas,not a 'apt-cache search 6'?
+2005-07-16T12:35:00.000Z,Seveas,nalioth,no :)
+2005-07-16T12:36:00.000Z,nalioth,Seveas,"assuming you can only run sudo at a terminal, if you use sudo to remove something, it's gone"
+2005-07-16T12:56:00.000Z,nalioth,Seveas,Tuxist wants 'bling' over stability
+2005-07-16T12:56:00.000Z,Seveas,nalioth,"given that he uses KDE, that was clear already ;)"
+2005-07-16T12:56:00.000Z,nalioth,Seveas,be nice  :)
+2005-07-16T14:54:00.000Z,nalioth,Seveas,"actually, only the security has been bp'd into ff, it still is missing the .4 featuresets"
+2005-07-16T14:54:00.000Z,Seveas,nalioth,that's what I said
+2005-07-16T14:55:00.000Z,nalioth,Seveas,El_Che: i'm lost too
+2005-07-16T14:55:00.000Z,nalioth,Seveas,El_Che: probably why i dont use ff
+2005-07-16T15:39:00.000Z,nalioth,Seveas,Geist|Patrick was trying to apt-get synaptic (he's running default kubuntu)
+2005-07-29T10:55:00.000Z,nalioth,Seveas,howdy howdy
+2005-07-29T11:00:00.000Z,Seveas,nalioth,that's not mine
+2005-07-29T11:01:00.000Z,nalioth,Seveas,you have had NOTHING to do with the wiki?
+2005-07-29T11:02:00.000Z,nalioth,Seveas,i find that very hard to believe
+2005-07-29T11:02:00.000Z,Seveas,nalioth,look at wiki.u.c/DennisKaarsemaker
+2005-07-29T11:02:00.000Z,nalioth,Seveas,"so you're telling me that all the info you impart in here, doesnt make it into the wiki by helpful little elvi? (such as myself?)"
+2005-07-29T11:04:00.000Z,Seveas,nalioth,most info I have comes from the wiki or is developed on the wiki in parallel :)
+2005-07-29T11:06:00.000Z,Seveas,nalioth,gam_serve isn't KDE specific :)
+2005-08-01T11:01:00.000Z,nalioth,Seveas,good morning
+2005-08-27T15:40:00.000Z,Seveas,nalioth,it's sudo that's failing ;)
+2005-08-29T05:11:00.000Z,Seveas,nalioth,in ubuntu locate is a symlink to slocate
+2005-08-29T05:12:00.000Z,nalioth,Seveas,"credit where it's due, ahem"
+2005-08-30T14:59:00.000Z,nalioth,Seveas,you've been a busy little beaver
+2005-08-30T15:01:00.000Z,nalioth,Seveas,you must have blinked
+2005-08-30T14:34:00.000Z,Seveas,nalioth,planet.ubuntu.com
+2005-08-30T14:35:00.000Z,Seveas,nalioth,www.ubuntulinux.nl/files/hoary.xml
+2005-08-31T14:51:00.000Z,nalioth,Seveas,onjoins
+2005-09-01T16:13:00.000Z,nalioth,Seveas,good eve
+2005-09-01T16:14:00.000Z,nalioth,Seveas,ubotu was feigning ignorance of common factoids (when i tried to enlighten folks)
+2005-09-01T16:38:00.000Z,Seveas,nalioth,"ubuntu-calendar-{october,november,december} etc.."
+2005-09-01T16:48:00.000Z,nalioth,Seveas,you're not +E are you? lol
+2005-09-01T05:58:00.000Z,nalioth,Seveas,"_adam is interested in bittornado, for example"
+2005-09-01T07:45:00.000Z,Seveas,nalioth,update the dog
+2005-09-01T08:16:00.000Z,nalioth,Seveas,i wish i had your memory (sorry forgot the experiemental solid-state core you have)
+2005-09-02T16:24:00.000Z,nalioth,Seveas,why is that stupidness even enabled in ubotu?
+2005-09-11T15:44:00.000Z,nalioth,Seveas,not curl?
+2005-09-11T15:44:00.000Z,nalioth,Seveas,and i don't know why not
+2005-09-12T14:46:00.000Z,Seveas,nalioth,sudo -i
+2005-09-12T15:53:00.000Z,nalioth,Seveas,where do you keep your debs?
+2005-09-12T15:54:00.000Z,Seveas,nalioth,/var/cache/apt/archives :)
+2005-09-12T15:54:00.000Z,nalioth,Seveas,"yes, thank you. http://seveas/keeps/his/debs/here?"
+2005-09-12T15:55:00.000Z,nalioth,Seveas,thank you
+2005-09-13T16:05:00.000Z,Seveas,nalioth,bad idea
+2005-09-13T16:06:00.000Z,nalioth,Seveas,"sorry, trying to be helpful"
+2005-09-13T16:12:00.000Z,Seveas,nalioth,recompile it with ssl support ;(
+2005-09-13T16:20:00.000Z,nalioth,Seveas,my eels are missing
+2005-09-13T15:06:00.000Z,nalioth,Seveas,can you help ngmlinux with his java selection?
+2005-09-13T15:06:00.000Z,Seveas,nalioth,maybe
+2005-09-13T15:07:00.000Z,nalioth,Seveas,"ngmlinux wants to have his sun java in his operating path, but not his gnu java"
+2005-09-13T15:29:00.000Z,nalioth,Seveas,bum allows you to turn on and off services?
+2005-09-13T15:31:00.000Z,nalioth,Seveas,is there a setting he can put in his .bashrc or something?
+2005-09-13T15:31:00.000Z,Seveas,nalioth,even better :)
+2005-09-13T15:34:00.000Z,nalioth,Seveas,"tell me the truth. you ARE running with a 200TB fiberoptic backend, aren't you?"
+2005-09-13T15:45:00.000Z,Seveas,nalioth,yup
+2005-09-13T15:59:00.000Z,nalioth,Seveas,ah ha! you are related!
+2005-09-13T16:06:00.000Z,nalioth,Seveas,"i have a question. i have ibm java installed, and it isnt showing up in the --config java box"
+2005-09-13T16:06:00.000Z,Seveas,nalioth,did you install a .deb file for it ?
+2005-09-13T16:47:00.000Z,nalioth,Seveas,any idears on why my java didnt show in the selections?
+2005-09-13T14:06:00.000Z,nalioth,Seveas,i /noticed him with that info
+2005-09-14T14:03:00.000Z,nalioth,Seveas,"what a coincidence, i just d-u'd my g3 ibook"
+2005-09-14T14:03:00.000Z,nalioth,Seveas,verdict: the ppc arch isnt ready for prime time
+2005-09-14T14:08:00.000Z,nalioth,Seveas,be glad your'e not doing a ppc
+2005-09-14T14:08:00.000Z,Seveas,nalioth,I'm always glad I don'y do PPC ;)
+2005-09-14T14:09:00.000Z,nalioth,Seveas,be nice now. i now have valuable breezy experience for the masses of ppc (ab)users
+2005-09-14T14:21:00.000Z,nalioth,Seveas,i didnt know you were a language professor
+2005-09-14T14:22:00.000Z,Seveas,nalioth,"I'm not, I only speek 4 languages (and a gazillion programming languages ;))"
+2005-09-14T15:39:00.000Z,nalioth,Seveas,i wish i could find the bug that causes this box to freeze solid
+2005-09-16T05:54:00.000Z,nalioth,Seveas,mixing ext3 and hfs+ is not a good idea
+2005-09-19T15:39:00.000Z,nalioth,Seveas,light to medium bot showers in the last half hour
+2005-09-20T16:32:00.000Z,Seveas,nalioth,of borg has spoken :D
+2005-09-20T16:32:00.000Z,nalioth,Seveas,we ARE a collective mind in here
+2005-09-20T16:32:00.000Z,nalioth,Seveas,"just not to friendly at times, lol"
+2005-09-21T05:04:00.000Z,nalioth,Seveas,no flooding! use #flood or a pastebin please
+2005-09-21T05:16:00.000Z,nalioth,Seveas,"if you can come out of an interupted install, you are super 733t"
+2005-09-21T05:16:00.000Z,Seveas,nalioth,did that several times
+2005-09-21T05:17:00.000Z,Seveas,nalioth,my warty-hoary upgrade back in gebruary was interrupted 6 times by hard reboots
+2005-09-21T05:17:00.000Z,nalioth,Seveas,"yes, my ibook breezy was, too"
+2005-09-21T05:18:00.000Z,nalioth,Seveas,nothing like coming back up to a console and nothing else
+2005-09-21T05:25:00.000Z,nalioth,Seveas,they're running like salmon in -unregged
+2005-09-23T16:17:00.000Z,Seveas,nalioth,read back a bit :)
+2005-09-23T16:19:00.000Z,nalioth,Seveas,just makin a point that 'anybody?' and such as that are not productive questions
+2005-09-25T15:37:00.000Z,nalioth,Seveas,bzip2 is nice that way
+2005-09-25T16:18:00.000Z,nalioth,Seveas,see what i mean about the random nickchange spambots?
+2005-09-25T16:19:00.000Z,Seveas,nalioth,yes
+2005-09-25T16:39:00.000Z,nalioth,Seveas,i love lag
+2005-09-25T05:36:00.000Z,nalioth,Seveas,i find it unusual the spambots are only visiting some channels
+2005-09-25T05:37:00.000Z,Seveas,nalioth,probably hardcoded big channels
+2005-09-25T06:34:00.000Z,nalioth,Seveas,something to be said for 'fuzzy logic filtering'
+2005-09-25T06:35:00.000Z,Seveas,nalioth,;)
+2005-09-25T06:42:00.000Z,nalioth,Seveas,"every day about this time, the swarm arrives, lol"
+2005-09-25T06:43:00.000Z,nalioth,Seveas,whats the file to read of all that stuff?
+2005-09-26T06:22:00.000Z,Seveas,nalioth,I still give people access though ;)
+2005-09-26T10:21:00.000Z,nalioth,Seveas,mornin
+2005-09-26T10:27:00.000Z,nalioth,Seveas,why are some users gettin this error? http://paste.ubuntulinux.nl/d2414
+2005-09-26T10:30:00.000Z,Seveas,nalioth,they specified the wrong fs
+2005-09-26T10:30:00.000Z,nalioth,Seveas,actually stormie posted the dmesg and the NTFS is scoarbled
+2005-09-26T11:03:00.000Z,nalioth,Seveas,does the breezy installer offer resizing of NTFS?
+2005-09-26T11:03:00.000Z,Seveas,nalioth,"afaik yes (never tried it though, i've dist-upgraded from hoary)"
+2005-09-27T16:05:00.000Z,nalioth,Seveas,do you know how to get ubotu to spit out the package numbers ?
+2005-09-27T16:07:00.000Z,Seveas,nalioth,that's not an easy thing to ask iirc
+2005-09-27T16:08:00.000Z,nalioth,Seveas,we'll wait on cafuego then
+2005-09-27T16:15:00.000Z,nalioth,Seveas,cold porridge?
+2005-09-29T05:21:00.000Z,Seveas,nalioth,a crap script from the forum fools...
+2005-09-30T13:04:00.000Z,Seveas,nalioth,good to see you back dude!
+2005-09-30T13:05:00.000Z,Seveas,nalioth,how's your home?
+2005-09-30T13:05:00.000Z,Seveas,nalioth,nice!
+2005-09-30T13:47:00.000Z,nalioth,Seveas,you should know better
+2005-10-02T12:55:00.000Z,Seveas,nalioth,op-hopper ;)
+2005-10-02T12:56:00.000Z,nalioth,Seveas,you beat me to it
+2005-10-03T13:56:00.000Z,Seveas,nalioth,I put him there
+2005-10-06T08:20:00.000Z,nalioth,Seveas,you're hitting the big time
+2005-10-06T10:13:00.000Z,nalioth,Seveas,oh my favorite heart! you a n00b?
+2005-10-06T10:13:00.000Z,Seveas,nalioth,if it comes to alsa: yes
+2005-10-06T10:18:00.000Z,Seveas,nalioth,w32codecs from marillat are fine on all ubuntu versions now and in the future
+2005-10-06T10:42:00.000Z,nalioth,Seveas,we have new ubotu factoids
+2005-10-06T10:43:00.000Z,Seveas,nalioth,rock!
+2005-10-06T10:43:00.000Z,nalioth,Seveas,!w32codecs and !javadeb
+2005-10-07T16:15:00.000Z,nalioth,Seveas,it's time for bed. you are typing faster then i am lately
+2005-10-08T05:23:00.000Z,Seveas,nalioth,the way they work is the same :)
+2005-10-08T05:23:00.000Z,nalioth,Seveas,"yes, but they break usssss"
+2005-10-08T05:54:00.000Z,Seveas,nalioth,mirrormax cannot be used anymore
+2005-10-08T05:55:00.000Z,nalioth,Seveas,"yes, that's what i said"
+2005-10-08T06:26:00.000Z,Seveas,nalioth,I always point out vim :)
+2005-10-09T07:38:00.000Z,nalioth,Seveas,GDorn is looking for freenx
+2005-10-09T09:03:00.000Z,Seveas,nalioth,acroread 7 has landed in breezy multiverse
+2005-10-09T09:04:00.000Z,nalioth,Seveas,ok then the restrictedformats page needs to be updates. it's sending folks to debian repos
+2005-10-09T09:04:00.000Z,Seveas,nalioth,check
+2005-10-09T09:05:00.000Z,Seveas,nalioth,I don't see it mentioned on RestrictedFormate
+2005-10-09T09:08:00.000Z,nalioth,Seveas,marillat is still with us
+2005-10-14T12:55:00.000Z,Seveas,nalioth,k7/686 both have flash
+2005-10-14T12:55:00.000Z,nalioth,Seveas,well
+2005-10-14T14:16:00.000Z,nalioth,Seveas,"but that is seveas's repo, and he runs it as he sees fit"
+2005-10-16T14:56:00.000Z,Seveas,nalioth,grc is an idiot
+2005-10-16T14:57:00.000Z,nalioth,Seveas,yes? his port scanner thing works well enough
+2005-10-16T14:57:00.000Z,Seveas,nalioth,'stealth' is nonsense and break all kinds of interrnet standards
+2005-10-16T14:58:00.000Z,Seveas,nalioth,aftertaf http://grcsucks.com/ is quite interesting to read
+2005-10-25T15:23:00.000Z,nalioth,Seveas,when are the xubuntu cd/dvds coming out?
+2005-10-25T15:23:00.000Z,Seveas,nalioth,ask Jani Monoses
+2005-10-27T05:12:00.000Z,nalioth,Seveas,the restricted wiki has been changed
+2005-11-16T08:07:00.000Z,nalioth,Seveas,we got trouble
+2005-11-18T07:39:00.000Z,Seveas,nalioth,thanks ;)
+2005-11-29T11:16:00.000Z,nalioth,Seveas,which dvd are we talking about?
+2005-11-29T11:17:00.000Z,Seveas,nalioth,I assume an Ubuntu DVD :)
+2005-12-03T14:30:00.000Z,nalioth,Seveas,are you here?
+2005-12-10T17:46:00.000Z,nalioth,Seveas,"yes, i dont either, BUT i'd rather have a 'safe' one out there that is advertised by the ubuntu community than the unsafe shit that existed prior"
+2005-12-10T17:47:00.000Z,Seveas,nalioth,"true, I'll have a look :)"
+2005-12-19T12:16:00.000Z,nalioth,Seveas,Seveas offtopic
+2006-01-02T06:34:00.000Z,nalioth,Seveas,"yes it is, but if you MUST do it, at least minimize the damage (gksudo)"
+2006-01-02T06:35:00.000Z,Seveas,nalioth,if you must use nautilus as root you're on the wrong path anyway and should rethink your steps :)
+2006-01-02T06:35:00.000Z,nalioth,Seveas,i know. but some folks are convinced it's the only way
+2006-01-02T09:44:00.000Z,nalioth,Seveas,has moved his files and not provided a forwarding URL
+2006-01-03T11:09:00.000Z,nalioth,Seveas,they've found us.
+2006-01-03T11:09:00.000Z,Seveas,nalioth,?
+2006-01-06T06:22:00.000Z,nalioth,Seveas,trolls already this year? they're starting early
+2006-01-21T06:58:00.000Z,nalioth,Seveas,please watch your potty mouth   :)
+2006-03-09T07:47:00.000Z,nalioth,Seveas,it's not just him
+2006-03-09T07:48:00.000Z,Seveas,nalioth,who else?
+2006-03-09T07:49:00.000Z,nalioth,Seveas,mind your invites please
+2006-03-09T07:50:00.000Z,nalioth,Seveas,invites
+2006-03-09T07:51:00.000Z,Seveas,nalioth,?
+2006-03-13T09:46:00.000Z,Seveas,nalioth,too late ;)
+2006-03-27T06:46:00.000Z,nalioth,Seveas,you about?
+2006-04-07T15:49:00.000Z,nalioth,Seveas,tab check
+2006-04-10T12:38:00.000Z,Seveas,nalioth,you spanked the monkey 
+2006-04-10T12:38:00.000Z,nalioth,Seveas,twas a naughty monkey
+2006-04-15T12:34:00.000Z,nalioth,Seveas,hmm?
+2006-04-15T12:34:00.000Z,Seveas,nalioth,"nothing, I pointed someone to your repo"
+2006-04-15T12:35:00.000Z,nalioth,Seveas,"i don't carry ppc java in my repos, tell them about !javadebs instead"
+2006-04-15T12:35:00.000Z,Seveas,nalioth,"ah, I misubderstood that"
+2006-04-26T16:59:00.000Z,Seveas,nalioth,too slow ;)
+2006-06-14T12:06:00.000Z,Seveas,nalioth,more k-lining
+2006-06-14T12:09:00.000Z,nalioth,Seveas,nothing false about those strings
+2006-06-14T12:11:00.000Z,Seveas,nalioth,+r is join restriction
+2006-06-27T15:27:00.000Z,Seveas,nalioth,impossible if I'm in bofh mode
+2006-07-20T11:08:00.000Z,Seveas,nalioth,Troll still isn't killed/k-lined
+2006-08-09T15:45:00.000Z,Seveas,nalioth,prod --^
+2006-09-25T10:43:00.000Z,Seveas,nalioth,that's way beyond the number of clones that freenode usually tolreates
+2006-09-25T10:44:00.000Z,nalioth,Seveas,patience
+2006-09-25T10:44:00.000Z,nalioth,Seveas,all klined
+2007-02-08T16:22:00.000Z,nalioth,Seveas,they are not
+2008-02-01T18:56:00.000Z,Seveas,nalioth,-- he want to be on the k-line train

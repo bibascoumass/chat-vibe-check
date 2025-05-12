@@ -1,0 +1,687 @@
+date,from,to,text
+2005-06-12T10:53:00.000Z,nalioth,kbrooks,knewt wants apt-build to work for him
+2005-06-12T10:53:00.000Z,kbrooks,nalioth,"er, is apt-build in a package?"
+2005-06-12T10:54:00.000Z,nalioth,kbrooks,apt-build is installable
+2005-06-12T10:54:00.000Z,nalioth,kbrooks,knewt wants to rebuild his 'world'
+2005-06-12T10:55:00.000Z,kbrooks,nalioth,mmmmmmmm
+2005-06-12T11:27:00.000Z,nalioth,kbrooks,GUIs are BAD
+2005-06-12T11:27:00.000Z,nalioth,kbrooks,"the terminal will be there, after X takes off and goes home"
+2005-06-12T12:41:00.000Z,kbrooks,nalioth,inapplicable
+2005-06-12T12:42:00.000Z,nalioth,kbrooks,inapplicable? please skewl me
+2005-06-12T12:43:00.000Z,kbrooks,nalioth,SHOULD YOU create a 2 GB partition for swap?
+2005-06-12T12:43:00.000Z,nalioth,kbrooks,i would not
+2005-06-12T13:00:00.000Z,nalioth,kbrooks,what was up with the 2gb question whallago?
+2005-06-25T12:39:00.000Z,kbrooks,nalioth,.....u serious?
+2005-06-25T12:44:00.000Z,nalioth,kbrooks,"i thought it was funny, watchin all the little windoze msg windows spawn via wine"
+2005-06-25T12:44:00.000Z,nalioth,kbrooks,"didnt want to wait til they ate all the memory, so i killed wine"
+2005-06-25T12:57:00.000Z,nalioth,kbrooks,ya mean like xfce?
+2005-06-25T12:58:00.000Z,kbrooks,nalioth,yes
+2005-06-25T12:59:00.000Z,kbrooks,nalioth,yup
+2005-06-25T12:59:00.000Z,kbrooks,nalioth,like xfce. or something
+2005-06-25T12:59:00.000Z,nalioth,kbrooks,"search sourceforge, there are boodles"
+2005-06-25T13:02:00.000Z,kbrooks,nalioth,"dude.....sure, but sudo reauthenicates when you open a  new gnome terminal"
+2005-06-25T13:03:00.000Z,kbrooks,nalioth,so the chances of that are mitigated
+2005-06-25T13:03:00.000Z,nalioth,kbrooks,"but if the user is ignorant of the command, does it matter?"
+2005-06-25T13:03:00.000Z,kbrooks,nalioth,nope.....
+2005-06-25T13:31:00.000Z,kbrooks,nalioth,who has a problem
+2005-06-25T14:49:00.000Z,nalioth,kbrooks,i greatly ABHOR windowz
+2005-06-25T14:51:00.000Z,nalioth,kbrooks,may i add my .02? <EG>
+2005-06-25T14:52:00.000Z,kbrooks,nalioth,go on. and its
+2005-06-25T14:53:00.000Z,nalioth,kbrooks,its not $.02?
+2005-06-25T14:53:00.000Z,nalioth,kbrooks,or 2/100 of a $1?
+2005-06-25T14:54:00.000Z,kbrooks,nalioth,"all arer correct3, but........ ;)"
+2005-06-25T14:54:00.000Z,nalioth,kbrooks,windows is satan
+2005-06-26T09:22:00.000Z,nalioth,kbrooks,"thought you had to push with your foot, to go backwards in a microsoft porsche"
+2005-07-11T08:06:00.000Z,kbrooks,nalioth,What parts of the Ubuntu guide are bad?
+2005-07-11T08:07:00.000Z,nalioth,kbrooks,"i don't have a list of 'bad' commands, but advising new users to enable non-official (and newly-official) repos for constant use is not good"
+2005-07-11T08:07:00.000Z,kbrooks,nalioth,"uh, oh. *checks*"
+2005-07-11T08:08:00.000Z,kbrooks,nalioth,ah. backports
+2005-07-11T08:09:00.000Z,nalioth,kbrooks,"while backports have been 'officialized', they still have not 'synced' fully, imho"
+2005-07-11T08:11:00.000Z,nalioth,kbrooks,the 'guide is more written for advanced linux users (who know what the commands are/do)
+2005-07-11T08:12:00.000Z,kbrooks,nalioth,omg
+2005-07-11T08:12:00.000Z,kbrooks,nalioth,how come?
+2005-07-11T08:13:00.000Z,nalioth,kbrooks,"correct, i see it more as a 'redhat/suse/gentoo > ubuntu/debian guide'"
+2005-07-11T08:14:00.000Z,nalioth,kbrooks,and some of plain out-n-out does not work
+2005-07-11T08:15:00.000Z,nalioth,kbrooks,"let me ask, how many New Users know if they have PPC, x86 or amd64 in their boxen?"
+2005-07-11T08:15:00.000Z,kbrooks,nalioth,yup
+2005-07-11T08:15:00.000Z,kbrooks,nalioth,read: *new* users
+2005-07-11T08:17:00.000Z,nalioth,kbrooks,thats why the popup exists.. .. .. to whop ubuntuguide advisors with
+2005-07-11T08:23:00.000Z,kbrooks,nalioth,i would never modify configuration files *to get what I want* if I were a new user
+2005-07-11T08:23:00.000Z,nalioth,kbrooks,new users are ignorant of that
+2005-07-11T08:24:00.000Z,nalioth,kbrooks,new users are especially at risk from ubuntuguide
+2005-07-11T08:24:00.000Z,kbrooks,nalioth,okay.....is the fud about backports true?
+2005-07-11T08:25:00.000Z,nalioth,kbrooks,"once backports has been more integrated into the ubuntu official process, there should be no stigma"
+2005-07-11T08:25:00.000Z,nalioth,kbrooks,"but for now and in the past, using BP constantly definitely would break your system"
+2005-07-11T08:25:00.000Z,nalioth,kbrooks,and any other unofficial repo
+2005-07-11T08:26:00.000Z,nalioth,kbrooks,never say never
+2005-07-11T08:27:00.000Z,nalioth,kbrooks,"i advise (if you are dying to get a certain program) to enable those repos, get what you want, and then comment them out"
+2005-07-11T08:28:00.000Z,nalioth,kbrooks,how long have you been hanging in here?
+2005-07-11T08:28:00.000Z,kbrooks,nalioth,a long time
+2005-07-11T08:28:00.000Z,nalioth,kbrooks,how many users have you seen have to reinstall becuase of constant unofficial repo usage?
+2005-07-11T08:29:00.000Z,kbrooks,nalioth,"seen? uh, well, i have not been idling"
+2005-07-11T08:31:00.000Z,kbrooks,nalioth,get in there....please
+2005-07-11T08:34:00.000Z,kbrooks,nalioth,i dont get it
+2005-07-11T08:35:00.000Z,nalioth,kbrooks,they won't bogger your system
+2005-07-11T08:36:00.000Z,nalioth,kbrooks,uni and multi are looked over and seen to play nice with ubuntu
+2005-07-11T09:39:00.000Z,kbrooks,nalioth,what are the points?
+2005-07-11T09:39:00.000Z,nalioth,kbrooks,/boot on a seperate partition keeps 'accidents' from happening
+2005-07-11T10:29:00.000Z,kbrooks,nalioth,ping
+2005-07-11T10:29:00.000Z,nalioth,kbrooks,ping what?
+2005-07-11T10:31:00.000Z,kbrooks,nalioth,"<jasoncohen> kbrooks, why do you recommend that people install from backports and then remove the backports entry? if they do that they won't get any updates which is far worse than just using backports whole"
+2005-07-11T10:32:00.000Z,nalioth,kbrooks,"i dont advise removing the BP entry, just comment it out, because at the current time, prolonged use may cause system breakage in the future"
+2005-07-11T10:32:00.000Z,nalioth,kbrooks,"as has been pointed out, bp is official now, and will become more stable as time goes by"
+2005-07-12T16:32:00.000Z,kbrooks,nalioth,ping
+2005-07-12T16:32:00.000Z,nalioth,kbrooks,WTF is 'ping'?
+2005-07-12T16:32:00.000Z,kbrooks,nalioth,it means I want your attention
+2005-07-12T16:32:00.000Z,nalioth,kbrooks,see what i just told vladuz976 above
+2005-07-12T16:33:00.000Z,kbrooks,nalioth,i did the configuration and chose nvidia
+2005-07-12T16:33:00.000Z,kbrooks,nalioth,before restarting
+2005-07-12T16:35:00.000Z,nalioth,kbrooks,"if you're having video trouble and want productivity over acceleration, read what i've been discussing with vladuz976 and choose VESA also"
+2005-07-12T16:35:00.000Z,kbrooks,nalioth,"um, no. why should i choose vesa?"
+2005-07-12T16:36:00.000Z,kbrooks,nalioth,i dont understand
+2005-07-12T16:36:00.000Z,nalioth,kbrooks,is your nvidia driver working?
+2005-07-12T16:37:00.000Z,kbrooks,nalioth,no. no screens found and nvidia api error
+2005-07-12T16:38:00.000Z,nalioth,kbrooks,"you and vladuz976 are doing the same thing, please read what i've been advising him"
+2005-07-12T16:38:00.000Z,kbrooks,nalioth,im using nv
+2005-07-12T16:38:00.000Z,nalioth,kbrooks,and nv isnt working
+2005-07-12T16:38:00.000Z,nalioth,kbrooks,use VESA
+2005-07-12T16:38:00.000Z,kbrooks,nalioth,no no
+2005-07-12T16:39:00.000Z,kbrooks,nalioth,cant u fricking understand
+2005-07-12T16:41:00.000Z,kbrooks,nalioth,/query is better
+2005-07-12T16:42:00.000Z,nalioth,kbrooks,do you want to see a gui?
+2005-07-12T16:42:00.000Z,kbrooks,nalioth,"uh, yes"
+2005-07-12T16:42:00.000Z,nalioth,kbrooks,"if you are using the 'nv' driver NOW, it isnt working too well"
+2005-07-12T16:42:00.000Z,kbrooks,nalioth,i want to use 'nvidia'
+2005-07-12T16:43:00.000Z,nalioth,kbrooks,how many puters do you have in front of you?
+2005-07-12T16:43:00.000Z,nalioth,kbrooks,would you rather see a gui so you can use firefox/xchat or whatever and attempt to find a solutin of why your NV makes blank screens?
+2005-07-12T16:44:00.000Z,kbrooks,nalioth,i think you are confused
+2005-07-12T16:44:00.000Z,kbrooks,nalioth,"wen i say nv, i dont mean nvidia"
+2005-07-12T16:45:00.000Z,nalioth,kbrooks,"i don't know the diff tween them, but VESA will get you a gui"
+2005-07-12T16:45:00.000Z,kbrooks,nalioth,you sure?
+2005-07-12T16:45:00.000Z,nalioth,kbrooks,VESA will drive a dead dog
+2005-07-12T16:46:00.000Z,kbrooks,nalioth,got ya
+2005-07-12T13:13:00.000Z,kbrooks,nalioth,why?
+2005-07-12T13:14:00.000Z,nalioth,kbrooks,have you used mepis lately?
+2005-07-12T13:14:00.000Z,kbrooks,nalioth,"no, but i'll have to ask you to explain, please"
+2005-07-12T13:14:00.000Z,nalioth,kbrooks,delire hit it on the head
+2005-07-12T13:14:00.000Z,kbrooks,nalioth,who is delire
+2005-07-12T13:15:00.000Z,nalioth,kbrooks,read what delire said to qosmos
+2005-07-14T16:20:00.000Z,kbrooks,nalioth,/usr/local is reserved
+2005-07-14T16:21:00.000Z,nalioth,kbrooks,"yes i know, its for things YOU install"
+2005-07-14T16:22:00.000Z,nalioth,kbrooks,"yes, things you compile"
+2005-07-14T08:03:00.000Z,nalioth,kbrooks,what is up?
+2005-07-14T08:03:00.000Z,kbrooks,nalioth,just discovered an app
+2005-07-14T08:04:00.000Z,nalioth,kbrooks,a good discovery?
+2005-07-14T08:04:00.000Z,kbrooks,nalioth,a backup app ;)
+2005-07-14T08:15:00.000Z,nalioth,kbrooks,"colony is the code for breezy development, i believe"
+2005-07-14T08:16:00.000Z,kbrooks,nalioth,sure?
+2005-07-14T08:16:00.000Z,nalioth,kbrooks,"i believe it is (ie colony2, colony3, etc)"
+2005-07-14T08:16:00.000Z,kbrooks,nalioth,"if so, is the code in colony 'latest', as mojo claims it isnt?"
+2005-07-14T08:28:00.000Z,kbrooks,nalioth,"i think cedega-cvs is nonfree, by definition"
+2005-07-14T08:28:00.000Z,nalioth,kbrooks,of course it is
+2005-07-14T08:28:00.000Z,nalioth,kbrooks,but you can get it
+2005-07-14T08:41:00.000Z,nalioth,kbrooks,"it can be done, in memory"
+2005-07-14T08:41:00.000Z,kbrooks,nalioth,i dont think it could be done
+2005-07-14T08:42:00.000Z,kbrooks,nalioth,i heard that /usr is readonly
+2005-07-14T08:42:00.000Z,nalioth,kbrooks,"it can be done, you just lose your settings on reboot"
+2005-07-14T08:43:00.000Z,kbrooks,nalioth,should alien be recommendeeeeed to ANY ubuntu user?
+2005-07-14T08:43:00.000Z,nalioth,kbrooks,"tools are tools, they can be recommened with pros and cons and allow the user to make up their mind"
+2005-07-14T08:44:00.000Z,nalioth,kbrooks,there are some things only available in RPM (unfortunately)
+2005-07-14T08:44:00.000Z,kbrooks,nalioth,"you're right, but rpm is incompatible with debian/ubuntu"
+2005-07-14T08:45:00.000Z,nalioth,kbrooks,and that is what alien is for (if necessary)
+2005-07-14T08:45:00.000Z,kbrooks,nalioth,*I* have used alien once before...to convert a xawtv rpm to a xawtv debian format
+2005-07-14T08:49:00.000Z,nalioth,kbrooks,you are feeding
+2005-07-15T08:34:00.000Z,kbrooks,nalioth,oh fuck. shall i leave for a while?
+2005-07-15T08:34:00.000Z,kbrooks,nalioth,this channel
+2005-07-15T08:35:00.000Z,nalioth,kbrooks,why not? work on the wiki or something
+2005-07-15T08:35:00.000Z,kbrooks,nalioth,i'm tired of this 'language issue' :P
+2005-07-15T08:35:00.000Z,kbrooks,nalioth,ok. will do
+2005-07-15T09:04:00.000Z,kbrooks,nalioth,why do you like ubuntu?
+2005-07-15T09:04:00.000Z,nalioth,kbrooks,ease of use
+2005-07-15T09:06:00.000Z,nalioth,kbrooks,Velcan just mentioned another reason i like ubuntu
+2005-07-15T09:07:00.000Z,kbrooks,nalioth,everything just works?
+2005-07-15T09:07:00.000Z,nalioth,kbrooks,"with ubuntu, more things work out-of-the-box then on other distros i've experienced"
+2005-07-15T09:10:00.000Z,kbrooks,nalioth,how long have you been on ubuntu?
+2005-07-15T09:10:00.000Z,nalioth,kbrooks,since early warty
+2005-07-15T09:11:00.000Z,kbrooks,nalioth,"well, between 0 and warty, there have been live cds"
+2005-07-15T09:11:00.000Z,kbrooks,nalioth,"er, i misread"
+2005-07-15T09:11:00.000Z,kbrooks,nalioth,disregard
+2005-07-15T09:38:00.000Z,nalioth,kbrooks,i dont forsee a problem when i build a amd64 box
+2005-07-16T14:49:00.000Z,kbrooks,nalioth,shall i?
+2005-07-16T15:37:00.000Z,nalioth,kbrooks,xpde?
+2005-07-16T15:38:00.000Z,kbrooks,nalioth,uh no
+2005-07-16T15:38:00.000Z,kbrooks,nalioth,talking gnome move around
+2005-07-20T16:09:00.000Z,kbrooks,nalioth,someone is fingering me
+2005-07-20T16:10:00.000Z,nalioth,kbrooks,"fingering is common internet behavior, i hope you have an interesting .plan file"
+2005-07-20T16:10:00.000Z,kbrooks,nalioth,CTCP finger
+2005-07-20T16:12:00.000Z,nalioth,kbrooks,/ignore ?
+2005-07-22T06:42:00.000Z,kbrooks,nalioth,btw i added ' Do not use the backports for day to day usage!'
+2005-07-22T06:42:00.000Z,nalioth,kbrooks, bravo!
+2005-07-22T08:06:00.000Z,kbrooks,nalioth,working?
+2005-07-22T12:20:00.000Z,kbrooks,nalioth,thanks for that correction.
+2005-07-22T12:21:00.000Z,kbrooks,nalioth,whats with marillat anyways
+2005-07-22T12:41:00.000Z,kbrooks,nalioth,i linked him
+2005-07-22T12:42:00.000Z,nalioth,kbrooks,"sorry, am on my scan windows every minute dance (got lots goin on)"
+2005-07-23T07:03:00.000Z,kbrooks,nalioth,how?
+2005-07-23T07:04:00.000Z,kbrooks,nalioth,other than backports
+2005-07-23T07:04:00.000Z,nalioth,kbrooks,i spoke on this earlier
+2005-07-23T07:29:00.000Z,kbrooks,nalioth,amule ;)
+2005-07-23T07:33:00.000Z,kbrooks,nalioth,is the +q fair? ;)
+2005-07-23T07:33:00.000Z,nalioth,kbrooks,"bob2 did wonderland a favor. he allowed wonderland to stay to soak up all this wonderful knowledge, w/o disrupting the dispersal of said knowledge"
+2005-07-24T07:10:00.000Z,kbrooks,nalioth,https://wiki.ubuntu.com/Java?action=show
+2005-07-24T07:40:00.000Z,kbrooks,nalioth,i love it
+2005-07-24T07:41:00.000Z,nalioth,kbrooks,i find kgpg craps out on me doing things
+2005-07-24T15:46:00.000Z,nalioth,kbrooks,have you instlled the headers?
+2005-07-27T16:37:00.000Z,kbrooks,nalioth,you're the know it all on backports
+2005-07-27T16:40:00.000Z,nalioth,kbrooks,what!!!???
+2005-10-08T05:13:00.000Z,kbrooks,nalioth,am i on ignore? :(
+2005-10-08T05:51:00.000Z,kbrooks,nalioth,are you there?
+2005-10-08T05:51:00.000Z,nalioth,kbrooks,we imitating different life-forms?
+2005-10-08T05:51:00.000Z,kbrooks,nalioth,finally. long time no see
+2005-10-08T05:51:00.000Z,nalioth,kbrooks,i've spoken to you lately
+2005-10-08T05:52:00.000Z,kbrooks,nalioth,"yes, i know. i'm back from arch. ;)"
+2005-10-08T05:59:00.000Z,kbrooks,nalioth,am i on ignore?
+2005-10-08T05:59:00.000Z,kbrooks,nalioth,why arent you talking to me? ;)
+2005-10-08T05:59:00.000Z,nalioth,kbrooks,"nope, just lost in the colors"
+2005-10-08T05:59:00.000Z,kbrooks,nalioth,what is a 'upgrade wall'?
+2005-10-08T06:00:00.000Z,nalioth,kbrooks,it's where you cant upgrade b/c you use non official repos and the pkgs are so different
+2005-10-08T06:00:00.000Z,kbrooks,nalioth,versions?
+2005-10-08T06:01:00.000Z,nalioth,kbrooks,"if you use nonofficial repos, no thought is put into ubuntu upgrade compatibility"
+2005-10-08T06:08:00.000Z,nalioth,kbrooks,yes?
+2005-10-08T06:08:00.000Z,kbrooks,nalioth,Look above at Lord_Maynoth hiding curse words and generally trolling
+2005-10-08T06:14:00.000Z,kbrooks,nalioth,i'm dropping it now
+2005-10-08T06:22:00.000Z,kbrooks,nalioth,it's half true. Microsoft doesnt plan to kill Linux by doing that.
+2005-10-08T06:26:00.000Z,kbrooks,nalioth,I do not like bluefish.
+2005-10-08T06:27:00.000Z,kbrooks,nalioth,I like choice. Choice is magical. :)
+2005-10-08T12:46:00.000Z,kbrooks,nalioth,can you read me? ;)
+2005-10-08T15:28:00.000Z,nalioth,kbrooks,the colon seperates paths
+2005-10-10T16:15:00.000Z,nalioth,kbrooks,get to coding
+2005-10-10T05:06:00.000Z,kbrooks,nalioth,why is compilation ot here
+2005-10-10T05:07:00.000Z,nalioth,kbrooks,"it's not for here, it's so the learning party doesnt have the info swept away in the channel motion"
+2005-10-10T15:10:00.000Z,kbrooks,nalioth,i showed him
+2005-10-11T16:05:00.000Z,nalioth,kbrooks,ask in -offtopic (to prevent a flame war)
+2005-10-11T16:05:00.000Z,kbrooks,nalioth,ok
+2005-10-11T12:44:00.000Z,kbrooks,nalioth,"if only people actually read the topic, oh well"
+2005-10-11T12:46:00.000Z,kbrooks,nalioth,I don't know
+2005-10-11T13:52:00.000Z,kbrooks,nalioth,^
+2005-10-11T14:06:00.000Z,kbrooks,nalioth,i told him already :)
+2005-10-11T14:06:00.000Z,nalioth,kbrooks,i cant take it back when i hit 'enter'
+2005-10-11T14:06:00.000Z,nalioth,kbrooks,lag sucks
+2005-10-11T14:06:00.000Z,kbrooks,nalioth,ah
+2005-10-12T10:00:00.000Z,kbrooks,nalioth,what has he done?
+2005-10-12T10:01:00.000Z,nalioth,kbrooks,i'm just pullin brenners leg
+2005-10-12T10:01:00.000Z,nalioth,kbrooks,and he aint here to react
+2005-10-12T10:02:00.000Z,kbrooks,nalioth,Life is hard.
+2005-10-12T11:57:00.000Z,nalioth,kbrooks,build-essential
+2005-10-12T14:36:00.000Z,nalioth,kbrooks,instructions are included in the winmac_fstab script
+2005-10-12T14:36:00.000Z,kbrooks,nalioth,ok
+2005-10-13T08:29:00.000Z,kbrooks,nalioth,sounds like i reinvented the wheel in writing a extremely basic and stripped down howto for gnu screen listing a few basic commands
+2005-10-13T08:30:00.000Z,nalioth,kbrooks,everything has it's place. you can add my URLs to your howto
+2005-10-13T08:30:00.000Z,kbrooks,nalioth,"OK, I'll rewrite it and link to your urls..."
+2005-10-13T11:45:00.000Z,nalioth,kbrooks,"Dr_Willis y'all let ubotu send factoids, please"
+2005-10-13T11:51:00.000Z,nalioth,kbrooks,?
+2005-10-14T16:48:00.000Z,kbrooks,nalioth,look at Mystique's problem. it smells like marillat
+2005-10-14T16:48:00.000Z,nalioth,kbrooks,so help Mystique sniff
+2005-10-14T16:49:00.000Z,nalioth,kbrooks,see the problem?
+2005-10-14T16:49:00.000Z,kbrooks,nalioth,backports?
+2005-10-14T16:50:00.000Z,nalioth,kbrooks,mirrormax is gone for good
+2005-10-14T16:50:00.000Z,kbrooks,nalioth,i was right!
+2005-10-14T06:30:00.000Z,nalioth,kbrooks,!javadeb
+2005-10-14T07:13:00.000Z,kbrooks,nalioth,he isnt
+2005-10-14T07:14:00.000Z,kbrooks,nalioth,go on.
+2005-10-14T11:21:00.000Z,kbrooks,nalioth,is gnu java really crap?
+2005-10-14T11:22:00.000Z,nalioth,kbrooks,"it doesnt work very well, if at all"
+2005-10-14T11:22:00.000Z,kbrooks,nalioth,what do you mean
+2005-10-14T11:22:00.000Z,nalioth,kbrooks,"programs wont work with it, imho"
+2005-10-14T11:22:00.000Z,kbrooks,nalioth,like what?
+2005-10-14T11:23:00.000Z,nalioth,kbrooks,"whatever trevis is running, azureus, limewire, etc"
+2005-10-14T11:46:00.000Z,kbrooks,nalioth,2.12
+2005-10-14T11:48:00.000Z,kbrooks,nalioth,"far too advanced for hoary, you mean. :)"
+2005-10-14T11:48:00.000Z,nalioth,kbrooks,the libs required for 2.12 basically bring you to breezy level
+2005-10-14T11:48:00.000Z,kbrooks,nalioth,true that
+2005-10-15T07:49:00.000Z,nalioth,kbrooks,easy partner
+2005-10-15T13:57:00.000Z,kbrooks,nalioth,there?
+2005-10-15T13:58:00.000Z,nalioth,kbrooks,there what?
+2005-10-15T14:17:00.000Z,nalioth,kbrooks,see RedHat
+2005-10-15T14:17:00.000Z,kbrooks,nalioth,"umm, thats the opposite"
+2005-10-15T14:17:00.000Z,nalioth,kbrooks,"anyway, -ot"
+2005-10-15T14:27:00.000Z,nalioth,kbrooks,click on your workspace pager at teh bottom right
+2005-10-16T12:59:00.000Z,kbrooks,nalioth,javadeb
+2005-10-16T12:54:00.000Z,nalioth,kbrooks,upgrading is easier
+2005-10-16T12:54:00.000Z,nalioth,kbrooks,via network
+2005-10-16T12:59:00.000Z,kbrooks,nalioth,No.
+2005-10-16T12:59:00.000Z,nalioth,kbrooks,/msg ubotu java    please
+2005-10-16T13:00:00.000Z,kbrooks,nalioth,how does all those bot wizards do those aliases? :)
+2005-10-16T13:01:00.000Z,nalioth,kbrooks,meaning fc sucks
+2005-10-16T13:01:00.000Z,kbrooks,nalioth,in terms of upgrades?
+2005-10-16T13:01:00.000Z,nalioth,kbrooks,fedore/redhat has many issues
+2005-10-19T12:28:00.000Z,kbrooks,nalioth,"tune2fs SHOULD be in, and it doesnt expand a fs"
+2005-10-19T12:35:00.000Z,nalioth,kbrooks,"qtparted uses ntfsprogs, which gparted does not"
+2005-10-20T16:08:00.000Z,kbrooks,nalioth,java == javadeb
+2005-10-20T16:09:00.000Z,nalioth,kbrooks,2 different things
+2005-10-21T09:40:00.000Z,kbrooks,nalioth,why shouldnt you?
+2005-10-21T14:15:00.000Z,kbrooks,nalioth,you are op
+2005-10-21T14:15:00.000Z,kbrooks,nalioth,that was a joke
+2005-10-21T14:54:00.000Z,kbrooks,nalioth,what is 'easyubuntu'?
+2005-10-21T15:03:00.000Z,nalioth,kbrooks,yes of course
+2005-10-21T15:04:00.000Z,kbrooks,nalioth,how/?
+2005-10-21T15:04:00.000Z,kbrooks,nalioth, i want to install to hd over this messy ubuntu install
+2005-10-21T15:05:00.000Z,kbrooks,nalioth,i cant get a cd shipped as i cant give the address of the place i'm here out
+2005-10-21T15:06:00.000Z,kbrooks,nalioth,suspicious people
+2005-10-22T06:44:00.000Z,kbrooks,nalioth,is that a stupid question?
+2005-10-22T07:45:00.000Z,kbrooks,nalioth,tor user?'
+2005-10-23T16:12:00.000Z,kbrooks,nalioth,last week
+2005-10-23T16:13:00.000Z,nalioth,kbrooks,breezy has not been out for a full week yet
+2005-10-23T16:13:00.000Z,kbrooks,nalioth,it went out 13th
+2005-10-23T16:43:00.000Z,nalioth,kbrooks,ask
+2005-10-23T06:53:00.000Z,kbrooks,nalioth,like what
+2005-10-23T06:53:00.000Z,nalioth,kbrooks,i just installed breezy on my brand new hp laptop and it cant find galeon
+2005-10-23T06:54:00.000Z,nalioth,kbrooks,nor can it find half the depends to build galeon
+2005-10-23T06:55:00.000Z,kbrooks,nalioth,that sucks
+2005-10-24T15:37:00.000Z,nalioth,kbrooks,"not in here, please"
+2005-10-25T05:48:00.000Z,nalioth,kbrooks,'SOMEONE' and ^^^^ does not a question make
+2005-10-25T05:48:00.000Z,kbrooks,nalioth,well its urgent
+2005-10-26T05:48:00.000Z,kbrooks,nalioth,'redhat'
+2005-10-26T06:55:00.000Z,nalioth,kbrooks,/msg ubotu info comical
+2005-10-26T06:55:00.000Z,kbrooks,nalioth,doesnt exist
+2005-10-28T09:14:00.000Z,kbrooks,nalioth,thank you. that was annoying.
+2005-10-28T09:15:00.000Z,nalioth,kbrooks,tu n'parle pas franais?
+2005-10-28T09:15:00.000Z,kbrooks,nalioth,I can't read that ;)
+2005-10-28T09:15:00.000Z,kbrooks,nalioth,not french
+2005-11-15T17:09:00.000Z,nalioth,kbrooks,got a new perspective on mr gibson?
+2005-11-17T06:30:00.000Z,kbrooks,nalioth,that opens up all sorts of interesting possibilities
+2005-11-17T06:31:00.000Z,nalioth,kbrooks,not here yet
+2005-11-17T06:32:00.000Z,kbrooks,nalioth,?
+2005-11-17T06:35:00.000Z,kbrooks,nalioth,RO
+2005-11-17T06:35:00.000Z,kbrooks,nalioth,you know how to type in leet .. ;)
+2005-11-18T08:27:00.000Z,nalioth,kbrooks,"ask, friend"
+2005-11-18T08:28:00.000Z,nalioth,kbrooks,putting it in your startup sessions thingy wont do it?
+2005-11-18T08:28:00.000Z,kbrooks,nalioth,on bootup
+2005-11-18T08:29:00.000Z,nalioth,kbrooks,init.d perhaps?
+2005-11-18T08:29:00.000Z,kbrooks,nalioth,I checked
+2005-11-18T08:29:00.000Z,kbrooks,nalioth,Not there.
+2005-11-18T08:30:00.000Z,nalioth,kbrooks,put it there?
+2005-11-18T08:30:00.000Z,nalioth,kbrooks,ask uncle google about 'linux startup scripts'
+2005-11-18T08:31:00.000Z,kbrooks,nalioth,that's counter productive ...
+2005-11-18T08:31:00.000Z,nalioth,kbrooks,"you are not getting any answers in here, it seems"
+2005-11-18T08:37:00.000Z,nalioth,kbrooks,he cant. he's not identified
+2005-11-19T17:56:00.000Z,nalioth,kbrooks,"friend, just ask your question"
+2005-11-19T06:18:00.000Z,kbrooks,nalioth,the root account is *disabled*. he can *access* it with sudo -s
+2005-11-19T06:32:00.000Z,nalioth,kbrooks,visit -motu or -devel
+2005-11-19T06:47:00.000Z,kbrooks,nalioth,are they that evil
+2005-11-19T06:47:00.000Z,nalioth,kbrooks,my console progs dont kill my box
+2005-11-19T06:53:00.000Z,nalioth,kbrooks,it never crashes unless i'm in the middle of something that took a lot of time to set up
+2005-12-19T06:43:00.000Z,nalioth,kbrooks,ask your question
+2005-12-19T06:43:00.000Z,nalioth,kbrooks,it isn't there.
+2005-12-19T06:44:00.000Z,kbrooks,nalioth,but it installed for me
+2005-12-19T06:44:00.000Z,nalioth,kbrooks,"then you must be blessed, cuz it doesnt exit in breezy or dapper"
+2005-12-19T06:44:00.000Z,kbrooks,nalioth,why not?
+2005-12-19T06:45:00.000Z,nalioth,kbrooks,i'm not privy to that decision
+2005-12-19T06:45:00.000Z,kbrooks,nalioth,as in?
+2005-12-19T06:45:00.000Z,kbrooks,nalioth,'privy' meaning what?
+2006-01-01T13:05:00.000Z,nalioth,kbrooks,"you know how it works in here, ask your question"
+2006-01-01T13:14:00.000Z,nalioth,kbrooks,you too. civility.
+2006-01-02T08:43:00.000Z,kbrooks,nalioth,Why does he have to reinstall?
+2006-01-02T08:44:00.000Z,nalioth,kbrooks,because he's spent several hours in here repermissioning his system
+2006-01-02T08:44:00.000Z,kbrooks,nalioth,"well, a chmod -R is a bad idea"
+2006-01-02T08:47:00.000Z,kbrooks,nalioth,"um, the root user exists"
+2006-03-21T14:54:00.000Z,kbrooks,nalioth,"well, is there a 'how to help other ubuntu users' guide or something?"
+2006-03-21T14:55:00.000Z,nalioth,kbrooks,that is it
+2006-03-22T08:56:00.000Z,kbrooks,nalioth,lilo?
+2006-03-22T08:57:00.000Z,nalioth,kbrooks,yes?
+2006-03-22T08:57:00.000Z,kbrooks,nalioth,someone wants to tajke down his pc from linux and wants to know if thats possible
+2006-03-22T08:58:00.000Z,nalioth,kbrooks,they want to do what?
+2006-03-22T08:58:00.000Z,kbrooks,nalioth,"take down a pc they own, they asked in here"
+2006-03-22T08:59:00.000Z,nalioth,kbrooks,"with windows, anything is possible"
+2006-04-10T06:05:00.000Z,kbrooks,nalioth,& Seveas: what are you doing?
+2006-04-10T06:05:00.000Z,nalioth,kbrooks,"you are offtopic, sir."
+2006-04-26T05:26:00.000Z,nalioth,kbrooks,why are you pasting all the carriage returns in here?
+2006-05-04T07:53:00.000Z,kbrooks,nalioth,sorry again
+2006-05-30T06:19:00.000Z,kbrooks,nalioth,ty
+2006-05-30T06:19:00.000Z,kbrooks,nalioth,wondrousful master :P
+2006-05-30T06:22:00.000Z,nalioth,kbrooks,bzip2
+2007-04-07T06:00:00.000Z,nalioth,kbrooks,you do not
+2007-04-07T06:02:00.000Z,kbrooks,nalioth,so I can just wipe windows off. good. thanks ;-)
+2005-06-12T10:53:00.000Z,nalioth,kbrooks,knewt wants apt-build to work for him
+2005-06-12T10:53:00.000Z,kbrooks,nalioth,"er, is apt-build in a package?"
+2005-06-12T10:54:00.000Z,nalioth,kbrooks,apt-build is installable
+2005-06-12T10:54:00.000Z,nalioth,kbrooks,knewt wants to rebuild his 'world'
+2005-06-12T10:55:00.000Z,kbrooks,nalioth,mmmmmmmm
+2005-06-12T11:27:00.000Z,nalioth,kbrooks,GUIs are BAD
+2005-06-12T11:27:00.000Z,nalioth,kbrooks,"the terminal will be there, after X takes off and goes home"
+2005-06-12T12:41:00.000Z,kbrooks,nalioth,inapplicable
+2005-06-12T12:42:00.000Z,nalioth,kbrooks,inapplicable? please skewl me
+2005-06-12T12:43:00.000Z,kbrooks,nalioth,SHOULD YOU create a 2 GB partition for swap?
+2005-06-12T12:43:00.000Z,nalioth,kbrooks,i would not
+2005-06-12T13:00:00.000Z,nalioth,kbrooks,what was up with the 2gb question whallago?
+2005-06-25T12:39:00.000Z,kbrooks,nalioth,.....u serious?
+2005-06-25T12:44:00.000Z,nalioth,kbrooks,"i thought it was funny, watchin all the little windoze msg windows spawn via wine"
+2005-06-25T12:44:00.000Z,nalioth,kbrooks,"didnt want to wait til they ate all the memory, so i killed wine"
+2005-06-25T12:57:00.000Z,nalioth,kbrooks,ya mean like xfce?
+2005-06-25T12:58:00.000Z,kbrooks,nalioth,yes
+2005-06-25T12:59:00.000Z,kbrooks,nalioth,yup
+2005-06-25T12:59:00.000Z,kbrooks,nalioth,like xfce. or something
+2005-06-25T12:59:00.000Z,nalioth,kbrooks,"search sourceforge, there are boodles"
+2005-06-25T13:02:00.000Z,kbrooks,nalioth,"dude.....sure, but sudo reauthenicates when you open a  new gnome terminal"
+2005-06-25T13:03:00.000Z,kbrooks,nalioth,so the chances of that are mitigated
+2005-06-25T13:03:00.000Z,nalioth,kbrooks,"but if the user is ignorant of the command, does it matter?"
+2005-06-25T13:03:00.000Z,kbrooks,nalioth,nope.....
+2005-06-25T13:31:00.000Z,kbrooks,nalioth,who has a problem
+2005-06-25T14:49:00.000Z,nalioth,kbrooks,i greatly ABHOR windowz
+2005-06-25T14:51:00.000Z,nalioth,kbrooks,may i add my .02? <EG>
+2005-06-25T14:52:00.000Z,kbrooks,nalioth,go on. and its
+2005-06-25T14:53:00.000Z,nalioth,kbrooks,its not $.02?
+2005-06-25T14:53:00.000Z,nalioth,kbrooks,or 2/100 of a $1?
+2005-06-25T14:54:00.000Z,kbrooks,nalioth,"all arer correct3, but........ ;)"
+2005-06-25T14:54:00.000Z,nalioth,kbrooks,windows is satan
+2005-06-26T09:22:00.000Z,nalioth,kbrooks,"thought you had to push with your foot, to go backwards in a microsoft porsche"
+2005-07-11T08:06:00.000Z,kbrooks,nalioth,What parts of the Ubuntu guide are bad?
+2005-07-11T08:07:00.000Z,nalioth,kbrooks,"i don't have a list of 'bad' commands, but advising new users to enable non-official (and newly-official) repos for constant use is not good"
+2005-07-11T08:07:00.000Z,kbrooks,nalioth,"uh, oh. *checks*"
+2005-07-11T08:08:00.000Z,kbrooks,nalioth,ah. backports
+2005-07-11T08:09:00.000Z,nalioth,kbrooks,"while backports have been 'officialized', they still have not 'synced' fully, imho"
+2005-07-11T08:11:00.000Z,nalioth,kbrooks,the 'guide is more written for advanced linux users (who know what the commands are/do)
+2005-07-11T08:12:00.000Z,kbrooks,nalioth,omg
+2005-07-11T08:12:00.000Z,kbrooks,nalioth,how come?
+2005-07-11T08:13:00.000Z,nalioth,kbrooks,"correct, i see it more as a 'redhat/suse/gentoo > ubuntu/debian guide'"
+2005-07-11T08:14:00.000Z,nalioth,kbrooks,and some of plain out-n-out does not work
+2005-07-11T08:15:00.000Z,nalioth,kbrooks,"let me ask, how many New Users know if they have PPC, x86 or amd64 in their boxen?"
+2005-07-11T08:15:00.000Z,kbrooks,nalioth,yup
+2005-07-11T08:15:00.000Z,kbrooks,nalioth,read: *new* users
+2005-07-11T08:17:00.000Z,nalioth,kbrooks,thats why the popup exists.. .. .. to whop ubuntuguide advisors with
+2005-07-11T08:23:00.000Z,kbrooks,nalioth,i would never modify configuration files *to get what I want* if I were a new user
+2005-07-11T08:23:00.000Z,nalioth,kbrooks,new users are ignorant of that
+2005-07-11T08:24:00.000Z,nalioth,kbrooks,new users are especially at risk from ubuntuguide
+2005-07-11T08:24:00.000Z,kbrooks,nalioth,okay.....is the fud about backports true?
+2005-07-11T08:25:00.000Z,nalioth,kbrooks,"once backports has been more integrated into the ubuntu official process, there should be no stigma"
+2005-07-11T08:25:00.000Z,nalioth,kbrooks,"but for now and in the past, using BP constantly definitely would break your system"
+2005-07-11T08:25:00.000Z,nalioth,kbrooks,and any other unofficial repo
+2005-07-11T08:26:00.000Z,nalioth,kbrooks,never say never
+2005-07-11T08:27:00.000Z,nalioth,kbrooks,"i advise (if you are dying to get a certain program) to enable those repos, get what you want, and then comment them out"
+2005-07-11T08:28:00.000Z,nalioth,kbrooks,how long have you been hanging in here?
+2005-07-11T08:28:00.000Z,kbrooks,nalioth,a long time
+2005-07-11T08:28:00.000Z,nalioth,kbrooks,how many users have you seen have to reinstall becuase of constant unofficial repo usage?
+2005-07-11T08:29:00.000Z,kbrooks,nalioth,"seen? uh, well, i have not been idling"
+2005-07-11T08:31:00.000Z,kbrooks,nalioth,get in there....please
+2005-07-11T08:34:00.000Z,kbrooks,nalioth,i dont get it
+2005-07-11T08:35:00.000Z,nalioth,kbrooks,they won't bogger your system
+2005-07-11T08:36:00.000Z,nalioth,kbrooks,uni and multi are looked over and seen to play nice with ubuntu
+2005-07-11T09:39:00.000Z,kbrooks,nalioth,what are the points?
+2005-07-11T09:39:00.000Z,nalioth,kbrooks,/boot on a seperate partition keeps 'accidents' from happening
+2005-07-11T10:29:00.000Z,kbrooks,nalioth,ping
+2005-07-11T10:29:00.000Z,nalioth,kbrooks,ping what?
+2005-07-11T10:31:00.000Z,kbrooks,nalioth,"<jasoncohen> kbrooks, why do you recommend that people install from backports and then remove the backports entry? if they do that they won't get any updates which is far worse than just using backports whole"
+2005-07-11T10:32:00.000Z,nalioth,kbrooks,"i dont advise removing the BP entry, just comment it out, because at the current time, prolonged use may cause system breakage in the future"
+2005-07-11T10:32:00.000Z,nalioth,kbrooks,"as has been pointed out, bp is official now, and will become more stable as time goes by"
+2005-07-12T16:32:00.000Z,kbrooks,nalioth,ping
+2005-07-12T16:32:00.000Z,nalioth,kbrooks,WTF is 'ping'?
+2005-07-12T16:32:00.000Z,kbrooks,nalioth,it means I want your attention
+2005-07-12T16:32:00.000Z,nalioth,kbrooks,see what i just told vladuz976 above
+2005-07-12T16:33:00.000Z,kbrooks,nalioth,i did the configuration and chose nvidia
+2005-07-12T16:33:00.000Z,kbrooks,nalioth,before restarting
+2005-07-12T16:35:00.000Z,nalioth,kbrooks,"if you're having video trouble and want productivity over acceleration, read what i've been discussing with vladuz976 and choose VESA also"
+2005-07-12T16:35:00.000Z,kbrooks,nalioth,"um, no. why should i choose vesa?"
+2005-07-12T16:36:00.000Z,kbrooks,nalioth,i dont understand
+2005-07-12T16:36:00.000Z,nalioth,kbrooks,is your nvidia driver working?
+2005-07-12T16:37:00.000Z,kbrooks,nalioth,no. no screens found and nvidia api error
+2005-07-12T16:38:00.000Z,nalioth,kbrooks,"you and vladuz976 are doing the same thing, please read what i've been advising him"
+2005-07-12T16:38:00.000Z,kbrooks,nalioth,im using nv
+2005-07-12T16:38:00.000Z,nalioth,kbrooks,and nv isnt working
+2005-07-12T16:38:00.000Z,nalioth,kbrooks,use VESA
+2005-07-12T16:38:00.000Z,kbrooks,nalioth,no no
+2005-07-12T16:39:00.000Z,kbrooks,nalioth,cant u fricking understand
+2005-07-12T16:41:00.000Z,kbrooks,nalioth,/query is better
+2005-07-12T16:42:00.000Z,nalioth,kbrooks,do you want to see a gui?
+2005-07-12T16:42:00.000Z,kbrooks,nalioth,"uh, yes"
+2005-07-12T16:42:00.000Z,nalioth,kbrooks,"if you are using the 'nv' driver NOW, it isnt working too well"
+2005-07-12T16:42:00.000Z,kbrooks,nalioth,i want to use 'nvidia'
+2005-07-12T16:43:00.000Z,nalioth,kbrooks,how many puters do you have in front of you?
+2005-07-12T16:43:00.000Z,nalioth,kbrooks,would you rather see a gui so you can use firefox/xchat or whatever and attempt to find a solutin of why your NV makes blank screens?
+2005-07-12T16:44:00.000Z,kbrooks,nalioth,i think you are confused
+2005-07-12T16:44:00.000Z,kbrooks,nalioth,"wen i say nv, i dont mean nvidia"
+2005-07-12T16:45:00.000Z,nalioth,kbrooks,"i don't know the diff tween them, but VESA will get you a gui"
+2005-07-12T16:45:00.000Z,kbrooks,nalioth,you sure?
+2005-07-12T16:45:00.000Z,nalioth,kbrooks,VESA will drive a dead dog
+2005-07-12T16:46:00.000Z,kbrooks,nalioth,got ya
+2005-07-12T13:13:00.000Z,kbrooks,nalioth,why?
+2005-07-12T13:14:00.000Z,nalioth,kbrooks,have you used mepis lately?
+2005-07-12T13:14:00.000Z,kbrooks,nalioth,"no, but i'll have to ask you to explain, please"
+2005-07-12T13:14:00.000Z,nalioth,kbrooks,delire hit it on the head
+2005-07-12T13:14:00.000Z,kbrooks,nalioth,who is delire
+2005-07-12T13:15:00.000Z,nalioth,kbrooks,read what delire said to qosmos
+2005-07-14T16:20:00.000Z,kbrooks,nalioth,/usr/local is reserved
+2005-07-14T16:21:00.000Z,nalioth,kbrooks,"yes i know, its for things YOU install"
+2005-07-14T16:22:00.000Z,nalioth,kbrooks,"yes, things you compile"
+2005-07-14T08:03:00.000Z,nalioth,kbrooks,what is up?
+2005-07-14T08:03:00.000Z,kbrooks,nalioth,just discovered an app
+2005-07-14T08:04:00.000Z,nalioth,kbrooks,a good discovery?
+2005-07-14T08:04:00.000Z,kbrooks,nalioth,a backup app ;)
+2005-07-14T08:15:00.000Z,nalioth,kbrooks,"colony is the code for breezy development, i believe"
+2005-07-14T08:16:00.000Z,kbrooks,nalioth,sure?
+2005-07-14T08:16:00.000Z,nalioth,kbrooks,"i believe it is (ie colony2, colony3, etc)"
+2005-07-14T08:16:00.000Z,kbrooks,nalioth,"if so, is the code in colony 'latest', as mojo claims it isnt?"
+2005-07-14T08:28:00.000Z,kbrooks,nalioth,"i think cedega-cvs is nonfree, by definition"
+2005-07-14T08:28:00.000Z,nalioth,kbrooks,of course it is
+2005-07-14T08:28:00.000Z,nalioth,kbrooks,but you can get it
+2005-07-14T08:41:00.000Z,nalioth,kbrooks,"it can be done, in memory"
+2005-07-14T08:41:00.000Z,kbrooks,nalioth,i dont think it could be done
+2005-07-14T08:42:00.000Z,kbrooks,nalioth,i heard that /usr is readonly
+2005-07-14T08:42:00.000Z,nalioth,kbrooks,"it can be done, you just lose your settings on reboot"
+2005-07-14T08:43:00.000Z,kbrooks,nalioth,should alien be recommendeeeeed to ANY ubuntu user?
+2005-07-14T08:43:00.000Z,nalioth,kbrooks,"tools are tools, they can be recommened with pros and cons and allow the user to make up their mind"
+2005-07-14T08:44:00.000Z,nalioth,kbrooks,there are some things only available in RPM (unfortunately)
+2005-07-14T08:44:00.000Z,kbrooks,nalioth,"you're right, but rpm is incompatible with debian/ubuntu"
+2005-07-14T08:45:00.000Z,nalioth,kbrooks,and that is what alien is for (if necessary)
+2005-07-14T08:45:00.000Z,kbrooks,nalioth,*I* have used alien once before...to convert a xawtv rpm to a xawtv debian format
+2005-07-14T08:49:00.000Z,nalioth,kbrooks,you are feeding
+2005-07-15T08:34:00.000Z,kbrooks,nalioth,oh fuck. shall i leave for a while?
+2005-07-15T08:34:00.000Z,kbrooks,nalioth,this channel
+2005-07-15T08:35:00.000Z,nalioth,kbrooks,why not? work on the wiki or something
+2005-07-15T08:35:00.000Z,kbrooks,nalioth,i'm tired of this 'language issue' :P
+2005-07-15T08:35:00.000Z,kbrooks,nalioth,ok. will do
+2005-07-15T09:04:00.000Z,kbrooks,nalioth,why do you like ubuntu?
+2005-07-15T09:04:00.000Z,nalioth,kbrooks,ease of use
+2005-07-15T09:06:00.000Z,nalioth,kbrooks,Velcan just mentioned another reason i like ubuntu
+2005-07-15T09:07:00.000Z,kbrooks,nalioth,everything just works?
+2005-07-15T09:07:00.000Z,nalioth,kbrooks,"with ubuntu, more things work out-of-the-box then on other distros i've experienced"
+2005-07-15T09:10:00.000Z,kbrooks,nalioth,how long have you been on ubuntu?
+2005-07-15T09:10:00.000Z,nalioth,kbrooks,since early warty
+2005-07-15T09:11:00.000Z,kbrooks,nalioth,"well, between 0 and warty, there have been live cds"
+2005-07-15T09:11:00.000Z,kbrooks,nalioth,"er, i misread"
+2005-07-15T09:11:00.000Z,kbrooks,nalioth,disregard
+2005-07-15T09:38:00.000Z,nalioth,kbrooks,i dont forsee a problem when i build a amd64 box
+2005-07-16T14:49:00.000Z,kbrooks,nalioth,shall i?
+2005-07-16T15:37:00.000Z,nalioth,kbrooks,xpde?
+2005-07-16T15:38:00.000Z,kbrooks,nalioth,uh no
+2005-07-16T15:38:00.000Z,kbrooks,nalioth,talking gnome move around
+2005-07-20T16:09:00.000Z,kbrooks,nalioth,someone is fingering me
+2005-07-20T16:10:00.000Z,nalioth,kbrooks,"fingering is common internet behavior, i hope you have an interesting .plan file"
+2005-07-20T16:10:00.000Z,kbrooks,nalioth,CTCP finger
+2005-07-20T16:12:00.000Z,nalioth,kbrooks,/ignore ?
+2005-07-22T06:42:00.000Z,kbrooks,nalioth,btw i added ' Do not use the backports for day to day usage!'
+2005-07-22T06:42:00.000Z,nalioth,kbrooks, bravo!
+2005-07-22T08:06:00.000Z,kbrooks,nalioth,working?
+2005-07-22T12:20:00.000Z,kbrooks,nalioth,thanks for that correction.
+2005-07-22T12:21:00.000Z,kbrooks,nalioth,whats with marillat anyways
+2005-07-22T12:41:00.000Z,kbrooks,nalioth,i linked him
+2005-07-22T12:42:00.000Z,nalioth,kbrooks,"sorry, am on my scan windows every minute dance (got lots goin on)"
+2005-07-23T07:03:00.000Z,kbrooks,nalioth,how?
+2005-07-23T07:04:00.000Z,kbrooks,nalioth,other than backports
+2005-07-23T07:04:00.000Z,nalioth,kbrooks,i spoke on this earlier
+2005-07-23T07:29:00.000Z,kbrooks,nalioth,amule ;)
+2005-07-23T07:33:00.000Z,kbrooks,nalioth,is the +q fair? ;)
+2005-07-23T07:33:00.000Z,nalioth,kbrooks,"bob2 did wonderland a favor. he allowed wonderland to stay to soak up all this wonderful knowledge, w/o disrupting the dispersal of said knowledge"
+2005-07-24T07:10:00.000Z,kbrooks,nalioth,https://wiki.ubuntu.com/Java?action=show
+2005-07-24T07:40:00.000Z,kbrooks,nalioth,i love it
+2005-07-24T07:41:00.000Z,nalioth,kbrooks,i find kgpg craps out on me doing things
+2005-07-24T15:46:00.000Z,nalioth,kbrooks,have you instlled the headers?
+2005-07-27T16:37:00.000Z,kbrooks,nalioth,you're the know it all on backports
+2005-07-27T16:40:00.000Z,nalioth,kbrooks,what!!!???
+2005-10-08T05:13:00.000Z,kbrooks,nalioth,am i on ignore? :(
+2005-10-08T05:51:00.000Z,kbrooks,nalioth,are you there?
+2005-10-08T05:51:00.000Z,nalioth,kbrooks,we imitating different life-forms?
+2005-10-08T05:51:00.000Z,kbrooks,nalioth,finally. long time no see
+2005-10-08T05:51:00.000Z,nalioth,kbrooks,i've spoken to you lately
+2005-10-08T05:52:00.000Z,kbrooks,nalioth,"yes, i know. i'm back from arch. ;)"
+2005-10-08T05:59:00.000Z,kbrooks,nalioth,am i on ignore?
+2005-10-08T05:59:00.000Z,kbrooks,nalioth,why arent you talking to me? ;)
+2005-10-08T05:59:00.000Z,nalioth,kbrooks,"nope, just lost in the colors"
+2005-10-08T05:59:00.000Z,kbrooks,nalioth,what is a 'upgrade wall'?
+2005-10-08T06:00:00.000Z,nalioth,kbrooks,it's where you cant upgrade b/c you use non official repos and the pkgs are so different
+2005-10-08T06:00:00.000Z,kbrooks,nalioth,versions?
+2005-10-08T06:01:00.000Z,nalioth,kbrooks,"if you use nonofficial repos, no thought is put into ubuntu upgrade compatibility"
+2005-10-08T06:08:00.000Z,nalioth,kbrooks,yes?
+2005-10-08T06:08:00.000Z,kbrooks,nalioth,Look above at Lord_Maynoth hiding curse words and generally trolling
+2005-10-08T06:14:00.000Z,kbrooks,nalioth,i'm dropping it now
+2005-10-08T06:22:00.000Z,kbrooks,nalioth,it's half true. Microsoft doesnt plan to kill Linux by doing that.
+2005-10-08T06:26:00.000Z,kbrooks,nalioth,I do not like bluefish.
+2005-10-08T06:27:00.000Z,kbrooks,nalioth,I like choice. Choice is magical. :)
+2005-10-08T12:46:00.000Z,kbrooks,nalioth,can you read me? ;)
+2005-10-08T15:28:00.000Z,nalioth,kbrooks,the colon seperates paths
+2005-10-10T16:15:00.000Z,nalioth,kbrooks,get to coding
+2005-10-10T05:06:00.000Z,kbrooks,nalioth,why is compilation ot here
+2005-10-10T05:07:00.000Z,nalioth,kbrooks,"it's not for here, it's so the learning party doesnt have the info swept away in the channel motion"
+2005-10-10T15:10:00.000Z,kbrooks,nalioth,i showed him
+2005-10-11T16:05:00.000Z,nalioth,kbrooks,ask in -offtopic (to prevent a flame war)
+2005-10-11T16:05:00.000Z,kbrooks,nalioth,ok
+2005-10-11T12:44:00.000Z,kbrooks,nalioth,"if only people actually read the topic, oh well"
+2005-10-11T12:46:00.000Z,kbrooks,nalioth,I don't know
+2005-10-11T13:52:00.000Z,kbrooks,nalioth,^
+2005-10-11T14:06:00.000Z,kbrooks,nalioth,i told him already :)
+2005-10-11T14:06:00.000Z,nalioth,kbrooks,i cant take it back when i hit 'enter'
+2005-10-11T14:06:00.000Z,nalioth,kbrooks,lag sucks
+2005-10-11T14:06:00.000Z,kbrooks,nalioth,ah
+2005-10-12T10:00:00.000Z,kbrooks,nalioth,what has he done?
+2005-10-12T10:01:00.000Z,nalioth,kbrooks,i'm just pullin brenners leg
+2005-10-12T10:01:00.000Z,nalioth,kbrooks,and he aint here to react
+2005-10-12T10:02:00.000Z,kbrooks,nalioth,Life is hard.
+2005-10-12T11:57:00.000Z,nalioth,kbrooks,build-essential
+2005-10-12T14:36:00.000Z,nalioth,kbrooks,instructions are included in the winmac_fstab script
+2005-10-12T14:36:00.000Z,kbrooks,nalioth,ok
+2005-10-13T08:29:00.000Z,kbrooks,nalioth,sounds like i reinvented the wheel in writing a extremely basic and stripped down howto for gnu screen listing a few basic commands
+2005-10-13T08:30:00.000Z,nalioth,kbrooks,everything has it's place. you can add my URLs to your howto
+2005-10-13T08:30:00.000Z,kbrooks,nalioth,"OK, I'll rewrite it and link to your urls..."
+2005-10-13T11:45:00.000Z,nalioth,kbrooks,"Dr_Willis y'all let ubotu send factoids, please"
+2005-10-13T11:51:00.000Z,nalioth,kbrooks,?
+2005-10-14T16:48:00.000Z,kbrooks,nalioth,look at Mystique's problem. it smells like marillat
+2005-10-14T16:48:00.000Z,nalioth,kbrooks,so help Mystique sniff
+2005-10-14T16:49:00.000Z,nalioth,kbrooks,see the problem?
+2005-10-14T16:49:00.000Z,kbrooks,nalioth,backports?
+2005-10-14T16:50:00.000Z,nalioth,kbrooks,mirrormax is gone for good
+2005-10-14T16:50:00.000Z,kbrooks,nalioth,i was right!
+2005-10-14T06:30:00.000Z,nalioth,kbrooks,!javadeb
+2005-10-14T07:13:00.000Z,kbrooks,nalioth,he isnt
+2005-10-14T07:14:00.000Z,kbrooks,nalioth,go on.
+2005-10-14T11:21:00.000Z,kbrooks,nalioth,is gnu java really crap?
+2005-10-14T11:22:00.000Z,nalioth,kbrooks,"it doesnt work very well, if at all"
+2005-10-14T11:22:00.000Z,kbrooks,nalioth,what do you mean
+2005-10-14T11:22:00.000Z,nalioth,kbrooks,"programs wont work with it, imho"
+2005-10-14T11:22:00.000Z,kbrooks,nalioth,like what?
+2005-10-14T11:23:00.000Z,nalioth,kbrooks,"whatever trevis is running, azureus, limewire, etc"
+2005-10-14T11:46:00.000Z,kbrooks,nalioth,2.12
+2005-10-14T11:48:00.000Z,kbrooks,nalioth,"far too advanced for hoary, you mean. :)"
+2005-10-14T11:48:00.000Z,nalioth,kbrooks,the libs required for 2.12 basically bring you to breezy level
+2005-10-14T11:48:00.000Z,kbrooks,nalioth,true that
+2005-10-15T07:49:00.000Z,nalioth,kbrooks,easy partner
+2005-10-15T13:57:00.000Z,kbrooks,nalioth,there?
+2005-10-15T13:58:00.000Z,nalioth,kbrooks,there what?
+2005-10-15T14:17:00.000Z,nalioth,kbrooks,see RedHat
+2005-10-15T14:17:00.000Z,kbrooks,nalioth,"umm, thats the opposite"
+2005-10-15T14:17:00.000Z,nalioth,kbrooks,"anyway, -ot"
+2005-10-15T14:27:00.000Z,nalioth,kbrooks,click on your workspace pager at teh bottom right
+2005-10-16T12:59:00.000Z,kbrooks,nalioth,javadeb
+2005-10-16T12:54:00.000Z,nalioth,kbrooks,upgrading is easier
+2005-10-16T12:54:00.000Z,nalioth,kbrooks,via network
+2005-10-16T12:59:00.000Z,kbrooks,nalioth,No.
+2005-10-16T12:59:00.000Z,nalioth,kbrooks,/msg ubotu java    please
+2005-10-16T13:00:00.000Z,kbrooks,nalioth,how does all those bot wizards do those aliases? :)
+2005-10-16T13:01:00.000Z,nalioth,kbrooks,meaning fc sucks
+2005-10-16T13:01:00.000Z,kbrooks,nalioth,in terms of upgrades?
+2005-10-16T13:01:00.000Z,nalioth,kbrooks,fedore/redhat has many issues
+2005-10-19T12:28:00.000Z,kbrooks,nalioth,"tune2fs SHOULD be in, and it doesnt expand a fs"
+2005-10-19T12:35:00.000Z,nalioth,kbrooks,"qtparted uses ntfsprogs, which gparted does not"
+2005-10-20T16:08:00.000Z,kbrooks,nalioth,java == javadeb
+2005-10-20T16:09:00.000Z,nalioth,kbrooks,2 different things
+2005-10-21T09:40:00.000Z,kbrooks,nalioth,why shouldnt you?
+2005-10-21T14:15:00.000Z,kbrooks,nalioth,you are op
+2005-10-21T14:15:00.000Z,kbrooks,nalioth,that was a joke
+2005-10-21T14:54:00.000Z,kbrooks,nalioth,what is 'easyubuntu'?
+2005-10-21T15:03:00.000Z,nalioth,kbrooks,yes of course
+2005-10-21T15:04:00.000Z,kbrooks,nalioth,how/?
+2005-10-21T15:04:00.000Z,kbrooks,nalioth, i want to install to hd over this messy ubuntu install
+2005-10-21T15:05:00.000Z,kbrooks,nalioth,i cant get a cd shipped as i cant give the address of the place i'm here out
+2005-10-21T15:06:00.000Z,kbrooks,nalioth,suspicious people
+2005-10-22T06:44:00.000Z,kbrooks,nalioth,is that a stupid question?
+2005-10-22T07:45:00.000Z,kbrooks,nalioth,tor user?'
+2005-10-23T16:12:00.000Z,kbrooks,nalioth,last week
+2005-10-23T16:13:00.000Z,nalioth,kbrooks,breezy has not been out for a full week yet
+2005-10-23T16:13:00.000Z,kbrooks,nalioth,it went out 13th
+2005-10-23T16:43:00.000Z,nalioth,kbrooks,ask
+2005-10-23T06:53:00.000Z,kbrooks,nalioth,like what
+2005-10-23T06:53:00.000Z,nalioth,kbrooks,i just installed breezy on my brand new hp laptop and it cant find galeon
+2005-10-23T06:54:00.000Z,nalioth,kbrooks,nor can it find half the depends to build galeon
+2005-10-23T06:55:00.000Z,kbrooks,nalioth,that sucks
+2005-10-24T15:37:00.000Z,nalioth,kbrooks,"not in here, please"
+2005-10-25T05:48:00.000Z,nalioth,kbrooks,'SOMEONE' and ^^^^ does not a question make
+2005-10-25T05:48:00.000Z,kbrooks,nalioth,well its urgent
+2005-10-26T05:48:00.000Z,kbrooks,nalioth,'redhat'
+2005-10-26T06:55:00.000Z,nalioth,kbrooks,/msg ubotu info comical
+2005-10-26T06:55:00.000Z,kbrooks,nalioth,doesnt exist
+2005-10-28T09:14:00.000Z,kbrooks,nalioth,thank you. that was annoying.
+2005-10-28T09:15:00.000Z,nalioth,kbrooks,tu n'parle pas franais?
+2005-10-28T09:15:00.000Z,kbrooks,nalioth,I can't read that ;)
+2005-10-28T09:15:00.000Z,kbrooks,nalioth,not french
+2005-11-15T17:09:00.000Z,nalioth,kbrooks,got a new perspective on mr gibson?
+2005-11-17T06:30:00.000Z,kbrooks,nalioth,that opens up all sorts of interesting possibilities
+2005-11-17T06:31:00.000Z,nalioth,kbrooks,not here yet
+2005-11-17T06:32:00.000Z,kbrooks,nalioth,?
+2005-11-17T06:35:00.000Z,kbrooks,nalioth,RO
+2005-11-17T06:35:00.000Z,kbrooks,nalioth,you know how to type in leet .. ;)
+2005-11-18T08:27:00.000Z,nalioth,kbrooks,"ask, friend"
+2005-11-18T08:28:00.000Z,nalioth,kbrooks,putting it in your startup sessions thingy wont do it?
+2005-11-18T08:28:00.000Z,kbrooks,nalioth,on bootup
+2005-11-18T08:29:00.000Z,nalioth,kbrooks,init.d perhaps?
+2005-11-18T08:29:00.000Z,kbrooks,nalioth,I checked
+2005-11-18T08:29:00.000Z,kbrooks,nalioth,Not there.
+2005-11-18T08:30:00.000Z,nalioth,kbrooks,put it there?
+2005-11-18T08:30:00.000Z,nalioth,kbrooks,ask uncle google about 'linux startup scripts'
+2005-11-18T08:31:00.000Z,kbrooks,nalioth,that's counter productive ...
+2005-11-18T08:31:00.000Z,nalioth,kbrooks,"you are not getting any answers in here, it seems"
+2005-11-18T08:37:00.000Z,nalioth,kbrooks,he cant. he's not identified
+2005-11-19T17:56:00.000Z,nalioth,kbrooks,"friend, just ask your question"
+2005-11-19T06:18:00.000Z,kbrooks,nalioth,the root account is *disabled*. he can *access* it with sudo -s
+2005-11-19T06:32:00.000Z,nalioth,kbrooks,visit -motu or -devel
+2005-11-19T06:47:00.000Z,kbrooks,nalioth,are they that evil
+2005-11-19T06:47:00.000Z,nalioth,kbrooks,my console progs dont kill my box
+2005-11-19T06:53:00.000Z,nalioth,kbrooks,it never crashes unless i'm in the middle of something that took a lot of time to set up
+2005-12-19T06:43:00.000Z,nalioth,kbrooks,ask your question
+2005-12-19T06:43:00.000Z,nalioth,kbrooks,it isn't there.
+2005-12-19T06:44:00.000Z,kbrooks,nalioth,but it installed for me
+2005-12-19T06:44:00.000Z,nalioth,kbrooks,"then you must be blessed, cuz it doesnt exit in breezy or dapper"
+2005-12-19T06:44:00.000Z,kbrooks,nalioth,why not?
+2005-12-19T06:45:00.000Z,nalioth,kbrooks,i'm not privy to that decision
+2005-12-19T06:45:00.000Z,kbrooks,nalioth,as in?
+2005-12-19T06:45:00.000Z,kbrooks,nalioth,'privy' meaning what?
+2006-01-01T13:05:00.000Z,nalioth,kbrooks,"you know how it works in here, ask your question"
+2006-01-01T13:14:00.000Z,nalioth,kbrooks,you too. civility.
+2006-01-02T08:43:00.000Z,kbrooks,nalioth,Why does he have to reinstall?
+2006-01-02T08:44:00.000Z,nalioth,kbrooks,because he's spent several hours in here repermissioning his system
+2006-01-02T08:44:00.000Z,kbrooks,nalioth,"well, a chmod -R is a bad idea"
+2006-01-02T08:47:00.000Z,kbrooks,nalioth,"um, the root user exists"
+2006-03-21T14:54:00.000Z,kbrooks,nalioth,"well, is there a 'how to help other ubuntu users' guide or something?"
+2006-03-21T14:55:00.000Z,nalioth,kbrooks,that is it
+2006-03-22T08:56:00.000Z,kbrooks,nalioth,lilo?
+2006-03-22T08:57:00.000Z,nalioth,kbrooks,yes?
+2006-03-22T08:57:00.000Z,kbrooks,nalioth,someone wants to tajke down his pc from linux and wants to know if thats possible
+2006-03-22T08:58:00.000Z,nalioth,kbrooks,they want to do what?
+2006-03-22T08:58:00.000Z,kbrooks,nalioth,"take down a pc they own, they asked in here"
+2006-03-22T08:59:00.000Z,nalioth,kbrooks,"with windows, anything is possible"
+2006-04-10T06:05:00.000Z,kbrooks,nalioth,& Seveas: what are you doing?
+2006-04-10T06:05:00.000Z,nalioth,kbrooks,"you are offtopic, sir."
+2006-04-26T05:26:00.000Z,nalioth,kbrooks,why are you pasting all the carriage returns in here?
+2006-05-04T07:53:00.000Z,kbrooks,nalioth,sorry again
+2006-05-30T06:19:00.000Z,kbrooks,nalioth,ty
+2006-05-30T06:19:00.000Z,kbrooks,nalioth,wondrousful master :P
+2006-05-30T06:22:00.000Z,nalioth,kbrooks,bzip2
+2007-04-07T06:00:00.000Z,nalioth,kbrooks,you do not
+2007-04-07T06:02:00.000Z,kbrooks,nalioth,so I can just wipe windows off. good. thanks ;-)

@@ -1,0 +1,589 @@
+date,from,to,text
+2006-07-26T08:33:00.000Z,Paddy_EIRE,,hi guys I burned the contents of /var/cache/apt/archives/ to dvd and want to know if i take this to my friends machine how i would go about installing them all at once
+2006-07-26T08:35:00.000Z,Paddy_EIRE,,<frogzoo> i didnt do anything fancy when burning i just copied and pasted then burned to dvd i didnt zip or compress in any way
+2006-07-26T08:35:00.000Z,Paddy_EIRE,,<frogzoo> do i just type this in a terminal while in dvd directory
+2006-07-26T08:36:00.000Z,Jack_Sparrow,Paddy_EIRE,To identify all installed packages I use...    dpkg --get-selections >out.txt  to save the list of installed items  and <out.txt  to restore all installed apps
+2006-07-26T08:41:00.000Z,Jack_Sparrow,Paddy_EIRE, DOnt you just want to duplicate your installation on another box/install?
+2006-07-26T08:43:00.000Z,Jack_Sparrow,Paddy_EIRE,write the one I gave you down..
+2006-07-27T10:29:00.000Z,Jack_Sparrow,Paddy_EIRE,I use gdesklets
+2006-07-27T10:32:00.000Z,Jack_Sparrow,Paddy_EIRE,"We talked about that yesterday, that was not my suggestion correct?"
+2006-07-27T10:33:00.000Z,Jack_Sparrow,Paddy_EIRE,You didnt use my suggestion because you had made changes after you burned the cd
+2006-07-27T10:34:00.000Z,Jack_Sparrow,Paddy_EIRE,Did you write that down
+2006-07-27T10:35:00.000Z,Jack_Sparrow,Paddy_EIRE,dpkg --get-packages > out.txt   then <out.txt
+2006-07-27T10:38:00.000Z,Jack_Sparrow,Paddy_EIRE,What are you typning on the command line
+2006-07-27T10:39:00.000Z,Jack_Sparrow,Paddy_EIRE,and it gives you that error?
+2006-07-27T10:42:00.000Z,Jack_Sparrow,Paddy_EIRE,My fault... --get-selections
+2006-07-27T10:43:00.000Z,Jack_Sparrow,Paddy_EIRE,Sorry complete brain fart
+2006-07-27T10:46:00.000Z,Jack_Sparrow,Paddy_EIRE,Did it finish creating the out.txt file?
+2006-07-27T10:49:00.000Z,Jack_Sparrow,Paddy_EIRE, Once you do the install on the other machine use    <out.txt to install everything
+2006-07-27T10:49:00.000Z,Jack_Sparrow,Paddy_EIRE,Check home folder
+2006-07-27T10:52:00.000Z,Jack_Sparrow,Paddy_EIRE,You will find it in /home/'User Name'
+2006-07-27T10:53:00.000Z,Jack_Sparrow,Paddy_EIRE, Copy to the other machine and run   dpkg --get-selections < out.txt
+2006-07-27T10:54:00.000Z,Jack_Sparrow,Paddy_EIRE, Are you happy camper now?
+2006-07-27T10:57:00.000Z,Jack_Sparrow,Paddy_EIRE,"It should do everything, if not come back with whatever the prob may be"
+2006-07-27T10:57:00.000Z,Jack_Sparrow,Paddy_EIRE,np glad to help
+2006-07-27T10:58:00.000Z,Jack_Sparrow,Paddy_EIRE,SOmetimes stretched a little thin
+2006-07-27T11:01:00.000Z,Jack_Sparrow,Paddy_EIRE, Check out RealBasic and Kbasic for Linux as a start..
+2006-07-27T11:01:00.000Z,Jack_Sparrow,Paddy_EIRE,Both are free
+2006-07-29T07:48:00.000Z,Jack_Sparrow,Paddy_EIRE,do you also have an onboard card?
+2006-07-29T07:49:00.000Z,Jack_Sparrow,Paddy_EIRE,then what makes you think it is sharing ram
+2006-07-29T07:52:00.000Z,Jack_Sparrow,Paddy_EIRE,but why do you think it is your video card sharing it
+2006-07-29T07:53:00.000Z,Jack_Sparrow,Paddy_EIRE,You cant assume that.. you are on the wrong path
+2006-08-01T12:31:00.000Z,Jack_Sparrow,Paddy_EIRE,did you know the last security update from MS told all computers to call microsoft every 24 hours and report what MS products were installed
+2006-08-01T12:35:00.000Z,Jack_Sparrow,Paddy_EIRE,glad to have you here
+2006-08-01T12:36:00.000Z,Jack_Sparrow,Paddy_EIRE,Kubuntu or Mepis 6
+2006-08-01T12:37:00.000Z,Jack_Sparrow,Paddy_EIRE,that is the fun of it.. explore them all.
+2006-08-23T09:33:00.000Z,Jack_Sparrow,Paddy_EIRE,Alien is gonna get you one of these days
+2006-08-23T09:35:00.000Z,Jack_Sparrow,Paddy_EIRE,"good luck,.."
+2006-08-25T06:40:00.000Z,Jack_Sparrow,Paddy_EIRE,You probably have a virus...
+2006-08-25T07:04:00.000Z,Jack_Sparrow,Paddy_EIRE,thanks.. I just copied all 450 packages to a second partition..   I can breath a little easier
+2006-08-25T07:06:00.000Z,Jack_Sparrow,Paddy_EIRE,I would think a dependency would be included in the downloads.. and pointing your sources list to that drive/partition should do it
+2006-08-25T07:07:00.000Z,Jack_Sparrow,Paddy_EIRE,I was told I could edit the sources list to point to an internat repo just like the install cd
+2006-08-25T07:09:00.000Z,Jack_Sparrow,Paddy_EIRE,"LEt me go make a backup of sources list, download a deb I dont have, put it in my other folder and try to install it from there.."
+2006-08-25T07:33:00.000Z,Jack_Sparrow,Paddy_EIRE,http://www.debian.org/doc/manuals/apt-howto/ch-basico.en.html#s-dpkg-scanpackages
+2006-08-25T07:34:00.000Z,Jack_Sparrow,Paddy_EIRE,or http://www.debian.org/doc/manuals/apt-howto/index.en.html#contents
+2006-08-25T07:36:00.000Z,Jack_Sparrow,Paddy_EIRE,Took a couple minutes but it will do what you want
+2006-08-25T07:36:00.000Z,Jack_Sparrow,Paddy_EIRE,Helping each other is how this all works
+2006-08-27T08:35:00.000Z,Jack_Sparrow,Paddy_EIRE,odd.. we can look at it later..
+2006-08-27T08:36:00.000Z,Jack_Sparrow,Paddy_EIRE,not now no
+2006-08-27T08:37:00.000Z,Jack_Sparrow,Paddy_EIRE,not at all
+2006-08-27T12:03:00.000Z,Jack_Sparrow,Paddy_EIRE,I would think so
+2006-08-27T12:07:00.000Z,Jack_Sparrow,Paddy_EIRE,read it.. whats the ?
+2006-08-27T12:08:00.000Z,Jack_Sparrow,Paddy_EIRE,they are just restricting them at peak times
+2006-08-27T12:10:00.000Z,Jack_Sparrow,Paddy_EIRE,"It will limit your access yes, but broadband for that price must have restrictions"
+2006-08-27T12:11:00.000Z,Jack_Sparrow,Paddy_EIRE,"They look at their peek, when p2p impeads other traffic it will be restricted"
+2006-08-27T12:11:00.000Z,Jack_Sparrow,Paddy_EIRE,Yes
+2006-08-27T12:11:00.000Z,Jack_Sparrow,Paddy_EIRE,If not shut down entirely
+2006-08-27T12:13:00.000Z,Jack_Sparrow,Paddy_EIRE,That is not something I can answer and it is off topic...
+2006-08-27T12:14:00.000Z,Jack_Sparrow,Paddy_EIRE,virtually free broadband.. yes
+2006-08-27T12:21:00.000Z,Jack_Sparrow,Paddy_EIRE,it will need to wait for a few..
+2006-08-27T12:34:00.000Z,Jack_Sparrow,Paddy_EIRE,still have three irons in the fire..
+2006-08-27T12:34:00.000Z,Jack_Sparrow,Paddy_EIRE,still have two irons in the fire..
+2006-08-27T13:18:00.000Z,Jack_Sparrow,Paddy_EIRE,Ubuntu can stand on its own two feet.  But if you are getting some cheap/free usb modem from talktalk with no info or linux drivers it is not the fault of the OS.
+2006-08-27T13:28:00.000Z,Jack_Sparrow,Paddy_EIRE,it all depends on the chipset and the architecture
+2006-08-27T13:29:00.000Z,Jack_Sparrow,Paddy_EIRE,I would assume that if they are requiring that modem and that there will be that many users with it 70% get free broadband that a soultion will be sooner rather than later
+2006-08-27T15:26:00.000Z,Jack_Sparrow,Paddy_EIRE,ubuntu is gnome so most should work
+2006-08-27T15:26:00.000Z,Jack_Sparrow,Paddy_EIRE,kde-look for Kubuntu etc
+2006-08-27T15:28:00.000Z,Jack_Sparrow,Paddy_EIRE,have you got any of them to run?
+2006-08-27T15:28:00.000Z,Jack_Sparrow,Paddy_EIRE,How are you trying to install them and which ones dont work
+2006-08-27T15:33:00.000Z,Jack_Sparrow,Paddy_EIRE,"That particular theme gives me the same result, which others have you tried.."
+2006-08-27T15:34:00.000Z,Jack_Sparrow,Paddy_EIRE,specifics
+2006-08-27T15:35:00.000Z,Jack_Sparrow,Paddy_EIRE,I just did the glass icons from the top 10 and went fine
+2006-08-27T15:38:00.000Z,Jack_Sparrow,Paddy_EIRE,I went to top ten list on gnome-look
+2006-08-27T15:39:00.000Z,Jack_Sparrow,Paddy_EIRE,and the third one in that list is what I used.
+2006-08-27T15:41:00.000Z,Jack_Sparrow,Paddy_EIRE,I am on hte link you gave me and no it doesnt
+2006-08-27T15:42:00.000Z,Jack_Sparrow,Paddy_EIRE,not here
+2006-08-27T15:42:00.000Z,Jack_Sparrow,Paddy_EIRE,I get gentle/almond/glass
+2006-08-27T15:43:00.000Z,Jack_Sparrow,Paddy_EIRE,I get gentle/almond/glass
+2006-08-27T15:44:00.000Z,Jack_Sparrow,Paddy_EIRE,ask someone else what they get
+2006-08-27T15:44:00.000Z,Jack_Sparrow,Paddy_EIRE,ask someone else what they get
+2006-08-27T15:48:00.000Z,Jack_Sparrow,Paddy_EIRE,ask someone else what they get... any one respond yet
+2006-08-27T15:58:00.000Z,Jack_Sparrow,Paddy_EIRE,can you accept dcc?
+2006-08-27T16:00:00.000Z,Jack_Sparrow,Paddy_EIRE,Home?
+2006-08-28T16:02:00.000Z,Jack_Sparrow,Paddy_EIRE,the whole collection is only 11 meg.
+2006-08-28T16:03:00.000Z,Jack_Sparrow,Paddy_EIRE,Sure you want my special one
+2006-08-28T16:04:00.000Z,Jack_Sparrow,Paddy_EIRE,There it is with my notes
+2006-08-28T16:05:00.000Z,Jack_Sparrow,Paddy_EIRE,use nautilus
+2006-08-28T16:06:00.000Z,Jack_Sparrow,Paddy_EIRE,feel free to share it
+2006-08-28T16:06:00.000Z,Jack_Sparrow,Paddy_EIRE,dcc send me something small and I will see where it goes by default
+2006-08-28T16:11:00.000Z,Jack_Sparrow,Paddy_EIRE,we now know you have another issue
+2006-08-28T16:12:00.000Z,Jack_Sparrow,Paddy_EIRE,sounds like you are do for a fresh install.
+2006-08-28T16:15:00.000Z,Jack_Sparrow,Paddy_EIRE,To identify installed packages and create a list to reinstall Use Terminal type dpkg --get-selections > myprog.txt to reinstall type dpkg --get-selections < myprog.txt
+2006-08-28T16:16:00.000Z,Jack_Sparrow,Paddy_EIRE,try it my way and look at the fil;e
+2006-08-28T16:17:00.000Z,Jack_Sparrow,Paddy_EIRE,"I am getting punchy, time for me to make dinner..."
+2006-08-28T16:18:00.000Z,Jack_Sparrow,Paddy_EIRE,"agreed, dont worry about me,"
+2006-08-28T16:18:00.000Z,Jack_Sparrow,Paddy_EIRE,watch out for her..
+2006-08-28T05:09:00.000Z,Jack_Sparrow,Paddy_EIRE, back for 15 to 30 minutes
+2006-08-28T05:09:00.000Z,Jack_Sparrow,Paddy_EIRE,didnt I link you a page for using local resources?
+2006-08-28T05:10:00.000Z,Jack_Sparrow,Paddy_EIRE,just save everything from that folder to a cd
+2006-08-28T05:10:00.000Z,Jack_Sparrow,Paddy_EIRE,about 4 lines from the top was the section you need
+2006-08-28T05:12:00.000Z,Jack_Sparrow,Paddy_EIRE,the section is called HOW TO USE APT LOCALLY
+2006-08-28T05:13:00.000Z,Jack_Sparrow,Paddy_EIRE,with the list you generated earlier and the packages on a local cd you should be able to do it
+2006-08-28T05:13:00.000Z,Jack_Sparrow,Paddy_EIRE,http://www.debian.org/doc/manuals/apt-howto/ch-basico.en.html#s-dpkg-scanpackages
+2006-08-28T05:16:00.000Z,Jack_Sparrow,Paddy_EIRE,If he dosent have internet then there is no alternative except to physically do the work
+2006-08-28T05:17:00.000Z,Jack_Sparrow,Paddy_EIRE,if you have downloaded a file from the repos... it will be on your local machine
+2006-08-28T05:17:00.000Z,Jack_Sparrow,Paddy_EIRE,you will probably have some dependency issues to deal with
+2006-08-28T05:18:00.000Z,Jack_Sparrow,Paddy_EIRE,does he not even have a phone line to use?
+2006-08-28T05:19:00.000Z,Jack_Sparrow,Paddy_EIRE,have him bring the box to your house and connect to the net
+2006-08-28T05:38:00.000Z,Jack_Sparrow,Paddy_EIRE, send me the program list you generated...
+2006-08-28T05:41:00.000Z,Jack_Sparrow,Paddy_EIRE,net access is important for linux users..
+2006-08-28T05:41:00.000Z,Jack_Sparrow,Paddy_EIRE,moving the computer to someone elses net connection is not a big deal
+2006-08-28T05:43:00.000Z,Jack_Sparrow,Paddy_EIRE,good luck on that.
+2006-08-28T05:43:00.000Z,Jack_Sparrow,Paddy_EIRE,probably home?
+2006-08-28T05:44:00.000Z,Jack_Sparrow,Paddy_EIRE,look in home/paddy
+2006-08-28T05:47:00.000Z,Jack_Sparrow,Paddy_EIRE,"Yea, I like the look of it."
+2006-09-03T13:02:00.000Z,Paddy_EIRE,Jack_Sparrow,"hey man, you wouldnt happen to know where I can apply for the 'Ubuntu Certified Engineer' certification?"
+2006-09-03T13:02:00.000Z,Jack_Sparrow,Paddy_EIRE,No... never had much use for certs even when I was working on windows
+2006-09-07T15:23:00.000Z,Jack_Sparrow,Paddy_EIRE,"Enjoy those icons, they are great"
+2006-09-07T15:24:00.000Z,Jack_Sparrow,Paddy_EIRE,I wish I had that kind of tallent... here is the link... http://kearone.deviantart.com/gallery/?order=9
+2006-09-08T08:58:00.000Z,Jack_Sparrow,Paddy_EIRE,Did you try pasting that line into a term?
+2006-09-08T09:00:00.000Z,Jack_Sparrow,Paddy_EIRE,12 is what you want to change
+2006-09-08T09:01:00.000Z,Jack_Sparrow,Paddy_EIRE, Got an hour.. I will explain it
+2006-09-08T09:02:00.000Z,Jack_Sparrow,Paddy_EIRE,here is my .... 12         0x0033 (3)      0x0023 (numbersign)
+2006-09-08T09:03:00.000Z,Jack_Sparrow,Paddy_EIRE,Lets take this pm.. ok
+2006-09-08T09:06:00.000Z,Jack_Sparrow,Paddy_EIRE, join #Jack_Sparrow
+2006-09-08T10:07:00.000Z,Jack_Sparrow,Paddy_EIRE,had you there..
+2006-09-08T10:54:00.000Z,Jack_Sparrow,Paddy_EIRE,You here?
+2006-09-15T07:35:00.000Z,Jack_Sparrow,Paddy_EIRE,"Hi, I havent made one in Ubuntu.. Not sure.. the only graphic editor I have used it gimp"
+2006-09-15T07:37:00.000Z,Jack_Sparrow,Paddy_EIRE,"No idea, I am not artistic, I just use premade icons"
+2006-09-15T07:40:00.000Z,Jack_Sparrow,Paddy_EIRE,No... just look around..
+2006-09-15T07:42:00.000Z,Jack_Sparrow,Paddy_EIRE,You arer asking questions on a subject I know nothing about.. Not to mention I am barely awake and nursing my first cup of coffee...
+2006-09-15T13:09:00.000Z,Jack_Sparrow,Paddy_EIRE,To identify installed packages and create a list to reinstall Use Terminal type dpkg --get-selections > myprog.txt
+2006-09-15T13:11:00.000Z,Jack_Sparrow,Paddy_EIRE,That command makes a list called myprog.txt
+2006-09-15T13:12:00.000Z,Jack_Sparrow,Paddy_EIRE,k
+2006-09-17T09:11:00.000Z,Jack_Sparrow,Paddy_EIRE,"a list of everything, ?  No idea..."
+2006-09-17T13:25:00.000Z,Jack_Sparrow,Paddy_EIRE,Use a long screwdriver... put one end to your ear and touch non-electrical parts inside the box
+2006-09-17T13:26:00.000Z,Jack_Sparrow,Paddy_EIRE,Buddy...I want you to lick the fans while they are spinning...
+2006-09-17T13:30:00.000Z,Jack_Sparrow,Paddy_EIRE,"while a screwdriver works fine I also have a hardware sthethoscope from an auto parts store...,"
+2006-09-17T13:31:00.000Z,Jack_Sparrow,Paddy_EIRE,If it is making that much noise you can probably feel the vibration with your finger.
+2006-09-17T13:33:00.000Z,Jack_Sparrow,Paddy_EIRE,Another hardware tip is to stop the fan blades when using canned air to blow out the heatsinks.  Overspinning the fan s is not good.
+2006-09-17T13:34:00.000Z,Jack_Sparrow,Paddy_EIRE,Unplug the drives and try to run live... quick way to cut the problem down to drives or ps/mb
+2006-09-17T14:04:00.000Z,Paddy_EIRE,Jack_Sparrow,"i think it may be the processor fan, is there anything i can do to the fan itself"
+2006-09-17T14:05:00.000Z,Jack_Sparrow,Paddy_EIRE,"You can pull the sticker, add a little vaseline and tape it carefully back up.. and REPLACE asap.  Dont blow a cpu for the cost of a fan"
+2006-09-17T14:06:00.000Z,Jack_Sparrow,Paddy_EIRE,"Also pull the heatsink, clean with alcohol and re-apply thermal grease"
+2006-09-17T14:09:00.000Z,Jack_Sparrow,Paddy_EIRE,"there is a sticker in the center of the fan covering the bearing, remove sticker, add small amount of lube, put fresh tape over bearing to keep lube from escaping"
+2006-09-17T14:11:00.000Z,Jack_Sparrow,Paddy_EIRE,or the cpu goes up in smoke..
+2006-09-17T14:12:00.000Z,Jack_Sparrow,Paddy_EIRE,"My football game is about to start, See you tomorrow if you have any questions...   FYI, I set the shutdown/warning temp iin the bios"
+2006-09-17T14:13:00.000Z,Jack_Sparrow,Paddy_EIRE,55c max but different people have different opinions
+2006-09-18T16:35:00.000Z,Jack_Sparrow,Paddy_EIRE,Set fire to that hunk and reinstall tomorrow  ..  :)
+2006-09-18T16:35:00.000Z,Jack_Sparrow,Paddy_EIRE,Just re-apply thermal grease and you should no longer overheat.
+2006-09-18T16:41:00.000Z,Jack_Sparrow,Paddy_EIRE,no idea
+2006-09-18T16:57:00.000Z,Jack_Sparrow,Paddy_EIRE,full path to /opt   ?
+2006-09-19T16:54:00.000Z,Jack_Sparrow,Paddy_EIRE,"Hi, how did that trick on your cpu cooling work out?"
+2006-09-19T16:57:00.000Z,Jack_Sparrow,Paddy_EIRE,remember... that is a short term fix....
+2006-09-19T12:34:00.000Z,Jack_Sparrow,Paddy_EIRE,I tried it but wasnt happy with it..
+2006-09-19T13:03:00.000Z,Jack_Sparrow,Paddy_EIRE,Not sure what you mean by that.  Which nvidia card do we recommend?
+2006-09-19T13:05:00.000Z,Jack_Sparrow,Paddy_EIRE,I cant force myself to suggest people use compiz... I prefer less eye candy more function
+2006-09-20T08:44:00.000Z,Jack_Sparrow,Paddy_EIRE,did you try         acid rip
+2006-09-20T08:46:00.000Z,Jack_Sparrow,Paddy_EIRE,it would require dual layer writer or lots of data loss...
+2006-09-20T08:48:00.000Z,Jack_Sparrow,Paddy_EIRE,"not something we can discuss in here, check around..."
+2006-09-21T07:54:00.000Z,Jack_Sparrow,Paddy_EIRE,yes many have.. one sec... we can fix it
+2006-09-21T07:54:00.000Z,Jack_Sparrow,Paddy_EIRE,http://blog.mypapit.net/2006/08/install-mozilla-flash-plugin-in-ubuntu.html
+2006-09-21T07:55:00.000Z,Paddy_EIRE,Jack_Sparrow,nice one mate
+2006-09-21T12:02:00.000Z,Paddy_EIRE,Jack_Sparrow,Thx for the flash fix earlier :) .... I was wondering if Firefox was using the new version of flash or the old one as it installed the flash plugin to my home .mozilla directory
+2006-09-21T12:03:00.000Z,Jack_Sparrow,Paddy_EIRE,no idea.. does it work?
+2006-09-21T12:18:00.000Z,Paddy_EIRE,Jack_Sparrow,: the fix u gave me worked as in it installed and appears to be working using firefox..... but whenever i use apt-get it still wants to perform the same malfunctioning action as before
+2006-09-21T12:19:00.000Z,Jack_Sparrow,Paddy_EIRE,any apt-get ?
+2006-09-21T12:23:00.000Z,Jack_Sparrow,Paddy_EIRE,HAve you tried synaptic...
+2006-09-21T12:25:00.000Z,Jack_Sparrow,Paddy_EIRE,"I didnt try the hosed one, I just knew how to get the one I linked..  I also dont know how to keep apt from trying to hose you again."
+2006-09-21T12:25:00.000Z,Paddy_EIRE,Jack_Sparrow,I wouldnt mind learning that one
+2006-09-21T12:26:00.000Z,Jack_Sparrow,Paddy_EIRE,There is a remove- or purge command to do it but I am not a cli guy..
+2006-09-21T12:26:00.000Z,Paddy_EIRE,Jack_Sparrow,gonna try a thing i found
+2006-09-21T12:28:00.000Z,Paddy_EIRE,Jack_Sparrow,perhaps that link u gave me earlier might help Bonez56
+2006-09-21T12:34:00.000Z,Paddy_EIRE,Jack_Sparrow,sry man I cant find that link in my history...if it easily accessible to u could u give it to Bonez56
+2006-09-21T12:35:00.000Z,Jack_Sparrow,Paddy_EIRE,10 lashes
+2006-09-23T05:33:00.000Z,Paddy_EIRE,Jack_Sparrow,is it a whole handling to get the media keys working through amarok?
+2006-09-26T13:48:00.000Z,Jack_Sparrow,Paddy_EIRE,Yes you did...
+2006-09-26T13:49:00.000Z,Paddy_EIRE,Jack_Sparrow,"oh, then I did hehe, oops"
+2006-09-26T13:50:00.000Z,Jack_Sparrow,Paddy_EIRE,"FYI, HI, just taking a break from building new shelves in the pantry for the wife.."
+2006-09-26T13:51:00.000Z,Paddy_EIRE,Jack_Sparrow,wife
+2006-09-26T13:51:00.000Z,Paddy_EIRE,Jack_Sparrow,you get married....congrats
+2006-09-26T13:51:00.000Z,Jack_Sparrow,Paddy_EIRE,Over 25 years ago
+2006-09-26T13:51:00.000Z,Paddy_EIRE,Jack_Sparrow,"oops, lol"
+2006-09-26T13:52:00.000Z,Paddy_EIRE,Jack_Sparrow,"congrats again then, :/"
+2006-09-26T13:52:00.000Z,Jack_Sparrow,Paddy_EIRE,I am thinking of reworking diskmounter to insculde ntfs-3g.
+2006-09-26T13:52:00.000Z,Jack_Sparrow,Paddy_EIRE,I have not seen any problems with it recently
+2006-09-26T13:53:00.000Z,Paddy_EIRE,Jack_Sparrow,jeeze now that would be somethin
+2006-09-26T13:53:00.000Z,Paddy_EIRE,Jack_Sparrow,you think its at a good level of stability now
+2006-09-26T13:54:00.000Z,Jack_Sparrow,Paddy_EIRE,Close enough for me to do some testing on my own systems
+2006-09-26T13:55:00.000Z,Paddy_EIRE,Jack_Sparrow,"that'll be a memorable release, good luck... :)"
+2006-09-26T13:59:00.000Z,Paddy_EIRE,Jack_Sparrow,Im getting 'You do not have the permissions necessary to view the contents of 'disks-conf-hdb1'.'
+2006-09-26T14:00:00.000Z,Jack_Sparrow,Paddy_EIRE,Post your fstab for me pastebin of course
+2006-09-26T14:00:00.000Z,Paddy_EIRE,Jack_Sparrow,:) excellent
+2006-09-26T14:02:00.000Z,Paddy_EIRE,Jack_Sparrow,http://paste.ubuntu-nl.org/24905
+2006-09-26T14:03:00.000Z,Jack_Sparrow,Paddy_EIRE,Loading it up now...  we may need to edit your /etc/pmount.allow
+2006-09-26T14:03:00.000Z,Paddy_EIRE,Jack_Sparrow,sure
+2006-09-26T14:03:00.000Z,Jack_Sparrow,Paddy_EIRE,Argh... those are all ntfs..
+2006-09-26T14:04:00.000Z,Paddy_EIRE,Jack_Sparrow,the annoying thing is I just want some work of each of them ...then its getting formatted
+2006-09-26T14:04:00.000Z,Jack_Sparrow,Paddy_EIRE,I thought I taught you better than that...
+2006-09-26T14:04:00.000Z,Paddy_EIRE,Jack_Sparrow,this drive was from my Windoze era
+2006-09-26T14:07:00.000Z,Jack_Sparrow,Paddy_EIRE,My fmask is 0111 and my dmask is 0000
+2006-09-26T14:16:00.000Z,Jack_Sparrow,Paddy_EIRE,Back to work for me..  play nice..
+2006-09-26T14:11:00.000Z,Paddy_EIRE,Jack_Sparrow,"i replaced all entries 'with' the ntfs FS to fmask=0111,dmask=0000 is this correct, ps the original numbers are the only things i have changed"
+2006-09-26T14:13:00.000Z,Jack_Sparrow,Paddy_EIRE,gksudo nautilus and see if you can browse to them
+2006-09-26T14:15:00.000Z,Paddy_EIRE,Jack_Sparrow,"yes, I can browse them with gksudo nautilus although not as myself"
+2006-09-26T14:17:00.000Z,Paddy_EIRE,Jack_Sparrow,nice one :) ...when  i do get what I want copied over fill formatting the drive be simple? and what fs type should i use..not ntfs anyway
+2006-09-26T14:17:00.000Z,Jack_Sparrow,Paddy_EIRE,I dual boot so I have a fat32 to share..
+2006-09-26T14:17:00.000Z,Jack_Sparrow,Paddy_EIRE,Depends on your needs
+2006-09-26T14:17:00.000Z,Paddy_EIRE,Jack_Sparrow,i have a SimplyMepis DVD that i would like to dual boot an try also
+2006-09-26T14:18:00.000Z,Jack_Sparrow,Paddy_EIRE,Mepis 6.0?
+2006-09-26T14:18:00.000Z,Paddy_EIRE,Jack_Sparrow,yep
+2006-09-26T14:18:00.000Z,Paddy_EIRE,Jack_Sparrow,from linux magazine
+2006-09-26T14:18:00.000Z,Jack_Sparrow,Paddy_EIRE,"You'll like it, I ran a Mepis box for years, I am always hanging in there, but the support is non-existent"
+2006-09-26T14:19:00.000Z,Paddy_EIRE,Jack_Sparrow,"thx for the head start, gonna try Mepis and see what I think... I also have OpenSuse 10.1 and the latest freespire so I should have fun"
+2006-09-26T14:20:00.000Z,Jack_Sparrow,Paddy_EIRE,You know where to find me..
+2006-09-28T07:54:00.000Z,Paddy_EIRE,Jack_Sparrow,"hey man, boy is opensuse different"
+2006-10-02T07:21:00.000Z,Paddy_EIRE,Jack_Sparrow,"hey man, Im trying to kill 2 birds with one stone here.  Firstly I want to begin using GimpShop as in my course they use PhotoShop and this would translate out better, secondly I downloaded GimpShops' source package and would like the experience of compiling something from source..could you or anyone else help me out?"
+2007-07-06T06:03:00.000Z,Paddy_EIRE,Jack_Sparrow,is that the original Jack_Sparrow ?
+2007-07-06T06:04:00.000Z,Paddy_EIRE,Jack_Sparrow,what have you been away?
+2007-07-27T08:59:00.000Z,Paddy_EIRE,Jack_Sparrow,hey dude....hows the fam#
+2007-07-27T08:59:00.000Z,Jack_Sparrow,Paddy_EIRE,"Hiya, doing good thanks, friend is still in the hospital.. Probably wont make it.."
+2007-07-27T09:00:00.000Z,Paddy_EIRE,Jack_Sparrow,jeeze man....I always hope the best...and give em my hope and love :)
+2007-07-27T09:01:00.000Z,Jack_Sparrow,Paddy_EIRE,You bet.. and thanks for the kind thoughts
+2007-07-27T09:01:00.000Z,Jack_Sparrow,Paddy_EIRE,Just here
+2007-07-27T09:01:00.000Z,Paddy_EIRE,Jack_Sparrow,it has been since edgy I find
+2007-07-27T09:21:00.000Z,Paddy_EIRE,Jack_Sparrow,why not ndiswrapper
+2007-07-27T09:21:00.000Z,Jack_Sparrow,Paddy_EIRE,it will work.. but seems to get better speeds with fwcutter
+2007-07-27T09:22:00.000Z,Paddy_EIRE,Jack_Sparrow,never realised
+2007-07-27T09:22:00.000Z,Paddy_EIRE,Jack_Sparrow,would most win drivers work better with fwcutter
+2007-07-27T09:23:00.000Z,Jack_Sparrow,Paddy_EIRE,Only experience is with bcm43xx driver
+2007-07-27T09:23:00.000Z,Paddy_EIRE,Jack_Sparrow,yes that very driver
+2007-07-27T09:23:00.000Z,Paddy_EIRE,Jack_Sparrow,thx for your know how
+2007-07-28T16:59:00.000Z,Jack_Sparrow,Paddy_EIRE,I just lost all respect...
+2007-07-28T05:00:00.000Z,Paddy_EIRE,Jack_Sparrow,lol
+2007-07-28T05:01:00.000Z,Paddy_EIRE,Jack_Sparrow,"gota try it, and my sis's fella would like me to set it up for him...so I fiqure i may aswell try it first"
+2007-07-28T05:01:00.000Z,Jack_Sparrow,Paddy_EIRE,Just kidding with you.. does look cool.. Just not my thing..  You can try #ubuntu-effects
+2007-08-07T05:51:00.000Z,Paddy_EIRE,Jack_Sparrow,I've been messing around with fvwm and fvwm-crystal lately and I gotta say I really like the minimal styling of those wm
+2007-08-07T05:52:00.000Z,Jack_Sparrow,Paddy_EIRE,crystal is nice...  clean
+2007-08-07T05:52:00.000Z,Paddy_EIRE,Jack_Sparrow,"cant find good documentation though, there seems to be no wiki and te irc channel is basically empty"
+2007-08-07T05:54:00.000Z,Jack_Sparrow,Paddy_EIRE,"Yep... Never anyone there.. Sort of like the Automatix channel... never help, just problems that eventually show up here"
+2007-08-07T06:13:00.000Z,Paddy_EIRE,Jack_Sparrow,there is someone in the forums I am trying to help....what is the name of that intel graphics driver 915resolution or something
+2007-08-07T06:14:00.000Z,Jack_Sparrow,Paddy_EIRE,yes... Want the link...
+2007-08-07T06:14:00.000Z,Paddy_EIRE,Jack_Sparrow,please ... nice one
+2007-08-07T06:14:00.000Z,Jack_Sparrow,Paddy_EIRE,https://help.ubuntu.com/community/FixVideoResolutionHowto
+2007-08-07T07:02:00.000Z,Paddy_EIRE,Jack_Sparrow,what is your opinion on Linux Mint..I have been using it for awhile now any reservations
+2007-08-09T06:20:00.000Z,Jack_Sparrow,Paddy_EIRE,Morning to you as well...    scam   Two pci-e    Wow..
+2007-08-09T06:22:00.000Z,Paddy_EIRE,Jack_Sparrow,did you get the link to that article on apcmag that I gave you yesterday?
+2007-08-09T06:23:00.000Z,Jack_Sparrow,Paddy_EIRE,"Yes, interesting... We can take conversation to #Voyager whenever you need to chat..  NOt awake yet though.."
+2007-08-09T06:23:00.000Z,Paddy_EIRE,Jack_Sparrow,no probs
+2007-09-04T12:32:00.000Z,Jack_Sparrow,Paddy_EIRE,"I just installed sauerbratten, I really like the new version"
+2007-09-04T12:33:00.000Z,Jack_Sparrow,Paddy_EIRE,I am trying to create a launcher for sauerbraten.. how do I include the path for the  ./sauerbraten_unix -w1280 -h960   command in the launcher
+2007-09-04T12:34:00.000Z,Paddy_EIRE,Jack_Sparrow,you need to execute it as a shell command
+2007-09-04T12:35:00.000Z,Paddy_EIRE,Jack_Sparrow,type application in terminal
+2007-09-04T12:35:00.000Z,Jack_Sparrow,Paddy_EIRE,Example please
+2007-09-04T12:36:00.000Z,Jack_Sparrow,Paddy_EIRE,"I can run it from terminal, just trying to get a launcher to work from desktop"
+2007-09-04T12:37:00.000Z,Paddy_EIRE,Jack_Sparrow,when you right click and create launcher choose application in terminal and then use the 'pathto./sauerbraten_unix -w1280 -h960'
+2007-09-04T12:38:00.000Z,Jack_Sparrow,Paddy_EIRE,I thought I tried that....  but will try again.
+2007-09-04T12:39:00.000Z,Jack_Sparrow,Paddy_EIRE,Is there a leadind slash as in /home/jack/sauerbraten/./sauerbraten-unix etc...
+2007-09-12T12:51:00.000Z,Paddy_EIRE,Jack_Sparrow,actually I'm looking around at other blogs and web sites created by ubuntu users and would like to see something of yours if you dont mind?
+2007-09-12T12:52:00.000Z,Jack_Sparrow,Paddy_EIRE,I am not a blog kinda guy...  I just write stuff I need or what I get paid to write
+2007-12-01T10:48:00.000Z,Jack_Sparrow,Paddy_EIRE,do you run wine or dual boot your pc?
+2007-12-01T10:49:00.000Z,Paddy_EIRE,Jack_Sparrow,occasionally run wine
+2007-12-01T10:49:00.000Z,Paddy_EIRE,Jack_Sparrow,although dual-booting is better when it comes to gaming
+2007-12-01T10:49:00.000Z,Jack_Sparrow,Paddy_EIRE,I may ask you to test a program in a week or two...  It will run in wine or windows...
+2007-12-01T10:50:00.000Z,Jack_Sparrow,Paddy_EIRE,"Will let you know when I get it to beta.. It isnt anything special, but should let you fix or tweak ubuntu system files from Windows or Wine.  full gui"
+2007-12-01T10:51:00.000Z,Paddy_EIRE,Jack_Sparrow,wow.. very nice :)
+2007-12-01T10:51:00.000Z,Jack_Sparrow,Paddy_EIRE,Nothing special.. but will have you check it out for me.
+2007-12-01T10:51:00.000Z,Paddy_EIRE,Jack_Sparrow,anytime... :D
+2008-03-08T02:07:00.000Z,Jack_Sparrow,Paddy_EIRE,sure.. rdesktop
+2008-03-08T02:08:00.000Z,Paddy_EIRE,Jack_Sparrow,I have tried 'Remote Desktop' in system > preferences >..  Is that what you mean?
+2008-03-08T02:09:00.000Z,Jack_Sparrow,Paddy_EIRE,http://paste.ubuntu-nl.org/58797/             are my notes
+2008-03-08T02:09:00.000Z,Paddy_EIRE,Jack_Sparrow,nice one... do I really need to have static IPs.. I was hoping to avoid that :S
+2008-03-08T02:10:00.000Z,Jack_Sparrow,Paddy_EIRE,See the link in my notes about setting up a relay for that
+2008-03-08T02:11:00.000Z,Paddy_EIRE,Jack_Sparrow,never fail for Jack is here :)
+2008-03-08T02:32:00.000Z,Paddy_EIRE,Jack_Sparrow,when I type 'vncviewer -fullscreen 192.168.2.102' in a terminal a login window appears with username (greyed out?) and password which is usable.. but alas I cannot type the username :(
+2008-04-20T20:08:00.000Z,Jack_Sparrow,Paddy_EIRE,"JUst like swimming, you will remember.. or drown"
+2008-04-20T20:09:00.000Z,Paddy_EIRE,Jack_Sparrow,yeah... lol
+2008-07-21T23:49:00.000Z,Jack_Sparrow,Paddy_EIRE,"Hey, long time no see, hope all is well"
+2008-12-09T20:17:00.000Z,Jack_Sparrow,Paddy_EIRE,"thanks,, that was mynext line.. what card/chipset"
+2008-12-11T05:04:00.000Z,Jack_Sparrow,Paddy_EIRE,It installs a lot of stuff he really should have anyhow..
+2008-12-11T05:04:00.000Z,Paddy_EIRE,Jack_Sparrow,yeah I prefer to let people install as they go
+2008-12-11T05:05:00.000Z,Paddy_EIRE,Jack_Sparrow,ubuntu-restricted-extras does not really convey a lot of information about what you are installing and what it may be used for
+2008-12-11T05:05:00.000Z,Paddy_EIRE,Jack_Sparrow,I feel people learn better this way
+2008-12-11T05:10:00.000Z,Paddy_EIRE,Jack_Sparrow,Ubuntu_Studio is now an official add-on in the same fashion as edubuntu
+2009-01-06T04:47:00.000Z,Paddy_EIRE,Jack_Sparrow,what are you trying to do man?
+2009-01-06T04:47:00.000Z,Paddy_EIRE,Jack_Sparrow,https://wiki.ubuntu.com/UbuntuBots
+2009-01-06T04:48:00.000Z,Jack_Sparrow,Paddy_EIRE,"Hi, yea , we were testing something"
+2009-01-06T04:48:00.000Z,Paddy_EIRE,Jack_Sparrow,ah.. looks like a handy method if that is the usage
+2009-01-06T04:49:00.000Z,Jack_Sparrow,Paddy_EIRE,They still must be approved before they become a factoid
+2009-01-06T04:49:00.000Z,Paddy_EIRE,Jack_Sparrow,hell yeah.. otherwise it would be mad :)
+2009-01-06T04:49:00.000Z,Jack_Sparrow,Paddy_EIRE,"Yea, it was.."
+2009-01-06T04:50:00.000Z,Paddy_EIRE,Jack_Sparrow,you accepted factoids before without approval :/
+2009-01-06T04:50:00.000Z,Jack_Sparrow,Paddy_EIRE,at one point in time..yes
+2009-01-06T04:50:00.000Z,Paddy_EIRE,Jack_Sparrow,hehe.. mad
+2009-01-08T21:13:00.000Z,Jack_Sparrow,Paddy_EIRE,Something about ath5 module in backports etc
+2009-01-08T21:14:00.000Z,Paddy_EIRE,Jack_Sparrow,gah.. I once had an odd problem where my wifi card would switch itelf off altogether..  had to boot a live cd to teh desktop before it would show again.. make *no* changes and reboot to my normal install :/
+2006-07-26T08:33:00.000Z,Paddy_EIRE,,hi guys I burned the contents of /var/cache/apt/archives/ to dvd and want to know if i take this to my friends machine how i would go about installing them all at once
+2006-07-26T08:35:00.000Z,Paddy_EIRE,,<frogzoo> i didnt do anything fancy when burning i just copied and pasted then burned to dvd i didnt zip or compress in any way
+2006-07-26T08:35:00.000Z,Paddy_EIRE,,<frogzoo> do i just type this in a terminal while in dvd directory
+2006-07-26T08:36:00.000Z,Jack_Sparrow,Paddy_EIRE,To identify all installed packages I use...    dpkg --get-selections >out.txt  to save the list of installed items  and <out.txt  to restore all installed apps
+2006-07-26T08:41:00.000Z,Jack_Sparrow,Paddy_EIRE, DOnt you just want to duplicate your installation on another box/install?
+2006-07-26T08:43:00.000Z,Jack_Sparrow,Paddy_EIRE,write the one I gave you down..
+2006-07-27T10:29:00.000Z,Jack_Sparrow,Paddy_EIRE,I use gdesklets
+2006-07-27T10:32:00.000Z,Jack_Sparrow,Paddy_EIRE,"We talked about that yesterday, that was not my suggestion correct?"
+2006-07-27T10:33:00.000Z,Jack_Sparrow,Paddy_EIRE,You didnt use my suggestion because you had made changes after you burned the cd
+2006-07-27T10:34:00.000Z,Jack_Sparrow,Paddy_EIRE,Did you write that down
+2006-07-27T10:35:00.000Z,Jack_Sparrow,Paddy_EIRE,dpkg --get-packages > out.txt   then <out.txt
+2006-07-27T10:38:00.000Z,Jack_Sparrow,Paddy_EIRE,What are you typning on the command line
+2006-07-27T10:39:00.000Z,Jack_Sparrow,Paddy_EIRE,and it gives you that error?
+2006-07-27T10:42:00.000Z,Jack_Sparrow,Paddy_EIRE,My fault... --get-selections
+2006-07-27T10:43:00.000Z,Jack_Sparrow,Paddy_EIRE,Sorry complete brain fart
+2006-07-27T10:46:00.000Z,Jack_Sparrow,Paddy_EIRE,Did it finish creating the out.txt file?
+2006-07-27T10:49:00.000Z,Jack_Sparrow,Paddy_EIRE, Once you do the install on the other machine use    <out.txt to install everything
+2006-07-27T10:49:00.000Z,Jack_Sparrow,Paddy_EIRE,Check home folder
+2006-07-27T10:52:00.000Z,Jack_Sparrow,Paddy_EIRE,You will find it in /home/'User Name'
+2006-07-27T10:53:00.000Z,Jack_Sparrow,Paddy_EIRE, Copy to the other machine and run   dpkg --get-selections < out.txt
+2006-07-27T10:54:00.000Z,Jack_Sparrow,Paddy_EIRE, Are you happy camper now?
+2006-07-27T10:57:00.000Z,Jack_Sparrow,Paddy_EIRE,"It should do everything, if not come back with whatever the prob may be"
+2006-07-27T10:57:00.000Z,Jack_Sparrow,Paddy_EIRE,np glad to help
+2006-07-27T10:58:00.000Z,Jack_Sparrow,Paddy_EIRE,SOmetimes stretched a little thin
+2006-07-27T11:01:00.000Z,Jack_Sparrow,Paddy_EIRE, Check out RealBasic and Kbasic for Linux as a start..
+2006-07-27T11:01:00.000Z,Jack_Sparrow,Paddy_EIRE,Both are free
+2006-07-29T07:48:00.000Z,Jack_Sparrow,Paddy_EIRE,do you also have an onboard card?
+2006-07-29T07:49:00.000Z,Jack_Sparrow,Paddy_EIRE,then what makes you think it is sharing ram
+2006-07-29T07:52:00.000Z,Jack_Sparrow,Paddy_EIRE,but why do you think it is your video card sharing it
+2006-07-29T07:53:00.000Z,Jack_Sparrow,Paddy_EIRE,You cant assume that.. you are on the wrong path
+2006-08-01T12:31:00.000Z,Jack_Sparrow,Paddy_EIRE,did you know the last security update from MS told all computers to call microsoft every 24 hours and report what MS products were installed
+2006-08-01T12:35:00.000Z,Jack_Sparrow,Paddy_EIRE,glad to have you here
+2006-08-01T12:36:00.000Z,Jack_Sparrow,Paddy_EIRE,Kubuntu or Mepis 6
+2006-08-01T12:37:00.000Z,Jack_Sparrow,Paddy_EIRE,that is the fun of it.. explore them all.
+2006-08-23T09:33:00.000Z,Jack_Sparrow,Paddy_EIRE,Alien is gonna get you one of these days
+2006-08-23T09:35:00.000Z,Jack_Sparrow,Paddy_EIRE,"good luck,.."
+2006-08-25T06:40:00.000Z,Jack_Sparrow,Paddy_EIRE,You probably have a virus...
+2006-08-25T07:04:00.000Z,Jack_Sparrow,Paddy_EIRE,thanks.. I just copied all 450 packages to a second partition..   I can breath a little easier
+2006-08-25T07:06:00.000Z,Jack_Sparrow,Paddy_EIRE,I would think a dependency would be included in the downloads.. and pointing your sources list to that drive/partition should do it
+2006-08-25T07:07:00.000Z,Jack_Sparrow,Paddy_EIRE,I was told I could edit the sources list to point to an internat repo just like the install cd
+2006-08-25T07:09:00.000Z,Jack_Sparrow,Paddy_EIRE,"LEt me go make a backup of sources list, download a deb I dont have, put it in my other folder and try to install it from there.."
+2006-08-25T07:33:00.000Z,Jack_Sparrow,Paddy_EIRE,http://www.debian.org/doc/manuals/apt-howto/ch-basico.en.html#s-dpkg-scanpackages
+2006-08-25T07:34:00.000Z,Jack_Sparrow,Paddy_EIRE,or http://www.debian.org/doc/manuals/apt-howto/index.en.html#contents
+2006-08-25T07:36:00.000Z,Jack_Sparrow,Paddy_EIRE,Took a couple minutes but it will do what you want
+2006-08-25T07:36:00.000Z,Jack_Sparrow,Paddy_EIRE,Helping each other is how this all works
+2006-08-27T08:35:00.000Z,Jack_Sparrow,Paddy_EIRE,odd.. we can look at it later..
+2006-08-27T08:36:00.000Z,Jack_Sparrow,Paddy_EIRE,not now no
+2006-08-27T08:37:00.000Z,Jack_Sparrow,Paddy_EIRE,not at all
+2006-08-27T12:03:00.000Z,Jack_Sparrow,Paddy_EIRE,I would think so
+2006-08-27T12:07:00.000Z,Jack_Sparrow,Paddy_EIRE,read it.. whats the ?
+2006-08-27T12:08:00.000Z,Jack_Sparrow,Paddy_EIRE,they are just restricting them at peak times
+2006-08-27T12:10:00.000Z,Jack_Sparrow,Paddy_EIRE,"It will limit your access yes, but broadband for that price must have restrictions"
+2006-08-27T12:11:00.000Z,Jack_Sparrow,Paddy_EIRE,"They look at their peek, when p2p impeads other traffic it will be restricted"
+2006-08-27T12:11:00.000Z,Jack_Sparrow,Paddy_EIRE,Yes
+2006-08-27T12:11:00.000Z,Jack_Sparrow,Paddy_EIRE,If not shut down entirely
+2006-08-27T12:13:00.000Z,Jack_Sparrow,Paddy_EIRE,That is not something I can answer and it is off topic...
+2006-08-27T12:14:00.000Z,Jack_Sparrow,Paddy_EIRE,virtually free broadband.. yes
+2006-08-27T12:21:00.000Z,Jack_Sparrow,Paddy_EIRE,it will need to wait for a few..
+2006-08-27T12:34:00.000Z,Jack_Sparrow,Paddy_EIRE,still have three irons in the fire..
+2006-08-27T12:34:00.000Z,Jack_Sparrow,Paddy_EIRE,still have two irons in the fire..
+2006-08-27T13:18:00.000Z,Jack_Sparrow,Paddy_EIRE,Ubuntu can stand on its own two feet.  But if you are getting some cheap/free usb modem from talktalk with no info or linux drivers it is not the fault of the OS.
+2006-08-27T13:28:00.000Z,Jack_Sparrow,Paddy_EIRE,it all depends on the chipset and the architecture
+2006-08-27T13:29:00.000Z,Jack_Sparrow,Paddy_EIRE,I would assume that if they are requiring that modem and that there will be that many users with it 70% get free broadband that a soultion will be sooner rather than later
+2006-08-27T15:26:00.000Z,Jack_Sparrow,Paddy_EIRE,ubuntu is gnome so most should work
+2006-08-27T15:26:00.000Z,Jack_Sparrow,Paddy_EIRE,kde-look for Kubuntu etc
+2006-08-27T15:28:00.000Z,Jack_Sparrow,Paddy_EIRE,have you got any of them to run?
+2006-08-27T15:28:00.000Z,Jack_Sparrow,Paddy_EIRE,How are you trying to install them and which ones dont work
+2006-08-27T15:33:00.000Z,Jack_Sparrow,Paddy_EIRE,"That particular theme gives me the same result, which others have you tried.."
+2006-08-27T15:34:00.000Z,Jack_Sparrow,Paddy_EIRE,specifics
+2006-08-27T15:35:00.000Z,Jack_Sparrow,Paddy_EIRE,I just did the glass icons from the top 10 and went fine
+2006-08-27T15:38:00.000Z,Jack_Sparrow,Paddy_EIRE,I went to top ten list on gnome-look
+2006-08-27T15:39:00.000Z,Jack_Sparrow,Paddy_EIRE,and the third one in that list is what I used.
+2006-08-27T15:41:00.000Z,Jack_Sparrow,Paddy_EIRE,I am on hte link you gave me and no it doesnt
+2006-08-27T15:42:00.000Z,Jack_Sparrow,Paddy_EIRE,not here
+2006-08-27T15:42:00.000Z,Jack_Sparrow,Paddy_EIRE,I get gentle/almond/glass
+2006-08-27T15:43:00.000Z,Jack_Sparrow,Paddy_EIRE,I get gentle/almond/glass
+2006-08-27T15:44:00.000Z,Jack_Sparrow,Paddy_EIRE,ask someone else what they get
+2006-08-27T15:44:00.000Z,Jack_Sparrow,Paddy_EIRE,ask someone else what they get
+2006-08-27T15:48:00.000Z,Jack_Sparrow,Paddy_EIRE,ask someone else what they get... any one respond yet
+2006-08-27T15:58:00.000Z,Jack_Sparrow,Paddy_EIRE,can you accept dcc?
+2006-08-27T16:00:00.000Z,Jack_Sparrow,Paddy_EIRE,Home?
+2006-08-28T16:02:00.000Z,Jack_Sparrow,Paddy_EIRE,the whole collection is only 11 meg.
+2006-08-28T16:03:00.000Z,Jack_Sparrow,Paddy_EIRE,Sure you want my special one
+2006-08-28T16:04:00.000Z,Jack_Sparrow,Paddy_EIRE,There it is with my notes
+2006-08-28T16:05:00.000Z,Jack_Sparrow,Paddy_EIRE,use nautilus
+2006-08-28T16:06:00.000Z,Jack_Sparrow,Paddy_EIRE,feel free to share it
+2006-08-28T16:06:00.000Z,Jack_Sparrow,Paddy_EIRE,dcc send me something small and I will see where it goes by default
+2006-08-28T16:11:00.000Z,Jack_Sparrow,Paddy_EIRE,we now know you have another issue
+2006-08-28T16:12:00.000Z,Jack_Sparrow,Paddy_EIRE,sounds like you are do for a fresh install.
+2006-08-28T16:15:00.000Z,Jack_Sparrow,Paddy_EIRE,To identify installed packages and create a list to reinstall Use Terminal type dpkg --get-selections > myprog.txt to reinstall type dpkg --get-selections < myprog.txt
+2006-08-28T16:16:00.000Z,Jack_Sparrow,Paddy_EIRE,try it my way and look at the fil;e
+2006-08-28T16:17:00.000Z,Jack_Sparrow,Paddy_EIRE,"I am getting punchy, time for me to make dinner..."
+2006-08-28T16:18:00.000Z,Jack_Sparrow,Paddy_EIRE,"agreed, dont worry about me,"
+2006-08-28T16:18:00.000Z,Jack_Sparrow,Paddy_EIRE,watch out for her..
+2006-08-28T05:09:00.000Z,Jack_Sparrow,Paddy_EIRE, back for 15 to 30 minutes
+2006-08-28T05:09:00.000Z,Jack_Sparrow,Paddy_EIRE,didnt I link you a page for using local resources?
+2006-08-28T05:10:00.000Z,Jack_Sparrow,Paddy_EIRE,just save everything from that folder to a cd
+2006-08-28T05:10:00.000Z,Jack_Sparrow,Paddy_EIRE,about 4 lines from the top was the section you need
+2006-08-28T05:12:00.000Z,Jack_Sparrow,Paddy_EIRE,the section is called HOW TO USE APT LOCALLY
+2006-08-28T05:13:00.000Z,Jack_Sparrow,Paddy_EIRE,with the list you generated earlier and the packages on a local cd you should be able to do it
+2006-08-28T05:13:00.000Z,Jack_Sparrow,Paddy_EIRE,http://www.debian.org/doc/manuals/apt-howto/ch-basico.en.html#s-dpkg-scanpackages
+2006-08-28T05:16:00.000Z,Jack_Sparrow,Paddy_EIRE,If he dosent have internet then there is no alternative except to physically do the work
+2006-08-28T05:17:00.000Z,Jack_Sparrow,Paddy_EIRE,if you have downloaded a file from the repos... it will be on your local machine
+2006-08-28T05:17:00.000Z,Jack_Sparrow,Paddy_EIRE,you will probably have some dependency issues to deal with
+2006-08-28T05:18:00.000Z,Jack_Sparrow,Paddy_EIRE,does he not even have a phone line to use?
+2006-08-28T05:19:00.000Z,Jack_Sparrow,Paddy_EIRE,have him bring the box to your house and connect to the net
+2006-08-28T05:38:00.000Z,Jack_Sparrow,Paddy_EIRE, send me the program list you generated...
+2006-08-28T05:41:00.000Z,Jack_Sparrow,Paddy_EIRE,net access is important for linux users..
+2006-08-28T05:41:00.000Z,Jack_Sparrow,Paddy_EIRE,moving the computer to someone elses net connection is not a big deal
+2006-08-28T05:43:00.000Z,Jack_Sparrow,Paddy_EIRE,good luck on that.
+2006-08-28T05:43:00.000Z,Jack_Sparrow,Paddy_EIRE,probably home?
+2006-08-28T05:44:00.000Z,Jack_Sparrow,Paddy_EIRE,look in home/paddy
+2006-08-28T05:47:00.000Z,Jack_Sparrow,Paddy_EIRE,"Yea, I like the look of it."
+2006-09-03T13:02:00.000Z,Paddy_EIRE,Jack_Sparrow,"hey man, you wouldnt happen to know where I can apply for the 'Ubuntu Certified Engineer' certification?"
+2006-09-03T13:02:00.000Z,Jack_Sparrow,Paddy_EIRE,No... never had much use for certs even when I was working on windows
+2006-09-07T15:23:00.000Z,Jack_Sparrow,Paddy_EIRE,"Enjoy those icons, they are great"
+2006-09-07T15:24:00.000Z,Jack_Sparrow,Paddy_EIRE,I wish I had that kind of tallent... here is the link... http://kearone.deviantart.com/gallery/?order=9
+2006-09-08T08:58:00.000Z,Jack_Sparrow,Paddy_EIRE,Did you try pasting that line into a term?
+2006-09-08T09:00:00.000Z,Jack_Sparrow,Paddy_EIRE,12 is what you want to change
+2006-09-08T09:01:00.000Z,Jack_Sparrow,Paddy_EIRE, Got an hour.. I will explain it
+2006-09-08T09:02:00.000Z,Jack_Sparrow,Paddy_EIRE,here is my .... 12         0x0033 (3)      0x0023 (numbersign)
+2006-09-08T09:03:00.000Z,Jack_Sparrow,Paddy_EIRE,Lets take this pm.. ok
+2006-09-08T09:06:00.000Z,Jack_Sparrow,Paddy_EIRE, join #Jack_Sparrow
+2006-09-08T10:07:00.000Z,Jack_Sparrow,Paddy_EIRE,had you there..
+2006-09-08T10:54:00.000Z,Jack_Sparrow,Paddy_EIRE,You here?
+2006-09-15T07:35:00.000Z,Jack_Sparrow,Paddy_EIRE,"Hi, I havent made one in Ubuntu.. Not sure.. the only graphic editor I have used it gimp"
+2006-09-15T07:37:00.000Z,Jack_Sparrow,Paddy_EIRE,"No idea, I am not artistic, I just use premade icons"
+2006-09-15T07:40:00.000Z,Jack_Sparrow,Paddy_EIRE,No... just look around..
+2006-09-15T07:42:00.000Z,Jack_Sparrow,Paddy_EIRE,You arer asking questions on a subject I know nothing about.. Not to mention I am barely awake and nursing my first cup of coffee...
+2006-09-15T13:09:00.000Z,Jack_Sparrow,Paddy_EIRE,To identify installed packages and create a list to reinstall Use Terminal type dpkg --get-selections > myprog.txt
+2006-09-15T13:11:00.000Z,Jack_Sparrow,Paddy_EIRE,That command makes a list called myprog.txt
+2006-09-15T13:12:00.000Z,Jack_Sparrow,Paddy_EIRE,k
+2006-09-17T09:11:00.000Z,Jack_Sparrow,Paddy_EIRE,"a list of everything, ?  No idea..."
+2006-09-17T13:25:00.000Z,Jack_Sparrow,Paddy_EIRE,Use a long screwdriver... put one end to your ear and touch non-electrical parts inside the box
+2006-09-17T13:26:00.000Z,Jack_Sparrow,Paddy_EIRE,Buddy...I want you to lick the fans while they are spinning...
+2006-09-17T13:30:00.000Z,Jack_Sparrow,Paddy_EIRE,"while a screwdriver works fine I also have a hardware sthethoscope from an auto parts store...,"
+2006-09-17T13:31:00.000Z,Jack_Sparrow,Paddy_EIRE,If it is making that much noise you can probably feel the vibration with your finger.
+2006-09-17T13:33:00.000Z,Jack_Sparrow,Paddy_EIRE,Another hardware tip is to stop the fan blades when using canned air to blow out the heatsinks.  Overspinning the fan s is not good.
+2006-09-17T13:34:00.000Z,Jack_Sparrow,Paddy_EIRE,Unplug the drives and try to run live... quick way to cut the problem down to drives or ps/mb
+2006-09-17T14:04:00.000Z,Paddy_EIRE,Jack_Sparrow,"i think it may be the processor fan, is there anything i can do to the fan itself"
+2006-09-17T14:05:00.000Z,Jack_Sparrow,Paddy_EIRE,"You can pull the sticker, add a little vaseline and tape it carefully back up.. and REPLACE asap.  Dont blow a cpu for the cost of a fan"
+2006-09-17T14:06:00.000Z,Jack_Sparrow,Paddy_EIRE,"Also pull the heatsink, clean with alcohol and re-apply thermal grease"
+2006-09-17T14:09:00.000Z,Jack_Sparrow,Paddy_EIRE,"there is a sticker in the center of the fan covering the bearing, remove sticker, add small amount of lube, put fresh tape over bearing to keep lube from escaping"
+2006-09-17T14:11:00.000Z,Jack_Sparrow,Paddy_EIRE,or the cpu goes up in smoke..
+2006-09-17T14:12:00.000Z,Jack_Sparrow,Paddy_EIRE,"My football game is about to start, See you tomorrow if you have any questions...   FYI, I set the shutdown/warning temp iin the bios"
+2006-09-17T14:13:00.000Z,Jack_Sparrow,Paddy_EIRE,55c max but different people have different opinions
+2006-09-18T16:35:00.000Z,Jack_Sparrow,Paddy_EIRE,Set fire to that hunk and reinstall tomorrow  ..  :)
+2006-09-18T16:35:00.000Z,Jack_Sparrow,Paddy_EIRE,Just re-apply thermal grease and you should no longer overheat.
+2006-09-18T16:41:00.000Z,Jack_Sparrow,Paddy_EIRE,no idea
+2006-09-18T16:57:00.000Z,Jack_Sparrow,Paddy_EIRE,full path to /opt   ?
+2006-09-19T16:54:00.000Z,Jack_Sparrow,Paddy_EIRE,"Hi, how did that trick on your cpu cooling work out?"
+2006-09-19T16:57:00.000Z,Jack_Sparrow,Paddy_EIRE,remember... that is a short term fix....
+2006-09-19T12:34:00.000Z,Jack_Sparrow,Paddy_EIRE,I tried it but wasnt happy with it..
+2006-09-19T13:03:00.000Z,Jack_Sparrow,Paddy_EIRE,Not sure what you mean by that.  Which nvidia card do we recommend?
+2006-09-19T13:05:00.000Z,Jack_Sparrow,Paddy_EIRE,I cant force myself to suggest people use compiz... I prefer less eye candy more function
+2006-09-20T08:44:00.000Z,Jack_Sparrow,Paddy_EIRE,did you try         acid rip
+2006-09-20T08:46:00.000Z,Jack_Sparrow,Paddy_EIRE,it would require dual layer writer or lots of data loss...
+2006-09-20T08:48:00.000Z,Jack_Sparrow,Paddy_EIRE,"not something we can discuss in here, check around..."
+2006-09-21T07:54:00.000Z,Jack_Sparrow,Paddy_EIRE,yes many have.. one sec... we can fix it
+2006-09-21T07:54:00.000Z,Jack_Sparrow,Paddy_EIRE,http://blog.mypapit.net/2006/08/install-mozilla-flash-plugin-in-ubuntu.html
+2006-09-21T07:55:00.000Z,Paddy_EIRE,Jack_Sparrow,nice one mate
+2006-09-21T12:02:00.000Z,Paddy_EIRE,Jack_Sparrow,Thx for the flash fix earlier :) .... I was wondering if Firefox was using the new version of flash or the old one as it installed the flash plugin to my home .mozilla directory
+2006-09-21T12:03:00.000Z,Jack_Sparrow,Paddy_EIRE,no idea.. does it work?
+2006-09-21T12:18:00.000Z,Paddy_EIRE,Jack_Sparrow,: the fix u gave me worked as in it installed and appears to be working using firefox..... but whenever i use apt-get it still wants to perform the same malfunctioning action as before
+2006-09-21T12:19:00.000Z,Jack_Sparrow,Paddy_EIRE,any apt-get ?
+2006-09-21T12:23:00.000Z,Jack_Sparrow,Paddy_EIRE,HAve you tried synaptic...
+2006-09-21T12:25:00.000Z,Jack_Sparrow,Paddy_EIRE,"I didnt try the hosed one, I just knew how to get the one I linked..  I also dont know how to keep apt from trying to hose you again."
+2006-09-21T12:25:00.000Z,Paddy_EIRE,Jack_Sparrow,I wouldnt mind learning that one
+2006-09-21T12:26:00.000Z,Jack_Sparrow,Paddy_EIRE,There is a remove- or purge command to do it but I am not a cli guy..
+2006-09-21T12:26:00.000Z,Paddy_EIRE,Jack_Sparrow,gonna try a thing i found
+2006-09-21T12:28:00.000Z,Paddy_EIRE,Jack_Sparrow,perhaps that link u gave me earlier might help Bonez56
+2006-09-21T12:34:00.000Z,Paddy_EIRE,Jack_Sparrow,sry man I cant find that link in my history...if it easily accessible to u could u give it to Bonez56
+2006-09-21T12:35:00.000Z,Jack_Sparrow,Paddy_EIRE,10 lashes
+2006-09-23T05:33:00.000Z,Paddy_EIRE,Jack_Sparrow,is it a whole handling to get the media keys working through amarok?
+2006-09-26T13:48:00.000Z,Jack_Sparrow,Paddy_EIRE,Yes you did...
+2006-09-26T13:49:00.000Z,Paddy_EIRE,Jack_Sparrow,"oh, then I did hehe, oops"
+2006-09-26T13:50:00.000Z,Jack_Sparrow,Paddy_EIRE,"FYI, HI, just taking a break from building new shelves in the pantry for the wife.."
+2006-09-26T13:51:00.000Z,Paddy_EIRE,Jack_Sparrow,wife
+2006-09-26T13:51:00.000Z,Paddy_EIRE,Jack_Sparrow,you get married....congrats
+2006-09-26T13:51:00.000Z,Jack_Sparrow,Paddy_EIRE,Over 25 years ago
+2006-09-26T13:51:00.000Z,Paddy_EIRE,Jack_Sparrow,"oops, lol"
+2006-09-26T13:52:00.000Z,Paddy_EIRE,Jack_Sparrow,"congrats again then, :/"
+2006-09-26T13:52:00.000Z,Jack_Sparrow,Paddy_EIRE,I am thinking of reworking diskmounter to insculde ntfs-3g.
+2006-09-26T13:52:00.000Z,Jack_Sparrow,Paddy_EIRE,I have not seen any problems with it recently
+2006-09-26T13:53:00.000Z,Paddy_EIRE,Jack_Sparrow,jeeze now that would be somethin
+2006-09-26T13:53:00.000Z,Paddy_EIRE,Jack_Sparrow,you think its at a good level of stability now
+2006-09-26T13:54:00.000Z,Jack_Sparrow,Paddy_EIRE,Close enough for me to do some testing on my own systems
+2006-09-26T13:55:00.000Z,Paddy_EIRE,Jack_Sparrow,"that'll be a memorable release, good luck... :)"
+2006-09-26T13:59:00.000Z,Paddy_EIRE,Jack_Sparrow,Im getting 'You do not have the permissions necessary to view the contents of 'disks-conf-hdb1'.'
+2006-09-26T14:00:00.000Z,Jack_Sparrow,Paddy_EIRE,Post your fstab for me pastebin of course
+2006-09-26T14:00:00.000Z,Paddy_EIRE,Jack_Sparrow,:) excellent
+2006-09-26T14:02:00.000Z,Paddy_EIRE,Jack_Sparrow,http://paste.ubuntu-nl.org/24905
+2006-09-26T14:03:00.000Z,Jack_Sparrow,Paddy_EIRE,Loading it up now...  we may need to edit your /etc/pmount.allow
+2006-09-26T14:03:00.000Z,Paddy_EIRE,Jack_Sparrow,sure
+2006-09-26T14:03:00.000Z,Jack_Sparrow,Paddy_EIRE,Argh... those are all ntfs..
+2006-09-26T14:04:00.000Z,Paddy_EIRE,Jack_Sparrow,the annoying thing is I just want some work of each of them ...then its getting formatted
+2006-09-26T14:04:00.000Z,Jack_Sparrow,Paddy_EIRE,I thought I taught you better than that...
+2006-09-26T14:04:00.000Z,Paddy_EIRE,Jack_Sparrow,this drive was from my Windoze era
+2006-09-26T14:07:00.000Z,Jack_Sparrow,Paddy_EIRE,My fmask is 0111 and my dmask is 0000
+2006-09-26T14:16:00.000Z,Jack_Sparrow,Paddy_EIRE,Back to work for me..  play nice..
+2006-09-26T14:11:00.000Z,Paddy_EIRE,Jack_Sparrow,"i replaced all entries 'with' the ntfs FS to fmask=0111,dmask=0000 is this correct, ps the original numbers are the only things i have changed"
+2006-09-26T14:13:00.000Z,Jack_Sparrow,Paddy_EIRE,gksudo nautilus and see if you can browse to them
+2006-09-26T14:15:00.000Z,Paddy_EIRE,Jack_Sparrow,"yes, I can browse them with gksudo nautilus although not as myself"
+2006-09-26T14:17:00.000Z,Paddy_EIRE,Jack_Sparrow,nice one :) ...when  i do get what I want copied over fill formatting the drive be simple? and what fs type should i use..not ntfs anyway
+2006-09-26T14:17:00.000Z,Jack_Sparrow,Paddy_EIRE,I dual boot so I have a fat32 to share..
+2006-09-26T14:17:00.000Z,Jack_Sparrow,Paddy_EIRE,Depends on your needs
+2006-09-26T14:17:00.000Z,Paddy_EIRE,Jack_Sparrow,i have a SimplyMepis DVD that i would like to dual boot an try also
+2006-09-26T14:18:00.000Z,Jack_Sparrow,Paddy_EIRE,Mepis 6.0?
+2006-09-26T14:18:00.000Z,Paddy_EIRE,Jack_Sparrow,yep
+2006-09-26T14:18:00.000Z,Paddy_EIRE,Jack_Sparrow,from linux magazine
+2006-09-26T14:18:00.000Z,Jack_Sparrow,Paddy_EIRE,"You'll like it, I ran a Mepis box for years, I am always hanging in there, but the support is non-existent"
+2006-09-26T14:19:00.000Z,Paddy_EIRE,Jack_Sparrow,"thx for the head start, gonna try Mepis and see what I think... I also have OpenSuse 10.1 and the latest freespire so I should have fun"
+2006-09-26T14:20:00.000Z,Jack_Sparrow,Paddy_EIRE,You know where to find me..
+2006-09-28T07:54:00.000Z,Paddy_EIRE,Jack_Sparrow,"hey man, boy is opensuse different"
+2006-10-02T07:21:00.000Z,Paddy_EIRE,Jack_Sparrow,"hey man, Im trying to kill 2 birds with one stone here.  Firstly I want to begin using GimpShop as in my course they use PhotoShop and this would translate out better, secondly I downloaded GimpShops' source package and would like the experience of compiling something from source..could you or anyone else help me out?"
+2007-07-06T06:03:00.000Z,Paddy_EIRE,Jack_Sparrow,is that the original Jack_Sparrow ?
+2007-07-06T06:04:00.000Z,Paddy_EIRE,Jack_Sparrow,what have you been away?
+2007-07-27T08:59:00.000Z,Paddy_EIRE,Jack_Sparrow,hey dude....hows the fam#
+2007-07-27T08:59:00.000Z,Jack_Sparrow,Paddy_EIRE,"Hiya, doing good thanks, friend is still in the hospital.. Probably wont make it.."
+2007-07-27T09:00:00.000Z,Paddy_EIRE,Jack_Sparrow,jeeze man....I always hope the best...and give em my hope and love :)
+2007-07-27T09:01:00.000Z,Jack_Sparrow,Paddy_EIRE,You bet.. and thanks for the kind thoughts
+2007-07-27T09:01:00.000Z,Jack_Sparrow,Paddy_EIRE,Just here
+2007-07-27T09:01:00.000Z,Paddy_EIRE,Jack_Sparrow,it has been since edgy I find
+2007-07-27T09:21:00.000Z,Paddy_EIRE,Jack_Sparrow,why not ndiswrapper
+2007-07-27T09:21:00.000Z,Jack_Sparrow,Paddy_EIRE,it will work.. but seems to get better speeds with fwcutter
+2007-07-27T09:22:00.000Z,Paddy_EIRE,Jack_Sparrow,never realised
+2007-07-27T09:22:00.000Z,Paddy_EIRE,Jack_Sparrow,would most win drivers work better with fwcutter
+2007-07-27T09:23:00.000Z,Jack_Sparrow,Paddy_EIRE,Only experience is with bcm43xx driver
+2007-07-27T09:23:00.000Z,Paddy_EIRE,Jack_Sparrow,yes that very driver
+2007-07-27T09:23:00.000Z,Paddy_EIRE,Jack_Sparrow,thx for your know how
+2007-07-28T16:59:00.000Z,Jack_Sparrow,Paddy_EIRE,I just lost all respect...
+2007-07-28T05:00:00.000Z,Paddy_EIRE,Jack_Sparrow,lol
+2007-07-28T05:01:00.000Z,Paddy_EIRE,Jack_Sparrow,"gota try it, and my sis's fella would like me to set it up for him...so I fiqure i may aswell try it first"
+2007-07-28T05:01:00.000Z,Jack_Sparrow,Paddy_EIRE,Just kidding with you.. does look cool.. Just not my thing..  You can try #ubuntu-effects
+2007-08-07T05:51:00.000Z,Paddy_EIRE,Jack_Sparrow,I've been messing around with fvwm and fvwm-crystal lately and I gotta say I really like the minimal styling of those wm
+2007-08-07T05:52:00.000Z,Jack_Sparrow,Paddy_EIRE,crystal is nice...  clean
+2007-08-07T05:52:00.000Z,Paddy_EIRE,Jack_Sparrow,"cant find good documentation though, there seems to be no wiki and te irc channel is basically empty"
+2007-08-07T05:54:00.000Z,Jack_Sparrow,Paddy_EIRE,"Yep... Never anyone there.. Sort of like the Automatix channel... never help, just problems that eventually show up here"
+2007-08-07T06:13:00.000Z,Paddy_EIRE,Jack_Sparrow,there is someone in the forums I am trying to help....what is the name of that intel graphics driver 915resolution or something
+2007-08-07T06:14:00.000Z,Jack_Sparrow,Paddy_EIRE,yes... Want the link...
+2007-08-07T06:14:00.000Z,Paddy_EIRE,Jack_Sparrow,please ... nice one
+2007-08-07T06:14:00.000Z,Jack_Sparrow,Paddy_EIRE,https://help.ubuntu.com/community/FixVideoResolutionHowto
+2007-08-07T07:02:00.000Z,Paddy_EIRE,Jack_Sparrow,what is your opinion on Linux Mint..I have been using it for awhile now any reservations
+2007-08-09T06:20:00.000Z,Jack_Sparrow,Paddy_EIRE,Morning to you as well...    scam   Two pci-e    Wow..
+2007-08-09T06:22:00.000Z,Paddy_EIRE,Jack_Sparrow,did you get the link to that article on apcmag that I gave you yesterday?
+2007-08-09T06:23:00.000Z,Jack_Sparrow,Paddy_EIRE,"Yes, interesting... We can take conversation to #Voyager whenever you need to chat..  NOt awake yet though.."
+2007-08-09T06:23:00.000Z,Paddy_EIRE,Jack_Sparrow,no probs
+2007-09-04T12:32:00.000Z,Jack_Sparrow,Paddy_EIRE,"I just installed sauerbratten, I really like the new version"
+2007-09-04T12:33:00.000Z,Jack_Sparrow,Paddy_EIRE,I am trying to create a launcher for sauerbraten.. how do I include the path for the  ./sauerbraten_unix -w1280 -h960   command in the launcher
+2007-09-04T12:34:00.000Z,Paddy_EIRE,Jack_Sparrow,you need to execute it as a shell command
+2007-09-04T12:35:00.000Z,Paddy_EIRE,Jack_Sparrow,type application in terminal
+2007-09-04T12:35:00.000Z,Jack_Sparrow,Paddy_EIRE,Example please
+2007-09-04T12:36:00.000Z,Jack_Sparrow,Paddy_EIRE,"I can run it from terminal, just trying to get a launcher to work from desktop"
+2007-09-04T12:37:00.000Z,Paddy_EIRE,Jack_Sparrow,when you right click and create launcher choose application in terminal and then use the 'pathto./sauerbraten_unix -w1280 -h960'
+2007-09-04T12:38:00.000Z,Jack_Sparrow,Paddy_EIRE,I thought I tried that....  but will try again.
+2007-09-04T12:39:00.000Z,Jack_Sparrow,Paddy_EIRE,Is there a leadind slash as in /home/jack/sauerbraten/./sauerbraten-unix etc...
+2007-09-12T12:51:00.000Z,Paddy_EIRE,Jack_Sparrow,actually I'm looking around at other blogs and web sites created by ubuntu users and would like to see something of yours if you dont mind?
+2007-09-12T12:52:00.000Z,Jack_Sparrow,Paddy_EIRE,I am not a blog kinda guy...  I just write stuff I need or what I get paid to write
+2007-12-01T10:48:00.000Z,Jack_Sparrow,Paddy_EIRE,do you run wine or dual boot your pc?
+2007-12-01T10:49:00.000Z,Paddy_EIRE,Jack_Sparrow,occasionally run wine
+2007-12-01T10:49:00.000Z,Paddy_EIRE,Jack_Sparrow,although dual-booting is better when it comes to gaming
+2007-12-01T10:49:00.000Z,Jack_Sparrow,Paddy_EIRE,I may ask you to test a program in a week or two...  It will run in wine or windows...
+2007-12-01T10:50:00.000Z,Jack_Sparrow,Paddy_EIRE,"Will let you know when I get it to beta.. It isnt anything special, but should let you fix or tweak ubuntu system files from Windows or Wine.  full gui"
+2007-12-01T10:51:00.000Z,Paddy_EIRE,Jack_Sparrow,wow.. very nice :)
+2007-12-01T10:51:00.000Z,Jack_Sparrow,Paddy_EIRE,Nothing special.. but will have you check it out for me.
+2007-12-01T10:51:00.000Z,Paddy_EIRE,Jack_Sparrow,anytime... :D
+2008-03-08T02:07:00.000Z,Jack_Sparrow,Paddy_EIRE,sure.. rdesktop
+2008-03-08T02:08:00.000Z,Paddy_EIRE,Jack_Sparrow,I have tried 'Remote Desktop' in system > preferences >..  Is that what you mean?
+2008-03-08T02:09:00.000Z,Jack_Sparrow,Paddy_EIRE,http://paste.ubuntu-nl.org/58797/             are my notes
+2008-03-08T02:09:00.000Z,Paddy_EIRE,Jack_Sparrow,nice one... do I really need to have static IPs.. I was hoping to avoid that :S
+2008-03-08T02:10:00.000Z,Jack_Sparrow,Paddy_EIRE,See the link in my notes about setting up a relay for that
+2008-03-08T02:11:00.000Z,Paddy_EIRE,Jack_Sparrow,never fail for Jack is here :)
+2008-03-08T02:32:00.000Z,Paddy_EIRE,Jack_Sparrow,when I type 'vncviewer -fullscreen 192.168.2.102' in a terminal a login window appears with username (greyed out?) and password which is usable.. but alas I cannot type the username :(
+2008-04-20T20:08:00.000Z,Jack_Sparrow,Paddy_EIRE,"JUst like swimming, you will remember.. or drown"
+2008-04-20T20:09:00.000Z,Paddy_EIRE,Jack_Sparrow,yeah... lol
+2008-07-21T23:49:00.000Z,Jack_Sparrow,Paddy_EIRE,"Hey, long time no see, hope all is well"
+2008-12-09T20:17:00.000Z,Jack_Sparrow,Paddy_EIRE,"thanks,, that was mynext line.. what card/chipset"
+2008-12-11T05:04:00.000Z,Jack_Sparrow,Paddy_EIRE,It installs a lot of stuff he really should have anyhow..
+2008-12-11T05:04:00.000Z,Paddy_EIRE,Jack_Sparrow,yeah I prefer to let people install as they go
+2008-12-11T05:05:00.000Z,Paddy_EIRE,Jack_Sparrow,ubuntu-restricted-extras does not really convey a lot of information about what you are installing and what it may be used for
+2008-12-11T05:05:00.000Z,Paddy_EIRE,Jack_Sparrow,I feel people learn better this way
+2008-12-11T05:10:00.000Z,Paddy_EIRE,Jack_Sparrow,Ubuntu_Studio is now an official add-on in the same fashion as edubuntu
+2009-01-06T04:47:00.000Z,Paddy_EIRE,Jack_Sparrow,what are you trying to do man?
+2009-01-06T04:47:00.000Z,Paddy_EIRE,Jack_Sparrow,https://wiki.ubuntu.com/UbuntuBots
+2009-01-06T04:48:00.000Z,Jack_Sparrow,Paddy_EIRE,"Hi, yea , we were testing something"
+2009-01-06T04:48:00.000Z,Paddy_EIRE,Jack_Sparrow,ah.. looks like a handy method if that is the usage
+2009-01-06T04:49:00.000Z,Jack_Sparrow,Paddy_EIRE,They still must be approved before they become a factoid
+2009-01-06T04:49:00.000Z,Paddy_EIRE,Jack_Sparrow,hell yeah.. otherwise it would be mad :)
+2009-01-06T04:49:00.000Z,Jack_Sparrow,Paddy_EIRE,"Yea, it was.."
+2009-01-06T04:50:00.000Z,Paddy_EIRE,Jack_Sparrow,you accepted factoids before without approval :/
+2009-01-06T04:50:00.000Z,Jack_Sparrow,Paddy_EIRE,at one point in time..yes
+2009-01-06T04:50:00.000Z,Paddy_EIRE,Jack_Sparrow,hehe.. mad
+2009-01-08T21:13:00.000Z,Jack_Sparrow,Paddy_EIRE,Something about ath5 module in backports etc
+2009-01-08T21:14:00.000Z,Paddy_EIRE,Jack_Sparrow,gah.. I once had an odd problem where my wifi card would switch itelf off altogether..  had to boot a live cd to teh desktop before it would show again.. make *no* changes and reboot to my normal install :/

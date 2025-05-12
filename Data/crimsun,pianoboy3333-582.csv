@@ -1,0 +1,583 @@
+date,from,to,text
+2006-02-21T08:19:00.000Z,pianoboy3333,,Anyone know where I can get bpmx?
+2006-02-21T08:19:00.000Z,crimsun,pianoboy3333,from bmpx's wiki
+2006-02-21T08:19:00.000Z,crimsun,pianoboy3333,"otherwise, wait til it passes Debian NEW"
+2006-02-21T08:31:00.000Z,pianoboy3333,crimsun,will bmpx play m4p's?
+2006-02-21T08:31:00.000Z,crimsun,pianoboy3333,not if its backend doesn't
+2006-02-21T08:32:00.000Z,pianoboy3333,crimsun,backend meaning encoded?
+2006-02-21T08:32:00.000Z,crimsun,pianoboy3333,"no, I mean if xine or gst packages supporting faad"
+2006-02-21T08:33:00.000Z,crimsun,pianoboy3333,are{n't} installed
+2006-02-22T09:44:00.000Z,crimsun,pianoboy3333,I use jHymn to unfetter the songs that I purchase from iTMS.
+2006-02-22T09:45:00.000Z,crimsun,pianoboy3333,then I use gstreamer0.8-faad to play them through quod libet
+2006-02-22T09:45:00.000Z,pianoboy3333,crimsun,"ok, I just downloaded the jhymn source, what do I do next?"
+2006-02-22T09:45:00.000Z,crimsun,pianoboy3333,"you don't need the source, get the java [binary]  package"
+2006-02-22T09:45:00.000Z,pianoboy3333,crimsun,frm where?
+2006-02-22T09:46:00.000Z,crimsun,pianoboy3333,from the jHymn Web site
+2006-02-22T09:46:00.000Z,crimsun,pianoboy3333,I'm happy to continue this discussion in #ubuntu-offtopic if you need
+2006-02-22T10:24:00.000Z,pianoboy3333,crimsun,I used https://wiki.ubuntu.com/RestrictedFormats for java
+2006-02-23T09:01:00.000Z,pianoboy3333,crimsun,"ok, where do I get the java thing"
+2006-02-23T09:01:00.000Z,crimsun,pianoboy3333,?
+2006-02-23T09:02:00.000Z,pianoboy3333,crimsun,"remeber, yesterday, jhymn, needed java, but devel kit?"
+2006-02-23T09:02:00.000Z,crimsun,pianoboy3333,didn't you install the sun jdk?
+2006-02-23T09:02:00.000Z,pianoboy3333,crimsun,what is that?
+2006-02-23T09:03:00.000Z,pianoboy3333,crimsun,"ok, i'll get that now"
+2006-02-23T09:03:00.000Z,pianoboy3333,crimsun,I used that page to get java
+2006-02-23T09:04:00.000Z,pianoboy3333,crimsun,or do I need to now get the jdk from java.com?
+2006-02-23T09:05:00.000Z,crimsun,pianoboy3333,did you install a jdk or a jre?
+2006-02-23T09:05:00.000Z,pianoboy3333,crimsun,what's the difference? I don't think I have the development kit....
+2006-02-23T09:06:00.000Z,crimsun,pianoboy3333,dpkg -l \*j2sdk\*|grep ^ii
+2006-02-23T09:06:00.000Z,pianoboy3333,crimsun,no packages matched
+2006-02-23T09:07:00.000Z,pianoboy3333,crimsun,http://www.java.com/en/download/linux_manual.jsp here?
+2006-02-23T09:08:00.000Z,pianoboy3333,crimsun,do I want the SDK?
+2006-02-23T09:08:00.000Z,pianoboy3333,crimsun,do I want the SDK?
+2006-02-23T09:14:00.000Z,crimsun,pianoboy3333,"no, follow the directions on restrictedformats to install a java sdk"
+2006-02-23T09:42:00.000Z,pianoboy3333,crimsun,"I installed JDK, where/how do I find out where it is?"
+2006-02-23T09:55:00.000Z,pianoboy3333,crimsun,"about JHymn, i got the JDK but where is it, what folder do I give the run script"
+2006-03-03T12:28:00.000Z,crimsun,pianoboy3333,what are you trying to do?
+2006-03-03T12:28:00.000Z,pianoboy3333,crimsun,remove xfce and all that came with it
+2006-03-03T12:29:00.000Z,crimsun,pianoboy3333,sudo aptitude purge libxfce\* libexo\*
+2006-03-03T12:29:00.000Z,crimsun,pianoboy3333,which may not be precise. What you probably want is: sudo aptitude purge $(dpkg -l libxfce\* libexo\* |grep ^ii |awk '{ print $2 }')
+2006-03-03T12:30:00.000Z,pianoboy3333,crimsun,Isn't there something that doesn't ask me questions?
+2006-03-03T12:31:00.000Z,crimsun,pianoboy3333,it will always ask you to confirm a set of removals
+2006-03-03T12:31:00.000Z,pianoboy3333,crimsun,but it still wants to keep mouse pad and stuff... can't I just remove everything that came with xubuntu-desktop?
+2006-03-03T12:32:00.000Z,crimsun,pianoboy3333,"if you used aptitude to install xubuntu-desktop, yes"
+2006-03-03T12:32:00.000Z,pianoboy3333,crimsun,I used apt-get to install it
+2006-03-03T12:32:00.000Z,crimsun,pianoboy3333,then you'll have to do some of the leg work
+2006-03-03T12:32:00.000Z,pianoboy3333,crimsun,so what command?
+2006-03-03T12:33:00.000Z,crimsun,pianoboy3333,you can iterate through the dependency list of xfce4 and remove them
+2006-03-03T12:34:00.000Z,pianoboy3333,crimsun,using? synaptic? just search for xfce4 and completely remove everything with the ubuntu logo that is installed?
+2006-03-03T12:36:00.000Z,crimsun,pianoboy3333,how thorough a removal do you want?
+2006-07-14T13:47:00.000Z,pianoboy3333,crimsun,you there?
+2006-07-14T13:47:00.000Z,crimsun,pianoboy3333,no
+2006-07-14T13:51:00.000Z,pianoboy3333,crimsun,"I'm having interesting problems with my new logitech speakers, but it's not new, but I have isolated the problem, it appears that my speakers are crackling under linux, though while in my windows partition, they work fine. I am assuming it's screwy dell drivers, but what else do you think it could be/what should I do?"
+2006-07-15T14:36:00.000Z,pianoboy3333,crimsun,"can you help with a sound issue? I know you work on alsa, my left audio crackles with my integrated SigmaTel... but it's not hardware becuase they work beautifully in Windows XP, so it must be some driver issue, can you help me? I posted the rest of my problem at http://ubuntuforums.org/showthread.php?p=1258892"
+2006-07-15T14:38:00.000Z,crimsun,pianoboy3333,"I'll look in a bit, kinda busy atm"
+2006-07-15T14:38:00.000Z,pianoboy3333,crimsun,"ok, thanks, no problem"
+2006-07-16T16:03:00.000Z,pianoboy3333,crimsun,got some time now?
+2006-07-16T16:35:00.000Z,crimsun,pianoboy3333,I'll ping you in ~5 mins
+2006-07-16T16:35:00.000Z,pianoboy3333,crimsun,"ok, kool"
+2006-07-16T16:55:00.000Z,crimsun,pianoboy3333,hi
+2006-07-16T16:55:00.000Z,pianoboy3333,crimsun,hi!
+2006-07-16T16:56:00.000Z,pianoboy3333,crimsun,"ok, finally my left audio seems to be crackling in ubuntu, but I know it's not a hardware issue, because it works great in windows, so I'm figuring it's a driver/configureation problem"
+2006-07-16T16:56:00.000Z,crimsun,pianoboy3333,``amixer'' pastebinned?
+2006-07-16T16:57:00.000Z,pianoboy3333,crimsun,one moment...
+2006-07-16T16:58:00.000Z,pianoboy3333,crimsun,http://paste.ubuntu-nl.org/18117
+2006-07-16T05:02:00.000Z,pianoboy3333,crimsun,"so? also, windows reports I have a SigmaTel HIgh Def. Audio CODEC for integrated sound"
+2006-07-16T05:02:00.000Z,crimsun,pianoboy3333,I'll get to your pastebin in a sec
+2006-07-16T05:06:00.000Z,crimsun,pianoboy3333,at what levels (and for which mixer elements) does the crackling become undetectable?
+2006-07-16T05:06:00.000Z,pianoboy3333,crimsun,hmmmm... what file/song should I use to test?
+2006-07-16T05:07:00.000Z,crimsun,pianoboy3333,any
+2006-07-16T05:07:00.000Z,pianoboy3333,crimsun,I'm going to use gnome-volume-control to ajust ok?
+2006-07-16T05:07:00.000Z,crimsun,pianoboy3333,sure
+2006-07-16T05:09:00.000Z,pianoboy3333,crimsun,"well, I guess it's kind of hard to determine... I have somany volumes to play with, everything in alsamixer/gnome-volume-control and my speaker volume"
+2006-07-16T05:11:00.000Z,crimsun,pianoboy3333,a good starting point is to set 'Front' and 'PCM' to 50%
+2006-07-16T05:11:00.000Z,crimsun,pianoboy3333,then only adjust your speakers.
+2006-07-16T05:12:00.000Z,pianoboy3333,crimsun,"ok... PCM at 50%, front at 50% all else at 100%, speakers all the way up, still crackling"
+2006-07-16T05:13:00.000Z,pianoboy3333,crimsun,maybe it's the song....?
+2006-07-16T05:14:00.000Z,pianoboy3333,crimsun,one moment
+2006-07-16T05:16:00.000Z,pianoboy3333,crimsun,"I'd say the crackling doesn't go away, it just gets lower as I lower my speaker volume"
+2006-07-16T05:17:00.000Z,crimsun,pianoboy3333,"ok, then you'll need to try the various position_fix values."
+2006-07-16T05:17:00.000Z,pianoboy3333,crimsun,where can I fill that in?
+2006-07-16T05:17:00.000Z,crimsun,pianoboy3333,"close everything using /dev/dsp* /dev/snd/*, modprobe -r snd-hda-intel && modprobe snd-hda-intel position_fix=1"
+2006-07-16T05:18:00.000Z,crimsun,pianoboy3333,repeat for values 2 and 3 if 1 doesn't work.
+2006-07-16T05:18:00.000Z,pianoboy3333,crimsun,how can I find out what's using those devices?
+2006-07-16T05:19:00.000Z,pianoboy3333,crimsun,just close all sound applications?
+2006-07-16T05:20:00.000Z,pianoboy3333,crimsun,"and, should I run modprobe as root?"
+2006-07-16T05:20:00.000Z,crimsun,pianoboy3333,"modprobe requires privileged access, yes."
+2006-07-16T05:20:00.000Z,crimsun,pianoboy3333,"yes, you may need to log out of GNOME first."
+2006-07-16T05:21:00.000Z,pianoboy3333,crimsun,"logout, then back in?"
+2006-07-16T05:21:00.000Z,crimsun,pianoboy3333,"or just kill the mixer applet, too"
+2006-07-16T05:21:00.000Z,pianoboy3333,crimsun,then run the commands? or run the commands first?
+2006-07-16T05:21:00.000Z,pianoboy3333,crimsun,killall esd?
+2006-07-16T05:21:00.000Z,crimsun,pianoboy3333,then modprobe -r && ...
+2006-07-16T05:21:00.000Z,crimsun,pianoboy3333,no.
+2006-07-16T05:21:00.000Z,crimsun,pianoboy3333,``lsof /dev/dsp* /dev/snd/*''
+2006-07-16T05:21:00.000Z,pianoboy3333,crimsun,kk...
+2006-07-16T05:21:00.000Z,crimsun,pianoboy3333,"kill those processes, then modprobe -r  [..] "
+2006-07-16T05:22:00.000Z,pianoboy3333,crimsun,ok
+2006-07-16T05:24:00.000Z,pianoboy3333,crimsun,"I think it worked, will it stay like that when I reboot?!?!?!?"
+2006-07-16T05:24:00.000Z,crimsun,pianoboy3333,what worked?
+2006-07-16T05:25:00.000Z,pianoboy3333,crimsun,sudo modprobe -r snd-hda-intel && sudo modprobe snd-hda-intel position_fix=1
+2006-07-16T05:25:00.000Z,crimsun,pianoboy3333,"no, it won't stick."
+2006-07-16T05:25:00.000Z,pianoboy3333,crimsun,how can I make it stick?
+2006-07-16T05:25:00.000Z,crimsun,pianoboy3333,you have to do this: echo 'options snd-hda-intel position_fix=1' |sudo tee -a /etc/modprobe.d/snd-hda-intel
+2006-07-16T05:26:00.000Z,pianoboy3333,crimsun,"ok, kool, thanks, I have to go now"
+2006-07-16T05:26:00.000Z,pianoboy3333,crimsun,I'll catch you later
+2006-07-16T05:38:00.000Z,pianoboy3333,crimsun,"I just rebooted, it's crackling again..."
+2006-07-16T05:38:00.000Z,crimsun,pianoboy3333,then posfix 1 wasn't appropriate. Keep going with 2.
+2006-07-16T05:39:00.000Z,pianoboy3333,crimsun,"but it worked, after I did it, but just when I rebooted it stopped working good"
+2006-07-16T05:40:00.000Z,crimsun,pianoboy3333,then unload it and pass the posfix parameter
+2006-07-16T05:40:00.000Z,pianoboy3333,crimsun,"right, but how can I get it to work for after I reboot"
+2006-07-16T05:41:00.000Z,crimsun,pianoboy3333,you can't if it doesn't work by default.
+2006-07-16T07:10:00.000Z,pianoboy3333,crimsun,I got the setting to stick
+2006-07-18T16:25:00.000Z,crimsun,pianoboy3333,"well, does that card actually exist (i.e., driver for it loaded)?"
+2006-07-18T16:26:00.000Z,pianoboy3333,crimsun,"I believe so, same one as before, that had the problems, I was trying a different one, but I took it out, and I guess some config got messed up"
+2006-07-18T16:26:00.000Z,crimsun,pianoboy3333,'I believe so' is much too querulous
+2006-07-18T16:27:00.000Z,pianoboy3333,crimsun,"well, the one in my computer is the hda intel one"
+2006-07-18T16:27:00.000Z,crimsun,pianoboy3333,``asoundconf list''
+2006-07-18T16:27:00.000Z,pianoboy3333,crimsun,Names of available sound cards: Intel
+2006-07-18T16:27:00.000Z,crimsun,pianoboy3333,and that's it?
+2006-07-18T16:28:00.000Z,pianoboy3333,crimsun,yea
+2006-07-18T16:28:00.000Z,crimsun,pianoboy3333,and you've used System> Preferences> Sound> Set default card ?
+2006-07-18T16:28:00.000Z,pianoboy3333,crimsun,yea.
+2006-07-18T16:28:00.000Z,crimsun,pianoboy3333,``asoundconf set-default-card Intel''
+2006-07-18T16:28:00.000Z,pianoboy3333,crimsun,is there a way to restart alsa?
+2006-07-18T16:29:00.000Z,pianoboy3333,crimsun,"ah, all good after that last one"
+2006-07-18T16:29:00.000Z,pianoboy3333,crimsun,thank you once again :)
+2006-10-26T15:32:00.000Z,pianoboy3333,crimsun,you there?
+2006-10-26T15:35:00.000Z,crimsun,pianoboy3333,I'm in a meeting atm. What do you need?
+2006-10-26T15:36:00.000Z,pianoboy3333,crimsun,nm then sorry to bother you
+2006-10-31T06:33:00.000Z,pianoboy3333,crimsun,really... that's buggin me
+2006-11-09T15:07:00.000Z,pianoboy3333,crimsun,what's up with getting the hda modules into ubuntu? or will that have to be in fiesty?
+2006-11-11T17:25:00.000Z,pianoboy3333,crimsun,what's up with the hda modules and getting them into ubuntu?
+2006-11-11T17:26:00.000Z,crimsun,pianoboy3333,too vague
+2006-11-11T17:34:00.000Z,crimsun,pianoboy3333,"did you feel like elaborating, or were you going to leave the question as vague?"
+2006-11-11T17:40:00.000Z,pianoboy3333,crimsun,"I feel like being vauge... The newest alsa packages I mean, do you know if 1.0.13 is going to get into ubuntu edgy?"
+2006-11-11T17:40:00.000Z,crimsun,pianoboy3333,it's already in edgy.
+2006-11-11T17:40:00.000Z,pianoboy3333,crimsun,really?
+2006-11-11T17:40:00.000Z,crimsun,pianoboy3333,at least my portion of it is
+2006-11-11T17:41:00.000Z,crimsun,pianoboy3333,"you'll have to manually apply my queue, but yes, it all there. See kernel-team@"
+2006-11-11T17:42:00.000Z,pianoboy3333,crimsun,alsa-base is 10.0.11
+2006-11-11T17:42:00.000Z,crimsun,pianoboy3333,so?
+2006-11-11T17:42:00.000Z,crimsun,pianoboy3333,the available hda via kernel-team is post-1.0.13
+2006-11-11T17:42:00.000Z,pianoboy3333,crimsun,what's kernel-team? Is it a repository?
+2006-11-11T17:43:00.000Z,pianoboy3333,crimsun,so are there debs of a newer version of the driver with snd-hda-intel ?
+2006-11-11T17:45:00.000Z,pianoboy3333,crimsun,"I have to apply patches? will I have to configure the kernel, or just apply the patches and run, I have had experience with building a kernel... unsuccesful wifi support, but w/e"
+2006-11-11T17:45:00.000Z,crimsun,pianoboy3333,"if you want nice debs of alsa-modules, just grab upstream's alsa-driver-1.0.13 and generate them using module-assistant"
+2006-11-11T17:46:00.000Z,crimsun,pianoboy3333,"my patches are for our git repos, not for the end user"
+2006-11-11T17:46:00.000Z,pianoboy3333,crimsun,"oh, I see, so where can I learn about making debs with m-a?"
+2006-11-11T17:46:00.000Z,crimsun,pianoboy3333,the README.Debian shipped with alsa-source
+2006-11-11T17:46:00.000Z,pianoboy3333,crimsun,so what should I download off of alsa-project.org?
+2006-11-11T17:47:00.000Z,pianoboy3333,crimsun,will I need the newest libasound for that?
+2006-11-11T17:48:00.000Z,pianoboy3333,crimsun,"ok, so unpackage the source, and look at the README.debian in debian/ ?"
+2006-11-11T17:49:00.000Z,crimsun,pianoboy3333,"no, there's a README.Debian in alsa-source (binary package)"
+2006-11-11T17:49:00.000Z,pianoboy3333,crimsun,wait... you said to download alsa-driver
+2006-11-11T17:50:00.000Z,crimsun,pianoboy3333,I meant what I typed. Download alsa-driver from upstream; consult the documentation from alsa-source.
+2006-11-11T17:51:00.000Z,pianoboy3333,crimsun,"I'm not sure.... so I can download alsa-driver from upstream, and just compile that, or get debian sid's and debuild that...?"
+2006-11-11T17:52:00.000Z,crimsun,pianoboy3333,do you want a short answer or a long answer?
+2006-11-11T17:52:00.000Z,pianoboy3333,crimsun,but what is alsa-source? just a package in the repos?
+2006-11-11T17:52:00.000Z,pianoboy3333,crimsun,"I'm just very confused that's all, knowing what alsa-source is may clear things up"
+2006-11-11T17:52:00.000Z,pianoboy3333,crimsun,I understand alsa-driver is the driver
+2006-11-11T17:53:00.000Z,crimsun,pianoboy3333,"I use 'alsa-driver' to refer to the name of the Debian/Ubuntu source package that generates the alsa-base, linux-sound-base, and alsa-source binary packages. I use 'alsa-driver-1.0.13' when referring to upstream (ftp.alsa-project.org) alsa-driver tarball."
+2006-11-11T17:54:00.000Z,pianoboy3333,crimsun,"but mostly, the easiest thing may be just getting alsa-driver from debian sid, so I'll go with that"
+2006-11-11T17:54:00.000Z,crimsun,pianoboy3333,you mean alsa-source
+2006-11-11T17:54:00.000Z,pianoboy3333,crimsun,sure
+2006-11-11T17:55:00.000Z,pianoboy3333,crimsun,so just compile the alsa-source package? or that has to be added to my kernel in some way
+2006-11-11T17:56:00.000Z,crimsun,pianoboy3333,read /usr/share/doc/alsa-source/README.Debian
+2006-11-11T17:58:00.000Z,pianoboy3333,crimsun,wait... but the .orig.tar.gz of alsa-source _is_ alsa-driver
+2006-11-11T17:58:00.000Z,crimsun,pianoboy3333,alsa-source is a binary package. It contains a stripped orig.tar.gz of alsa-driver-1.0.13.
+2006-11-11T06:00:00.000Z,pianoboy3333,crimsun,"but how do I get the source of it... I don't have it installed on my system at all, I'm sorry, I know I sound difficult, just install it, or download sid's deb?"
+2006-11-11T06:02:00.000Z,crimsun,pianoboy3333,wget http://archive.ubuntu.com/ubuntu/pool/universe/a/alsa-driver/alsa-source_1.0.13-1ubuntu1_all.deb && sudo dpkg -i alsa-source_1.0.13-1ubuntu1_all.deb
+2006-11-11T06:15:00.000Z,pianoboy3333,crimsun,thank you
+2006-11-11T06:22:00.000Z,pianoboy3333,crimsun,"the readme.debian says cd into the root of the headers or source tree that I have prepared and run make-kpkg, but should that be /usr/src/linux-headers-vers/ or /usr/src/linux-headers-vers-generic/ vers being 2.6.17-10"
+2006-11-11T06:23:00.000Z,pianoboy3333,crimsun,"that's not in that readme, what would you do?"
+2006-11-11T06:25:00.000Z,pianoboy3333,crimsun,"and that will build the deb of the driver, thank you"
+2006-11-11T06:30:00.000Z,pianoboy3333,crimsun,I got a: alsa-modules-2.6.17-10-generic depends on alsa-base (>= 1.0.12-1); however: Version of alsa-base on system is 1.0.11-5ubuntu1.
+2006-11-11T06:31:00.000Z,crimsun,pianoboy3333,then grab feisty's alsa-base
+2006-11-11T06:31:00.000Z,crimsun,pianoboy3333,and linux-sound-base
+2006-11-11T06:32:00.000Z,pianoboy3333,crimsun,ok
+2006-11-11T06:35:00.000Z,pianoboy3333,crimsun,where do I get that? packages.ububntu.com/fiesty doesn't work! is it ei?
+2006-11-11T06:35:00.000Z,crimsun,pianoboy3333,what?
+2006-11-11T06:36:00.000Z,crimsun,pianoboy3333,feisty is the correct spelling.
+2006-11-11T06:37:00.000Z,pianoboy3333,crimsun,feisty alsa-base is 1.0.11... grab upstream from alsa-project?
+2006-11-11T06:37:00.000Z,crimsun,pianoboy3333,no it's not
+2006-11-11T06:37:00.000Z,pianoboy3333,crimsun,http://packages.ubuntu.com/feisty/sound/alsa-base
+2006-11-11T06:37:00.000Z,crimsun,pianoboy3333,I merged it last night and am running it; I know darned well what feisty has.
+2006-11-11T06:38:00.000Z,crimsun,pianoboy3333,"i.e., play 'spot the feisty packages' at http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-driver/"
+2006-11-11T06:38:00.000Z,pianoboy3333,crimsun,lol
+2006-11-11T06:41:00.000Z,pianoboy3333,crimsun,"so, now that I have those installed, do I need alsa-driver too? or that'll do it"
+2006-11-11T06:41:00.000Z,crimsun,pianoboy3333,have you ignored the past hour or so? :-)
+2006-11-11T06:41:00.000Z,pianoboy3333,crimsun,"well, I got confused in the middle, and stopped for dinner the past 30 min"
+2006-11-11T06:44:00.000Z,pianoboy3333,crimsun,so I'm guessing m-a was an alternative to the drivers package
+2006-11-11T06:48:00.000Z,pianoboy3333,crimsun,what are the binary package names for the source package alsa-library
+2006-11-11T06:49:00.000Z,pianoboy3333,crimsun,seems I have to compile those
+2006-11-11T07:09:00.000Z,pianoboy3333,crimsun,"I just rebooted, and snd-hda-intel did not automatically load, so I had to not only modprobe that, but all the other snd_* modules, is there a way to get it to start up?"
+2006-11-11T07:09:00.000Z,pianoboy3333,crimsun,start up with the computer that is
+2006-11-11T07:20:00.000Z,crimsun,pianoboy3333,alsa-lib provides lib*asound2
+2006-11-11T07:21:00.000Z,crimsun,pianoboy3333,dmesg should provides clues as to why the drivers weren't loaded automagically
+2006-11-11T07:31:00.000Z,pianoboy3333,crimsun,"http://piano.juicemedia.tv/junk/alsaprobs <-- I can't make any sense of it, it all seems like mush to me, seems like it can't load/register some important modules? '...' is where I took out parts that didn't seem important, let me know if you want my whole dmesg"
+2006-11-11T09:11:00.000Z,pianoboy3333,crimsun,"if you get a moment, can you take a look at http://piano.juicemedia.tv/junk/alsaprobs <-- I can't make any sense of it, it all seems like mush to me, seems like it can't load/register some important modules? '...' is where I took out parts that didn't seem important"
+2006-11-12T17:21:00.000Z,pianoboy3333,crimsun,did you ever look at that file?
+2006-11-12T17:49:00.000Z,crimsun,pianoboy3333,'that file'? No. I have no idea what you're referring to.
+2006-11-16T11:34:00.000Z,pianoboy3333,crimsun,did you ever get around to taking a look at my boot errors for my sound?
+2006-11-17T12:06:00.000Z,pianoboy3333,crimsun,can you help me with my sound?
+2006-11-18T16:00:00.000Z,crimsun,pianoboy3333,what do you need regarding your sound?
+2006-11-18T16:01:00.000Z,pianoboy3333,crimsun,"ah, thanks, ok, take a look at http://piano.juicemedia.tv/junk/alsaprobs"
+2006-11-18T16:01:00.000Z,pianoboy3333,crimsun,you said take a look as to why alsa isn't starting up with my computer -- it's also oss
+2006-11-18T16:02:00.000Z,crimsun,pianoboy3333,are you using your own kernel or a Ubuntu one?
+2006-11-18T16:02:00.000Z,pianoboy3333,crimsun,"an ubuntu one, latest in edgy -- 2.6.17-10-generic"
+2006-11-18T16:03:00.000Z,crimsun,pianoboy3333,and which alsa version?
+2006-11-18T16:03:00.000Z,crimsun,pianoboy3333,are you compiling against the correct linux-headers-$(uname -r) ?
+2006-11-18T16:05:00.000Z,pianoboy3333,crimsun,how can I find my alsa verision?
+2006-11-18T16:06:00.000Z,pianoboy3333,crimsun,I believe it's 1.0.13
+2006-11-18T16:06:00.000Z,pianoboy3333,crimsun,yes
+2006-11-18T16:07:00.000Z,pianoboy3333,crimsun,and what do you mean by compiling agains the correct kernel version?
+2006-11-18T16:07:00.000Z,crimsun,pianoboy3333,dpkg -l linux-headers-$(uname -r) |grep ^ii
+2006-11-18T16:08:00.000Z,pianoboy3333,crimsun,it returned: ii  linux-headers-2.6.17-10-generic 2.6.17-10.33   Linux kernel headers for version 2.6.17 on x86/x86_64
+2006-11-18T16:08:00.000Z,crimsun,pianoboy3333,and what parameters did you pass to configure?
+2006-11-18T16:08:00.000Z,pianoboy3333,crimsun,configure when I compilied what?
+2006-11-18T16:09:00.000Z,pianoboy3333,crimsun,"to my understanding I compiled the drivers with module-assistant, so whatever it passes I'd assume"
+2006-11-18T16:11:00.000Z,crimsun,pianoboy3333,"unload all the alsa modules, then only modprobe the one you need"
+2006-11-18T16:11:00.000Z,crimsun,pianoboy3333,then pastebin the error spew and dmesg|tail
+2006-11-18T16:12:00.000Z,pianoboy3333,crimsun,"ok, how would I unload them all, just look at that file, and unload all those?"
+2006-11-18T16:12:00.000Z,crimsun,pianoboy3333,yes
+2006-11-18T16:14:00.000Z,pianoboy3333,crimsun,"well, already I can't sudo modprobe -r snd_seq_device, but sudo lsof /dev/dsp* /dev/snd/* returns no output"
+2006-11-18T16:15:00.000Z,crimsun,pianoboy3333,sudo modprobe -r $(lsmod |grep ^snd |awk '{print $1}' |sort -r)
+2006-11-18T16:15:00.000Z,pianoboy3333,crimsun,I got FATAL: Module snd_timer is in use
+2006-11-18T16:16:00.000Z,crimsun,pianoboy3333,purge the alsa-modules-* package that was generated by module-assistant
+2006-11-18T16:16:00.000Z,pianoboy3333,crimsun,then what
+2006-11-18T16:17:00.000Z,crimsun,pianoboy3333,run the compile and install by hand
+2006-11-18T16:17:00.000Z,pianoboy3333,crimsun,would the package be alsa-modules-2.6.17-10-generic?
+2006-11-18T16:18:00.000Z,crimsun,pianoboy3333,"the version seems strange, but sure"
+2006-11-18T16:19:00.000Z,pianoboy3333,crimsun,should I purge alsa-driver too?
+2006-11-18T16:20:00.000Z,crimsun,pianoboy3333,"there's no alsa-driver\* binary package, why?"
+2006-11-18T16:21:00.000Z,pianoboy3333,crimsun,"what do you mean...? in the repositories...? maybe because I compiled it once upon a time by myself, I really have no clue"
+2006-11-18T16:21:00.000Z,crimsun,pianoboy3333,dpkg -l alsa-driver\*|grep ^ii
+2006-11-18T16:22:00.000Z,pianoboy3333,crimsun,yea... it seems I checkinstalled it at one point
+2006-11-18T16:22:00.000Z,pianoboy3333,crimsun,ii  alsa-driver    1.0.13-1       Package created with checkinstall 1.6.0
+2006-11-18T16:24:00.000Z,crimsun,pianoboy3333,uhh...checkinstall?!
+2006-11-18T16:24:00.000Z,crimsun,pianoboy3333,"yes, please do remove alsa-driver, then."
+2006-11-18T16:24:00.000Z,pianoboy3333,crimsun,it appears so
+2006-11-18T16:25:00.000Z,pianoboy3333,crimsun,"so remove alsa-modules-2.6.17-10-generic, alsa-driver, and alsa-oss too?"
+2006-11-18T16:25:00.000Z,crimsun,pianoboy3333,only the first two.
+2006-11-18T16:25:00.000Z,pianoboy3333,crimsun,"ok, now what"
+2006-11-18T16:26:00.000Z,crimsun,pianoboy3333,"now untar alsa-driver-1.0.13.tar.bz2 afresh, and use the correct parameters to pass to configure"
+2006-11-18T16:27:00.000Z,crimsun,pianoboy3333,"no idea, what's your sound card?"
+2006-11-18T16:27:00.000Z,pianoboy3333,crimsun,should I put it in /usr/src ?
+2006-11-18T16:27:00.000Z,crimsun,pianoboy3333,no
+2006-11-18T16:27:00.000Z,pianoboy3333,crimsun,hda-intel
+2006-11-18T16:28:00.000Z,crimsun,pianoboy3333,./configure --with-cards=hda-intel --with-oss=yes --with-sequencer=yes --with-debug=full --with-kernel=/lib/modules/$(uname -r)/build && make && sudo make install-modules && sudo depmod -e
+2006-11-18T16:28:00.000Z,pianoboy3333,crimsun,"oooohhh I remember what you told me to do last time, you told me to get the feisty of alsa-source and compile it with m-a"
+2006-11-18T16:29:00.000Z,pianoboy3333,crimsun,what about --prefix=/usr
+2006-11-18T16:29:00.000Z,crimsun,pianoboy3333,no need
+2006-11-18T16:29:00.000Z,pianoboy3333,crimsun,the only thing that's bad is that this isn't going to build a deb :(
+2006-11-18T16:30:00.000Z,pianoboy3333,crimsun,"ok, what now"
+2006-11-18T16:32:00.000Z,pianoboy3333,crimsun,brb in 5 min
+2006-11-18T16:32:00.000Z,crimsun,pianoboy3333,reboot
+2006-11-19T17:10:00.000Z,pianoboy3333,crimsun,"ok, now it starts up with the computer, but every time I start it up, I have to unmute surround, front, and all those channels and such along with my recording stuff, it seems my volume preferences aren't saved...?"
+2006-11-19T17:11:00.000Z,crimsun,pianoboy3333,"well, see, when you installed that alsa-driver made with checkinstall, it SCREWED what Debian [&Ubuntu]  do for infrastructure. Yet another reason checkinstalled packages are BAD."
+2006-11-19T17:12:00.000Z,crimsun,pianoboy3333,so. apt-get --reinstall install linux-sound-base alsa-base
+2006-11-19T17:12:00.000Z,crimsun,pianoboy3333,"in the future, don't stab yourself in the face and ask us to clean up, thanks! :-)"
+2006-11-19T17:30:00.000Z,pianoboy3333,crimsun,will do ;)
+2006-11-19T17:42:00.000Z,pianoboy3333,crimsun,"no... still didn't unmute automatically, should I revert back to the alsa-base in edgy? (1.0.11)"
+2006-11-19T17:43:00.000Z,crimsun,pianoboy3333,didn't you do that with --reinstall?
+2006-11-19T17:44:00.000Z,pianoboy3333,crimsun,"well, you had me a few days ago install the feisty alsa-base which was 1.0.13"
+2006-11-19T17:49:00.000Z,pianoboy3333,crimsun,so should I install the edgy version again?
+2006-12-28T08:39:00.000Z,crimsun,pianoboy3333,don't use checkinstall. Use the existing packaging infrastructure for mplayer.
+2006-12-28T08:40:00.000Z,pianoboy3333,crimsun,"but then it'll screw up my packages and such, I think it wants to install a crap load of libraries installed already from edgy, like libavccodecs"
+2006-12-28T08:41:00.000Z,crimsun,pianoboy3333,"no, you're not listening. Use the infrastructure, not the package."
+2006-12-28T08:41:00.000Z,pianoboy3333,crimsun,what do you mean?
+2006-12-28T08:41:00.000Z,pianoboy3333,crimsun,wouldn't that be make install?
+2006-12-28T08:41:00.000Z,crimsun,pianoboy3333,no.
+2006-12-28T08:41:00.000Z,crimsun,pianoboy3333,each Debian package has packaging infrastructure. Use it.
+2006-12-28T08:42:00.000Z,pianoboy3333,crimsun,"either it's the fact it's late here, or I've just no idea what you are talking about, how would I take advantage of such a packaging infrastructure"
+2006-12-28T08:43:00.000Z,crimsun,pianoboy3333,apt-get source mplayer
+2006-12-28T08:43:00.000Z,crimsun,pianoboy3333,then use the existing debian/
+2006-12-28T08:43:00.000Z,crimsun,pianoboy3333,adjust the files as per necessary
+2006-12-28T08:44:00.000Z,pianoboy3333,crimsun,"oh, I see what you're saying, make real debs"
+2006-12-28T08:44:00.000Z,crimsun,pianoboy3333,signing or not signing makes no difference
+2007-01-16T17:48:00.000Z,pianoboy3333,crimsun,how do I find out what process/program is using /dev/audio?
+2007-01-16T17:48:00.000Z,crimsun,pianoboy3333,lsof /dev/audio
+2007-01-16T17:54:00.000Z,pianoboy3333,crimsun,"the audio coming out of my left speaker is crackling, anything I can do to fix this? I've got a sigmatel on board audio chip, which is using the hda-intel module"
+2007-01-16T06:01:00.000Z,pianoboy3333,crimsun,can you help me with that?
+2007-01-16T06:02:00.000Z,crimsun,pianoboy3333,that's pretty vague. Only the left?
+2007-01-16T06:04:00.000Z,pianoboy3333,crimsun,"yes... it's quite weird, I had this issue before, and then no audio, since the native alsa drivers in ubuntu did not support the hda modules, you told me, so I compiled 0.1.13 like you said, and I have the crackling issue again, and my volume is always muted when I boot up my computer'"
+2007-01-16T06:05:00.000Z,crimsun,pianoboy3333,then use 1.0.14rc1
+2007-01-16T06:05:00.000Z,pianoboy3333,crimsun,ummm... ok
+2007-01-16T06:05:00.000Z,pianoboy3333,crimsun,how stable is it?
+2007-01-16T06:09:00.000Z,pianoboy3333,crimsun,"ok, I downloaded and untarred alsa-driver-1.0.14rc1, what should I run?"
+2007-01-16T06:15:00.000Z,pianoboy3333,crimsun,"what flags should I give configure, and how else should I build it"
+2007-01-16T06:16:00.000Z,crimsun,pianoboy3333,"I've been over this a half-dozen times, and I'm very busy atm."
+2007-02-03T09:34:00.000Z,pianoboy3333,crimsun,are you there? can you help me compile the latest alsa?
+2007-02-11T13:58:00.000Z,pianoboy3333,crimsun,are you there? could you help me compile the latest alsa for hda intel?
+2006-02-21T08:19:00.000Z,pianoboy3333,,Anyone know where I can get bpmx?
+2006-02-21T08:19:00.000Z,crimsun,pianoboy3333,from bmpx's wiki
+2006-02-21T08:19:00.000Z,crimsun,pianoboy3333,"otherwise, wait til it passes Debian NEW"
+2006-02-21T08:31:00.000Z,pianoboy3333,crimsun,will bmpx play m4p's?
+2006-02-21T08:31:00.000Z,crimsun,pianoboy3333,not if its backend doesn't
+2006-02-21T08:32:00.000Z,pianoboy3333,crimsun,backend meaning encoded?
+2006-02-21T08:32:00.000Z,crimsun,pianoboy3333,"no, I mean if xine or gst packages supporting faad"
+2006-02-21T08:33:00.000Z,crimsun,pianoboy3333,are{n't} installed
+2006-02-22T09:44:00.000Z,crimsun,pianoboy3333,I use jHymn to unfetter the songs that I purchase from iTMS.
+2006-02-22T09:45:00.000Z,crimsun,pianoboy3333,then I use gstreamer0.8-faad to play them through quod libet
+2006-02-22T09:45:00.000Z,pianoboy3333,crimsun,"ok, I just downloaded the jhymn source, what do I do next?"
+2006-02-22T09:45:00.000Z,crimsun,pianoboy3333,"you don't need the source, get the java [binary]  package"
+2006-02-22T09:45:00.000Z,pianoboy3333,crimsun,frm where?
+2006-02-22T09:46:00.000Z,crimsun,pianoboy3333,from the jHymn Web site
+2006-02-22T09:46:00.000Z,crimsun,pianoboy3333,I'm happy to continue this discussion in #ubuntu-offtopic if you need
+2006-02-22T10:24:00.000Z,pianoboy3333,crimsun,I used https://wiki.ubuntu.com/RestrictedFormats for java
+2006-02-23T09:01:00.000Z,pianoboy3333,crimsun,"ok, where do I get the java thing"
+2006-02-23T09:01:00.000Z,crimsun,pianoboy3333,?
+2006-02-23T09:02:00.000Z,pianoboy3333,crimsun,"remeber, yesterday, jhymn, needed java, but devel kit?"
+2006-02-23T09:02:00.000Z,crimsun,pianoboy3333,didn't you install the sun jdk?
+2006-02-23T09:02:00.000Z,pianoboy3333,crimsun,what is that?
+2006-02-23T09:03:00.000Z,pianoboy3333,crimsun,"ok, i'll get that now"
+2006-02-23T09:03:00.000Z,pianoboy3333,crimsun,I used that page to get java
+2006-02-23T09:04:00.000Z,pianoboy3333,crimsun,or do I need to now get the jdk from java.com?
+2006-02-23T09:05:00.000Z,crimsun,pianoboy3333,did you install a jdk or a jre?
+2006-02-23T09:05:00.000Z,pianoboy3333,crimsun,what's the difference? I don't think I have the development kit....
+2006-02-23T09:06:00.000Z,crimsun,pianoboy3333,dpkg -l \*j2sdk\*|grep ^ii
+2006-02-23T09:06:00.000Z,pianoboy3333,crimsun,no packages matched
+2006-02-23T09:07:00.000Z,pianoboy3333,crimsun,http://www.java.com/en/download/linux_manual.jsp here?
+2006-02-23T09:08:00.000Z,pianoboy3333,crimsun,do I want the SDK?
+2006-02-23T09:08:00.000Z,pianoboy3333,crimsun,do I want the SDK?
+2006-02-23T09:14:00.000Z,crimsun,pianoboy3333,"no, follow the directions on restrictedformats to install a java sdk"
+2006-02-23T09:42:00.000Z,pianoboy3333,crimsun,"I installed JDK, where/how do I find out where it is?"
+2006-02-23T09:55:00.000Z,pianoboy3333,crimsun,"about JHymn, i got the JDK but where is it, what folder do I give the run script"
+2006-03-03T12:28:00.000Z,crimsun,pianoboy3333,what are you trying to do?
+2006-03-03T12:28:00.000Z,pianoboy3333,crimsun,remove xfce and all that came with it
+2006-03-03T12:29:00.000Z,crimsun,pianoboy3333,sudo aptitude purge libxfce\* libexo\*
+2006-03-03T12:29:00.000Z,crimsun,pianoboy3333,which may not be precise. What you probably want is: sudo aptitude purge $(dpkg -l libxfce\* libexo\* |grep ^ii |awk '{ print $2 }')
+2006-03-03T12:30:00.000Z,pianoboy3333,crimsun,Isn't there something that doesn't ask me questions?
+2006-03-03T12:31:00.000Z,crimsun,pianoboy3333,it will always ask you to confirm a set of removals
+2006-03-03T12:31:00.000Z,pianoboy3333,crimsun,but it still wants to keep mouse pad and stuff... can't I just remove everything that came with xubuntu-desktop?
+2006-03-03T12:32:00.000Z,crimsun,pianoboy3333,"if you used aptitude to install xubuntu-desktop, yes"
+2006-03-03T12:32:00.000Z,pianoboy3333,crimsun,I used apt-get to install it
+2006-03-03T12:32:00.000Z,crimsun,pianoboy3333,then you'll have to do some of the leg work
+2006-03-03T12:32:00.000Z,pianoboy3333,crimsun,so what command?
+2006-03-03T12:33:00.000Z,crimsun,pianoboy3333,you can iterate through the dependency list of xfce4 and remove them
+2006-03-03T12:34:00.000Z,pianoboy3333,crimsun,using? synaptic? just search for xfce4 and completely remove everything with the ubuntu logo that is installed?
+2006-03-03T12:36:00.000Z,crimsun,pianoboy3333,how thorough a removal do you want?
+2006-07-14T13:47:00.000Z,pianoboy3333,crimsun,you there?
+2006-07-14T13:47:00.000Z,crimsun,pianoboy3333,no
+2006-07-14T13:51:00.000Z,pianoboy3333,crimsun,"I'm having interesting problems with my new logitech speakers, but it's not new, but I have isolated the problem, it appears that my speakers are crackling under linux, though while in my windows partition, they work fine. I am assuming it's screwy dell drivers, but what else do you think it could be/what should I do?"
+2006-07-15T14:36:00.000Z,pianoboy3333,crimsun,"can you help with a sound issue? I know you work on alsa, my left audio crackles with my integrated SigmaTel... but it's not hardware becuase they work beautifully in Windows XP, so it must be some driver issue, can you help me? I posted the rest of my problem at http://ubuntuforums.org/showthread.php?p=1258892"
+2006-07-15T14:38:00.000Z,crimsun,pianoboy3333,"I'll look in a bit, kinda busy atm"
+2006-07-15T14:38:00.000Z,pianoboy3333,crimsun,"ok, thanks, no problem"
+2006-07-16T16:03:00.000Z,pianoboy3333,crimsun,got some time now?
+2006-07-16T16:35:00.000Z,crimsun,pianoboy3333,I'll ping you in ~5 mins
+2006-07-16T16:35:00.000Z,pianoboy3333,crimsun,"ok, kool"
+2006-07-16T16:55:00.000Z,crimsun,pianoboy3333,hi
+2006-07-16T16:55:00.000Z,pianoboy3333,crimsun,hi!
+2006-07-16T16:56:00.000Z,pianoboy3333,crimsun,"ok, finally my left audio seems to be crackling in ubuntu, but I know it's not a hardware issue, because it works great in windows, so I'm figuring it's a driver/configureation problem"
+2006-07-16T16:56:00.000Z,crimsun,pianoboy3333,``amixer'' pastebinned?
+2006-07-16T16:57:00.000Z,pianoboy3333,crimsun,one moment...
+2006-07-16T16:58:00.000Z,pianoboy3333,crimsun,http://paste.ubuntu-nl.org/18117
+2006-07-16T05:02:00.000Z,pianoboy3333,crimsun,"so? also, windows reports I have a SigmaTel HIgh Def. Audio CODEC for integrated sound"
+2006-07-16T05:02:00.000Z,crimsun,pianoboy3333,I'll get to your pastebin in a sec
+2006-07-16T05:06:00.000Z,crimsun,pianoboy3333,at what levels (and for which mixer elements) does the crackling become undetectable?
+2006-07-16T05:06:00.000Z,pianoboy3333,crimsun,hmmmm... what file/song should I use to test?
+2006-07-16T05:07:00.000Z,crimsun,pianoboy3333,any
+2006-07-16T05:07:00.000Z,pianoboy3333,crimsun,I'm going to use gnome-volume-control to ajust ok?
+2006-07-16T05:07:00.000Z,crimsun,pianoboy3333,sure
+2006-07-16T05:09:00.000Z,pianoboy3333,crimsun,"well, I guess it's kind of hard to determine... I have somany volumes to play with, everything in alsamixer/gnome-volume-control and my speaker volume"
+2006-07-16T05:11:00.000Z,crimsun,pianoboy3333,a good starting point is to set 'Front' and 'PCM' to 50%
+2006-07-16T05:11:00.000Z,crimsun,pianoboy3333,then only adjust your speakers.
+2006-07-16T05:12:00.000Z,pianoboy3333,crimsun,"ok... PCM at 50%, front at 50% all else at 100%, speakers all the way up, still crackling"
+2006-07-16T05:13:00.000Z,pianoboy3333,crimsun,maybe it's the song....?
+2006-07-16T05:14:00.000Z,pianoboy3333,crimsun,one moment
+2006-07-16T05:16:00.000Z,pianoboy3333,crimsun,"I'd say the crackling doesn't go away, it just gets lower as I lower my speaker volume"
+2006-07-16T05:17:00.000Z,crimsun,pianoboy3333,"ok, then you'll need to try the various position_fix values."
+2006-07-16T05:17:00.000Z,pianoboy3333,crimsun,where can I fill that in?
+2006-07-16T05:17:00.000Z,crimsun,pianoboy3333,"close everything using /dev/dsp* /dev/snd/*, modprobe -r snd-hda-intel && modprobe snd-hda-intel position_fix=1"
+2006-07-16T05:18:00.000Z,crimsun,pianoboy3333,repeat for values 2 and 3 if 1 doesn't work.
+2006-07-16T05:18:00.000Z,pianoboy3333,crimsun,how can I find out what's using those devices?
+2006-07-16T05:19:00.000Z,pianoboy3333,crimsun,just close all sound applications?
+2006-07-16T05:20:00.000Z,pianoboy3333,crimsun,"and, should I run modprobe as root?"
+2006-07-16T05:20:00.000Z,crimsun,pianoboy3333,"modprobe requires privileged access, yes."
+2006-07-16T05:20:00.000Z,crimsun,pianoboy3333,"yes, you may need to log out of GNOME first."
+2006-07-16T05:21:00.000Z,pianoboy3333,crimsun,"logout, then back in?"
+2006-07-16T05:21:00.000Z,crimsun,pianoboy3333,"or just kill the mixer applet, too"
+2006-07-16T05:21:00.000Z,pianoboy3333,crimsun,then run the commands? or run the commands first?
+2006-07-16T05:21:00.000Z,pianoboy3333,crimsun,killall esd?
+2006-07-16T05:21:00.000Z,crimsun,pianoboy3333,then modprobe -r && ...
+2006-07-16T05:21:00.000Z,crimsun,pianoboy3333,no.
+2006-07-16T05:21:00.000Z,crimsun,pianoboy3333,``lsof /dev/dsp* /dev/snd/*''
+2006-07-16T05:21:00.000Z,pianoboy3333,crimsun,kk...
+2006-07-16T05:21:00.000Z,crimsun,pianoboy3333,"kill those processes, then modprobe -r  [..] "
+2006-07-16T05:22:00.000Z,pianoboy3333,crimsun,ok
+2006-07-16T05:24:00.000Z,pianoboy3333,crimsun,"I think it worked, will it stay like that when I reboot?!?!?!?"
+2006-07-16T05:24:00.000Z,crimsun,pianoboy3333,what worked?
+2006-07-16T05:25:00.000Z,pianoboy3333,crimsun,sudo modprobe -r snd-hda-intel && sudo modprobe snd-hda-intel position_fix=1
+2006-07-16T05:25:00.000Z,crimsun,pianoboy3333,"no, it won't stick."
+2006-07-16T05:25:00.000Z,pianoboy3333,crimsun,how can I make it stick?
+2006-07-16T05:25:00.000Z,crimsun,pianoboy3333,you have to do this: echo 'options snd-hda-intel position_fix=1' |sudo tee -a /etc/modprobe.d/snd-hda-intel
+2006-07-16T05:26:00.000Z,pianoboy3333,crimsun,"ok, kool, thanks, I have to go now"
+2006-07-16T05:26:00.000Z,pianoboy3333,crimsun,I'll catch you later
+2006-07-16T05:38:00.000Z,pianoboy3333,crimsun,"I just rebooted, it's crackling again..."
+2006-07-16T05:38:00.000Z,crimsun,pianoboy3333,then posfix 1 wasn't appropriate. Keep going with 2.
+2006-07-16T05:39:00.000Z,pianoboy3333,crimsun,"but it worked, after I did it, but just when I rebooted it stopped working good"
+2006-07-16T05:40:00.000Z,crimsun,pianoboy3333,then unload it and pass the posfix parameter
+2006-07-16T05:40:00.000Z,pianoboy3333,crimsun,"right, but how can I get it to work for after I reboot"
+2006-07-16T05:41:00.000Z,crimsun,pianoboy3333,you can't if it doesn't work by default.
+2006-07-16T07:10:00.000Z,pianoboy3333,crimsun,I got the setting to stick
+2006-07-18T16:25:00.000Z,crimsun,pianoboy3333,"well, does that card actually exist (i.e., driver for it loaded)?"
+2006-07-18T16:26:00.000Z,pianoboy3333,crimsun,"I believe so, same one as before, that had the problems, I was trying a different one, but I took it out, and I guess some config got messed up"
+2006-07-18T16:26:00.000Z,crimsun,pianoboy3333,'I believe so' is much too querulous
+2006-07-18T16:27:00.000Z,pianoboy3333,crimsun,"well, the one in my computer is the hda intel one"
+2006-07-18T16:27:00.000Z,crimsun,pianoboy3333,``asoundconf list''
+2006-07-18T16:27:00.000Z,pianoboy3333,crimsun,Names of available sound cards: Intel
+2006-07-18T16:27:00.000Z,crimsun,pianoboy3333,and that's it?
+2006-07-18T16:28:00.000Z,pianoboy3333,crimsun,yea
+2006-07-18T16:28:00.000Z,crimsun,pianoboy3333,and you've used System> Preferences> Sound> Set default card ?
+2006-07-18T16:28:00.000Z,pianoboy3333,crimsun,yea.
+2006-07-18T16:28:00.000Z,crimsun,pianoboy3333,``asoundconf set-default-card Intel''
+2006-07-18T16:28:00.000Z,pianoboy3333,crimsun,is there a way to restart alsa?
+2006-07-18T16:29:00.000Z,pianoboy3333,crimsun,"ah, all good after that last one"
+2006-07-18T16:29:00.000Z,pianoboy3333,crimsun,thank you once again :)
+2006-10-26T15:32:00.000Z,pianoboy3333,crimsun,you there?
+2006-10-26T15:35:00.000Z,crimsun,pianoboy3333,I'm in a meeting atm. What do you need?
+2006-10-26T15:36:00.000Z,pianoboy3333,crimsun,nm then sorry to bother you
+2006-10-31T06:33:00.000Z,pianoboy3333,crimsun,really... that's buggin me
+2006-11-09T15:07:00.000Z,pianoboy3333,crimsun,what's up with getting the hda modules into ubuntu? or will that have to be in fiesty?
+2006-11-11T17:25:00.000Z,pianoboy3333,crimsun,what's up with the hda modules and getting them into ubuntu?
+2006-11-11T17:26:00.000Z,crimsun,pianoboy3333,too vague
+2006-11-11T17:34:00.000Z,crimsun,pianoboy3333,"did you feel like elaborating, or were you going to leave the question as vague?"
+2006-11-11T17:40:00.000Z,pianoboy3333,crimsun,"I feel like being vauge... The newest alsa packages I mean, do you know if 1.0.13 is going to get into ubuntu edgy?"
+2006-11-11T17:40:00.000Z,crimsun,pianoboy3333,it's already in edgy.
+2006-11-11T17:40:00.000Z,pianoboy3333,crimsun,really?
+2006-11-11T17:40:00.000Z,crimsun,pianoboy3333,at least my portion of it is
+2006-11-11T17:41:00.000Z,crimsun,pianoboy3333,"you'll have to manually apply my queue, but yes, it all there. See kernel-team@"
+2006-11-11T17:42:00.000Z,pianoboy3333,crimsun,alsa-base is 10.0.11
+2006-11-11T17:42:00.000Z,crimsun,pianoboy3333,so?
+2006-11-11T17:42:00.000Z,crimsun,pianoboy3333,the available hda via kernel-team is post-1.0.13
+2006-11-11T17:42:00.000Z,pianoboy3333,crimsun,what's kernel-team? Is it a repository?
+2006-11-11T17:43:00.000Z,pianoboy3333,crimsun,so are there debs of a newer version of the driver with snd-hda-intel ?
+2006-11-11T17:45:00.000Z,pianoboy3333,crimsun,"I have to apply patches? will I have to configure the kernel, or just apply the patches and run, I have had experience with building a kernel... unsuccesful wifi support, but w/e"
+2006-11-11T17:45:00.000Z,crimsun,pianoboy3333,"if you want nice debs of alsa-modules, just grab upstream's alsa-driver-1.0.13 and generate them using module-assistant"
+2006-11-11T17:46:00.000Z,crimsun,pianoboy3333,"my patches are for our git repos, not for the end user"
+2006-11-11T17:46:00.000Z,pianoboy3333,crimsun,"oh, I see, so where can I learn about making debs with m-a?"
+2006-11-11T17:46:00.000Z,crimsun,pianoboy3333,the README.Debian shipped with alsa-source
+2006-11-11T17:46:00.000Z,pianoboy3333,crimsun,so what should I download off of alsa-project.org?
+2006-11-11T17:47:00.000Z,pianoboy3333,crimsun,will I need the newest libasound for that?
+2006-11-11T17:48:00.000Z,pianoboy3333,crimsun,"ok, so unpackage the source, and look at the README.debian in debian/ ?"
+2006-11-11T17:49:00.000Z,crimsun,pianoboy3333,"no, there's a README.Debian in alsa-source (binary package)"
+2006-11-11T17:49:00.000Z,pianoboy3333,crimsun,wait... you said to download alsa-driver
+2006-11-11T17:50:00.000Z,crimsun,pianoboy3333,I meant what I typed. Download alsa-driver from upstream; consult the documentation from alsa-source.
+2006-11-11T17:51:00.000Z,pianoboy3333,crimsun,"I'm not sure.... so I can download alsa-driver from upstream, and just compile that, or get debian sid's and debuild that...?"
+2006-11-11T17:52:00.000Z,crimsun,pianoboy3333,do you want a short answer or a long answer?
+2006-11-11T17:52:00.000Z,pianoboy3333,crimsun,but what is alsa-source? just a package in the repos?
+2006-11-11T17:52:00.000Z,pianoboy3333,crimsun,"I'm just very confused that's all, knowing what alsa-source is may clear things up"
+2006-11-11T17:52:00.000Z,pianoboy3333,crimsun,I understand alsa-driver is the driver
+2006-11-11T17:53:00.000Z,crimsun,pianoboy3333,"I use 'alsa-driver' to refer to the name of the Debian/Ubuntu source package that generates the alsa-base, linux-sound-base, and alsa-source binary packages. I use 'alsa-driver-1.0.13' when referring to upstream (ftp.alsa-project.org) alsa-driver tarball."
+2006-11-11T17:54:00.000Z,pianoboy3333,crimsun,"but mostly, the easiest thing may be just getting alsa-driver from debian sid, so I'll go with that"
+2006-11-11T17:54:00.000Z,crimsun,pianoboy3333,you mean alsa-source
+2006-11-11T17:54:00.000Z,pianoboy3333,crimsun,sure
+2006-11-11T17:55:00.000Z,pianoboy3333,crimsun,so just compile the alsa-source package? or that has to be added to my kernel in some way
+2006-11-11T17:56:00.000Z,crimsun,pianoboy3333,read /usr/share/doc/alsa-source/README.Debian
+2006-11-11T17:58:00.000Z,pianoboy3333,crimsun,wait... but the .orig.tar.gz of alsa-source _is_ alsa-driver
+2006-11-11T17:58:00.000Z,crimsun,pianoboy3333,alsa-source is a binary package. It contains a stripped orig.tar.gz of alsa-driver-1.0.13.
+2006-11-11T06:00:00.000Z,pianoboy3333,crimsun,"but how do I get the source of it... I don't have it installed on my system at all, I'm sorry, I know I sound difficult, just install it, or download sid's deb?"
+2006-11-11T06:02:00.000Z,crimsun,pianoboy3333,wget http://archive.ubuntu.com/ubuntu/pool/universe/a/alsa-driver/alsa-source_1.0.13-1ubuntu1_all.deb && sudo dpkg -i alsa-source_1.0.13-1ubuntu1_all.deb
+2006-11-11T06:15:00.000Z,pianoboy3333,crimsun,thank you
+2006-11-11T06:22:00.000Z,pianoboy3333,crimsun,"the readme.debian says cd into the root of the headers or source tree that I have prepared and run make-kpkg, but should that be /usr/src/linux-headers-vers/ or /usr/src/linux-headers-vers-generic/ vers being 2.6.17-10"
+2006-11-11T06:23:00.000Z,pianoboy3333,crimsun,"that's not in that readme, what would you do?"
+2006-11-11T06:25:00.000Z,pianoboy3333,crimsun,"and that will build the deb of the driver, thank you"
+2006-11-11T06:30:00.000Z,pianoboy3333,crimsun,I got a: alsa-modules-2.6.17-10-generic depends on alsa-base (>= 1.0.12-1); however: Version of alsa-base on system is 1.0.11-5ubuntu1.
+2006-11-11T06:31:00.000Z,crimsun,pianoboy3333,then grab feisty's alsa-base
+2006-11-11T06:31:00.000Z,crimsun,pianoboy3333,and linux-sound-base
+2006-11-11T06:32:00.000Z,pianoboy3333,crimsun,ok
+2006-11-11T06:35:00.000Z,pianoboy3333,crimsun,where do I get that? packages.ububntu.com/fiesty doesn't work! is it ei?
+2006-11-11T06:35:00.000Z,crimsun,pianoboy3333,what?
+2006-11-11T06:36:00.000Z,crimsun,pianoboy3333,feisty is the correct spelling.
+2006-11-11T06:37:00.000Z,pianoboy3333,crimsun,feisty alsa-base is 1.0.11... grab upstream from alsa-project?
+2006-11-11T06:37:00.000Z,crimsun,pianoboy3333,no it's not
+2006-11-11T06:37:00.000Z,pianoboy3333,crimsun,http://packages.ubuntu.com/feisty/sound/alsa-base
+2006-11-11T06:37:00.000Z,crimsun,pianoboy3333,I merged it last night and am running it; I know darned well what feisty has.
+2006-11-11T06:38:00.000Z,crimsun,pianoboy3333,"i.e., play 'spot the feisty packages' at http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-driver/"
+2006-11-11T06:38:00.000Z,pianoboy3333,crimsun,lol
+2006-11-11T06:41:00.000Z,pianoboy3333,crimsun,"so, now that I have those installed, do I need alsa-driver too? or that'll do it"
+2006-11-11T06:41:00.000Z,crimsun,pianoboy3333,have you ignored the past hour or so? :-)
+2006-11-11T06:41:00.000Z,pianoboy3333,crimsun,"well, I got confused in the middle, and stopped for dinner the past 30 min"
+2006-11-11T06:44:00.000Z,pianoboy3333,crimsun,so I'm guessing m-a was an alternative to the drivers package
+2006-11-11T06:48:00.000Z,pianoboy3333,crimsun,what are the binary package names for the source package alsa-library
+2006-11-11T06:49:00.000Z,pianoboy3333,crimsun,seems I have to compile those
+2006-11-11T07:09:00.000Z,pianoboy3333,crimsun,"I just rebooted, and snd-hda-intel did not automatically load, so I had to not only modprobe that, but all the other snd_* modules, is there a way to get it to start up?"
+2006-11-11T07:09:00.000Z,pianoboy3333,crimsun,start up with the computer that is
+2006-11-11T07:20:00.000Z,crimsun,pianoboy3333,alsa-lib provides lib*asound2
+2006-11-11T07:21:00.000Z,crimsun,pianoboy3333,dmesg should provides clues as to why the drivers weren't loaded automagically
+2006-11-11T07:31:00.000Z,pianoboy3333,crimsun,"http://piano.juicemedia.tv/junk/alsaprobs <-- I can't make any sense of it, it all seems like mush to me, seems like it can't load/register some important modules? '...' is where I took out parts that didn't seem important, let me know if you want my whole dmesg"
+2006-11-11T09:11:00.000Z,pianoboy3333,crimsun,"if you get a moment, can you take a look at http://piano.juicemedia.tv/junk/alsaprobs <-- I can't make any sense of it, it all seems like mush to me, seems like it can't load/register some important modules? '...' is where I took out parts that didn't seem important"
+2006-11-12T17:21:00.000Z,pianoboy3333,crimsun,did you ever look at that file?
+2006-11-12T17:49:00.000Z,crimsun,pianoboy3333,'that file'? No. I have no idea what you're referring to.
+2006-11-16T11:34:00.000Z,pianoboy3333,crimsun,did you ever get around to taking a look at my boot errors for my sound?
+2006-11-17T12:06:00.000Z,pianoboy3333,crimsun,can you help me with my sound?
+2006-11-18T16:00:00.000Z,crimsun,pianoboy3333,what do you need regarding your sound?
+2006-11-18T16:01:00.000Z,pianoboy3333,crimsun,"ah, thanks, ok, take a look at http://piano.juicemedia.tv/junk/alsaprobs"
+2006-11-18T16:01:00.000Z,pianoboy3333,crimsun,you said take a look as to why alsa isn't starting up with my computer -- it's also oss
+2006-11-18T16:02:00.000Z,crimsun,pianoboy3333,are you using your own kernel or a Ubuntu one?
+2006-11-18T16:02:00.000Z,pianoboy3333,crimsun,"an ubuntu one, latest in edgy -- 2.6.17-10-generic"
+2006-11-18T16:03:00.000Z,crimsun,pianoboy3333,and which alsa version?
+2006-11-18T16:03:00.000Z,crimsun,pianoboy3333,are you compiling against the correct linux-headers-$(uname -r) ?
+2006-11-18T16:05:00.000Z,pianoboy3333,crimsun,how can I find my alsa verision?
+2006-11-18T16:06:00.000Z,pianoboy3333,crimsun,I believe it's 1.0.13
+2006-11-18T16:06:00.000Z,pianoboy3333,crimsun,yes
+2006-11-18T16:07:00.000Z,pianoboy3333,crimsun,and what do you mean by compiling agains the correct kernel version?
+2006-11-18T16:07:00.000Z,crimsun,pianoboy3333,dpkg -l linux-headers-$(uname -r) |grep ^ii
+2006-11-18T16:08:00.000Z,pianoboy3333,crimsun,it returned: ii  linux-headers-2.6.17-10-generic 2.6.17-10.33   Linux kernel headers for version 2.6.17 on x86/x86_64
+2006-11-18T16:08:00.000Z,crimsun,pianoboy3333,and what parameters did you pass to configure?
+2006-11-18T16:08:00.000Z,pianoboy3333,crimsun,configure when I compilied what?
+2006-11-18T16:09:00.000Z,pianoboy3333,crimsun,"to my understanding I compiled the drivers with module-assistant, so whatever it passes I'd assume"
+2006-11-18T16:11:00.000Z,crimsun,pianoboy3333,"unload all the alsa modules, then only modprobe the one you need"
+2006-11-18T16:11:00.000Z,crimsun,pianoboy3333,then pastebin the error spew and dmesg|tail
+2006-11-18T16:12:00.000Z,pianoboy3333,crimsun,"ok, how would I unload them all, just look at that file, and unload all those?"
+2006-11-18T16:12:00.000Z,crimsun,pianoboy3333,yes
+2006-11-18T16:14:00.000Z,pianoboy3333,crimsun,"well, already I can't sudo modprobe -r snd_seq_device, but sudo lsof /dev/dsp* /dev/snd/* returns no output"
+2006-11-18T16:15:00.000Z,crimsun,pianoboy3333,sudo modprobe -r $(lsmod |grep ^snd |awk '{print $1}' |sort -r)
+2006-11-18T16:15:00.000Z,pianoboy3333,crimsun,I got FATAL: Module snd_timer is in use
+2006-11-18T16:16:00.000Z,crimsun,pianoboy3333,purge the alsa-modules-* package that was generated by module-assistant
+2006-11-18T16:16:00.000Z,pianoboy3333,crimsun,then what
+2006-11-18T16:17:00.000Z,crimsun,pianoboy3333,run the compile and install by hand
+2006-11-18T16:17:00.000Z,pianoboy3333,crimsun,would the package be alsa-modules-2.6.17-10-generic?
+2006-11-18T16:18:00.000Z,crimsun,pianoboy3333,"the version seems strange, but sure"
+2006-11-18T16:19:00.000Z,pianoboy3333,crimsun,should I purge alsa-driver too?
+2006-11-18T16:20:00.000Z,crimsun,pianoboy3333,"there's no alsa-driver\* binary package, why?"
+2006-11-18T16:21:00.000Z,pianoboy3333,crimsun,"what do you mean...? in the repositories...? maybe because I compiled it once upon a time by myself, I really have no clue"
+2006-11-18T16:21:00.000Z,crimsun,pianoboy3333,dpkg -l alsa-driver\*|grep ^ii
+2006-11-18T16:22:00.000Z,pianoboy3333,crimsun,yea... it seems I checkinstalled it at one point
+2006-11-18T16:22:00.000Z,pianoboy3333,crimsun,ii  alsa-driver    1.0.13-1       Package created with checkinstall 1.6.0
+2006-11-18T16:24:00.000Z,crimsun,pianoboy3333,uhh...checkinstall?!
+2006-11-18T16:24:00.000Z,crimsun,pianoboy3333,"yes, please do remove alsa-driver, then."
+2006-11-18T16:24:00.000Z,pianoboy3333,crimsun,it appears so
+2006-11-18T16:25:00.000Z,pianoboy3333,crimsun,"so remove alsa-modules-2.6.17-10-generic, alsa-driver, and alsa-oss too?"
+2006-11-18T16:25:00.000Z,crimsun,pianoboy3333,only the first two.
+2006-11-18T16:25:00.000Z,pianoboy3333,crimsun,"ok, now what"
+2006-11-18T16:26:00.000Z,crimsun,pianoboy3333,"now untar alsa-driver-1.0.13.tar.bz2 afresh, and use the correct parameters to pass to configure"
+2006-11-18T16:27:00.000Z,crimsun,pianoboy3333,"no idea, what's your sound card?"
+2006-11-18T16:27:00.000Z,pianoboy3333,crimsun,should I put it in /usr/src ?
+2006-11-18T16:27:00.000Z,crimsun,pianoboy3333,no
+2006-11-18T16:27:00.000Z,pianoboy3333,crimsun,hda-intel
+2006-11-18T16:28:00.000Z,crimsun,pianoboy3333,./configure --with-cards=hda-intel --with-oss=yes --with-sequencer=yes --with-debug=full --with-kernel=/lib/modules/$(uname -r)/build && make && sudo make install-modules && sudo depmod -e
+2006-11-18T16:28:00.000Z,pianoboy3333,crimsun,"oooohhh I remember what you told me to do last time, you told me to get the feisty of alsa-source and compile it with m-a"
+2006-11-18T16:29:00.000Z,pianoboy3333,crimsun,what about --prefix=/usr
+2006-11-18T16:29:00.000Z,crimsun,pianoboy3333,no need
+2006-11-18T16:29:00.000Z,pianoboy3333,crimsun,the only thing that's bad is that this isn't going to build a deb :(
+2006-11-18T16:30:00.000Z,pianoboy3333,crimsun,"ok, what now"
+2006-11-18T16:32:00.000Z,pianoboy3333,crimsun,brb in 5 min
+2006-11-18T16:32:00.000Z,crimsun,pianoboy3333,reboot
+2006-11-19T17:10:00.000Z,pianoboy3333,crimsun,"ok, now it starts up with the computer, but every time I start it up, I have to unmute surround, front, and all those channels and such along with my recording stuff, it seems my volume preferences aren't saved...?"
+2006-11-19T17:11:00.000Z,crimsun,pianoboy3333,"well, see, when you installed that alsa-driver made with checkinstall, it SCREWED what Debian [&Ubuntu]  do for infrastructure. Yet another reason checkinstalled packages are BAD."
+2006-11-19T17:12:00.000Z,crimsun,pianoboy3333,so. apt-get --reinstall install linux-sound-base alsa-base
+2006-11-19T17:12:00.000Z,crimsun,pianoboy3333,"in the future, don't stab yourself in the face and ask us to clean up, thanks! :-)"
+2006-11-19T17:30:00.000Z,pianoboy3333,crimsun,will do ;)
+2006-11-19T17:42:00.000Z,pianoboy3333,crimsun,"no... still didn't unmute automatically, should I revert back to the alsa-base in edgy? (1.0.11)"
+2006-11-19T17:43:00.000Z,crimsun,pianoboy3333,didn't you do that with --reinstall?
+2006-11-19T17:44:00.000Z,pianoboy3333,crimsun,"well, you had me a few days ago install the feisty alsa-base which was 1.0.13"
+2006-11-19T17:49:00.000Z,pianoboy3333,crimsun,so should I install the edgy version again?
+2006-12-28T08:39:00.000Z,crimsun,pianoboy3333,don't use checkinstall. Use the existing packaging infrastructure for mplayer.
+2006-12-28T08:40:00.000Z,pianoboy3333,crimsun,"but then it'll screw up my packages and such, I think it wants to install a crap load of libraries installed already from edgy, like libavccodecs"
+2006-12-28T08:41:00.000Z,crimsun,pianoboy3333,"no, you're not listening. Use the infrastructure, not the package."
+2006-12-28T08:41:00.000Z,pianoboy3333,crimsun,what do you mean?
+2006-12-28T08:41:00.000Z,pianoboy3333,crimsun,wouldn't that be make install?
+2006-12-28T08:41:00.000Z,crimsun,pianoboy3333,no.
+2006-12-28T08:41:00.000Z,crimsun,pianoboy3333,each Debian package has packaging infrastructure. Use it.
+2006-12-28T08:42:00.000Z,pianoboy3333,crimsun,"either it's the fact it's late here, or I've just no idea what you are talking about, how would I take advantage of such a packaging infrastructure"
+2006-12-28T08:43:00.000Z,crimsun,pianoboy3333,apt-get source mplayer
+2006-12-28T08:43:00.000Z,crimsun,pianoboy3333,then use the existing debian/
+2006-12-28T08:43:00.000Z,crimsun,pianoboy3333,adjust the files as per necessary
+2006-12-28T08:44:00.000Z,pianoboy3333,crimsun,"oh, I see what you're saying, make real debs"
+2006-12-28T08:44:00.000Z,crimsun,pianoboy3333,signing or not signing makes no difference
+2007-01-16T17:48:00.000Z,pianoboy3333,crimsun,how do I find out what process/program is using /dev/audio?
+2007-01-16T17:48:00.000Z,crimsun,pianoboy3333,lsof /dev/audio
+2007-01-16T17:54:00.000Z,pianoboy3333,crimsun,"the audio coming out of my left speaker is crackling, anything I can do to fix this? I've got a sigmatel on board audio chip, which is using the hda-intel module"
+2007-01-16T06:01:00.000Z,pianoboy3333,crimsun,can you help me with that?
+2007-01-16T06:02:00.000Z,crimsun,pianoboy3333,that's pretty vague. Only the left?
+2007-01-16T06:04:00.000Z,pianoboy3333,crimsun,"yes... it's quite weird, I had this issue before, and then no audio, since the native alsa drivers in ubuntu did not support the hda modules, you told me, so I compiled 0.1.13 like you said, and I have the crackling issue again, and my volume is always muted when I boot up my computer'"
+2007-01-16T06:05:00.000Z,crimsun,pianoboy3333,then use 1.0.14rc1
+2007-01-16T06:05:00.000Z,pianoboy3333,crimsun,ummm... ok
+2007-01-16T06:05:00.000Z,pianoboy3333,crimsun,how stable is it?
+2007-01-16T06:09:00.000Z,pianoboy3333,crimsun,"ok, I downloaded and untarred alsa-driver-1.0.14rc1, what should I run?"
+2007-01-16T06:15:00.000Z,pianoboy3333,crimsun,"what flags should I give configure, and how else should I build it"
+2007-01-16T06:16:00.000Z,crimsun,pianoboy3333,"I've been over this a half-dozen times, and I'm very busy atm."
+2007-02-03T09:34:00.000Z,pianoboy3333,crimsun,are you there? can you help me compile the latest alsa?
+2007-02-11T13:58:00.000Z,pianoboy3333,crimsun,are you there? could you help me compile the latest alsa for hda intel?

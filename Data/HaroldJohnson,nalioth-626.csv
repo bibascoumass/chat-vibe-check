@@ -1,0 +1,627 @@
+date,from,to,text
+2005-07-09T09:14:00.000Z,HaroldJohnson,,Hello everyone
+2005-07-09T09:14:00.000Z,HaroldJohnson,,I'm surprised to find so many here
+2005-07-09T09:15:00.000Z,HaroldJohnson,,I'm trying to install Ubuntu on an Old World PowerBook
+2005-07-09T09:15:00.000Z,nalioth,HaroldJohnson,"wow, you're hardcore"
+2005-07-09T09:16:00.000Z,nalioth,HaroldJohnson,hang on a minute
+2005-07-12T14:08:00.000Z,HaroldJohnson,nalioth,"When I'm initially installing ubuntu (repartitioning and all that), how do I select the most minimal installation/"
+2005-07-12T14:09:00.000Z,nalioth,HaroldJohnson,choose the server install
+2005-07-12T14:09:00.000Z,HaroldJohnson,nalioth,Which is the server install?
+2005-07-12T14:13:00.000Z,HaroldJohnson,nalioth,Can I install server using BootX/
+2005-07-12T14:13:00.000Z,nalioth,HaroldJohnson,should be just like the warty
+2005-07-12T14:14:00.000Z,nalioth,HaroldJohnson,all the things you did with warty will need to be done here
+2005-07-12T14:14:00.000Z,HaroldJohnson,nalioth,I don't understand where I'm supposed to enter 'server'
+2005-07-12T14:14:00.000Z,nalioth,HaroldJohnson,"at the boot, it should say 'press f1 for help or <enter> to boot'"
+2005-07-12T14:14:00.000Z,nalioth,HaroldJohnson,press f1 and look for what to type for a server install
+2005-07-12T14:24:00.000Z,HaroldJohnson,nalioth,There is no server option that I can find
+2005-07-12T14:24:00.000Z,nalioth,HaroldJohnson,i'm very unfamiliar with the boot sequence
+2005-07-12T14:48:00.000Z,nalioth,HaroldJohnson,i wish i had a mac i could boot up with the disk to walk you through
+2005-07-12T14:49:00.000Z,HaroldJohnson,nalioth,"Thanks.  I have a number of obstacles, but I have faith, with the help of this helpful support crew here, that I'll get this system up and running the way I want it."
+2005-07-12T14:50:00.000Z,nalioth,HaroldJohnson,"in a couple of days, i can walk you through the procedure (i'm fixin to get new mac, and will be installing ubuntu on it)"
+2005-07-12T14:50:00.000Z,HaroldJohnson,nalioth,"I'm using a very old Mac, so I don't know if you'll encounter the same issues."
+2005-07-12T14:51:00.000Z,nalioth,HaroldJohnson,"have faith, i know much voodoo (just cant remember which button to push at the boot prompt)"
+2005-07-12T14:53:00.000Z,HaroldJohnson,nalioth,"No worries, I'll get this up and running with yours (and others) help.  I have a feeling this next method is going to work, apt-get upgrade-dist from Warty to Hoary."
+2005-07-12T14:54:00.000Z,nalioth,HaroldJohnson,you can dump the xserver and all the gui packages
+2005-07-12T14:55:00.000Z,HaroldJohnson,nalioth,"I'm writing that down, xserver and gui packages.  Which are the GUI packages, besides xserver-xfree86?"
+2005-07-12T14:55:00.000Z,nalioth,HaroldJohnson,gtk stuff
+2005-07-12T14:56:00.000Z,HaroldJohnson,nalioth,"I wanted an iBook for so long; finally found this old PowerBook at...well, nalioth knows where!"
+2005-07-12T15:03:00.000Z,nalioth,HaroldJohnson,they don't have to
+2005-07-12T15:03:00.000Z,nalioth,HaroldJohnson,a BRAND new ibook can be had for $999
+2005-07-12T15:04:00.000Z,nalioth,HaroldJohnson,and refurbished (with full factory warranty) ibooks can be had for $799
+2005-07-12T15:04:00.000Z,HaroldJohnson,nalioth,"I just bought a PowerBook for $60 (as you know) - oh yeah, and a sh*tload of hassle!"
+2005-07-12T15:04:00.000Z,nalioth,HaroldJohnson,no hassle at all...CHALLENGE
+2005-07-12T15:05:00.000Z,HaroldJohnson,nalioth,"Right, right, *challenge*, sure, sure."
+2005-07-12T15:05:00.000Z,nalioth,HaroldJohnson,"makes you a better person, AND think of what you'll be able to pass on in here"
+2005-07-12T15:06:00.000Z,HaroldJohnson,nalioth,"Yes, when I get her runnin' properly."
+2005-07-12T15:06:00.000Z,HaroldJohnson,nalioth,I have faith.
+2005-07-12T15:06:00.000Z,HaroldJohnson,nalioth,Take it easy
+2005-07-13T06:15:00.000Z,nalioth,HaroldJohnson,sounds to me like you've dont it
+2005-07-13T06:15:00.000Z,nalioth,HaroldJohnson,"you done it, now ya just gotta configure your bootx"
+2005-07-13T06:15:00.000Z,HaroldJohnson,nalioth,Got it
+2005-07-13T06:16:00.000Z,HaroldJohnson,nalioth,"Let's hope that's it.  This type of upgrade upgrades the kernel, too doesn't it?  It looks to be the same name/version, though."
+2005-07-13T06:17:00.000Z,nalioth,HaroldJohnson,you will need to move your kernel and the other thing so taht bootx can find them
+2005-07-13T06:17:00.000Z,HaroldJohnson,nalioth,"Okay.  Yeah, I've been doing that with every reboot after an apt-get upgrade."
+2005-07-13T06:18:00.000Z,HaroldJohnson,nalioth,"Back in awhile, hopefully"
+2005-07-13T13:20:00.000Z,nalioth,HaroldJohnson,not kdm?
+2005-07-13T13:21:00.000Z,HaroldJohnson,nalioth,"Hello, dude!"
+2005-07-13T13:21:00.000Z,HaroldJohnson,nalioth,Or lady
+2005-07-13T13:22:00.000Z,HaroldJohnson,nalioth,"I didn't like gnome on this old Mac, so I apt-get install fluxbox and then apt-get install wdm"
+2005-07-13T13:22:00.000Z,HaroldJohnson,nalioth,How are you today?
+2005-07-13T13:22:00.000Z,nalioth,HaroldJohnson,sounds good
+2005-07-13T13:22:00.000Z,nalioth,HaroldJohnson,"i'm fine, and you?"
+2005-07-13T13:22:00.000Z,HaroldJohnson,nalioth,Good.  Which display manager do you use?
+2005-07-13T13:23:00.000Z,nalioth,HaroldJohnson,the default gdm runs underneath my gnome
+2005-07-13T13:23:00.000Z,HaroldJohnson,nalioth,I finally got my first view of gnome yesterday.
+2005-07-13T13:23:00.000Z,nalioth,HaroldJohnson,and already tired of it? lol
+2005-07-13T13:24:00.000Z,HaroldJohnson,nalioth,It was dog slow on this old Mac.
+2005-07-13T13:24:00.000Z,nalioth,HaroldJohnson,thought flux was a display mangler?
+2005-07-13T13:24:00.000Z,HaroldJohnson,nalioth,"Is it?  Sheesh, I've got alot to learn."
+2005-07-13T13:24:00.000Z,HaroldJohnson,nalioth,A mangler?
+2005-07-13T13:24:00.000Z,HaroldJohnson,nalioth,LOL
+2005-07-13T13:25:00.000Z,nalioth,HaroldJohnson,"HaroldJohnson sorry, i meant desktop manager (like kde or gnome)"
+2005-07-13T13:25:00.000Z,nalioth,HaroldJohnson,"i'm not much into GUIs, so 'file manglers, desktop manglers, window manglers, etc'"
+2005-07-13T13:27:00.000Z,nalioth,HaroldJohnson,do you get a graphical login screen?
+2005-07-13T13:27:00.000Z,HaroldJohnson,nalioth,I finally did today.
+2005-07-13T13:28:00.000Z,nalioth,HaroldJohnson,"ok then, at that screen, click 'sessions' and choose xfce4"
+2005-07-13T13:28:00.000Z,HaroldJohnson,nalioth,I logged in but received an error saying the session lasted only 10 seconds because of blah blah blah.
+2005-07-13T13:28:00.000Z,nalioth,HaroldJohnson,that has nothing to do wiht xfce4
+2005-07-13T13:28:00.000Z,HaroldJohnson,nalioth,"Okay, thanks, I'll try that."
+2005-07-13T13:28:00.000Z,HaroldJohnson,nalioth,I'm going now to try.
+2005-07-13T13:29:00.000Z,nalioth,HaroldJohnson,you might like to read this http://linuz.sns.it/~max/twin/
+2005-07-13T13:30:00.000Z,HaroldJohnson,nalioth,Looks like I got that error again.
+2005-07-13T13:31:00.000Z,nalioth,HaroldJohnson,"at a failsafe terminal in your homedir, type 'rm .ICEauthority'"
+2005-07-13T13:31:00.000Z,nalioth,HaroldJohnson,and then try to log back in to xfce
+2005-07-13T13:31:00.000Z,HaroldJohnson,nalioth,"What is that removing, and why?"
+2005-07-13T13:32:00.000Z,nalioth,HaroldJohnson,"the .ICEauthority file is supposed to be read/write, but sometines it gets 'locked' by unknowing processes"
+2005-07-13T13:32:00.000Z,HaroldJohnson,nalioth,"Okay, I'll try that"
+2005-07-13T13:40:00.000Z,HaroldJohnson,nalioth,"You're a star.  But there's a problem; when I log into xfce, there's a little silouette of a mouse in the middle of the screen."
+2005-07-13T13:40:00.000Z,nalioth,HaroldJohnson,"thats the mascot, don't worry, it doesnt eat much"
+2005-07-13T13:40:00.000Z,HaroldJohnson,nalioth,LOL
+2005-07-13T13:41:00.000Z,HaroldJohnson,nalioth,"I'm going to try using it, now."
+2005-07-13T13:43:00.000Z,HaroldJohnson,nalioth,It's a *really* satisfying feeling to finally see a desktop on this old bird...
+2005-07-13T13:44:00.000Z,HaroldJohnson,nalioth,xfce may be too much for 64MB to handle; I may have to switch to fluxbox.
+2005-07-13T13:44:00.000Z,nalioth,HaroldJohnson,congratulations (and what a wiki i can see coming out of your experience)
+2005-07-13T13:44:00.000Z,nalioth,HaroldJohnson,you could also try matchbox
+2005-07-13T13:44:00.000Z,HaroldJohnson,nalioth,I'll take you up on that (the wiki).
+2005-07-13T13:46:00.000Z,HaroldJohnson,nalioth,I dig Ubuntu's color scheme.
+2005-07-13T13:48:00.000Z,nalioth,HaroldJohnson,"you might want to give matchbox a try, it is lighter than fluxbox"
+2005-07-13T13:48:00.000Z,HaroldJohnson,nalioth,"What's lighter, fluxbox or xfce?"
+2005-07-13T13:49:00.000Z,nalioth,HaroldJohnson,flux
+2005-07-13T13:49:00.000Z,HaroldJohnson,nalioth,"Okay, I'm going to play with xfce for awhile now."
+2005-07-13T13:54:00.000Z,HaroldJohnson,nalioth,I just sent first email using Ubuntu.  It was a Gmail.  I'm so excited!
+2005-07-13T13:54:00.000Z,HaroldJohnson,nalioth,"Once Firefox finally loaded up, it's running good on xfce so far."
+2005-07-13T13:55:00.000Z,nalioth,HaroldJohnson,"you might want to run kazehakaze (it uses the gecko engine, but is a bit lighter running)"
+2005-07-13T13:55:00.000Z,HaroldJohnson,nalioth,I'll write that down for later.
+2005-07-13T13:56:00.000Z,HaroldJohnson,nalioth,"I actually have preferred the plain-jane Mozilla to Firefox, though Firefox is gorgeous."
+2005-07-13T13:56:00.000Z,HaroldJohnson,nalioth,I feel like Charlie in the Chocolate Factory right now.
+2005-07-13T13:57:00.000Z,nalioth,HaroldJohnson,great!
+2005-07-13T13:57:00.000Z,HaroldJohnson,nalioth,"Okay, I'm going to go back to playing with it, then I've got to figure out how to set up my D-Link pcmcia card for wireless browsing."
+2005-07-13T13:58:00.000Z,nalioth,HaroldJohnson,"every day a new mountaintop, with a view to the next higher peak"
+2005-07-13T14:01:00.000Z,HaroldJohnson,nalioth,"Well, it's been fun.  I'm going back to OS X now."
+2005-07-13T14:01:00.000Z,nalioth,HaroldJohnson,what? on the pb?
+2005-07-13T14:01:00.000Z,HaroldJohnson,nalioth,I'm just kidding.
+2005-07-13T14:03:00.000Z,nalioth,HaroldJohnson,i'm surprised you got osx goin on the old thing
+2005-07-13T14:04:00.000Z,HaroldJohnson,nalioth,"It had 128MB ram at the time.  I used XPostFacto, and version of BootX (I think)."
+2005-07-13T14:04:00.000Z,HaroldJohnson,nalioth,"I'm diggin' Linux, though, and I want to have a least one system running it."
+2005-07-13T14:05:00.000Z,HaroldJohnson,nalioth,"Besides, I kind of like using the terminal sometimes."
+2005-07-13T14:05:00.000Z,nalioth,HaroldJohnson,it seems you have at least one system running on it
+2005-07-13T14:05:00.000Z,nalioth,HaroldJohnson,the terminal is your friend
+2005-07-13T14:05:00.000Z,HaroldJohnson,nalioth,"Okay, it's time to test/setup the wireless."
+2005-07-13T14:05:00.000Z,HaroldJohnson,nalioth,I'm out.
+2005-07-13T15:54:00.000Z,nalioth,HaroldJohnson,the desktop man
+2005-07-13T15:54:00.000Z,HaroldJohnson,nalioth,the one with the plan
+2005-07-14T14:36:00.000Z,nalioth,HaroldJohnson,howdy
+2005-07-14T14:37:00.000Z,HaroldJohnson,nalioth,"Howdy, nalioth!"
+2005-07-14T14:39:00.000Z,nalioth,HaroldJohnson,you should always boot wiht the hardware you want to use installed
+2005-07-15T09:34:00.000Z,nalioth,HaroldJohnson,howzit goin?
+2005-07-15T09:40:00.000Z,nalioth,HaroldJohnson,you are speaking to a Robot
+2005-07-15T09:40:00.000Z,nalioth,HaroldJohnson,"don't tease the bot, he doesnt like it"
+2005-07-15T09:41:00.000Z,nalioth,HaroldJohnson,too many other folks have abused poor ol' ubotu
+2005-07-18T16:55:00.000Z,nalioth,HaroldJohnson,goin on vacation?
+2005-09-13T15:34:00.000Z,nalioth,HaroldJohnson,look in ##apple
+2005-09-21T05:01:00.000Z,nalioth,HaroldJohnson,back to cause more trouble?
+2005-09-21T05:01:00.000Z,HaroldJohnson,nalioth,"Hi nalioth, how're you?"
+2005-09-21T05:01:00.000Z,nalioth,HaroldJohnson,breezy is broken until oct 13. live with your decision
+2005-09-21T05:01:00.000Z,HaroldJohnson,nalioth,:)
+2005-09-21T05:02:00.000Z,nalioth,HaroldJohnson,the next update or two should fix your problem
+2005-09-21T05:02:00.000Z,HaroldJohnson,nalioth,Wait - does that mean I've upgrade to Breezy?
+2005-09-21T05:02:00.000Z,nalioth,HaroldJohnson,i'm fine today. and you?
+2005-09-21T05:02:00.000Z,HaroldJohnson,nalioth,Fine.
+2005-09-21T05:02:00.000Z,HaroldJohnson,nalioth,Thanks for asking
+2005-09-21T05:02:00.000Z,HaroldJohnson,nalioth,What's a way to reveal that I'm using Breezy?
+2005-09-21T05:02:00.000Z,nalioth,HaroldJohnson,"open a terminal, and type uname -a"
+2005-09-21T05:03:00.000Z,HaroldJohnson,nalioth,"Yes, but that simply tells me the kernel"
+2005-09-21T05:05:00.000Z,HaroldJohnson,nalioth,"Once you perform an apt-get dist-upgrade, do you need to inform BootX or Yaboot that you've changed the kernel?"
+2005-09-21T05:06:00.000Z,nalioth,HaroldJohnson,"on yaboot, you'll want to run 'sudo ybin' to set the new settings into nvram"
+2005-09-21T05:06:00.000Z,nalioth,HaroldJohnson,i'm not sure on bootx (probably have to move the initrc and all that happy stuff back to the boot block)
+2005-09-21T05:06:00.000Z,HaroldJohnson,nalioth,Thanks
+2005-10-20T14:10:00.000Z,nalioth,HaroldJohnson,"you old sneaky snake, where you been?"
+2005-10-20T14:11:00.000Z,HaroldJohnson,nalioth,I haven't checked in in awhile.  How've you been?
+2005-10-20T14:13:00.000Z,nalioth,HaroldJohnson,you here?
+2005-10-20T14:13:00.000Z,HaroldJohnson,nalioth,"Okay, I've go to go.  I'll check in tomorrow or the next day and stay longer."
+2005-10-22T10:28:00.000Z,nalioth,HaroldJohnson,howdy
+2005-10-22T10:28:00.000Z,HaroldJohnson,nalioth,Howdy
+2005-10-22T10:30:00.000Z,nalioth,HaroldJohnson,choose 'rescue' ?
+2005-10-28T06:56:00.000Z,nalioth,HaroldJohnson,what trouble do you have now? lol
+2005-10-28T06:57:00.000Z,HaroldJohnson,nalioth,"Hi there.  Yes, it seems I'm always having trouble.  Must be due to my wanting a challenge, remember?"
+2005-10-28T06:58:00.000Z,nalioth,HaroldJohnson,so what is your question?
+2005-10-28T06:58:00.000Z,HaroldJohnson,nalioth,"I wanted to go the pure GUI-less route, so I tried to install Debian..."
+2005-10-28T06:59:00.000Z,HaroldJohnson,nalioth,...but didn't get very far.  (Mac wouldn't 'see' my floppy.)  So now it's back to Ubuntu...
+2005-10-28T06:59:00.000Z,nalioth,HaroldJohnson,"we have a 'server install', you know"
+2005-10-28T07:00:00.000Z,HaroldJohnson,nalioth,I've never been able to get to the server installer prompt.
+2005-10-28T07:00:00.000Z,HaroldJohnson,nalioth,How do you do that again?
+2005-10-28T07:00:00.000Z,nalioth,HaroldJohnson,you can run BUM in the gui and turn off the gui altogether
+2005-10-28T07:00:00.000Z,nalioth,HaroldJohnson,"at the install prompt, type 'server' <enter>"
+2005-10-28T07:00:00.000Z,HaroldJohnson,nalioth,"See, that's the problem.  Never get the install prompt."
+2005-10-28T07:01:00.000Z,nalioth,HaroldJohnson,then use bum to turn off your X
+2005-10-28T07:01:00.000Z,HaroldJohnson,nalioth,I guess I'll do that once I get installed.  But the problem is...
+2005-10-28T07:02:00.000Z,HaroldJohnson,nalioth,"...I've rebooted after the bootloader stage, and..."
+2005-10-28T07:02:00.000Z,HaroldJohnson,nalioth,...now I recieve this error about the tty...
+2005-10-28T07:02:00.000Z,nalioth,HaroldJohnson,you may need to install hoary and upgrade
+2005-10-28T07:03:00.000Z,HaroldJohnson,nalioth,"I've tried that route.  Changed the sources from Hoary to Breezy, ran the dist-upgrade..."
+2005-10-28T07:03:00.000Z,HaroldJohnson,nalioth,...then after rebooting had another error.
+2005-10-28T07:04:00.000Z,HaroldJohnson,nalioth,Someone here said it appeared to be a hardware error.
+2005-10-28T07:04:00.000Z,HaroldJohnson,nalioth,"Hoary ran fine on my Mac, though."
+2005-10-28T07:04:00.000Z,HaroldJohnson,nalioth,I suppose I could just step back to Hoary.
+2005-10-28T07:05:00.000Z,nalioth,HaroldJohnson,"if it works, and you're only gonna run CLI, hoary should be fine"
+2005-10-28T07:05:00.000Z,HaroldJohnson,nalioth,"Would Breezy improve upon this old horse (and Old World Powerbook G3)?  Any idea, nalioth?"
+2005-10-28T07:06:00.000Z,HaroldJohnson,nalioth,Arghh!  Never should have tried to upgrade!  This put me back about a week...
+2005-10-28T07:06:00.000Z,nalioth,HaroldJohnson,i suspect hoary is as good as you will need on that old warhorse
+2005-10-28T07:07:00.000Z,HaroldJohnson,nalioth,"Hey nalioth, once I have Hoary installed, can I easily install pure debian?"
+2005-10-28T07:07:00.000Z,nalioth,HaroldJohnson,no
+2005-10-28T07:07:00.000Z,HaroldJohnson,nalioth,Are you just saying that because you don't want me migrating to debian?
+2005-10-28T07:07:00.000Z,nalioth,HaroldJohnson,hoary is way beyond any shipping version of debian
+2005-10-28T07:07:00.000Z,nalioth,HaroldJohnson,"if you want a console only box, try netbsd"
+2005-10-28T07:08:00.000Z,HaroldJohnson,nalioth,Even in CLI mode?
+2005-10-28T07:08:00.000Z,HaroldJohnson,nalioth,"Now you're just trying to make my life difficult, nalioth!  LOL"
+2005-10-28T07:09:00.000Z,HaroldJohnson,nalioth,I've seriously consider installing FreeBSD or Darwin on this old box.
+2005-10-28T07:09:00.000Z,HaroldJohnson,nalioth,Or OpenDarwin.
+2005-10-28T07:09:00.000Z,nalioth,HaroldJohnson,"install hoary, use BUM to shut off your x loading and be happy"
+2005-10-28T07:10:00.000Z,HaroldJohnson,nalioth,"My main focus is on continuing my programming edumacation now, though, rather than installing Linux ever other day."
+2005-10-28T07:10:00.000Z,nalioth,HaroldJohnson,"if you desire a cli linux, see above"
+2005-10-28T07:10:00.000Z,HaroldJohnson,nalioth,"I *will* be happy.  I dig this community enough to make me want to stick with Ubuntu, but I dig the purity of Debian.  Do you know what I mean?"
+2005-10-28T07:10:00.000Z,nalioth,HaroldJohnson,hoary has a console program to do everything you could need
+2005-10-28T07:11:00.000Z,HaroldJohnson,nalioth,"Yes, but Ubuntu's installer installs way more software than I want or need for CLI, and I haven't been able to install server only."
+2005-10-28T07:12:00.000Z,HaroldJohnson,nalioth,"Waitaminute - aren't you using Debian, nalioth?"
+2005-10-28T07:12:00.000Z,nalioth,HaroldJohnson,only the ubuntu branch
+2005-10-28T07:13:00.000Z,HaroldJohnson,nalioth,Good.  So how is Houston?
+2005-10-28T07:14:00.000Z,HaroldJohnson,nalioth,"Well, thanks again, as always.  If i get this figured out I'll definitely put up a wiki this time."
+2005-10-28T07:14:00.000Z,nalioth,HaroldJohnson,still here after all the hurricanes
+2005-10-28T07:15:00.000Z,HaroldJohnson,nalioth,And I'll look into BUM.
+2005-10-28T07:15:00.000Z,HaroldJohnson,nalioth,Good
+2005-10-28T07:31:00.000Z,HaroldJohnson,nalioth,I just realized where I went wrong!
+2005-10-28T07:31:00.000Z,HaroldJohnson,nalioth,Good news - I input the wrong 'root=/dev/hda10' command in BootX.
+2005-10-28T07:32:00.000Z,nalioth,HaroldJohnson,welcome to breezy
+2005-10-28T07:32:00.000Z,HaroldJohnson,nalioth,So now it's completing the installation process...!
+2005-10-28T07:32:00.000Z,nalioth,HaroldJohnson,you can still use BUM to keep your X from starting
+2005-10-28T07:32:00.000Z,HaroldJohnson,nalioth,I'll do that.
+2005-10-28T07:33:00.000Z,HaroldJohnson,nalioth,"So I'll complete the installation, and I'll let you know if anything goes wrong."
+2005-10-28T07:33:00.000Z,HaroldJohnson,nalioth,Somehow you always manage to keep me using Ubunut.
+2005-10-28T07:33:00.000Z,nalioth,HaroldJohnson,you got it (thanks to the hoary learning curve)
+2005-10-28T07:35:00.000Z,HaroldJohnson,nalioth,"By the way, the new instructions for Old World Macs someone posted to the wiki is much clearer than the last: http://wiki.ubuntu.com/Installation/OldWorldMacs"
+2005-10-28T07:35:00.000Z,nalioth,HaroldJohnson,wikis evolve
+2005-10-28T07:37:00.000Z,nalioth,HaroldJohnson,is that your next project? UbuntuPSP ?
+2005-10-28T07:37:00.000Z,HaroldJohnson,nalioth,Very funny.
+2005-10-28T07:38:00.000Z,HaroldJohnson,nalioth,I can barely manage an install on an old Powerbook.  You think it'd be advisable to even *attempt* an install on a PSP?
+2005-10-28T07:38:00.000Z,HaroldJohnson,nalioth,"Besides, where am I going to get the bread for a PSP?"
+2005-10-28T09:29:00.000Z,HaroldJohnson,nalioth,Did you know there was a Ubuntu-server download?  Why didn't you tell me?  I'm downloading the ISO now.
+2005-10-28T09:30:00.000Z,nalioth,HaroldJohnson,every ubuntu disk has a server install in it (no extra charge)
+2005-10-28T09:31:00.000Z,HaroldJohnson,nalioth,"Yes, but since I can't access server during my Old World Mac installation process, downloading the server ISO may make the process possible."
+2005-10-28T09:32:00.000Z,nalioth,HaroldJohnson,well have fun (the ubuntu-server is bleeding edge)
+2005-10-28T09:32:00.000Z,HaroldJohnson,nalioth,"When you boot into the Ubuntu installer from BootX, when exactly are you supposed to type 'server' (or 'custom')?"
+2005-10-28T09:33:00.000Z,nalioth,HaroldJohnson,at the blinking 'boot' prompt
+2005-10-28T09:33:00.000Z,HaroldJohnson,nalioth,And since there is no blinking 'boot' prompt when you go from BootX?
+2005-10-28T09:35:00.000Z,nalioth,HaroldJohnson,you got me there
+2005-10-28T09:37:00.000Z,HaroldJohnson,nalioth,Strange; this announcement says Ubuntu 5.10 Server is the first release: http://lwn.net/Articles/156309/
+2005-10-28T09:38:00.000Z,nalioth,HaroldJohnson,i DID say it was bleeding edge stuff
+2005-10-28T14:01:00.000Z,nalioth,HaroldJohnson,install xubuntu-desktop
+2005-10-28T14:01:00.000Z,HaroldJohnson,nalioth,"Hi.  Yeah, I've just installed Ubuntu Server (from the Ubuntu Server CD)!"
+2005-10-28T14:01:00.000Z,nalioth,HaroldJohnson,xubuntu-desktop will give you a nice xfce4 desktop
+2005-10-28T14:02:00.000Z,HaroldJohnson,nalioth,I've been preferring fluxbox to xfce4; which direction would I go towards installing that?
+2005-10-28T14:03:00.000Z,nalioth,HaroldJohnson,sudo apt-get install fluxbox lbpager fbdesk fluxconf wmfrog
+2005-10-28T14:03:00.000Z,HaroldJohnson,nalioth,Thanks - how did you remember all of those?
+2005-10-28T14:04:00.000Z,nalioth,HaroldJohnson,remember all of what?  :
+2005-10-28T14:05:00.000Z,nalioth,HaroldJohnson,"when you issue that command, it will install xorg and other GUI packages, also"
+2005-10-28T14:05:00.000Z,HaroldJohnson,nalioth,How did you remember what to install?  (You listed 5 different things.)
+2005-10-28T14:05:00.000Z,nalioth,HaroldJohnson,c/p that whole line
+2005-10-28T14:05:00.000Z,HaroldJohnson,nalioth,"Oh boy, that'll take up some space.  But probably not enough to fill 1.7GB, right?"
+2005-10-28T14:05:00.000Z,HaroldJohnson,nalioth,I believe I will.
+2005-10-28T14:05:00.000Z,nalioth,HaroldJohnson,not at all
+2005-10-28T14:06:00.000Z,HaroldJohnson,nalioth,You're truly amazing.
+2005-10-28T14:06:00.000Z,HaroldJohnson,nalioth,"Thanks, and make sure to keep in touch.  http://somethingthathappened.com"
+2005-10-28T14:06:00.000Z,nalioth,HaroldJohnson,"not really, just a common nerd"
+2005-10-28T14:07:00.000Z,HaroldJohnson,nalioth,"Before I do this, I'm going to research xubuntu some."
+2005-10-28T14:08:00.000Z,nalioth,HaroldJohnson,wiki.ubuntu.com/xubuntu
+2005-10-28T14:08:00.000Z,HaroldJohnson,nalioth,"Already there, but thanks!"
+2005-10-29T08:51:00.000Z,HaroldJohnson,nalioth,What's 'lbpager'?  You suggested installing it yesterday.
+2005-10-29T08:51:00.000Z,nalioth,HaroldJohnson,it's a pager for your fluxbox
+2005-10-29T08:52:00.000Z,HaroldJohnson,nalioth,You sure that's not 'bbpager'?
+2005-10-29T08:52:00.000Z,nalioth,HaroldJohnson,open a terminal and type 'apt-cache search fluxbox'
+2005-10-29T08:53:00.000Z,HaroldJohnson,nalioth,Thanks.  I'm just asking 'cuz I typed in the full line you gave me and it couldn't find lbpager.
+2005-10-29T08:53:00.000Z,nalioth,HaroldJohnson,you are using breezy right? with uni and multienabled?
+2005-10-29T08:55:00.000Z,HaroldJohnson,nalioth,"I enabled uni, but prolly not multi.  Lemme check..."
+2005-10-29T10:03:00.000Z,HaroldJohnson,nalioth,I don't currently have access to my Ubuntu machine's screen; how do I obtain it's IP address in order to log into it remotely.  The machine is on my home network.
+2005-10-29T10:03:00.000Z,nalioth,HaroldJohnson,you are in a classic catch-22
+2005-10-29T10:03:00.000Z,HaroldJohnson,nalioth,Uh oh.
+2005-10-29T10:04:00.000Z,HaroldJohnson,nalioth,"See, I've just installed gdm and now my Mac's screen is dark when I reboot."
+2005-10-29T10:04:00.000Z,nalioth,HaroldJohnson,"so ctrl-alt-f3, log in and type ifconfig"
+2005-10-29T10:05:00.000Z,HaroldJohnson,nalioth,That's not doing it.  Still dark.  Hm...
+2005-10-29T10:06:00.000Z,nalioth,HaroldJohnson,ctrl-alt-f(1-6) should get you a text terminal
+2005-10-29T10:29:00.000Z,HaroldJohnson,nalioth,Here's a question I've had for a long time.
+2005-10-29T10:30:00.000Z,HaroldJohnson,nalioth,"Whenever I install Ubuntu on this old Mac, the screen is unevenly divided into about 4 parts."
+2005-10-29T10:30:00.000Z,nalioth,HaroldJohnson,and how did you fix in on hoary?
+2005-10-29T10:30:00.000Z,HaroldJohnson,nalioth,This is resolved by selecting 'no video driver' in BootX....
+2005-10-29T10:31:00.000Z,HaroldJohnson,nalioth,"However, by selecting that, I can no longer see the bootup process."
+2005-10-29T10:31:00.000Z,HaroldJohnson,nalioth,"The only thing I can see, in fact..."
+2005-10-29T10:32:00.000Z,HaroldJohnson,nalioth,...is a blank screen until I get to the wdm.  That's how it was with Hoary...
+2005-10-29T10:32:00.000Z,nalioth,HaroldJohnson,"otw, you get 4x til you get to gdm?"
+2005-10-29T10:33:00.000Z,HaroldJohnson,nalioth,"But now, I'm not appearing to reach wdm."
+2005-10-29T10:33:00.000Z,HaroldJohnson,nalioth,One sec...
+2005-10-29T10:34:00.000Z,HaroldJohnson,nalioth,"No - when I select 'no video driver', I get a blank (slightly glowing) screen until the wdm."
+2005-10-29T10:34:00.000Z,HaroldJohnson,nalioth,It's only when I do not select 'no video driver' that I get the uneven 4 images.
+2005-10-29T10:35:00.000Z,nalioth,HaroldJohnson,and you cant ctrl-alt-f3 to a text terminal?
+2005-10-29T10:35:00.000Z,HaroldJohnson,nalioth,No.  Here...
+2005-10-29T10:35:00.000Z,HaroldJohnson,nalioth,"I've just taken off the 'no video driver' so that i can watch the bootup process, and..."
+2005-10-29T10:36:00.000Z,HaroldJohnson,nalioth,"...i can see that the last message is that it is starting up wdm, then quickly i catch a text login prompt before it goes dark."
+2005-10-29T10:37:00.000Z,nalioth,HaroldJohnson,i'm still not understanding why you cant hit ctrl-alt-f4 and find a text login screen
+2005-10-29T10:37:00.000Z,HaroldJohnson,nalioth,"One thing: i know I can access login in the dark (that's how i just displayed wdm, as I had gdm installed before, which also was doing this0"
+2005-10-29T10:38:00.000Z,HaroldJohnson,nalioth,"Don't know either.  Perhaps xserver-xorg isn't configured properly?  (Just a guess.)  Unfortunatley, i can't my display to run any tests/commands."
+2005-10-29T10:38:00.000Z,nalioth,HaroldJohnson,you should be able to access a console login tho
+2005-10-29T10:38:00.000Z,HaroldJohnson,nalioth,If only i could ssh into the machine somehow...
+2005-10-29T10:40:00.000Z,HaroldJohnson,nalioth,"Okay, in the dark I've entered 'sudo apt-get remove wdm gdm'"
+2005-10-29T10:40:00.000Z,HaroldJohnson,nalioth,...and then my password...
+2005-10-29T10:41:00.000Z,HaroldJohnson,nalioth,So I'll reboot after this and see if I can get back to a quadrupled text prompt.
+2005-10-29T10:52:00.000Z,HaroldJohnson,nalioth,What command removes wdm (or any other package)?  'apt-get remove wdm'?
+2005-10-29T10:53:00.000Z,nalioth,HaroldJohnson,correct. use sudo
+2005-11-06T17:44:00.000Z,nalioth,HaroldJohnson,hello!
+2005-11-06T17:44:00.000Z,HaroldJohnson,nalioth,Hello
+2005-11-06T17:45:00.000Z,HaroldJohnson,nalioth,"What's up, cowperson?"
+2005-11-06T17:45:00.000Z,HaroldJohnson,nalioth,I've settled with not installing a GUI on my Breezy Mac
+2005-11-06T17:47:00.000Z,HaroldJohnson,nalioth,"I may change my mind, however, once Xubuntu has a Ubuntu theme delivered.  Probably on the next release of Ubuntu."
+2005-11-06T17:47:00.000Z,nalioth,HaroldJohnson,"sounds good. xubuntu didnt do it for ya, eh?"
+2005-11-06T17:47:00.000Z,HaroldJohnson,nalioth,"Well, no, not yet.  But I have hopes."
+2005-11-06T17:49:00.000Z,HaroldJohnson,nalioth,Ever use 'screen'?
+2005-11-06T17:50:00.000Z,nalioth,HaroldJohnson,all the time (got 4 screen sessions goin right now)
+2005-11-06T17:50:00.000Z,HaroldJohnson,nalioth,How would I copy and paste text?  Not findng anything n the manual...
+2005-11-06T17:51:00.000Z,nalioth,HaroldJohnson,"i've heard that highligting copies and middle clicking pastes, but i dont c/p from screen sessins"
+2005-11-06T17:52:00.000Z,HaroldJohnson,nalioth,"Thanks, nalioth"
+2005-11-06T06:19:00.000Z,HaroldJohnson,nalioth,Ever play Nethack?
+2005-11-06T06:19:00.000Z,nalioth,HaroldJohnson,way long ago
+2005-11-06T06:19:00.000Z,HaroldJohnson,nalioth,Just read about it.
+2005-11-06T06:19:00.000Z,HaroldJohnson,nalioth,Installing it now.
+2005-11-06T06:20:00.000Z,nalioth,HaroldJohnson,get 'hunt the wumpus' or 'wumpus' also
+2005-11-06T06:20:00.000Z,HaroldJohnson,nalioth,I've heard of wumpus.  Is it better?
+2005-11-06T06:20:00.000Z,nalioth,HaroldJohnson,it's even more mindless
+2005-11-06T06:20:00.000Z,HaroldJohnson,nalioth,lol
+2005-11-10T17:12:00.000Z,nalioth,HaroldJohnson,ifconfig
+2005-11-10T17:12:00.000Z,nalioth,HaroldJohnson,are you back causing more trouble?
+2005-11-10T17:12:00.000Z,HaroldJohnson,nalioth,Thank you
+2005-11-10T17:12:00.000Z,HaroldJohnson,nalioth,"Yes, just shaking it all up"
+2005-11-10T17:13:00.000Z,HaroldJohnson,nalioth,"I've been going the GUI-less route, and it's working out well.  Learning to master vim!"
+2005-11-10T17:13:00.000Z,HaroldJohnson,nalioth,"Still loving ubuntu, and debian in general."
+2005-11-10T17:13:00.000Z,nalioth,HaroldJohnson,"rock on, dude"
+2005-11-10T17:14:00.000Z,HaroldJohnson,nalioth,Rock and roll oblivion!
+2005-11-10T17:14:00.000Z,HaroldJohnson,nalioth,"What's your music, nalioth?"
+2005-11-10T17:14:00.000Z,nalioth,HaroldJohnson,#ubuntu-offtopic please
+2005-11-10T17:15:00.000Z,HaroldJohnson,nalioth,Hmmm...don't appear to have ipconfig.  Is that something that's not generally included in the Server install?
+2005-11-10T17:16:00.000Z,nalioth,HaroldJohnson,"ifconfig, ipconfig is for windows"
+2005-11-10T17:17:00.000Z,nalioth,HaroldJohnson,if you like having 'ipconfig' you can always alias it
+2005-11-10T17:17:00.000Z,HaroldJohnson,nalioth,I forgot; haven't played with my settings in awhile
+2005-11-10T17:18:00.000Z,HaroldJohnson,nalioth,That's just silly; I've never actually used ipconfig on Windows.
+2005-11-10T17:18:00.000Z,HaroldJohnson,nalioth,Didn't even know it existed!
+2005-11-10T17:18:00.000Z,HaroldJohnson,nalioth,Thanks for the suggestion though.
+2006-08-23T05:50:00.000Z,nalioth,HaroldJohnson,what do you mean?
+2006-08-23T05:51:00.000Z,nalioth,HaroldJohnson,join #ubuntu-classroom please
+2005-07-09T09:14:00.000Z,HaroldJohnson,,Hello everyone
+2005-07-09T09:14:00.000Z,HaroldJohnson,,I'm surprised to find so many here
+2005-07-09T09:15:00.000Z,HaroldJohnson,,I'm trying to install Ubuntu on an Old World PowerBook
+2005-07-09T09:15:00.000Z,nalioth,HaroldJohnson,"wow, you're hardcore"
+2005-07-09T09:16:00.000Z,nalioth,HaroldJohnson,hang on a minute
+2005-07-12T14:08:00.000Z,HaroldJohnson,nalioth,"When I'm initially installing ubuntu (repartitioning and all that), how do I select the most minimal installation/"
+2005-07-12T14:09:00.000Z,nalioth,HaroldJohnson,choose the server install
+2005-07-12T14:09:00.000Z,HaroldJohnson,nalioth,Which is the server install?
+2005-07-12T14:13:00.000Z,HaroldJohnson,nalioth,Can I install server using BootX/
+2005-07-12T14:13:00.000Z,nalioth,HaroldJohnson,should be just like the warty
+2005-07-12T14:14:00.000Z,nalioth,HaroldJohnson,all the things you did with warty will need to be done here
+2005-07-12T14:14:00.000Z,HaroldJohnson,nalioth,I don't understand where I'm supposed to enter 'server'
+2005-07-12T14:14:00.000Z,nalioth,HaroldJohnson,"at the boot, it should say 'press f1 for help or <enter> to boot'"
+2005-07-12T14:14:00.000Z,nalioth,HaroldJohnson,press f1 and look for what to type for a server install
+2005-07-12T14:24:00.000Z,HaroldJohnson,nalioth,There is no server option that I can find
+2005-07-12T14:24:00.000Z,nalioth,HaroldJohnson,i'm very unfamiliar with the boot sequence
+2005-07-12T14:48:00.000Z,nalioth,HaroldJohnson,i wish i had a mac i could boot up with the disk to walk you through
+2005-07-12T14:49:00.000Z,HaroldJohnson,nalioth,"Thanks.  I have a number of obstacles, but I have faith, with the help of this helpful support crew here, that I'll get this system up and running the way I want it."
+2005-07-12T14:50:00.000Z,nalioth,HaroldJohnson,"in a couple of days, i can walk you through the procedure (i'm fixin to get new mac, and will be installing ubuntu on it)"
+2005-07-12T14:50:00.000Z,HaroldJohnson,nalioth,"I'm using a very old Mac, so I don't know if you'll encounter the same issues."
+2005-07-12T14:51:00.000Z,nalioth,HaroldJohnson,"have faith, i know much voodoo (just cant remember which button to push at the boot prompt)"
+2005-07-12T14:53:00.000Z,HaroldJohnson,nalioth,"No worries, I'll get this up and running with yours (and others) help.  I have a feeling this next method is going to work, apt-get upgrade-dist from Warty to Hoary."
+2005-07-12T14:54:00.000Z,nalioth,HaroldJohnson,you can dump the xserver and all the gui packages
+2005-07-12T14:55:00.000Z,HaroldJohnson,nalioth,"I'm writing that down, xserver and gui packages.  Which are the GUI packages, besides xserver-xfree86?"
+2005-07-12T14:55:00.000Z,nalioth,HaroldJohnson,gtk stuff
+2005-07-12T14:56:00.000Z,HaroldJohnson,nalioth,"I wanted an iBook for so long; finally found this old PowerBook at...well, nalioth knows where!"
+2005-07-12T15:03:00.000Z,nalioth,HaroldJohnson,they don't have to
+2005-07-12T15:03:00.000Z,nalioth,HaroldJohnson,a BRAND new ibook can be had for $999
+2005-07-12T15:04:00.000Z,nalioth,HaroldJohnson,and refurbished (with full factory warranty) ibooks can be had for $799
+2005-07-12T15:04:00.000Z,HaroldJohnson,nalioth,"I just bought a PowerBook for $60 (as you know) - oh yeah, and a sh*tload of hassle!"
+2005-07-12T15:04:00.000Z,nalioth,HaroldJohnson,no hassle at all...CHALLENGE
+2005-07-12T15:05:00.000Z,HaroldJohnson,nalioth,"Right, right, *challenge*, sure, sure."
+2005-07-12T15:05:00.000Z,nalioth,HaroldJohnson,"makes you a better person, AND think of what you'll be able to pass on in here"
+2005-07-12T15:06:00.000Z,HaroldJohnson,nalioth,"Yes, when I get her runnin' properly."
+2005-07-12T15:06:00.000Z,HaroldJohnson,nalioth,I have faith.
+2005-07-12T15:06:00.000Z,HaroldJohnson,nalioth,Take it easy
+2005-07-13T06:15:00.000Z,nalioth,HaroldJohnson,sounds to me like you've dont it
+2005-07-13T06:15:00.000Z,nalioth,HaroldJohnson,"you done it, now ya just gotta configure your bootx"
+2005-07-13T06:15:00.000Z,HaroldJohnson,nalioth,Got it
+2005-07-13T06:16:00.000Z,HaroldJohnson,nalioth,"Let's hope that's it.  This type of upgrade upgrades the kernel, too doesn't it?  It looks to be the same name/version, though."
+2005-07-13T06:17:00.000Z,nalioth,HaroldJohnson,you will need to move your kernel and the other thing so taht bootx can find them
+2005-07-13T06:17:00.000Z,HaroldJohnson,nalioth,"Okay.  Yeah, I've been doing that with every reboot after an apt-get upgrade."
+2005-07-13T06:18:00.000Z,HaroldJohnson,nalioth,"Back in awhile, hopefully"
+2005-07-13T13:20:00.000Z,nalioth,HaroldJohnson,not kdm?
+2005-07-13T13:21:00.000Z,HaroldJohnson,nalioth,"Hello, dude!"
+2005-07-13T13:21:00.000Z,HaroldJohnson,nalioth,Or lady
+2005-07-13T13:22:00.000Z,HaroldJohnson,nalioth,"I didn't like gnome on this old Mac, so I apt-get install fluxbox and then apt-get install wdm"
+2005-07-13T13:22:00.000Z,HaroldJohnson,nalioth,How are you today?
+2005-07-13T13:22:00.000Z,nalioth,HaroldJohnson,sounds good
+2005-07-13T13:22:00.000Z,nalioth,HaroldJohnson,"i'm fine, and you?"
+2005-07-13T13:22:00.000Z,HaroldJohnson,nalioth,Good.  Which display manager do you use?
+2005-07-13T13:23:00.000Z,nalioth,HaroldJohnson,the default gdm runs underneath my gnome
+2005-07-13T13:23:00.000Z,HaroldJohnson,nalioth,I finally got my first view of gnome yesterday.
+2005-07-13T13:23:00.000Z,nalioth,HaroldJohnson,and already tired of it? lol
+2005-07-13T13:24:00.000Z,HaroldJohnson,nalioth,It was dog slow on this old Mac.
+2005-07-13T13:24:00.000Z,nalioth,HaroldJohnson,thought flux was a display mangler?
+2005-07-13T13:24:00.000Z,HaroldJohnson,nalioth,"Is it?  Sheesh, I've got alot to learn."
+2005-07-13T13:24:00.000Z,HaroldJohnson,nalioth,A mangler?
+2005-07-13T13:24:00.000Z,HaroldJohnson,nalioth,LOL
+2005-07-13T13:25:00.000Z,nalioth,HaroldJohnson,"HaroldJohnson sorry, i meant desktop manager (like kde or gnome)"
+2005-07-13T13:25:00.000Z,nalioth,HaroldJohnson,"i'm not much into GUIs, so 'file manglers, desktop manglers, window manglers, etc'"
+2005-07-13T13:27:00.000Z,nalioth,HaroldJohnson,do you get a graphical login screen?
+2005-07-13T13:27:00.000Z,HaroldJohnson,nalioth,I finally did today.
+2005-07-13T13:28:00.000Z,nalioth,HaroldJohnson,"ok then, at that screen, click 'sessions' and choose xfce4"
+2005-07-13T13:28:00.000Z,HaroldJohnson,nalioth,I logged in but received an error saying the session lasted only 10 seconds because of blah blah blah.
+2005-07-13T13:28:00.000Z,nalioth,HaroldJohnson,that has nothing to do wiht xfce4
+2005-07-13T13:28:00.000Z,HaroldJohnson,nalioth,"Okay, thanks, I'll try that."
+2005-07-13T13:28:00.000Z,HaroldJohnson,nalioth,I'm going now to try.
+2005-07-13T13:29:00.000Z,nalioth,HaroldJohnson,you might like to read this http://linuz.sns.it/~max/twin/
+2005-07-13T13:30:00.000Z,HaroldJohnson,nalioth,Looks like I got that error again.
+2005-07-13T13:31:00.000Z,nalioth,HaroldJohnson,"at a failsafe terminal in your homedir, type 'rm .ICEauthority'"
+2005-07-13T13:31:00.000Z,nalioth,HaroldJohnson,and then try to log back in to xfce
+2005-07-13T13:31:00.000Z,HaroldJohnson,nalioth,"What is that removing, and why?"
+2005-07-13T13:32:00.000Z,nalioth,HaroldJohnson,"the .ICEauthority file is supposed to be read/write, but sometines it gets 'locked' by unknowing processes"
+2005-07-13T13:32:00.000Z,HaroldJohnson,nalioth,"Okay, I'll try that"
+2005-07-13T13:40:00.000Z,HaroldJohnson,nalioth,"You're a star.  But there's a problem; when I log into xfce, there's a little silouette of a mouse in the middle of the screen."
+2005-07-13T13:40:00.000Z,nalioth,HaroldJohnson,"thats the mascot, don't worry, it doesnt eat much"
+2005-07-13T13:40:00.000Z,HaroldJohnson,nalioth,LOL
+2005-07-13T13:41:00.000Z,HaroldJohnson,nalioth,"I'm going to try using it, now."
+2005-07-13T13:43:00.000Z,HaroldJohnson,nalioth,It's a *really* satisfying feeling to finally see a desktop on this old bird...
+2005-07-13T13:44:00.000Z,HaroldJohnson,nalioth,xfce may be too much for 64MB to handle; I may have to switch to fluxbox.
+2005-07-13T13:44:00.000Z,nalioth,HaroldJohnson,congratulations (and what a wiki i can see coming out of your experience)
+2005-07-13T13:44:00.000Z,nalioth,HaroldJohnson,you could also try matchbox
+2005-07-13T13:44:00.000Z,HaroldJohnson,nalioth,I'll take you up on that (the wiki).
+2005-07-13T13:46:00.000Z,HaroldJohnson,nalioth,I dig Ubuntu's color scheme.
+2005-07-13T13:48:00.000Z,nalioth,HaroldJohnson,"you might want to give matchbox a try, it is lighter than fluxbox"
+2005-07-13T13:48:00.000Z,HaroldJohnson,nalioth,"What's lighter, fluxbox or xfce?"
+2005-07-13T13:49:00.000Z,nalioth,HaroldJohnson,flux
+2005-07-13T13:49:00.000Z,HaroldJohnson,nalioth,"Okay, I'm going to play with xfce for awhile now."
+2005-07-13T13:54:00.000Z,HaroldJohnson,nalioth,I just sent first email using Ubuntu.  It was a Gmail.  I'm so excited!
+2005-07-13T13:54:00.000Z,HaroldJohnson,nalioth,"Once Firefox finally loaded up, it's running good on xfce so far."
+2005-07-13T13:55:00.000Z,nalioth,HaroldJohnson,"you might want to run kazehakaze (it uses the gecko engine, but is a bit lighter running)"
+2005-07-13T13:55:00.000Z,HaroldJohnson,nalioth,I'll write that down for later.
+2005-07-13T13:56:00.000Z,HaroldJohnson,nalioth,"I actually have preferred the plain-jane Mozilla to Firefox, though Firefox is gorgeous."
+2005-07-13T13:56:00.000Z,HaroldJohnson,nalioth,I feel like Charlie in the Chocolate Factory right now.
+2005-07-13T13:57:00.000Z,nalioth,HaroldJohnson,great!
+2005-07-13T13:57:00.000Z,HaroldJohnson,nalioth,"Okay, I'm going to go back to playing with it, then I've got to figure out how to set up my D-Link pcmcia card for wireless browsing."
+2005-07-13T13:58:00.000Z,nalioth,HaroldJohnson,"every day a new mountaintop, with a view to the next higher peak"
+2005-07-13T14:01:00.000Z,HaroldJohnson,nalioth,"Well, it's been fun.  I'm going back to OS X now."
+2005-07-13T14:01:00.000Z,nalioth,HaroldJohnson,what? on the pb?
+2005-07-13T14:01:00.000Z,HaroldJohnson,nalioth,I'm just kidding.
+2005-07-13T14:03:00.000Z,nalioth,HaroldJohnson,i'm surprised you got osx goin on the old thing
+2005-07-13T14:04:00.000Z,HaroldJohnson,nalioth,"It had 128MB ram at the time.  I used XPostFacto, and version of BootX (I think)."
+2005-07-13T14:04:00.000Z,HaroldJohnson,nalioth,"I'm diggin' Linux, though, and I want to have a least one system running it."
+2005-07-13T14:05:00.000Z,HaroldJohnson,nalioth,"Besides, I kind of like using the terminal sometimes."
+2005-07-13T14:05:00.000Z,nalioth,HaroldJohnson,it seems you have at least one system running on it
+2005-07-13T14:05:00.000Z,nalioth,HaroldJohnson,the terminal is your friend
+2005-07-13T14:05:00.000Z,HaroldJohnson,nalioth,"Okay, it's time to test/setup the wireless."
+2005-07-13T14:05:00.000Z,HaroldJohnson,nalioth,I'm out.
+2005-07-13T15:54:00.000Z,nalioth,HaroldJohnson,the desktop man
+2005-07-13T15:54:00.000Z,HaroldJohnson,nalioth,the one with the plan
+2005-07-14T14:36:00.000Z,nalioth,HaroldJohnson,howdy
+2005-07-14T14:37:00.000Z,HaroldJohnson,nalioth,"Howdy, nalioth!"
+2005-07-14T14:39:00.000Z,nalioth,HaroldJohnson,you should always boot wiht the hardware you want to use installed
+2005-07-15T09:34:00.000Z,nalioth,HaroldJohnson,howzit goin?
+2005-07-15T09:40:00.000Z,nalioth,HaroldJohnson,you are speaking to a Robot
+2005-07-15T09:40:00.000Z,nalioth,HaroldJohnson,"don't tease the bot, he doesnt like it"
+2005-07-15T09:41:00.000Z,nalioth,HaroldJohnson,too many other folks have abused poor ol' ubotu
+2005-07-18T16:55:00.000Z,nalioth,HaroldJohnson,goin on vacation?
+2005-09-13T15:34:00.000Z,nalioth,HaroldJohnson,look in ##apple
+2005-09-21T05:01:00.000Z,nalioth,HaroldJohnson,back to cause more trouble?
+2005-09-21T05:01:00.000Z,HaroldJohnson,nalioth,"Hi nalioth, how're you?"
+2005-09-21T05:01:00.000Z,nalioth,HaroldJohnson,breezy is broken until oct 13. live with your decision
+2005-09-21T05:01:00.000Z,HaroldJohnson,nalioth,:)
+2005-09-21T05:02:00.000Z,nalioth,HaroldJohnson,the next update or two should fix your problem
+2005-09-21T05:02:00.000Z,HaroldJohnson,nalioth,Wait - does that mean I've upgrade to Breezy?
+2005-09-21T05:02:00.000Z,nalioth,HaroldJohnson,i'm fine today. and you?
+2005-09-21T05:02:00.000Z,HaroldJohnson,nalioth,Fine.
+2005-09-21T05:02:00.000Z,HaroldJohnson,nalioth,Thanks for asking
+2005-09-21T05:02:00.000Z,HaroldJohnson,nalioth,What's a way to reveal that I'm using Breezy?
+2005-09-21T05:02:00.000Z,nalioth,HaroldJohnson,"open a terminal, and type uname -a"
+2005-09-21T05:03:00.000Z,HaroldJohnson,nalioth,"Yes, but that simply tells me the kernel"
+2005-09-21T05:05:00.000Z,HaroldJohnson,nalioth,"Once you perform an apt-get dist-upgrade, do you need to inform BootX or Yaboot that you've changed the kernel?"
+2005-09-21T05:06:00.000Z,nalioth,HaroldJohnson,"on yaboot, you'll want to run 'sudo ybin' to set the new settings into nvram"
+2005-09-21T05:06:00.000Z,nalioth,HaroldJohnson,i'm not sure on bootx (probably have to move the initrc and all that happy stuff back to the boot block)
+2005-09-21T05:06:00.000Z,HaroldJohnson,nalioth,Thanks
+2005-10-20T14:10:00.000Z,nalioth,HaroldJohnson,"you old sneaky snake, where you been?"
+2005-10-20T14:11:00.000Z,HaroldJohnson,nalioth,I haven't checked in in awhile.  How've you been?
+2005-10-20T14:13:00.000Z,nalioth,HaroldJohnson,you here?
+2005-10-20T14:13:00.000Z,HaroldJohnson,nalioth,"Okay, I've go to go.  I'll check in tomorrow or the next day and stay longer."
+2005-10-22T10:28:00.000Z,nalioth,HaroldJohnson,howdy
+2005-10-22T10:28:00.000Z,HaroldJohnson,nalioth,Howdy
+2005-10-22T10:30:00.000Z,nalioth,HaroldJohnson,choose 'rescue' ?
+2005-10-28T06:56:00.000Z,nalioth,HaroldJohnson,what trouble do you have now? lol
+2005-10-28T06:57:00.000Z,HaroldJohnson,nalioth,"Hi there.  Yes, it seems I'm always having trouble.  Must be due to my wanting a challenge, remember?"
+2005-10-28T06:58:00.000Z,nalioth,HaroldJohnson,so what is your question?
+2005-10-28T06:58:00.000Z,HaroldJohnson,nalioth,"I wanted to go the pure GUI-less route, so I tried to install Debian..."
+2005-10-28T06:59:00.000Z,HaroldJohnson,nalioth,...but didn't get very far.  (Mac wouldn't 'see' my floppy.)  So now it's back to Ubuntu...
+2005-10-28T06:59:00.000Z,nalioth,HaroldJohnson,"we have a 'server install', you know"
+2005-10-28T07:00:00.000Z,HaroldJohnson,nalioth,I've never been able to get to the server installer prompt.
+2005-10-28T07:00:00.000Z,HaroldJohnson,nalioth,How do you do that again?
+2005-10-28T07:00:00.000Z,nalioth,HaroldJohnson,you can run BUM in the gui and turn off the gui altogether
+2005-10-28T07:00:00.000Z,nalioth,HaroldJohnson,"at the install prompt, type 'server' <enter>"
+2005-10-28T07:00:00.000Z,HaroldJohnson,nalioth,"See, that's the problem.  Never get the install prompt."
+2005-10-28T07:01:00.000Z,nalioth,HaroldJohnson,then use bum to turn off your X
+2005-10-28T07:01:00.000Z,HaroldJohnson,nalioth,I guess I'll do that once I get installed.  But the problem is...
+2005-10-28T07:02:00.000Z,HaroldJohnson,nalioth,"...I've rebooted after the bootloader stage, and..."
+2005-10-28T07:02:00.000Z,HaroldJohnson,nalioth,...now I recieve this error about the tty...
+2005-10-28T07:02:00.000Z,nalioth,HaroldJohnson,you may need to install hoary and upgrade
+2005-10-28T07:03:00.000Z,HaroldJohnson,nalioth,"I've tried that route.  Changed the sources from Hoary to Breezy, ran the dist-upgrade..."
+2005-10-28T07:03:00.000Z,HaroldJohnson,nalioth,...then after rebooting had another error.
+2005-10-28T07:04:00.000Z,HaroldJohnson,nalioth,Someone here said it appeared to be a hardware error.
+2005-10-28T07:04:00.000Z,HaroldJohnson,nalioth,"Hoary ran fine on my Mac, though."
+2005-10-28T07:04:00.000Z,HaroldJohnson,nalioth,I suppose I could just step back to Hoary.
+2005-10-28T07:05:00.000Z,nalioth,HaroldJohnson,"if it works, and you're only gonna run CLI, hoary should be fine"
+2005-10-28T07:05:00.000Z,HaroldJohnson,nalioth,"Would Breezy improve upon this old horse (and Old World Powerbook G3)?  Any idea, nalioth?"
+2005-10-28T07:06:00.000Z,HaroldJohnson,nalioth,Arghh!  Never should have tried to upgrade!  This put me back about a week...
+2005-10-28T07:06:00.000Z,nalioth,HaroldJohnson,i suspect hoary is as good as you will need on that old warhorse
+2005-10-28T07:07:00.000Z,HaroldJohnson,nalioth,"Hey nalioth, once I have Hoary installed, can I easily install pure debian?"
+2005-10-28T07:07:00.000Z,nalioth,HaroldJohnson,no
+2005-10-28T07:07:00.000Z,HaroldJohnson,nalioth,Are you just saying that because you don't want me migrating to debian?
+2005-10-28T07:07:00.000Z,nalioth,HaroldJohnson,hoary is way beyond any shipping version of debian
+2005-10-28T07:07:00.000Z,nalioth,HaroldJohnson,"if you want a console only box, try netbsd"
+2005-10-28T07:08:00.000Z,HaroldJohnson,nalioth,Even in CLI mode?
+2005-10-28T07:08:00.000Z,HaroldJohnson,nalioth,"Now you're just trying to make my life difficult, nalioth!  LOL"
+2005-10-28T07:09:00.000Z,HaroldJohnson,nalioth,I've seriously consider installing FreeBSD or Darwin on this old box.
+2005-10-28T07:09:00.000Z,HaroldJohnson,nalioth,Or OpenDarwin.
+2005-10-28T07:09:00.000Z,nalioth,HaroldJohnson,"install hoary, use BUM to shut off your x loading and be happy"
+2005-10-28T07:10:00.000Z,HaroldJohnson,nalioth,"My main focus is on continuing my programming edumacation now, though, rather than installing Linux ever other day."
+2005-10-28T07:10:00.000Z,nalioth,HaroldJohnson,"if you desire a cli linux, see above"
+2005-10-28T07:10:00.000Z,HaroldJohnson,nalioth,"I *will* be happy.  I dig this community enough to make me want to stick with Ubuntu, but I dig the purity of Debian.  Do you know what I mean?"
+2005-10-28T07:10:00.000Z,nalioth,HaroldJohnson,hoary has a console program to do everything you could need
+2005-10-28T07:11:00.000Z,HaroldJohnson,nalioth,"Yes, but Ubuntu's installer installs way more software than I want or need for CLI, and I haven't been able to install server only."
+2005-10-28T07:12:00.000Z,HaroldJohnson,nalioth,"Waitaminute - aren't you using Debian, nalioth?"
+2005-10-28T07:12:00.000Z,nalioth,HaroldJohnson,only the ubuntu branch
+2005-10-28T07:13:00.000Z,HaroldJohnson,nalioth,Good.  So how is Houston?
+2005-10-28T07:14:00.000Z,HaroldJohnson,nalioth,"Well, thanks again, as always.  If i get this figured out I'll definitely put up a wiki this time."
+2005-10-28T07:14:00.000Z,nalioth,HaroldJohnson,still here after all the hurricanes
+2005-10-28T07:15:00.000Z,HaroldJohnson,nalioth,And I'll look into BUM.
+2005-10-28T07:15:00.000Z,HaroldJohnson,nalioth,Good
+2005-10-28T07:31:00.000Z,HaroldJohnson,nalioth,I just realized where I went wrong!
+2005-10-28T07:31:00.000Z,HaroldJohnson,nalioth,Good news - I input the wrong 'root=/dev/hda10' command in BootX.
+2005-10-28T07:32:00.000Z,nalioth,HaroldJohnson,welcome to breezy
+2005-10-28T07:32:00.000Z,HaroldJohnson,nalioth,So now it's completing the installation process...!
+2005-10-28T07:32:00.000Z,nalioth,HaroldJohnson,you can still use BUM to keep your X from starting
+2005-10-28T07:32:00.000Z,HaroldJohnson,nalioth,I'll do that.
+2005-10-28T07:33:00.000Z,HaroldJohnson,nalioth,"So I'll complete the installation, and I'll let you know if anything goes wrong."
+2005-10-28T07:33:00.000Z,HaroldJohnson,nalioth,Somehow you always manage to keep me using Ubunut.
+2005-10-28T07:33:00.000Z,nalioth,HaroldJohnson,you got it (thanks to the hoary learning curve)
+2005-10-28T07:35:00.000Z,HaroldJohnson,nalioth,"By the way, the new instructions for Old World Macs someone posted to the wiki is much clearer than the last: http://wiki.ubuntu.com/Installation/OldWorldMacs"
+2005-10-28T07:35:00.000Z,nalioth,HaroldJohnson,wikis evolve
+2005-10-28T07:37:00.000Z,nalioth,HaroldJohnson,is that your next project? UbuntuPSP ?
+2005-10-28T07:37:00.000Z,HaroldJohnson,nalioth,Very funny.
+2005-10-28T07:38:00.000Z,HaroldJohnson,nalioth,I can barely manage an install on an old Powerbook.  You think it'd be advisable to even *attempt* an install on a PSP?
+2005-10-28T07:38:00.000Z,HaroldJohnson,nalioth,"Besides, where am I going to get the bread for a PSP?"
+2005-10-28T09:29:00.000Z,HaroldJohnson,nalioth,Did you know there was a Ubuntu-server download?  Why didn't you tell me?  I'm downloading the ISO now.
+2005-10-28T09:30:00.000Z,nalioth,HaroldJohnson,every ubuntu disk has a server install in it (no extra charge)
+2005-10-28T09:31:00.000Z,HaroldJohnson,nalioth,"Yes, but since I can't access server during my Old World Mac installation process, downloading the server ISO may make the process possible."
+2005-10-28T09:32:00.000Z,nalioth,HaroldJohnson,well have fun (the ubuntu-server is bleeding edge)
+2005-10-28T09:32:00.000Z,HaroldJohnson,nalioth,"When you boot into the Ubuntu installer from BootX, when exactly are you supposed to type 'server' (or 'custom')?"
+2005-10-28T09:33:00.000Z,nalioth,HaroldJohnson,at the blinking 'boot' prompt
+2005-10-28T09:33:00.000Z,HaroldJohnson,nalioth,And since there is no blinking 'boot' prompt when you go from BootX?
+2005-10-28T09:35:00.000Z,nalioth,HaroldJohnson,you got me there
+2005-10-28T09:37:00.000Z,HaroldJohnson,nalioth,Strange; this announcement says Ubuntu 5.10 Server is the first release: http://lwn.net/Articles/156309/
+2005-10-28T09:38:00.000Z,nalioth,HaroldJohnson,i DID say it was bleeding edge stuff
+2005-10-28T14:01:00.000Z,nalioth,HaroldJohnson,install xubuntu-desktop
+2005-10-28T14:01:00.000Z,HaroldJohnson,nalioth,"Hi.  Yeah, I've just installed Ubuntu Server (from the Ubuntu Server CD)!"
+2005-10-28T14:01:00.000Z,nalioth,HaroldJohnson,xubuntu-desktop will give you a nice xfce4 desktop
+2005-10-28T14:02:00.000Z,HaroldJohnson,nalioth,I've been preferring fluxbox to xfce4; which direction would I go towards installing that?
+2005-10-28T14:03:00.000Z,nalioth,HaroldJohnson,sudo apt-get install fluxbox lbpager fbdesk fluxconf wmfrog
+2005-10-28T14:03:00.000Z,HaroldJohnson,nalioth,Thanks - how did you remember all of those?
+2005-10-28T14:04:00.000Z,nalioth,HaroldJohnson,remember all of what?  :
+2005-10-28T14:05:00.000Z,nalioth,HaroldJohnson,"when you issue that command, it will install xorg and other GUI packages, also"
+2005-10-28T14:05:00.000Z,HaroldJohnson,nalioth,How did you remember what to install?  (You listed 5 different things.)
+2005-10-28T14:05:00.000Z,nalioth,HaroldJohnson,c/p that whole line
+2005-10-28T14:05:00.000Z,HaroldJohnson,nalioth,"Oh boy, that'll take up some space.  But probably not enough to fill 1.7GB, right?"
+2005-10-28T14:05:00.000Z,HaroldJohnson,nalioth,I believe I will.
+2005-10-28T14:05:00.000Z,nalioth,HaroldJohnson,not at all
+2005-10-28T14:06:00.000Z,HaroldJohnson,nalioth,You're truly amazing.
+2005-10-28T14:06:00.000Z,HaroldJohnson,nalioth,"Thanks, and make sure to keep in touch.  http://somethingthathappened.com"
+2005-10-28T14:06:00.000Z,nalioth,HaroldJohnson,"not really, just a common nerd"
+2005-10-28T14:07:00.000Z,HaroldJohnson,nalioth,"Before I do this, I'm going to research xubuntu some."
+2005-10-28T14:08:00.000Z,nalioth,HaroldJohnson,wiki.ubuntu.com/xubuntu
+2005-10-28T14:08:00.000Z,HaroldJohnson,nalioth,"Already there, but thanks!"
+2005-10-29T08:51:00.000Z,HaroldJohnson,nalioth,What's 'lbpager'?  You suggested installing it yesterday.
+2005-10-29T08:51:00.000Z,nalioth,HaroldJohnson,it's a pager for your fluxbox
+2005-10-29T08:52:00.000Z,HaroldJohnson,nalioth,You sure that's not 'bbpager'?
+2005-10-29T08:52:00.000Z,nalioth,HaroldJohnson,open a terminal and type 'apt-cache search fluxbox'
+2005-10-29T08:53:00.000Z,HaroldJohnson,nalioth,Thanks.  I'm just asking 'cuz I typed in the full line you gave me and it couldn't find lbpager.
+2005-10-29T08:53:00.000Z,nalioth,HaroldJohnson,you are using breezy right? with uni and multienabled?
+2005-10-29T08:55:00.000Z,HaroldJohnson,nalioth,"I enabled uni, but prolly not multi.  Lemme check..."
+2005-10-29T10:03:00.000Z,HaroldJohnson,nalioth,I don't currently have access to my Ubuntu machine's screen; how do I obtain it's IP address in order to log into it remotely.  The machine is on my home network.
+2005-10-29T10:03:00.000Z,nalioth,HaroldJohnson,you are in a classic catch-22
+2005-10-29T10:03:00.000Z,HaroldJohnson,nalioth,Uh oh.
+2005-10-29T10:04:00.000Z,HaroldJohnson,nalioth,"See, I've just installed gdm and now my Mac's screen is dark when I reboot."
+2005-10-29T10:04:00.000Z,nalioth,HaroldJohnson,"so ctrl-alt-f3, log in and type ifconfig"
+2005-10-29T10:05:00.000Z,HaroldJohnson,nalioth,That's not doing it.  Still dark.  Hm...
+2005-10-29T10:06:00.000Z,nalioth,HaroldJohnson,ctrl-alt-f(1-6) should get you a text terminal
+2005-10-29T10:29:00.000Z,HaroldJohnson,nalioth,Here's a question I've had for a long time.
+2005-10-29T10:30:00.000Z,HaroldJohnson,nalioth,"Whenever I install Ubuntu on this old Mac, the screen is unevenly divided into about 4 parts."
+2005-10-29T10:30:00.000Z,nalioth,HaroldJohnson,and how did you fix in on hoary?
+2005-10-29T10:30:00.000Z,HaroldJohnson,nalioth,This is resolved by selecting 'no video driver' in BootX....
+2005-10-29T10:31:00.000Z,HaroldJohnson,nalioth,"However, by selecting that, I can no longer see the bootup process."
+2005-10-29T10:31:00.000Z,HaroldJohnson,nalioth,"The only thing I can see, in fact..."
+2005-10-29T10:32:00.000Z,HaroldJohnson,nalioth,...is a blank screen until I get to the wdm.  That's how it was with Hoary...
+2005-10-29T10:32:00.000Z,nalioth,HaroldJohnson,"otw, you get 4x til you get to gdm?"
+2005-10-29T10:33:00.000Z,HaroldJohnson,nalioth,"But now, I'm not appearing to reach wdm."
+2005-10-29T10:33:00.000Z,HaroldJohnson,nalioth,One sec...
+2005-10-29T10:34:00.000Z,HaroldJohnson,nalioth,"No - when I select 'no video driver', I get a blank (slightly glowing) screen until the wdm."
+2005-10-29T10:34:00.000Z,HaroldJohnson,nalioth,It's only when I do not select 'no video driver' that I get the uneven 4 images.
+2005-10-29T10:35:00.000Z,nalioth,HaroldJohnson,and you cant ctrl-alt-f3 to a text terminal?
+2005-10-29T10:35:00.000Z,HaroldJohnson,nalioth,No.  Here...
+2005-10-29T10:35:00.000Z,HaroldJohnson,nalioth,"I've just taken off the 'no video driver' so that i can watch the bootup process, and..."
+2005-10-29T10:36:00.000Z,HaroldJohnson,nalioth,"...i can see that the last message is that it is starting up wdm, then quickly i catch a text login prompt before it goes dark."
+2005-10-29T10:37:00.000Z,nalioth,HaroldJohnson,i'm still not understanding why you cant hit ctrl-alt-f4 and find a text login screen
+2005-10-29T10:37:00.000Z,HaroldJohnson,nalioth,"One thing: i know I can access login in the dark (that's how i just displayed wdm, as I had gdm installed before, which also was doing this0"
+2005-10-29T10:38:00.000Z,HaroldJohnson,nalioth,"Don't know either.  Perhaps xserver-xorg isn't configured properly?  (Just a guess.)  Unfortunatley, i can't my display to run any tests/commands."
+2005-10-29T10:38:00.000Z,nalioth,HaroldJohnson,you should be able to access a console login tho
+2005-10-29T10:38:00.000Z,HaroldJohnson,nalioth,If only i could ssh into the machine somehow...
+2005-10-29T10:40:00.000Z,HaroldJohnson,nalioth,"Okay, in the dark I've entered 'sudo apt-get remove wdm gdm'"
+2005-10-29T10:40:00.000Z,HaroldJohnson,nalioth,...and then my password...
+2005-10-29T10:41:00.000Z,HaroldJohnson,nalioth,So I'll reboot after this and see if I can get back to a quadrupled text prompt.
+2005-10-29T10:52:00.000Z,HaroldJohnson,nalioth,What command removes wdm (or any other package)?  'apt-get remove wdm'?
+2005-10-29T10:53:00.000Z,nalioth,HaroldJohnson,correct. use sudo
+2005-11-06T17:44:00.000Z,nalioth,HaroldJohnson,hello!
+2005-11-06T17:44:00.000Z,HaroldJohnson,nalioth,Hello
+2005-11-06T17:45:00.000Z,HaroldJohnson,nalioth,"What's up, cowperson?"
+2005-11-06T17:45:00.000Z,HaroldJohnson,nalioth,I've settled with not installing a GUI on my Breezy Mac
+2005-11-06T17:47:00.000Z,HaroldJohnson,nalioth,"I may change my mind, however, once Xubuntu has a Ubuntu theme delivered.  Probably on the next release of Ubuntu."
+2005-11-06T17:47:00.000Z,nalioth,HaroldJohnson,"sounds good. xubuntu didnt do it for ya, eh?"
+2005-11-06T17:47:00.000Z,HaroldJohnson,nalioth,"Well, no, not yet.  But I have hopes."
+2005-11-06T17:49:00.000Z,HaroldJohnson,nalioth,Ever use 'screen'?
+2005-11-06T17:50:00.000Z,nalioth,HaroldJohnson,all the time (got 4 screen sessions goin right now)
+2005-11-06T17:50:00.000Z,HaroldJohnson,nalioth,How would I copy and paste text?  Not findng anything n the manual...
+2005-11-06T17:51:00.000Z,nalioth,HaroldJohnson,"i've heard that highligting copies and middle clicking pastes, but i dont c/p from screen sessins"
+2005-11-06T17:52:00.000Z,HaroldJohnson,nalioth,"Thanks, nalioth"
+2005-11-06T06:19:00.000Z,HaroldJohnson,nalioth,Ever play Nethack?
+2005-11-06T06:19:00.000Z,nalioth,HaroldJohnson,way long ago
+2005-11-06T06:19:00.000Z,HaroldJohnson,nalioth,Just read about it.
+2005-11-06T06:19:00.000Z,HaroldJohnson,nalioth,Installing it now.
+2005-11-06T06:20:00.000Z,nalioth,HaroldJohnson,get 'hunt the wumpus' or 'wumpus' also
+2005-11-06T06:20:00.000Z,HaroldJohnson,nalioth,I've heard of wumpus.  Is it better?
+2005-11-06T06:20:00.000Z,nalioth,HaroldJohnson,it's even more mindless
+2005-11-06T06:20:00.000Z,HaroldJohnson,nalioth,lol
+2005-11-10T17:12:00.000Z,nalioth,HaroldJohnson,ifconfig
+2005-11-10T17:12:00.000Z,nalioth,HaroldJohnson,are you back causing more trouble?
+2005-11-10T17:12:00.000Z,HaroldJohnson,nalioth,Thank you
+2005-11-10T17:12:00.000Z,HaroldJohnson,nalioth,"Yes, just shaking it all up"
+2005-11-10T17:13:00.000Z,HaroldJohnson,nalioth,"I've been going the GUI-less route, and it's working out well.  Learning to master vim!"
+2005-11-10T17:13:00.000Z,HaroldJohnson,nalioth,"Still loving ubuntu, and debian in general."
+2005-11-10T17:13:00.000Z,nalioth,HaroldJohnson,"rock on, dude"
+2005-11-10T17:14:00.000Z,HaroldJohnson,nalioth,Rock and roll oblivion!
+2005-11-10T17:14:00.000Z,HaroldJohnson,nalioth,"What's your music, nalioth?"
+2005-11-10T17:14:00.000Z,nalioth,HaroldJohnson,#ubuntu-offtopic please
+2005-11-10T17:15:00.000Z,HaroldJohnson,nalioth,Hmmm...don't appear to have ipconfig.  Is that something that's not generally included in the Server install?
+2005-11-10T17:16:00.000Z,nalioth,HaroldJohnson,"ifconfig, ipconfig is for windows"
+2005-11-10T17:17:00.000Z,nalioth,HaroldJohnson,if you like having 'ipconfig' you can always alias it
+2005-11-10T17:17:00.000Z,HaroldJohnson,nalioth,I forgot; haven't played with my settings in awhile
+2005-11-10T17:18:00.000Z,HaroldJohnson,nalioth,That's just silly; I've never actually used ipconfig on Windows.
+2005-11-10T17:18:00.000Z,HaroldJohnson,nalioth,Didn't even know it existed!
+2005-11-10T17:18:00.000Z,HaroldJohnson,nalioth,Thanks for the suggestion though.
+2006-08-23T05:50:00.000Z,nalioth,HaroldJohnson,what do you mean?
+2006-08-23T05:51:00.000Z,nalioth,HaroldJohnson,join #ubuntu-classroom please

@@ -1,0 +1,578 @@
+date,from,to,text
+2004-09-11T16:35:00.000Z,mdz,,I just pulled it into warty bugzilla to ask about that
+2004-09-11T10:04:00.000Z,pitti,mdz,"I would still like it best to have a strict root/user separation, but maybe I'm just too conservative"
+2004-09-11T10:05:00.000Z,mdz,pitti,"it is a usability problem for the user to remember two passwords, especially when one of them is almost never used"
+2004-09-11T10:05:00.000Z,pitti,mdz,"just because the people are misled by windows, we still should teach them about different roles about using a computer, don't?"
+2004-09-11T10:06:00.000Z,pitti,mdz,agreed about the remembering of the root password. hmmm.
+2004-09-11T10:06:00.000Z,pitti,mdz,what about setting up the same password for root by default?
+2004-09-11T10:07:00.000Z,pitti,mdz,not for people used to Unix already
+2004-09-11T10:07:00.000Z,mdz,pitti,"yeah, we discussed that and it was as thom says"
+2004-09-11T10:07:00.000Z,mdz,pitti,people used to unix will immediately 'sudo passwd root'
+2004-09-11T10:07:00.000Z,pitti,mdz,"okay, if this was already discussed to death, I will shut up."
+2004-09-11T10:10:00.000Z,pitti,mdz,"BTW, many friends of mine don't know what 'sudo' is (sudo passwd root), but they are used to different computer usage roles."
+2004-09-11T10:11:00.000Z,mdz,pitti,the last screen of the installer should explain how to set the root password
+2004-09-11T10:11:00.000Z,pitti,mdz,and how to disable universal user admin rights
+2004-09-11T10:15:00.000Z,mdz,pitti,right
+2004-09-11T10:17:00.000Z,pitti,mdz,but still this should be explained somewhere
+2004-09-11T10:19:00.000Z,pitti,mdz,"Kamion: right now, gksu asks for a root password, which I don't have. I assume this will get fixed?"
+2004-09-11T10:21:00.000Z,pitti,mdz,"good news! sid's and warty's hotplug packages already support per-package usb usermaps, so I can modify libgphoto to automatically allow camera access to users"
+2004-09-11T10:22:00.000Z,mdz,pitti,great!
+2004-09-11T10:22:00.000Z,pitti,mdz,"it is a small change, no code modification necessary"
+2004-09-11T10:23:00.000Z,pitti,mdz,"sorry, I think that did not apply to gphoto, did it?"
+2004-09-11T10:40:00.000Z,mdz,pitti,I was talking about the font stuff
+2004-09-11T10:57:00.000Z,mdz,pitti,did you see my mail to the list about pmount/gvm?  how are we going to handle unmounting?
+2004-09-11T10:58:00.000Z,pitti,mdz,"I'm at the phone, will return later"
+2004-09-11T11:20:00.000Z,pitti,mdz,"I'm back, sorry, was a long talk."
+2004-09-11T11:20:00.000Z,pitti,mdz,I read it.
+2004-09-11T11:21:00.000Z,pitti,mdz,To me it seems that the most consistent and intuitive way of umounting the device is to close the nautilus window
+2004-09-11T11:21:00.000Z,pitti,mdz,but the problem is what to do if there is still a process using the device
+2004-09-11T11:22:00.000Z,mdz,pitti,fuser -k? :-)
+2004-09-11T11:22:00.000Z,pitti,mdz,isn't there a context menu entry of 'ejecting' the device?
+2004-09-11T11:22:00.000Z,pitti,mdz,the safest method is still to do the ejecting manually
+2004-09-11T11:22:00.000Z,pitti,mdz,"I don't know anything about the gnome stuff, so I cannot say how easy it is"
+2004-09-11T11:22:00.000Z,mdz,pitti,this is a USB flash reader; the hardware doesn't actually have an 'eject' concept
+2004-09-11T11:23:00.000Z,pitti,mdz,"I would still prefer either a context menu (umount, eject, release, whatever) or a small icon"
+2004-09-11T11:23:00.000Z,pitti,mdz,Windows calls it 'safe remove' IIRC
+2004-09-11T14:59:00.000Z,pitti,mdz,"we still need a new group for allowing local user access to removeable devices. I'd favor a single group for USB sticks, cameras and FireWire devices, do you think we should split that into several groups?"
+2004-09-11T15:26:00.000Z,mdz,pitti,I think a single group is better
+2004-09-11T15:35:00.000Z,pitti,mdz,any idea how to smoothly handle upgrades to the 'plugdev'-restricted mount/camera/whatever system?
+2004-09-11T15:35:00.000Z,mdz,pitti,specifically?
+2004-09-11T15:35:00.000Z,pitti,mdz,we should not just put every existing user with uid > 1000 into that group
+2004-09-11T15:36:00.000Z,mdz,pitti,"oh, I don't think we need to worry too much about that, just do it in base-config"
+2004-09-11T15:36:00.000Z,mdz,pitti,we can send an email to the sounder list about it
+2004-09-11T15:36:00.000Z,pitti,mdz,"agreed for the sounders, but what about upgrades from woody?"
+2004-09-11T15:37:00.000Z,pitti,mdz,I thought woody upgrades should be supported?
+2004-09-11T15:37:00.000Z,mdz,pitti,"they are, but we do not expect to make such intrusive changes to their working configuration"
+2004-09-11T15:37:00.000Z,mdz,pitti,this is not something which is required for a successful upgrade
+2004-09-11T15:37:00.000Z,pitti,mdz,"agreed, but we have to explain that somewhere"
+2004-09-11T15:38:00.000Z,pitti,mdz,I think somebody would kill me if I added a high-priority debconf note
+2004-09-11T15:42:00.000Z,pitti,mdz,so I just do the mods and we put a stanza about this into the release notes?
+2004-09-11T15:42:00.000Z,mdz,pitti,sure
+2004-09-11T15:43:00.000Z,mdz,pitti,"we can't provide exactly the same experience on upgrades, since we won't risk intrusive changes to the user's configuration"
+2004-09-11T15:43:00.000Z,pitti,mdz,"okay, will do. BTW, do you agree to my propsed todo list?"
+2004-09-11T15:43:00.000Z,mdz,pitti,I need to review it
+2004-09-11T15:43:00.000Z,pitti,mdz,can you reply to the mail please? I'm going to bed now.
+2004-09-11T15:44:00.000Z,mdz,pitti,"but in a nutshell, you need to finish the implementation of the removable device support as soon as possible so that you can focus on bugfixing for the release"
+2004-09-11T15:44:00.000Z,pitti,mdz,"yeah, I will work that out with npmccallum "
+2004-09-11T15:45:00.000Z,mdz,pitti,I will respond to the mail when I have a chance
+2004-09-11T15:45:00.000Z,pitti,mdz,thanks! good night!
+2004-09-12T12:53:00.000Z,pitti,mdz,this silly postgresql log permission thingy... will you accept another sid sync (with some other small changes) or shall I prepare an -ubuntu1 package?
+2004-09-12T12:53:00.000Z,mdz,pitti,"if the other changes are small and safe, we can sync"
+2004-09-13T12:05:00.000Z,mdz,pitti,"ok, will do"
+2004-09-13T11:20:00.000Z,pitti,mdz,still awake?
+2004-09-13T12:23:00.000Z,mdz,pitti,yes
+2004-09-13T12:24:00.000Z,pitti,mdz,In the meantime I wrote a mail on sounders about the sudo stuff.
+2004-09-13T12:24:00.000Z,pitti,mdz,"I looked at your patches, looks good."
+2004-09-13T12:24:00.000Z,pitti,mdz,but why do you think snprintf is better than strncat?
+2004-09-13T12:25:00.000Z,pitti,mdz,"printf is quite expensive and has a lot more code than strncat, doesn't it?"
+2004-09-13T12:41:00.000Z,mdz,pitti,snprintf operates in terms of the available storage
+2004-09-13T12:41:00.000Z,mdz,pitti,while strncat requires that you calculate it
+2004-09-13T12:42:00.000Z,pitti,mdz,okay; I already incorporated the fixes; I will also restrict it to the plugdev group in today's upload
+2004-09-13T12:42:00.000Z,pitti,mdz,if we leave mount/umount unrestricted this does not really fulfill the SecurityPolicy because all users still can mount CD-ROMS (with are in fstab)
+2004-09-13T12:42:00.000Z,pitti,mdz,s/with/which/
+2004-09-13T12:43:00.000Z,mdz,pitti,can't we stop adding CD-ROMs to fstab if we use pmount?
+2004-09-13T12:43:00.000Z,pitti,mdz,of course we can; yesterday's upload added the CD-ROM file systems
+2004-09-13T12:43:00.000Z,pitti,mdz,"but before we actually do this, unmounting in Nautilus should work"
+2004-09-13T12:51:00.000Z,pitti,mdz,"if you install pmount on a system without the plugdev group, what do you think should be done?"
+2004-09-13T12:51:00.000Z,pitti,mdz,"installation fails, unrestricted pmount, create group plugdev?"
+2004-09-13T13:08:00.000Z,mdz,pitti,I need to go to sleep; let's talk about it in the morning
+2004-09-13T13:08:00.000Z,pitti,mdz,good night!
+2004-09-13T11:37:00.000Z,pitti,mdz,I fixed jackd/jackstart. Want to take a look at the interdiff before I upload?
+2004-09-13T11:46:00.000Z,pitti,mdz,http://www.no-name-yet.com/patches/jack-audio-connection-kit.fix-capabilities.diff
+2004-09-13T12:06:00.000Z,mdz,pitti,looks good to me
+2004-09-13T12:16:00.000Z,pitti,mdz,"regarding pmount, I lied this morning: it is not currently possible to pmount CD-ROMs since they are usually IDE devices which we don't consider removeable"
+2004-09-13T12:16:00.000Z,mdz,pitti,ah
+2004-09-13T12:16:00.000Z,pitti,mdz,one thing that could help comes with kernel 2.6.8
+2004-09-13T12:16:00.000Z,mdz,pitti,have you tested the 2.6.8 kernel yet?
+2004-09-13T12:16:00.000Z,pitti,mdz,there are now files /sys/block/whatever/removable :-)
+2004-09-13T12:17:00.000Z,pitti,mdz,not the ubuntu one; is there already a ppc build?
+2004-09-13T12:17:00.000Z,pitti,mdz,I currently run upstream
+2004-09-13T12:17:00.000Z,pitti,mdz,"we could extend the policy of pmount: if removable exists and contains 1, we could allow the pmount. What do you think?"
+2004-09-13T12:18:00.000Z,mdz,pitti,"no, the powerpc build is not available yet"
+2004-09-13T12:18:00.000Z,pitti,mdz,"but eventually we will ship 2.6.8 with warty, will we?"
+2004-09-13T12:19:00.000Z,pitti,mdz,"the problem is that for finding this removable file, a lot of new code had to go into pmount since then it needs to recursively scan the whole /sys/block hierarchy"
+2004-09-13T12:19:00.000Z,pitti,mdz,I'm almost apt to say 'let CD-ROM stay in fstab and handle this in Hoary'...
+2004-09-13T12:20:00.000Z,mdz,pitti,that sounds like a reasonable approach
+2004-09-13T12:20:00.000Z,pitti,mdz,I agree. Especially because Kamion said that removing CD-ROMs from fstab is not as trivial as it sounds
+2004-09-13T13:00:00.000Z,mdz,pitti,"yes, he did"
+2004-09-13T13:01:00.000Z,mdz,pitti,http://rince.africaninspace.com/mailman/listinfo/warty-changes
+2004-09-13T13:01:00.000Z,pitti,mdz,"i'm getting the digests, but cannot remember seeing it"
+2004-09-13T13:01:00.000Z,pitti,mdz,thanks
+2004-09-13T13:01:00.000Z,mdz,pitti,people still use digest mail? :-)
+2004-09-13T13:53:00.000Z,pitti,mdz,Geez! I even wrote a mail about it and forgot it myself.
+2004-09-13T13:53:00.000Z,mdz,pitti,npmccallum: works perfectly for me after adding myself to the plugdev group
+2004-09-13T13:54:00.000Z,pitti,mdz,beep - next question
+2004-09-13T13:54:00.000Z,pitti,mdz,"Nautilus must be modified not to look in fstab, but in /etc/mtab"
+2004-09-13T13:57:00.000Z,pitti,mdz,yes
+2004-09-13T14:07:00.000Z,pitti,mdz,"that's why pmount has to do its own checks, we cannot trust hal since users can overwrite all properties"
+2004-09-13T14:08:00.000Z,mdz,pitti,"right, but gvm listens directly to hal"
+2004-09-13T14:08:00.000Z,pitti,mdz,"I know, but even if hal tries to fool gvm, gvm cannot mount invalid devices"
+2004-09-13T14:09:00.000Z,mdz,pitti,"yes, it can't fool pmount, but gvm itself runs as a user, and so one user could forge information in hal which could be acted upon by another user automatically"
+2004-09-13T14:09:00.000Z,mdz,pitti,I'm not sure what other actions might be taken by gvm apart from calling pmount
+2004-09-13T14:09:00.000Z,pitti,mdz,that's the problem. hal must not be trusted
+2004-09-13T14:15:00.000Z,pitti,mdz,we should really only regard the hal information as hints
+2004-09-14T14:03:00.000Z,pitti,mdz,"regarding #996 (wow, does bug #1000 get a price?): what do you mean by 'correct permissions on the device'?"
+2004-09-14T14:03:00.000Z,pitti,mdz,are the permissions of the root mountpoint wrong?
+2004-09-14T14:03:00.000Z,mdz,pitti,"no, the permissions on the block device"
+2004-09-14T14:03:00.000Z,mdz,pitti,they come up as root/disk 660
+2004-09-14T14:05:00.000Z,pitti,mdz,hmm. Why should users write directly to the device?
+2004-09-14T14:05:00.000Z,pitti,mdz,shall they be able to create partitions?
+2004-09-14T14:05:00.000Z,pitti,mdz,"BTW, I just got a reply from hald upstream. He eventually adopted my changes :-)"
+2004-09-14T14:06:00.000Z,mdz,pitti,hal should be able to poll it to notice when media is inserted
+2004-09-14T14:06:00.000Z,mdz,pitti,as it does for cdrom and floppy
+2004-09-14T14:06:00.000Z,pitti,mdz,"ah! That is, the device needs to be in a group that hald also runs in, right?"
+2004-09-14T14:07:00.000Z,mdz,pitti,correct
+2004-09-14T14:07:00.000Z,pitti,mdz,so pmount could change the group to plugdev?
+2004-09-14T14:07:00.000Z,pitti,mdz,"okay, if that helps, I can do that. I cannot test it, though"
+2004-09-14T14:07:00.000Z,pitti,mdz,I have to upload a new version anyway to fix that mount point 'permission denied' problem
+2004-09-14T14:08:00.000Z,mdz,pitti,"no, that would not fix the problem"
+2004-09-14T14:08:00.000Z,mdz,pitti,the devices are only readable by group disk
+2004-09-14T14:08:00.000Z,pitti,mdz,oh?
+2004-09-14T14:08:00.000Z,mdz,pitti,"that needs to be fixed to be a different group, and then hal can be added to that group"
+2004-09-14T14:09:00.000Z,mdz,pitti,"I thought plugdev made sense, but it doesn't much matter. cdrom is just as good, though the name is misleading"
+2004-09-14T14:09:00.000Z,pitti,mdz,but if pmount changes the group to plugdev and hald additionally runs in plugdev?
+2004-09-14T14:09:00.000Z,mdz,pitti,pmount will never be called unless hal can read the device
+2004-09-14T14:10:00.000Z,pitti,mdz,Argh. So this actually means that hald has to run in group disk? I would not like that because it means that hald could actually write to all disks
+2004-09-14T14:10:00.000Z,pitti,mdz,"if we change the devices to group plugdev, this would be the job of udev, right?"
+2004-09-14T14:17:00.000Z,pitti,mdz,so shall I try to modify udev to assign plugdev group to usb and firewire devices?
+2004-09-14T14:17:00.000Z,pitti,mdz,"IDE and fixed SCSI devices should stay in disk, of course"
+2004-09-14T14:17:00.000Z,mdz,pitti,can udev tell the difference?
+2004-09-14T14:18:00.000Z,mdz,pitti,"really, all removable scsi devices should be owned by cdrom or similar"
+2004-09-14T14:18:00.000Z,mdz,pitti,"yes, they don't show up as scsi removable"
+2004-09-14T14:18:00.000Z,pitti,mdz,do you actually know a program that relies on the fact that devices are writeable by group disk?
+2004-09-14T14:18:00.000Z,mdz,pitti,they show up as scsi fixed disks (sd)
+2004-09-14T14:18:00.000Z,mdz,pitti,"no, I don't"
+2004-09-14T14:18:00.000Z,pitti,mdz,maybe it is enough to just chmod the devices to 640
+2004-09-14T14:19:00.000Z,pitti,mdz,"then hald could run in group disk, could do media detection and even filesystem detection"
+2004-09-14T14:19:00.000Z,pitti,mdz,I'll think over it and try that out. I report back on Monday.
+2004-09-14T14:19:00.000Z,mdz,pitti,I would email Kamion about it
+2004-09-14T14:19:00.000Z,pitti,mdz,I'll do
+2004-09-14T14:20:00.000Z,mdz,pitti,jdub: thanks
+2004-09-16T13:17:00.000Z,mdz,pitti,we definitely need to limit hal's access so that it can neither read nor write system disks
+2004-09-16T13:35:00.000Z,pitti,mdz,"yes, that would be fine. If we can modify udev to tell apart removable from fixed devices, this is no problem"
+2004-09-17T11:27:00.000Z,pitti,mdz,Good morning!
+2004-09-17T12:09:00.000Z,mdz,pitti,my card reader still comes up as root:disk 0660
+2004-09-17T12:16:00.000Z,mdz,pitti,still here?
+2004-09-17T12:16:00.000Z,pitti,mdz,I am.
+2004-09-17T12:16:00.000Z,pitti,mdz,"sorry, xchat makes no noise on ppc"
+2004-09-17T12:16:00.000Z,mdz,pitti,it's looking quite good with the current hal and udev!
+2004-09-17T12:16:00.000Z,pitti,mdz,and my workstation is broken
+2004-09-17T12:16:00.000Z,pitti,mdz,thanks!
+2004-09-17T12:16:00.000Z,mdz,pitti,"I connect my card reader, and the devices are group plugdev"
+2004-09-17T12:16:00.000Z,pitti,mdz,"yes, 2.6.8 is a requirement for udev to detect removeable devices"
+2004-09-17T12:16:00.000Z,pitti,mdz,what is strange?
+2004-09-17T12:17:00.000Z,mdz,pitti,the two windows
+2004-09-17T12:17:00.000Z,pitti,mdz,"I also encountered this. Immediately after bootup, I see /, /home and the sda1 window"
+2004-09-17T12:17:00.000Z,mdz,pitti,"after closing the windows, unmountind, and reinserting, I get only one window"
+2004-09-17T12:17:00.000Z,pitti,mdz,funnily enough it works correctly all subsequent times
+2004-09-17T12:17:00.000Z,pitti,mdz,exactly.
+2004-09-17T12:17:00.000Z,pitti,mdz,I think this should be a gvm issue
+2004-09-17T12:17:00.000Z,mdz,pitti,"yes, it sounds that way"
+2004-09-17T12:18:00.000Z,pitti,mdz,hmm. but the extra windows also appear when the mount was successful.
+2004-09-17T12:18:00.000Z,mdz,pitti,"please file a bug about it, assigned to npmccallum and CCing me"
+2004-09-17T12:18:00.000Z,pitti,mdz,I'll try to reproduce this exactly tomorrow
+2004-09-17T12:18:00.000Z,mdz,pitti,"or if you have time to look into it yourself, that is of course fine too :-)"
+2004-09-17T12:19:00.000Z,pitti,mdz,"I'll do. Good to hear that your card reader works, though, so I can close that bug"
+2004-09-17T12:19:00.000Z,pitti,mdz,I will do. My bug count came pretty close to zero today and I think it is not the best time to work on new projects
+2004-09-17T12:19:00.000Z,pitti,mdz,"I will finish for today, I still need some workout after 11 hours of hacking..."
+2004-09-17T12:20:00.000Z,pitti,mdz,"if 2.6.8.1 will be the default kernel, everything should work fine"
+2004-09-17T12:20:00.000Z,mdz,pitti,another thing that is strange
+2004-09-17T12:20:00.000Z,mdz,pitti,when I double-click an item which is on the card
+2004-09-17T12:20:00.000Z,pitti,mdz,hmm. That works for my USB stick.
+2004-09-17T12:21:00.000Z,mdz,pitti,vfat filesystem?
+2004-09-17T12:21:00.000Z,pitti,mdz,does it only happen with the 'extra' volumes of your card reader?
+2004-09-17T12:21:00.000Z,pitti,mdz,yes
+2004-09-17T12:21:00.000Z,mdz,pitti,'extra'?
+2004-09-17T12:21:00.000Z,pitti,mdz,extra in the sense that they are hotpluggable in the hotpluggable device
+2004-09-17T12:21:00.000Z,pitti,mdz,can you access the files manually on the shell?
+2004-09-17T12:22:00.000Z,pitti,mdz,"if not, it might be a root mount point permission issue"
+2004-09-17T12:22:00.000Z,pitti,mdz,what are the mount point permissions?
+2004-09-17T12:22:00.000Z,mdz,pitti,it works fine if I launch eog from the command line
+2004-09-17T12:22:00.000Z,pitti,mdz,hmm.
+2004-09-17T12:22:00.000Z,pitti,mdz,"Ah, I remember"
+2004-09-17T12:27:00.000Z,pitti,mdz,where did you get that log message from?
+2004-09-17T12:27:00.000Z,pitti,mdz,I believe I can reproduce it
+2004-09-17T12:27:00.000Z,mdz,pitti,~/.xsession-errors
+2004-09-17T12:28:00.000Z,pitti,mdz,can you open the files with right-click and choose an app manually? This works for me
+2004-09-17T12:28:00.000Z,pitti,mdz,I can reproduce it!
+2004-09-17T12:28:00.000Z,mdz,pitti,"yes, that works"
+2004-09-17T12:28:00.000Z,pitti,mdz,"odd, this worked before"
+2004-09-17T12:29:00.000Z,pitti,mdz,could be tomorrow's job for me
+2004-09-17T12:30:00.000Z,pitti,mdz,"but if you suppress the exec, you will not be able to enter directories any more"
+2004-09-17T12:30:00.000Z,mdz,pitti,"with vfat at least, you can set them separately"
+2004-09-17T12:30:00.000Z,pitti,mdz,oh? I did not know
+2004-09-17T12:31:00.000Z,mdz,pitti,"dmask and fmask, instead of umask"
+2004-09-17T12:31:00.000Z,pitti,mdz,"hmm, this is getting tricky. We don't want to limit execution for other file systems, I suppose"
+2004-09-17T12:32:00.000Z,pitti,mdz,this sounds saner.
+2004-09-17T12:32:00.000Z,mdz,pitti,I think those options only apply to fat and possibly fat-like filesystems
+2004-09-17T12:32:00.000Z,pitti,mdz,there actually may be files on a vfat that the user wants to execute
+2004-09-17T12:32:00.000Z,mdz,pitti,"hmm, true"
+2004-09-17T12:32:00.000Z,pitti,mdz,"If it works correctly for other file systems, I will implement that"
+2004-09-17T12:33:00.000Z,pitti,mdz,let's regard it as a trojan horse protection feature :-)
+2004-09-17T12:33:00.000Z,pitti,mdz,can we put a file invocation into nautilus?
+2004-09-17T12:35:00.000Z,mdz,pitti,what about binfmt_misc? :-)
+2004-09-17T12:36:00.000Z,mdz,pitti,what about unmounting?
+2004-09-17T12:36:00.000Z,pitti,mdz,what do you mean?
+2004-09-17T12:36:00.000Z,mdz,pitti,how will these automatically mounted devices be unmounted?  is that still an open question?
+2004-09-17T12:36:00.000Z,pitti,mdz,"trying the exec is not the worst option, I think"
+2004-09-17T12:36:00.000Z,pitti,mdz,you open the computer window and umount it by right-clicking on it and choose 'unmount'
+2004-09-17T12:37:00.000Z,pitti,mdz,"it would be nice if it were umountedd automatically when closing the window, but other processes might still access it"
+2004-09-17T12:37:00.000Z,pitti,mdz,"however, we could try and pop up a warning if unmounting did not work"
+2004-09-17T13:03:00.000Z,pitti,mdz,can you please cc me on the bug report?
+2004-09-17T13:03:00.000Z,mdz,pitti,already done
+2004-09-18T09:53:00.000Z,pitti,mdz,I don't think that it is too hard to attempt umount when closing the device window
+2004-09-18T09:53:00.000Z,mdz,pitti,should we mount with the sync option to minimize the damage when they don't unmount?
+2004-09-18T09:53:00.000Z,pitti,mdz,we already do
+2004-09-18T09:54:00.000Z,pitti,mdz,"however, if they don't umount and plug it in again, the 'old' device is still mounted. This might break something"
+2004-09-18T09:54:00.000Z,pitti,mdz,"with sync it's annoyingly slow, but that's better than waiting on umount indefinitively"
+2004-09-18T09:54:00.000Z,mdz,pitti,"if they unplug and replug, it will show up as a different device"
+2004-09-18T09:54:00.000Z,pitti,mdz,"when users see that copying lasts long, they will understand"
+2004-09-18T09:55:00.000Z,pitti,mdz,"oh, right"
+2004-09-18T09:55:00.000Z,pitti,mdz,so it actually shouldn't hurt too much on VFAT filesystems
+2004-09-18T09:55:00.000Z,mdz,pitti,no; it should be the same as Windows with a floppy
+2004-09-18T09:55:00.000Z,pitti,mdz,"nevertheless, a slightly more obvious umounting would be better"
+2004-09-18T09:55:00.000Z,pitti,mdz,especially since you cannot just take out a CD-ROM if it's mounted :-)
+2004-09-18T09:56:00.000Z,pitti,mdz,"okay, you can, but..."
+2004-09-18T09:56:00.000Z,mdz,pitti,"for FAT filesystems, it should be possible to attempt to unmount _after_ the user disconnects the device"
+2004-09-18T09:56:00.000Z,mdz,pitti,this should work fine on a FAT filesystem which was mounted with sync
+2004-09-18T09:56:00.000Z,pitti,mdz,so gvm should intercept that and just umount it if hal reports the umount
+2004-09-18T09:56:00.000Z,mdz,pitti,"though, on some other type of filesystem, it will probably spew errors and such, but it is already too late to do anything useful"
+2004-09-18T09:57:00.000Z,pitti,mdz,that's why we should do that consistently
+2004-09-18T09:57:00.000Z,pitti,mdz,we need to unmount cd-roms anyway
+2004-09-18T10:00:00.000Z,pitti,mdz,"18:00 at my clock, any laudatio from you for the start? :-)"
+2004-09-18T10:40:00.000Z,mdz,pitti,that :-)
+2004-09-18T10:11:00.000Z,pitti,mdz,agreed; who summarizes?
+2004-09-18T10:11:00.000Z,mdz,pitti,will you summarize the issues for the mailing list and start the discussion there?
+2004-09-18T10:16:00.000Z,pitti,mdz,"Oh, its running, I just did not observe the latest boot"
+2004-09-18T10:16:00.000Z,pitti,mdz,powerpc images were only available from this mornign on
+2004-09-18T10:23:00.000Z,mdz,pitti,what kind of userspace support do they need?
+2004-09-18T10:23:00.000Z,pitti,mdz,"iwconfig does not work with it, you need wlanctl-ng"
+2004-09-18T10:24:00.000Z,mdz,pitti,is the version in universe sufficient?
+2004-09-18T10:29:00.000Z,mdz,pitti,I had a problem on my desktop going from 2.6.7 to 2.6.8
+2004-09-18T10:30:00.000Z,pitti,mdz,"I don't think that is a kernel bug, more a firmware bug"
+2004-09-18T10:34:00.000Z,mdz,pitti,the idea was for the desktop trash icon to disappear
+2004-09-18T10:40:00.000Z,pitti,mdz,"what's still missing, security-wise?"
+2004-09-18T10:40:00.000Z,pitti,mdz,ah; I will check that
+2004-09-18T10:41:00.000Z,mdz,pitti,"ok, you will take responsibility for this?"
+2004-09-18T10:41:00.000Z,pitti,mdz,I will
+2004-09-18T10:41:00.000Z,mdz,pitti,we also need to review Debian DSAs independently
+2004-09-18T10:41:00.000Z,mdz,pitti,"and to the extent possible, CVEs"
+2004-09-18T10:42:00.000Z,pitti,mdz,I will dig though the bugtraq archives
+2004-09-18T10:42:00.000Z,mdz,pitti,this seems like a huge project; there are many sources of this information and it is difficult to cross-reference against the packages included in Warty
+2004-09-18T10:43:00.000Z,pitti,mdz,I welcome other people to help me :-)
+2004-09-18T10:43:00.000Z,mdz,pitti,let's talk after the meeting about how to go about it
+2004-09-18T10:43:00.000Z,pitti,mdz,agreed
+2004-09-18T10:45:00.000Z,pitti,mdz,plugdev membership comes to my mind
+2004-09-18T10:45:00.000Z,mdz,pitti,"yes, that is part of the larger question about providing the ubuntu desktop experience on upgrade"
+2004-09-18T10:46:00.000Z,mdz,pitti,"well, they also won't have any of that installed :-)"
+2004-09-18T10:50:00.000Z,mdz,pitti,linux-non-free-modules (kernel stuff)
+2004-09-18T10:52:00.000Z,mdz,pitti,will you take care of tg3?
+2004-09-18T10:52:00.000Z,pitti,mdz,I cannot test it currently
+2004-09-18T10:53:00.000Z,pitti,mdz,"if it works at 100mbps, it's probably okay, I think"
+2004-09-18T11:04:00.000Z,mdz,pitti,I think the one he was talking about was pwcx
+2004-09-18T11:04:00.000Z,mdz,pitti,"pwc is in the kernel, and free"
+2004-09-18T11:32:00.000Z,pitti,mdz,you can get there from everywhere
+2004-09-18T11:32:00.000Z,mdz,pitti,"we should disable the authentication and show a placeholder page, ideally"
+2004-09-18T11:33:00.000Z,pitti,mdz,you cannot disable the authentication
+2004-09-18T11:33:00.000Z,pitti,mdz,but I can change the web pages not to refer to /admin any more
+2004-09-18T11:33:00.000Z,mdz,pitti,I thought the problem was that users were accustomed to going to http://localhost:6031/admin or whatever
+2004-09-18T11:33:00.000Z,pitti,mdz,we cannot do anything about that
+2004-09-18T11:33:00.000Z,pitti,mdz,we need this interface because gnome-cups-manager uses the CGI as well
+2004-09-18T11:34:00.000Z,pitti,mdz,(anything apart from rewriting half of cups)
+2004-09-18T11:34:00.000Z,pitti,mdz,"okay, I will change the error page and remove the admin links. "
+2004-09-18T11:34:00.000Z,mdz,pitti,"but gnome-cups-manager does not care what text is displayed on the page, does it?"
+2004-09-18T11:35:00.000Z,pitti,mdz,I think so
+2004-09-18T11:35:00.000Z,mdz,pitti,"ok, that sounds reasonable"
+2004-09-18T11:35:00.000Z,mdz,pitti,"if the user at least gets a reasonable error when their password is rejected, that is enough for Warty"
+2004-09-18T11:35:00.000Z,mdz,pitti,translations of what?
+2004-09-18T11:36:00.000Z,pitti,mdz,translations of programs
+2004-09-18T11:36:00.000Z,pitti,mdz,gksudo still talks english to me
+2004-09-18T11:36:00.000Z,pitti,mdz,so does gnome-cups-admin
+2004-09-18T11:37:00.000Z,mdz,pitti,we cannot afford to spend your time on it right now; we can maybe revisit it after preview
+2004-09-18T11:37:00.000Z,pitti,mdz,"okay, so we defer that until we have Rosetta?"
+2004-09-18T11:38:00.000Z,mdz,pitti,please file bugs
+2004-09-18T13:32:00.000Z,mdz,pitti,still here?
+2004-09-19T12:34:00.000Z,mdz,pitti,morning
+2004-09-20T12:42:00.000Z,pitti,mdz,"but you are right, cardmgr should not care about creating devices (but it says so in the log)"
+2004-09-20T12:42:00.000Z,pitti,mdz,a lot of failed mknod messages
+2004-09-20T12:45:00.000Z,pitti,mdz,what do you think about the following pmount policy change: 'device is removable' -> 'device is removable || device node is writable by the user'?
+2004-09-20T12:46:00.000Z,mdz,pitti,"if cardmgr tries to create devices, we should just disable that"
+2004-09-20T12:46:00.000Z,pitti,mdz,"since udev assigns the plugdev group to removable nodes, the user can write the device anyway"
+2004-09-20T12:46:00.000Z,pitti,mdz,"agreed, I will look at cardmgr"
+2004-09-20T12:47:00.000Z,mdz,pitti,I am not so sure about that policy change
+2004-09-20T12:48:00.000Z,pitti,mdz,"but if the user has full write rights on the device anyway it should not be too critical to allow him to mount it, dont?"
+2004-09-20T12:49:00.000Z,mdz,pitti,I am not so sure
+2004-09-20T12:49:00.000Z,pitti,mdz,"okay, I will postpone that"
+2004-09-20T12:49:00.000Z,pitti,mdz,we just should think over that. But before I'll deal with cardmgr
+2004-09-20T12:50:00.000Z,pitti,mdz,"right. OTOH we allow it on other removeable devices, too..."
+2004-09-20T12:50:00.000Z,pitti,mdz,udev will only put removable devices in plugdev
+2004-09-20T12:51:00.000Z,pitti,mdz,so pmount should check that it is an IDE/SCSI volume
+2004-09-20T12:52:00.000Z,pitti,mdz,(which would be a good idea anyway)
+2004-09-20T12:52:00.000Z,pitti,mdz,I actually thought of looking into sysfs
+2004-09-20T12:52:00.000Z,pitti,mdz,I will think over it. I report back this evening. Before I will fix cardmgr and start to go over the security review
+2004-09-20T12:53:00.000Z,pitti,mdz,"BTW, I have to change pumount to support lazy unmount. Do you see any problem with this?"
+2004-09-20T12:53:00.000Z,pitti,mdz,we need the support to better handle the case if the user just rips off his devices
+2004-09-20T12:53:00.000Z,pitti,mdz,thom will modify hal to lazily umount removed (but still mounted) devices
+2004-09-20T12:54:00.000Z,pitti,mdz,he wants to call pumount -l for that
+2004-09-20T12:54:00.000Z,mdz,pitti,what needs to change in order to support it?
+2004-09-20T12:54:00.000Z,mdz,pitti,"yes, I agree, we need to try to handle that case as well as possible"
+2004-09-20T12:55:00.000Z,pitti,mdz,"i have to add an option '-l', pass it to umount"
+2004-09-20T12:55:00.000Z,pitti,mdz,and I have to replace the check 'device node exists' by 'device node exists or -l is given'
+2004-09-20T12:55:00.000Z,pitti,mdz,"because if the user removes the device, /dev/sdxx will not be there any more for unmounting"
+2004-09-20T12:55:00.000Z,mdz,pitti,"in that case, you may as well just remove the check for whether the device node exists"
+2004-09-20T12:55:00.000Z,pitti,mdz,but we still have the check that the device node must be present in mtab
+2004-09-20T12:56:00.000Z,pitti,mdz,so I guess that's okay
+2004-09-20T12:56:00.000Z,pitti,mdz,"I will leave it in pmount and throw it out of pumount, I guess"
+2004-09-20T12:56:00.000Z,pitti,mdz,"Okay, I can throw it out completely, but it does not hurt; maybe it saves from erroneous calls (not from malicious ones)"
+2004-09-20T12:57:00.000Z,mdz,pitti,"ok, if it protects against some error cases"
+2004-09-20T12:57:00.000Z,pitti,mdz,"no, we don't."
+2004-09-20T12:58:00.000Z,pitti,mdz,"if a device is mounted and the user mounted it, he should be able to umount it even if the node disappeared"
+2004-09-20T12:58:00.000Z,pitti,mdz,"that's reasonable, I think"
+2004-09-20T12:59:00.000Z,mdz,pitti,I just noticed somethin which does not look right
+2004-09-20T12:59:00.000Z,pitti,mdz,argh!
+2004-09-20T12:59:00.000Z,pitti,mdz,"right, this was correct before I checked with realpath."
+2004-09-20T12:59:00.000Z,pitti,mdz,thanks!
+2004-09-20T13:00:00.000Z,pitti,mdz,good night!
+2004-09-20T10:01:00.000Z,pitti,mdz,Good morning!
+2004-09-20T10:02:00.000Z,pitti,mdz,ahm - do you have some time for another pmount discussion?
+2004-09-20T10:03:00.000Z,mdz,pitti,yes
+2004-09-20T10:03:00.000Z,pitti,mdz,"I tried to add the -l option for lazy unmounting, but there's a problem:"
+2004-09-20T10:04:00.000Z,pitti,mdz,"if the device node is not present any more, I cannot really check directly whether the device node belongs to an USB/FireWire device"
+2004-09-20T10:04:00.000Z,pitti,mdz,so currently I dropped the device_removable() check from pumount and replaced it by a check if the mounted uid == getuid()
+2004-09-20T10:05:00.000Z,mdz,pitti,you could check that the device is mounted under /media
+2004-09-20T10:05:00.000Z,pitti,mdz,this adds the constraint that only the user who mounted a device can unmount it (this should be actually a good thing)
+2004-09-20T10:05:00.000Z,pitti,mdz,this is already done
+2004-09-20T10:05:00.000Z,mdz,pitti,"or worse, create a pmtab so you know what was mounted by pmount and what wasn't"
+2004-09-20T10:05:00.000Z,pitti,mdz,"we already discussed the pmtab thingy, but it has its flaws, too"
+2004-09-20T10:05:00.000Z,pitti,mdz,the current solution should not be worse because:
+2004-09-20T10:06:00.000Z,pitti,mdz,"pmount only mounts removable devices (USB/FireWire), and the devices have uid=getuid()"
+2004-09-20T10:06:00.000Z,pitti,mdz,"pumount only umounts uid=getuid() devices, so transitively it only unmounts removable devices, too"
+2004-09-20T10:06:00.000Z,pitti,mdz,"this is not perfect, but from my POV its almost equivalent"
+2004-09-20T10:07:00.000Z,pitti,mdz,and we have to check for uid==getuid() anyway (at least we should)
+2004-09-20T10:07:00.000Z,mdz,pitti,it sounds like it is probably close enough
+2004-09-20T10:07:00.000Z,pitti,mdz,the pmtab has an exploit:
+2004-09-20T10:07:00.000Z,mdz,pitti,you could add a dummy flag to the mount
+2004-09-20T10:07:00.000Z,pitti,mdz,if that's possible...
+2004-09-20T10:08:00.000Z,pitti,mdz,"having an extra table is not a good solution, an user might pmount /dev/sda, rip it off, then the admin comes and hotplugs an /dev/sda SCSI device (fixed) to /usr"
+2004-09-20T10:08:00.000Z,pitti,mdz,the user should not be able to umount /dev/sda then
+2004-09-20T10:08:00.000Z,pitti,mdz,"I did not upload the current version yet, its on https://chinstrap.warthogs.hbd.com/~pitti/pmount/"
+2004-09-20T10:08:00.000Z,pitti,mdz,I wanted to discuss it first
+2004-09-20T10:09:00.000Z,pitti,mdz,"if the pmount mount flag does not hurt, I can add this, too"
+2004-09-20T10:09:00.000Z,pitti,mdz,"but writing an extra pmtab has too many risks of doing sth wrong, I think"
+2004-09-20T10:10:00.000Z,mdz,pitti,I agree; I don't recommend a pmtab
+2004-09-20T10:10:00.000Z,mdz,pitti,"if you want to mail me the diff from the previous version, I'll look over it"
+2004-09-20T10:10:00.000Z,pitti,mdz,I'll do
+2004-09-20T10:13:00.000Z,pitti,mdz,http://www.piware.de/pmount-0.0.9.diff
+2004-09-20T10:14:00.000Z,pitti,mdz,"it's quite large, but more than 50% is documentation change"
+2004-09-20T12:49:00.000Z,pitti,mdz,"can you please mail me if you took a look at the pmount changes? I would sort this out tomorrow, I still have an hour of RL things to do before I go to sleep"
+2004-09-20T12:53:00.000Z,mdz,pitti,"I'll take a look; next time, please email the diff, that way it automatically goes on my todo list"
+2004-09-20T12:53:00.000Z,pitti,mdz,I can still mail it if you want
+2004-09-20T12:54:00.000Z,mdz,pitti,hmm
+2004-09-20T12:54:00.000Z,mdz,pitti,which uid does it use when doing the uid check for unmount?
+2004-09-20T12:55:00.000Z,pitti,mdz,that's why we don't allow hal to pumount
+2004-09-20T12:55:00.000Z,pitti,mdz,"first, because of the user, second because hal should stay policy free"
+2004-09-20T12:55:00.000Z,mdz,pitti,"but hal already does this, with umount rather than pumount"
+2004-09-20T12:55:00.000Z,mdz,pitti,how do we do lazy unmounts if not with hal?
+2004-09-20T12:56:00.000Z,pitti,mdz,thom and I decided that it would be the best if hald just send a message to gnome-vfs2 (gvm) and gvm does it
+2004-09-20T12:56:00.000Z,mdz,pitti,what happens if the user logs out of GNOME?
+2004-09-20T12:56:00.000Z,pitti,mdz,"then it is not umounted, I guess"
+2004-09-20T12:56:00.000Z,pitti,mdz,this is the same: a device is not mounted if the user is not logged in
+2004-09-20T12:57:00.000Z,pitti,mdz,"after all, it's just a helper, not a final solution"
+2004-09-20T12:58:00.000Z,pitti,mdz,maybe gvm should unmount all pmounted devices on logout
+2004-09-20T12:59:00.000Z,mdz,pitti,maybe
+2004-09-20T13:00:00.000Z,mdz,pitti,I don't see any problems with the patch
+2004-09-20T13:01:00.000Z,mdz,pitti,did you see the sounder report where pmounting ext3 doesn't work? (due to uid= option)
+2004-09-20T13:01:00.000Z,mdz,pitti,fixing that will probably require some adjustments to this  new policy as well
+2004-09-20T13:01:00.000Z,pitti,mdz,"no, I still have to catch up my mail"
+2004-09-20T13:01:00.000Z,pitti,mdz,I was busy with the security review until now
+2004-09-20T13:02:00.000Z,mdz,pitti,"so that bug can be closed now, yes?"
+2004-09-20T13:02:00.000Z,pitti,mdz,I think so
+2004-09-20T13:02:00.000Z,pitti,mdz,I will close it now
+2004-09-20T13:06:00.000Z,pitti,mdz,I think we should attempt the mount with option -s to fix that ext3 problem
+2004-09-20T13:06:00.000Z,pitti,mdz,I will reformat my USB stick and try that
+2004-09-20T13:06:00.000Z,mdz,pitti,"oh, I did not know about that option. that sounds good"
+2004-09-20T13:07:00.000Z,pitti,mdz,Will try that and put that into the 0.0.9 package before upload
+2004-09-20T13:07:00.000Z,pitti,mdz,so the mods are fine with you?
+2004-09-20T13:07:00.000Z,pitti,mdz,s/with/for/
+2004-09-20T13:07:00.000Z,mdz,pitti,"from what I saw, yes. I do not have time for a line-by-line audit"
+2004-09-20T13:08:00.000Z,pitti,mdz,"of course not, I just want the new policy to be blessed by you :-)"
+2004-09-20T13:08:00.000Z,pitti,mdz,the general idea of umounting with checking the uid=
+2004-09-20T13:08:00.000Z,pitti,mdz,"I discussed that with Mithrandir, fabbione, andthom, they agreed as well"
+2004-09-20T13:08:00.000Z,pitti,mdz,"okay, then I'll upload this"
+2004-09-20T13:09:00.000Z,pitti,mdz,thanks for reviewing
+2004-09-24T16:34:00.000Z,pitti,mdz,here?
+2004-09-24T16:45:00.000Z,mdz,pitti,here
+2004-09-24T16:46:00.000Z,pitti,mdz,"already sorted out (#1166), thanks"
+2004-09-24T13:02:00.000Z,mdz,pitti,how is the security review going?
+2004-09-24T13:02:00.000Z,pitti,mdz,"doko finished (most of?) DSA 2003, sivan wanted to finish 2002 yesterday"
+2004-09-24T13:03:00.000Z,pitti,mdz,so far I did not yet hear about the status of 2004 (lamont wanted to do this)
+2004-09-24T13:03:00.000Z,mdz,pitti,I don't see any bugs remaining in bugzilla; are there no pending issues from the review?
+2004-09-24T13:03:00.000Z,pitti,mdz,there are some; currently they are in the wiki since I wanted to deal with them today
+2004-09-24T13:03:00.000Z,mdz,pitti,"please send him an email ping, CC me"
+2004-09-24T13:03:00.000Z,pitti,mdz,but I can file bugs anyway
+2004-09-24T13:03:00.000Z,pitti,mdz,I will mail him or ask doko to do 2004 as well
+2004-09-24T13:04:00.000Z,mdz,pitti,ok
+2004-09-24T13:04:00.000Z,mdz,pitti,do you think you can find patches to take care of #1177 and #1179?
+2004-09-24T13:05:00.000Z,mdz,pitti,"there is a patch filed in GNOME bugzilla, linked from the bug"
+2004-09-24T13:05:00.000Z,pitti,mdz,I will do this today
+2004-09-24T13:05:00.000Z,mdz,pitti,"I will assign the bugs to you; if you do not have time today, pass them on to someone else working on the security review"
+2004-09-24T13:06:00.000Z,pitti,mdz,yes please; then I see them on my start page :-)
+2004-09-24T13:06:00.000Z,mdz,pitti,"if you do not want to file bugs in bugzilla for the fixes you will do yourself, that is OK, but remember that I will not be able to take that workload into account when assigning you more work :-)"
+2004-09-24T13:07:00.000Z,pitti,mdz,there is the ominous wget bug ( #261755) I'm not sure about
+2004-09-24T13:07:00.000Z,pitti,mdz,"and there are a bunch of bugs I'm not sure whether they need updates, so I hesitated to file bugs"
+2004-09-24T13:07:00.000Z,pitti,mdz,they need a closer examination
+2004-09-24T13:07:00.000Z,pitti,mdz,But I can handle the imlib bugs
+2004-09-24T13:07:00.000Z,mdz,pitti,better to file bugs if you are unsure; then I and others will see them and can comment
+2004-09-24T13:08:00.000Z,pitti,mdz,okay
+2004-09-24T13:08:00.000Z,pitti,mdz,"I wanted to start sorting this out now anyway, I'm done with my other tasks"
+2004-09-24T13:15:00.000Z,pitti,mdz,I knew this imlib bug - I recently fixed qt3 which had the same error. Nice to know where upstreams copy from each other :-)
+2004-09-24T13:16:00.000Z,pitti,mdz,"okay, they did not copy 'literally'"
+2004-09-24T13:20:00.000Z,mdz,pitti,"if you have bugs which correspond to Debian bugs, send me the bug numbers and I can import them into bugzilla using debzilla"
+2004-09-24T13:20:00.000Z,pitti,mdz,good night
+2004-09-24T10:21:00.000Z,mdz,pitti,"doing a quick test of your snmp changes, and then I'l OK it for upload"
+2004-09-24T10:22:00.000Z,pitti,mdz,thanks
+2004-09-24T10:22:00.000Z,pitti,mdz,"BTW, why does it hurt to sync gtksee to universe?"
+2004-09-25T11:45:00.000Z,pitti,mdz,"ah, great! gpg finally works without suid; this did not work with upstream 2.6.8.1..."
+2004-09-25T11:46:00.000Z,mdz,pitti,"right, but Herbert integrated the patch as requested"
+2004-09-25T11:46:00.000Z,pitti,mdz,shall I prepare an interdiff for you and elmo to review?
+2004-09-25T11:46:00.000Z,mdz,pitti,I think it should be fine to just revert --with-capabilities (and the build-dep)
+2004-09-25T11:46:00.000Z,pitti,mdz,"yes, I don't want intrusive changes"
+2004-09-25T11:47:00.000Z,pitti,mdz,another thing: my jackd modifications do not really have the desired effect
+2004-09-25T11:47:00.000Z,pitti,mdz,"jackd has a weird architecture that wants to give capabilities to _client_ threads (insane, but true)"
+2004-09-25T11:48:00.000Z,pitti,mdz,so I would like to upload a package with --with-caopabilities disabled and without any suid at all
+2004-09-25T11:48:00.000Z,pitti,mdz,possible?
+2004-09-25T11:48:00.000Z,mdz,pitti,sounds great
+2004-09-25T11:48:00.000Z,pitti,mdz,it's basically the same as with gnupg: just rebuild without the configure flag
+2004-09-25T11:49:00.000Z,mdz,pitti,"but jackd wants setpriority(), not mlock(), doesn't it?"
+2004-09-25T11:49:00.000Z,pitti,mdz,it wants both. SYS_NICE and IPC_LOCK
+2004-09-25T11:50:00.000Z,pitti,mdz,"it wants to lock the memory of the sound buffers, for not allowing it to swap"
+2004-09-25T11:50:00.000Z,pitti,mdz,but it also wants to start a new thread in the client player program with these capabilities (ugh)
+2004-09-25T11:50:00.000Z,pitti,mdz,I discussed this a while with the Debian maintainer
+2004-09-25T11:50:00.000Z,pitti,mdz,"yes, I don't want to give it to _arbitrary_ user processes"
+2004-09-25T11:51:00.000Z,mdz,pitti,so capabilities are not inherited by threads in Linux?
+2004-09-25T11:51:00.000Z,pitti,mdz,"the key is that CAP_SETPCAP is required to give these capabilities to player (client) processes, not just to new jackd instances"
+2004-09-25T11:52:00.000Z,pitti,mdz,"within one process, all threads of course have the same caps"
+2004-09-25T11:52:00.000Z,mdz,pitti,oh!
+2004-09-25T11:52:00.000Z,pitti,mdz,"I really mean that jackd gives CAP_* to processes like xmms, rhythmbox e.g."
+2004-09-25T11:52:00.000Z,pitti,mdz,not just to other jackd subthreads
+2004-09-25T11:52:00.000Z,pitti,mdz,I also thought this at first
+2004-09-25T11:53:00.000Z,pitti,mdz,that's why the current solution does not work and I want to disable this completely
+2004-09-25T11:53:00.000Z,pitti,mdz,most modern computers should have enough RAM to play well also without realtime caps
+2004-09-25T11:54:00.000Z,pitti,mdz,"and according to the debian maintainer, professional sound engineers don't care about the security stuff anyway and will happily install patched kernels :-/"
+2004-09-25T11:55:00.000Z,mdz,pitti,they should just run all their applications as root :-)
+2004-09-25T11:55:00.000Z,pitti,mdz,"gnupg: I would like not to touch the code (the new capability code could stay in), just remove the configure option and the suid flag. Is that okay for you?"
+2004-09-25T11:55:00.000Z,mdz,pitti,that is fine with me
+2004-09-25T12:00:00.000Z,pitti,mdz,interdiff for gpg: http://www.piware.de/gpg-nosuid.diff
+2004-09-25T12:00:00.000Z,pitti,mdz,"it's trivial, but for the protocol..."
+2004-09-25T12:01:00.000Z,mdz,pitti,looks fine
+2004-09-25T12:01:00.000Z,pitti,mdz,"I don't know, it does not use debhelper and dh_fixperms"
+2004-09-25T12:02:00.000Z,pitti,mdz,"ugh, it FTBFSses"
+2004-09-25T12:02:00.000Z,pitti,mdz,obiously my patch did not #ifdef #endif one of the declarations
+2004-09-25T12:12:00.000Z,pitti,mdz,"it wasn't even my code that failed. I updated the patch in the above URL, now it builds and works correctly"
+2004-09-25T12:12:00.000Z,pitti,mdz,shall I upload?
+2004-09-25T12:23:00.000Z,mdz,pitti,yes
+2004-09-25T12:28:00.000Z,pitti,mdz,done. Now http://www.piware.de/jack-nosuid.diff ;-)
+2004-09-25T12:33:00.000Z,mdz,pitti,it is a bit strange for the binary to be 0754
+2004-09-25T12:34:00.000Z,pitti,mdz,it was intended to restrict execution to audio members
+2004-09-25T12:34:00.000Z,pitti,mdz,but of course this could now be changed
+2004-09-25T12:36:00.000Z,pitti,mdz,I changed it to root:root 755
+2004-09-25T12:37:00.000Z,pitti,mdz,interdiff is updated
+2004-09-25T12:37:00.000Z,pitti,mdz,just tell me when I shall upload
+2004-09-25T12:37:00.000Z,mdz,pitti,go ahead
+2004-09-25T12:38:00.000Z,pitti,mdz,done
+2004-09-25T12:38:00.000Z,pitti,mdz,then I will deal with the mysql security thingy now
+2004-09-25T12:39:00.000Z,pitti,mdz,"this might last a bit, if you went already to bed when I'm finished, can jdub approve the thing or do you want to do this this evening^w^wnext morning?"
+2004-09-25T12:39:00.000Z,mdz,pitti,I do not want to be a bottleneck
+2004-09-25T12:40:00.000Z,mdz,pitti,"you intend to work on fixing security bugs today, yes?"
+2004-09-25T12:41:00.000Z,pitti,mdz,"yes, same procedure as yesterday (and day before... :-) )"
+2004-09-25T12:41:00.000Z,pitti,mdz,I hope to see the results of DSA 2004 today
+2004-09-25T12:41:00.000Z,pitti,mdz,"lamont came pretty far, but did not finish yet"
+2004-09-25T12:41:00.000Z,pitti,mdz,and sivan's 2002 results still had two todo items
+2004-09-25T12:42:00.000Z,mdz,pitti,"for purposes of the preview release, we will limit ourselves to urgent fixes only"
+2004-09-25T12:42:00.000Z,pitti,mdz,I agree; the handful of 'to be examined closer' items in the wiki aren't showstoppers
+2004-09-25T12:43:00.000Z,pitti,mdz,"I discussed with the Debian maintainers about them, some vulnerabilities are still present"
+2004-09-25T12:43:00.000Z,pitti,mdz,"e. g. quagga has broken ACL handling, but only few of our users will probably use it :-)"
+2004-09-25T12:43:00.000Z,pitti,mdz,up to now its the most serious item on my list
+2004-09-25T12:44:00.000Z,pitti,mdz,if you have more important tasks for me?
+2004-09-25T12:45:00.000Z,mdz,pitti,could you look at #1142?
+2004-09-25T12:48:00.000Z,pitti,mdz,"with #1187, I will just take Marco's patch from sid (review it of course)"
+2004-09-25T12:48:00.000Z,pitti,mdz,#1178
+2004-09-25T12:49:00.000Z,pitti,mdz,"but this bug does not even apply to us, just on 0.031-1"
+2004-09-25T12:49:00.000Z,pitti,mdz,we have 0.026
+2004-09-25T12:50:00.000Z,pitti,mdz,"grr, wrong bug. sorry."
+2004-09-25T10:14:00.000Z,pitti,mdz,Good morning!
+2004-09-25T10:15:00.000Z,pitti,mdz,"security review is finished, all urgent packages are up"
+2004-09-25T10:16:00.000Z,mdz,pitti,"great, thanks"
+2004-09-25T10:20:00.000Z,pitti,mdz,any urgend tasks left?
+2004-09-25T10:20:00.000Z,pitti,mdz,apart from #1217 (which I wasted 2 hours on without success) I ran out of bugs
+2004-09-25T10:24:00.000Z,mdz,pitti,have you tested today's daily?
+2004-09-25T10:26:00.000Z,pitti,mdz,"not today's, no"
+2004-09-25T10:27:00.000Z,pitti,mdz,"if you think it's a good idea to test the historic 20040914 build, we can do that"
+2004-09-25T10:39:00.000Z,mdz,pitti,#1076
+2004-09-25T13:14:00.000Z,mdz,pitti,is gone for the day
+2004-09-26T07:32:00.000Z,pitti,mdz,"I just finished test-installing the latest iso, but now its 3:30 and I'm too tired to hack on"
+2004-09-26T07:33:00.000Z,pitti,mdz,I'm afraid I cannot fix these burning problems until the release tomorrow
+2004-09-26T07:33:00.000Z,mdz,pitti,I know; I set it to major to indicate that it's RC for final but not for preview
+2004-09-26T07:33:00.000Z,pitti,mdz,"I know, I just wanted to report"
+2004-09-26T07:33:00.000Z,mdz,pitti,how did your test go?
+2004-09-26T07:35:00.000Z,pitti,mdz,"I installed with network, the normal debs were activated automatically (I think), but security is commented out"
+2004-09-26T07:35:00.000Z,pitti,mdz,"all in all, pretty good install, X, sound, stuff works"
+2004-09-26T07:36:00.000Z,mdz,pitti,see you tomorrow :-)
+2004-09-26T07:36:00.000Z,pitti,mdz,see you! I try to get up before the CD build deadline
+2004-09-26T14:59:00.000Z,mdz,pitti,1203 is taken care of
+2004-09-26T14:59:00.000Z,mdz,pitti,absolute final CD build will be at approximately 1400
+2004-09-26T05:27:00.000Z,pitti,mdz,"but fstab user devices are happily mounted automatically, too"
+2004-09-26T05:27:00.000Z,mdz,pitti,oh? hmm
+2004-09-26T05:28:00.000Z,pitti,mdz,"yes, I tried to burn a CD yesterday (IDE in fstab), did not work"
+2004-09-26T05:28:00.000Z,pitti,mdz,hal does not care if a device is in fstab
+2004-09-26T05:28:00.000Z,mdz,pitti,it is a shame; we have two nice features which do not play together
+2004-09-26T05:28:00.000Z,pitti,mdz,I agree. I'm currently working on an updated pmount
+2004-09-26T05:29:00.000Z,pitti,mdz,what do you think about the strategy I described in #1234?
+2004-09-26T05:33:00.000Z,mdz,pitti,let's look at it tomorrow :-)
+2004-09-26T05:33:00.000Z,mdz,pitti,can you test the current daily?
+2004-09-26T05:33:00.000Z,pitti,mdz,okay. I think you severely need some sleep
+2004-09-26T05:33:00.000Z,pitti,mdz,I can do
+2004-09-26T06:05:00.000Z,mdz,pitti,how did your test go?
+2004-09-26T06:06:00.000Z,pitti,mdz,rsync is at 68%
+2004-09-26T06:06:00.000Z,pitti,mdz,I can get no more than 60 kB/s
+2004-09-26T07:04:00.000Z,pitti,mdz,still here?
+2004-09-26T07:04:00.000Z,mdz,pitti,yes
+2004-09-26T07:33:00.000Z,pitti,mdz,the one from the latest iso
+2004-09-26T07:05:00.000Z,mdz,pitti,"if by 'dealt with' you mean 'ignored for purposes of the preview', yes :-)"
+2004-09-26T07:05:00.000Z,pitti,mdz,I tried installation without archive copier
+2004-09-26T07:05:00.000Z,pitti,mdz,base-config cannot find a cd and the cd was locked
+2004-09-26T07:05:00.000Z,pitti,mdz,"I had to manually call eject, put it back in, then it worked"
+2004-09-26T07:07:00.000Z,pitti,mdz,"it steals 15 minutes of d-i time, wastes space on hd, slows down my hd (because the head has to go back and forth)"
+2004-09-26T07:08:00.000Z,pitti,mdz,unpacking them straight from CD-ROM should be considerably faster (wrt overall install time)
+2004-09-26T07:08:00.000Z,pitti,mdz,and indeed it is
+2004-09-26T07:08:00.000Z,pitti,mdz,it takes about 15 minutes just to copy the bloody packages to my hd
+2004-09-26T07:09:00.000Z,pitti,mdz,"on my Duron 1.3, 256 RAM, 40x CD-ROM, total install lasts about 35 minutes"
+2004-09-26T07:29:00.000Z,mdz,pitti,noooo
+2004-09-26T07:30:00.000Z,mdz,pitti,XRESPROBE_DEBUG=yes
+2004-09-26T07:30:00.000Z,pitti,mdz,"thanks, will try"
+2004-09-26T07:31:00.000Z,pitti,mdz,"fabbione: does not tell much more; says ddc: yes, and prints out everything twice"
+2004-09-26T07:31:00.000Z,mdz,pitti,and leaves behind a directory in /tmp
+2004-09-26T07:31:00.000Z,mdz,pitti,with logfiles
+2004-09-26T07:32:00.000Z,pitti,mdz,cannot find one
+2004-09-26T07:32:00.000Z,mdz,pitti,which X driver?
+2004-09-26T07:32:00.000Z,mdz,pitti,/tmp/xprobe.*
+2004-09-26T07:32:00.000Z,pitti,mdz,nope
+2004-09-26T07:33:00.000Z,mdz,pitti,you are certain you have the current version?
+2004-09-26T07:33:00.000Z,pitti,mdz,0.4.6
+2004-09-26T07:33:00.000Z,mdz,pitti,"I have never succeeded it getting it to not rm -rf, but I thought it was fixed now"
+2004-09-26T07:34:00.000Z,mdz,pitti,/usr/share/xresprobe/xprobe.sh nv
+2004-09-26T07:34:00.000Z,pitti,mdz,that helped
+2004-09-26T07:35:00.000Z,mdz,pitti,you have the logs now?
+2004-09-26T07:35:00.000Z,pitti,mdz,"yes, I have"
+2004-09-26T07:35:00.000Z,mdz,pitti,send them to daniels
+2004-09-26T07:35:00.000Z,pitti,mdz,"this is a desktop, yes"
+2004-09-27T12:29:00.000Z,pitti,mdz,Hi! Can you please approve #1276? Or do you want to put gnutls11 in Supported in the next time? Then I can build lynx against gnutls11 right away
+2004-09-28T14:32:00.000Z,pitti,mdz,can we remove gnutls7 from supported now?
+2004-09-28T14:32:00.000Z,mdz,pitti,it should be removed automatically the next time elmo diffs it
+2004-09-28T14:33:00.000Z,pitti,mdz,"ah, thanks"
+2004-09-28T14:34:00.000Z,mdz,pitti,the php4 package does not uspport apache2
+2004-09-28T14:34:00.000Z,pitti,mdz,but libapache2-mod-php4 exists
+2004-09-28T14:35:00.000Z,pitti,mdz,I had a similar problem with a packaged web application of mine
+2004-09-28T14:35:00.000Z,pitti,mdz,I just could not get the dependencies right
+2004-09-28T14:35:00.000Z,mdz,pitti,the solution is to require apache2 :-)
+2004-09-28T14:35:00.000Z,pitti,mdz,change-user-mind --force installed-www-server :-)

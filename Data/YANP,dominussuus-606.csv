@@ -1,0 +1,607 @@
+date,from,to,text
+2007-07-23T13:29:00.000Z,YANP,,"I am trying to play an audio cd, however, ubuntu wont even recognize I have a cd in the cdrom.  How do I fix this?"
+2007-07-23T13:30:00.000Z,YANP,,It doesn't even show a cdrom...
+2007-07-23T13:30:00.000Z,YANP,,"just shows: desktop, filesystem"
+2007-07-23T13:30:00.000Z,YANP,,I can press the button on the cd rom to eject the cd...and I put it back in and still nothing..
+2007-07-23T13:31:00.000Z,dominussuus,YANP,- run cdeject from the console
+2007-07-23T13:31:00.000Z,dominussuus,YANP,- a terminal
+2007-07-23T13:31:00.000Z,dominussuus,YANP,- command prompt in Windows language
+2007-07-23T13:33:00.000Z,dominussuus,YANP,- so type in sudo apt-get install cdtool
+2007-07-23T13:35:00.000Z,dominussuus,YANP,- with Linux you'll be using terminals and typing commands a lot more than you did in Windows - there are a lot of reasons for the difference which I won't bore you with at the moment :P
+2007-07-23T13:36:00.000Z,dominussuus,YANP,- I'm unfamilar with guild wars so you'll have to walk me through how you played it on Windows
+2007-07-23T13:37:00.000Z,dominussuus,YANP,- so you need to run it from CDZ
+2007-07-23T13:38:00.000Z,dominussuus,YANP,"- sorry, I meant to type CD?"
+2007-07-23T13:38:00.000Z,dominussuus,YANP,- are you trying to run guild wars from a CD or from the Internet?
+2007-07-23T13:39:00.000Z,dominussuus,YANP,"- back in your console, type 'sudo apt-get install wine'"
+2007-07-23T13:40:00.000Z,dominussuus,YANP,- so let's see if I can have you up and running in 15 minutes :P
+2007-07-23T13:42:00.000Z,dominussuus,YANP,"- right, okay... just a sec"
+2007-07-23T13:43:00.000Z,dominussuus,YANP,- CD? are you having troubles with the CD again?
+2007-07-23T13:44:00.000Z,dominussuus,YANP,- and lemmie know when you have Wine installed
+2007-07-23T13:46:00.000Z,dominussuus,YANP,- well if you invested 3 hours already into setting it up you must have SOME patience...
+2007-07-23T13:48:00.000Z,dominussuus,YANP,- the popular saying about Linux and Windows is that Linux is impossible to set up but easy to maintain whereas Windows is easy to set up but impossible to maintain
+2007-07-23T13:49:00.000Z,dominussuus,YANP,- and the eggheads over in development are working on fixing the former issue
+2007-07-23T13:49:00.000Z,dominussuus,YANP,- well let's see if I can get guildwars working first...
+2007-07-23T13:49:00.000Z,dominussuus,YANP,- then we'll deal with the cd issue
+2007-07-23T13:49:00.000Z,dominussuus,YANP,- now do you have guild wars on CD or do you download it?
+2007-07-23T13:50:00.000Z,dominussuus,YANP,"- okay, pop the CD in and see what happens"
+2007-07-23T13:52:00.000Z,dominussuus,YANP,"- okay, that's probably because Linux tends not always to support autoruns for Windows... no matter.  See if you can open a file explorer (Windows Explorer in Windows world)"
+2007-07-23T13:55:00.000Z,dominussuus,YANP,- are you able to find your CD?
+2007-07-23T13:56:00.000Z,YANP,dominussuus,I put the Guild Wars CD into the CD-ROM and Ubuntu doesn't even say the CD is in the CD-ROM.
+2007-07-23T13:56:00.000Z,dominussuus,YANP,- not at the moment
+2007-07-23T13:57:00.000Z,dominussuus,YANP,- look at the top menu and click on 'Places'
+2007-07-23T13:57:00.000Z,dominussuus,YANP,- open your terminal up again
+2007-07-23T13:59:00.000Z,dominussuus,YANP,"- in the prompt, type mount... a bunch of things should pop up"
+2007-07-23T14:00:00.000Z,dominussuus,YANP,"- just checking on that... okay, now type 'sudo mount /dev/cd0 /mnt/'"
+2007-07-23T14:02:00.000Z,dominussuus,YANP,- make sure there's a space between cd0/ and /mnt/
+2007-07-23T14:04:00.000Z,dominussuus,YANP,"- my mistake, /dev/cd0 should have been /dev/cdrom"
+2007-07-23T14:24:00.000Z,dominussuus,YANP,- does clicking on it not work?
+2007-07-23T14:06:00.000Z,dominussuus,YANP,- excellent.  Now type 'cd /mnt'
+2007-07-23T14:07:00.000Z,dominussuus,YANP,"- okay, so that probably means Ubuntu has found the CD"
+2007-07-23T14:08:00.000Z,dominussuus,YANP,- so were you able to 'cd /mnt/'?
+2007-07-23T14:09:00.000Z,dominussuus,YANP,- sweet.  Type 'ls' I want to know what the setup executable is
+2007-07-23T14:10:00.000Z,dominussuus,YANP,- type 'wine setup.exe'
+2007-07-23T14:11:00.000Z,dominussuus,YANP,- yessir.  The setup program should run like it was in Windows
+2007-07-23T14:13:00.000Z,dominussuus,YANP,- what did it complain about?
+2007-07-23T14:13:00.000Z,dominussuus,YANP,- how big is the dump?
+2007-07-23T14:14:00.000Z,dominussuus,YANP,- stand by... can you file transfer it over?
+2007-07-23T14:14:00.000Z,dominussuus,YANP,- not entirely sure :S
+2007-07-23T14:16:00.000Z,dominussuus,YANP,- that's not my specialty
+2007-07-23T14:21:00.000Z,dominussuus,YANP,- stand by... posting a fix
+2007-07-23T14:23:00.000Z,dominussuus,YANP,- pick up a script from http://rhodes.awardspace.info/winebuild.sh
+2007-07-23T14:23:00.000Z,dominussuus,YANP,- and run it :D
+2007-07-23T14:25:00.000Z,dominussuus,YANP,- as in save it to your desktop and click on the icon?
+2007-07-23T14:25:00.000Z,dominussuus,YANP,- did you save it to your desktop or your home folder?
+2007-07-23T14:26:00.000Z,dominussuus,YANP,- in console type 'sh ~/Destop/winebuild.sh'
+2007-07-23T14:27:00.000Z,dominussuus,YANP,"- my bad, I misspelt 'Desktop'"
+2007-07-23T14:28:00.000Z,dominussuus,YANP,- y to everything
+2007-07-23T14:29:00.000Z,dominussuus,YANP,- it looks like it will take a few minutes to straighten itself out
+2007-07-23T14:30:00.000Z,dominussuus,YANP,"- my pleasure.  Linux has it's quirks but I believe in it far more than Windows.  The good news from all of this is that once you get it running, you'll never have to fix it"
+2007-07-23T14:32:00.000Z,YANP,dominussuus,How come you can get this far but the other people who helped me couldn't?
+2007-07-23T14:33:00.000Z,dominussuus,YANP,"- probably not :P  Seriously, my job is tech support so my survival relies entirely upon ingenuity and patience :P"
+2007-07-23T14:33:00.000Z,dominussuus,YANP,- http://www.youtube.com/watch?v=77LBQxa5o5w
+2007-07-23T14:33:00.000Z,dominussuus,YANP,- just so you know that success IS possible
+2007-07-23T14:34:00.000Z,dominussuus,YANP,"- right, there's a fix for that too 'sudo apt-get install flashplayer-nonfree'"
+2007-07-23T14:35:00.000Z,dominussuus,YANP,- well I don't want to spoil it but it looks like it works perfectly :D
+2007-07-23T14:36:00.000Z,dominussuus,YANP,"- you're on a highspeed Internet connection, right?"
+2007-07-23T14:37:00.000Z,dominussuus,YANP,"- sadly, yes.. but I'm trying to convert my clients to Linux :D"
+2007-07-23T14:38:00.000Z,dominussuus,YANP,"- no, I work for myself and have nothing for contempt for Microsoft"
+2007-07-23T14:40:00.000Z,dominussuus,YANP,- how are we looking?
+2007-07-23T14:41:00.000Z,dominussuus,YANP,- what is it downloading?
+2007-07-23T14:42:00.000Z,dominussuus,YANP,- sounds good
+2007-07-23T14:43:00.000Z,dominussuus,YANP,- ubuntu has some very addictive free games
+2007-07-23T14:43:00.000Z,dominussuus,YANP,- I've always been a tetris addict myself
+2007-07-23T14:47:00.000Z,dominussuus,YANP,- make sure you spell my name correctly ;)
+2007-07-23T14:48:00.000Z,YANP,dominussuus,ah
+2007-07-23T14:53:00.000Z,dominussuus,YANP,- and how!
+2007-07-23T14:53:00.000Z,dominussuus,YANP,- like you won't believe
+2007-07-23T14:54:00.000Z,dominussuus,YANP,"- you can use Synaptec, Add/Remove Programs, or apt-get"
+2007-07-23T14:58:00.000Z,dominussuus,YANP,familiarise yourself with Synaptic... it gets you everything you could ever need
+2007-07-23T14:58:00.000Z,YANP,dominussuus,ok
+2007-07-23T14:59:00.000Z,dominussuus,YANP,Synaptic is the easiest way to install things without messing about with apt-gets
+2007-07-23T14:59:00.000Z,dominussuus,YANP,but jetscreamer's way works too
+2007-07-23T15:00:00.000Z,dominussuus,YANP,try CTRL + ALT + Backspace.  It restarts the windowing system (and eliminates most problems) without having to restart the program
+2007-07-23T15:01:00.000Z,YANP,dominussuus,oh ok
+2007-07-23T15:01:00.000Z,dominussuus,YANP,you can always google or go to UbuntuForums.org to find out how to make CTRL+ALT+Delete work
+2007-07-23T15:02:00.000Z,dominussuus,YANP,- thinkgeek.com
+2007-07-23T15:03:00.000Z,YANP,dominussuus,http://www.thinkgeek.com/stuff/looflirpa/tshirt.shtml =[
+2007-07-23T15:03:00.000Z,dominussuus,YANP,That's really surprising as the company who runs the store owns Linux.com :S
+2007-07-23T15:04:00.000Z,dominussuus,YANP,hehe.... ThinkGeek's great at sarcasm
+2007-07-23T15:05:00.000Z,YANP,dominussuus,http://www.computergear.com/usebesttshirt.html rofl
+2007-07-23T15:07:00.000Z,dominussuus,YANP,you'll soon discover that the most moderate of Linux users are far more self-righteous than the most militant of Mac users
+2007-07-23T15:07:00.000Z,YANP,dominussuus,meaning?
+2007-07-23T15:07:00.000Z,dominussuus,YANP,meaning that you choose your words carefully in our forums :P
+2007-07-23T15:08:00.000Z,dominussuus,YANP,The reason it's taking so long to set up is that Microsoft hasn't released DirectX for Linux yet (although I'm holding my breath) so what you're running right now is hacking it so it will run
+2007-07-23T15:09:00.000Z,YANP,dominussuus,so penguin users are like the mac commercials of the pc?
+2007-07-23T15:09:00.000Z,dominussuus,YANP,see? stuff like tetonca says :D
+2007-07-23T15:10:00.000Z,dominussuus,YANP,we're very passionate about our free software and our rights to hack it
+2007-07-23T15:10:00.000Z,dominussuus,YANP,a luxury even mac users don't have
+2007-07-23T15:10:00.000Z,YANP,dominussuus,I noticed.  Penguins are kinda like the bums of the cyber world.  Always want free stuff. =]   I like free though.
+2007-07-23T15:14:00.000Z,YANP,dominussuus,4800 files remaining for download
+2007-07-23T15:14:00.000Z,dominussuus,YANP,if it's any consolation most of those are 100kb files
+2007-07-23T15:14:00.000Z,YANP,dominussuus,ah ok =] 
+2007-07-23T15:26:00.000Z,dominussuus,YANP,how's the downloading going?
+2007-07-23T15:31:00.000Z,dominussuus,YANP,problem?
+2007-07-23T15:31:00.000Z,dominussuus,YANP,phew... I didn't want you to have to start that download again
+2007-07-23T15:35:00.000Z,dominussuus,YANP,bug the puerto rican users group
+2007-07-23T15:35:00.000Z,dominussuus,YANP,"not sure, I'm canadian"
+2007-07-23T15:41:00.000Z,dominussuus,YANP,"actually, they're substantially worse"
+2007-07-23T15:41:00.000Z,YANP,dominussuus,how so? lol
+2007-07-23T15:43:00.000Z,dominussuus,YANP,because very few broads like to be lectured over dinner about bug fixes in the latest kernel
+2007-07-23T15:43:00.000Z,dominussuus,YANP,at least... in my experience
+2007-07-23T15:58:00.000Z,YANP,dominussuus,still locks up
+2007-07-23T15:58:00.000Z,YANP,dominussuus,just so you know guild wars takes 2 discs to install does that help?
+2007-07-23T15:51:00.000Z,YANP,dominussuus,it doesnt work! i locks up everything =[
+2007-07-23T15:51:00.000Z,dominussuus,YANP,welcome back... https://launchpad.net/~ubuntu-puerto-rico
+2007-07-23T15:51:00.000Z,dominussuus,YANP,what's the problem?
+2007-07-23T15:53:00.000Z,dominussuus,YANP,have you rebooted fully?
+2007-07-23T15:54:00.000Z,dominussuus,YANP,try that.  Failing all else it'll give us a troubleshooting baseline.  See you in a sec
+2007-07-23T16:00:00.000Z,dominussuus,YANP,"... not sure yet.  Right-click the icon, go to properties, and copy the command path"
+2007-07-23T16:01:00.000Z,dominussuus,YANP,that's it
+2007-07-23T16:02:00.000Z,dominussuus,YANP,in a console type 'wine ~/.wine/drive_c/Program\ Files/Guild\ Wars/Gw.exe'
+2007-07-23T16:02:00.000Z,dominussuus,YANP,"basically, I want to see where it breaks"
+2007-07-23T16:04:00.000Z,YANP,dominussuus,that loads gw..and freezes everything
+2007-07-23T16:04:00.000Z,dominussuus,YANP,and there's no spit-out in the console?
+2007-07-23T16:05:00.000Z,dominussuus,YANP,"okay, in that case, run the command but add ' > ~/Dump.txt' to the end of the command"
+2007-07-23T16:06:00.000Z,dominussuus,YANP,"yep, this is linux, most things are done at the command because it's easier than saying 'now click on Start-> All Programs...'"
+2007-07-23T16:07:00.000Z,dominussuus,YANP,just keep pressing up in the console until you find it
+2007-07-23T16:07:00.000Z,dominussuus,YANP,cuz I'm too lazy to copy and paste it :P
+2007-07-23T16:10:00.000Z,YANP,dominussuus,christopher@christopher-desktop:~$ wine ~/.wine/drive_c/Program\ Files/Guild\ Wars/Gw.exe > ~/Dump.txt
+2007-07-23T16:10:00.000Z,dominussuus,YANP,yes
+2007-07-23T16:10:00.000Z,dominussuus,YANP,all that does is save the dump to a file so you can collect it and post it to http://paste.ubuntu-nl.org/30878/
+2007-07-23T16:11:00.000Z,dominussuus,YANP,gaaahh
+2007-07-23T16:12:00.000Z,dominussuus,YANP,no.. it appears the file didn't open in time...
+2007-07-23T16:12:00.000Z,dominussuus,YANP,I'll need to do some more reading
+2007-07-23T16:23:00.000Z,dominussuus,YANP,do you know what your video card is?
+2007-07-23T16:23:00.000Z,YANP,dominussuus,yes
+2007-07-23T16:23:00.000Z,YANP,dominussuus,let me look
+2007-07-23T16:24:00.000Z,YANP,dominussuus,Nvidia geforce 6150 Le Graphics
+2007-07-23T16:25:00.000Z,dominussuus,YANP,could you open /etc/X11/xorg.conf in a text editor and make sure there's something at the bottom about DRI?
+2007-07-23T16:26:00.000Z,dominussuus,YANP,"you can, but not necessarily.  Are you using a 64-bit processor?"
+2007-07-23T16:27:00.000Z,dominussuus,YANP,"I mean your computer, is it an AMD 64 or something like that?"
+2007-07-23T16:27:00.000Z,YANP,dominussuus,AMD Athlon 64 x2 Dual Core Processor 4000+
+2007-07-23T16:28:00.000Z,dominussuus,YANP,@#*&$(!!! Mother $%#*(G&$#(
+2007-07-23T16:28:00.000Z,dominussuus,YANP,Good news: I gave you the wrong script to execute :S
+2007-07-23T16:28:00.000Z,dominussuus,YANP,so get another cup of coffee
+2007-07-23T16:29:00.000Z,dominussuus,YANP,Smoke?
+2007-07-23T16:32:00.000Z,dominussuus,YANP,new file: http://rhodes.awardspace.info/winebuild64.sh save it to your hard drive
+2007-07-23T16:32:00.000Z,YANP,dominussuus,okay
+2007-07-23T16:33:00.000Z,dominussuus,YANP,We have to do some of this work again... but I hope it'll be faster.  Once you have it run it from the console: 'sh ~/Desktop/winebuild64.sh'
+2007-07-23T16:34:00.000Z,YANP,dominussuus,christopher@christopher-desktop:~$ sh ~/Desktop/winebuild64.sh
+2007-07-23T16:35:00.000Z,dominussuus,YANP,hmmm... the possible causes for error have opened up a little bit...
+2007-07-23T16:36:00.000Z,dominussuus,YANP,that's the thing.  If you have a 64-bit computer you should be using a 64-bit version of Ubuntu
+2007-07-23T16:37:00.000Z,dominussuus,YANP,"I don't know whether using a 32-bit operating system on a 64-bit processor is the reason for your problem.  It could be, it could be something else"
+2007-07-23T16:43:00.000Z,dominussuus,YANP,any old rom
+2007-07-23T16:43:00.000Z,dominussuus,YANP,the emulator reads a file like Word reads documents
+2007-07-23T16:43:00.000Z,dominussuus,YANP,"sorry, still no answer yet for your GW issue"
+2007-07-23T16:44:00.000Z,dominussuus,YANP,you're welcome but good intentions doesn't get you slaying orcs
+2007-07-23T16:52:00.000Z,YANP,dominussuus,thanks
+2007-07-23T16:44:00.000Z,YANP,dominussuus,lol
+2007-07-23T16:45:00.000Z,YANP,dominussuus,where do I go to open nestra?
+2007-07-23T16:45:00.000Z,dominussuus,YANP,"most likely from the command line.  Unfortunately, things like emulators don't always install shortcuts.  Open a prompt and type 'nestra'"
+2007-07-23T16:47:00.000Z,dominussuus,YANP,then it's usually 'nestra <path to whatever your NES rom is called>'
+2007-07-23T16:49:00.000Z,dominussuus,YANP,"unfortunately, I'm not terribly familiar with the software, so I don't really know how to configure things like joysticks"
+2007-07-23T16:50:00.000Z,YANP,dominussuus,its ok i am still trying to get it to start lol nestra pacman.nes doesnt work lol
+2007-07-23T16:52:00.000Z,YANP,dominussuus,oh what is the command for flash player?
+2007-07-23T16:52:00.000Z,dominussuus,YANP,'sudo apt-get install flashplayer-nonfree'
+2007-07-23T16:59:00.000Z,dominussuus,YANP,do as it says :D
+2007-07-23T16:59:00.000Z,dominussuus,YANP,to navigate directories you use 'cd <directory>'
+2007-07-23T05:06:00.000Z,dominussuus,YANP,"The Guild Wars problem is likely because you need a 64-bit edition of Ubuntu, sadly"
+2007-07-23T05:08:00.000Z,YANP,dominussuus,ok
+2007-07-23T05:09:00.000Z,YANP,dominussuus,i still cant do the flashplayer lol
+2007-07-23T05:09:00.000Z,dominussuus,YANP,well it's not quite that simple.  You're looking at reinstalling your operating system
+2007-07-23T05:10:00.000Z,dominussuus,YANP,well that's good.  See whether your friend can hook you up with an amd-64 version of ubuntu
+2007-07-23T05:10:00.000Z,dominussuus,YANP,or you'll be looking at burning your own copy
+2007-07-23T05:12:00.000Z,dominussuus,YANP,"alternatively, if you have 3 weeks to kill you can order a copy from Canonical and they'll ship it to you for free"
+2007-07-23T05:17:00.000Z,dominussuus,YANP,http://www.ubuntu.com/getubuntu/download you want the 64bit AMD version
+2007-07-23T05:17:00.000Z,dominussuus,YANP,that's because the directory structure is completely different in linux
+2007-07-23T05:18:00.000Z,YANP,dominussuus,already at 30% =] 
+2007-07-23T05:18:00.000Z,dominussuus,YANP,what is?
+2007-07-23T05:18:00.000Z,YANP,dominussuus,the download for amd
+2007-07-23T05:18:00.000Z,YANP,dominussuus,already started it
+2007-07-23T05:19:00.000Z,dominussuus,YANP,"ooohhh, okay :D excellent.  write down the link for that shell script http://rhodes.awardspace.info/winebuild64.sh and run it after you install Ubuntu"
+2007-07-23T05:20:00.000Z,dominussuus,YANP,not quite
+2007-07-23T05:22:00.000Z,dominussuus,YANP,that's because there isn't one.  What directory is flash player looking for?
+2007-07-23T05:22:00.000Z,dominussuus,YANP,what folder? what did you do?
+2007-07-23T05:24:00.000Z,dominussuus,YANP,"okay, save that file to your desktop, right click it and say something to the effect of 'extract here'"
+2007-07-23T05:25:00.000Z,dominussuus,YANP,got it
+2007-07-23T05:25:00.000Z,dominussuus,YANP,so you have a directory called C on your desktop?
+2007-07-23T05:25:00.000Z,dominussuus,YANP,so the directory is actually called ~/Desktop/C/
+2007-07-23T05:26:00.000Z,dominussuus,YANP,it's the same idea in Windows where Desktop is actually C:\My Documents\bunch of rubbish\Desktop
+2007-07-23T05:26:00.000Z,dominussuus,YANP,that also works :D
+2007-07-23T05:27:00.000Z,dominussuus,YANP,this is why people should have a trained professional helping them install Linux :D
+2007-07-23T05:27:00.000Z,dominussuus,YANP,I'll have an answer for you in a minute...
+2007-07-23T05:29:00.000Z,dominussuus,YANP,you have to remember that Linux was written by geeks for geeks... it's only in the last few years that there has been an effort to make it available to the masses
+2007-07-23T05:29:00.000Z,dominussuus,YANP,whereas Microsoft has a 22-year advantage on us :P
+2007-07-23T05:30:00.000Z,YANP,dominussuus,for being made by geeks for geeks they sure are stupid to not make it for everyone at the start =] 
+2007-07-23T05:30:00.000Z,dominussuus,YANP,computing was very different in the early 90s
+2007-07-23T05:32:00.000Z,dominussuus,YANP,you just worry about getting flash to work and I'll worry about getting NES up and running
+2007-07-23T05:33:00.000Z,dominussuus,YANP,what error do you get when you try to run 'nestra pacman.nes'?
+2007-07-23T05:33:00.000Z,YANP,dominussuus,Unable to open pacman.nes
+2007-07-23T05:33:00.000Z,dominussuus,YANP,where did you save pacman.nes?
+2007-07-23T05:34:00.000Z,YANP,dominussuus,desktop
+2007-07-23T05:35:00.000Z,dominussuus,YANP,so you typed 'nestra ~/Desktop/pacman.nes'?
+2007-07-23T05:35:00.000Z,YANP,dominussuus,that is a command?
+2007-07-23T05:35:00.000Z,dominussuus,YANP,yessir
+2007-07-23T05:36:00.000Z,dominussuus,YANP,try 'nestra -v ~/Desktop/pacman.nes'?
+2007-07-23T05:37:00.000Z,YANP,dominussuus,says the same thing
+2007-07-23T05:38:00.000Z,YANP,dominussuus,I dont like terminal...because I cant do it on my own
+2007-07-23T05:38:00.000Z,dominussuus,YANP,"I don't either, it's a crutch until you get the system stabilised"
+2007-07-23T05:39:00.000Z,dominussuus,YANP,the idea is to use the command line to get you up and running then we can worry about familiarising you with the Desktop
+2007-07-23T05:39:00.000Z,dominussuus,YANP,"well, 2/3 isn't quite so bad..."
+2007-07-23T05:43:00.000Z,dominussuus,YANP,if you need help once you upgrade to 64-bit you can find my contact info on launchpad
+2007-07-23T05:44:00.000Z,YANP,dominussuus,lol i will need your help 24/7 as long as I am on linux lol
+2007-07-23T05:44:00.000Z,dominussuus,YANP,https://launchpad.net/~dominussuus
+2007-07-23T05:45:00.000Z,YANP,dominussuus,ah ok thanks
+2007-07-23T05:46:00.000Z,YANP,dominussuus,ok well I am going to sleep while this downloads
+2007-07-24T16:27:00.000Z,YANP,dominussuus,hey..can you help me? =] 
+2007-07-24T16:28:00.000Z,dominussuus,YANP,"sure, what's up?"
+2007-07-24T16:29:00.000Z,YANP,dominussuus,my computer has a cd/dvd burner..or atleast I thought it did and when I try to make a copy of the ubuntu I downloaded I click 'write to disc' and right when I do that it says it is done..
+2007-07-24T16:29:00.000Z,YANP,dominussuus,i know that is wrong though..and when i go to the computer it says 'cd rom 1' no cd-rw or anything like that
+2007-07-24T16:30:00.000Z,dominussuus,YANP,unusual... do you want to do this from the command line or graphically?
+2007-07-24T16:31:00.000Z,YANP,dominussuus,this is my computer http://www.amazon.com/Pavilion-S3100N-Slimline-Desktop-Processor/dp/B000S6NYW2
+2007-07-24T16:32:00.000Z,dominussuus,YANP,"ohhh, purdy"
+2007-07-24T16:32:00.000Z,dominussuus,YANP,"okay, back to business.  Where is your .iso file?"
+2007-07-24T16:32:00.000Z,YANP,dominussuus,it doesnt like penguins very much though
+2007-07-24T16:34:00.000Z,dominussuus,YANP,and that should work...
+2007-07-24T16:35:00.000Z,YANP,dominussuus,hm..nope...let me pastebin it
+2007-07-24T16:35:00.000Z,dominussuus,YANP,"HP is fairly supportive of Linux, I'm surprised that the hardware is giving you such trouble..."
+2007-07-24T16:37:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/30993/
+2007-07-24T16:37:00.000Z,YANP,dominussuus,I had an HP before..only had 2 computers in my life time...bought a comp back in 98..then one last week...the one back then was good this one..hates me. =[
+2007-07-24T16:41:00.000Z,dominussuus,YANP,"okay, new command: 'cdrecord dev=/dev/cdrom ~/Desktop/penguin/ubuntu-7.04-desktop-amd64.iso'"
+2007-07-24T16:42:00.000Z,dominussuus,YANP,"scratch that, do what bruenig says: 'cdrecord dev=/dev/sr0 ~/Desktop/penguin/ubuntu-7.04-desktop-amd64.iso'"
+2007-07-24T16:44:00.000Z,YANP,dominussuus,it says this and not doing anything now... http://paste.ubuntu-nl.org/30995/
+2007-07-24T16:44:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/30996/
+2007-07-24T16:45:00.000Z,dominussuus,YANP,does the burner sound like it's doing anything?
+2007-07-24T16:45:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/30998/ there
+2007-07-24T16:46:00.000Z,dominussuus,YANP,'cdrecord dev=/dev/sr0 -dao ~/Desktop/penguin/ubuntu-7.04-desktop-amd64.iso'
+2007-07-24T16:47:00.000Z,dominussuus,YANP,"forget that, there's probably nothing to write to"
+2007-07-24T16:47:00.000Z,dominussuus,YANP,"instead, copy the output of 'grep iso /etc/fstab' to the pastebin"
+2007-07-24T16:48:00.000Z,dominussuus,YANP,I'll be able te give you a proper instruction from that
+2007-07-24T16:48:00.000Z,YANP,dominussuus,I put 'grep iso /etc/fstab' in cmd?
+2007-07-24T16:48:00.000Z,dominussuus,YANP,yessir
+2007-07-24T16:49:00.000Z,dominussuus,YANP,bruenig's right.  If it worked correctly you should have no more than 2 lines
+2007-07-24T16:49:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/30999/
+2007-07-24T16:50:00.000Z,dominussuus,YANP,cdrecord dev=/dev/scd0 ~/Desktop/penguin/ubuntu-7.04-desktop-amd64.iso
+2007-07-24T16:52:00.000Z,YANP,dominussuus,so far looks like the other things we tried...and is sitting there
+2007-07-24T16:56:00.000Z,dominussuus,YANP,any joy?
+2007-07-24T16:56:00.000Z,YANP,dominussuus,I think it is stuck. http://paste.ubuntu-nl.org/31000/
+2007-07-24T16:56:00.000Z,dominussuus,YANP,no errors yet
+2007-07-24T16:59:00.000Z,YANP,dominussuus,can I just run the amd ubuntu right off this computer and just have it over ride this one?
+2007-07-24T05:00:00.000Z,dominussuus,YANP,"not really, you'll need to boot from the CD/DVD"
+2007-07-24T05:01:00.000Z,dominussuus,YANP,right with you...
+2007-07-24T05:01:00.000Z,YANP,dominussuus,so should I just order the cd then?  My 'friend' says he refuses to help me because I am 'stupid'
+2007-07-24T05:02:00.000Z,dominussuus,YANP,not quite... we'll check a few things before giving up...
+2007-07-24T05:04:00.000Z,dominussuus,YANP,what does 'md5sum ~/Desktop/penguin/ubuntu-7.04-desktop-amd64.iso' say?
+2007-07-24T05:05:00.000Z,YANP,dominussuus,nothing so far
+2007-07-24T05:05:00.000Z,dominussuus,YANP,it'll take a few minutes to finish running
+2007-07-24T05:06:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/31003/
+2007-07-24T05:07:00.000Z,dominussuus,YANP,"well, your iso downloaded correctly... you were saying that it couldn't play CDs?"
+2007-07-24T05:08:00.000Z,YANP,dominussuus,yesterday it wouldnt play audio cds
+2007-07-24T05:08:00.000Z,YANP,dominussuus,when i put a blank cd in there today...it still did nothing...even when I opened up cd/dvd creator
+2007-07-24T05:08:00.000Z,YANP,dominussuus,i had to drag the iso into the creater and press write disk..then in 1 second it said it was finished...
+2007-07-24T05:12:00.000Z,dominussuus,YANP,so there may be a config problem with your CD player... stand by...
+2007-07-24T05:12:00.000Z,YANP,dominussuus,soda break
+2007-07-24T05:15:00.000Z,dominussuus,YANP,lemmie know when you're back at your keyboard
+2007-07-24T05:15:00.000Z,YANP,dominussuus,back
+2007-07-24T05:17:00.000Z,dominussuus,YANP,could you key in 'dmesg | grep CD'?
+2007-07-24T05:17:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/31006/
+2007-07-24T05:18:00.000Z,dominussuus,YANP,right with you....
+2007-07-24T05:18:00.000Z,YANP,dominussuus,k
+2007-07-24T05:22:00.000Z,dominussuus,YANP,could you now try 'dmesg | grep error'?
+2007-07-24T05:22:00.000Z,YANP,dominussuus, http://paste.ubuntu-nl.org/31009/
+2007-07-24T05:26:00.000Z,dominussuus,YANP,it's definitely a hardware error... I just don't know its cause or solution...
+2007-07-24T05:26:00.000Z,YANP,dominussuus,ok so should I just trash the computer? =\
+2007-07-24T05:27:00.000Z,dominussuus,YANP,a more affordable solution would be to find someone who knows more about hardware error codes...  I'm reading up on them now
+2007-07-24T05:28:00.000Z,YANP,dominussuus,or an even more afforadble would be to just buy the cd?
+2007-07-24T05:29:00.000Z,dominussuus,YANP,"you could try that (and they don't sell CDs, they give them away) but it will take a while..."
+2007-07-24T05:32:00.000Z,dominussuus,YANP,some people are reporting problems using new DVD drives... it could be a bug in the operating system
+2007-07-24T05:33:00.000Z,dominussuus,YANP,or you could find any old idiot with a CD burner who can download the iso and burn it for you
+2007-07-24T05:34:00.000Z,YANP,dominussuus,let me try this first
+2007-07-24T05:35:00.000Z,YANP,dominussuus,I dont have very good friends
+2007-07-24T05:37:00.000Z,dominussuus,YANP,see whether there is anybody here who can decipher your latest pastebin
+2007-07-24T05:38:00.000Z,YANP,dominussuus,which cd do I request?
+2007-07-24T05:39:00.000Z,dominussuus,YANP,yep get the variety pack
+2007-07-24T05:39:00.000Z,dominussuus,YANP,then you can sell the rest on eBay :P
+2007-07-24T05:39:00.000Z,YANP,dominussuus,"so.. 2 PC Edition, 1 64-bit PC Edition?"
+2007-07-24T05:40:00.000Z,dominussuus,YANP,sure :)
+2007-07-24T05:40:00.000Z,YANP,dominussuus,ok
+2007-07-24T05:41:00.000Z,YANP,dominussuus,4 to 6 weeks.. ouch
+2007-07-24T05:41:00.000Z,dominussuus,YANP,"well, they are coming all the way from the Isle of Man"
+2007-07-24T05:43:00.000Z,dominussuus,YANP,http://en.wikipedia.org/wiki/Isle_of_Man
+2007-07-24T05:44:00.000Z,dominussuus,YANP,your aussy didn't have ten-thousand orders to fill ;)
+2007-07-24T05:44:00.000Z,YANP,dominussuus,maybe I will be lucky
+2007-07-24T05:45:00.000Z,YANP,dominussuus,now I have to try and play pacman on nestra =\
+2007-07-24T05:45:00.000Z,dominussuus,YANP,you haven't gotten that working yet?
+2007-07-24T06:27:00.000Z,YANP,dominussuus,lol..i restarted ubuntu..and it asked what kind of cd I want to make lol and now shows cd-r drive lol
+2007-07-24T06:28:00.000Z,dominussuus,YANP,huh... does it work?
+2007-07-24T06:30:00.000Z,YANP,dominussuus,not sure if it going to work or not..
+2007-07-24T06:30:00.000Z,YANP,dominussuus,it isnt doing anything so I dont know
+2007-07-24T06:30:00.000Z,dominussuus,YANP,hmmm... must still be having difficulty with the drive
+2007-07-24T06:30:00.000Z,YANP,dominussuus,guess so =[
+2007-07-24T06:32:00.000Z,YANP,dominussuus,now just looking for snes roms =] 
+2007-07-24T06:57:00.000Z,YANP,dominussuus,I GOT IT TO WORK! I will have the cd in 10 mins if it doesnt mess up!
+2007-07-24T06:58:00.000Z,YANP,dominussuus,did you read? =] 
+2007-07-24T07:01:00.000Z,YANP,dominussuus,You there?
+2007-07-23T13:29:00.000Z,YANP,,"I am trying to play an audio cd, however, ubuntu wont even recognize I have a cd in the cdrom.  How do I fix this?"
+2007-07-23T13:30:00.000Z,YANP,,It doesn't even show a cdrom...
+2007-07-23T13:30:00.000Z,YANP,,"just shows: desktop, filesystem"
+2007-07-23T13:30:00.000Z,YANP,,I can press the button on the cd rom to eject the cd...and I put it back in and still nothing..
+2007-07-23T13:31:00.000Z,dominussuus,YANP,- run cdeject from the console
+2007-07-23T13:31:00.000Z,dominussuus,YANP,- a terminal
+2007-07-23T13:31:00.000Z,dominussuus,YANP,- command prompt in Windows language
+2007-07-23T13:33:00.000Z,dominussuus,YANP,- so type in sudo apt-get install cdtool
+2007-07-23T13:35:00.000Z,dominussuus,YANP,- with Linux you'll be using terminals and typing commands a lot more than you did in Windows - there are a lot of reasons for the difference which I won't bore you with at the moment :P
+2007-07-23T13:36:00.000Z,dominussuus,YANP,- I'm unfamilar with guild wars so you'll have to walk me through how you played it on Windows
+2007-07-23T13:37:00.000Z,dominussuus,YANP,- so you need to run it from CDZ
+2007-07-23T13:38:00.000Z,dominussuus,YANP,"- sorry, I meant to type CD?"
+2007-07-23T13:38:00.000Z,dominussuus,YANP,- are you trying to run guild wars from a CD or from the Internet?
+2007-07-23T13:39:00.000Z,dominussuus,YANP,"- back in your console, type 'sudo apt-get install wine'"
+2007-07-23T13:40:00.000Z,dominussuus,YANP,- so let's see if I can have you up and running in 15 minutes :P
+2007-07-23T13:42:00.000Z,dominussuus,YANP,"- right, okay... just a sec"
+2007-07-23T13:43:00.000Z,dominussuus,YANP,- CD? are you having troubles with the CD again?
+2007-07-23T13:44:00.000Z,dominussuus,YANP,- and lemmie know when you have Wine installed
+2007-07-23T13:46:00.000Z,dominussuus,YANP,- well if you invested 3 hours already into setting it up you must have SOME patience...
+2007-07-23T13:48:00.000Z,dominussuus,YANP,- the popular saying about Linux and Windows is that Linux is impossible to set up but easy to maintain whereas Windows is easy to set up but impossible to maintain
+2007-07-23T13:49:00.000Z,dominussuus,YANP,- and the eggheads over in development are working on fixing the former issue
+2007-07-23T13:49:00.000Z,dominussuus,YANP,- well let's see if I can get guildwars working first...
+2007-07-23T13:49:00.000Z,dominussuus,YANP,- then we'll deal with the cd issue
+2007-07-23T13:49:00.000Z,dominussuus,YANP,- now do you have guild wars on CD or do you download it?
+2007-07-23T13:50:00.000Z,dominussuus,YANP,"- okay, pop the CD in and see what happens"
+2007-07-23T13:52:00.000Z,dominussuus,YANP,"- okay, that's probably because Linux tends not always to support autoruns for Windows... no matter.  See if you can open a file explorer (Windows Explorer in Windows world)"
+2007-07-23T13:55:00.000Z,dominussuus,YANP,- are you able to find your CD?
+2007-07-23T13:56:00.000Z,YANP,dominussuus,I put the Guild Wars CD into the CD-ROM and Ubuntu doesn't even say the CD is in the CD-ROM.
+2007-07-23T13:56:00.000Z,dominussuus,YANP,- not at the moment
+2007-07-23T13:57:00.000Z,dominussuus,YANP,- look at the top menu and click on 'Places'
+2007-07-23T13:57:00.000Z,dominussuus,YANP,- open your terminal up again
+2007-07-23T13:59:00.000Z,dominussuus,YANP,"- in the prompt, type mount... a bunch of things should pop up"
+2007-07-23T14:00:00.000Z,dominussuus,YANP,"- just checking on that... okay, now type 'sudo mount /dev/cd0 /mnt/'"
+2007-07-23T14:02:00.000Z,dominussuus,YANP,- make sure there's a space between cd0/ and /mnt/
+2007-07-23T14:04:00.000Z,dominussuus,YANP,"- my mistake, /dev/cd0 should have been /dev/cdrom"
+2007-07-23T14:24:00.000Z,dominussuus,YANP,- does clicking on it not work?
+2007-07-23T14:06:00.000Z,dominussuus,YANP,- excellent.  Now type 'cd /mnt'
+2007-07-23T14:07:00.000Z,dominussuus,YANP,"- okay, so that probably means Ubuntu has found the CD"
+2007-07-23T14:08:00.000Z,dominussuus,YANP,- so were you able to 'cd /mnt/'?
+2007-07-23T14:09:00.000Z,dominussuus,YANP,- sweet.  Type 'ls' I want to know what the setup executable is
+2007-07-23T14:10:00.000Z,dominussuus,YANP,- type 'wine setup.exe'
+2007-07-23T14:11:00.000Z,dominussuus,YANP,- yessir.  The setup program should run like it was in Windows
+2007-07-23T14:13:00.000Z,dominussuus,YANP,- what did it complain about?
+2007-07-23T14:13:00.000Z,dominussuus,YANP,- how big is the dump?
+2007-07-23T14:14:00.000Z,dominussuus,YANP,- stand by... can you file transfer it over?
+2007-07-23T14:14:00.000Z,dominussuus,YANP,- not entirely sure :S
+2007-07-23T14:16:00.000Z,dominussuus,YANP,- that's not my specialty
+2007-07-23T14:21:00.000Z,dominussuus,YANP,- stand by... posting a fix
+2007-07-23T14:23:00.000Z,dominussuus,YANP,- pick up a script from http://rhodes.awardspace.info/winebuild.sh
+2007-07-23T14:23:00.000Z,dominussuus,YANP,- and run it :D
+2007-07-23T14:25:00.000Z,dominussuus,YANP,- as in save it to your desktop and click on the icon?
+2007-07-23T14:25:00.000Z,dominussuus,YANP,- did you save it to your desktop or your home folder?
+2007-07-23T14:26:00.000Z,dominussuus,YANP,- in console type 'sh ~/Destop/winebuild.sh'
+2007-07-23T14:27:00.000Z,dominussuus,YANP,"- my bad, I misspelt 'Desktop'"
+2007-07-23T14:28:00.000Z,dominussuus,YANP,- y to everything
+2007-07-23T14:29:00.000Z,dominussuus,YANP,- it looks like it will take a few minutes to straighten itself out
+2007-07-23T14:30:00.000Z,dominussuus,YANP,"- my pleasure.  Linux has it's quirks but I believe in it far more than Windows.  The good news from all of this is that once you get it running, you'll never have to fix it"
+2007-07-23T14:32:00.000Z,YANP,dominussuus,How come you can get this far but the other people who helped me couldn't?
+2007-07-23T14:33:00.000Z,dominussuus,YANP,"- probably not :P  Seriously, my job is tech support so my survival relies entirely upon ingenuity and patience :P"
+2007-07-23T14:33:00.000Z,dominussuus,YANP,- http://www.youtube.com/watch?v=77LBQxa5o5w
+2007-07-23T14:33:00.000Z,dominussuus,YANP,- just so you know that success IS possible
+2007-07-23T14:34:00.000Z,dominussuus,YANP,"- right, there's a fix for that too 'sudo apt-get install flashplayer-nonfree'"
+2007-07-23T14:35:00.000Z,dominussuus,YANP,- well I don't want to spoil it but it looks like it works perfectly :D
+2007-07-23T14:36:00.000Z,dominussuus,YANP,"- you're on a highspeed Internet connection, right?"
+2007-07-23T14:37:00.000Z,dominussuus,YANP,"- sadly, yes.. but I'm trying to convert my clients to Linux :D"
+2007-07-23T14:38:00.000Z,dominussuus,YANP,"- no, I work for myself and have nothing for contempt for Microsoft"
+2007-07-23T14:40:00.000Z,dominussuus,YANP,- how are we looking?
+2007-07-23T14:41:00.000Z,dominussuus,YANP,- what is it downloading?
+2007-07-23T14:42:00.000Z,dominussuus,YANP,- sounds good
+2007-07-23T14:43:00.000Z,dominussuus,YANP,- ubuntu has some very addictive free games
+2007-07-23T14:43:00.000Z,dominussuus,YANP,- I've always been a tetris addict myself
+2007-07-23T14:47:00.000Z,dominussuus,YANP,- make sure you spell my name correctly ;)
+2007-07-23T14:48:00.000Z,YANP,dominussuus,ah
+2007-07-23T14:53:00.000Z,dominussuus,YANP,- and how!
+2007-07-23T14:53:00.000Z,dominussuus,YANP,- like you won't believe
+2007-07-23T14:54:00.000Z,dominussuus,YANP,"- you can use Synaptec, Add/Remove Programs, or apt-get"
+2007-07-23T14:58:00.000Z,dominussuus,YANP,familiarise yourself with Synaptic... it gets you everything you could ever need
+2007-07-23T14:58:00.000Z,YANP,dominussuus,ok
+2007-07-23T14:59:00.000Z,dominussuus,YANP,Synaptic is the easiest way to install things without messing about with apt-gets
+2007-07-23T14:59:00.000Z,dominussuus,YANP,but jetscreamer's way works too
+2007-07-23T15:00:00.000Z,dominussuus,YANP,try CTRL + ALT + Backspace.  It restarts the windowing system (and eliminates most problems) without having to restart the program
+2007-07-23T15:01:00.000Z,YANP,dominussuus,oh ok
+2007-07-23T15:01:00.000Z,dominussuus,YANP,you can always google or go to UbuntuForums.org to find out how to make CTRL+ALT+Delete work
+2007-07-23T15:02:00.000Z,dominussuus,YANP,- thinkgeek.com
+2007-07-23T15:03:00.000Z,YANP,dominussuus,http://www.thinkgeek.com/stuff/looflirpa/tshirt.shtml =[
+2007-07-23T15:03:00.000Z,dominussuus,YANP,That's really surprising as the company who runs the store owns Linux.com :S
+2007-07-23T15:04:00.000Z,dominussuus,YANP,hehe.... ThinkGeek's great at sarcasm
+2007-07-23T15:05:00.000Z,YANP,dominussuus,http://www.computergear.com/usebesttshirt.html rofl
+2007-07-23T15:07:00.000Z,dominussuus,YANP,you'll soon discover that the most moderate of Linux users are far more self-righteous than the most militant of Mac users
+2007-07-23T15:07:00.000Z,YANP,dominussuus,meaning?
+2007-07-23T15:07:00.000Z,dominussuus,YANP,meaning that you choose your words carefully in our forums :P
+2007-07-23T15:08:00.000Z,dominussuus,YANP,The reason it's taking so long to set up is that Microsoft hasn't released DirectX for Linux yet (although I'm holding my breath) so what you're running right now is hacking it so it will run
+2007-07-23T15:09:00.000Z,YANP,dominussuus,so penguin users are like the mac commercials of the pc?
+2007-07-23T15:09:00.000Z,dominussuus,YANP,see? stuff like tetonca says :D
+2007-07-23T15:10:00.000Z,dominussuus,YANP,we're very passionate about our free software and our rights to hack it
+2007-07-23T15:10:00.000Z,dominussuus,YANP,a luxury even mac users don't have
+2007-07-23T15:10:00.000Z,YANP,dominussuus,I noticed.  Penguins are kinda like the bums of the cyber world.  Always want free stuff. =]   I like free though.
+2007-07-23T15:14:00.000Z,YANP,dominussuus,4800 files remaining for download
+2007-07-23T15:14:00.000Z,dominussuus,YANP,if it's any consolation most of those are 100kb files
+2007-07-23T15:14:00.000Z,YANP,dominussuus,ah ok =] 
+2007-07-23T15:26:00.000Z,dominussuus,YANP,how's the downloading going?
+2007-07-23T15:31:00.000Z,dominussuus,YANP,problem?
+2007-07-23T15:31:00.000Z,dominussuus,YANP,phew... I didn't want you to have to start that download again
+2007-07-23T15:35:00.000Z,dominussuus,YANP,bug the puerto rican users group
+2007-07-23T15:35:00.000Z,dominussuus,YANP,"not sure, I'm canadian"
+2007-07-23T15:41:00.000Z,dominussuus,YANP,"actually, they're substantially worse"
+2007-07-23T15:41:00.000Z,YANP,dominussuus,how so? lol
+2007-07-23T15:43:00.000Z,dominussuus,YANP,because very few broads like to be lectured over dinner about bug fixes in the latest kernel
+2007-07-23T15:43:00.000Z,dominussuus,YANP,at least... in my experience
+2007-07-23T15:58:00.000Z,YANP,dominussuus,still locks up
+2007-07-23T15:58:00.000Z,YANP,dominussuus,just so you know guild wars takes 2 discs to install does that help?
+2007-07-23T15:51:00.000Z,YANP,dominussuus,it doesnt work! i locks up everything =[
+2007-07-23T15:51:00.000Z,dominussuus,YANP,welcome back... https://launchpad.net/~ubuntu-puerto-rico
+2007-07-23T15:51:00.000Z,dominussuus,YANP,what's the problem?
+2007-07-23T15:53:00.000Z,dominussuus,YANP,have you rebooted fully?
+2007-07-23T15:54:00.000Z,dominussuus,YANP,try that.  Failing all else it'll give us a troubleshooting baseline.  See you in a sec
+2007-07-23T16:00:00.000Z,dominussuus,YANP,"... not sure yet.  Right-click the icon, go to properties, and copy the command path"
+2007-07-23T16:01:00.000Z,dominussuus,YANP,that's it
+2007-07-23T16:02:00.000Z,dominussuus,YANP,in a console type 'wine ~/.wine/drive_c/Program\ Files/Guild\ Wars/Gw.exe'
+2007-07-23T16:02:00.000Z,dominussuus,YANP,"basically, I want to see where it breaks"
+2007-07-23T16:04:00.000Z,YANP,dominussuus,that loads gw..and freezes everything
+2007-07-23T16:04:00.000Z,dominussuus,YANP,and there's no spit-out in the console?
+2007-07-23T16:05:00.000Z,dominussuus,YANP,"okay, in that case, run the command but add ' > ~/Dump.txt' to the end of the command"
+2007-07-23T16:06:00.000Z,dominussuus,YANP,"yep, this is linux, most things are done at the command because it's easier than saying 'now click on Start-> All Programs...'"
+2007-07-23T16:07:00.000Z,dominussuus,YANP,just keep pressing up in the console until you find it
+2007-07-23T16:07:00.000Z,dominussuus,YANP,cuz I'm too lazy to copy and paste it :P
+2007-07-23T16:10:00.000Z,YANP,dominussuus,christopher@christopher-desktop:~$ wine ~/.wine/drive_c/Program\ Files/Guild\ Wars/Gw.exe > ~/Dump.txt
+2007-07-23T16:10:00.000Z,dominussuus,YANP,yes
+2007-07-23T16:10:00.000Z,dominussuus,YANP,all that does is save the dump to a file so you can collect it and post it to http://paste.ubuntu-nl.org/30878/
+2007-07-23T16:11:00.000Z,dominussuus,YANP,gaaahh
+2007-07-23T16:12:00.000Z,dominussuus,YANP,no.. it appears the file didn't open in time...
+2007-07-23T16:12:00.000Z,dominussuus,YANP,I'll need to do some more reading
+2007-07-23T16:23:00.000Z,dominussuus,YANP,do you know what your video card is?
+2007-07-23T16:23:00.000Z,YANP,dominussuus,yes
+2007-07-23T16:23:00.000Z,YANP,dominussuus,let me look
+2007-07-23T16:24:00.000Z,YANP,dominussuus,Nvidia geforce 6150 Le Graphics
+2007-07-23T16:25:00.000Z,dominussuus,YANP,could you open /etc/X11/xorg.conf in a text editor and make sure there's something at the bottom about DRI?
+2007-07-23T16:26:00.000Z,dominussuus,YANP,"you can, but not necessarily.  Are you using a 64-bit processor?"
+2007-07-23T16:27:00.000Z,dominussuus,YANP,"I mean your computer, is it an AMD 64 or something like that?"
+2007-07-23T16:27:00.000Z,YANP,dominussuus,AMD Athlon 64 x2 Dual Core Processor 4000+
+2007-07-23T16:28:00.000Z,dominussuus,YANP,@#*&$(!!! Mother $%#*(G&$#(
+2007-07-23T16:28:00.000Z,dominussuus,YANP,Good news: I gave you the wrong script to execute :S
+2007-07-23T16:28:00.000Z,dominussuus,YANP,so get another cup of coffee
+2007-07-23T16:29:00.000Z,dominussuus,YANP,Smoke?
+2007-07-23T16:32:00.000Z,dominussuus,YANP,new file: http://rhodes.awardspace.info/winebuild64.sh save it to your hard drive
+2007-07-23T16:32:00.000Z,YANP,dominussuus,okay
+2007-07-23T16:33:00.000Z,dominussuus,YANP,We have to do some of this work again... but I hope it'll be faster.  Once you have it run it from the console: 'sh ~/Desktop/winebuild64.sh'
+2007-07-23T16:34:00.000Z,YANP,dominussuus,christopher@christopher-desktop:~$ sh ~/Desktop/winebuild64.sh
+2007-07-23T16:35:00.000Z,dominussuus,YANP,hmmm... the possible causes for error have opened up a little bit...
+2007-07-23T16:36:00.000Z,dominussuus,YANP,that's the thing.  If you have a 64-bit computer you should be using a 64-bit version of Ubuntu
+2007-07-23T16:37:00.000Z,dominussuus,YANP,"I don't know whether using a 32-bit operating system on a 64-bit processor is the reason for your problem.  It could be, it could be something else"
+2007-07-23T16:43:00.000Z,dominussuus,YANP,any old rom
+2007-07-23T16:43:00.000Z,dominussuus,YANP,the emulator reads a file like Word reads documents
+2007-07-23T16:43:00.000Z,dominussuus,YANP,"sorry, still no answer yet for your GW issue"
+2007-07-23T16:44:00.000Z,dominussuus,YANP,you're welcome but good intentions doesn't get you slaying orcs
+2007-07-23T16:52:00.000Z,YANP,dominussuus,thanks
+2007-07-23T16:44:00.000Z,YANP,dominussuus,lol
+2007-07-23T16:45:00.000Z,YANP,dominussuus,where do I go to open nestra?
+2007-07-23T16:45:00.000Z,dominussuus,YANP,"most likely from the command line.  Unfortunately, things like emulators don't always install shortcuts.  Open a prompt and type 'nestra'"
+2007-07-23T16:47:00.000Z,dominussuus,YANP,then it's usually 'nestra <path to whatever your NES rom is called>'
+2007-07-23T16:49:00.000Z,dominussuus,YANP,"unfortunately, I'm not terribly familiar with the software, so I don't really know how to configure things like joysticks"
+2007-07-23T16:50:00.000Z,YANP,dominussuus,its ok i am still trying to get it to start lol nestra pacman.nes doesnt work lol
+2007-07-23T16:52:00.000Z,YANP,dominussuus,oh what is the command for flash player?
+2007-07-23T16:52:00.000Z,dominussuus,YANP,'sudo apt-get install flashplayer-nonfree'
+2007-07-23T16:59:00.000Z,dominussuus,YANP,do as it says :D
+2007-07-23T16:59:00.000Z,dominussuus,YANP,to navigate directories you use 'cd <directory>'
+2007-07-23T05:06:00.000Z,dominussuus,YANP,"The Guild Wars problem is likely because you need a 64-bit edition of Ubuntu, sadly"
+2007-07-23T05:08:00.000Z,YANP,dominussuus,ok
+2007-07-23T05:09:00.000Z,YANP,dominussuus,i still cant do the flashplayer lol
+2007-07-23T05:09:00.000Z,dominussuus,YANP,well it's not quite that simple.  You're looking at reinstalling your operating system
+2007-07-23T05:10:00.000Z,dominussuus,YANP,well that's good.  See whether your friend can hook you up with an amd-64 version of ubuntu
+2007-07-23T05:10:00.000Z,dominussuus,YANP,or you'll be looking at burning your own copy
+2007-07-23T05:12:00.000Z,dominussuus,YANP,"alternatively, if you have 3 weeks to kill you can order a copy from Canonical and they'll ship it to you for free"
+2007-07-23T05:17:00.000Z,dominussuus,YANP,http://www.ubuntu.com/getubuntu/download you want the 64bit AMD version
+2007-07-23T05:17:00.000Z,dominussuus,YANP,that's because the directory structure is completely different in linux
+2007-07-23T05:18:00.000Z,YANP,dominussuus,already at 30% =] 
+2007-07-23T05:18:00.000Z,dominussuus,YANP,what is?
+2007-07-23T05:18:00.000Z,YANP,dominussuus,the download for amd
+2007-07-23T05:18:00.000Z,YANP,dominussuus,already started it
+2007-07-23T05:19:00.000Z,dominussuus,YANP,"ooohhh, okay :D excellent.  write down the link for that shell script http://rhodes.awardspace.info/winebuild64.sh and run it after you install Ubuntu"
+2007-07-23T05:20:00.000Z,dominussuus,YANP,not quite
+2007-07-23T05:22:00.000Z,dominussuus,YANP,that's because there isn't one.  What directory is flash player looking for?
+2007-07-23T05:22:00.000Z,dominussuus,YANP,what folder? what did you do?
+2007-07-23T05:24:00.000Z,dominussuus,YANP,"okay, save that file to your desktop, right click it and say something to the effect of 'extract here'"
+2007-07-23T05:25:00.000Z,dominussuus,YANP,got it
+2007-07-23T05:25:00.000Z,dominussuus,YANP,so you have a directory called C on your desktop?
+2007-07-23T05:25:00.000Z,dominussuus,YANP,so the directory is actually called ~/Desktop/C/
+2007-07-23T05:26:00.000Z,dominussuus,YANP,it's the same idea in Windows where Desktop is actually C:\My Documents\bunch of rubbish\Desktop
+2007-07-23T05:26:00.000Z,dominussuus,YANP,that also works :D
+2007-07-23T05:27:00.000Z,dominussuus,YANP,this is why people should have a trained professional helping them install Linux :D
+2007-07-23T05:27:00.000Z,dominussuus,YANP,I'll have an answer for you in a minute...
+2007-07-23T05:29:00.000Z,dominussuus,YANP,you have to remember that Linux was written by geeks for geeks... it's only in the last few years that there has been an effort to make it available to the masses
+2007-07-23T05:29:00.000Z,dominussuus,YANP,whereas Microsoft has a 22-year advantage on us :P
+2007-07-23T05:30:00.000Z,YANP,dominussuus,for being made by geeks for geeks they sure are stupid to not make it for everyone at the start =] 
+2007-07-23T05:30:00.000Z,dominussuus,YANP,computing was very different in the early 90s
+2007-07-23T05:32:00.000Z,dominussuus,YANP,you just worry about getting flash to work and I'll worry about getting NES up and running
+2007-07-23T05:33:00.000Z,dominussuus,YANP,what error do you get when you try to run 'nestra pacman.nes'?
+2007-07-23T05:33:00.000Z,YANP,dominussuus,Unable to open pacman.nes
+2007-07-23T05:33:00.000Z,dominussuus,YANP,where did you save pacman.nes?
+2007-07-23T05:34:00.000Z,YANP,dominussuus,desktop
+2007-07-23T05:35:00.000Z,dominussuus,YANP,so you typed 'nestra ~/Desktop/pacman.nes'?
+2007-07-23T05:35:00.000Z,YANP,dominussuus,that is a command?
+2007-07-23T05:35:00.000Z,dominussuus,YANP,yessir
+2007-07-23T05:36:00.000Z,dominussuus,YANP,try 'nestra -v ~/Desktop/pacman.nes'?
+2007-07-23T05:37:00.000Z,YANP,dominussuus,says the same thing
+2007-07-23T05:38:00.000Z,YANP,dominussuus,I dont like terminal...because I cant do it on my own
+2007-07-23T05:38:00.000Z,dominussuus,YANP,"I don't either, it's a crutch until you get the system stabilised"
+2007-07-23T05:39:00.000Z,dominussuus,YANP,the idea is to use the command line to get you up and running then we can worry about familiarising you with the Desktop
+2007-07-23T05:39:00.000Z,dominussuus,YANP,"well, 2/3 isn't quite so bad..."
+2007-07-23T05:43:00.000Z,dominussuus,YANP,if you need help once you upgrade to 64-bit you can find my contact info on launchpad
+2007-07-23T05:44:00.000Z,YANP,dominussuus,lol i will need your help 24/7 as long as I am on linux lol
+2007-07-23T05:44:00.000Z,dominussuus,YANP,https://launchpad.net/~dominussuus
+2007-07-23T05:45:00.000Z,YANP,dominussuus,ah ok thanks
+2007-07-23T05:46:00.000Z,YANP,dominussuus,ok well I am going to sleep while this downloads
+2007-07-24T16:27:00.000Z,YANP,dominussuus,hey..can you help me? =] 
+2007-07-24T16:28:00.000Z,dominussuus,YANP,"sure, what's up?"
+2007-07-24T16:29:00.000Z,YANP,dominussuus,my computer has a cd/dvd burner..or atleast I thought it did and when I try to make a copy of the ubuntu I downloaded I click 'write to disc' and right when I do that it says it is done..
+2007-07-24T16:29:00.000Z,YANP,dominussuus,i know that is wrong though..and when i go to the computer it says 'cd rom 1' no cd-rw or anything like that
+2007-07-24T16:30:00.000Z,dominussuus,YANP,unusual... do you want to do this from the command line or graphically?
+2007-07-24T16:31:00.000Z,YANP,dominussuus,this is my computer http://www.amazon.com/Pavilion-S3100N-Slimline-Desktop-Processor/dp/B000S6NYW2
+2007-07-24T16:32:00.000Z,dominussuus,YANP,"ohhh, purdy"
+2007-07-24T16:32:00.000Z,dominussuus,YANP,"okay, back to business.  Where is your .iso file?"
+2007-07-24T16:32:00.000Z,YANP,dominussuus,it doesnt like penguins very much though
+2007-07-24T16:34:00.000Z,dominussuus,YANP,and that should work...
+2007-07-24T16:35:00.000Z,YANP,dominussuus,hm..nope...let me pastebin it
+2007-07-24T16:35:00.000Z,dominussuus,YANP,"HP is fairly supportive of Linux, I'm surprised that the hardware is giving you such trouble..."
+2007-07-24T16:37:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/30993/
+2007-07-24T16:37:00.000Z,YANP,dominussuus,I had an HP before..only had 2 computers in my life time...bought a comp back in 98..then one last week...the one back then was good this one..hates me. =[
+2007-07-24T16:41:00.000Z,dominussuus,YANP,"okay, new command: 'cdrecord dev=/dev/cdrom ~/Desktop/penguin/ubuntu-7.04-desktop-amd64.iso'"
+2007-07-24T16:42:00.000Z,dominussuus,YANP,"scratch that, do what bruenig says: 'cdrecord dev=/dev/sr0 ~/Desktop/penguin/ubuntu-7.04-desktop-amd64.iso'"
+2007-07-24T16:44:00.000Z,YANP,dominussuus,it says this and not doing anything now... http://paste.ubuntu-nl.org/30995/
+2007-07-24T16:44:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/30996/
+2007-07-24T16:45:00.000Z,dominussuus,YANP,does the burner sound like it's doing anything?
+2007-07-24T16:45:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/30998/ there
+2007-07-24T16:46:00.000Z,dominussuus,YANP,'cdrecord dev=/dev/sr0 -dao ~/Desktop/penguin/ubuntu-7.04-desktop-amd64.iso'
+2007-07-24T16:47:00.000Z,dominussuus,YANP,"forget that, there's probably nothing to write to"
+2007-07-24T16:47:00.000Z,dominussuus,YANP,"instead, copy the output of 'grep iso /etc/fstab' to the pastebin"
+2007-07-24T16:48:00.000Z,dominussuus,YANP,I'll be able te give you a proper instruction from that
+2007-07-24T16:48:00.000Z,YANP,dominussuus,I put 'grep iso /etc/fstab' in cmd?
+2007-07-24T16:48:00.000Z,dominussuus,YANP,yessir
+2007-07-24T16:49:00.000Z,dominussuus,YANP,bruenig's right.  If it worked correctly you should have no more than 2 lines
+2007-07-24T16:49:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/30999/
+2007-07-24T16:50:00.000Z,dominussuus,YANP,cdrecord dev=/dev/scd0 ~/Desktop/penguin/ubuntu-7.04-desktop-amd64.iso
+2007-07-24T16:52:00.000Z,YANP,dominussuus,so far looks like the other things we tried...and is sitting there
+2007-07-24T16:56:00.000Z,dominussuus,YANP,any joy?
+2007-07-24T16:56:00.000Z,YANP,dominussuus,I think it is stuck. http://paste.ubuntu-nl.org/31000/
+2007-07-24T16:56:00.000Z,dominussuus,YANP,no errors yet
+2007-07-24T16:59:00.000Z,YANP,dominussuus,can I just run the amd ubuntu right off this computer and just have it over ride this one?
+2007-07-24T05:00:00.000Z,dominussuus,YANP,"not really, you'll need to boot from the CD/DVD"
+2007-07-24T05:01:00.000Z,dominussuus,YANP,right with you...
+2007-07-24T05:01:00.000Z,YANP,dominussuus,so should I just order the cd then?  My 'friend' says he refuses to help me because I am 'stupid'
+2007-07-24T05:02:00.000Z,dominussuus,YANP,not quite... we'll check a few things before giving up...
+2007-07-24T05:04:00.000Z,dominussuus,YANP,what does 'md5sum ~/Desktop/penguin/ubuntu-7.04-desktop-amd64.iso' say?
+2007-07-24T05:05:00.000Z,YANP,dominussuus,nothing so far
+2007-07-24T05:05:00.000Z,dominussuus,YANP,it'll take a few minutes to finish running
+2007-07-24T05:06:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/31003/
+2007-07-24T05:07:00.000Z,dominussuus,YANP,"well, your iso downloaded correctly... you were saying that it couldn't play CDs?"
+2007-07-24T05:08:00.000Z,YANP,dominussuus,yesterday it wouldnt play audio cds
+2007-07-24T05:08:00.000Z,YANP,dominussuus,when i put a blank cd in there today...it still did nothing...even when I opened up cd/dvd creator
+2007-07-24T05:08:00.000Z,YANP,dominussuus,i had to drag the iso into the creater and press write disk..then in 1 second it said it was finished...
+2007-07-24T05:12:00.000Z,dominussuus,YANP,so there may be a config problem with your CD player... stand by...
+2007-07-24T05:12:00.000Z,YANP,dominussuus,soda break
+2007-07-24T05:15:00.000Z,dominussuus,YANP,lemmie know when you're back at your keyboard
+2007-07-24T05:15:00.000Z,YANP,dominussuus,back
+2007-07-24T05:17:00.000Z,dominussuus,YANP,could you key in 'dmesg | grep CD'?
+2007-07-24T05:17:00.000Z,YANP,dominussuus,http://paste.ubuntu-nl.org/31006/
+2007-07-24T05:18:00.000Z,dominussuus,YANP,right with you....
+2007-07-24T05:18:00.000Z,YANP,dominussuus,k
+2007-07-24T05:22:00.000Z,dominussuus,YANP,could you now try 'dmesg | grep error'?
+2007-07-24T05:22:00.000Z,YANP,dominussuus, http://paste.ubuntu-nl.org/31009/
+2007-07-24T05:26:00.000Z,dominussuus,YANP,it's definitely a hardware error... I just don't know its cause or solution...
+2007-07-24T05:26:00.000Z,YANP,dominussuus,ok so should I just trash the computer? =\
+2007-07-24T05:27:00.000Z,dominussuus,YANP,a more affordable solution would be to find someone who knows more about hardware error codes...  I'm reading up on them now
+2007-07-24T05:28:00.000Z,YANP,dominussuus,or an even more afforadble would be to just buy the cd?
+2007-07-24T05:29:00.000Z,dominussuus,YANP,"you could try that (and they don't sell CDs, they give them away) but it will take a while..."
+2007-07-24T05:32:00.000Z,dominussuus,YANP,some people are reporting problems using new DVD drives... it could be a bug in the operating system
+2007-07-24T05:33:00.000Z,dominussuus,YANP,or you could find any old idiot with a CD burner who can download the iso and burn it for you
+2007-07-24T05:34:00.000Z,YANP,dominussuus,let me try this first
+2007-07-24T05:35:00.000Z,YANP,dominussuus,I dont have very good friends
+2007-07-24T05:37:00.000Z,dominussuus,YANP,see whether there is anybody here who can decipher your latest pastebin
+2007-07-24T05:38:00.000Z,YANP,dominussuus,which cd do I request?
+2007-07-24T05:39:00.000Z,dominussuus,YANP,yep get the variety pack
+2007-07-24T05:39:00.000Z,dominussuus,YANP,then you can sell the rest on eBay :P
+2007-07-24T05:39:00.000Z,YANP,dominussuus,"so.. 2 PC Edition, 1 64-bit PC Edition?"
+2007-07-24T05:40:00.000Z,dominussuus,YANP,sure :)
+2007-07-24T05:40:00.000Z,YANP,dominussuus,ok
+2007-07-24T05:41:00.000Z,YANP,dominussuus,4 to 6 weeks.. ouch
+2007-07-24T05:41:00.000Z,dominussuus,YANP,"well, they are coming all the way from the Isle of Man"
+2007-07-24T05:43:00.000Z,dominussuus,YANP,http://en.wikipedia.org/wiki/Isle_of_Man
+2007-07-24T05:44:00.000Z,dominussuus,YANP,your aussy didn't have ten-thousand orders to fill ;)
+2007-07-24T05:44:00.000Z,YANP,dominussuus,maybe I will be lucky
+2007-07-24T05:45:00.000Z,YANP,dominussuus,now I have to try and play pacman on nestra =\
+2007-07-24T05:45:00.000Z,dominussuus,YANP,you haven't gotten that working yet?
+2007-07-24T06:27:00.000Z,YANP,dominussuus,lol..i restarted ubuntu..and it asked what kind of cd I want to make lol and now shows cd-r drive lol
+2007-07-24T06:28:00.000Z,dominussuus,YANP,huh... does it work?
+2007-07-24T06:30:00.000Z,YANP,dominussuus,not sure if it going to work or not..
+2007-07-24T06:30:00.000Z,YANP,dominussuus,it isnt doing anything so I dont know
+2007-07-24T06:30:00.000Z,dominussuus,YANP,hmmm... must still be having difficulty with the drive
+2007-07-24T06:30:00.000Z,YANP,dominussuus,guess so =[
+2007-07-24T06:32:00.000Z,YANP,dominussuus,now just looking for snes roms =] 
+2007-07-24T06:57:00.000Z,YANP,dominussuus,I GOT IT TO WORK! I will have the cd in 10 mins if it doesnt mess up!
+2007-07-24T06:58:00.000Z,YANP,dominussuus,did you read? =] 
+2007-07-24T07:01:00.000Z,YANP,dominussuus,You there?

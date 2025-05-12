@@ -1,0 +1,583 @@
+date,from,to,text
+2011-01-17T03:55:00.000Z,induz,,Ubuntu Lucid is not connecting my iPod touch 1st gen
+2011-01-17T03:55:00.000Z,induz,,I have already installed via sudo apt-get install ipheth-utils
+2011-01-17T03:56:00.000Z,ActionParsnip,induz,try setting it to disk mode if you can then it should mount as a usb storage device
+2011-01-17T04:00:00.000Z,induz,ActionParsnip,how can i set ip up to diskmode/
+2011-01-17T04:01:00.000Z,ActionParsnip,induz,"no idea, i don't buy apple's garbage, but if it can, do it"
+2011-02-07T19:18:00.000Z,ActionParsnip,induz,use your backups
+2011-02-07T19:19:00.000Z,ActionParsnip,induz,then the data is disposable
+2011-02-07T19:19:00.000Z,ActionParsnip,induz,if you can't mount it you can use foremost
+2011-02-07T19:20:00.000Z,ActionParsnip,induz,i suggest you get a backup system
+2011-02-07T19:22:00.000Z,ActionParsnip,induz,how about in:  sudo parted -l
+2011-02-07T19:23:00.000Z,induz,ActionParsnip,it says unrecognised disk label
+2011-02-07T19:23:00.000Z,ActionParsnip,induz,"fine, the label isn't too important"
+2011-02-07T19:23:00.000Z,ActionParsnip,induz,do you see the partition?
+2011-02-07T19:23:00.000Z,induz,ActionParsnip,it says;Error: Can't have overlapping partitions.
+2011-02-07T19:25:00.000Z,induz,ActionParsnip,here;http://paste.ubuntu.com/563883/
+2011-02-07T19:26:00.000Z,ActionParsnip,induz,then i suggest you use foremost on /dev/sdf  and maybe recover data.If you had a backup then you wouldn't have an issue
+2011-02-07T19:26:00.000Z,induz,ActionParsnip,i can see the partition as unallocated /dev/sdf
+2011-02-07T19:27:00.000Z,ActionParsnip,induz,/dev/sdf is the disk /dev/sfd1 would be the first partition
+2011-02-07T19:27:00.000Z,induz,ActionParsnip,maybe i deleted the partition on that disk
+2011-02-07T19:28:00.000Z,ActionParsnip,induz,the data will still be there if it hasn't been overwritten
+2011-02-07T19:29:00.000Z,induz,ActionParsnip,how can i see the data on that dive?
+2011-02-07T19:32:00.000Z,induz,ActionParsnip,I am downloading and installing formost
+2011-02-07T19:34:00.000Z,induz,ActionParsnip,I installed foremost by synaptec but I can not see it on Applications?
+2011-02-07T19:42:00.000Z,ActionParsnip,induz,foremost is a command line app
+2011-02-07T19:42:00.000Z,induz,ActionParsnip,I am not very good as i am new to ubuntu/Linux
+2011-02-07T19:43:00.000Z,ActionParsnip,induz,https://help.ubuntu.com/community/DataRecovery#Foremost
+2011-02-07T19:43:00.000Z,ActionParsnip,induz,"thats why there are guides with examples, nobody is born knowing the command line"
+2011-02-07T19:44:00.000Z,ActionParsnip,induz,the sheer amount of possible commands makes it unfeasible
+2011-02-07T19:44:00.000Z,induz,ActionParsnip,what is gnuddrescue??
+2011-02-07T19:45:00.000Z,ActionParsnip,induz,sounds like a gui to ddrescue
+2011-02-07T19:46:00.000Z,induz,ActionParsnip,it says to use gnuddrescue to image the drive first on tha webpage
+2011-02-07T19:46:00.000Z,ActionParsnip,induz,"no need, the device is healthy enough to just use foremost on"
+2011-02-07T19:47:00.000Z,induz,ActionParsnip,is my USB is /dev/sdf??
+2011-02-07T19:47:00.000Z,ActionParsnip,induz,yes
+2011-02-07T19:47:00.000Z,induz,ActionParsnip,i am going stepbystep
+2011-02-07T19:48:00.000Z,ActionParsnip,induz,the commands only read the data so will be ok
+2011-02-07T19:48:00.000Z,ActionParsnip,induz,"i gotta jet but just to re-iterate, if you had a backup, you wouldn't have an issue and be having to do all this stuff"
+2011-02-10T20:20:00.000Z,ActionParsnip,induz,sudo lshw -C display
+2011-02-10T20:22:00.000Z,induz,ActionParsnip,pksadiq  i get this http://paste.ubuntu.com/565411/
+2011-02-10T20:27:00.000Z,ActionParsnip,induz,ok its an intel
+2011-02-10T20:27:00.000Z,ActionParsnip,induz,https://wiki.ubuntu.com/X/Bugs/Lucidi8xxFreezes
+2011-02-10T20:32:00.000Z,induz,ActionParsnip,what should i do for better look on my ubuntu with the intel dispaly
+2011-02-10T20:32:00.000Z,ActionParsnip,induz,the guide will help
+2011-02-10T20:36:00.000Z,induz,ActionParsnip,"what kind of chipset i have on my comp , could u find that or how can i find that??"
+2011-02-11T18:05:00.000Z,ActionParsnip,induz,what are you trying to achieve?
+2011-02-11T18:07:00.000Z,ActionParsnip,induz,http://email.about.com/od/mozillathunderbirdtips/qt/et_free_yahoo.htm
+2011-02-11T18:07:00.000Z,ActionParsnip,induz,http://email.about.com/od/mozillathunderbirdtips/qt/et_free_hotmail.htm
+2011-02-11T18:08:00.000Z,induz,ActionParsnip,"for yahoo, i have to install YOPs"
+2011-02-15T18:48:00.000Z,ActionParsnip,induz,"not really, it just continues installs and fixes things"
+2011-02-15T20:47:00.000Z,ActionParsnip,induz,'good theme' is completely flexible
+2011-02-15T22:13:00.000Z,ActionParsnip,induz,"when you remove it from the system, what do you do? What filesystem do the partition(s) use"
+2011-02-15T22:14:00.000Z,ActionParsnip,induz,so you don't use 'safetly remove'
+2011-02-15T22:14:00.000Z,induz,ActionParsnip,how can i do on Lucid?
+2011-02-15T22:14:00.000Z,ActionParsnip,induz,you right click the icon and select 'safetly remove' Windows has it in the bottom right of the taskbar
+2011-02-15T22:14:00.000Z,ActionParsnip,induz,"that's why then, you are mistreating your hardware"
+2011-02-15T22:15:00.000Z,ActionParsnip,induz,if you don't remove the device safetly then Ubuntu will not be able to mount it if it's NTFS
+2011-02-15T22:16:00.000Z,ActionParsnip,induz,"plug it into a windows PC, then eject it PROPERLY. It will be fine. If you use your hardware  correctly you won't have an issue. If you abuse it you will get issues"
+2011-02-15T22:16:00.000Z,ActionParsnip,induz,"asuming you havent damaged the device, yes"
+2011-02-15T22:18:00.000Z,ActionParsnip,induz,it's not unmounted correctly so Ubuntu will have issues with it
+2011-02-15T22:23:00.000Z,induz,ActionParsnip,i safely  ejected on Apple and now one usb is getting read on ubuntu
+2011-02-15T22:23:00.000Z,ActionParsnip,induz,strange how when you use your ardware correctly it works.....don't you think??
+2011-02-15T22:24:00.000Z,ActionParsnip,induz,right click the icon on the desktop or in the places menu and click 'safetly remove'
+2011-02-15T22:24:00.000Z,induz,ActionParsnip,Thanks but I have alreday messed up one USB
+2011-02-15T22:24:00.000Z,induz,ActionParsnip,I dont USB  icon get on Desktop
+2011-02-15T22:25:00.000Z,ActionParsnip,induz,it may be in the places menu
+2011-02-15T22:32:00.000Z,ActionParsnip,induz,http://t1.gstatic.com/images?q=tbn:ANd9GcRhrW0_dPtt57k75c6-rZxQQz1UmCOyrzihV8S4GnPBLz7153og&t=1
+2011-02-15T22:34:00.000Z,induz,ActionParsnip,i dont have kind of appearance as i am using Lucid
+2011-02-15T22:36:00.000Z,ActionParsnip,induz,or you can use CLI and run:  sudo umount /dev/partition_name; sudo eject /dev/disk_name
+2011-02-15T22:40:00.000Z,ActionParsnip,induz,should be
+2011-02-16T04:45:00.000Z,ActionParsnip,induz,http://techcityinc.com/2009/02/04/top-10-free-video-editors-for-ubuntu-linux/
+2011-02-18T03:39:00.000Z,ActionParsnip,induz,sudo mkdir /media/iso; sudo mount -o loop /home/user/Desktop/file.iso /media/iso
+2011-02-18T03:49:00.000Z,ActionParsnip,induz,cedega? CrossOver Office?
+2011-02-20T06:05:00.000Z,ActionParsnip,induz,that is speculative and not concrete
+2011-02-22T04:53:00.000Z,ActionParsnip,induz,connect them to the same subnet and they are networked
+2011-02-22T04:54:00.000Z,induz,ActionParsnip,I guess subnet is 255.255.255.0
+2011-02-22T06:42:00.000Z,ActionParsnip,induz,what video chip?
+2011-02-22T07:40:00.000Z,ActionParsnip,induz,no the drivers is the same
+2011-02-22T07:40:00.000Z,ActionParsnip,induz,the settings on the driver in the DE may be different
+2011-02-22T07:40:00.000Z,induz,ActionParsnip,i liked KDE as i want to work on KDEnlive but now caz of this dsplay problem i can not
+2011-02-22T07:41:00.000Z,ActionParsnip,induz,try a clean install of kubuntu
+2011-02-22T07:41:00.000Z,induz,ActionParsnip,Iupgraded this from karmic?
+2011-02-22T07:42:00.000Z,ActionParsnip,induz,from karmic kubuntu?
+2011-02-22T07:44:00.000Z,induz,ActionParsnip,Then downloaded KDE desktop plasma
+2011-03-01T19:33:00.000Z,ActionParsnip,induz,how much ram do you have?
+2011-03-01T19:35:00.000Z,ActionParsnip,induz,is the ram healthy?
+2011-03-01T19:35:00.000Z,ActionParsnip,induz,is the drive healthy?
+2011-03-01T19:44:00.000Z,induz,ActionParsnip,as its dual boot when i run Xp on the same system it runs faster
+2011-03-01T19:45:00.000Z,induz,ActionParsnip,maybe i have installed way too many applications including kubuntu
+2011-03-01T19:45:00.000Z,ActionParsnip,induz,windows gets a lot better driver support in some cases so may explain the speed
+2011-03-01T19:45:00.000Z,ActionParsnip,induz,as long as you have around 10% free on each partition you should be fine
+2011-03-01T19:47:00.000Z,induz,ActionParsnip,out of 30Gb for Linux 12 gb is free
+2011-03-01T19:47:00.000Z,ActionParsnip,induz,sounds fine
+2011-03-01T19:48:00.000Z,ActionParsnip,induz,as long as all your apps don't have daemons chewing ram. You can test with: free -m   what is the righmost value on the second line?
+2011-03-01T19:52:00.000Z,ActionParsnip,induz,"its your ram, if you pastebin the output I can explain"
+2011-03-01T19:53:00.000Z,induz,ActionParsnip,here http://paste.ubuntu.com/573961/
+2011-03-21T04:01:00.000Z,ActionParsnip,induz,gnomebaker....
+2011-03-21T04:05:00.000Z,ActionParsnip,induz,doesn't it have a 'burn CD image' button
+2011-03-21T04:07:00.000Z,ActionParsnip,induz,it also has a CD copy button....
+2011-03-21T04:07:00.000Z,induz,ActionParsnip,it has CD copy button
+2011-03-21T04:08:00.000Z,ActionParsnip,induz,http://files.fosswire.com/2008/01/k3bmainwindow.png
+2011-03-21T04:11:00.000Z,induz,ActionParsnip,I am trying the copy Cd button and it fails due to some permission problems
+2011-03-21T04:11:00.000Z,ActionParsnip,induz,try a different app then.
+2011-03-21T04:15:00.000Z,induz,ActionParsnip,i get this error v
+2011-03-21T04:16:00.000Z,ActionParsnip,induz,try:    kdesu k3b
+2011-03-21T04:17:00.000Z,induz,ActionParsnip, kdesu k3b ??? what is that? is it a command?/
+2011-03-21T04:18:00.000Z,ActionParsnip,induz,"indeed, you can fire it in ALT+F2 or konsole (I'm assuming KDE)"
+2011-03-21T04:19:00.000Z,induz,ActionParsnip,is it a programme??
+2011-03-21T04:20:00.000Z,ActionParsnip,induz,is WHAT a program??
+2011-03-21T04:20:00.000Z,ActionParsnip,induz,paste the command in konsole and press ENTER
+2011-03-21T04:21:00.000Z,induz,ActionParsnip,ok
+2011-03-21T04:22:00.000Z,induz,ActionParsnip,it says kdesu command is not found
+2011-03-21T04:22:00.000Z,ActionParsnip,induz,are you using KDE?
+2011-03-21T04:23:00.000Z,induz,ActionParsnip,I am using gnome
+2011-03-21T04:24:00.000Z,ActionParsnip,induz,then use:    gksudo k3b       don't you find te dependancies pulled down when you installed k3b a bit bloating. Just for a CD burner..?
+2011-03-21T04:27:00.000Z,induz,ActionParsnip,its copying now ..lets see
+2011-03-21T04:28:00.000Z,ActionParsnip,induz,if you install gnomebaker and uninstall k3b you will save a tonne of space
+2011-03-21T04:28:00.000Z,induz,ActionParsnip,will it copy the extact copy of CD s this Cd is bootable
+2011-03-21T04:29:00.000Z,induz,ActionParsnip,k3b came with the kubuntu
+2011-03-21T04:29:00.000Z,ActionParsnip,induz,yes it will. Why install a KDE based app when gnome has fine burners which need a lot less space.
+2011-03-21T04:29:00.000Z,ActionParsnip,induz,oh so you started with kde then installed gnome?
+2011-03-21T04:30:00.000Z,induz,ActionParsnip,i started with gnome but then downloade KDE
+2011-03-21T04:30:00.000Z,ActionParsnip,induz,i see
+2011-03-21T04:30:00.000Z,induz,ActionParsnip,can i use a DVD to copy this CD
+2011-03-21T04:31:00.000Z,induz,ActionParsnip,or it has to be a CD as its a copy
+2011-03-28T04:42:00.000Z,ActionParsnip,induz,like a thesaurus?
+2011-03-28T04:46:00.000Z,induz,ActionParsnip,like synonyms
+2011-03-28T04:47:00.000Z,ActionParsnip,induz,let me search
+2011-03-28T04:48:00.000Z,ActionParsnip,induz,http://user.services.openoffice.org/en/forum/viewtopic.php?f=7&t=7560
+2011-03-28T04:48:00.000Z,induz,ActionParsnip,when i click clt F7  it does not give me many words
+2011-03-28T04:50:00.000Z,ActionParsnip,induz,install openoffice.org-thesaurus-en-us
+2011-03-28T04:57:00.000Z,induz,ActionParsnip,-thesaurus-en-us is installed
+2011-03-28T04:59:00.000Z,ActionParsnip,induz,that's all I can suggest dude sorry
+2011-03-28T05:05:00.000Z,induz,ActionParsnip,Thanks for helping though
+2011-03-28T05:21:00.000Z,ActionParsnip,induz,do you have java installed?
+2011-03-28T05:21:00.000Z,ActionParsnip,induz,"check, then in tools -> options make sure java is selected there"
+2011-03-28T05:25:00.000Z,induz,ActionParsnip,after tool--.Option---> where?
+2011-03-28T05:27:00.000Z,ActionParsnip,induz,the java lie..... I thought that was clear....
+2011-04-23T05:30:00.000Z,ActionParsnip,induz,there are compiled binaries here: http://devices.natetrue.com/wiviz/wiviz-binaries.tar.gz
+2011-04-23T05:50:00.000Z,induz,ActionParsnip,is WiViz a window MS application??
+2011-08-01T00:32:00.000Z,ActionParsnip,induz,the kernel will be the one in the ISO. There is only one..
+2011-08-01T00:35:00.000Z,ActionParsnip,induz,"xpud, puppy will run well :)"
+2011-08-01T00:41:00.000Z,ActionParsnip,induz,natty will
+2011-08-01T00:41:00.000Z,ActionParsnip,induz,lubuntu will give a more responsive OS
+2011-08-01T01:05:00.000Z,ActionParsnip,induz,did you MD5 test the ISO
+2011-08-01T01:07:00.000Z,ActionParsnip,induz,if you didn't MD5 test you have no way of knowing the data is good
+2011-08-01T01:07:00.000Z,induz,ActionParsnip,how can i do it
+2011-08-01T01:08:00.000Z,ActionParsnip,induz,"use md5sum in ubuntu, you will need the hash of the image to compare"
+2011-08-01T04:41:00.000Z,ActionParsnip,induz,"MD5 test the ISO, be sure the USB device is healthy"
+2011-08-01T04:42:00.000Z,ActionParsnip,induz,D: means nothing in Ubuntu
+2011-08-01T04:42:00.000Z,ActionParsnip,induz,are you using windows currently?
+2011-08-01T04:44:00.000Z,ActionParsnip,induz,"unetbootin is in the ubuntu repos, you can use it to wipe the USB partition, then transfer the verified ISO"
+2011-08-01T04:44:00.000Z,ActionParsnip,induz,"the formatting is moot, unetbootin should be used to wipe it"
+2011-08-01T04:46:00.000Z,ActionParsnip,induz,did you test the ISO?
+2011-08-01T04:46:00.000Z,ActionParsnip,induz,then how did you know it was complete and consistent?
+2011-08-01T04:47:00.000Z,ActionParsnip,induz,then md5 test it and get the hash and compare
+2011-08-01T04:47:00.000Z,ActionParsnip,induz,if they match the image is good
+2011-08-01T04:48:00.000Z,ActionParsnip,induz,cd ~/Desktop
+2011-08-01T04:51:00.000Z,induz,ActionParsnip,after running MD% command i get this 5341d0e3e692246c22ad7dd31c94c828  austrumi-1.8.5.iso
+2011-08-01T04:52:00.000Z,ActionParsnip,induz,grab the md5sum file for the ISOs and check
+2011-08-01T04:54:00.000Z,induz,ActionParsnip,How can i grab the file
+2011-08-01T04:54:00.000Z,ActionParsnip,induz,from the site you downloaded it from. If you are still unsure ask in their support channel
+2011-08-08T00:42:00.000Z,ActionParsnip,induz,use the virtualbox ppa
+2011-08-08T00:42:00.000Z,ActionParsnip,induz,http://www.virtualbox.org/wiki/Linux_Downloads
+2011-08-08T00:43:00.000Z,ActionParsnip,induz,"try reading down a few more lines, like the whole page"
+2011-08-08T00:45:00.000Z,ActionParsnip,induz,"if you add the virtualbox ppa, you can install using software centre as normal, the app will also update when the PPA gets updated"
+2011-08-08T00:48:00.000Z,induz,ActionParsnip,i am trying to add ppa
+2011-08-08T00:48:00.000Z,ActionParsnip,induz,see what happens when you read more than 10 lines from a given link ;)
+2011-08-08T00:53:00.000Z,ActionParsnip,induz,did you run:  sudo apt-get update
+2011-08-08T00:54:00.000Z,ActionParsnip,induz,run:   apt-cache search virtualbox         after: sudo apt-get update
+2011-08-08T00:56:00.000Z,induz,ActionParsnip,it still 3.2 version.. its not updating
+2011-08-08T00:57:00.000Z,ActionParsnip,induz,it won't. You need to remove that version and install the later version. Its a different app
+2011-08-08T00:57:00.000Z,induz,ActionParsnip,if i remove my guest OS will be erased??
+2011-08-08T00:58:00.000Z,ActionParsnip,induz,"no, the config isn't touched. It's stored in $HOME"
+2011-08-08T00:59:00.000Z,induz,ActionParsnip,How can i remove the old version
+2011-08-08T00:59:00.000Z,ActionParsnip,induz,same as any other package
+2011-08-11T03:35:00.000Z,ActionParsnip,induz,does thunderbird have a    -safe   option (or similar)
+2011-08-11T03:36:00.000Z,induz,ActionParsnip,under What category i will find thunderBird--application..places or system
+2011-08-11T03:36:00.000Z,ActionParsnip,induz,launch it from terminal
+2011-08-11T03:37:00.000Z,ActionParsnip,induz,thunderbird -safe-mode
+2011-08-11T03:39:00.000Z,induz,ActionParsnip,I can run that command and get ThunderBird in safe mode
+2011-08-11T03:39:00.000Z,ActionParsnip,induz,I believe so.I don't use it but I found it using the internet
+2011-08-11T03:40:00.000Z,ActionParsnip,induz,disable the plugin.......
+2011-08-11T03:41:00.000Z,induz,ActionParsnip,The moment i claick on Add-on tab it crashes
+2011-08-11T03:42:00.000Z,ActionParsnip,induz,how did you install the plugin?
+2011-08-11T03:42:00.000Z,induz,ActionParsnip,through ThunderBird itself
+2011-08-11T03:45:00.000Z,ActionParsnip,induz,then just reverse what you did if you can
+2011-08-11T03:46:00.000Z,induz,ActionParsnip,I dont remember how i got those plug-ins ...
+2011-08-11T03:48:00.000Z,induz,ActionParsnip,now when i open ThunderBird it runs but when i click on add-on tab it closes on its own and wont let me delete those add-ons
+2011-08-11T03:48:00.000Z,ActionParsnip,induz,"you now know more than me, could try the mozilla channel"
+2011-08-11T03:49:00.000Z,ActionParsnip,induz,what is the output of:  lsb_release -c
+2011-08-11T03:49:00.000Z,induz,ActionParsnip,i dont know much about Ubuntu i am learning
+2011-08-11T03:50:00.000Z,induz,ActionParsnip,Lucid
+2011-08-11T03:50:00.000Z,ActionParsnip,induz,did you install lightning with a deb?
+2011-08-11T03:51:00.000Z,induz,ActionParsnip,I dont remember
+2011-08-11T03:51:00.000Z,ActionParsnip,induz,try searching software centre
+2011-08-11T04:04:00.000Z,induz,ActionParsnip,Lighting is not listed on Synaptic manager
+2011-08-20T04:52:00.000Z,ActionParsnip,induz,"keep your scripts in /usr/bin   you can call a script and have it perform some logic, you can then call other scripts and it will work"
+2011-08-20T04:54:00.000Z,induz,ActionParsnip,ok I may try that...but i want to have a master file
+2011-08-20T04:55:00.000Z,ActionParsnip,induz,"that's fine, no problem"
+2011-08-20T04:56:00.000Z,ActionParsnip,induz,the commands in a script can be the usual stock commands or you can use your own scripts
+2011-11-26T22:17:00.000Z,ActionParsnip,induz,does it show as a mountable file system when you plug it in?
+2011-11-26T22:18:00.000Z,induz,ActionParsnip,Yes
+2011-11-26T22:19:00.000Z,ActionParsnip,induz,then fire up shotwel and tell it to look at the mount point and it will be able to do stuff
+2011-11-26T22:20:00.000Z,induz,ActionParsnip,Yes i see an icon on my desktop and i can browse its file/folder but I dont know how to manage without iTunes as on Ubuntu I dont have
+2011-11-26T22:21:00.000Z,ActionParsnip,induz,"point shotwell to /media   and it should find them, tell it to import them in place"
+2011-11-26T22:22:00.000Z,induz,ActionParsnip,shotwel does nothing
+2011-11-26T22:22:00.000Z,ActionParsnip,induz,did you add the folder to the config of the app?
+2011-11-26T22:22:00.000Z,induz,ActionParsnip,no
+2011-11-26T22:22:00.000Z,induz,ActionParsnip,how to
+2011-11-26T22:22:00.000Z,ActionParsnip,induz,then that's why
+2011-11-26T22:23:00.000Z,ActionParsnip,induz,under the file menu
+2011-11-26T22:23:00.000Z,induz,ActionParsnip,file--> import??
+2011-11-26T22:24:00.000Z,ActionParsnip,induz,yes
+2011-11-26T22:25:00.000Z,induz,ActionParsnip,"when i say import from folder, i dont see the iPod"
+2011-11-26T22:25:00.000Z,ActionParsnip,induz,"yes, you need to show the hidden folders and point it to the ~/.gvfs folder"
+2011-11-26T22:25:00.000Z,ActionParsnip,induz,you use a mac don't you?
+2011-11-26T22:26:00.000Z,induz,ActionParsnip,yes
+2011-11-26T22:26:00.000Z,ActionParsnip,induz,thought so
+2011-11-26T22:27:00.000Z,induz,ActionParsnip,now i am using ubuntu i had Macbook but i dont have now
+2011-11-26T22:28:00.000Z,ActionParsnip,induz,you can make life a little easier by running:  ln -s ~/.gvfs ~/Mounted
+2011-11-26T22:30:00.000Z,induz,ActionParsnip,it says now file after running  ln -s ~/.gvfs ~/Mounted
+2011-11-26T22:30:00.000Z,ActionParsnip,induz,"ok, use the Mounted folder in your home folder and it will show"
+2011-11-26T22:32:00.000Z,induz,ActionParsnip, Mounted folder in your home folder?????
+2011-11-26T22:32:00.000Z,induz,ActionParsnip,you mean to cd to home folder first??
+2011-11-26T22:32:00.000Z,ActionParsnip,induz,the 'Mounted' folder can now be used to access your mounted removable storages
+2011-11-26T22:33:00.000Z,ActionParsnip,induz,"no, you are manipulating shotwell"
+2011-11-26T22:35:00.000Z,induz,ActionParsnip,I dont get it as i am new to shotwell and Ubuntu
+2011-11-26T22:38:00.000Z,ActionParsnip,induz,you are adding a folder to shotwell so it look in the folder
+2011-11-26T22:39:00.000Z,ActionParsnip,induz,the folder also contains a fodler which is how your OS accesses the crappy iPod
+2011-11-26T22:39:00.000Z,ActionParsnip,induz,if you add the folder then shotwell will scan it and see the images stored therin
+2011-11-26T22:39:00.000Z,induz,ActionParsnip,how can i add a folder ??
+2011-11-26T22:39:00.000Z,ActionParsnip,induz,file -> import    as you asked and I said 'yes'
+2011-11-26T22:41:00.000Z,induz,ActionParsnip,it asks me to import from a folder but i dont see my iPod folder
+2011-11-26T22:42:00.000Z,ActionParsnip,induz,"there is no ipod folder! It's ~/Mounted   which you made earlier. Forget the device is an iPod, it is irrelevant, it's a USB drive and is mounted to a subfolder in ~/.gvfs"
+2011-11-26T22:42:00.000Z,induz,ActionParsnip,a subfolder in ~/.gvfs ???? where can i find that??
+2011-11-26T22:44:00.000Z,induz,ActionParsnip,ok I can get to a subfolder in ~/.gvfs
+2011-11-26T22:44:00.000Z,ActionParsnip,induz,"you don't need to now, you made the folder called 'Mounted', just tell shotwell to import from there"
+2011-11-26T22:47:00.000Z,induz,ActionParsnip,the iPod has a iTune ThumbNail database not actula pictures i guess
+2011-11-26T22:47:00.000Z,ActionParsnip,induz,"not sure there dude, i don't but apple rubbish :)"
+2011-11-26T22:48:00.000Z,induz,ActionParsnip,how can i send u screenshot
+2011-11-26T22:48:00.000Z,ActionParsnip,induz,imageshack
+2011-11-26T22:49:00.000Z,induz,ActionParsnip,see here http://i.imgur.com/T8FgP.png
+2011-11-26T22:50:00.000Z,induz,ActionParsnip,i will be right back
+2011-11-26T22:55:00.000Z,ActionParsnip,induz,look under the DCIM folder
+2011-11-27T00:20:00.000Z,ActionParsnip,induz,"look in the DCIM folder on the device, lots of cams use that folder"
+2011-11-27T00:25:00.000Z,induz,ActionParsnip,look here plz http://i.imgur.com/Bc4Jt.png
+2011-11-27T00:25:00.000Z,induz,ActionParsnip,DCIM is empty while the other folder has Thumbnail database from iTune
+2011-11-27T00:27:00.000Z,ActionParsnip,induz,not sure then man
+2011-12-28T21:26:00.000Z,ActionParsnip,induz,http://www.binarytides.com/blog/display-hindi-unicode-fonts-on-google-chrome-on-ubuntu-linux/
+2011-12-28T21:26:00.000Z,ActionParsnip,induz,simple websearch found me that....
+2011-12-28T22:01:00.000Z,ActionParsnip,induz,did the link i give not work?
+2011-12-28T22:01:00.000Z,induz,ActionParsnip,no
+2012-01-14T21:36:00.000Z,ActionParsnip,induz,"should be fine, you'll nee dto partition it and may need to add entries in fsta to mount the partitions at boot"
+2012-06-20T21:23:00.000Z,ActionParsnip,induz,why not just use samba?
+2012-06-21T20:51:00.000Z,ActionParsnip,induz,does it work in wine?
+2012-06-21T20:52:00.000Z,induz,ActionParsnip,it failes to load on wine caz of .net4
+2012-06-23T18:30:00.000Z,induz,ActionParsnip,its not getting by OSs-win 7 and ubuntu
+2012-06-23T18:03:00.000Z,ActionParsnip,induz,does it show up in:  sudo fdisk -l
+2012-06-23T18:05:00.000Z,induz,ActionParsnip,no
+2012-06-23T18:06:00.000Z,induz,ActionParsnip,http://paste.ubuntu.com/1055977/
+2012-06-23T18:08:00.000Z,ActionParsnip,induz,does the system ahve a make and model?
+2012-06-23T18:09:00.000Z,induz,ActionParsnip,its 4 Gb sandisk SD card...dell dimension e310 is syetm
+2012-06-23T18:10:00.000Z,ActionParsnip,induz,can you give a pastebin of:  lsb_release -a; uname -a; lsusb
+2012-06-23T18:11:00.000Z,ActionParsnip,induz,is the sd card part of the system?
+2012-06-23T18:13:00.000Z,induz,ActionParsnip,http://paste.ubuntu.com/1055991/
+2012-06-23T18:14:00.000Z,induz,ActionParsnip,card is not part of the system. Its from a camera. It was working fine...I replced the sd card but that also not getting recognized
+2012-06-23T18:14:00.000Z,ActionParsnip,induz,but is the reader part of the system or is it a usb device
+2012-06-23T18:17:00.000Z,induz,ActionParsnip,"its a USB device...but when i insert the card direct to the  Dell comp, nothing happens"
+2012-06-23T18:18:00.000Z,ActionParsnip,induz,have you tried a precise liveCD to see if it works there?
+2012-06-23T18:19:00.000Z,induz,ActionParsnip,"i tried these card on win7 system and ubuntu system, not getting recognosed...maybe a program have formatted them differently...now i want to get back my pics first"
+2012-06-23T18:19:00.000Z,induz,ActionParsnip,precide Live CD??
+2012-06-23T18:23:00.000Z,ActionParsnip,induz,"precise, Ubuntu 12.04"
+2012-06-23T18:25:00.000Z,induz,ActionParsnip,these card used to get recognised on Ubuntu10.04[the current system]...i dont have a cd to run 12.04 live...is there any s/w i can get my pics from these sd cards??
+2012-06-23T18:25:00.000Z,ActionParsnip,induz,"it'll need to be seen by the OS first, you may need to make a udev rule. I suggest you check the latest release to see if the newer kernel makes it work ok"
+2012-06-23T20:49:00.000Z,ActionParsnip,induz,"if it doesn't show up in: sudo fdisk -l     it won't, installing apps won't make it appear"
+2012-06-23T20:52:00.000Z,induz,ActionParsnip,its not getting identified by the system and here is http://paste.ubuntu.com/1056244/
+2012-06-23T20:53:00.000Z,ActionParsnip,induz,use the lsusb output and search for guides and/or bugs for the 8 character hex ID
+2012-06-23T20:54:00.000Z,induz,ActionParsnip,http://paste.ubuntu.com/1056251/
+2012-06-23T20:56:00.000Z,ActionParsnip,induz,'0644:0200 TEAC Corp'   is the ID
+2012-06-23T20:57:00.000Z,induz,ActionParsnip,its a Sandisk sd card 4Gb
+2012-06-23T20:58:00.000Z,ActionParsnip,induz,"thats irellevant, the SD card reader isn't working. You could jam a 400Gb SD card in and it would be the same"
+2012-06-23T21:00:00.000Z,induz,ActionParsnip,I insert the sdCard on the slot built onto the dell system and also I used usb cardReader..the sd card is not getting recognised...i used another card and its the same
+2012-06-23T21:01:00.000Z,ActionParsnip,induz,thats because the SD card reader isn't being used right
+2012-06-23T21:01:00.000Z,induz,ActionParsnip,"i used ebooster, a program to boost RAM via usb memory...after that it all is happening"
+2012-06-23T21:02:00.000Z,ActionParsnip,induz,"usb is slow as anything, you'll get better performance from the swap space in your internal storage"
+2012-06-23T21:03:00.000Z,induz,ActionParsnip,so my inbuilt cardReader and usb cardreader and both sd cards are gone bad
+2012-06-23T21:03:00.000Z,ActionParsnip,induz,"possibly, use the hex IDs to find guides"
+2012-06-23T21:03:00.000Z,induz,ActionParsnip,that ebooster I used on win7 syatem
+2012-06-23T21:06:00.000Z,ActionParsnip,induz,"its still going to be slow, USB access is slowwww"
+2012-06-23T21:08:00.000Z,induz,ActionParsnip,what should i do now???? plz help
+2012-06-23T21:10:00.000Z,ActionParsnip,induz,"search for the IS I posted, like I already said."
+2011-01-17T03:55:00.000Z,induz,,Ubuntu Lucid is not connecting my iPod touch 1st gen
+2011-01-17T03:55:00.000Z,induz,,I have already installed via sudo apt-get install ipheth-utils
+2011-01-17T03:56:00.000Z,ActionParsnip,induz,try setting it to disk mode if you can then it should mount as a usb storage device
+2011-01-17T04:00:00.000Z,induz,ActionParsnip,how can i set ip up to diskmode/
+2011-01-17T04:01:00.000Z,ActionParsnip,induz,"no idea, i don't buy apple's garbage, but if it can, do it"
+2011-02-07T19:18:00.000Z,ActionParsnip,induz,use your backups
+2011-02-07T19:19:00.000Z,ActionParsnip,induz,then the data is disposable
+2011-02-07T19:19:00.000Z,ActionParsnip,induz,if you can't mount it you can use foremost
+2011-02-07T19:20:00.000Z,ActionParsnip,induz,i suggest you get a backup system
+2011-02-07T19:22:00.000Z,ActionParsnip,induz,how about in:  sudo parted -l
+2011-02-07T19:23:00.000Z,induz,ActionParsnip,it says unrecognised disk label
+2011-02-07T19:23:00.000Z,ActionParsnip,induz,"fine, the label isn't too important"
+2011-02-07T19:23:00.000Z,ActionParsnip,induz,do you see the partition?
+2011-02-07T19:23:00.000Z,induz,ActionParsnip,it says;Error: Can't have overlapping partitions.
+2011-02-07T19:25:00.000Z,induz,ActionParsnip,here;http://paste.ubuntu.com/563883/
+2011-02-07T19:26:00.000Z,ActionParsnip,induz,then i suggest you use foremost on /dev/sdf  and maybe recover data.If you had a backup then you wouldn't have an issue
+2011-02-07T19:26:00.000Z,induz,ActionParsnip,i can see the partition as unallocated /dev/sdf
+2011-02-07T19:27:00.000Z,ActionParsnip,induz,/dev/sdf is the disk /dev/sfd1 would be the first partition
+2011-02-07T19:27:00.000Z,induz,ActionParsnip,maybe i deleted the partition on that disk
+2011-02-07T19:28:00.000Z,ActionParsnip,induz,the data will still be there if it hasn't been overwritten
+2011-02-07T19:29:00.000Z,induz,ActionParsnip,how can i see the data on that dive?
+2011-02-07T19:32:00.000Z,induz,ActionParsnip,I am downloading and installing formost
+2011-02-07T19:34:00.000Z,induz,ActionParsnip,I installed foremost by synaptec but I can not see it on Applications?
+2011-02-07T19:42:00.000Z,ActionParsnip,induz,foremost is a command line app
+2011-02-07T19:42:00.000Z,induz,ActionParsnip,I am not very good as i am new to ubuntu/Linux
+2011-02-07T19:43:00.000Z,ActionParsnip,induz,https://help.ubuntu.com/community/DataRecovery#Foremost
+2011-02-07T19:43:00.000Z,ActionParsnip,induz,"thats why there are guides with examples, nobody is born knowing the command line"
+2011-02-07T19:44:00.000Z,ActionParsnip,induz,the sheer amount of possible commands makes it unfeasible
+2011-02-07T19:44:00.000Z,induz,ActionParsnip,what is gnuddrescue??
+2011-02-07T19:45:00.000Z,ActionParsnip,induz,sounds like a gui to ddrescue
+2011-02-07T19:46:00.000Z,induz,ActionParsnip,it says to use gnuddrescue to image the drive first on tha webpage
+2011-02-07T19:46:00.000Z,ActionParsnip,induz,"no need, the device is healthy enough to just use foremost on"
+2011-02-07T19:47:00.000Z,induz,ActionParsnip,is my USB is /dev/sdf??
+2011-02-07T19:47:00.000Z,ActionParsnip,induz,yes
+2011-02-07T19:47:00.000Z,induz,ActionParsnip,i am going stepbystep
+2011-02-07T19:48:00.000Z,ActionParsnip,induz,the commands only read the data so will be ok
+2011-02-07T19:48:00.000Z,ActionParsnip,induz,"i gotta jet but just to re-iterate, if you had a backup, you wouldn't have an issue and be having to do all this stuff"
+2011-02-10T20:20:00.000Z,ActionParsnip,induz,sudo lshw -C display
+2011-02-10T20:22:00.000Z,induz,ActionParsnip,pksadiq  i get this http://paste.ubuntu.com/565411/
+2011-02-10T20:27:00.000Z,ActionParsnip,induz,ok its an intel
+2011-02-10T20:27:00.000Z,ActionParsnip,induz,https://wiki.ubuntu.com/X/Bugs/Lucidi8xxFreezes
+2011-02-10T20:32:00.000Z,induz,ActionParsnip,what should i do for better look on my ubuntu with the intel dispaly
+2011-02-10T20:32:00.000Z,ActionParsnip,induz,the guide will help
+2011-02-10T20:36:00.000Z,induz,ActionParsnip,"what kind of chipset i have on my comp , could u find that or how can i find that??"
+2011-02-11T18:05:00.000Z,ActionParsnip,induz,what are you trying to achieve?
+2011-02-11T18:07:00.000Z,ActionParsnip,induz,http://email.about.com/od/mozillathunderbirdtips/qt/et_free_yahoo.htm
+2011-02-11T18:07:00.000Z,ActionParsnip,induz,http://email.about.com/od/mozillathunderbirdtips/qt/et_free_hotmail.htm
+2011-02-11T18:08:00.000Z,induz,ActionParsnip,"for yahoo, i have to install YOPs"
+2011-02-15T18:48:00.000Z,ActionParsnip,induz,"not really, it just continues installs and fixes things"
+2011-02-15T20:47:00.000Z,ActionParsnip,induz,'good theme' is completely flexible
+2011-02-15T22:13:00.000Z,ActionParsnip,induz,"when you remove it from the system, what do you do? What filesystem do the partition(s) use"
+2011-02-15T22:14:00.000Z,ActionParsnip,induz,so you don't use 'safetly remove'
+2011-02-15T22:14:00.000Z,induz,ActionParsnip,how can i do on Lucid?
+2011-02-15T22:14:00.000Z,ActionParsnip,induz,you right click the icon and select 'safetly remove' Windows has it in the bottom right of the taskbar
+2011-02-15T22:14:00.000Z,ActionParsnip,induz,"that's why then, you are mistreating your hardware"
+2011-02-15T22:15:00.000Z,ActionParsnip,induz,if you don't remove the device safetly then Ubuntu will not be able to mount it if it's NTFS
+2011-02-15T22:16:00.000Z,ActionParsnip,induz,"plug it into a windows PC, then eject it PROPERLY. It will be fine. If you use your hardware  correctly you won't have an issue. If you abuse it you will get issues"
+2011-02-15T22:16:00.000Z,ActionParsnip,induz,"asuming you havent damaged the device, yes"
+2011-02-15T22:18:00.000Z,ActionParsnip,induz,it's not unmounted correctly so Ubuntu will have issues with it
+2011-02-15T22:23:00.000Z,induz,ActionParsnip,i safely  ejected on Apple and now one usb is getting read on ubuntu
+2011-02-15T22:23:00.000Z,ActionParsnip,induz,strange how when you use your ardware correctly it works.....don't you think??
+2011-02-15T22:24:00.000Z,ActionParsnip,induz,right click the icon on the desktop or in the places menu and click 'safetly remove'
+2011-02-15T22:24:00.000Z,induz,ActionParsnip,Thanks but I have alreday messed up one USB
+2011-02-15T22:24:00.000Z,induz,ActionParsnip,I dont USB  icon get on Desktop
+2011-02-15T22:25:00.000Z,ActionParsnip,induz,it may be in the places menu
+2011-02-15T22:32:00.000Z,ActionParsnip,induz,http://t1.gstatic.com/images?q=tbn:ANd9GcRhrW0_dPtt57k75c6-rZxQQz1UmCOyrzihV8S4GnPBLz7153og&t=1
+2011-02-15T22:34:00.000Z,induz,ActionParsnip,i dont have kind of appearance as i am using Lucid
+2011-02-15T22:36:00.000Z,ActionParsnip,induz,or you can use CLI and run:  sudo umount /dev/partition_name; sudo eject /dev/disk_name
+2011-02-15T22:40:00.000Z,ActionParsnip,induz,should be
+2011-02-16T04:45:00.000Z,ActionParsnip,induz,http://techcityinc.com/2009/02/04/top-10-free-video-editors-for-ubuntu-linux/
+2011-02-18T03:39:00.000Z,ActionParsnip,induz,sudo mkdir /media/iso; sudo mount -o loop /home/user/Desktop/file.iso /media/iso
+2011-02-18T03:49:00.000Z,ActionParsnip,induz,cedega? CrossOver Office?
+2011-02-20T06:05:00.000Z,ActionParsnip,induz,that is speculative and not concrete
+2011-02-22T04:53:00.000Z,ActionParsnip,induz,connect them to the same subnet and they are networked
+2011-02-22T04:54:00.000Z,induz,ActionParsnip,I guess subnet is 255.255.255.0
+2011-02-22T06:42:00.000Z,ActionParsnip,induz,what video chip?
+2011-02-22T07:40:00.000Z,ActionParsnip,induz,no the drivers is the same
+2011-02-22T07:40:00.000Z,ActionParsnip,induz,the settings on the driver in the DE may be different
+2011-02-22T07:40:00.000Z,induz,ActionParsnip,i liked KDE as i want to work on KDEnlive but now caz of this dsplay problem i can not
+2011-02-22T07:41:00.000Z,ActionParsnip,induz,try a clean install of kubuntu
+2011-02-22T07:41:00.000Z,induz,ActionParsnip,Iupgraded this from karmic?
+2011-02-22T07:42:00.000Z,ActionParsnip,induz,from karmic kubuntu?
+2011-02-22T07:44:00.000Z,induz,ActionParsnip,Then downloaded KDE desktop plasma
+2011-03-01T19:33:00.000Z,ActionParsnip,induz,how much ram do you have?
+2011-03-01T19:35:00.000Z,ActionParsnip,induz,is the ram healthy?
+2011-03-01T19:35:00.000Z,ActionParsnip,induz,is the drive healthy?
+2011-03-01T19:44:00.000Z,induz,ActionParsnip,as its dual boot when i run Xp on the same system it runs faster
+2011-03-01T19:45:00.000Z,induz,ActionParsnip,maybe i have installed way too many applications including kubuntu
+2011-03-01T19:45:00.000Z,ActionParsnip,induz,windows gets a lot better driver support in some cases so may explain the speed
+2011-03-01T19:45:00.000Z,ActionParsnip,induz,as long as you have around 10% free on each partition you should be fine
+2011-03-01T19:47:00.000Z,induz,ActionParsnip,out of 30Gb for Linux 12 gb is free
+2011-03-01T19:47:00.000Z,ActionParsnip,induz,sounds fine
+2011-03-01T19:48:00.000Z,ActionParsnip,induz,as long as all your apps don't have daemons chewing ram. You can test with: free -m   what is the righmost value on the second line?
+2011-03-01T19:52:00.000Z,ActionParsnip,induz,"its your ram, if you pastebin the output I can explain"
+2011-03-01T19:53:00.000Z,induz,ActionParsnip,here http://paste.ubuntu.com/573961/
+2011-03-21T04:01:00.000Z,ActionParsnip,induz,gnomebaker....
+2011-03-21T04:05:00.000Z,ActionParsnip,induz,doesn't it have a 'burn CD image' button
+2011-03-21T04:07:00.000Z,ActionParsnip,induz,it also has a CD copy button....
+2011-03-21T04:07:00.000Z,induz,ActionParsnip,it has CD copy button
+2011-03-21T04:08:00.000Z,ActionParsnip,induz,http://files.fosswire.com/2008/01/k3bmainwindow.png
+2011-03-21T04:11:00.000Z,induz,ActionParsnip,I am trying the copy Cd button and it fails due to some permission problems
+2011-03-21T04:11:00.000Z,ActionParsnip,induz,try a different app then.
+2011-03-21T04:15:00.000Z,induz,ActionParsnip,i get this error v
+2011-03-21T04:16:00.000Z,ActionParsnip,induz,try:    kdesu k3b
+2011-03-21T04:17:00.000Z,induz,ActionParsnip, kdesu k3b ??? what is that? is it a command?/
+2011-03-21T04:18:00.000Z,ActionParsnip,induz,"indeed, you can fire it in ALT+F2 or konsole (I'm assuming KDE)"
+2011-03-21T04:19:00.000Z,induz,ActionParsnip,is it a programme??
+2011-03-21T04:20:00.000Z,ActionParsnip,induz,is WHAT a program??
+2011-03-21T04:20:00.000Z,ActionParsnip,induz,paste the command in konsole and press ENTER
+2011-03-21T04:21:00.000Z,induz,ActionParsnip,ok
+2011-03-21T04:22:00.000Z,induz,ActionParsnip,it says kdesu command is not found
+2011-03-21T04:22:00.000Z,ActionParsnip,induz,are you using KDE?
+2011-03-21T04:23:00.000Z,induz,ActionParsnip,I am using gnome
+2011-03-21T04:24:00.000Z,ActionParsnip,induz,then use:    gksudo k3b       don't you find te dependancies pulled down when you installed k3b a bit bloating. Just for a CD burner..?
+2011-03-21T04:27:00.000Z,induz,ActionParsnip,its copying now ..lets see
+2011-03-21T04:28:00.000Z,ActionParsnip,induz,if you install gnomebaker and uninstall k3b you will save a tonne of space
+2011-03-21T04:28:00.000Z,induz,ActionParsnip,will it copy the extact copy of CD s this Cd is bootable
+2011-03-21T04:29:00.000Z,induz,ActionParsnip,k3b came with the kubuntu
+2011-03-21T04:29:00.000Z,ActionParsnip,induz,yes it will. Why install a KDE based app when gnome has fine burners which need a lot less space.
+2011-03-21T04:29:00.000Z,ActionParsnip,induz,oh so you started with kde then installed gnome?
+2011-03-21T04:30:00.000Z,induz,ActionParsnip,i started with gnome but then downloade KDE
+2011-03-21T04:30:00.000Z,ActionParsnip,induz,i see
+2011-03-21T04:30:00.000Z,induz,ActionParsnip,can i use a DVD to copy this CD
+2011-03-21T04:31:00.000Z,induz,ActionParsnip,or it has to be a CD as its a copy
+2011-03-28T04:42:00.000Z,ActionParsnip,induz,like a thesaurus?
+2011-03-28T04:46:00.000Z,induz,ActionParsnip,like synonyms
+2011-03-28T04:47:00.000Z,ActionParsnip,induz,let me search
+2011-03-28T04:48:00.000Z,ActionParsnip,induz,http://user.services.openoffice.org/en/forum/viewtopic.php?f=7&t=7560
+2011-03-28T04:48:00.000Z,induz,ActionParsnip,when i click clt F7  it does not give me many words
+2011-03-28T04:50:00.000Z,ActionParsnip,induz,install openoffice.org-thesaurus-en-us
+2011-03-28T04:57:00.000Z,induz,ActionParsnip,-thesaurus-en-us is installed
+2011-03-28T04:59:00.000Z,ActionParsnip,induz,that's all I can suggest dude sorry
+2011-03-28T05:05:00.000Z,induz,ActionParsnip,Thanks for helping though
+2011-03-28T05:21:00.000Z,ActionParsnip,induz,do you have java installed?
+2011-03-28T05:21:00.000Z,ActionParsnip,induz,"check, then in tools -> options make sure java is selected there"
+2011-03-28T05:25:00.000Z,induz,ActionParsnip,after tool--.Option---> where?
+2011-03-28T05:27:00.000Z,ActionParsnip,induz,the java lie..... I thought that was clear....
+2011-04-23T05:30:00.000Z,ActionParsnip,induz,there are compiled binaries here: http://devices.natetrue.com/wiviz/wiviz-binaries.tar.gz
+2011-04-23T05:50:00.000Z,induz,ActionParsnip,is WiViz a window MS application??
+2011-08-01T00:32:00.000Z,ActionParsnip,induz,the kernel will be the one in the ISO. There is only one..
+2011-08-01T00:35:00.000Z,ActionParsnip,induz,"xpud, puppy will run well :)"
+2011-08-01T00:41:00.000Z,ActionParsnip,induz,natty will
+2011-08-01T00:41:00.000Z,ActionParsnip,induz,lubuntu will give a more responsive OS
+2011-08-01T01:05:00.000Z,ActionParsnip,induz,did you MD5 test the ISO
+2011-08-01T01:07:00.000Z,ActionParsnip,induz,if you didn't MD5 test you have no way of knowing the data is good
+2011-08-01T01:07:00.000Z,induz,ActionParsnip,how can i do it
+2011-08-01T01:08:00.000Z,ActionParsnip,induz,"use md5sum in ubuntu, you will need the hash of the image to compare"
+2011-08-01T04:41:00.000Z,ActionParsnip,induz,"MD5 test the ISO, be sure the USB device is healthy"
+2011-08-01T04:42:00.000Z,ActionParsnip,induz,D: means nothing in Ubuntu
+2011-08-01T04:42:00.000Z,ActionParsnip,induz,are you using windows currently?
+2011-08-01T04:44:00.000Z,ActionParsnip,induz,"unetbootin is in the ubuntu repos, you can use it to wipe the USB partition, then transfer the verified ISO"
+2011-08-01T04:44:00.000Z,ActionParsnip,induz,"the formatting is moot, unetbootin should be used to wipe it"
+2011-08-01T04:46:00.000Z,ActionParsnip,induz,did you test the ISO?
+2011-08-01T04:46:00.000Z,ActionParsnip,induz,then how did you know it was complete and consistent?
+2011-08-01T04:47:00.000Z,ActionParsnip,induz,then md5 test it and get the hash and compare
+2011-08-01T04:47:00.000Z,ActionParsnip,induz,if they match the image is good
+2011-08-01T04:48:00.000Z,ActionParsnip,induz,cd ~/Desktop
+2011-08-01T04:51:00.000Z,induz,ActionParsnip,after running MD% command i get this 5341d0e3e692246c22ad7dd31c94c828  austrumi-1.8.5.iso
+2011-08-01T04:52:00.000Z,ActionParsnip,induz,grab the md5sum file for the ISOs and check
+2011-08-01T04:54:00.000Z,induz,ActionParsnip,How can i grab the file
+2011-08-01T04:54:00.000Z,ActionParsnip,induz,from the site you downloaded it from. If you are still unsure ask in their support channel
+2011-08-08T00:42:00.000Z,ActionParsnip,induz,use the virtualbox ppa
+2011-08-08T00:42:00.000Z,ActionParsnip,induz,http://www.virtualbox.org/wiki/Linux_Downloads
+2011-08-08T00:43:00.000Z,ActionParsnip,induz,"try reading down a few more lines, like the whole page"
+2011-08-08T00:45:00.000Z,ActionParsnip,induz,"if you add the virtualbox ppa, you can install using software centre as normal, the app will also update when the PPA gets updated"
+2011-08-08T00:48:00.000Z,induz,ActionParsnip,i am trying to add ppa
+2011-08-08T00:48:00.000Z,ActionParsnip,induz,see what happens when you read more than 10 lines from a given link ;)
+2011-08-08T00:53:00.000Z,ActionParsnip,induz,did you run:  sudo apt-get update
+2011-08-08T00:54:00.000Z,ActionParsnip,induz,run:   apt-cache search virtualbox         after: sudo apt-get update
+2011-08-08T00:56:00.000Z,induz,ActionParsnip,it still 3.2 version.. its not updating
+2011-08-08T00:57:00.000Z,ActionParsnip,induz,it won't. You need to remove that version and install the later version. Its a different app
+2011-08-08T00:57:00.000Z,induz,ActionParsnip,if i remove my guest OS will be erased??
+2011-08-08T00:58:00.000Z,ActionParsnip,induz,"no, the config isn't touched. It's stored in $HOME"
+2011-08-08T00:59:00.000Z,induz,ActionParsnip,How can i remove the old version
+2011-08-08T00:59:00.000Z,ActionParsnip,induz,same as any other package
+2011-08-11T03:35:00.000Z,ActionParsnip,induz,does thunderbird have a    -safe   option (or similar)
+2011-08-11T03:36:00.000Z,induz,ActionParsnip,under What category i will find thunderBird--application..places or system
+2011-08-11T03:36:00.000Z,ActionParsnip,induz,launch it from terminal
+2011-08-11T03:37:00.000Z,ActionParsnip,induz,thunderbird -safe-mode
+2011-08-11T03:39:00.000Z,induz,ActionParsnip,I can run that command and get ThunderBird in safe mode
+2011-08-11T03:39:00.000Z,ActionParsnip,induz,I believe so.I don't use it but I found it using the internet
+2011-08-11T03:40:00.000Z,ActionParsnip,induz,disable the plugin.......
+2011-08-11T03:41:00.000Z,induz,ActionParsnip,The moment i claick on Add-on tab it crashes
+2011-08-11T03:42:00.000Z,ActionParsnip,induz,how did you install the plugin?
+2011-08-11T03:42:00.000Z,induz,ActionParsnip,through ThunderBird itself
+2011-08-11T03:45:00.000Z,ActionParsnip,induz,then just reverse what you did if you can
+2011-08-11T03:46:00.000Z,induz,ActionParsnip,I dont remember how i got those plug-ins ...
+2011-08-11T03:48:00.000Z,induz,ActionParsnip,now when i open ThunderBird it runs but when i click on add-on tab it closes on its own and wont let me delete those add-ons
+2011-08-11T03:48:00.000Z,ActionParsnip,induz,"you now know more than me, could try the mozilla channel"
+2011-08-11T03:49:00.000Z,ActionParsnip,induz,what is the output of:  lsb_release -c
+2011-08-11T03:49:00.000Z,induz,ActionParsnip,i dont know much about Ubuntu i am learning
+2011-08-11T03:50:00.000Z,induz,ActionParsnip,Lucid
+2011-08-11T03:50:00.000Z,ActionParsnip,induz,did you install lightning with a deb?
+2011-08-11T03:51:00.000Z,induz,ActionParsnip,I dont remember
+2011-08-11T03:51:00.000Z,ActionParsnip,induz,try searching software centre
+2011-08-11T04:04:00.000Z,induz,ActionParsnip,Lighting is not listed on Synaptic manager
+2011-08-20T04:52:00.000Z,ActionParsnip,induz,"keep your scripts in /usr/bin   you can call a script and have it perform some logic, you can then call other scripts and it will work"
+2011-08-20T04:54:00.000Z,induz,ActionParsnip,ok I may try that...but i want to have a master file
+2011-08-20T04:55:00.000Z,ActionParsnip,induz,"that's fine, no problem"
+2011-08-20T04:56:00.000Z,ActionParsnip,induz,the commands in a script can be the usual stock commands or you can use your own scripts
+2011-11-26T22:17:00.000Z,ActionParsnip,induz,does it show as a mountable file system when you plug it in?
+2011-11-26T22:18:00.000Z,induz,ActionParsnip,Yes
+2011-11-26T22:19:00.000Z,ActionParsnip,induz,then fire up shotwel and tell it to look at the mount point and it will be able to do stuff
+2011-11-26T22:20:00.000Z,induz,ActionParsnip,Yes i see an icon on my desktop and i can browse its file/folder but I dont know how to manage without iTunes as on Ubuntu I dont have
+2011-11-26T22:21:00.000Z,ActionParsnip,induz,"point shotwell to /media   and it should find them, tell it to import them in place"
+2011-11-26T22:22:00.000Z,induz,ActionParsnip,shotwel does nothing
+2011-11-26T22:22:00.000Z,ActionParsnip,induz,did you add the folder to the config of the app?
+2011-11-26T22:22:00.000Z,induz,ActionParsnip,no
+2011-11-26T22:22:00.000Z,induz,ActionParsnip,how to
+2011-11-26T22:22:00.000Z,ActionParsnip,induz,then that's why
+2011-11-26T22:23:00.000Z,ActionParsnip,induz,under the file menu
+2011-11-26T22:23:00.000Z,induz,ActionParsnip,file--> import??
+2011-11-26T22:24:00.000Z,ActionParsnip,induz,yes
+2011-11-26T22:25:00.000Z,induz,ActionParsnip,"when i say import from folder, i dont see the iPod"
+2011-11-26T22:25:00.000Z,ActionParsnip,induz,"yes, you need to show the hidden folders and point it to the ~/.gvfs folder"
+2011-11-26T22:25:00.000Z,ActionParsnip,induz,you use a mac don't you?
+2011-11-26T22:26:00.000Z,induz,ActionParsnip,yes
+2011-11-26T22:26:00.000Z,ActionParsnip,induz,thought so
+2011-11-26T22:27:00.000Z,induz,ActionParsnip,now i am using ubuntu i had Macbook but i dont have now
+2011-11-26T22:28:00.000Z,ActionParsnip,induz,you can make life a little easier by running:  ln -s ~/.gvfs ~/Mounted
+2011-11-26T22:30:00.000Z,induz,ActionParsnip,it says now file after running  ln -s ~/.gvfs ~/Mounted
+2011-11-26T22:30:00.000Z,ActionParsnip,induz,"ok, use the Mounted folder in your home folder and it will show"
+2011-11-26T22:32:00.000Z,induz,ActionParsnip, Mounted folder in your home folder?????
+2011-11-26T22:32:00.000Z,induz,ActionParsnip,you mean to cd to home folder first??
+2011-11-26T22:32:00.000Z,ActionParsnip,induz,the 'Mounted' folder can now be used to access your mounted removable storages
+2011-11-26T22:33:00.000Z,ActionParsnip,induz,"no, you are manipulating shotwell"
+2011-11-26T22:35:00.000Z,induz,ActionParsnip,I dont get it as i am new to shotwell and Ubuntu
+2011-11-26T22:38:00.000Z,ActionParsnip,induz,you are adding a folder to shotwell so it look in the folder
+2011-11-26T22:39:00.000Z,ActionParsnip,induz,the folder also contains a fodler which is how your OS accesses the crappy iPod
+2011-11-26T22:39:00.000Z,ActionParsnip,induz,if you add the folder then shotwell will scan it and see the images stored therin
+2011-11-26T22:39:00.000Z,induz,ActionParsnip,how can i add a folder ??
+2011-11-26T22:39:00.000Z,ActionParsnip,induz,file -> import    as you asked and I said 'yes'
+2011-11-26T22:41:00.000Z,induz,ActionParsnip,it asks me to import from a folder but i dont see my iPod folder
+2011-11-26T22:42:00.000Z,ActionParsnip,induz,"there is no ipod folder! It's ~/Mounted   which you made earlier. Forget the device is an iPod, it is irrelevant, it's a USB drive and is mounted to a subfolder in ~/.gvfs"
+2011-11-26T22:42:00.000Z,induz,ActionParsnip,a subfolder in ~/.gvfs ???? where can i find that??
+2011-11-26T22:44:00.000Z,induz,ActionParsnip,ok I can get to a subfolder in ~/.gvfs
+2011-11-26T22:44:00.000Z,ActionParsnip,induz,"you don't need to now, you made the folder called 'Mounted', just tell shotwell to import from there"
+2011-11-26T22:47:00.000Z,induz,ActionParsnip,the iPod has a iTune ThumbNail database not actula pictures i guess
+2011-11-26T22:47:00.000Z,ActionParsnip,induz,"not sure there dude, i don't but apple rubbish :)"
+2011-11-26T22:48:00.000Z,induz,ActionParsnip,how can i send u screenshot
+2011-11-26T22:48:00.000Z,ActionParsnip,induz,imageshack
+2011-11-26T22:49:00.000Z,induz,ActionParsnip,see here http://i.imgur.com/T8FgP.png
+2011-11-26T22:50:00.000Z,induz,ActionParsnip,i will be right back
+2011-11-26T22:55:00.000Z,ActionParsnip,induz,look under the DCIM folder
+2011-11-27T00:20:00.000Z,ActionParsnip,induz,"look in the DCIM folder on the device, lots of cams use that folder"
+2011-11-27T00:25:00.000Z,induz,ActionParsnip,look here plz http://i.imgur.com/Bc4Jt.png
+2011-11-27T00:25:00.000Z,induz,ActionParsnip,DCIM is empty while the other folder has Thumbnail database from iTune
+2011-11-27T00:27:00.000Z,ActionParsnip,induz,not sure then man
+2011-12-28T21:26:00.000Z,ActionParsnip,induz,http://www.binarytides.com/blog/display-hindi-unicode-fonts-on-google-chrome-on-ubuntu-linux/
+2011-12-28T21:26:00.000Z,ActionParsnip,induz,simple websearch found me that....
+2011-12-28T22:01:00.000Z,ActionParsnip,induz,did the link i give not work?
+2011-12-28T22:01:00.000Z,induz,ActionParsnip,no
+2012-01-14T21:36:00.000Z,ActionParsnip,induz,"should be fine, you'll nee dto partition it and may need to add entries in fsta to mount the partitions at boot"
+2012-06-20T21:23:00.000Z,ActionParsnip,induz,why not just use samba?
+2012-06-21T20:51:00.000Z,ActionParsnip,induz,does it work in wine?
+2012-06-21T20:52:00.000Z,induz,ActionParsnip,it failes to load on wine caz of .net4
+2012-06-23T18:30:00.000Z,induz,ActionParsnip,its not getting by OSs-win 7 and ubuntu
+2012-06-23T18:03:00.000Z,ActionParsnip,induz,does it show up in:  sudo fdisk -l
+2012-06-23T18:05:00.000Z,induz,ActionParsnip,no
+2012-06-23T18:06:00.000Z,induz,ActionParsnip,http://paste.ubuntu.com/1055977/
+2012-06-23T18:08:00.000Z,ActionParsnip,induz,does the system ahve a make and model?
+2012-06-23T18:09:00.000Z,induz,ActionParsnip,its 4 Gb sandisk SD card...dell dimension e310 is syetm
+2012-06-23T18:10:00.000Z,ActionParsnip,induz,can you give a pastebin of:  lsb_release -a; uname -a; lsusb
+2012-06-23T18:11:00.000Z,ActionParsnip,induz,is the sd card part of the system?
+2012-06-23T18:13:00.000Z,induz,ActionParsnip,http://paste.ubuntu.com/1055991/
+2012-06-23T18:14:00.000Z,induz,ActionParsnip,card is not part of the system. Its from a camera. It was working fine...I replced the sd card but that also not getting recognized
+2012-06-23T18:14:00.000Z,ActionParsnip,induz,but is the reader part of the system or is it a usb device
+2012-06-23T18:17:00.000Z,induz,ActionParsnip,"its a USB device...but when i insert the card direct to the  Dell comp, nothing happens"
+2012-06-23T18:18:00.000Z,ActionParsnip,induz,have you tried a precise liveCD to see if it works there?
+2012-06-23T18:19:00.000Z,induz,ActionParsnip,"i tried these card on win7 system and ubuntu system, not getting recognosed...maybe a program have formatted them differently...now i want to get back my pics first"
+2012-06-23T18:19:00.000Z,induz,ActionParsnip,precide Live CD??
+2012-06-23T18:23:00.000Z,ActionParsnip,induz,"precise, Ubuntu 12.04"
+2012-06-23T18:25:00.000Z,induz,ActionParsnip,these card used to get recognised on Ubuntu10.04[the current system]...i dont have a cd to run 12.04 live...is there any s/w i can get my pics from these sd cards??
+2012-06-23T18:25:00.000Z,ActionParsnip,induz,"it'll need to be seen by the OS first, you may need to make a udev rule. I suggest you check the latest release to see if the newer kernel makes it work ok"
+2012-06-23T20:49:00.000Z,ActionParsnip,induz,"if it doesn't show up in: sudo fdisk -l     it won't, installing apps won't make it appear"
+2012-06-23T20:52:00.000Z,induz,ActionParsnip,its not getting identified by the system and here is http://paste.ubuntu.com/1056244/
+2012-06-23T20:53:00.000Z,ActionParsnip,induz,use the lsusb output and search for guides and/or bugs for the 8 character hex ID
+2012-06-23T20:54:00.000Z,induz,ActionParsnip,http://paste.ubuntu.com/1056251/
+2012-06-23T20:56:00.000Z,ActionParsnip,induz,'0644:0200 TEAC Corp'   is the ID
+2012-06-23T20:57:00.000Z,induz,ActionParsnip,its a Sandisk sd card 4Gb
+2012-06-23T20:58:00.000Z,ActionParsnip,induz,"thats irellevant, the SD card reader isn't working. You could jam a 400Gb SD card in and it would be the same"
+2012-06-23T21:00:00.000Z,induz,ActionParsnip,I insert the sdCard on the slot built onto the dell system and also I used usb cardReader..the sd card is not getting recognised...i used another card and its the same
+2012-06-23T21:01:00.000Z,ActionParsnip,induz,thats because the SD card reader isn't being used right
+2012-06-23T21:01:00.000Z,induz,ActionParsnip,"i used ebooster, a program to boost RAM via usb memory...after that it all is happening"
+2012-06-23T21:02:00.000Z,ActionParsnip,induz,"usb is slow as anything, you'll get better performance from the swap space in your internal storage"
+2012-06-23T21:03:00.000Z,induz,ActionParsnip,so my inbuilt cardReader and usb cardreader and both sd cards are gone bad
+2012-06-23T21:03:00.000Z,ActionParsnip,induz,"possibly, use the hex IDs to find guides"
+2012-06-23T21:03:00.000Z,induz,ActionParsnip,that ebooster I used on win7 syatem
+2012-06-23T21:06:00.000Z,ActionParsnip,induz,"its still going to be slow, USB access is slowwww"
+2012-06-23T21:08:00.000Z,induz,ActionParsnip,what should i do now???? plz help
+2012-06-23T21:10:00.000Z,ActionParsnip,induz,"search for the IS I posted, like I already said."

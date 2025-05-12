@@ -1,0 +1,677 @@
+date,from,to,text
+2007-01-09T15:41:00.000Z,LjL,,"Ubotu, tell ikonia about build-essential | ikonia, see the private message from Ubotu"
+2007-01-09T15:41:00.000Z,ikonia,LjL,I'm aware of that package
+2007-01-09T15:41:00.000Z,LjL,ikonia,then what's the problem? you can compile C fine if you have that installed
+2007-01-09T15:42:00.000Z,ikonia,LjL,I don't have a problem building programs
+2007-01-09T15:46:00.000Z,ikonia,LjL,certainly
+2007-01-09T15:49:00.000Z,LjL,ikonia,"not necessarly, but most existing factoids are one word indeed"
+2007-01-09T15:49:00.000Z,ikonia,LjL,"really, I've never seen it respond to a two worder"
+2007-01-09T15:50:00.000Z,LjL,ikonia,"it works, you can toy with it in #ubuntu-bots if you like"
+2007-01-09T15:50:00.000Z,ikonia,LjL,thats still one word (no space)
+2007-01-09T15:51:00.000Z,LjL,ikonia,"err, what i meant is that you can check that it works in the #ubuntu-bots channel =) try '!msg the bot' for instance"
+2007-01-09T15:51:00.000Z,ikonia,LjL,ooooh sorry
+2007-01-09T15:51:00.000Z,ikonia,LjL,though you where saying thats a key word
+2007-01-22T17:35:00.000Z,ikonia,LjL,its stack-smash protection
+2007-01-22T17:35:00.000Z,ikonia,LjL,part of the HCL security options
+2007-01-22T16:50:00.000Z,ikonia,LjL,that works normally
+2007-01-22T16:55:00.000Z,LjL,ikonia,"to be honest, i don't believe 'read some basic docs' is a sensible answer to any questions"
+2007-01-23T17:10:00.000Z,LjL,ikonia,"i believe it's still only the beta version that's in backports. it's been in there for quite long. the release version (it's been released now, right?), i don't know"
+2007-01-23T17:10:00.000Z,ikonia,LjL,any day now
+2007-01-23T14:11:00.000Z,ikonia,LjL,impressive
+2007-01-23T14:11:00.000Z,LjL,ikonia,"not too hard, i'm italian"
+2007-01-26T15:04:00.000Z,ikonia,LjL,I thought he was trying to install to a usb device
+2007-01-26T15:16:00.000Z,LjL,ikonia,"i suppose it would be the installer's fault, given gparted doesn't quite seem to be working either, if i got that right"
+2007-01-26T15:16:00.000Z,ikonia,LjL,nah at gparted if he's not marked a partition as swap it won't 'create' swap
+2007-01-26T15:16:00.000Z,LjL,ikonia,"and if you look at the screenshot, it does say hda, but cfdisk /dev/hda says it cannot read from it apparently"
+2007-01-26T15:16:00.000Z,LjL,ikonia,are you talking about actual gparted or the gparted section in the installer?
+2007-01-26T15:17:00.000Z,LjL,ikonia,"the latter does create a swap partition automatically, if you don't tell it 'i'm wise and i'll do it manually'"
+2007-01-26T15:17:00.000Z,LjL,ikonia,still anyway there's the cfdisk to explain
+2007-01-26T15:18:00.000Z,LjL,ikonia,"i kept saying cfdisk, i meant fdisk"
+2007-01-26T15:18:00.000Z,ikonia,LjL,fancy a bet ;)
+2007-01-26T15:19:00.000Z,LjL,ikonia,"not really, right now i'm not sure of anything, he's confused me too much =)"
+2007-01-26T15:20:00.000Z,LjL,ikonia,i really think it's just that gparted doesn't like drives that have no partition table... i think someone had this before today
+2007-01-26T15:20:00.000Z,ikonia,LjL,looks like it can't even see the drives
+2007-01-26T15:22:00.000Z,LjL,ikonia,well you win the bet
+2007-01-26T15:23:00.000Z,ikonia,LjL,I wish I hadn't
+2007-01-26T15:32:00.000Z,LjL,ikonia,"by the way... *some* preemption is enabled, yes, but not quite the whole of it. only, ahem, cooperative preemption is - i'll look up the actual option. what do you make of that?"
+2007-01-26T15:33:00.000Z,LjL,ikonia,  # CONFIG_PREEMPT_NONE is not set     CONFIG_PREEMPT_VOLUNTARY=y     # CONFIG_PREEMPT is not set    CONFIG_PREEMPT_BKL=y
+2007-01-26T15:33:00.000Z,ikonia,LjL,sorry the screen scrolled so I only got part of your message
+2007-01-26T15:33:00.000Z,LjL,ikonia,"by the way... *some* preemption is enabled, yes, but not quite the whole of it. only, ahem, cooperative preemption is - i'll look up the actual option. what do you make of that?"
+2007-01-26T15:34:00.000Z,ikonia,LjL,that doesn't make sense CONFIG_PREEMPT_VOLUNTARY=y     # CONFIG_PREEMPT then why is it set to 'y2
+2007-01-26T15:35:00.000Z,LjL,ikonia,"well, that's the way it's set... i'm not entirely sure what it means, but from what i read, CONFIG_PREEMPT being set would mean *anything* in the kernel can be preempted at *any* time, while CONFIG_PREEMPT_VOLUNTARY would mean that only code that calls something that says 'yes, from now on i will accept to be preempted' will be. or something."
+2007-01-26T15:36:00.000Z,ikonia,LjL,that means normally that the application has to support/request pre-emp
+2007-01-26T15:36:00.000Z,LjL,ikonia,"someone said CONFIG_PREEMPT=y created problems with something-i-don't-remember, so i was curious as to the actual differences and advantages/disadvantages"
+2007-01-26T15:36:00.000Z,ikonia,LjL,pre-emp  can cause problem
+2007-01-26T15:36:00.000Z,LjL,ikonia,oh. so the Ubuntu kernel *never* preempts unless there is an userlevel process asking it to?
+2007-01-26T15:36:00.000Z,ikonia,LjL,although its always been VERY positive for me
+2007-01-26T15:36:00.000Z,ikonia,LjL,almost spot on
+2007-01-26T15:39:00.000Z,LjL,ikonia,"erUSUL: well, i gave two different descriptions, 1) only when a piece of *kernel* code says 'yes i'm OK with being preempted', it gets preempted and 2) when a *userland* process ask 'kernel, please, can you preempt yourself?', it gets preempted.    i believed the correct one was 1"
+2007-01-26T15:42:00.000Z,ikonia,LjL,yes games would be a good example actually
+2007-01-26T15:43:00.000Z,LjL,ikonia,could or is?
+2007-01-26T15:43:00.000Z,ikonia,LjL,not to many games out ofr linux
+2007-01-26T15:43:00.000Z,LjL,ikonia,"uh... well, that's a point ;)"
+2007-01-26T15:43:00.000Z,ikonia,LjL,so if games /where/ written it would be a good application
+2007-01-26T15:44:00.000Z,LjL,ikonia,well come on there is a few... :)
+2007-01-26T15:44:00.000Z,ikonia,LjL,"yes, but as a rule of thumb....I was suggesting"
+2007-01-26T15:48:00.000Z,ikonia,LjL,via irda - strange
+2007-01-26T15:48:00.000Z,ikonia,LjL,"normally means no network route, but irda isn't ip standards normally"
+2007-01-26T15:48:00.000Z,LjL,ikonia,"no, but it does present itself as a network interface - as in ifconfig irda0"
+2007-01-26T15:48:00.000Z,ikonia,LjL,ahhhh
+2007-01-26T15:49:00.000Z,LjL,ikonia,"though, the ifconfig looks alright to me. and no it doesn't use IP"
+2007-01-26T15:49:00.000Z,ikonia,LjL,is it possible traffic is going out of the wrong interface
+2007-01-26T15:50:00.000Z,LjL,ikonia,"have thought of that... what do you propose to try if that were the case? i don't think i can do a 'route add'... or, well, if i do i have no idea what to put in it"
+2007-01-26T15:50:00.000Z,LjL,ikonia,i'll pastebin an ifconfig
+2007-01-26T15:50:00.000Z,ikonia,LjL,and netstat -rn please
+2007-01-26T15:53:00.000Z,LjL,ikonia,http://paste.ubuntu-nl.org/3013/
+2007-01-26T15:53:00.000Z,ikonia,LjL,looking
+2007-01-26T15:54:00.000Z,ikonia,LjL,looks good in that there is no routing information for irda0
+2007-01-26T15:55:00.000Z,LjL,ikonia,"well, i think it would only be concerned with IP addresses though, while the irda0 interface really only has its own weird network level address..."
+2007-01-26T15:55:00.000Z,ikonia,LjL,I agree
+2007-01-26T15:56:00.000Z,LjL,ikonia,"note that not all OBEX programs i've tried fail with 'no route to host', but they all fail anyway. suppose most of them don't bother to print the message from connect()"
+2007-01-26T15:56:00.000Z,ikonia,LjL,thats why I was pleased that there is no route for irda devices in your routing table
+2007-01-26T15:57:00.000Z,LjL,ikonia,one thing i've found on google was that some people seemed to have a reference to EtherTalk in their irda0 entry... though i have no clue what that has to do with anything. the web says it's an AppleTalk thing
+2007-01-26T15:57:00.000Z,ikonia,LjL,"really, thats an interesting thing, seems random but if its mentioned a few times must be something to it"
+2007-01-26T15:58:00.000Z,LjL,ikonia,an example is here http://www.pilot-link.org/pipermail/pilot-link-general/2003-September/001340.html
+2007-01-26T15:58:00.000Z,ikonia,LjL,reading
+2007-01-26T16:00:00.000Z,ikonia,LjL,that documents random - in that it explains but doesn't say why its so odd
+2007-01-26T16:01:00.000Z,LjL,ikonia,"oh, i haven't found any that actually *talk* about the ethertalk thing, just ipconfig output that have it on irda0"
+2007-01-26T16:01:00.000Z,ikonia,LjL,eactly
+2007-01-26T16:02:00.000Z,LjL,ikonia,"unless, for some reason, the irda-linux guys have decided ethertalk would be a nice protocol to emulate for their pseudo-network interface... bah"
+2007-01-26T16:02:00.000Z,ikonia,LjL,possible
+2007-01-26T16:21:00.000Z,ikonia,LjL,I don't welcome people asking for help then 'knowing it all'
+2007-01-26T16:21:00.000Z,LjL,ikonia,not talking about this case in particular...
+2007-01-26T16:21:00.000Z,ikonia,LjL,"neither am I, I have no patience for people who a.) won't do anything them selves b.) no better than the people they are asking for help"
+2007-01-27T12:32:00.000Z,LjL,ikonia,"not entirely true, memtest is installed by default and runnable from the GRUB menu"
+2007-01-27T12:32:00.000Z,ikonia,LjL,"yes, but its nothing to do with ubuntu"
+2007-01-27T12:33:00.000Z,LjL,ikonia,"not just on the live cd, it's also an a final installation"
+2007-01-27T12:33:00.000Z,LjL,ikonia,"anyway i wasn't following the discussion, just got highlighted by the bot"
+2007-01-27T12:33:00.000Z,LjL,ikonia,it is most definitely supported..
+2007-01-27T12:33:00.000Z,ikonia,LjL,is it ?
+2007-01-27T12:33:00.000Z,LjL,ikonia,"it's in main and it's installed by default, so it's by all means a core part of ubuntu"
+2007-01-27T12:33:00.000Z,LjL,ikonia,'in component main is standard' does quite mean it's 100% supported
+2007-01-27T12:33:00.000Z,ikonia,LjL,"bad chose of words, ubuntu won't help you debug the output"
+2007-01-27T12:34:00.000Z,LjL,ikonia,"uhm, why do you say that? i think an error dump from memtest is totally fine here, if that's what you mean.  i'm not sure i'd be able to interpret it *myself*, but that doesn't mean anything"
+2007-01-27T12:35:00.000Z,ikonia,LjL,"I think we differ in opinions here, I wouldn't say debugingg hardware output was part of ubuntu supports requirements"
+2007-01-27T12:37:00.000Z,LjL,ikonia,"i think you find this channel a bit more special-purpose than it really is. of course, telling you to open your case, reseat the RAM etc may be a bit offtopic, but getting a memtest output from somebody to ascertain whether they have RAM problems or software problems is quite fine"
+2007-01-27T12:37:00.000Z,ikonia,LjL,I agree on that
+2007-02-11T09:15:00.000Z,ikonia,LjL,I don't have a problem with the wiki page
+2007-02-11T09:16:00.000Z,LjL,ikonia,i know but since agliv5 mentioned me while addressing you...
+2007-02-11T09:46:00.000Z,ikonia,LjL,is
+2007-03-17T09:46:00.000Z,LjL,ikonia,make that 'help cd'
+2007-03-17T09:46:00.000Z,ikonia,LjL,"oooh really, I never use 'help' just man"
+2007-03-17T09:46:00.000Z,LjL,ikonia,yeah but 'man' has no pages for bash built-ins
+2007-03-17T09:47:00.000Z,ikonia,LjL,ahhhhhhh
+2007-03-17T09:47:00.000Z,ikonia,LjL,"I've never had to tell anyone to man cd, so I didn't think"
+2007-03-18T06:43:00.000Z,ikonia,LjL,"there is a product called 'network notepad' I'm not sure ubuntu has it packaged, that may help"
+2007-03-18T06:47:00.000Z,LjL,ikonia,"windows only, it would seem... network notepad, that is"
+2007-03-18T06:47:00.000Z,ikonia,LjL,let me check I have seen a port
+2007-03-26T05:39:00.000Z,LjL,ikonia,sabotai is n=angga@82-46-180-236.cable.ubr01.perr.blueyonder.co.uk
+2007-04-30T06:33:00.000Z,ikonia,LjL,thank you
+2007-04-30T06:37:00.000Z,ikonia,LjL,you still ther
+2007-04-30T06:37:00.000Z,ikonia,LjL,thank you
+2007-05-02T09:19:00.000Z,ikonia,LjL,also using the option noddc will stop nvidia from probing the monitor
+2007-05-02T09:21:00.000Z,ikonia,LjL,"yes, noEdid will work also, it depends on the nvidia driver version and the parameter your trying to block. Spot on"
+2007-05-02T09:24:00.000Z,ikonia,LjL,"I believe he will want a combo of noedid and nodcc to stop the montior being probed, then he can define the parameters manually"
+2007-05-02T09:37:00.000Z,ikonia,LjL,before calling me an idiot
+2007-05-06T10:46:00.000Z,ikonia,LjL,ubotu is dead
+2007-05-06T10:47:00.000Z,LjL,ikonia,just on the other side of the split... but yes
+2007-05-06T10:47:00.000Z,ikonia,LjL,thought it went before the split
+2007-05-06T10:48:00.000Z,LjL,ikonia,"i guess the servers weren't connected anymore before the actual split was visible. now it'll take a while before ubotu resyncs, too, most likely"
+2007-05-06T10:48:00.000Z,ikonia,LjL,looks like its back any how
+2007-05-15T10:27:00.000Z,ikonia,LjL,nice factoid
+2007-05-28T14:24:00.000Z,LjL,ikonia,"i know, but what the heck"
+2007-05-28T14:24:00.000Z,ikonia,LjL,I'm teasing
+2007-05-28T15:39:00.000Z,LjL,ikonia,look at your backscroll
+2007-06-01T16:52:00.000Z,LjL,ikonia,"how so? Metabot is in PHP, and i have no apache :)"
+2007-06-01T05:00:00.000Z,ikonia,LjL,don't be silly
+2007-06-05T16:42:00.000Z,LjL,ikonia,"BDBMX: it lists a hash that doesn't correspond to any password, i'd rather say"
+2007-06-05T16:42:00.000Z,ikonia,LjL,thats a better desciption
+2007-06-05T15:27:00.000Z,ikonia,LjL,that factoid is a life saver
+2007-06-05T15:28:00.000Z,LjL,ikonia,"of course, i made it."
+2007-09-26T15:17:00.000Z,LjL,ikonia,"nope, deprecated (but it will work - i mean, not work - just as the $() )"
+2007-09-26T15:17:00.000Z,ikonia,LjL,I follow
+2007-11-28T04:21:00.000Z,ikonia,LjL,again please.
+2007-12-09T23:30:00.000Z,LjL,ikonia,"well, 'it's not reading it' isn't a question to begin with"
+2007-12-09T23:30:00.000Z,ikonia,LjL,"true, thats why I wanted to understand if it was actually failing rather than just not working as expected"
+2007-12-11T19:02:00.000Z,LjL,ikonia,"UUID=56E06E36E06E1D0D /media/DVD      ntfs    defaults,user,umask=007,gid=46 0       1"
+2007-12-11T19:03:00.000Z,ikonia,LjL,thanks
+2007-12-11T19:03:00.000Z,ikonia,LjL,media dvd ?
+2007-12-11T19:03:00.000Z,ikonia,LjL,how far have you progressed this with him (don't want to setp on your toes)
+2007-12-11T19:04:00.000Z,LjL,ikonia,"i just don't have a clue. i guess /media/DVD is just a name, and he seems to be saying that it *does* mount manually (although it requires root privileges), so i was assuming the UUID was correct"
+2007-12-11T19:05:00.000Z,ikonia,LjL,any mount is going to require root unless its setup as a user mount
+2007-12-11T19:05:00.000Z,LjL,ikonia,"but the line does say 'user'. it also says 'defaults' which, as far as i'm aware, implies 'auto'"
+2007-12-11T19:05:00.000Z,ikonia,LjL,umount it and do a mount -a see what happens
+2007-12-11T19:06:00.000Z,ikonia,LjL,or a 'sudo mount -a' I should say
+2007-12-11T19:06:00.000Z,ikonia,LjL,apologies if I've covering old ground
+2007-12-11T19:06:00.000Z,LjL,ikonia,no not really
+2007-12-11T19:14:00.000Z,ikonia,LjL,undauntedspirit: the 'defaults' option sets 'rw' ntfs driver does not support 'read write' you need 'user ro'
+2007-12-11T19:14:00.000Z,LjL,ikonia,"undauntedspirit seems to have left... but, i see. but didn't Gutsy support ntfs rw out of the box now?"
+2007-12-11T19:15:00.000Z,ikonia,LjL,the driver is ntfs-3g not ntfs for read write
+2007-12-11T19:15:00.000Z,LjL,ikonia,"right... he had said that the fstab line is 'just like the other ntfs lines he has', but i guess that's not entirely accurate."
+2007-12-11T19:16:00.000Z,ikonia,LjL,"so ntfs-3f user default would work or, ntfs user ro"
+2007-12-11T19:16:00.000Z,ikonia,LjL,yup
+2007-12-11T19:16:00.000Z,ikonia,LjL,"dissapointed he's gone,"
+2007-12-14T04:37:00.000Z,ikonia,LjL,he doesn't
+2007-12-14T04:37:00.000Z,ikonia,LjL,standard issue randomness
+2007-12-14T04:42:00.000Z,LjL,ikonia,"kbrooks, Jack_Sparrow: please take it to -offtopic or somewhere now"
+2007-12-14T04:42:00.000Z,ikonia,LjL,its done
+2007-12-15T22:59:00.000Z,LjL,ikonia,"no, i pressed Enter to search for his messages, but banned instead since i'd closed the search dialog and had his +b already typed"
+2007-12-15T22:59:00.000Z,ikonia,LjL,no problem
+2007-12-15T23:00:00.000Z,ikonia,LjL,thank you for explaining
+2007-12-17T05:06:00.000Z,ikonia,LjL,Mark761966 please.
+2008-01-09T19:50:00.000Z,ikonia,LjL,what's happened to your font ?
+2008-01-09T19:51:00.000Z,LjL,ikonia,my font? (by the way DC++ is not torrent)
+2008-01-09T19:51:00.000Z,ikonia,LjL,"your font went all funny, on your lasst post"
+2008-01-09T19:51:00.000Z,LjL,ikonia,explain
+2008-01-09T19:51:00.000Z,ikonia,LjL,see you in -op
+2008-01-18T20:53:00.000Z,ikonia,LjL,it only makes a direcotry if hal/dbus is aware
+2008-01-18T20:54:00.000Z,LjL,ikonia,but from the backlog i seem to understand that the /media directory is there already
+2008-01-18T20:55:00.000Z,ikonia,LjL,I didn't see that part
+2008-01-22T19:25:00.000Z,LjL,ikonia,as slowly as plausible?
+2008-01-22T19:26:00.000Z,ikonia,LjL,obviously
+2008-01-26T02:12:00.000Z,ikonia,LjL,I wasted 2 hours with him yesterday
+2008-01-26T02:12:00.000Z,LjL,ikonia,let's waste some more
+2008-01-26T02:43:00.000Z,ikonia,LjL,I think there was a problem with the index file containing some of the java stuff
+2008-01-26T02:44:00.000Z,ikonia,LjL,people commented on it the other day when some packages where rebuilt
+2008-01-26T02:44:00.000Z,LjL,ikonia,"elaborate? which java stuff? the ppc one? i'm testing this on i386, and it worked until, well, yesterday or so"
+2008-01-26T02:44:00.000Z,LjL,ikonia,"'301 moved permanently' though, that's a little weird in my mind... especially since i can browse the place fine"
+2008-01-26T02:44:00.000Z,ikonia,LjL,"ahh no, this wasn't java - this was just some PPC packages only that had been rebuilt and the index file wasn't updated"
+2008-01-26T02:44:00.000Z,ikonia,LjL,different error
+2008-02-06T02:20:00.000Z,LjL,ikonia,"brobostigon: i thought there was a decompiler in the repos, but i either imagined it, or it's been removed. anyway, it's pretty clear you can never get back the original source (with meaningful variable names and loop structures, etc), the best a decompiler would give you is some correct, but unintelligible, C code"
+2008-02-06T02:21:00.000Z,ikonia,LjL,"exactly - technically you can, in reality not really"
+2008-04-28T20:26:00.000Z,LjL,ikonia,"wad: 'properly', i don't know, but i think OpenProj imports MS"
+2008-04-28T20:27:00.000Z,ikonia,LjL,"that will load it, but I've found tasks mangled with it depending on their complexityy"
+2008-04-28T20:27:00.000Z,LjL,ikonia,"well, better than nothing i guess... i don't think i found any other that imports the format"
+2008-04-28T20:28:00.000Z,ikonia,LjL,totally agreed
+2008-04-28T21:42:00.000Z,ikonia,LjL,can you do it with jack ?
+2008-04-28T21:43:00.000Z,LjL,ikonia,don't know... jack what?
+2008-04-28T21:43:00.000Z,ikonia,LjL,the application 'jack'
+2008-04-28T21:44:00.000Z,LjL,ikonia,"ah, not the sound system 'jack'... not sure, isn't that just intended to rip CDs?"
+2008-04-28T21:44:00.000Z,ikonia,LjL,I thought it was a an audio device interface too
+2008-04-28T21:46:00.000Z,LjL,ikonia,"no, doesn't have that feature according to the manpage"
+2008-04-28T21:46:00.000Z,ikonia,LjL,"rats, I wasn't certain"
+2008-04-28T21:47:00.000Z,LjL,ikonia,"although sox *really* should do it, anyway... there must be some subtlety i'm missing"
+2008-04-28T21:48:00.000Z,ikonia,LjL,I'm not massive with sox
+2008-04-29T19:29:00.000Z,ikonia,LjL,ram +%15 overhead is the rule I get lecture about in best practice coures
+2008-10-02T19:01:00.000Z,LjL,ikonia,"if i were a certain op, i'd ask you whether you're repelling boarders"
+2008-10-06T18:23:00.000Z,ikonia,LjL,;)
+2008-10-10T04:12:00.000Z,ikonia,LjL,"thanks, appriciated"
+2008-10-10T04:11:00.000Z,ikonia,LjL,please stop that langauge
+2008-10-10T04:11:00.000Z,LjL,ikonia,i'll try
+2008-10-10T04:11:00.000Z,ikonia,LjL,sorry
+2008-10-10T04:11:00.000Z,LjL,ikonia,"well, i've complied, no? ;)"
+2008-10-15T03:12:00.000Z,LjL,ikonia,"hey, my server's got a wireless card to provide wireless connectivity to me!"
+2008-10-15T03:12:00.000Z,ikonia,LjL,please stop being the exception
+2008-11-06T20:19:00.000Z,LjL,ikonia,"qtopia is a wonderful little environment that was, surely, developed for PDAs, but nobody stops you from using it on a 'real' computer. well, except of course that packages for it have disappeared from Debian, and there's been an awful trademarks/copyright/forking dispute. but GPE, the other project that was from handhelds.org, is *currently* in debian and ubuntu."
+2008-11-06T20:20:00.000Z,ikonia,LjL,"qtopia is not 'handhelds' though, he wanted a server install, so what has qtopia got to offer on a server install thats already low on ram"
+2008-11-10T02:33:00.000Z,ikonia,LjL,"telnet to port 80 and do a get, see if it's apache thats listening"
+2008-11-10T02:34:00.000Z,LjL,ikonia,he said he'd already tried telnet
+2008-11-10T02:34:00.000Z,ikonia,LjL,I missed that
+2008-11-10T02:36:00.000Z,ikonia,LjL,ahhh good call
+2008-11-21T00:06:00.000Z,LjL,ikonia,why not?
+2008-11-21T00:06:00.000Z,LjL,ikonia,"no, but he's got *.debs* in a folder, so dpkg -i *"
+2008-11-21T00:06:00.000Z,ikonia,LjL,ahh I missed that part
+2008-11-21T00:06:00.000Z,LjL,ikonia,"(well, dpkg -i *.deb would be a much better idea of course)"
+2008-11-22T00:14:00.000Z,ikonia,LjL,I meant
+2008-11-26T21:58:00.000Z,LjL,ikonia,"Crusher: it's not even called Ubuntu Ultimate, it's called Ultimate Edition"
+2008-11-26T21:58:00.000Z,ikonia,LjL,of crouse
+2008-12-09T19:24:00.000Z,LjL,ikonia,is that a LAN?
+2008-12-09T19:24:00.000Z,ikonia,LjL,vpn over a lan
+2008-12-09T19:24:00.000Z,ikonia,LjL,vpn lan over internet sorry
+2008-12-09T19:24:00.000Z,LjL,ikonia,"ah, ok. if it had been a real LAN, i'd have felt that 'slow' would have been entirely an understatement..."
+2008-12-09T19:25:00.000Z,ikonia,LjL,still not great over the net
+2008-12-09T19:25:00.000Z,LjL,ikonia,"certainly not, i get better pings when i'm talking to australia"
+2008-12-09T19:26:00.000Z,ikonia,LjL,I wonder if he can't ping due to the timeout
+2008-12-09T19:26:00.000Z,LjL,ikonia,that can be tested with the -W option of ping
+2008-12-09T19:27:00.000Z,ikonia,LjL,just got that now
+2008-12-09T19:27:00.000Z,LjL,ikonia,"although i always had the feeling that the default timeout was infinite, but i might be wrong"
+2008-12-09T19:27:00.000Z,ikonia,LjL,nah not infinate
+2008-12-10T21:32:00.000Z,ikonia,LjL,"he's got a proxy setting for tor in his env, but as tor is not running it's causing an issue"
+2008-12-10T21:32:00.000Z,LjL,ikonia,"he's probably got a proxy setting for Privoxy though, not Tor itself"
+2008-12-10T21:32:00.000Z,ikonia,LjL,correct
+2008-12-10T21:33:00.000Z,ikonia,LjL,nice idea
+2009-03-06T20:36:00.000Z,LjL,ikonia,"ubuntu has switched to the hurd now, didn't you know?"
+2009-03-06T20:36:00.000Z,LjL,ikonia,it's linux-image
+2009-03-06T20:36:00.000Z,ikonia,LjL,whats the darn package name - I'm on a centos box here
+2009-03-06T20:37:00.000Z,ikonia,LjL,thanks
+2009-03-06T21:01:00.000Z,ikonia,LjL,macforlin automatix style scripts have been deployed
+2009-03-06T21:01:00.000Z,LjL,ikonia,"yeah i've noticed that, although i have no idea just how bad those are. but anyway, worth trying a debsums i think"
+2009-03-06T21:02:00.000Z,ikonia,LjL,"go for it, just didn't know if you'd seen the delightful scripts,"
+2009-03-06T21:02:00.000Z,LjL,ikonia,"i haven't seen the scripts, no, just seen in the backscroll he used mac4lin"
+2009-03-10T21:35:00.000Z,LjL,ikonia,ndiswrapper i suspect?
+2009-03-10T21:35:00.000Z,ikonia,LjL,probably
+2009-03-24T19:49:00.000Z,LjL,ikonia,"i beg to differ on it not mattering, the logical start of a HD is usually noticeably faster than the end"
+2009-03-24T19:49:00.000Z,ikonia,LjL,"for his purpose I doubt it will matter, I do take your point though"
+2009-03-24T19:50:00.000Z,LjL,ikonia,i have my swap partition as the first partition on my HD for that very reason
+2009-04-03T20:46:00.000Z,LjL,ikonia,he will
+2009-04-03T20:46:00.000Z,ikonia,LjL,"should be fine,"
+2009-04-03T20:46:00.000Z,ikonia,LjL,sorry
+2009-04-17T19:16:00.000Z,ikonia,LjL,thank you
+2009-04-20T22:22:00.000Z,LjL,ikonia,AGH at your banmasks
+2009-04-20T22:23:00.000Z,ikonia,LjL,41.* ?
+2009-04-20T22:23:00.000Z,LjL,ikonia,"no, !@. that won't work"
+2009-10-28T03:35:00.000Z,LjL,ikonia,i think so
+2009-11-06T03:42:00.000Z,LjL,ikonia,"r0b0t1, i guess"
+2009-11-06T03:42:00.000Z,ikonia,LjL,"froglet2 ooh yes, thank you"
+2010-05-21T02:38:00.000Z,LjL,ikonia,well yes it does
+2010-05-21T02:42:00.000Z,ikonia,LjL,"there was a placeholder, but I think it's as and when needed as you suggest"
+2010-06-16T02:28:00.000Z,LjL,ikonia,"it does seem from the screenshot that it's attempting to replace one version with the very same version, however..."
+2010-06-16T02:28:00.000Z,LjL,ikonia,http://imagebin.org/101468
+2010-07-13T00:45:00.000Z,LjL,ikonia,"seriously, stop flooding"
+2010-09-16T01:38:00.000Z,LjL,ikonia,yes
+2010-10-31T15:55:00.000Z,LjL,ikonia,is he?
+2010-10-31T15:55:00.000Z,ikonia,LjL,he's stopped
+2010-11-12T18:58:00.000Z,LjL,ikonia,"he is identified, and the channel is not +r"
+2010-11-12T18:59:00.000Z,ikonia,LjL,thanks
+2010-11-18T05:23:00.000Z,LjL,ikonia,^
+2010-11-22T19:45:00.000Z,ikonia,LjL,thanks
+2011-02-19T02:03:00.000Z,LjL,ikonia,so what part of it is not an ubuntu question?
+2011-02-19T02:03:00.000Z,ikonia,LjL,"the part that is asking what moonOS is, is it a distro or a desktop, and can ubuntu deal with it"
+2011-02-19T02:03:00.000Z,LjL,ikonia,"if it's a desktop environment, which he certainly has the right to wonder, and in that case if it runs in ubuntu, is an ubuntu question"
+2011-02-19T02:04:00.000Z,ikonia,LjL,"if it's a desktop environment sure, he can ask if ubuntu will work with it, but he's asking if anyone's used it and what it is"
+2011-02-19T02:04:00.000Z,ikonia,LjL,not here to research other distros
+2011-04-01T17:13:00.000Z,ikonia,LjL,"it get 'ok' sound out of it, nothing advanced, stero etc"
+2011-04-01T17:13:00.000Z,LjL,ikonia,you mean no stereo?
+2011-04-01T17:14:00.000Z,ikonia,LjL,"no, I get the basics, such as stereo"
+2011-04-01T17:14:00.000Z,LjL,ikonia,"ah. can you sample at 192kHz (assuming it supports that, i think it does but not quite sure)?"
+2011-04-01T17:15:00.000Z,ikonia,LjL,"it can play back at that, so I'd assume sample also"
+2011-04-01T17:16:00.000Z,LjL,ikonia,"some cards can play back at 192kHz but not sample. can you test this for me please?  'arecord -f dat -r 192000 -D hw:0,0 -d 5 test.wav'. if it doesn't support 192kHz, it will say that the 'requested' sample rate is different from what you 'got'"
+2011-04-01T17:16:00.000Z,ikonia,LjL,"not got access to that box at the moment, it's my desktop that's powered off"
+2011-04-01T17:16:00.000Z,ikonia,LjL,I can do it for you though if you remind me
+2011-04-01T17:16:00.000Z,LjL,ikonia,"ok i'll remind you later then, thanks"
+2011-04-12T18:27:00.000Z,LjL,ikonia,"he hasn't removed dhcp yet, which is what he was asking about, he's only removed network manager which i believe he had done before coming here"
+2011-04-12T18:27:00.000Z,ikonia,LjL,"I see that, but I think network manager is also a dep of the desktop.....not %100 certain without checking"
+2011-04-12T18:28:00.000Z,LjL,ikonia,"uhm well that's probably why it's only asking to remove ubuntu-minimal, ubuntu-desktop may already have been removed..."
+2011-05-02T03:23:00.000Z,ikonia,LjL,12 per arch I believe
+2011-05-02T03:23:00.000Z,LjL,ikonia,only?
+2011-05-02T03:24:00.000Z,ikonia,LjL,a whole release is about 60GB
+2011-05-02T03:40:00.000Z,LjL,ikonia,"abadadon: i must be doing something wrong. i listed the (compressed) package size for all packages in my apt-cache, and the total is short of 5gb =)"
+2011-06-29T18:36:00.000Z,ikonia,LjL,there is a model with the ati card in which falls into the ati black screen trap
+2011-09-25T16:18:00.000Z,LjL,ikonia,probably http://en.wikipedia.org/wiki/Intel_Turbo_Boost
+2011-09-25T16:18:00.000Z,ikonia,LjL,but that's a hardware thing ?
+2011-09-25T16:19:00.000Z,LjL,ikonia,the OS needs to activate it
+2011-12-20T03:05:00.000Z,LjL,ikonia,"if he can shrink it, then it's not mounted, is it? otherwise he wouldn't be able to work on it at all"
+2011-12-20T03:05:00.000Z,ikonia,LjL,not sure to be honest
+2011-12-20T03:05:00.000Z,ikonia,LjL,"I thought you could shrink a mounted partition in gparted as long as there is file system space, it won't take effect until the next reboot"
+2011-12-20T03:06:00.000Z,LjL,ikonia,"oh, i see"
+2011-12-21T18:41:00.000Z,ikonia,LjL,if you can get the size of the partition table (512kb ?) that should be enough to not touch the data too
+2011-12-21T18:37:00.000Z,ikonia,LjL,"it will destory it, but it will fix your ubiquity issue"
+2011-12-21T18:40:00.000Z,LjL,ikonia,"well i don't want it destroyed. why do you think it will? i mean, obviously it will, but after restoring that imaged megabyte do you see any reason why it wouldn't be back to working?"
+2011-12-21T18:40:00.000Z,ikonia,LjL,"ahhh, you're going to restore it"
+2011-12-21T18:40:00.000Z,ikonia,LjL,"I missed that part, you should be fine, you'll have to be careful with block size and count, but it should be 'ok'"
+2011-12-21T18:41:00.000Z,LjL,ikonia,"ok. i'd image it all, but i tried yesterday and it just takes too long"
+2011-12-23T01:09:00.000Z,LjL,ikonia,"uh, as far as i knew daemons can and do log to syslog"
+2011-12-23T01:09:00.000Z,ikonia,LjL,"anything 'can' syslog, just do 'logger' for example,"
+2011-12-23T01:21:00.000Z,ikonia,LjL,thank god for your  sanityu
+2011-12-23T01:22:00.000Z,ikonia,LjL,sanity
+2011-12-23T01:22:00.000Z,ikonia,LjL,you are the only other person I've seen not saying 'use ntfsfix'
+2011-12-23T01:22:00.000Z,LjL,ikonia,heh
+2012-01-20T16:54:00.000Z,ikonia,LjL,normally /etc/passwd~ not .lock
+2012-01-20T16:55:00.000Z,LjL,ikonia,"uhm, vipwd creates an /etc/passwd.lock here"
+2012-01-20T16:55:00.000Z,ikonia,LjL,"never used vipwd, so don't know if that is vipwd specific"
+2012-01-20T16:55:00.000Z,LjL,ikonia,vipw*
+2012-01-20T19:06:00.000Z,ikonia,LjL,beat me to it
+2012-01-23T20:38:00.000Z,LjL,ikonia,'gambas' is pretty much like VB
+2012-01-23T20:38:00.000Z,ikonia,LjL,"Hmmm, maybe, I guess"
+2012-01-23T20:39:00.000Z,LjL,ikonia,"reloaded__: yes, and Gambas does offer SQL support"
+2012-01-25T16:05:00.000Z,LjL,ikonia,bullgard4: isn't that message shown when the package is in Universe rather than in Main?
+2012-01-25T16:06:00.000Z,LjL,ikonia,the package is in Universe for me
+2012-01-25T16:22:00.000Z,LjL,ikonia,the package description has not changed. that message must be something from Synaptic itself.
+2012-01-25T16:25:00.000Z,ikonia,LjL,"sorry, got disconnected then, as you suggesting synaptic has appending/not appending that message"
+2012-01-25T16:25:00.000Z,LjL,ikonia,"well i'm not a Synaptic user so i don't know, but yes that's what i suspect. i know it's not in the actual description, because i checked that on http://packages.ubuntu.com/ and it's unchanged"
+2012-01-26T17:25:00.000Z,LjL,ikonia,"it's not a package manager, it's a 'make' replacement"
+2012-01-31T17:18:00.000Z,ikonia,LjL,"cross channel, same spam"
+2012-02-13T02:27:00.000Z,ikonia,LjL,"it's set when you create the partitions, you set the type when you set the file system to 'swap'"
+2012-02-13T02:28:00.000Z,LjL,ikonia,"yeah that's what i said, but he said he only had 'logical' and 'primary' as options. i'm not familiar enough with the alternate installer to guide him exactly."
+2012-03-19T18:37:00.000Z,LjL,ikonia,i really seem to recall you can copy and paste from it by default
+2012-03-19T18:38:00.000Z,LjL,ikonia,"the 'clipboard' as i always knew it is simply the copypaste buffer, might or might not support multiple items..."
+2012-03-19T18:38:00.000Z,ikonia,LjL,just a wording miss-understanding
+2012-03-23T15:58:00.000Z,LjL,ikonia,julia_still_: maybe it just needs passive mode?
+2012-03-23T15:58:00.000Z,ikonia,LjL,not for connection refused
+2012-03-23T15:58:00.000Z,ikonia,LjL,you'd get a time out on transfer if passive mode was neededd
+2012-03-23T15:58:00.000Z,ikonia,LjL,the initial port 21 connection should still be fine
+2012-03-23T16:01:00.000Z,ikonia,LjL,"that makes sense, no initial port 21 connect, so passive won't make a difference"
+2012-03-23T18:15:00.000Z,ikonia,LjL,they put the ext defragger back in ?
+2012-03-23T18:16:00.000Z,LjL,ikonia,"ljt: wait no, i'm sorry, this 'defragmenter' is only used with extent-based files, it doesn't really defragment the filesystem"
+2012-04-12T16:02:00.000Z,ikonia,LjL,ping
+2012-07-04T20:11:00.000Z,ikonia,LjL,too quick for me
+2012-07-12T15:01:00.000Z,ikonia,LjL,is universe supposed to be enabled by default ?
+2012-07-12T15:02:00.000Z,LjL,ikonia,"yes, since a few releases"
+2007-01-09T15:41:00.000Z,LjL,,"Ubotu, tell ikonia about build-essential | ikonia, see the private message from Ubotu"
+2007-01-09T15:41:00.000Z,ikonia,LjL,I'm aware of that package
+2007-01-09T15:41:00.000Z,LjL,ikonia,then what's the problem? you can compile C fine if you have that installed
+2007-01-09T15:42:00.000Z,ikonia,LjL,I don't have a problem building programs
+2007-01-09T15:46:00.000Z,ikonia,LjL,certainly
+2007-01-09T15:49:00.000Z,LjL,ikonia,"not necessarly, but most existing factoids are one word indeed"
+2007-01-09T15:49:00.000Z,ikonia,LjL,"really, I've never seen it respond to a two worder"
+2007-01-09T15:50:00.000Z,LjL,ikonia,"it works, you can toy with it in #ubuntu-bots if you like"
+2007-01-09T15:50:00.000Z,ikonia,LjL,thats still one word (no space)
+2007-01-09T15:51:00.000Z,LjL,ikonia,"err, what i meant is that you can check that it works in the #ubuntu-bots channel =) try '!msg the bot' for instance"
+2007-01-09T15:51:00.000Z,ikonia,LjL,ooooh sorry
+2007-01-09T15:51:00.000Z,ikonia,LjL,though you where saying thats a key word
+2007-01-22T17:35:00.000Z,ikonia,LjL,its stack-smash protection
+2007-01-22T17:35:00.000Z,ikonia,LjL,part of the HCL security options
+2007-01-22T16:50:00.000Z,ikonia,LjL,that works normally
+2007-01-22T16:55:00.000Z,LjL,ikonia,"to be honest, i don't believe 'read some basic docs' is a sensible answer to any questions"
+2007-01-23T17:10:00.000Z,LjL,ikonia,"i believe it's still only the beta version that's in backports. it's been in there for quite long. the release version (it's been released now, right?), i don't know"
+2007-01-23T17:10:00.000Z,ikonia,LjL,any day now
+2007-01-23T14:11:00.000Z,ikonia,LjL,impressive
+2007-01-23T14:11:00.000Z,LjL,ikonia,"not too hard, i'm italian"
+2007-01-26T15:04:00.000Z,ikonia,LjL,I thought he was trying to install to a usb device
+2007-01-26T15:16:00.000Z,LjL,ikonia,"i suppose it would be the installer's fault, given gparted doesn't quite seem to be working either, if i got that right"
+2007-01-26T15:16:00.000Z,ikonia,LjL,nah at gparted if he's not marked a partition as swap it won't 'create' swap
+2007-01-26T15:16:00.000Z,LjL,ikonia,"and if you look at the screenshot, it does say hda, but cfdisk /dev/hda says it cannot read from it apparently"
+2007-01-26T15:16:00.000Z,LjL,ikonia,are you talking about actual gparted or the gparted section in the installer?
+2007-01-26T15:17:00.000Z,LjL,ikonia,"the latter does create a swap partition automatically, if you don't tell it 'i'm wise and i'll do it manually'"
+2007-01-26T15:17:00.000Z,LjL,ikonia,still anyway there's the cfdisk to explain
+2007-01-26T15:18:00.000Z,LjL,ikonia,"i kept saying cfdisk, i meant fdisk"
+2007-01-26T15:18:00.000Z,ikonia,LjL,fancy a bet ;)
+2007-01-26T15:19:00.000Z,LjL,ikonia,"not really, right now i'm not sure of anything, he's confused me too much =)"
+2007-01-26T15:20:00.000Z,LjL,ikonia,i really think it's just that gparted doesn't like drives that have no partition table... i think someone had this before today
+2007-01-26T15:20:00.000Z,ikonia,LjL,looks like it can't even see the drives
+2007-01-26T15:22:00.000Z,LjL,ikonia,well you win the bet
+2007-01-26T15:23:00.000Z,ikonia,LjL,I wish I hadn't
+2007-01-26T15:32:00.000Z,LjL,ikonia,"by the way... *some* preemption is enabled, yes, but not quite the whole of it. only, ahem, cooperative preemption is - i'll look up the actual option. what do you make of that?"
+2007-01-26T15:33:00.000Z,LjL,ikonia,  # CONFIG_PREEMPT_NONE is not set     CONFIG_PREEMPT_VOLUNTARY=y     # CONFIG_PREEMPT is not set    CONFIG_PREEMPT_BKL=y
+2007-01-26T15:33:00.000Z,ikonia,LjL,sorry the screen scrolled so I only got part of your message
+2007-01-26T15:33:00.000Z,LjL,ikonia,"by the way... *some* preemption is enabled, yes, but not quite the whole of it. only, ahem, cooperative preemption is - i'll look up the actual option. what do you make of that?"
+2007-01-26T15:34:00.000Z,ikonia,LjL,that doesn't make sense CONFIG_PREEMPT_VOLUNTARY=y     # CONFIG_PREEMPT then why is it set to 'y2
+2007-01-26T15:35:00.000Z,LjL,ikonia,"well, that's the way it's set... i'm not entirely sure what it means, but from what i read, CONFIG_PREEMPT being set would mean *anything* in the kernel can be preempted at *any* time, while CONFIG_PREEMPT_VOLUNTARY would mean that only code that calls something that says 'yes, from now on i will accept to be preempted' will be. or something."
+2007-01-26T15:36:00.000Z,ikonia,LjL,that means normally that the application has to support/request pre-emp
+2007-01-26T15:36:00.000Z,LjL,ikonia,"someone said CONFIG_PREEMPT=y created problems with something-i-don't-remember, so i was curious as to the actual differences and advantages/disadvantages"
+2007-01-26T15:36:00.000Z,ikonia,LjL,pre-emp  can cause problem
+2007-01-26T15:36:00.000Z,LjL,ikonia,oh. so the Ubuntu kernel *never* preempts unless there is an userlevel process asking it to?
+2007-01-26T15:36:00.000Z,ikonia,LjL,although its always been VERY positive for me
+2007-01-26T15:36:00.000Z,ikonia,LjL,almost spot on
+2007-01-26T15:39:00.000Z,LjL,ikonia,"erUSUL: well, i gave two different descriptions, 1) only when a piece of *kernel* code says 'yes i'm OK with being preempted', it gets preempted and 2) when a *userland* process ask 'kernel, please, can you preempt yourself?', it gets preempted.    i believed the correct one was 1"
+2007-01-26T15:42:00.000Z,ikonia,LjL,yes games would be a good example actually
+2007-01-26T15:43:00.000Z,LjL,ikonia,could or is?
+2007-01-26T15:43:00.000Z,ikonia,LjL,not to many games out ofr linux
+2007-01-26T15:43:00.000Z,LjL,ikonia,"uh... well, that's a point ;)"
+2007-01-26T15:43:00.000Z,ikonia,LjL,so if games /where/ written it would be a good application
+2007-01-26T15:44:00.000Z,LjL,ikonia,well come on there is a few... :)
+2007-01-26T15:44:00.000Z,ikonia,LjL,"yes, but as a rule of thumb....I was suggesting"
+2007-01-26T15:48:00.000Z,ikonia,LjL,via irda - strange
+2007-01-26T15:48:00.000Z,ikonia,LjL,"normally means no network route, but irda isn't ip standards normally"
+2007-01-26T15:48:00.000Z,LjL,ikonia,"no, but it does present itself as a network interface - as in ifconfig irda0"
+2007-01-26T15:48:00.000Z,ikonia,LjL,ahhhh
+2007-01-26T15:49:00.000Z,LjL,ikonia,"though, the ifconfig looks alright to me. and no it doesn't use IP"
+2007-01-26T15:49:00.000Z,ikonia,LjL,is it possible traffic is going out of the wrong interface
+2007-01-26T15:50:00.000Z,LjL,ikonia,"have thought of that... what do you propose to try if that were the case? i don't think i can do a 'route add'... or, well, if i do i have no idea what to put in it"
+2007-01-26T15:50:00.000Z,LjL,ikonia,i'll pastebin an ifconfig
+2007-01-26T15:50:00.000Z,ikonia,LjL,and netstat -rn please
+2007-01-26T15:53:00.000Z,LjL,ikonia,http://paste.ubuntu-nl.org/3013/
+2007-01-26T15:53:00.000Z,ikonia,LjL,looking
+2007-01-26T15:54:00.000Z,ikonia,LjL,looks good in that there is no routing information for irda0
+2007-01-26T15:55:00.000Z,LjL,ikonia,"well, i think it would only be concerned with IP addresses though, while the irda0 interface really only has its own weird network level address..."
+2007-01-26T15:55:00.000Z,ikonia,LjL,I agree
+2007-01-26T15:56:00.000Z,LjL,ikonia,"note that not all OBEX programs i've tried fail with 'no route to host', but they all fail anyway. suppose most of them don't bother to print the message from connect()"
+2007-01-26T15:56:00.000Z,ikonia,LjL,thats why I was pleased that there is no route for irda devices in your routing table
+2007-01-26T15:57:00.000Z,LjL,ikonia,one thing i've found on google was that some people seemed to have a reference to EtherTalk in their irda0 entry... though i have no clue what that has to do with anything. the web says it's an AppleTalk thing
+2007-01-26T15:57:00.000Z,ikonia,LjL,"really, thats an interesting thing, seems random but if its mentioned a few times must be something to it"
+2007-01-26T15:58:00.000Z,LjL,ikonia,an example is here http://www.pilot-link.org/pipermail/pilot-link-general/2003-September/001340.html
+2007-01-26T15:58:00.000Z,ikonia,LjL,reading
+2007-01-26T16:00:00.000Z,ikonia,LjL,that documents random - in that it explains but doesn't say why its so odd
+2007-01-26T16:01:00.000Z,LjL,ikonia,"oh, i haven't found any that actually *talk* about the ethertalk thing, just ipconfig output that have it on irda0"
+2007-01-26T16:01:00.000Z,ikonia,LjL,eactly
+2007-01-26T16:02:00.000Z,LjL,ikonia,"unless, for some reason, the irda-linux guys have decided ethertalk would be a nice protocol to emulate for their pseudo-network interface... bah"
+2007-01-26T16:02:00.000Z,ikonia,LjL,possible
+2007-01-26T16:21:00.000Z,ikonia,LjL,I don't welcome people asking for help then 'knowing it all'
+2007-01-26T16:21:00.000Z,LjL,ikonia,not talking about this case in particular...
+2007-01-26T16:21:00.000Z,ikonia,LjL,"neither am I, I have no patience for people who a.) won't do anything them selves b.) no better than the people they are asking for help"
+2007-01-27T12:32:00.000Z,LjL,ikonia,"not entirely true, memtest is installed by default and runnable from the GRUB menu"
+2007-01-27T12:32:00.000Z,ikonia,LjL,"yes, but its nothing to do with ubuntu"
+2007-01-27T12:33:00.000Z,LjL,ikonia,"not just on the live cd, it's also an a final installation"
+2007-01-27T12:33:00.000Z,LjL,ikonia,"anyway i wasn't following the discussion, just got highlighted by the bot"
+2007-01-27T12:33:00.000Z,LjL,ikonia,it is most definitely supported..
+2007-01-27T12:33:00.000Z,ikonia,LjL,is it ?
+2007-01-27T12:33:00.000Z,LjL,ikonia,"it's in main and it's installed by default, so it's by all means a core part of ubuntu"
+2007-01-27T12:33:00.000Z,LjL,ikonia,'in component main is standard' does quite mean it's 100% supported
+2007-01-27T12:33:00.000Z,ikonia,LjL,"bad chose of words, ubuntu won't help you debug the output"
+2007-01-27T12:34:00.000Z,LjL,ikonia,"uhm, why do you say that? i think an error dump from memtest is totally fine here, if that's what you mean.  i'm not sure i'd be able to interpret it *myself*, but that doesn't mean anything"
+2007-01-27T12:35:00.000Z,ikonia,LjL,"I think we differ in opinions here, I wouldn't say debugingg hardware output was part of ubuntu supports requirements"
+2007-01-27T12:37:00.000Z,LjL,ikonia,"i think you find this channel a bit more special-purpose than it really is. of course, telling you to open your case, reseat the RAM etc may be a bit offtopic, but getting a memtest output from somebody to ascertain whether they have RAM problems or software problems is quite fine"
+2007-01-27T12:37:00.000Z,ikonia,LjL,I agree on that
+2007-02-11T09:15:00.000Z,ikonia,LjL,I don't have a problem with the wiki page
+2007-02-11T09:16:00.000Z,LjL,ikonia,i know but since agliv5 mentioned me while addressing you...
+2007-02-11T09:46:00.000Z,ikonia,LjL,is
+2007-03-17T09:46:00.000Z,LjL,ikonia,make that 'help cd'
+2007-03-17T09:46:00.000Z,ikonia,LjL,"oooh really, I never use 'help' just man"
+2007-03-17T09:46:00.000Z,LjL,ikonia,yeah but 'man' has no pages for bash built-ins
+2007-03-17T09:47:00.000Z,ikonia,LjL,ahhhhhhh
+2007-03-17T09:47:00.000Z,ikonia,LjL,"I've never had to tell anyone to man cd, so I didn't think"
+2007-03-18T06:43:00.000Z,ikonia,LjL,"there is a product called 'network notepad' I'm not sure ubuntu has it packaged, that may help"
+2007-03-18T06:47:00.000Z,LjL,ikonia,"windows only, it would seem... network notepad, that is"
+2007-03-18T06:47:00.000Z,ikonia,LjL,let me check I have seen a port
+2007-03-26T05:39:00.000Z,LjL,ikonia,sabotai is n=angga@82-46-180-236.cable.ubr01.perr.blueyonder.co.uk
+2007-04-30T06:33:00.000Z,ikonia,LjL,thank you
+2007-04-30T06:37:00.000Z,ikonia,LjL,you still ther
+2007-04-30T06:37:00.000Z,ikonia,LjL,thank you
+2007-05-02T09:19:00.000Z,ikonia,LjL,also using the option noddc will stop nvidia from probing the monitor
+2007-05-02T09:21:00.000Z,ikonia,LjL,"yes, noEdid will work also, it depends on the nvidia driver version and the parameter your trying to block. Spot on"
+2007-05-02T09:24:00.000Z,ikonia,LjL,"I believe he will want a combo of noedid and nodcc to stop the montior being probed, then he can define the parameters manually"
+2007-05-02T09:37:00.000Z,ikonia,LjL,before calling me an idiot
+2007-05-06T10:46:00.000Z,ikonia,LjL,ubotu is dead
+2007-05-06T10:47:00.000Z,LjL,ikonia,just on the other side of the split... but yes
+2007-05-06T10:47:00.000Z,ikonia,LjL,thought it went before the split
+2007-05-06T10:48:00.000Z,LjL,ikonia,"i guess the servers weren't connected anymore before the actual split was visible. now it'll take a while before ubotu resyncs, too, most likely"
+2007-05-06T10:48:00.000Z,ikonia,LjL,looks like its back any how
+2007-05-15T10:27:00.000Z,ikonia,LjL,nice factoid
+2007-05-28T14:24:00.000Z,LjL,ikonia,"i know, but what the heck"
+2007-05-28T14:24:00.000Z,ikonia,LjL,I'm teasing
+2007-05-28T15:39:00.000Z,LjL,ikonia,look at your backscroll
+2007-06-01T16:52:00.000Z,LjL,ikonia,"how so? Metabot is in PHP, and i have no apache :)"
+2007-06-01T05:00:00.000Z,ikonia,LjL,don't be silly
+2007-06-05T16:42:00.000Z,LjL,ikonia,"BDBMX: it lists a hash that doesn't correspond to any password, i'd rather say"
+2007-06-05T16:42:00.000Z,ikonia,LjL,thats a better desciption
+2007-06-05T15:27:00.000Z,ikonia,LjL,that factoid is a life saver
+2007-06-05T15:28:00.000Z,LjL,ikonia,"of course, i made it."
+2007-09-26T15:17:00.000Z,LjL,ikonia,"nope, deprecated (but it will work - i mean, not work - just as the $() )"
+2007-09-26T15:17:00.000Z,ikonia,LjL,I follow
+2007-11-28T04:21:00.000Z,ikonia,LjL,again please.
+2007-12-09T23:30:00.000Z,LjL,ikonia,"well, 'it's not reading it' isn't a question to begin with"
+2007-12-09T23:30:00.000Z,ikonia,LjL,"true, thats why I wanted to understand if it was actually failing rather than just not working as expected"
+2007-12-11T19:02:00.000Z,LjL,ikonia,"UUID=56E06E36E06E1D0D /media/DVD      ntfs    defaults,user,umask=007,gid=46 0       1"
+2007-12-11T19:03:00.000Z,ikonia,LjL,thanks
+2007-12-11T19:03:00.000Z,ikonia,LjL,media dvd ?
+2007-12-11T19:03:00.000Z,ikonia,LjL,how far have you progressed this with him (don't want to setp on your toes)
+2007-12-11T19:04:00.000Z,LjL,ikonia,"i just don't have a clue. i guess /media/DVD is just a name, and he seems to be saying that it *does* mount manually (although it requires root privileges), so i was assuming the UUID was correct"
+2007-12-11T19:05:00.000Z,ikonia,LjL,any mount is going to require root unless its setup as a user mount
+2007-12-11T19:05:00.000Z,LjL,ikonia,"but the line does say 'user'. it also says 'defaults' which, as far as i'm aware, implies 'auto'"
+2007-12-11T19:05:00.000Z,ikonia,LjL,umount it and do a mount -a see what happens
+2007-12-11T19:06:00.000Z,ikonia,LjL,or a 'sudo mount -a' I should say
+2007-12-11T19:06:00.000Z,ikonia,LjL,apologies if I've covering old ground
+2007-12-11T19:06:00.000Z,LjL,ikonia,no not really
+2007-12-11T19:14:00.000Z,ikonia,LjL,undauntedspirit: the 'defaults' option sets 'rw' ntfs driver does not support 'read write' you need 'user ro'
+2007-12-11T19:14:00.000Z,LjL,ikonia,"undauntedspirit seems to have left... but, i see. but didn't Gutsy support ntfs rw out of the box now?"
+2007-12-11T19:15:00.000Z,ikonia,LjL,the driver is ntfs-3g not ntfs for read write
+2007-12-11T19:15:00.000Z,LjL,ikonia,"right... he had said that the fstab line is 'just like the other ntfs lines he has', but i guess that's not entirely accurate."
+2007-12-11T19:16:00.000Z,ikonia,LjL,"so ntfs-3f user default would work or, ntfs user ro"
+2007-12-11T19:16:00.000Z,ikonia,LjL,yup
+2007-12-11T19:16:00.000Z,ikonia,LjL,"dissapointed he's gone,"
+2007-12-14T04:37:00.000Z,ikonia,LjL,he doesn't
+2007-12-14T04:37:00.000Z,ikonia,LjL,standard issue randomness
+2007-12-14T04:42:00.000Z,LjL,ikonia,"kbrooks, Jack_Sparrow: please take it to -offtopic or somewhere now"
+2007-12-14T04:42:00.000Z,ikonia,LjL,its done
+2007-12-15T22:59:00.000Z,LjL,ikonia,"no, i pressed Enter to search for his messages, but banned instead since i'd closed the search dialog and had his +b already typed"
+2007-12-15T22:59:00.000Z,ikonia,LjL,no problem
+2007-12-15T23:00:00.000Z,ikonia,LjL,thank you for explaining
+2007-12-17T05:06:00.000Z,ikonia,LjL,Mark761966 please.
+2008-01-09T19:50:00.000Z,ikonia,LjL,what's happened to your font ?
+2008-01-09T19:51:00.000Z,LjL,ikonia,my font? (by the way DC++ is not torrent)
+2008-01-09T19:51:00.000Z,ikonia,LjL,"your font went all funny, on your lasst post"
+2008-01-09T19:51:00.000Z,LjL,ikonia,explain
+2008-01-09T19:51:00.000Z,ikonia,LjL,see you in -op
+2008-01-18T20:53:00.000Z,ikonia,LjL,it only makes a direcotry if hal/dbus is aware
+2008-01-18T20:54:00.000Z,LjL,ikonia,but from the backlog i seem to understand that the /media directory is there already
+2008-01-18T20:55:00.000Z,ikonia,LjL,I didn't see that part
+2008-01-22T19:25:00.000Z,LjL,ikonia,as slowly as plausible?
+2008-01-22T19:26:00.000Z,ikonia,LjL,obviously
+2008-01-26T02:12:00.000Z,ikonia,LjL,I wasted 2 hours with him yesterday
+2008-01-26T02:12:00.000Z,LjL,ikonia,let's waste some more
+2008-01-26T02:43:00.000Z,ikonia,LjL,I think there was a problem with the index file containing some of the java stuff
+2008-01-26T02:44:00.000Z,ikonia,LjL,people commented on it the other day when some packages where rebuilt
+2008-01-26T02:44:00.000Z,LjL,ikonia,"elaborate? which java stuff? the ppc one? i'm testing this on i386, and it worked until, well, yesterday or so"
+2008-01-26T02:44:00.000Z,LjL,ikonia,"'301 moved permanently' though, that's a little weird in my mind... especially since i can browse the place fine"
+2008-01-26T02:44:00.000Z,ikonia,LjL,"ahh no, this wasn't java - this was just some PPC packages only that had been rebuilt and the index file wasn't updated"
+2008-01-26T02:44:00.000Z,ikonia,LjL,different error
+2008-02-06T02:20:00.000Z,LjL,ikonia,"brobostigon: i thought there was a decompiler in the repos, but i either imagined it, or it's been removed. anyway, it's pretty clear you can never get back the original source (with meaningful variable names and loop structures, etc), the best a decompiler would give you is some correct, but unintelligible, C code"
+2008-02-06T02:21:00.000Z,ikonia,LjL,"exactly - technically you can, in reality not really"
+2008-04-28T20:26:00.000Z,LjL,ikonia,"wad: 'properly', i don't know, but i think OpenProj imports MS"
+2008-04-28T20:27:00.000Z,ikonia,LjL,"that will load it, but I've found tasks mangled with it depending on their complexityy"
+2008-04-28T20:27:00.000Z,LjL,ikonia,"well, better than nothing i guess... i don't think i found any other that imports the format"
+2008-04-28T20:28:00.000Z,ikonia,LjL,totally agreed
+2008-04-28T21:42:00.000Z,ikonia,LjL,can you do it with jack ?
+2008-04-28T21:43:00.000Z,LjL,ikonia,don't know... jack what?
+2008-04-28T21:43:00.000Z,ikonia,LjL,the application 'jack'
+2008-04-28T21:44:00.000Z,LjL,ikonia,"ah, not the sound system 'jack'... not sure, isn't that just intended to rip CDs?"
+2008-04-28T21:44:00.000Z,ikonia,LjL,I thought it was a an audio device interface too
+2008-04-28T21:46:00.000Z,LjL,ikonia,"no, doesn't have that feature according to the manpage"
+2008-04-28T21:46:00.000Z,ikonia,LjL,"rats, I wasn't certain"
+2008-04-28T21:47:00.000Z,LjL,ikonia,"although sox *really* should do it, anyway... there must be some subtlety i'm missing"
+2008-04-28T21:48:00.000Z,ikonia,LjL,I'm not massive with sox
+2008-04-29T19:29:00.000Z,ikonia,LjL,ram +%15 overhead is the rule I get lecture about in best practice coures
+2008-10-02T19:01:00.000Z,LjL,ikonia,"if i were a certain op, i'd ask you whether you're repelling boarders"
+2008-10-06T18:23:00.000Z,ikonia,LjL,;)
+2008-10-10T04:12:00.000Z,ikonia,LjL,"thanks, appriciated"
+2008-10-10T04:11:00.000Z,ikonia,LjL,please stop that langauge
+2008-10-10T04:11:00.000Z,LjL,ikonia,i'll try
+2008-10-10T04:11:00.000Z,ikonia,LjL,sorry
+2008-10-10T04:11:00.000Z,LjL,ikonia,"well, i've complied, no? ;)"
+2008-10-15T03:12:00.000Z,LjL,ikonia,"hey, my server's got a wireless card to provide wireless connectivity to me!"
+2008-10-15T03:12:00.000Z,ikonia,LjL,please stop being the exception
+2008-11-06T20:19:00.000Z,LjL,ikonia,"qtopia is a wonderful little environment that was, surely, developed for PDAs, but nobody stops you from using it on a 'real' computer. well, except of course that packages for it have disappeared from Debian, and there's been an awful trademarks/copyright/forking dispute. but GPE, the other project that was from handhelds.org, is *currently* in debian and ubuntu."
+2008-11-06T20:20:00.000Z,ikonia,LjL,"qtopia is not 'handhelds' though, he wanted a server install, so what has qtopia got to offer on a server install thats already low on ram"
+2008-11-10T02:33:00.000Z,ikonia,LjL,"telnet to port 80 and do a get, see if it's apache thats listening"
+2008-11-10T02:34:00.000Z,LjL,ikonia,he said he'd already tried telnet
+2008-11-10T02:34:00.000Z,ikonia,LjL,I missed that
+2008-11-10T02:36:00.000Z,ikonia,LjL,ahhh good call
+2008-11-21T00:06:00.000Z,LjL,ikonia,why not?
+2008-11-21T00:06:00.000Z,LjL,ikonia,"no, but he's got *.debs* in a folder, so dpkg -i *"
+2008-11-21T00:06:00.000Z,ikonia,LjL,ahh I missed that part
+2008-11-21T00:06:00.000Z,LjL,ikonia,"(well, dpkg -i *.deb would be a much better idea of course)"
+2008-11-22T00:14:00.000Z,ikonia,LjL,I meant
+2008-11-26T21:58:00.000Z,LjL,ikonia,"Crusher: it's not even called Ubuntu Ultimate, it's called Ultimate Edition"
+2008-11-26T21:58:00.000Z,ikonia,LjL,of crouse
+2008-12-09T19:24:00.000Z,LjL,ikonia,is that a LAN?
+2008-12-09T19:24:00.000Z,ikonia,LjL,vpn over a lan
+2008-12-09T19:24:00.000Z,ikonia,LjL,vpn lan over internet sorry
+2008-12-09T19:24:00.000Z,LjL,ikonia,"ah, ok. if it had been a real LAN, i'd have felt that 'slow' would have been entirely an understatement..."
+2008-12-09T19:25:00.000Z,ikonia,LjL,still not great over the net
+2008-12-09T19:25:00.000Z,LjL,ikonia,"certainly not, i get better pings when i'm talking to australia"
+2008-12-09T19:26:00.000Z,ikonia,LjL,I wonder if he can't ping due to the timeout
+2008-12-09T19:26:00.000Z,LjL,ikonia,that can be tested with the -W option of ping
+2008-12-09T19:27:00.000Z,ikonia,LjL,just got that now
+2008-12-09T19:27:00.000Z,LjL,ikonia,"although i always had the feeling that the default timeout was infinite, but i might be wrong"
+2008-12-09T19:27:00.000Z,ikonia,LjL,nah not infinate
+2008-12-10T21:32:00.000Z,ikonia,LjL,"he's got a proxy setting for tor in his env, but as tor is not running it's causing an issue"
+2008-12-10T21:32:00.000Z,LjL,ikonia,"he's probably got a proxy setting for Privoxy though, not Tor itself"
+2008-12-10T21:32:00.000Z,ikonia,LjL,correct
+2008-12-10T21:33:00.000Z,ikonia,LjL,nice idea
+2009-03-06T20:36:00.000Z,LjL,ikonia,"ubuntu has switched to the hurd now, didn't you know?"
+2009-03-06T20:36:00.000Z,LjL,ikonia,it's linux-image
+2009-03-06T20:36:00.000Z,ikonia,LjL,whats the darn package name - I'm on a centos box here
+2009-03-06T20:37:00.000Z,ikonia,LjL,thanks
+2009-03-06T21:01:00.000Z,ikonia,LjL,macforlin automatix style scripts have been deployed
+2009-03-06T21:01:00.000Z,LjL,ikonia,"yeah i've noticed that, although i have no idea just how bad those are. but anyway, worth trying a debsums i think"
+2009-03-06T21:02:00.000Z,ikonia,LjL,"go for it, just didn't know if you'd seen the delightful scripts,"
+2009-03-06T21:02:00.000Z,LjL,ikonia,"i haven't seen the scripts, no, just seen in the backscroll he used mac4lin"
+2009-03-10T21:35:00.000Z,LjL,ikonia,ndiswrapper i suspect?
+2009-03-10T21:35:00.000Z,ikonia,LjL,probably
+2009-03-24T19:49:00.000Z,LjL,ikonia,"i beg to differ on it not mattering, the logical start of a HD is usually noticeably faster than the end"
+2009-03-24T19:49:00.000Z,ikonia,LjL,"for his purpose I doubt it will matter, I do take your point though"
+2009-03-24T19:50:00.000Z,LjL,ikonia,i have my swap partition as the first partition on my HD for that very reason
+2009-04-03T20:46:00.000Z,LjL,ikonia,he will
+2009-04-03T20:46:00.000Z,ikonia,LjL,"should be fine,"
+2009-04-03T20:46:00.000Z,ikonia,LjL,sorry
+2009-04-17T19:16:00.000Z,ikonia,LjL,thank you
+2009-04-20T22:22:00.000Z,LjL,ikonia,AGH at your banmasks
+2009-04-20T22:23:00.000Z,ikonia,LjL,41.* ?
+2009-04-20T22:23:00.000Z,LjL,ikonia,"no, !@. that won't work"
+2009-10-28T03:35:00.000Z,LjL,ikonia,i think so
+2009-11-06T03:42:00.000Z,LjL,ikonia,"r0b0t1, i guess"
+2009-11-06T03:42:00.000Z,ikonia,LjL,"froglet2 ooh yes, thank you"
+2010-05-21T02:38:00.000Z,LjL,ikonia,well yes it does
+2010-05-21T02:42:00.000Z,ikonia,LjL,"there was a placeholder, but I think it's as and when needed as you suggest"
+2010-06-16T02:28:00.000Z,LjL,ikonia,"it does seem from the screenshot that it's attempting to replace one version with the very same version, however..."
+2010-06-16T02:28:00.000Z,LjL,ikonia,http://imagebin.org/101468
+2010-07-13T00:45:00.000Z,LjL,ikonia,"seriously, stop flooding"
+2010-09-16T01:38:00.000Z,LjL,ikonia,yes
+2010-10-31T15:55:00.000Z,LjL,ikonia,is he?
+2010-10-31T15:55:00.000Z,ikonia,LjL,he's stopped
+2010-11-12T18:58:00.000Z,LjL,ikonia,"he is identified, and the channel is not +r"
+2010-11-12T18:59:00.000Z,ikonia,LjL,thanks
+2010-11-18T05:23:00.000Z,LjL,ikonia,^
+2010-11-22T19:45:00.000Z,ikonia,LjL,thanks
+2011-02-19T02:03:00.000Z,LjL,ikonia,so what part of it is not an ubuntu question?
+2011-02-19T02:03:00.000Z,ikonia,LjL,"the part that is asking what moonOS is, is it a distro or a desktop, and can ubuntu deal with it"
+2011-02-19T02:03:00.000Z,LjL,ikonia,"if it's a desktop environment, which he certainly has the right to wonder, and in that case if it runs in ubuntu, is an ubuntu question"
+2011-02-19T02:04:00.000Z,ikonia,LjL,"if it's a desktop environment sure, he can ask if ubuntu will work with it, but he's asking if anyone's used it and what it is"
+2011-02-19T02:04:00.000Z,ikonia,LjL,not here to research other distros
+2011-04-01T17:13:00.000Z,ikonia,LjL,"it get 'ok' sound out of it, nothing advanced, stero etc"
+2011-04-01T17:13:00.000Z,LjL,ikonia,you mean no stereo?
+2011-04-01T17:14:00.000Z,ikonia,LjL,"no, I get the basics, such as stereo"
+2011-04-01T17:14:00.000Z,LjL,ikonia,"ah. can you sample at 192kHz (assuming it supports that, i think it does but not quite sure)?"
+2011-04-01T17:15:00.000Z,ikonia,LjL,"it can play back at that, so I'd assume sample also"
+2011-04-01T17:16:00.000Z,LjL,ikonia,"some cards can play back at 192kHz but not sample. can you test this for me please?  'arecord -f dat -r 192000 -D hw:0,0 -d 5 test.wav'. if it doesn't support 192kHz, it will say that the 'requested' sample rate is different from what you 'got'"
+2011-04-01T17:16:00.000Z,ikonia,LjL,"not got access to that box at the moment, it's my desktop that's powered off"
+2011-04-01T17:16:00.000Z,ikonia,LjL,I can do it for you though if you remind me
+2011-04-01T17:16:00.000Z,LjL,ikonia,"ok i'll remind you later then, thanks"
+2011-04-12T18:27:00.000Z,LjL,ikonia,"he hasn't removed dhcp yet, which is what he was asking about, he's only removed network manager which i believe he had done before coming here"
+2011-04-12T18:27:00.000Z,ikonia,LjL,"I see that, but I think network manager is also a dep of the desktop.....not %100 certain without checking"
+2011-04-12T18:28:00.000Z,LjL,ikonia,"uhm well that's probably why it's only asking to remove ubuntu-minimal, ubuntu-desktop may already have been removed..."
+2011-05-02T03:23:00.000Z,ikonia,LjL,12 per arch I believe
+2011-05-02T03:23:00.000Z,LjL,ikonia,only?
+2011-05-02T03:24:00.000Z,ikonia,LjL,a whole release is about 60GB
+2011-05-02T03:40:00.000Z,LjL,ikonia,"abadadon: i must be doing something wrong. i listed the (compressed) package size for all packages in my apt-cache, and the total is short of 5gb =)"
+2011-06-29T18:36:00.000Z,ikonia,LjL,there is a model with the ati card in which falls into the ati black screen trap
+2011-09-25T16:18:00.000Z,LjL,ikonia,probably http://en.wikipedia.org/wiki/Intel_Turbo_Boost
+2011-09-25T16:18:00.000Z,ikonia,LjL,but that's a hardware thing ?
+2011-09-25T16:19:00.000Z,LjL,ikonia,the OS needs to activate it
+2011-12-20T03:05:00.000Z,LjL,ikonia,"if he can shrink it, then it's not mounted, is it? otherwise he wouldn't be able to work on it at all"
+2011-12-20T03:05:00.000Z,ikonia,LjL,not sure to be honest
+2011-12-20T03:05:00.000Z,ikonia,LjL,"I thought you could shrink a mounted partition in gparted as long as there is file system space, it won't take effect until the next reboot"
+2011-12-20T03:06:00.000Z,LjL,ikonia,"oh, i see"
+2011-12-21T18:41:00.000Z,ikonia,LjL,if you can get the size of the partition table (512kb ?) that should be enough to not touch the data too
+2011-12-21T18:37:00.000Z,ikonia,LjL,"it will destory it, but it will fix your ubiquity issue"
+2011-12-21T18:40:00.000Z,LjL,ikonia,"well i don't want it destroyed. why do you think it will? i mean, obviously it will, but after restoring that imaged megabyte do you see any reason why it wouldn't be back to working?"
+2011-12-21T18:40:00.000Z,ikonia,LjL,"ahhh, you're going to restore it"
+2011-12-21T18:40:00.000Z,ikonia,LjL,"I missed that part, you should be fine, you'll have to be careful with block size and count, but it should be 'ok'"
+2011-12-21T18:41:00.000Z,LjL,ikonia,"ok. i'd image it all, but i tried yesterday and it just takes too long"
+2011-12-23T01:09:00.000Z,LjL,ikonia,"uh, as far as i knew daemons can and do log to syslog"
+2011-12-23T01:09:00.000Z,ikonia,LjL,"anything 'can' syslog, just do 'logger' for example,"
+2011-12-23T01:21:00.000Z,ikonia,LjL,thank god for your  sanityu
+2011-12-23T01:22:00.000Z,ikonia,LjL,sanity
+2011-12-23T01:22:00.000Z,ikonia,LjL,you are the only other person I've seen not saying 'use ntfsfix'
+2011-12-23T01:22:00.000Z,LjL,ikonia,heh
+2012-01-20T16:54:00.000Z,ikonia,LjL,normally /etc/passwd~ not .lock
+2012-01-20T16:55:00.000Z,LjL,ikonia,"uhm, vipwd creates an /etc/passwd.lock here"
+2012-01-20T16:55:00.000Z,ikonia,LjL,"never used vipwd, so don't know if that is vipwd specific"
+2012-01-20T16:55:00.000Z,LjL,ikonia,vipw*
+2012-01-20T19:06:00.000Z,ikonia,LjL,beat me to it
+2012-01-23T20:38:00.000Z,LjL,ikonia,'gambas' is pretty much like VB
+2012-01-23T20:38:00.000Z,ikonia,LjL,"Hmmm, maybe, I guess"
+2012-01-23T20:39:00.000Z,LjL,ikonia,"reloaded__: yes, and Gambas does offer SQL support"
+2012-01-25T16:05:00.000Z,LjL,ikonia,bullgard4: isn't that message shown when the package is in Universe rather than in Main?
+2012-01-25T16:06:00.000Z,LjL,ikonia,the package is in Universe for me
+2012-01-25T16:22:00.000Z,LjL,ikonia,the package description has not changed. that message must be something from Synaptic itself.
+2012-01-25T16:25:00.000Z,ikonia,LjL,"sorry, got disconnected then, as you suggesting synaptic has appending/not appending that message"
+2012-01-25T16:25:00.000Z,LjL,ikonia,"well i'm not a Synaptic user so i don't know, but yes that's what i suspect. i know it's not in the actual description, because i checked that on http://packages.ubuntu.com/ and it's unchanged"
+2012-01-26T17:25:00.000Z,LjL,ikonia,"it's not a package manager, it's a 'make' replacement"
+2012-01-31T17:18:00.000Z,ikonia,LjL,"cross channel, same spam"
+2012-02-13T02:27:00.000Z,ikonia,LjL,"it's set when you create the partitions, you set the type when you set the file system to 'swap'"
+2012-02-13T02:28:00.000Z,LjL,ikonia,"yeah that's what i said, but he said he only had 'logical' and 'primary' as options. i'm not familiar enough with the alternate installer to guide him exactly."
+2012-03-19T18:37:00.000Z,LjL,ikonia,i really seem to recall you can copy and paste from it by default
+2012-03-19T18:38:00.000Z,LjL,ikonia,"the 'clipboard' as i always knew it is simply the copypaste buffer, might or might not support multiple items..."
+2012-03-19T18:38:00.000Z,ikonia,LjL,just a wording miss-understanding
+2012-03-23T15:58:00.000Z,LjL,ikonia,julia_still_: maybe it just needs passive mode?
+2012-03-23T15:58:00.000Z,ikonia,LjL,not for connection refused
+2012-03-23T15:58:00.000Z,ikonia,LjL,you'd get a time out on transfer if passive mode was neededd
+2012-03-23T15:58:00.000Z,ikonia,LjL,the initial port 21 connection should still be fine
+2012-03-23T16:01:00.000Z,ikonia,LjL,"that makes sense, no initial port 21 connect, so passive won't make a difference"
+2012-03-23T18:15:00.000Z,ikonia,LjL,they put the ext defragger back in ?
+2012-03-23T18:16:00.000Z,LjL,ikonia,"ljt: wait no, i'm sorry, this 'defragmenter' is only used with extent-based files, it doesn't really defragment the filesystem"
+2012-04-12T16:02:00.000Z,ikonia,LjL,ping
+2012-07-04T20:11:00.000Z,ikonia,LjL,too quick for me
+2012-07-12T15:01:00.000Z,ikonia,LjL,is universe supposed to be enabled by default ?
+2012-07-12T15:02:00.000Z,LjL,ikonia,"yes, since a few releases"

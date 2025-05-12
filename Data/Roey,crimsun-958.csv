@@ -1,0 +1,959 @@
+date,from,to,text
+2005-03-24T08:29:00.000Z,crimsun,,why is roey here? ;-)
+2005-03-24T08:30:00.000Z,Roey,crimsun, I wanted to find evdev support for X
+2005-03-24T08:30:00.000Z,Roey,crimsun, :)
+2005-03-24T08:30:00.000Z,crimsun,Roey,"yeah, it's nice. :-)"
+2005-03-24T08:31:00.000Z,Roey,crimsun, I'm wondering whether to install alioth's debian-amd64 repo or ubuntu
+2005-03-24T08:31:00.000Z,Roey,crimsun," see, I'm done with this xfree86.  I don't want it."
+2005-04-01T10:06:00.000Z,crimsun,Roey,"hey now, I'm checking lastlog"
+2005-04-01T10:06:00.000Z,Roey,crimsun, :)
+2005-04-01T10:06:00.000Z,crimsun,Roey,pfft. You're supposed to pass --initrd
+2005-04-01T10:07:00.000Z,Roey,crimsun,"to what, the kernel building process? :)"
+2005-04-01T10:07:00.000Z,crimsun,Roey,to fakeroot make-kpkg
+2005-04-01T10:07:00.000Z,Roey,crimsun,that's a command?!
+2005-04-01T10:07:00.000Z,crimsun,Roey,see make-kpkg(1) !
+2005-04-01T10:08:00.000Z,Roey,crimsun,thanks!!!!
+2005-04-01T10:11:00.000Z,Roey,crimsun,I read the make-kpkg docs but I don't understand what 'fakeroot' refers to. How do I know which files to put in that fakeroot directory???
+2005-04-01T10:11:00.000Z,crimsun,Roey,use fakeroot instead of running it as root or as a user
+2005-04-01T10:11:00.000Z,Roey,crimsun,upon boot you mean?
+2005-04-01T10:11:00.000Z,Roey,crimsun,and that 'fakeroot' is a flag
+2005-04-01T10:11:00.000Z,crimsun,Roey,"nope, when you run make-kpkg"
+2005-04-01T10:12:00.000Z,Roey,crimsun,ok.. so it's a flag?
+2005-04-01T10:12:00.000Z,crimsun,Roey,it's a command
+2005-04-01T10:12:00.000Z,Roey,crimsun,aaah.
+2005-04-01T10:12:00.000Z,Roey,crimsun,so I'd do:  make-kpkg fakeroot --initrd vmlinuz-2.6.11.5
+2005-04-01T10:12:00.000Z,crimsun,Roey,"no, fakeroot make-kpkg --initrd ...."
+2005-04-01T10:12:00.000Z,Roey,crimsun,then what about System.map-2.6.11.5 ?
+2005-04-01T10:13:00.000Z,Roey,crimsun,ah.
+2005-04-01T10:13:00.000Z,crimsun,Roey,I'm fairly certain you want fakeroot make-kpkg --initrd             make-kpkg --rootcmd fakeroot kernel_image
+2005-04-01T10:13:00.000Z,crimsun,Roey,"err, fakeroot make-kpkg --initrd kernel_image"
+2005-04-01T10:14:00.000Z,crimsun,Roey,"sorry, paste went wonky there"
+2005-04-01T10:14:00.000Z,Roey,crimsun,ok
+2005-04-01T10:14:00.000Z,Roey,crimsun,how does make-kpkg know where the System.map file is for the corresponding kernel_image ?
+2005-04-01T10:15:00.000Z,crimsun,Roey,they're named matching the respective uname -r
+2005-04-01T10:15:00.000Z,Roey,crimsun,aaaah ok.
+2005-04-01T10:15:00.000Z,Roey,crimsun,"hmm, I dunno what the uname -r name of this fresh bzImage is.. how can I find out?"
+2005-04-01T10:16:00.000Z,crimsun,Roey,look at Makefile's VERSION+PATCHLEVEL+SUBLEVEL+EXTRAVERSION
+2005-04-01T10:19:00.000Z,Roey,crimsun,that fakeroot command gave this error:
+2005-04-01T10:19:00.000Z,Roey,crimsun,Error: unknown target vmlinuz-2.6.11.5
+2005-04-01T10:20:00.000Z,crimsun,Roey,don't pass it that.
+2005-04-01T10:20:00.000Z,Roey,crimsun,that's what strings showed me.
+2005-04-01T10:20:00.000Z,Roey,crimsun,will look in makefile now.
+2005-04-01T10:20:00.000Z,crimsun,Roey,"your uname -r will be '2.6.11.5', yes"
+2005-04-01T10:20:00.000Z,crimsun,Roey,but you don't pass that to make-kpkg
+2005-04-01T10:21:00.000Z,Roey,crimsun,then how does it know which image to generate the rdinit on???
+2005-04-01T10:21:00.000Z,crimsun,Roey,"when you build a kernel, it uses that one"
+2005-04-01T10:22:00.000Z,Roey,crimsun,how does it know where this newly built kernel image is?
+2005-04-01T10:22:00.000Z,crimsun,Roey,that's what kernel-package does
+2005-04-01T10:22:00.000Z,crimsun,Roey,"if you want to run mkinitrd manually, then don't use make-kpkg"
+2005-04-01T10:22:00.000Z,crimsun,Roey,i.e. for an already-compiled (manually) vmlinuz
+2005-04-01T10:23:00.000Z,Roey,crimsun,"I have no idea how to do this then.  All I want to do is to add a kernel image to grub, and I understand that I need an initrd.img..."
+2005-04-01T10:23:00.000Z,Roey,crimsun,"yes, my linux is already compiled."
+2005-04-01T10:23:00.000Z,crimsun,Roey,you don't necessarily need an initrd if you compiled the root fs in as 'y'
+2005-04-01T10:24:00.000Z,Roey,crimsun,it's whatever ubuntu's 2.6.10-5-amd64-generic  says
+2005-04-01T10:24:00.000Z,Roey,crimsun,also I have raid
+2005-04-01T10:24:00.000Z,Roey,crimsun,/ and /boot are on raid.
+2005-04-01T10:25:00.000Z,Roey,crimsun,grub chokes on startup and thinks that it can't open /dev/md2 because it cannot read an ext2 superblock or something
+2005-04-01T10:25:00.000Z,Roey,crimsun,"(but I end up mounting /dev/md2 onto /boot manually, and mount is fine with that)"
+2005-04-01T10:27:00.000Z,crimsun,Roey,"hmm, it would have been easiest to apt-get source linux-image-2.6.10-5-amd64-generic, modify the arches built and the config, and proceed"
+2005-04-01T10:28:00.000Z,crimsun,Roey,does the default ubuntu image work?
+2005-04-01T10:31:00.000Z,Roey,crimsun,didn't try yet.
+2005-04-01T10:32:00.000Z,Roey,crimsun,I actually built all the modules as per the default ubuntu kernel's /proc/config.gz states (I used that as a base for my .config).  How the heck am I gonna stuff all those modules into mkinitrd.img ;)
+2005-04-01T10:43:00.000Z,Roey,crimsun,"ok, this is not working:"
+2005-04-01T10:43:00.000Z,Roey,crimsun,I give this command:
+2005-04-01T10:43:00.000Z,Roey,crimsun,mkinitrd inird.img-2.6.11.5 vmlinuz-2.6.11.5
+2005-04-01T10:44:00.000Z,Roey,crimsun,it gives me a help screen.
+2005-04-01T10:44:00.000Z,Roey,crimsun,"blah, that's it."
+2005-04-01T10:45:00.000Z,Roey,crimsun,"is there a way to just add a freshly built kernel into the grub chain, without the hassle of mastering the Zen of rdimage?"
+2005-04-01T10:47:00.000Z,crimsun,Roey,"just configure /boot/grub/menu.lst, then make sure the kernel's in place, then run update-grub"
+2005-04-01T12:16:00.000Z,Roey,crimsun, hi
+2005-04-01T12:17:00.000Z,Roey,crimsun, it didn't work; I did the following command:  'mkrdinit -o /boot/rdinit.img-2.6.5.11   2.6.5.11; grub-update'.  That worked.  When I selected this new kernel from he GRUB menu I get this:
+2005-04-01T12:19:00.000Z,Roey,crimsun, there
+2005-04-01T12:20:00.000Z,crimsun,Roey,presuming you meant mkinitrd?
+2005-04-01T12:20:00.000Z,Roey,crimsun, right.
+2005-04-01T12:20:00.000Z,Roey,crimsun," mkinitrd, yes."
+2005-04-01T12:20:00.000Z,Roey,crimsun," actually, that's what happens normally with grub."
+2005-04-01T12:20:00.000Z,Roey,crimsun, the error when I booted my custom kernel is:
+2005-04-01T12:21:00.000Z,Roey,crimsun, http://rafb.net/paste/results/OcvP9T58.html
+2005-04-01T12:22:00.000Z,Roey,crimsun, is that.
+2005-04-01T12:25:00.000Z,crimsun,Roey,have you tried the default array-7 amd64 generic kernel?
+2005-04-03T09:58:00.000Z,crimsun,Roey,you're lying
+2005-04-03T09:59:00.000Z,crimsun,Roey,"main ships with memtest86+, universe ships with memtest86"
+2005-04-03T09:59:00.000Z,crimsun,Roey,"memtest86+ and memtest86, respectively"
+2005-04-03T10:00:00.000Z,Roey,crimsun, see above
+2005-04-03T10:00:00.000Z,crimsun,Roey,you don't have universe enabled.
+2005-04-03T10:00:00.000Z,crimsun,Roey,you don't have main enabled.
+2005-04-03T10:00:00.000Z,crimsun,Roey,oh no you don't. Try updating.
+2005-04-03T10:01:00.000Z,crimsun,Roey,and apt-cache policy memtest86 tells you...?
+2005-04-03T10:01:00.000Z,Roey,crimsun, shoudl I take 'restricted' out?
+2005-04-03T10:02:00.000Z,crimsun,Roey,restricted is necessary
+2005-04-03T10:02:00.000Z,crimsun,Roey,amd64?
+2005-04-03T10:03:00.000Z,Roey,crimsun, yes
+2005-04-03T10:03:00.000Z,crimsun,Roey,that's why.
+2005-04-03T10:03:00.000Z,crimsun,Roey,http://higgs.djpig.de/cgi-ubuntu/search_contents.pl?word=memtest86&searchmode=searchword&case=insensitive&version=hoary&arch=amd64
+2005-04-03T10:05:00.000Z,Roey,crimsun, those above.
+2005-04-03T10:05:00.000Z,Roey,crimsun, and the stupid default to kdm startup
+2005-04-03T10:05:00.000Z,Roey,crimsun, at least I could change that last one
+2005-04-03T10:05:00.000Z,crimsun,Roey,"well, you could help fix 'em... And honestly, maybe debian-amd64 is right for you."
+2005-04-03T10:06:00.000Z,Roey,crimsun, I need something for which I can use lilo without it spiting errors back in my face.
+2005-04-03T10:06:00.000Z,Roey,crimsun," I run lilo on my sata drive, I get:"
+2005-04-03T10:06:00.000Z,Roey,crimsun, 00:04:48 roey lilo
+2005-04-03T10:06:00.000Z,crimsun,Roey,does lilo in sid work properly?
+2005-04-03T10:07:00.000Z,Roey,crimsun, I had sid with kernel 2.6.7
+2005-04-03T10:07:00.000Z,crimsun,Roey,it'd be great if you could verify if it does{n't}
+2005-04-03T10:07:00.000Z,Roey,crimsun, which was before Jeff Garzick's libata superceded the old ata
+2005-04-03T10:07:00.000Z,Roey,crimsun, it's the kernel.
+2005-04-03T10:07:00.000Z,Roey,crimsun, I am almost sure.
+2005-04-03T10:08:00.000Z,crimsun,Roey,"so somewhere between 2.6.7 and 2.6.10, 'it' broke?"
+2005-04-03T10:08:00.000Z,Roey,crimsun," yes, because the ata code was switched with libata."
+2005-04-03T10:08:00.000Z,crimsun,Roey,have you reported this upstream on lkml and asked for CCs on replies?
+2005-04-03T10:08:00.000Z,Roey,crimsun, jeff garzick figured to re-implement sata using the scsi subsystem
+2005-04-03T10:09:00.000Z,Roey,crimsun, consequently all /dev/hdX's turned into /dev/sdX's.
+2005-04-03T10:09:00.000Z,Roey,crimsun," not yet, becuase I don't know what I'd ask."
+2005-04-03T10:09:00.000Z,crimsun,Roey,"tell them your precise situation, and be verbose with details. :)"
+2005-04-03T10:09:00.000Z,Roey,crimsun, sih
+2005-04-03T10:10:00.000Z,Roey,crimsun, it will end up being specific to my system somehow (somehwo in the blue fuck) and I wont' get anywhere.
+2005-04-03T11:01:00.000Z,crimsun,Roey,"psst, try to keep the DE wars outside ;)"
+2005-04-04T07:41:00.000Z,crimsun,Roey,that's fixed already.
+2005-04-04T07:41:00.000Z,crimsun,Roey,you no longer need the libmikmod/libesd0 workarounds.
+2005-04-04T07:43:00.000Z,Roey,crimsun," they don't have konq-plugins for example, in kubuntu."
+2005-04-04T07:45:00.000Z,crimsun,Roey,I don't see 3.4 for kdeaddons
+2005-04-04T07:45:00.000Z,crimsun,Roey,3.3.2 for amd64 didn't even build successfully until Feb 26th
+2005-04-04T07:46:00.000Z,Roey,crimsun, rushed...
+2005-04-04T07:46:00.000Z,crimsun,Roey,talk to the kubuntu guys
+2005-04-04T07:46:00.000Z,Roey,crimsun, I mean in general.
+2005-04-04T07:47:00.000Z,crimsun,Roey,meaning how?
+2005-04-04T07:47:00.000Z,Roey,crimsun, how what?
+2005-04-04T07:47:00.000Z,Roey,crimsun, what the problems are?
+2005-04-04T07:47:00.000Z,crimsun,Roey,sure.
+2005-04-04T07:48:00.000Z,crimsun,Roey,"keep in mind for universe packages, there are barely one dozen of us overseeing fifteen thousand packages."
+2005-04-04T07:48:00.000Z,Roey,crimsun, sure! understood!
+2005-04-04T07:48:00.000Z,Roey,crimsun, I want to get EVMS off my /boot.
+2005-04-04T07:50:00.000Z,crimsun,Roey,"simply likes kde, let's leave it at that."
+2005-04-04T07:50:00.000Z,Roey,crimsun, hi!
+2005-04-04T07:50:00.000Z,Roey,crimsun, how do get evms off /boot?
+2005-04-04T07:51:00.000Z,crimsun,Roey,"I have zero experience with evms, lvm, and the like."
+2005-04-04T07:51:00.000Z,Roey,crimsun," oh, ok."
+2005-04-06T10:10:00.000Z,crimsun,Roey,"k, let me know when apt-get finishes"
+2005-04-06T10:10:00.000Z,Roey,crimsun, ok
+2005-04-06T10:11:00.000Z,Roey,crimsun, http://rafb.net/paste/results/hI6YKR83.html
+2005-04-06T10:17:00.000Z,crimsun,Roey,"ok, that's not really a problem."
+2005-04-06T10:18:00.000Z,crimsun,Roey,but you would need to reboot into 2.6.10-5-amd64-generic
+2005-04-06T10:23:00.000Z,Roey,crimsun, I *am* in amd64-generic
+2005-04-06T10:24:00.000Z,crimsun,Roey,"err, duh.  I knew that when I say $(uname -r).  Silly me.  :)"
+2005-04-06T10:25:00.000Z,Roey,crimsun, er?
+2005-04-06T10:25:00.000Z,crimsun,Roey,just me realising my oversight.
+2005-04-06T10:25:00.000Z,Roey,crimsun, heh
+2005-04-06T10:27:00.000Z,crimsun,Roey,ok
+2005-04-06T10:28:00.000Z,crimsun,Roey,cd /usr/src/modules/wacom
+2005-04-06T10:28:00.000Z,Roey,crimsun,  ok
+2005-04-06T10:28:00.000Z,crimsun,Roey,fakeroot ./debian/rules kdist KVERS=$(uname -r) KSRC=/lib/modules/$(uname -r)/build/
+2005-04-06T10:31:00.000Z,Roey,crimsun, http://rafb.net/paste/results/yYKmFn11.html
+2005-04-06T10:31:00.000Z,Roey,crimsun, wacomcfg.h:25:22: X11/Xlib.h: No such file or directory
+2005-04-06T10:32:00.000Z,Roey,crimsun, preceeding lines:  mkdir .libs
+2005-04-06T10:32:00.000Z,crimsun,Roey,"yep, I see."
+2005-04-06T10:33:00.000Z,crimsun,Roey,sudo apt-get install libx11-dev libxi-dev
+2005-04-06T10:34:00.000Z,Roey,crimsun, Building wacom modules for Linux 2.6.11.5 (this may take a few minutes)...Done.   -- how did this happen?? I am not using 2.6.11.5...
+2005-04-06T10:34:00.000Z,Roey,crimsun, http://rafb.net/paste/results/XtcpTX72.html
+2005-04-06T10:34:00.000Z,crimsun,Roey,it's not intelligent in looking at /lib/modules/$(uname -r)/build
+2005-04-06T10:35:00.000Z,crimsun,Roey,ls -l /usr/src
+2005-04-06T10:36:00.000Z,Roey,crimsun, join #flood please?
+2005-04-06T10:38:00.000Z,crimsun,Roey,"ick, postinst blindly followed /usr/src/linux.  Bad package!"
+2005-04-06T10:38:00.000Z,crimsun,Roey,please use that fakeroot ./debian/rules ... command from above
+2005-04-06T10:39:00.000Z,Roey,crimsun, which?
+2005-04-06T10:40:00.000Z,crimsun,Roey,cd /usr/src/modules/wacom && fakeroot ./debian/rules kdist KVERS=$(uname -r) KSRC=/lib/modules/$(uname -r)/build/
+2005-04-06T10:40:00.000Z,Roey,crimsun," ok, that went fine"
+2005-04-06T10:40:00.000Z,Roey,crimsun, what was the difference this time??
+2005-04-06T10:41:00.000Z,Roey,crimsun, we didnt' touch the reference to 2.6.11.5 at all...
+2005-04-06T10:41:00.000Z,Roey,crimsun, the module is still being built for 2.6.5.11 no?
+2005-04-06T10:41:00.000Z,crimsun,Roey,It required certain X Window System headers to be present.
+2005-04-06T10:41:00.000Z,crimsun,Roey,"no, the module was just compiled against $(uname -r)"
+2005-04-06T10:41:00.000Z,Roey,crimsun, er... actually.. the X dev libraries were making wacom module for 2.6.11.5...
+2005-04-06T10:41:00.000Z,Roey,crimsun, aaaha perfect.
+2005-04-06T10:41:00.000Z,Roey,crimsun, does that mean the next time I load it... it loads the new wacom driver??
+2005-04-06T10:42:00.000Z,crimsun,Roey,that's the goal; we're not quite there yet.
+2005-04-06T10:42:00.000Z,crimsun,Roey,ls ../*.deb
+2005-04-06T10:43:00.000Z,Roey,crimsun, ../wacom-kernel-modules-2.6.10-5-amd64-generic_0.6.6-4_amd64.deb
+2005-04-06T10:44:00.000Z,crimsun,Roey,great.
+2005-04-06T10:44:00.000Z,crimsun,Roey,sudo dpkg --force-overwrite -i ../wacom-kernel-modules-2.6.10-5-amd64-generic_0.6.6-4_amd64.deb
+2005-04-06T10:44:00.000Z,Roey,crimsun, The wacom module must be loaded before the HID module.
+2005-04-06T10:45:00.000Z,crimsun,Roey,is that what it said?
+2005-04-06T10:46:00.000Z,Roey,crimsun, see #flood
+2005-04-06T10:46:00.000Z,Roey,crimsun, yeah
+2005-04-06T10:46:00.000Z,crimsun,Roey,yep.
+2005-04-06T10:46:00.000Z,crimsun,Roey,ok. One more thing: sudo apt-get install wacom-tools
+2005-04-06T10:47:00.000Z,Roey,crimsun, btw
+2005-04-06T10:47:00.000Z,Roey,crimsun, I don't see the HID module in /etc/modules
+2005-04-06T10:47:00.000Z,crimsun,Roey,that's ok.
+2005-04-06T10:47:00.000Z,Roey,crimsun," also the wacom module was not in /etc/modules, either."
+2005-04-06T10:47:00.000Z,Roey,crimsun, how will we know what loads first?
+2005-04-06T10:47:00.000Z,crimsun,Roey,"that, too, is ok."
+2005-04-06T10:48:00.000Z,crimsun,Roey,module-init-tools is intelligent
+2005-04-06T10:48:00.000Z,Roey,crimsun, ok
+2005-04-06T10:48:00.000Z,crimsun,Roey,"you just need to install wacom-tools, then reboot"
+2005-04-06T10:48:00.000Z,Roey,crimsun, btw the modules init stuff is all voodoo to me :)
+2005-04-06T10:48:00.000Z,Roey,crimsun, awesome
+2005-04-06T10:48:00.000Z,Roey,crimsun, this log is being saved btw.
+2005-04-06T10:48:00.000Z,crimsun,Roey,k
+2005-04-06T10:48:00.000Z,Roey,crimsun, i'll see if this works
+2005-04-06T10:49:00.000Z,Roey,crimsun, lemme reboot and try... do you think X will need any extra configuration by any chance?
+2005-04-06T10:50:00.000Z,crimsun,Roey,11) Edit your XF86Config-4 file as desribed in the linuxwacom Howto.
+2005-04-06T10:50:00.000Z,Roey,crimsun," that's all taken care of, in /etc/X11/xorg.conf"
+2005-04-06T10:50:00.000Z,Roey,crimsun," lemme see, neat ;)"
+2005-04-06T10:50:00.000Z,crimsun,Roey,k
+2005-04-06T10:50:00.000Z,Roey,crimsun," also, is it possible maybe to get my first problem working?"
+2005-04-06T10:51:00.000Z,Roey,crimsun, that error on startup that you or calc suggested I see #ubuntu-kernel for?
+2005-04-06T10:51:00.000Z,crimsun,Roey,Nvidia 1.0-7167?
+2005-04-06T10:51:00.000Z,Roey,crimsun, that's another one but the one I'm referring to is this error on startup:
+2005-04-06T10:51:00.000Z,Roey,crimsun, http://rafb.net/paste/results/KR63w564.html
+2005-04-06T10:55:00.000Z,Roey,crimsun, so basically that was me telling calc my bootup problem
+2005-04-06T10:55:00.000Z,Roey,crimsun, and it contains a reference to the boot error
+2005-04-06T10:56:00.000Z,Roey,crimsun, http://rafb.net/paste/results/2qaAZM82.html
+2005-04-06T10:57:00.000Z,crimsun,Roey,but you can continue booting after ^D^D ?
+2005-04-06T10:58:00.000Z,Roey,crimsun," yes, indeed."
+2005-04-06T10:58:00.000Z,crimsun,Roey,"I don't know much about md/lvm/evms, sorry."
+2005-04-06T10:59:00.000Z,Roey,crimsun, I don't know why the thing installed evms at all
+2005-04-06T10:59:00.000Z,Roey,crimsun,  I have the evms debug logs too
+2005-04-06T11:00:00.000Z,Roey,crimsun, ok lemme reboot.
+2005-04-06T13:14:00.000Z,Roey,crimsun, you're in demand dude
+2005-04-06T13:36:00.000Z,Roey,crimsun, yo
+2005-04-06T13:36:00.000Z,crimsun,Roey,yo
+2005-04-06T13:36:00.000Z,Roey,crimsun, have one tteeeeeeny tiny second?
+2005-04-06T13:36:00.000Z,Roey,crimsun, notice this in the error output I presented:
+2005-04-06T13:36:00.000Z,Roey,crimsun, /usr/bin/make -C /usr/src/linux M=/usr/src/modules/wacom/src/2.6.10
+2005-04-06T13:36:00.000Z,crimsun,Roey,k
+2005-04-06T13:36:00.000Z,Roey,crimsun, why is it looking at 2.6.10 and then 2.6.11.5??
+2005-04-06T13:37:00.000Z,Roey,crimsun, I even changed /boot/vmlinuz to point to the right kernel!!!!
+2005-04-06T13:37:00.000Z,crimsun,Roey,it's best to rm /usr/src/linux
+2005-04-06T13:37:00.000Z,Roey,crimsun, what do I need to redo?
+2005-04-06T13:37:00.000Z,crimsun,Roey,that symlink is wrecking havoc with the build script
+2005-04-06T13:38:00.000Z,Roey,crimsun, will it work without that file there?
+2005-04-06T13:38:00.000Z,crimsun,Roey,you should always explicitly tell the build script KSRC=/lib/modules/$(uname -r)/build/  KVERS=$(uname -r)
+2005-04-06T13:39:00.000Z,Roey,crimsun, ok..
+2005-04-06T13:40:00.000Z,Roey,crimsun, it builds! it builds!
+2005-04-06T13:55:00.000Z,Roey,crimsun, yo
+2005-04-06T13:55:00.000Z,Roey,crimsun, are you still here?
+2005-04-06T09:00:00.000Z,Roey,crimsun, hi!!!!
+2005-04-06T09:53:00.000Z,Roey,crimsun, ping
+2005-04-06T10:48:00.000Z,Roey,crimsun," so basically I forgot to make the 'wacom.ko' kernel module.  Since then it's gone downhill, I need your help to do this over again (shouldn't be too hard..)"
+2005-04-07T12:09:00.000Z,Roey,crimsun, better here?
+2005-04-07T12:10:00.000Z,crimsun,Roey,best here.
+2005-04-07T12:10:00.000Z,Roey,crimsun," so anyway, you have that link?"
+2005-04-07T12:10:00.000Z,crimsun,Roey,"read, and it looks like debian/rules is severely broken"
+2005-04-07T12:11:00.000Z,Roey,crimsun, ok
+2005-04-07T12:13:00.000Z,crimsun,Roey,you should file a bug against its BTS entry
+2005-04-07T12:13:00.000Z,Roey,crimsun, I don't know what to say there
+2005-04-07T12:16:00.000Z,crimsun,Roey,"the problem is that the conditional test for wacom.o fails to copy over the _other_ compiled modules, and for good reason, since the hid option is disabled by default in debian rules, so it won't copy over non-compiled modules"
+2005-04-07T12:17:00.000Z,crimsun,Roey,the easiest way to work around it presently is to copy over all the other modules
+2005-04-07T12:17:00.000Z,Roey,crimsun," that's just it, I can't find them anywhere"
+2005-04-07T12:18:00.000Z,crimsun,Roey,"that's because they're not copied over in debian/rules, like I said above"
+2005-04-07T12:18:00.000Z,Roey,crimsun," I meant, I can't find them in the src/"
+2005-04-07T12:18:00.000Z,Roey,crimsun, oh
+2005-04-07T12:18:00.000Z,Roey,crimsun," you mean,"
+2005-04-07T12:18:00.000Z,Roey,crimsun, copy the module sources
+2005-04-07T12:18:00.000Z,Roey,crimsun, and then build the new kernel completely
+2005-04-07T12:19:00.000Z,crimsun,Roey,"no, I meant fixing debian/rules.  Sec, I'll try to generate one for you."
+2005-04-07T12:30:00.000Z,crimsun,Roey,(working on it)
+2005-04-07T12:31:00.000Z,Roey,crimsun, ah ok
+2005-04-07T12:31:00.000Z,Roey,crimsun, I swear to god I will be very very very happy if kubuntu's next release addresses most of my issues
+2005-04-07T12:32:00.000Z,Roey,crimsun, I meant ubuntu
+2005-04-07T12:32:00.000Z,Roey,crimsun," (and the kubuntu packages as well, as I have issues with KDE there too)"
+2005-04-07T12:47:00.000Z,crimsun,Roey,is there a strict ordering for wacom.ko?
+2005-04-07T12:47:00.000Z,crimsun,Roey,or can you point me to a url?
+2005-04-07T12:47:00.000Z,Roey,crimsun, the order is that you have to load it before HID
+2005-04-07T12:48:00.000Z,Roey,crimsun," hmm, where did I find this.. one second."
+2005-04-07T12:49:00.000Z,crimsun,Roey,have you tried loading that new wacom?
+2005-04-07T12:51:00.000Z,Roey,crimsun," 'For kernel 2.6 and later, you almost certainly do not need the usbmouse module because it conflicts with the full usb hid driver, usbhid, which should be used in most cases. For kernel 2.4, I recommend you to build it.'"
+2005-04-07T12:51:00.000Z,Roey,crimsun, that's (1)
+2005-04-07T12:51:00.000Z,Roey,crimsun," (2), I'm stillt rying to find the loading order."
+2005-04-07T12:55:00.000Z,Roey,crimsun, http://rafb.net/paste/results/aVxQlJ89.html
+2005-04-07T12:55:00.000Z,Roey,crimsun, that's the order right there.
+2005-04-07T13:02:00.000Z,Roey,crimsun,  I will BRB
+2005-04-07T13:02:00.000Z,crimsun,Roey,ok.
+2005-04-07T13:02:00.000Z,Roey,crimsun," about mailing the maintainers,"
+2005-04-07T13:03:00.000Z,Roey,crimsun, we'll mail them your updated debian/rules?
+2005-04-07T13:03:00.000Z,Roey,crimsun," did you get that last link, btw"
+2005-04-07T13:03:00.000Z,crimsun,Roey,"no, this will be tailored for you.  Yes, I got it.  Following Hoary's release, I'll hack debian/rules properly and send it back 'upstream' to Debian."
+2005-04-07T13:04:00.000Z,Roey,crimsun, oh thank you *so* much
+2005-04-07T13:04:00.000Z,Roey,crimsun, do you have a grasp of what files need to be loaded when?
+2005-04-07T13:04:00.000Z,crimsun,Roey,"yep, only usbhid.ko is important, and that is handled already."
+2005-04-07T13:04:00.000Z,Roey,crimsun, so usbmouse and evdev and all that I don't really need?
+2005-04-07T13:04:00.000Z,crimsun,Roey,I'm just fixing debian/rules to copy over the other compiled modules
+2005-04-07T13:05:00.000Z,Roey,crimsun, ok
+2005-04-07T13:13:00.000Z,crimsun,Roey,ping me when you return
+2005-04-07T13:13:00.000Z,Roey,crimsun, pong
+2005-04-07T13:14:00.000Z,crimsun,Roey,replace your debian/rules with http://sh.nu/~crimsun/rules
+2005-04-07T13:16:00.000Z,crimsun,Roey,"make sure I've enabled the correct options, then run it with the appropriate arguments"
+2005-04-07T13:19:00.000Z,Roey,crimsun,  02:18:47 modules ls -l /lib/modules/2.6.10-5-amd64-generic/kernel/drivers/usb/input/usbhid.ko
+2005-04-07T13:19:00.000Z,Roey,crimsun, OK! looked like these things installed fianlly!
+2005-04-07T13:19:00.000Z,Roey,crimsun, lemme reboot.
+2005-04-07T13:21:00.000Z,Roey,crimsun, I am rebooting now.
+2005-04-07T13:43:00.000Z,crimsun,Roey,"no, it's in the linux-image"
+2005-04-07T13:35:00.000Z,Roey,crimsun,hi
+2005-04-07T13:35:00.000Z,crimsun,Roey,hi
+2005-04-07T13:35:00.000Z,Roey,crimsun,ping
+2005-04-07T13:35:00.000Z,Roey,crimsun,"HI crimsun,"
+2005-04-07T13:36:00.000Z,Roey,crimsun,"guess what, God really hates me"
+2005-04-07T13:36:00.000Z,Roey,crimsun,I rebooted and now I can't boot
+2005-04-07T13:36:00.000Z,Roey,crimsun,it says this:
+2005-04-07T13:37:00.000Z,Roey,crimsun, http://rafb.net/paste/results/a76TwZ20.html
+2005-04-07T13:38:00.000Z,crimsun,Roey,"that's not related to your modules, though.  What's your default kernel set to?"
+2005-04-07T13:38:00.000Z,crimsun,Roey,and the initrd?
+2005-04-07T13:39:00.000Z,Roey,crimsun,  -rw-r--r--  1 root root 1274601 Mar 24 10:00 vmlinuz-2.6.10-5-amd64-generic
+2005-04-07T13:39:00.000Z,Roey,crimsun,-rw-r--r--  1 root root 5025792 Mar 26 04:07 initrd.img-2.6.10-5-amd64-generic
+2005-04-07T13:39:00.000Z,Roey,crimsun,hmm... is initrd not matched to the kernel/
+2005-04-07T13:40:00.000Z,Roey,crimsun,the timestampsare different...
+2005-04-07T13:41:00.000Z,crimsun,Roey,it looks like your initrd has been fubared
+2005-04-07T13:41:00.000Z,crimsun,Roey,try reinstalling the initrd from the 2.6.10-5-amd64-generic linux-image
+2005-04-07T13:42:00.000Z,Roey,crimsun,apt-get install what?
+2005-04-07T13:42:00.000Z,Roey,crimsun,I will chroot into the old drive...one sec
+2005-04-07T13:42:00.000Z,crimsun,Roey,--reinstall linux-image-2.6.10-5-amd64-generic
+2005-04-07T13:42:00.000Z,Roey,crimsun,I did that yesterday after you logged out though
+2005-04-07T13:43:00.000Z,Roey,crimsun,I did apt-get install linux-image-2.6.10-5-amd64-generic
+2005-04-07T13:43:00.000Z,Roey,crimsun,is there a spearate initrd package or somethign?
+2005-04-07T13:45:00.000Z,crimsun,Roey,"CoC, dude..."
+2005-04-07T13:45:00.000Z,Roey,crimsun,I wanted to umount /mnt/md0 and it tells me it's busy
+2005-04-07T13:45:00.000Z,Roey,crimsun,and I mounted it only a minute ago
+2005-04-07T13:45:00.000Z,Roey,crimsun,I'm not even in it!
+2005-04-07T13:49:00.000Z,Roey,crimsun,http://rafb.net/paste/results/xVX5Jl72.html
+2005-04-07T13:51:00.000Z,crimsun,Roey,"yep, you'll have to --force-overwrite, remember?"
+2005-04-07T13:53:00.000Z,Roey,crimsun,ok
+2005-04-07T13:53:00.000Z,Roey,crimsun,it overwrote all the stuff we did but heh
+2005-04-07T13:53:00.000Z,Roey,crimsun,I can just rebuild it
+2005-04-07T13:54:00.000Z,Roey,crimsun,i will reboot now
+2005-04-07T14:19:00.000Z,Roey,crimsun,hi
+2005-04-07T14:19:00.000Z,crimsun,Roey,hi
+2005-04-07T14:21:00.000Z,Roey,crimsun, http://rafb.net/paste/results/QPbSIs30.html
+2005-04-07T14:21:00.000Z,Roey,crimsun,still it didn't boot.
+2005-04-07T14:22:00.000Z,crimsun,Roey,I really don't know the slightest regarding md/lvm/evms
+2005-04-07T14:28:00.000Z,Roey,crimsun,I see there are multiple kernel images... see this:
+2005-04-07T14:29:00.000Z,Roey,crimsun,http://rafb.net/paste/results/sdVfHg31.html
+2005-04-07T14:34:00.000Z,Roey,crimsun," given the /var/cache/apt/archives listing I showed you, is it possible that the kernel image I got yesterday and the initrd image that was installed by default are out of sync?"
+2005-04-07T14:35:00.000Z,crimsun,Roey,unlikely...
+2005-04-07T14:37:00.000Z,Roey,crimsun,"dan, where are you in the US?  california?"
+2005-04-07T14:37:00.000Z,crimsun,Roey,NC.
+2005-04-07T14:37:00.000Z,Roey,crimsun,aaaah so it's the same time as MD for you...
+2005-04-07T14:37:00.000Z,crimsun,Roey,indeed
+2005-04-07T14:38:00.000Z,Roey,crimsun, may I pm you?
+2005-04-07T14:38:00.000Z,crimsun,Roey,"if it's Ubuntu-related, I'd rather keep it in-channel"
+2005-04-07T14:39:00.000Z,Roey,crimsun,wanted to see if you could talk voice
+2005-04-07T14:40:00.000Z,crimsun,Roey,"heavily firewalled, sorry."
+2005-04-07T14:40:00.000Z,Roey,crimsun,Shouldn't getting the system in working order just take installing the right kernel?
+2005-04-07T14:40:00.000Z,crimsun,Roey,"if it worked from a Ubuntu-compiled kernel before, yes."
+2005-04-07T14:40:00.000Z,Roey,crimsun,"'talk on the phone', rather"
+2005-04-07T14:40:00.000Z,Roey,crimsun,yes it was the ubuntu image I downloaded....
+2005-04-07T14:41:00.000Z,Roey,crimsun,adn the thing doesn't boot
+2005-04-07T14:41:00.000Z,Roey,crimsun,so I'm wondering what can be wrong
+2005-04-07T14:44:00.000Z,crimsun,Roey,have you confirmed you're actually booting the correct kernel?
+2005-04-07T14:47:00.000Z,Roey,crimsun,how do I check?
+2005-04-07T14:48:00.000Z,crimsun,Roey,cat /proc/version
+2005-04-07T14:48:00.000Z,Roey,crimsun,well...I'm on a kanotix64 livecd now (remember I could't boot the system)
+2005-04-07T14:49:00.000Z,Roey,crimsun,"so the current kernel verison (kanotix, remmeber) is: Linux version 2.6.10-kanotix64-8 (root@Kanotix) (gcc version 3.3.5 (Debian 1:3.3.5-8)) #1 Wed Feb 2 20:30:09 CET 2005"
+2005-04-07T14:49:00.000Z,crimsun,Roey,so how about using the kanotix kernel and specifying your rootfs at the prompt?
+2005-04-07T14:49:00.000Z,crimsun,Roey,(similar to a rescue cd)
+2005-04-07T14:50:00.000Z,Roey,crimsun,because then...
+2005-04-07T14:50:00.000Z,Roey,crimsun,"1) I can't install the wacom drivers,"
+2005-04-07T14:50:00.000Z,Roey,crimsun,2) it still won't work (it'd give another error)
+2005-04-07T14:50:00.000Z,Roey,crimsun,the kanotix kernel also uses an rdinit image.
+2005-04-07T14:51:00.000Z,crimsun,Roey,(1) you only need to compile the drivers (installing can occur after you reboot into the proper kernel)
+2005-04-07T14:51:00.000Z,crimsun,Roey,(2) which is?
+2005-04-07T14:52:00.000Z,Roey,crimsun,I've already tried booting to kanotix.
+2005-04-07T14:54:00.000Z,Roey,crimsun,"lemme boot to the kanotix kernel and i'll tell you the error, ok?"
+2005-04-07T14:54:00.000Z,crimsun,Roey,ok
+2005-04-07T14:54:00.000Z,Roey,crimsun," btw, I thoguth you were in California b/c you were up right now"
+2005-04-07T15:05:00.000Z,Roey,crimsun,hello again
+2005-04-07T15:05:00.000Z,Roey,crimsun,so this is the message that I get when I boot kanotix kernel:
+2005-04-07T15:05:00.000Z,Roey,crimsun,"Kernel panic - not syncing \n VFS: Unable to mount root fs on unknown-block(9,2)"
+2005-04-07T15:06:00.000Z,crimsun,Roey,"erm, ok.  Can you try booting off the Kubuntu disc?"
+2005-04-07T15:06:00.000Z,Roey,crimsun,ok
+2005-04-07T15:07:00.000Z,Roey,crimsun,but kubuntu disc probably doesn't have the chroot and all that stuff.
+2005-04-07T15:07:00.000Z,Roey,crimsun,lemme do that now.
+2005-04-07T15:13:00.000Z,Roey,crimsun,hi
+2005-04-07T15:14:00.000Z,Roey,crimsun," ok, now I am in gnome/ubuntu (that's what I had for livecd)"
+2005-04-07T15:15:00.000Z,Roey,crimsun,should I just copy now the ubuntu kernel?
+2005-04-07T15:15:00.000Z,Roey,crimsun,does it matter if it is ubuntu/hoary or kubunt/hoary?
+2005-04-07T15:16:00.000Z,crimsun,Roey,"no, as long as the deb is present"
+2005-04-07T15:16:00.000Z,Roey,crimsun,ubuntu livecd doesn't seem to have a /var/cache/apt/archives
+2005-04-07T15:18:00.000Z,Roey,crimsun, do you know where thekernel package is in ubuntu?
+2005-04-07T15:18:00.000Z,Roey,crimsun,off the ubuntu livecd that is?
+2005-04-07T15:18:00.000Z,crimsun,Roey,"err, as a deb? I don't know"
+2005-04-07T15:18:00.000Z,Roey,crimsun,"(that iswhat you asked for, right?0"
+2005-04-07T15:19:00.000Z,crimsun,Roey,"I don't know if the livecd actually keeps a copy of the deb, which is what you'd need to dpkg -i"
+2005-04-07T15:19:00.000Z,Roey,crimsun,ok
+2005-04-07T15:20:00.000Z,Roey,crimsun, linux-image-2.6.10-4-amd64-generi 2.6.10-25.2                       Linux kernel image for version 2.6.10 on x86_64.
+2005-04-07T15:20:00.000Z,Roey,crimsun, ii  linux-image-amd64-generic         2.6.10-5                          Linux kernel image on x86_64.
+2005-04-07T15:20:00.000Z,Roey,crimsun,that's it
+2005-04-07T15:20:00.000Z,Roey,crimsun,that's the one I think.
+2005-04-07T15:32:00.000Z,Roey,crimsun,smurfix:  I reboot now.
+2005-04-07T15:31:00.000Z,Roey,crimsun,smurfix:   hopefully ubuntu's kernel can unzip the rdinit.gz
+2005-04-07T15:40:00.000Z,Roey,crimsun,smurfix:  didn't work
+2005-04-07T15:41:00.000Z,Roey,crimsun,"smurfix:  I get the same thing but with a diff. device number:   PANIC not syncing : VFS : unable to mount root fs on unknown-block(0,0)"
+2005-04-07T15:41:00.000Z,Roey,crimsun, are you around tomorrow?
+2005-04-07T15:41:00.000Z,Roey,crimsun,  I need to go to sleep
+2005-04-07T15:41:00.000Z,Roey,crimsun,  this is just *too* stupid
+2005-04-07T15:42:00.000Z,Roey,crimsun,  I don't get why LILO doesn't work for me
+2005-04-07T15:42:00.000Z,Roey,crimsun,  does LILO not know how to boot 64-bit kernels/!?
+2005-04-07T15:42:00.000Z,crimsun,Roey,"yes, I'll be around in ~12 hours"
+2005-04-07T15:43:00.000Z,Roey,crimsun,  ok
+2005-04-07T15:43:00.000Z,crimsun,Roey,"err, same time you have..."
+2005-04-07T10:36:00.000Z,Roey,crimsun,hi
+2005-04-07T14:44:00.000Z,Roey,crimsun,ping
+2005-04-08T16:14:00.000Z,Roey,crimsun,you here?
+2005-04-08T05:41:00.000Z,Roey,crimsun,yo
+2005-04-08T07:22:00.000Z,crimsun,Roey,pong
+2005-04-08T07:22:00.000Z,Roey,crimsun, hi!!!!
+2005-04-08T07:22:00.000Z,Roey,crimsun,  
+2005-04-08T07:23:00.000Z,Roey,crimsun," ok, I get this pivot_root error when I start up ubuntu kernel"
+2005-04-08T07:26:00.000Z,Roey,crimsun,mjt: http://rafb.net/paste/results/BCvGgc35.html
+2005-04-08T07:34:00.000Z,Roey,crimsun, about this pivot_root thing
+2005-04-08T07:34:00.000Z,Roey,crimsun, how to solve it?
+2005-04-08T07:34:00.000Z,Roey,crimsun, because then I can continue using stock ubuntu kernel
+2005-04-08T07:34:00.000Z,Roey,crimsun, btw mjt showed me that the initrd module was missing 'modprobe -k via_sata' in 'loadmodules' file.
+2005-04-08T07:35:00.000Z,Roey,crimsun, that had to be loaded before the softraid stuff
+2005-04-08T07:35:00.000Z,crimsun,Roey,so have you inserted into your initrd?
+2005-04-08T07:36:00.000Z,Roey,crimsun, YES
+2005-04-08T07:36:00.000Z,Roey,crimsun, and my custom kernel BOOTS
+2005-04-08T07:36:00.000Z,Roey,crimsun," HOWEVER, the Ubuntu kernle doesn't even get to that point.. that pivot error, see."
+2005-04-08T07:36:00.000Z,Roey,crimsun, couldja help me with that?
+2005-04-08T07:39:00.000Z,crimsun,Roey,"well, you could just use your custom kernel"
+2005-04-08T08:05:00.000Z,Roey,crimsun, hi
+2005-04-08T08:27:00.000Z,Roey,crimsun," hi, back at square 1 with the wacom modules -- I installed but they didn't work still..."
+2005-04-08T08:28:00.000Z,crimsun,Roey,using the custom debian/rules?
+2005-04-08T08:28:00.000Z,Roey,crimsun, ah! no
+2005-04-08T08:28:00.000Z,Roey,crimsun, lemme do that :)
+2005-04-08T08:28:00.000Z,Roey,crimsun," hehe, forgot"
+2005-04-08T08:29:00.000Z,Roey,crimsun, yeah it built them
+2005-04-08T08:29:00.000Z,Roey,crimsun, and dmesg shows that wacom loaded before usbhid
+2005-04-08T08:29:00.000Z,Roey,crimsun, still though it doesn't work -- the extra wacom bits are not registering in the 'wacdump' program
+2005-04-08T08:30:00.000Z,crimsun,Roey,"I really have no idea about wacom, that was just what I read would help"
+2005-04-08T08:30:00.000Z,Roey,crimsun, ok
+2005-04-08T08:32:00.000Z,Roey,crimsun," so yeah, I have no idea at this point"
+2005-04-08T11:34:00.000Z,Roey,crimsun, HI
+2005-04-08T11:37:00.000Z,crimsun,Roey,absolutely
+2005-04-08T11:37:00.000Z,crimsun,Roey,"in fact, 1.7.6 was just merged from sid last week"
+2005-04-11T08:27:00.000Z,Roey,crimsun, hi
+2005-04-11T08:28:00.000Z,Roey,crimsun, what are ya gonna do about this issue for those who boot off SATA drives... they need to have their SATA kernel modules in their initrd's 'loadmodules' or nothing works
+2005-07-05T12:18:00.000Z,Roey,crimsun, hey dude
+2007-02-20T09:10:00.000Z,crimsun,Roey,"see /usr/share/doc/upstart/README.Debian.gz, please."
+2007-02-20T09:10:00.000Z,Roey,crimsun," ok, thanks.  Long time no see Daniel!"
+2007-02-20T09:11:00.000Z,Roey,crimsun, but I don't /have/ an /etc/iittab on my Feisty system...
+2007-02-20T09:12:00.000Z,crimsun,Roey,so create one as the note says.
+2007-07-29T06:19:00.000Z,Roey,crimsun," it says snd-via82xx, and hi btw :)"
+2007-07-29T06:19:00.000Z,Roey,crimsun, loooooong time no see :)
+2007-07-29T06:19:00.000Z,Roey,crimsun, one sec
+2007-07-29T06:19:00.000Z,crimsun,Roey,via82xx != snd-via82xx
+2007-07-29T06:20:00.000Z,Roey,crimsun, what'st he kernel module for via then?
+2007-07-29T06:20:00.000Z,crimsun,Roey,the one you just mentioned
+2007-07-29T06:20:00.000Z,crimsun,Roey,(snd-via82xx if it's a Via mainboard that implements AC'97)
+2007-07-29T06:21:00.000Z,Roey,crimsun, well I do that.
+2007-07-29T06:21:00.000Z,Roey,crimsun, and amarok and mpg123 show that they're playing--amarok's frequency analyzer is humming away--but I don't hear no sound.
+2007-07-29T06:22:00.000Z,crimsun,Roey,"'don't hear no', eh?  Right.  Download and run http://www.trilug.org/~crimsun/alsa-info.sh"
+2007-07-29T06:23:00.000Z,Roey,crimsun," Daniel, you are too cool:  http://pastebin.ca/637559"
+2007-07-29T06:24:00.000Z,crimsun,Roey,"ok, so which audio device do you actually want to use?"
+2007-07-29T06:24:00.000Z,Roey,crimsun, how many do I have??
+2007-07-29T06:24:00.000Z,crimsun,Roey,"2.  The first one, AV710, is superior to the second one, V8237."
+2007-07-29T06:24:00.000Z,Roey,crimsun, how do I configure the av710 then?
+2007-07-29T06:25:00.000Z,crimsun,Roey,"well, are your headphones/speakers plugged into its output jacks?"
+2007-07-29T06:25:00.000Z,Roey,crimsun, I have my stereo receiver plugged directly into my digital audio out jack
+2007-07-29T06:25:00.000Z,crimsun,Roey,on which card?
+2007-07-29T06:26:00.000Z,Roey,crimsun, on my on-board
+2007-07-29T06:26:00.000Z,Roey,crimsun, and I only have one sound card
+2007-07-29T06:26:00.000Z,crimsun,Roey,the Via (V8237)?
+2007-07-29T06:26:00.000Z,Roey,crimsun," (the onboard one, that is)"
+2007-07-29T06:26:00.000Z,Roey,crimsun, right
+2007-07-29T06:26:00.000Z,crimsun,Roey,"um, you need to plug it into the other one..."
+2007-07-29T06:26:00.000Z,Roey,crimsun, it was working fine the moment before I installed Kubuntu.
+2007-07-29T06:27:00.000Z,Roey,crimsun, do you want to see my asound state configuration for the previous installation?
+2007-07-29T06:27:00.000Z,crimsun,Roey,no
+2007-07-29T06:27:00.000Z,crimsun,Roey,did you create an asoundrc?
+2007-07-29T06:27:00.000Z,Roey,crimsun, for the previous system yes
+2007-07-29T06:28:00.000Z,crimsun,Roey,is it active on your current system?  (Doesn't seem so.)
+2007-07-29T06:28:00.000Z,Roey,crimsun," hmm, I don't thik so."
+2007-07-29T06:30:00.000Z,Roey,crimsun," so now that I've copied my asound.conf file to /etc (from my previous sytem's /etc), how do I re-initialize my sound drivers short of rebooting?"
+2007-07-29T06:30:00.000Z,crimsun,Roey,you don't need to reinit.  Just restart the alsa app(s).
+2007-07-29T06:31:00.000Z,crimsun,Roey,(which may entail you logging out of KDE/GNOME/whatever and back in)
+2007-07-29T06:31:00.000Z,Roey,crimsun, ahh.
+2008-03-09T06:29:00.000Z,crimsun,Roey,pastebin your /var/log/Xorg.*.log
+2008-03-09T06:30:00.000Z,Roey,crimsun,  oh hey :)
+2008-03-09T06:31:00.000Z,Roey,crimsun,"  there's nothing to upload... I mean, if I issue 'startx' then it loads the accelerated drivers so I'm assuming it's reading /etc/X11/xorg.conf fine."
+2008-03-09T06:31:00.000Z,crimsun,Roey,have to see your /var/log/Xorg.*.log to confirm/otherwise
+2008-03-09T06:32:00.000Z,Roey,crimsun,"  ok, I'll do it later then (have some other things to contend with)--thanks though :0"
+2005-03-24T08:29:00.000Z,crimsun,,why is roey here? ;-)
+2005-03-24T08:30:00.000Z,Roey,crimsun, I wanted to find evdev support for X
+2005-03-24T08:30:00.000Z,Roey,crimsun, :)
+2005-03-24T08:30:00.000Z,crimsun,Roey,"yeah, it's nice. :-)"
+2005-03-24T08:31:00.000Z,Roey,crimsun, I'm wondering whether to install alioth's debian-amd64 repo or ubuntu
+2005-03-24T08:31:00.000Z,Roey,crimsun," see, I'm done with this xfree86.  I don't want it."
+2005-04-01T10:06:00.000Z,crimsun,Roey,"hey now, I'm checking lastlog"
+2005-04-01T10:06:00.000Z,Roey,crimsun, :)
+2005-04-01T10:06:00.000Z,crimsun,Roey,pfft. You're supposed to pass --initrd
+2005-04-01T10:07:00.000Z,Roey,crimsun,"to what, the kernel building process? :)"
+2005-04-01T10:07:00.000Z,crimsun,Roey,to fakeroot make-kpkg
+2005-04-01T10:07:00.000Z,Roey,crimsun,that's a command?!
+2005-04-01T10:07:00.000Z,crimsun,Roey,see make-kpkg(1) !
+2005-04-01T10:08:00.000Z,Roey,crimsun,thanks!!!!
+2005-04-01T10:11:00.000Z,Roey,crimsun,I read the make-kpkg docs but I don't understand what 'fakeroot' refers to. How do I know which files to put in that fakeroot directory???
+2005-04-01T10:11:00.000Z,crimsun,Roey,use fakeroot instead of running it as root or as a user
+2005-04-01T10:11:00.000Z,Roey,crimsun,upon boot you mean?
+2005-04-01T10:11:00.000Z,Roey,crimsun,and that 'fakeroot' is a flag
+2005-04-01T10:11:00.000Z,crimsun,Roey,"nope, when you run make-kpkg"
+2005-04-01T10:12:00.000Z,Roey,crimsun,ok.. so it's a flag?
+2005-04-01T10:12:00.000Z,crimsun,Roey,it's a command
+2005-04-01T10:12:00.000Z,Roey,crimsun,aaah.
+2005-04-01T10:12:00.000Z,Roey,crimsun,so I'd do:  make-kpkg fakeroot --initrd vmlinuz-2.6.11.5
+2005-04-01T10:12:00.000Z,crimsun,Roey,"no, fakeroot make-kpkg --initrd ...."
+2005-04-01T10:12:00.000Z,Roey,crimsun,then what about System.map-2.6.11.5 ?
+2005-04-01T10:13:00.000Z,Roey,crimsun,ah.
+2005-04-01T10:13:00.000Z,crimsun,Roey,I'm fairly certain you want fakeroot make-kpkg --initrd             make-kpkg --rootcmd fakeroot kernel_image
+2005-04-01T10:13:00.000Z,crimsun,Roey,"err, fakeroot make-kpkg --initrd kernel_image"
+2005-04-01T10:14:00.000Z,crimsun,Roey,"sorry, paste went wonky there"
+2005-04-01T10:14:00.000Z,Roey,crimsun,ok
+2005-04-01T10:14:00.000Z,Roey,crimsun,how does make-kpkg know where the System.map file is for the corresponding kernel_image ?
+2005-04-01T10:15:00.000Z,crimsun,Roey,they're named matching the respective uname -r
+2005-04-01T10:15:00.000Z,Roey,crimsun,aaaah ok.
+2005-04-01T10:15:00.000Z,Roey,crimsun,"hmm, I dunno what the uname -r name of this fresh bzImage is.. how can I find out?"
+2005-04-01T10:16:00.000Z,crimsun,Roey,look at Makefile's VERSION+PATCHLEVEL+SUBLEVEL+EXTRAVERSION
+2005-04-01T10:19:00.000Z,Roey,crimsun,that fakeroot command gave this error:
+2005-04-01T10:19:00.000Z,Roey,crimsun,Error: unknown target vmlinuz-2.6.11.5
+2005-04-01T10:20:00.000Z,crimsun,Roey,don't pass it that.
+2005-04-01T10:20:00.000Z,Roey,crimsun,that's what strings showed me.
+2005-04-01T10:20:00.000Z,Roey,crimsun,will look in makefile now.
+2005-04-01T10:20:00.000Z,crimsun,Roey,"your uname -r will be '2.6.11.5', yes"
+2005-04-01T10:20:00.000Z,crimsun,Roey,but you don't pass that to make-kpkg
+2005-04-01T10:21:00.000Z,Roey,crimsun,then how does it know which image to generate the rdinit on???
+2005-04-01T10:21:00.000Z,crimsun,Roey,"when you build a kernel, it uses that one"
+2005-04-01T10:22:00.000Z,Roey,crimsun,how does it know where this newly built kernel image is?
+2005-04-01T10:22:00.000Z,crimsun,Roey,that's what kernel-package does
+2005-04-01T10:22:00.000Z,crimsun,Roey,"if you want to run mkinitrd manually, then don't use make-kpkg"
+2005-04-01T10:22:00.000Z,crimsun,Roey,i.e. for an already-compiled (manually) vmlinuz
+2005-04-01T10:23:00.000Z,Roey,crimsun,"I have no idea how to do this then.  All I want to do is to add a kernel image to grub, and I understand that I need an initrd.img..."
+2005-04-01T10:23:00.000Z,Roey,crimsun,"yes, my linux is already compiled."
+2005-04-01T10:23:00.000Z,crimsun,Roey,you don't necessarily need an initrd if you compiled the root fs in as 'y'
+2005-04-01T10:24:00.000Z,Roey,crimsun,it's whatever ubuntu's 2.6.10-5-amd64-generic  says
+2005-04-01T10:24:00.000Z,Roey,crimsun,also I have raid
+2005-04-01T10:24:00.000Z,Roey,crimsun,/ and /boot are on raid.
+2005-04-01T10:25:00.000Z,Roey,crimsun,grub chokes on startup and thinks that it can't open /dev/md2 because it cannot read an ext2 superblock or something
+2005-04-01T10:25:00.000Z,Roey,crimsun,"(but I end up mounting /dev/md2 onto /boot manually, and mount is fine with that)"
+2005-04-01T10:27:00.000Z,crimsun,Roey,"hmm, it would have been easiest to apt-get source linux-image-2.6.10-5-amd64-generic, modify the arches built and the config, and proceed"
+2005-04-01T10:28:00.000Z,crimsun,Roey,does the default ubuntu image work?
+2005-04-01T10:31:00.000Z,Roey,crimsun,didn't try yet.
+2005-04-01T10:32:00.000Z,Roey,crimsun,I actually built all the modules as per the default ubuntu kernel's /proc/config.gz states (I used that as a base for my .config).  How the heck am I gonna stuff all those modules into mkinitrd.img ;)
+2005-04-01T10:43:00.000Z,Roey,crimsun,"ok, this is not working:"
+2005-04-01T10:43:00.000Z,Roey,crimsun,I give this command:
+2005-04-01T10:43:00.000Z,Roey,crimsun,mkinitrd inird.img-2.6.11.5 vmlinuz-2.6.11.5
+2005-04-01T10:44:00.000Z,Roey,crimsun,it gives me a help screen.
+2005-04-01T10:44:00.000Z,Roey,crimsun,"blah, that's it."
+2005-04-01T10:45:00.000Z,Roey,crimsun,"is there a way to just add a freshly built kernel into the grub chain, without the hassle of mastering the Zen of rdimage?"
+2005-04-01T10:47:00.000Z,crimsun,Roey,"just configure /boot/grub/menu.lst, then make sure the kernel's in place, then run update-grub"
+2005-04-01T12:16:00.000Z,Roey,crimsun, hi
+2005-04-01T12:17:00.000Z,Roey,crimsun, it didn't work; I did the following command:  'mkrdinit -o /boot/rdinit.img-2.6.5.11   2.6.5.11; grub-update'.  That worked.  When I selected this new kernel from he GRUB menu I get this:
+2005-04-01T12:19:00.000Z,Roey,crimsun, there
+2005-04-01T12:20:00.000Z,crimsun,Roey,presuming you meant mkinitrd?
+2005-04-01T12:20:00.000Z,Roey,crimsun, right.
+2005-04-01T12:20:00.000Z,Roey,crimsun," mkinitrd, yes."
+2005-04-01T12:20:00.000Z,Roey,crimsun," actually, that's what happens normally with grub."
+2005-04-01T12:20:00.000Z,Roey,crimsun, the error when I booted my custom kernel is:
+2005-04-01T12:21:00.000Z,Roey,crimsun, http://rafb.net/paste/results/OcvP9T58.html
+2005-04-01T12:22:00.000Z,Roey,crimsun, is that.
+2005-04-01T12:25:00.000Z,crimsun,Roey,have you tried the default array-7 amd64 generic kernel?
+2005-04-03T09:58:00.000Z,crimsun,Roey,you're lying
+2005-04-03T09:59:00.000Z,crimsun,Roey,"main ships with memtest86+, universe ships with memtest86"
+2005-04-03T09:59:00.000Z,crimsun,Roey,"memtest86+ and memtest86, respectively"
+2005-04-03T10:00:00.000Z,Roey,crimsun, see above
+2005-04-03T10:00:00.000Z,crimsun,Roey,you don't have universe enabled.
+2005-04-03T10:00:00.000Z,crimsun,Roey,you don't have main enabled.
+2005-04-03T10:00:00.000Z,crimsun,Roey,oh no you don't. Try updating.
+2005-04-03T10:01:00.000Z,crimsun,Roey,and apt-cache policy memtest86 tells you...?
+2005-04-03T10:01:00.000Z,Roey,crimsun, shoudl I take 'restricted' out?
+2005-04-03T10:02:00.000Z,crimsun,Roey,restricted is necessary
+2005-04-03T10:02:00.000Z,crimsun,Roey,amd64?
+2005-04-03T10:03:00.000Z,Roey,crimsun, yes
+2005-04-03T10:03:00.000Z,crimsun,Roey,that's why.
+2005-04-03T10:03:00.000Z,crimsun,Roey,http://higgs.djpig.de/cgi-ubuntu/search_contents.pl?word=memtest86&searchmode=searchword&case=insensitive&version=hoary&arch=amd64
+2005-04-03T10:05:00.000Z,Roey,crimsun, those above.
+2005-04-03T10:05:00.000Z,Roey,crimsun, and the stupid default to kdm startup
+2005-04-03T10:05:00.000Z,Roey,crimsun, at least I could change that last one
+2005-04-03T10:05:00.000Z,crimsun,Roey,"well, you could help fix 'em... And honestly, maybe debian-amd64 is right for you."
+2005-04-03T10:06:00.000Z,Roey,crimsun, I need something for which I can use lilo without it spiting errors back in my face.
+2005-04-03T10:06:00.000Z,Roey,crimsun," I run lilo on my sata drive, I get:"
+2005-04-03T10:06:00.000Z,Roey,crimsun, 00:04:48 roey lilo
+2005-04-03T10:06:00.000Z,crimsun,Roey,does lilo in sid work properly?
+2005-04-03T10:07:00.000Z,Roey,crimsun, I had sid with kernel 2.6.7
+2005-04-03T10:07:00.000Z,crimsun,Roey,it'd be great if you could verify if it does{n't}
+2005-04-03T10:07:00.000Z,Roey,crimsun, which was before Jeff Garzick's libata superceded the old ata
+2005-04-03T10:07:00.000Z,Roey,crimsun, it's the kernel.
+2005-04-03T10:07:00.000Z,Roey,crimsun, I am almost sure.
+2005-04-03T10:08:00.000Z,crimsun,Roey,"so somewhere between 2.6.7 and 2.6.10, 'it' broke?"
+2005-04-03T10:08:00.000Z,Roey,crimsun," yes, because the ata code was switched with libata."
+2005-04-03T10:08:00.000Z,crimsun,Roey,have you reported this upstream on lkml and asked for CCs on replies?
+2005-04-03T10:08:00.000Z,Roey,crimsun, jeff garzick figured to re-implement sata using the scsi subsystem
+2005-04-03T10:09:00.000Z,Roey,crimsun, consequently all /dev/hdX's turned into /dev/sdX's.
+2005-04-03T10:09:00.000Z,Roey,crimsun," not yet, becuase I don't know what I'd ask."
+2005-04-03T10:09:00.000Z,crimsun,Roey,"tell them your precise situation, and be verbose with details. :)"
+2005-04-03T10:09:00.000Z,Roey,crimsun, sih
+2005-04-03T10:10:00.000Z,Roey,crimsun, it will end up being specific to my system somehow (somehwo in the blue fuck) and I wont' get anywhere.
+2005-04-03T11:01:00.000Z,crimsun,Roey,"psst, try to keep the DE wars outside ;)"
+2005-04-04T07:41:00.000Z,crimsun,Roey,that's fixed already.
+2005-04-04T07:41:00.000Z,crimsun,Roey,you no longer need the libmikmod/libesd0 workarounds.
+2005-04-04T07:43:00.000Z,Roey,crimsun," they don't have konq-plugins for example, in kubuntu."
+2005-04-04T07:45:00.000Z,crimsun,Roey,I don't see 3.4 for kdeaddons
+2005-04-04T07:45:00.000Z,crimsun,Roey,3.3.2 for amd64 didn't even build successfully until Feb 26th
+2005-04-04T07:46:00.000Z,Roey,crimsun, rushed...
+2005-04-04T07:46:00.000Z,crimsun,Roey,talk to the kubuntu guys
+2005-04-04T07:46:00.000Z,Roey,crimsun, I mean in general.
+2005-04-04T07:47:00.000Z,crimsun,Roey,meaning how?
+2005-04-04T07:47:00.000Z,Roey,crimsun, how what?
+2005-04-04T07:47:00.000Z,Roey,crimsun, what the problems are?
+2005-04-04T07:47:00.000Z,crimsun,Roey,sure.
+2005-04-04T07:48:00.000Z,crimsun,Roey,"keep in mind for universe packages, there are barely one dozen of us overseeing fifteen thousand packages."
+2005-04-04T07:48:00.000Z,Roey,crimsun, sure! understood!
+2005-04-04T07:48:00.000Z,Roey,crimsun, I want to get EVMS off my /boot.
+2005-04-04T07:50:00.000Z,crimsun,Roey,"simply likes kde, let's leave it at that."
+2005-04-04T07:50:00.000Z,Roey,crimsun, hi!
+2005-04-04T07:50:00.000Z,Roey,crimsun, how do get evms off /boot?
+2005-04-04T07:51:00.000Z,crimsun,Roey,"I have zero experience with evms, lvm, and the like."
+2005-04-04T07:51:00.000Z,Roey,crimsun," oh, ok."
+2005-04-06T10:10:00.000Z,crimsun,Roey,"k, let me know when apt-get finishes"
+2005-04-06T10:10:00.000Z,Roey,crimsun, ok
+2005-04-06T10:11:00.000Z,Roey,crimsun, http://rafb.net/paste/results/hI6YKR83.html
+2005-04-06T10:17:00.000Z,crimsun,Roey,"ok, that's not really a problem."
+2005-04-06T10:18:00.000Z,crimsun,Roey,but you would need to reboot into 2.6.10-5-amd64-generic
+2005-04-06T10:23:00.000Z,Roey,crimsun, I *am* in amd64-generic
+2005-04-06T10:24:00.000Z,crimsun,Roey,"err, duh.  I knew that when I say $(uname -r).  Silly me.  :)"
+2005-04-06T10:25:00.000Z,Roey,crimsun, er?
+2005-04-06T10:25:00.000Z,crimsun,Roey,just me realising my oversight.
+2005-04-06T10:25:00.000Z,Roey,crimsun, heh
+2005-04-06T10:27:00.000Z,crimsun,Roey,ok
+2005-04-06T10:28:00.000Z,crimsun,Roey,cd /usr/src/modules/wacom
+2005-04-06T10:28:00.000Z,Roey,crimsun,  ok
+2005-04-06T10:28:00.000Z,crimsun,Roey,fakeroot ./debian/rules kdist KVERS=$(uname -r) KSRC=/lib/modules/$(uname -r)/build/
+2005-04-06T10:31:00.000Z,Roey,crimsun, http://rafb.net/paste/results/yYKmFn11.html
+2005-04-06T10:31:00.000Z,Roey,crimsun, wacomcfg.h:25:22: X11/Xlib.h: No such file or directory
+2005-04-06T10:32:00.000Z,Roey,crimsun, preceeding lines:  mkdir .libs
+2005-04-06T10:32:00.000Z,crimsun,Roey,"yep, I see."
+2005-04-06T10:33:00.000Z,crimsun,Roey,sudo apt-get install libx11-dev libxi-dev
+2005-04-06T10:34:00.000Z,Roey,crimsun, Building wacom modules for Linux 2.6.11.5 (this may take a few minutes)...Done.   -- how did this happen?? I am not using 2.6.11.5...
+2005-04-06T10:34:00.000Z,Roey,crimsun, http://rafb.net/paste/results/XtcpTX72.html
+2005-04-06T10:34:00.000Z,crimsun,Roey,it's not intelligent in looking at /lib/modules/$(uname -r)/build
+2005-04-06T10:35:00.000Z,crimsun,Roey,ls -l /usr/src
+2005-04-06T10:36:00.000Z,Roey,crimsun, join #flood please?
+2005-04-06T10:38:00.000Z,crimsun,Roey,"ick, postinst blindly followed /usr/src/linux.  Bad package!"
+2005-04-06T10:38:00.000Z,crimsun,Roey,please use that fakeroot ./debian/rules ... command from above
+2005-04-06T10:39:00.000Z,Roey,crimsun, which?
+2005-04-06T10:40:00.000Z,crimsun,Roey,cd /usr/src/modules/wacom && fakeroot ./debian/rules kdist KVERS=$(uname -r) KSRC=/lib/modules/$(uname -r)/build/
+2005-04-06T10:40:00.000Z,Roey,crimsun," ok, that went fine"
+2005-04-06T10:40:00.000Z,Roey,crimsun, what was the difference this time??
+2005-04-06T10:41:00.000Z,Roey,crimsun, we didnt' touch the reference to 2.6.11.5 at all...
+2005-04-06T10:41:00.000Z,Roey,crimsun, the module is still being built for 2.6.5.11 no?
+2005-04-06T10:41:00.000Z,crimsun,Roey,It required certain X Window System headers to be present.
+2005-04-06T10:41:00.000Z,crimsun,Roey,"no, the module was just compiled against $(uname -r)"
+2005-04-06T10:41:00.000Z,Roey,crimsun, er... actually.. the X dev libraries were making wacom module for 2.6.11.5...
+2005-04-06T10:41:00.000Z,Roey,crimsun, aaaha perfect.
+2005-04-06T10:41:00.000Z,Roey,crimsun, does that mean the next time I load it... it loads the new wacom driver??
+2005-04-06T10:42:00.000Z,crimsun,Roey,that's the goal; we're not quite there yet.
+2005-04-06T10:42:00.000Z,crimsun,Roey,ls ../*.deb
+2005-04-06T10:43:00.000Z,Roey,crimsun, ../wacom-kernel-modules-2.6.10-5-amd64-generic_0.6.6-4_amd64.deb
+2005-04-06T10:44:00.000Z,crimsun,Roey,great.
+2005-04-06T10:44:00.000Z,crimsun,Roey,sudo dpkg --force-overwrite -i ../wacom-kernel-modules-2.6.10-5-amd64-generic_0.6.6-4_amd64.deb
+2005-04-06T10:44:00.000Z,Roey,crimsun, The wacom module must be loaded before the HID module.
+2005-04-06T10:45:00.000Z,crimsun,Roey,is that what it said?
+2005-04-06T10:46:00.000Z,Roey,crimsun, see #flood
+2005-04-06T10:46:00.000Z,Roey,crimsun, yeah
+2005-04-06T10:46:00.000Z,crimsun,Roey,yep.
+2005-04-06T10:46:00.000Z,crimsun,Roey,ok. One more thing: sudo apt-get install wacom-tools
+2005-04-06T10:47:00.000Z,Roey,crimsun, btw
+2005-04-06T10:47:00.000Z,Roey,crimsun, I don't see the HID module in /etc/modules
+2005-04-06T10:47:00.000Z,crimsun,Roey,that's ok.
+2005-04-06T10:47:00.000Z,Roey,crimsun," also the wacom module was not in /etc/modules, either."
+2005-04-06T10:47:00.000Z,Roey,crimsun, how will we know what loads first?
+2005-04-06T10:47:00.000Z,crimsun,Roey,"that, too, is ok."
+2005-04-06T10:48:00.000Z,crimsun,Roey,module-init-tools is intelligent
+2005-04-06T10:48:00.000Z,Roey,crimsun, ok
+2005-04-06T10:48:00.000Z,crimsun,Roey,"you just need to install wacom-tools, then reboot"
+2005-04-06T10:48:00.000Z,Roey,crimsun, btw the modules init stuff is all voodoo to me :)
+2005-04-06T10:48:00.000Z,Roey,crimsun, awesome
+2005-04-06T10:48:00.000Z,Roey,crimsun, this log is being saved btw.
+2005-04-06T10:48:00.000Z,crimsun,Roey,k
+2005-04-06T10:48:00.000Z,Roey,crimsun, i'll see if this works
+2005-04-06T10:49:00.000Z,Roey,crimsun, lemme reboot and try... do you think X will need any extra configuration by any chance?
+2005-04-06T10:50:00.000Z,crimsun,Roey,11) Edit your XF86Config-4 file as desribed in the linuxwacom Howto.
+2005-04-06T10:50:00.000Z,Roey,crimsun," that's all taken care of, in /etc/X11/xorg.conf"
+2005-04-06T10:50:00.000Z,Roey,crimsun," lemme see, neat ;)"
+2005-04-06T10:50:00.000Z,crimsun,Roey,k
+2005-04-06T10:50:00.000Z,Roey,crimsun," also, is it possible maybe to get my first problem working?"
+2005-04-06T10:51:00.000Z,Roey,crimsun, that error on startup that you or calc suggested I see #ubuntu-kernel for?
+2005-04-06T10:51:00.000Z,crimsun,Roey,Nvidia 1.0-7167?
+2005-04-06T10:51:00.000Z,Roey,crimsun, that's another one but the one I'm referring to is this error on startup:
+2005-04-06T10:51:00.000Z,Roey,crimsun, http://rafb.net/paste/results/KR63w564.html
+2005-04-06T10:55:00.000Z,Roey,crimsun, so basically that was me telling calc my bootup problem
+2005-04-06T10:55:00.000Z,Roey,crimsun, and it contains a reference to the boot error
+2005-04-06T10:56:00.000Z,Roey,crimsun, http://rafb.net/paste/results/2qaAZM82.html
+2005-04-06T10:57:00.000Z,crimsun,Roey,but you can continue booting after ^D^D ?
+2005-04-06T10:58:00.000Z,Roey,crimsun," yes, indeed."
+2005-04-06T10:58:00.000Z,crimsun,Roey,"I don't know much about md/lvm/evms, sorry."
+2005-04-06T10:59:00.000Z,Roey,crimsun, I don't know why the thing installed evms at all
+2005-04-06T10:59:00.000Z,Roey,crimsun,  I have the evms debug logs too
+2005-04-06T11:00:00.000Z,Roey,crimsun, ok lemme reboot.
+2005-04-06T13:14:00.000Z,Roey,crimsun, you're in demand dude
+2005-04-06T13:36:00.000Z,Roey,crimsun, yo
+2005-04-06T13:36:00.000Z,crimsun,Roey,yo
+2005-04-06T13:36:00.000Z,Roey,crimsun, have one tteeeeeeny tiny second?
+2005-04-06T13:36:00.000Z,Roey,crimsun, notice this in the error output I presented:
+2005-04-06T13:36:00.000Z,Roey,crimsun, /usr/bin/make -C /usr/src/linux M=/usr/src/modules/wacom/src/2.6.10
+2005-04-06T13:36:00.000Z,crimsun,Roey,k
+2005-04-06T13:36:00.000Z,Roey,crimsun, why is it looking at 2.6.10 and then 2.6.11.5??
+2005-04-06T13:37:00.000Z,Roey,crimsun, I even changed /boot/vmlinuz to point to the right kernel!!!!
+2005-04-06T13:37:00.000Z,crimsun,Roey,it's best to rm /usr/src/linux
+2005-04-06T13:37:00.000Z,Roey,crimsun, what do I need to redo?
+2005-04-06T13:37:00.000Z,crimsun,Roey,that symlink is wrecking havoc with the build script
+2005-04-06T13:38:00.000Z,Roey,crimsun, will it work without that file there?
+2005-04-06T13:38:00.000Z,crimsun,Roey,you should always explicitly tell the build script KSRC=/lib/modules/$(uname -r)/build/  KVERS=$(uname -r)
+2005-04-06T13:39:00.000Z,Roey,crimsun, ok..
+2005-04-06T13:40:00.000Z,Roey,crimsun, it builds! it builds!
+2005-04-06T13:55:00.000Z,Roey,crimsun, yo
+2005-04-06T13:55:00.000Z,Roey,crimsun, are you still here?
+2005-04-06T09:00:00.000Z,Roey,crimsun, hi!!!!
+2005-04-06T09:53:00.000Z,Roey,crimsun, ping
+2005-04-06T10:48:00.000Z,Roey,crimsun," so basically I forgot to make the 'wacom.ko' kernel module.  Since then it's gone downhill, I need your help to do this over again (shouldn't be too hard..)"
+2005-04-07T12:09:00.000Z,Roey,crimsun, better here?
+2005-04-07T12:10:00.000Z,crimsun,Roey,best here.
+2005-04-07T12:10:00.000Z,Roey,crimsun," so anyway, you have that link?"
+2005-04-07T12:10:00.000Z,crimsun,Roey,"read, and it looks like debian/rules is severely broken"
+2005-04-07T12:11:00.000Z,Roey,crimsun, ok
+2005-04-07T12:13:00.000Z,crimsun,Roey,you should file a bug against its BTS entry
+2005-04-07T12:13:00.000Z,Roey,crimsun, I don't know what to say there
+2005-04-07T12:16:00.000Z,crimsun,Roey,"the problem is that the conditional test for wacom.o fails to copy over the _other_ compiled modules, and for good reason, since the hid option is disabled by default in debian rules, so it won't copy over non-compiled modules"
+2005-04-07T12:17:00.000Z,crimsun,Roey,the easiest way to work around it presently is to copy over all the other modules
+2005-04-07T12:17:00.000Z,Roey,crimsun," that's just it, I can't find them anywhere"
+2005-04-07T12:18:00.000Z,crimsun,Roey,"that's because they're not copied over in debian/rules, like I said above"
+2005-04-07T12:18:00.000Z,Roey,crimsun," I meant, I can't find them in the src/"
+2005-04-07T12:18:00.000Z,Roey,crimsun, oh
+2005-04-07T12:18:00.000Z,Roey,crimsun," you mean,"
+2005-04-07T12:18:00.000Z,Roey,crimsun, copy the module sources
+2005-04-07T12:18:00.000Z,Roey,crimsun, and then build the new kernel completely
+2005-04-07T12:19:00.000Z,crimsun,Roey,"no, I meant fixing debian/rules.  Sec, I'll try to generate one for you."
+2005-04-07T12:30:00.000Z,crimsun,Roey,(working on it)
+2005-04-07T12:31:00.000Z,Roey,crimsun, ah ok
+2005-04-07T12:31:00.000Z,Roey,crimsun, I swear to god I will be very very very happy if kubuntu's next release addresses most of my issues
+2005-04-07T12:32:00.000Z,Roey,crimsun, I meant ubuntu
+2005-04-07T12:32:00.000Z,Roey,crimsun," (and the kubuntu packages as well, as I have issues with KDE there too)"
+2005-04-07T12:47:00.000Z,crimsun,Roey,is there a strict ordering for wacom.ko?
+2005-04-07T12:47:00.000Z,crimsun,Roey,or can you point me to a url?
+2005-04-07T12:47:00.000Z,Roey,crimsun, the order is that you have to load it before HID
+2005-04-07T12:48:00.000Z,Roey,crimsun," hmm, where did I find this.. one second."
+2005-04-07T12:49:00.000Z,crimsun,Roey,have you tried loading that new wacom?
+2005-04-07T12:51:00.000Z,Roey,crimsun," 'For kernel 2.6 and later, you almost certainly do not need the usbmouse module because it conflicts with the full usb hid driver, usbhid, which should be used in most cases. For kernel 2.4, I recommend you to build it.'"
+2005-04-07T12:51:00.000Z,Roey,crimsun, that's (1)
+2005-04-07T12:51:00.000Z,Roey,crimsun," (2), I'm stillt rying to find the loading order."
+2005-04-07T12:55:00.000Z,Roey,crimsun, http://rafb.net/paste/results/aVxQlJ89.html
+2005-04-07T12:55:00.000Z,Roey,crimsun, that's the order right there.
+2005-04-07T13:02:00.000Z,Roey,crimsun,  I will BRB
+2005-04-07T13:02:00.000Z,crimsun,Roey,ok.
+2005-04-07T13:02:00.000Z,Roey,crimsun," about mailing the maintainers,"
+2005-04-07T13:03:00.000Z,Roey,crimsun, we'll mail them your updated debian/rules?
+2005-04-07T13:03:00.000Z,Roey,crimsun," did you get that last link, btw"
+2005-04-07T13:03:00.000Z,crimsun,Roey,"no, this will be tailored for you.  Yes, I got it.  Following Hoary's release, I'll hack debian/rules properly and send it back 'upstream' to Debian."
+2005-04-07T13:04:00.000Z,Roey,crimsun, oh thank you *so* much
+2005-04-07T13:04:00.000Z,Roey,crimsun, do you have a grasp of what files need to be loaded when?
+2005-04-07T13:04:00.000Z,crimsun,Roey,"yep, only usbhid.ko is important, and that is handled already."
+2005-04-07T13:04:00.000Z,Roey,crimsun, so usbmouse and evdev and all that I don't really need?
+2005-04-07T13:04:00.000Z,crimsun,Roey,I'm just fixing debian/rules to copy over the other compiled modules
+2005-04-07T13:05:00.000Z,Roey,crimsun, ok
+2005-04-07T13:13:00.000Z,crimsun,Roey,ping me when you return
+2005-04-07T13:13:00.000Z,Roey,crimsun, pong
+2005-04-07T13:14:00.000Z,crimsun,Roey,replace your debian/rules with http://sh.nu/~crimsun/rules
+2005-04-07T13:16:00.000Z,crimsun,Roey,"make sure I've enabled the correct options, then run it with the appropriate arguments"
+2005-04-07T13:19:00.000Z,Roey,crimsun,  02:18:47 modules ls -l /lib/modules/2.6.10-5-amd64-generic/kernel/drivers/usb/input/usbhid.ko
+2005-04-07T13:19:00.000Z,Roey,crimsun, OK! looked like these things installed fianlly!
+2005-04-07T13:19:00.000Z,Roey,crimsun, lemme reboot.
+2005-04-07T13:21:00.000Z,Roey,crimsun, I am rebooting now.
+2005-04-07T13:43:00.000Z,crimsun,Roey,"no, it's in the linux-image"
+2005-04-07T13:35:00.000Z,Roey,crimsun,hi
+2005-04-07T13:35:00.000Z,crimsun,Roey,hi
+2005-04-07T13:35:00.000Z,Roey,crimsun,ping
+2005-04-07T13:35:00.000Z,Roey,crimsun,"HI crimsun,"
+2005-04-07T13:36:00.000Z,Roey,crimsun,"guess what, God really hates me"
+2005-04-07T13:36:00.000Z,Roey,crimsun,I rebooted and now I can't boot
+2005-04-07T13:36:00.000Z,Roey,crimsun,it says this:
+2005-04-07T13:37:00.000Z,Roey,crimsun, http://rafb.net/paste/results/a76TwZ20.html
+2005-04-07T13:38:00.000Z,crimsun,Roey,"that's not related to your modules, though.  What's your default kernel set to?"
+2005-04-07T13:38:00.000Z,crimsun,Roey,and the initrd?
+2005-04-07T13:39:00.000Z,Roey,crimsun,  -rw-r--r--  1 root root 1274601 Mar 24 10:00 vmlinuz-2.6.10-5-amd64-generic
+2005-04-07T13:39:00.000Z,Roey,crimsun,-rw-r--r--  1 root root 5025792 Mar 26 04:07 initrd.img-2.6.10-5-amd64-generic
+2005-04-07T13:39:00.000Z,Roey,crimsun,hmm... is initrd not matched to the kernel/
+2005-04-07T13:40:00.000Z,Roey,crimsun,the timestampsare different...
+2005-04-07T13:41:00.000Z,crimsun,Roey,it looks like your initrd has been fubared
+2005-04-07T13:41:00.000Z,crimsun,Roey,try reinstalling the initrd from the 2.6.10-5-amd64-generic linux-image
+2005-04-07T13:42:00.000Z,Roey,crimsun,apt-get install what?
+2005-04-07T13:42:00.000Z,Roey,crimsun,I will chroot into the old drive...one sec
+2005-04-07T13:42:00.000Z,crimsun,Roey,--reinstall linux-image-2.6.10-5-amd64-generic
+2005-04-07T13:42:00.000Z,Roey,crimsun,I did that yesterday after you logged out though
+2005-04-07T13:43:00.000Z,Roey,crimsun,I did apt-get install linux-image-2.6.10-5-amd64-generic
+2005-04-07T13:43:00.000Z,Roey,crimsun,is there a spearate initrd package or somethign?
+2005-04-07T13:45:00.000Z,crimsun,Roey,"CoC, dude..."
+2005-04-07T13:45:00.000Z,Roey,crimsun,I wanted to umount /mnt/md0 and it tells me it's busy
+2005-04-07T13:45:00.000Z,Roey,crimsun,and I mounted it only a minute ago
+2005-04-07T13:45:00.000Z,Roey,crimsun,I'm not even in it!
+2005-04-07T13:49:00.000Z,Roey,crimsun,http://rafb.net/paste/results/xVX5Jl72.html
+2005-04-07T13:51:00.000Z,crimsun,Roey,"yep, you'll have to --force-overwrite, remember?"
+2005-04-07T13:53:00.000Z,Roey,crimsun,ok
+2005-04-07T13:53:00.000Z,Roey,crimsun,it overwrote all the stuff we did but heh
+2005-04-07T13:53:00.000Z,Roey,crimsun,I can just rebuild it
+2005-04-07T13:54:00.000Z,Roey,crimsun,i will reboot now
+2005-04-07T14:19:00.000Z,Roey,crimsun,hi
+2005-04-07T14:19:00.000Z,crimsun,Roey,hi
+2005-04-07T14:21:00.000Z,Roey,crimsun, http://rafb.net/paste/results/QPbSIs30.html
+2005-04-07T14:21:00.000Z,Roey,crimsun,still it didn't boot.
+2005-04-07T14:22:00.000Z,crimsun,Roey,I really don't know the slightest regarding md/lvm/evms
+2005-04-07T14:28:00.000Z,Roey,crimsun,I see there are multiple kernel images... see this:
+2005-04-07T14:29:00.000Z,Roey,crimsun,http://rafb.net/paste/results/sdVfHg31.html
+2005-04-07T14:34:00.000Z,Roey,crimsun," given the /var/cache/apt/archives listing I showed you, is it possible that the kernel image I got yesterday and the initrd image that was installed by default are out of sync?"
+2005-04-07T14:35:00.000Z,crimsun,Roey,unlikely...
+2005-04-07T14:37:00.000Z,Roey,crimsun,"dan, where are you in the US?  california?"
+2005-04-07T14:37:00.000Z,crimsun,Roey,NC.
+2005-04-07T14:37:00.000Z,Roey,crimsun,aaaah so it's the same time as MD for you...
+2005-04-07T14:37:00.000Z,crimsun,Roey,indeed
+2005-04-07T14:38:00.000Z,Roey,crimsun, may I pm you?
+2005-04-07T14:38:00.000Z,crimsun,Roey,"if it's Ubuntu-related, I'd rather keep it in-channel"
+2005-04-07T14:39:00.000Z,Roey,crimsun,wanted to see if you could talk voice
+2005-04-07T14:40:00.000Z,crimsun,Roey,"heavily firewalled, sorry."
+2005-04-07T14:40:00.000Z,Roey,crimsun,Shouldn't getting the system in working order just take installing the right kernel?
+2005-04-07T14:40:00.000Z,crimsun,Roey,"if it worked from a Ubuntu-compiled kernel before, yes."
+2005-04-07T14:40:00.000Z,Roey,crimsun,"'talk on the phone', rather"
+2005-04-07T14:40:00.000Z,Roey,crimsun,yes it was the ubuntu image I downloaded....
+2005-04-07T14:41:00.000Z,Roey,crimsun,adn the thing doesn't boot
+2005-04-07T14:41:00.000Z,Roey,crimsun,so I'm wondering what can be wrong
+2005-04-07T14:44:00.000Z,crimsun,Roey,have you confirmed you're actually booting the correct kernel?
+2005-04-07T14:47:00.000Z,Roey,crimsun,how do I check?
+2005-04-07T14:48:00.000Z,crimsun,Roey,cat /proc/version
+2005-04-07T14:48:00.000Z,Roey,crimsun,well...I'm on a kanotix64 livecd now (remember I could't boot the system)
+2005-04-07T14:49:00.000Z,Roey,crimsun,"so the current kernel verison (kanotix, remmeber) is: Linux version 2.6.10-kanotix64-8 (root@Kanotix) (gcc version 3.3.5 (Debian 1:3.3.5-8)) #1 Wed Feb 2 20:30:09 CET 2005"
+2005-04-07T14:49:00.000Z,crimsun,Roey,so how about using the kanotix kernel and specifying your rootfs at the prompt?
+2005-04-07T14:49:00.000Z,crimsun,Roey,(similar to a rescue cd)
+2005-04-07T14:50:00.000Z,Roey,crimsun,because then...
+2005-04-07T14:50:00.000Z,Roey,crimsun,"1) I can't install the wacom drivers,"
+2005-04-07T14:50:00.000Z,Roey,crimsun,2) it still won't work (it'd give another error)
+2005-04-07T14:50:00.000Z,Roey,crimsun,the kanotix kernel also uses an rdinit image.
+2005-04-07T14:51:00.000Z,crimsun,Roey,(1) you only need to compile the drivers (installing can occur after you reboot into the proper kernel)
+2005-04-07T14:51:00.000Z,crimsun,Roey,(2) which is?
+2005-04-07T14:52:00.000Z,Roey,crimsun,I've already tried booting to kanotix.
+2005-04-07T14:54:00.000Z,Roey,crimsun,"lemme boot to the kanotix kernel and i'll tell you the error, ok?"
+2005-04-07T14:54:00.000Z,crimsun,Roey,ok
+2005-04-07T14:54:00.000Z,Roey,crimsun," btw, I thoguth you were in California b/c you were up right now"
+2005-04-07T15:05:00.000Z,Roey,crimsun,hello again
+2005-04-07T15:05:00.000Z,Roey,crimsun,so this is the message that I get when I boot kanotix kernel:
+2005-04-07T15:05:00.000Z,Roey,crimsun,"Kernel panic - not syncing \n VFS: Unable to mount root fs on unknown-block(9,2)"
+2005-04-07T15:06:00.000Z,crimsun,Roey,"erm, ok.  Can you try booting off the Kubuntu disc?"
+2005-04-07T15:06:00.000Z,Roey,crimsun,ok
+2005-04-07T15:07:00.000Z,Roey,crimsun,but kubuntu disc probably doesn't have the chroot and all that stuff.
+2005-04-07T15:07:00.000Z,Roey,crimsun,lemme do that now.
+2005-04-07T15:13:00.000Z,Roey,crimsun,hi
+2005-04-07T15:14:00.000Z,Roey,crimsun," ok, now I am in gnome/ubuntu (that's what I had for livecd)"
+2005-04-07T15:15:00.000Z,Roey,crimsun,should I just copy now the ubuntu kernel?
+2005-04-07T15:15:00.000Z,Roey,crimsun,does it matter if it is ubuntu/hoary or kubunt/hoary?
+2005-04-07T15:16:00.000Z,crimsun,Roey,"no, as long as the deb is present"
+2005-04-07T15:16:00.000Z,Roey,crimsun,ubuntu livecd doesn't seem to have a /var/cache/apt/archives
+2005-04-07T15:18:00.000Z,Roey,crimsun, do you know where thekernel package is in ubuntu?
+2005-04-07T15:18:00.000Z,Roey,crimsun,off the ubuntu livecd that is?
+2005-04-07T15:18:00.000Z,crimsun,Roey,"err, as a deb? I don't know"
+2005-04-07T15:18:00.000Z,Roey,crimsun,"(that iswhat you asked for, right?0"
+2005-04-07T15:19:00.000Z,crimsun,Roey,"I don't know if the livecd actually keeps a copy of the deb, which is what you'd need to dpkg -i"
+2005-04-07T15:19:00.000Z,Roey,crimsun,ok
+2005-04-07T15:20:00.000Z,Roey,crimsun, linux-image-2.6.10-4-amd64-generi 2.6.10-25.2                       Linux kernel image for version 2.6.10 on x86_64.
+2005-04-07T15:20:00.000Z,Roey,crimsun, ii  linux-image-amd64-generic         2.6.10-5                          Linux kernel image on x86_64.
+2005-04-07T15:20:00.000Z,Roey,crimsun,that's it
+2005-04-07T15:20:00.000Z,Roey,crimsun,that's the one I think.
+2005-04-07T15:32:00.000Z,Roey,crimsun,smurfix:  I reboot now.
+2005-04-07T15:31:00.000Z,Roey,crimsun,smurfix:   hopefully ubuntu's kernel can unzip the rdinit.gz
+2005-04-07T15:40:00.000Z,Roey,crimsun,smurfix:  didn't work
+2005-04-07T15:41:00.000Z,Roey,crimsun,"smurfix:  I get the same thing but with a diff. device number:   PANIC not syncing : VFS : unable to mount root fs on unknown-block(0,0)"
+2005-04-07T15:41:00.000Z,Roey,crimsun, are you around tomorrow?
+2005-04-07T15:41:00.000Z,Roey,crimsun,  I need to go to sleep
+2005-04-07T15:41:00.000Z,Roey,crimsun,  this is just *too* stupid
+2005-04-07T15:42:00.000Z,Roey,crimsun,  I don't get why LILO doesn't work for me
+2005-04-07T15:42:00.000Z,Roey,crimsun,  does LILO not know how to boot 64-bit kernels/!?
+2005-04-07T15:42:00.000Z,crimsun,Roey,"yes, I'll be around in ~12 hours"
+2005-04-07T15:43:00.000Z,Roey,crimsun,  ok
+2005-04-07T15:43:00.000Z,crimsun,Roey,"err, same time you have..."
+2005-04-07T10:36:00.000Z,Roey,crimsun,hi
+2005-04-07T14:44:00.000Z,Roey,crimsun,ping
+2005-04-08T16:14:00.000Z,Roey,crimsun,you here?
+2005-04-08T05:41:00.000Z,Roey,crimsun,yo
+2005-04-08T07:22:00.000Z,crimsun,Roey,pong
+2005-04-08T07:22:00.000Z,Roey,crimsun, hi!!!!
+2005-04-08T07:22:00.000Z,Roey,crimsun,  
+2005-04-08T07:23:00.000Z,Roey,crimsun," ok, I get this pivot_root error when I start up ubuntu kernel"
+2005-04-08T07:26:00.000Z,Roey,crimsun,mjt: http://rafb.net/paste/results/BCvGgc35.html
+2005-04-08T07:34:00.000Z,Roey,crimsun, about this pivot_root thing
+2005-04-08T07:34:00.000Z,Roey,crimsun, how to solve it?
+2005-04-08T07:34:00.000Z,Roey,crimsun, because then I can continue using stock ubuntu kernel
+2005-04-08T07:34:00.000Z,Roey,crimsun, btw mjt showed me that the initrd module was missing 'modprobe -k via_sata' in 'loadmodules' file.
+2005-04-08T07:35:00.000Z,Roey,crimsun, that had to be loaded before the softraid stuff
+2005-04-08T07:35:00.000Z,crimsun,Roey,so have you inserted into your initrd?
+2005-04-08T07:36:00.000Z,Roey,crimsun, YES
+2005-04-08T07:36:00.000Z,Roey,crimsun, and my custom kernel BOOTS
+2005-04-08T07:36:00.000Z,Roey,crimsun," HOWEVER, the Ubuntu kernle doesn't even get to that point.. that pivot error, see."
+2005-04-08T07:36:00.000Z,Roey,crimsun, couldja help me with that?
+2005-04-08T07:39:00.000Z,crimsun,Roey,"well, you could just use your custom kernel"
+2005-04-08T08:05:00.000Z,Roey,crimsun, hi
+2005-04-08T08:27:00.000Z,Roey,crimsun," hi, back at square 1 with the wacom modules -- I installed but they didn't work still..."
+2005-04-08T08:28:00.000Z,crimsun,Roey,using the custom debian/rules?
+2005-04-08T08:28:00.000Z,Roey,crimsun, ah! no
+2005-04-08T08:28:00.000Z,Roey,crimsun, lemme do that :)
+2005-04-08T08:28:00.000Z,Roey,crimsun," hehe, forgot"
+2005-04-08T08:29:00.000Z,Roey,crimsun, yeah it built them
+2005-04-08T08:29:00.000Z,Roey,crimsun, and dmesg shows that wacom loaded before usbhid
+2005-04-08T08:29:00.000Z,Roey,crimsun, still though it doesn't work -- the extra wacom bits are not registering in the 'wacdump' program
+2005-04-08T08:30:00.000Z,crimsun,Roey,"I really have no idea about wacom, that was just what I read would help"
+2005-04-08T08:30:00.000Z,Roey,crimsun, ok
+2005-04-08T08:32:00.000Z,Roey,crimsun," so yeah, I have no idea at this point"
+2005-04-08T11:34:00.000Z,Roey,crimsun, HI
+2005-04-08T11:37:00.000Z,crimsun,Roey,absolutely
+2005-04-08T11:37:00.000Z,crimsun,Roey,"in fact, 1.7.6 was just merged from sid last week"
+2005-04-11T08:27:00.000Z,Roey,crimsun, hi
+2005-04-11T08:28:00.000Z,Roey,crimsun, what are ya gonna do about this issue for those who boot off SATA drives... they need to have their SATA kernel modules in their initrd's 'loadmodules' or nothing works
+2005-07-05T12:18:00.000Z,Roey,crimsun, hey dude
+2007-02-20T09:10:00.000Z,crimsun,Roey,"see /usr/share/doc/upstart/README.Debian.gz, please."
+2007-02-20T09:10:00.000Z,Roey,crimsun," ok, thanks.  Long time no see Daniel!"
+2007-02-20T09:11:00.000Z,Roey,crimsun, but I don't /have/ an /etc/iittab on my Feisty system...
+2007-02-20T09:12:00.000Z,crimsun,Roey,so create one as the note says.
+2007-07-29T06:19:00.000Z,Roey,crimsun," it says snd-via82xx, and hi btw :)"
+2007-07-29T06:19:00.000Z,Roey,crimsun, loooooong time no see :)
+2007-07-29T06:19:00.000Z,Roey,crimsun, one sec
+2007-07-29T06:19:00.000Z,crimsun,Roey,via82xx != snd-via82xx
+2007-07-29T06:20:00.000Z,Roey,crimsun, what'st he kernel module for via then?
+2007-07-29T06:20:00.000Z,crimsun,Roey,the one you just mentioned
+2007-07-29T06:20:00.000Z,crimsun,Roey,(snd-via82xx if it's a Via mainboard that implements AC'97)
+2007-07-29T06:21:00.000Z,Roey,crimsun, well I do that.
+2007-07-29T06:21:00.000Z,Roey,crimsun, and amarok and mpg123 show that they're playing--amarok's frequency analyzer is humming away--but I don't hear no sound.
+2007-07-29T06:22:00.000Z,crimsun,Roey,"'don't hear no', eh?  Right.  Download and run http://www.trilug.org/~crimsun/alsa-info.sh"
+2007-07-29T06:23:00.000Z,Roey,crimsun," Daniel, you are too cool:  http://pastebin.ca/637559"
+2007-07-29T06:24:00.000Z,crimsun,Roey,"ok, so which audio device do you actually want to use?"
+2007-07-29T06:24:00.000Z,Roey,crimsun, how many do I have??
+2007-07-29T06:24:00.000Z,crimsun,Roey,"2.  The first one, AV710, is superior to the second one, V8237."
+2007-07-29T06:24:00.000Z,Roey,crimsun, how do I configure the av710 then?
+2007-07-29T06:25:00.000Z,crimsun,Roey,"well, are your headphones/speakers plugged into its output jacks?"
+2007-07-29T06:25:00.000Z,Roey,crimsun, I have my stereo receiver plugged directly into my digital audio out jack
+2007-07-29T06:25:00.000Z,crimsun,Roey,on which card?
+2007-07-29T06:26:00.000Z,Roey,crimsun, on my on-board
+2007-07-29T06:26:00.000Z,Roey,crimsun, and I only have one sound card
+2007-07-29T06:26:00.000Z,crimsun,Roey,the Via (V8237)?
+2007-07-29T06:26:00.000Z,Roey,crimsun," (the onboard one, that is)"
+2007-07-29T06:26:00.000Z,Roey,crimsun, right
+2007-07-29T06:26:00.000Z,crimsun,Roey,"um, you need to plug it into the other one..."
+2007-07-29T06:26:00.000Z,Roey,crimsun, it was working fine the moment before I installed Kubuntu.
+2007-07-29T06:27:00.000Z,Roey,crimsun, do you want to see my asound state configuration for the previous installation?
+2007-07-29T06:27:00.000Z,crimsun,Roey,no
+2007-07-29T06:27:00.000Z,crimsun,Roey,did you create an asoundrc?
+2007-07-29T06:27:00.000Z,Roey,crimsun, for the previous system yes
+2007-07-29T06:28:00.000Z,crimsun,Roey,is it active on your current system?  (Doesn't seem so.)
+2007-07-29T06:28:00.000Z,Roey,crimsun," hmm, I don't thik so."
+2007-07-29T06:30:00.000Z,Roey,crimsun," so now that I've copied my asound.conf file to /etc (from my previous sytem's /etc), how do I re-initialize my sound drivers short of rebooting?"
+2007-07-29T06:30:00.000Z,crimsun,Roey,you don't need to reinit.  Just restart the alsa app(s).
+2007-07-29T06:31:00.000Z,crimsun,Roey,(which may entail you logging out of KDE/GNOME/whatever and back in)
+2007-07-29T06:31:00.000Z,Roey,crimsun, ahh.
+2008-03-09T06:29:00.000Z,crimsun,Roey,pastebin your /var/log/Xorg.*.log
+2008-03-09T06:30:00.000Z,Roey,crimsun,  oh hey :)
+2008-03-09T06:31:00.000Z,Roey,crimsun,"  there's nothing to upload... I mean, if I issue 'startx' then it loads the accelerated drivers so I'm assuming it's reading /etc/X11/xorg.conf fine."
+2008-03-09T06:31:00.000Z,crimsun,Roey,have to see your /var/log/Xorg.*.log to confirm/otherwise
+2008-03-09T06:32:00.000Z,Roey,crimsun,"  ok, I'll do it later then (have some other things to contend with)--thanks though :0"

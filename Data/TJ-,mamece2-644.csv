@@ -1,0 +1,645 @@
+date,from,to,text
+2012-08-24T04:06:00.000Z,TJ-,mamece2,"Ad-Hoc wireless is a point-to-point connection. Access Points (AP) are managed mode, and you'd need hostapd installing and configuring to operate an AP"
+2012-08-24T04:11:00.000Z,TJ-,mamece2,"This is a much better guide, and the recommended one https://help.ubuntu.com/community/WifiDocs/MasterMode"
+2012-08-24T04:12:00.000Z,mamece2,TJ-,i have an atheros one!
+2012-08-24T04:14:00.000Z,TJ-,mamece2,"I run an Ubuntu server here configured as the access point, it was quick to set up"
+2012-08-24T04:15:00.000Z,mamece2,TJ-,so you can set a wireless network and share internet? i want to have internet through my external wireless dongle and send internet to my ihpone thought the internal wifi card
+2012-08-24T04:16:00.000Z,TJ-,mamece2,"That's exactly how its used here - the server has 6 wired ethernet ports, the Wireless, and an embedded xDSL"
+2012-08-24T04:17:00.000Z,mamece2,TJ-,do u know where can i read how to set up this laptop taht way?
+2012-08-24T04:17:00.000Z,TJ-,mamece2,Is the laptop connecting to the Internet via  wired connection?
+2012-08-24T04:18:00.000Z,mamece2,TJ-,"no, via wireless external adapter"
+2012-08-24T04:18:00.000Z,TJ-,mamece2,So does the laptop have *TWO* wifi adapters?
+2012-08-24T04:18:00.000Z,mamece2,TJ-,yes
+2012-08-24T04:18:00.000Z,TJ-,mamece2,"OK, you can do it then"
+2012-08-24T04:19:00.000Z,TJ-,mamece2,I've uploaded my server's hostpapd.conf file for you to see. If you 'sudo apt-get install hostapd' and copy/edit my config to your PC you're almost ready to go. http://iam.tj/files/
+2012-08-24T04:20:00.000Z,TJ-,mamece2,*hostapd.conf* ... typo!
+2012-08-24T04:21:00.000Z,TJ-,mamece2,You'll need to configure it for your atheros driver of course
+2012-08-24T04:21:00.000Z,mamece2,TJ-,everywhere i see a tutorial is for the following configuration: wired internet and wireless sharing interface.
+2012-08-24T04:21:00.000Z,TJ-,mamece2,"Well, think slightly laterally. All those tutorials assume you've only got ONE wifi ... what they should say is 'how to configure for TWO separate interfaces'"
+2012-08-24T04:22:00.000Z,mamece2,TJ-,yeah.. my internal wifi is called eth1 (weird) and the external one is wlan0
+2012-08-24T04:22:00.000Z,TJ-,mamece2,"Think of your existing wireless connection to the Internet as being the 'wired' connection in those tutorials, and it makes sense"
+2012-08-24T04:23:00.000Z,mamece2,TJ-, im afraid that if i configure that way my connection I wont be able to connect to another wifi. is that true? is easy to deactivate all that config im about to do?
+2012-08-24T04:24:00.000Z,TJ-,mamece2,Do you use the 2nd Wifi (wlan0) as a roaming connection then?
+2012-08-24T04:25:00.000Z,mamece2,TJ-,"yes, sometimes i connect to another wireless networks"
+2012-08-24T04:25:00.000Z,TJ-,mamece2,I've copied the entries you'd need in /etc/network/interfaces to my server too ... the file's called 'interfaces'
+2012-08-24T04:25:00.000Z,TJ-,mamece2,Could you change your procedures so you connect to those other WiFi networks using the internal wireless?
+2012-08-24T04:26:00.000Z,mamece2,TJ-," i cant, my internal adapter doesnt have enough gain, just to connect my mobile phone"
+2012-08-24T04:27:00.000Z,TJ-,mamece2,"OK, well then can't you swap things around so the external Wifi connects to the Internet router and roams, and you configure the internal WiFi as the AP for your phone?"
+2012-08-24T04:27:00.000Z,mamece2,TJ-, correct
+2012-08-24T04:27:00.000Z,TJ-,mamece2,As an aside... if the internal wifi signal is that bad... it's likely that the antenna connectors inside the laptop have become disconnected. You might consider opening it up and checking on that!
+2012-08-24T04:29:00.000Z,mamece2,TJ-,"im kinda lost, first i should install hostapd?"
+2012-08-24T04:30:00.000Z,TJ-,mamece2,make sure you have the correct drivers for the internal wifi adapter first
+2012-08-24T04:30:00.000Z,mamece2,TJ-," i have them, i am sure because i have use them to connect before, right?"
+2012-08-24T04:31:00.000Z,TJ-,mamece2,"No! sometimes the driver firmware that has to be uploaded into the processor of the wifi chipset is different ... you need MASTER mode firmware, rather than just STATION mode... sometimes its combined; often not"
+2012-08-24T04:34:00.000Z,mamece2,TJ-, i have a broadcom and a realtek
+2012-08-24T04:35:00.000Z,TJ-,mamece2,Broadcom could be a pig... not sure about realtek
+2012-08-24T04:35:00.000Z,mamece2,TJ-, dont worry is broadcom  4312
+2012-08-24T04:36:00.000Z,TJ-,mamece2,is the Broadcom the internal device you want to use as the AP?
+2012-08-24T04:37:00.000Z,mamece2,TJ-,"broadcom is internal, realtek is the external one"
+2012-08-24T04:38:00.000Z,mamece2,TJ-, im trying sudo iwconfig eth1 mode master and i get '
+2012-08-24T04:39:00.000Z,TJ-,mamece2,Sounds like you need additional driver firmware
+2012-08-24T04:40:00.000Z,mamece2,TJ-,'things just got real bro'
+2012-08-24T04:40:00.000Z,TJ-,mamece2,From the linux wireless web-site I see that the driver you need to use for Broadcom to support AP is the 'b43'
+2012-08-24T04:41:00.000Z,mamece2,TJ-," the realtek also has a problem, right? the message is the same from the wlan1 mode master command"
+2012-08-24T04:42:00.000Z,TJ-,mamece2,"Check this out, it's much more authoritative http://wireless.kernel.org/en/users/Documentation/modes"
+2012-08-24T04:46:00.000Z,mamece2,TJ-, wow this is something sorta complex
+2012-08-24T04:48:00.000Z,mamece2,TJ-,i need to set master mode for my internal or external driver? the one in master mode is the one who would be the AP?
+2012-08-24T04:50:00.000Z,TJ-,mamece2,"correct, so I guess that's the internal one"
+2012-08-24T04:52:00.000Z,mamece2,TJ-,"so the internal driver will be the one spreading wireless internet, but it will get it from the external one, right?"
+2012-08-24T04:54:00.000Z,TJ-,mamece2,Correct
+2012-08-24T04:55:00.000Z,TJ-,mamece2,as long as the default gateway is configured correctly (as it should be automatically) packets from AP clients should be routed out on the other Wifi. what you need to be sure to do to avoid interference is to set the channel number of the AP as far away from your router's channel as possible.
+2012-08-24T04:56:00.000Z,TJ-,mamece2,"Ideally put your home router on channel 1 and then, depending on your country limits, your AP on channel 11/13/14"
+2012-08-24T05:04:00.000Z,mamece2,TJ-," cant find how to set master mode with the broadcom,just how to make it work, it already works!"
+2012-08-24T05:04:00.000Z,TJ-,mamece2,"Try installing and configuring hostapd then, see if it 'just works' !"
+2012-08-24T05:05:00.000Z,TJ-,mamece2,Only if you reconfigure the interface you're currently using to access the Internet
+2012-08-24T05:11:00.000Z,mamece2,TJ-,done with the hostapd
+2012-08-24T05:12:00.000Z,TJ-,mamece2,Did it work?
+2012-08-24T05:13:00.000Z,mamece2,TJ-,"well i dont know how to test it, the input is 'sudo iwconfig eth1 mode master' i keep getting 'sudo iwconfig eth1 mode master'"
+2012-08-24T05:14:00.000Z,TJ-,mamece2,"If you configure 'hostapd.conf' and 'interfaces' as in the files I uploaded for you, it should just work"
+2012-08-24T05:16:00.000Z,TJ-,mamece2,You won't need any commands; the machine will configure itself correctly when it is started
+2012-08-24T05:20:00.000Z,mamece2,TJ-,wheres can i see the complete name of the driver?
+2012-08-24T05:21:00.000Z,TJ-,mamece2,From what I read you should be OK to use the default 'nl80211' as is in my hostapd.conf
+2012-08-24T05:23:00.000Z,mamece2,TJ-,so i just replace the file in that directory and then?
+2012-08-24T05:24:00.000Z,TJ-,mamece2,Edit the hostapd.conf I've provided where you see the ***.....*** parts
+2012-08-24T05:24:00.000Z,mamece2,TJ-,done
+2012-08-24T05:24:00.000Z,TJ-,mamece2,make sure you set a channel number that doesn't interfere with your home router
+2012-08-24T05:24:00.000Z,mamece2,TJ-,"ok , done"
+2012-08-24T05:25:00.000Z,TJ-,mamece2,"Then you need to add to /etc/network/interfaces the contents of the 'interfaces' file I uploaded for you, too"
+2012-08-24T05:25:00.000Z,TJ-,mamece2,"You'll need to EDIT that interfaces section for wlan0 to ensure the addresses are the same as in your network, but on a different subnet to the other eth0 interface"
+2012-08-24T05:26:00.000Z,mamece2,TJ-,so eth1 must be in a different subnet than wlan1 ?
+2012-08-24T05:27:00.000Z,TJ-,mamece2,Yes... I have my main wired LAN on 10.254.251.0/24 so I put the Wireless on 10.254.250.0/24
+2012-08-24T05:28:00.000Z,TJ-,mamece2,Then there's one thing left to do. You'll need to configure a lightweight DHCP server (dnsmasq) that will listen on the AP interface and issue IP addresses to clients
+2012-08-24T05:28:00.000Z,mamece2,TJ-,that kinda complex
+2012-08-24T05:29:00.000Z,TJ-,mamece2,How so? you want your clients to be able to talk to other don't you? without DHCP they won't be!
+2012-08-24T05:30:00.000Z,mamece2,TJ-,i could have a fixed Ip on my phone and i wont care
+2012-08-24T05:30:00.000Z,TJ-,mamece2,"If you tell me your sub-net for wired and what you want to use for Wifi, I'll write you the /etc/dnsmasq.conf"
+2012-08-24T05:31:00.000Z,TJ-,mamece2,OK... but it really would be better to just set it up to work automatically!
+2012-08-24T05:31:00.000Z,mamece2,TJ-,"i dont us wired, just wireless for the access to the intenet AP and i wannt the mobile phone to get internet thoughr the laptop"
+2012-08-24T05:32:00.000Z,TJ-,mamece2,sorry... I didn't mean wired I meant the internet eth0 interface :D
+2012-08-24T05:33:00.000Z,mamece2,TJ-, i added this to the interface file: iface eth0 inet static
+2012-08-24T05:34:00.000Z,TJ-,mamece2,that looks good
+2012-08-24T05:35:00.000Z,mamece2,TJ-,"done, now what?"
+2012-08-24T05:35:00.000Z,mamece2,TJ-, i dont see where would I put the interface in master mode
+2012-08-24T05:36:00.000Z,TJ-,mamece2,"You don't, that's what hostapd does for you"
+2012-08-24T05:36:00.000Z,mamece2,TJ-,how can i activate it?
+2012-08-24T05:36:00.000Z,TJ-,mamece2,restart hostapd with 'sudo service hostapd restart'
+2012-08-24T05:37:00.000Z,TJ-,mamece2,and check /var/log/syslog with the 'Log file viewer' to check for error or success messages
+2012-08-24T05:37:00.000Z,mamece2,TJ-,"ok log file viewer? i havent use that, explain me how please"
+2012-08-24T05:38:00.000Z,TJ-,mamece2,If you're using 12.04 with Unity  open the dash and type 'Log file viewer' to find it
+2012-08-24T05:38:00.000Z,mamece2,TJ-, its blank
+2012-08-24T05:39:00.000Z,TJ-,mamece2,should be installed by default :s
+2012-08-24T05:39:00.000Z,mamece2,TJ-," it is , butwhen i opened it its blank"
+2012-08-24T05:39:00.000Z,TJ-,mamece2,LOL ok... thought you meant dash was blank. Use File > Open and choose /var/log/syslog
+2012-08-24T05:40:00.000Z,mamece2,TJ-,the file /etc/hostapd/hostapd.conf its in blank too
+2012-08-24T05:40:00.000Z,TJ-,mamece2,How did you copy/edit my example to your system?
+2012-08-24T05:41:00.000Z,mamece2,TJ-, sudo gedit /etc/hostapd/hostapd.conf
+2012-08-24T05:41:00.000Z,TJ-,mamece2,"OK, that should do it, assuming you saved it"
+2012-08-24T05:42:00.000Z,mamece2,TJ-,"i mean, the file doesnt exist right now"
+2012-08-24T05:42:00.000Z,TJ-,mamece2,If you save it using gedit it should do
+2012-08-24T05:42:00.000Z,mamece2,TJ-,"ok, done, now i will restart service"
+2012-08-24T05:43:00.000Z,TJ-,mamece2,OK ... good luck!
+2012-08-24T05:43:00.000Z,mamece2,TJ-,"mmm done, aparently nothing happened"
+2012-08-24T05:43:00.000Z,TJ-,mamece2,how do you test it?
+2012-08-24T05:44:00.000Z,mamece2,TJ-, i just type sudo service hostapd restart
+2012-08-24T05:44:00.000Z,mamece2,TJ-, nothing new in the syslog
+2012-08-24T05:44:00.000Z,TJ-,mamece2,"OK... using that log file viewer, open the file /var/log/hostapd.log  and look for details"
+2012-08-24T05:45:00.000Z,mamece2,TJ-,the same in 'sudo iwconfig eth1 mode master
+2012-08-24T05:45:00.000Z,TJ-,mamece2,OK... so we can work on that. That's the same error you got trying to use 'iwconfig' so it's likely a driver error
+2012-08-24T05:46:00.000Z,TJ-,mamece2,I need you to pastebin me the output of 'lspci -nn'
+2012-08-24T05:46:00.000Z,TJ-,mamece2,and also 'lsusb'
+2012-08-24T05:47:00.000Z,mamece2,TJ-, theres no  /var/log/hostapd.log
+2012-08-24T05:49:00.000Z,TJ-,mamece2,If you've configured the /etc/hostapd/hostapd.conf correctly it should start and log something at least. You have installed hostapd haven't you ('sudo apt-get install hostapd') ?
+2012-08-24T05:50:00.000Z,mamece2,TJ-,yes
+2012-08-24T05:50:00.000Z,mamece2,TJ-,http://pastebin.com/RT8id2uN
+2012-08-24T05:50:00.000Z,TJ-,mamece2,thanks
+2012-08-24T05:52:00.000Z,TJ-,mamece2,And pastebin the output of 'iwconfig'
+2012-08-24T05:52:00.000Z,mamece2,TJ-,the folder was created for hostapd
+2012-08-24T05:52:00.000Z,TJ-,mamece2,This is what mine shows: http://paste.ubuntu.com/1163701/
+2012-08-24T05:53:00.000Z,mamece2,TJ-,http://pastebin.com/a37JdR08
+2012-08-24T05:54:00.000Z,mamece2,TJ-,"you cant be the AP and get the internet int he same interface, right?"
+2012-08-24T05:54:00.000Z,TJ-,mamece2,and you've specified 'eth1' in both /etc/network/interfaces and /etc/hostapd/hostapd.conf  ?
+2012-08-24T05:54:00.000Z,TJ-,mamece2,correct... well it is technically possibly but hell to do!
+2012-08-24T05:55:00.000Z,TJ-,mamece2,I think the issue here is the BCM driver.
+2012-08-24T05:57:00.000Z,TJ-,mamece2,can you pastebin the output of 'sudo lspci -vvvnn -s 04:00.0'
+2012-08-24T05:59:00.000Z,mamece2,TJ-,http://pastebin.com/krEY3Tpi
+2012-08-24T05:59:00.000Z,mamece2,TJ-,whatis the interface that i need to set in interfaces and in hostadp?
+2012-08-24T05:59:00.000Z,TJ-,mamece2,that shows the driver is 'wl' ... we need to check that
+2012-08-24T05:59:00.000Z,TJ-,mamece2,it's 'eth1' currently
+2012-08-24T06:01:00.000Z,mamece2,TJ-,what can i do about this wl driver?
+2012-08-24T06:02:00.000Z,TJ-,mamece2,I'm researching it now
+2012-08-24T06:02:00.000Z,mamece2,TJ-,should i put in the config file of hostapd the wl drive?
+2012-08-24T06:04:00.000Z,TJ-,mamece2,no don't change anything
+2012-08-24T06:04:00.000Z,TJ-,mamece2,The 'wl' driver doesn't support master mode
+2012-08-24T06:05:00.000Z,TJ-,mamece2,You need to install the 'b43' driver. I'm reading that you need to do 'sudo apt-get install firmware-b43-installer' from this page: https://help.ubuntu.com/community/WifiDocs/Driver/bcm43xx#Installing_b43_drivers
+2012-08-24T06:07:00.000Z,mamece2,TJ-,you mean sudo apt-get install b43-fwcutter
+2012-08-24T06:09:00.000Z,TJ-,mamece2,no I don't
+2012-08-24T06:09:00.000Z,TJ-,mamece2,it's now 'firmware-b43-installer'
+2012-08-24T06:10:00.000Z,mamece2,TJ-, im following thar url instructions
+2012-08-24T06:11:00.000Z,TJ-,mamece2,At the start of the 'Installing b43 drivers' section it says 'Note: On Ubuntu 11.04 installing the 'firmware-b43-installer' package takes care of the downloading and installation of the b43 driver. '
+2012-08-24T06:11:00.000Z,TJ-,mamece2,"If you're on 11.04, 11.10 or 12.04 then that's the package to use"
+2012-08-24T06:11:00.000Z,mamece2,TJ-,"ok, now i need to restart :/ i hate when that happens"
+2012-08-24T06:12:00.000Z,TJ-,mamece2,"you might not need to, you can manually load the driver after unloading the 'wl' driver"
+2012-08-24T06:12:00.000Z,mamece2,TJ-,"ive installed b43 and i still see wl, how to unload that?"
+2012-08-24T06:13:00.000Z,TJ-,mamece2,"at a command line, first ensure that 'wl' isn't in use by anything. Do 'lsmod | grep wl' and check that the number after 'wl' is zero"
+2012-08-24T06:14:00.000Z,mamece2,TJ-, it is : 'lsmod | grep wl
+2012-08-24T06:14:00.000Z,mamece2,TJ-,wl                   2568210  0
+2012-08-24T06:14:00.000Z,TJ-,mamece2,That's good.  Now we can unload it: 'sudo rmmod wl'
+2012-08-24T06:15:00.000Z,TJ-,mamece2,check it's gone by doing 'lsmod | grep wl' once more
+2012-08-24T06:15:00.000Z,mamece2,TJ-,gone
+2012-08-24T06:15:00.000Z,TJ-,mamece2,Now we load the b43: 'sudo modprobe b43'
+2012-08-24T06:15:00.000Z,TJ-,mamece2,then check its in memory with 'lsmod | grep b43'
+2012-08-24T06:16:00.000Z,mamece2,TJ-, Kernel driver in use: b43-pci-bridge
+2012-08-24T06:16:00.000Z,TJ-,mamece2,sounds good
+2012-08-24T06:16:00.000Z,TJ-,mamece2,check the interfaces with 'iwconfig'
+2012-08-24T06:17:00.000Z,TJ-,mamece2,It's probably no longer eth1 and you'll need to change 'interfaces' and 'hostapd.conf' to reflect the new interface name
+2012-08-24T06:17:00.000Z,mamece2,TJ-,the same error when i try  sudo iwconfig wlan0 mode master
+2012-08-24T06:18:00.000Z,TJ-,mamece2,iwconfig shows the new interface as wlan0 then ?
+2012-08-24T06:18:00.000Z,TJ-,mamece2,pastebin me 'iwconfig' again please
+2012-08-24T06:18:00.000Z,mamece2,TJ-,http://pastebin.com/DpQM6akf
+2012-08-24T06:19:00.000Z,mamece2,TJ-,the command mode master shouldnt get a error message back
+2012-08-24T06:20:00.000Z,TJ-,mamece2,after you've fixed up the config files do 'sudo ifdown wlan0' then 'sudo service hostapd restart' and check the hostapd log file again
+2012-08-24T06:21:00.000Z,mamece2,TJ-, both config files should be with wlan0 interface?
+2012-08-24T06:22:00.000Z,TJ-,mamece2,yes
+2012-08-24T06:22:00.000Z,mamece2,TJ-,"when i click in the upper corner icon, the broadcome says device not ready , firmware missing"
+2012-08-24T06:23:00.000Z,mamece2,TJ-,should i change the driver=nl80211 line?
+2012-08-24T06:23:00.000Z,TJ-,mamece2,No
+2012-08-24T06:23:00.000Z,TJ-,mamece2,The message about the firmware is the clue.
+2012-08-24T06:24:00.000Z,mamece2,TJ-,ifdown: interface wlan0 not configured
+2012-08-24T06:24:00.000Z,TJ-,mamece2,"that means the ' firmware-b43-installer' hasn't done its job, or else the firmware hasn't been uploaded to the device"
+2012-08-24T06:24:00.000Z,TJ-,mamece2,that's fine
+2012-08-24T06:25:00.000Z,TJ-,mamece2,check the firmware files. pastebin me the directory listing 'ls -l /lib/firmware/brcm/'
+2012-08-24T06:26:00.000Z,mamece2,TJ-,http://pastebin.com/v9M6e6R2
+2012-08-24T06:27:00.000Z,mamece2,TJ-,its something bad with the driver? how can i erase it and dl again?
+2012-08-24T06:27:00.000Z,TJ-,mamece2,"No it isn't, wait!"
+2012-08-24T06:29:00.000Z,TJ-,mamece2,"OK, there's an alternative for low-power devices."
+2012-08-24T06:30:00.000Z,TJ-,mamece2,remove the one you just installed 'sudo apt-get --purge remove firmware-b43-installer' and then install the low-power version 'sudo apt-get install firmware-b43-lpphy-installer'
+2012-08-24T06:31:00.000Z,mamece2,TJ-,downloading
+2012-08-24T06:33:00.000Z,mamece2,TJ-,"ok, done..."
+2012-08-24T06:33:00.000Z,mamece2,TJ-,"broadcom is back online, the 'local' (ssid) is connected again"
+2012-08-24T06:34:00.000Z,mamece2,TJ-,mode master command reply with an error still
+2012-08-24T06:35:00.000Z,TJ-,mamece2,does that interface report missing firmware now?
+2012-08-24T06:35:00.000Z,mamece2,TJ-, no
+2012-08-24T06:35:00.000Z,TJ-,mamece2,"use log file viewer, look in /var/log/kern.log ... see if you see a recent message saying it's loading firmware"
+2012-08-24T06:37:00.000Z,TJ-,mamece2,Yay!
+2012-08-24T06:37:00.000Z,TJ-,mamece2,"ok, try restarting hostapd again"
+2012-08-24T06:37:00.000Z,TJ-,mamece2,then look at the hostapd log file if its there
+2012-08-24T06:37:00.000Z,mamece2,TJ-,"ok , done, nothing happened"
+2012-08-24T06:38:00.000Z,TJ-,mamece2,no log entries?
+2012-08-24T06:38:00.000Z,mamece2,TJ-,theres no log
+2012-08-24T06:39:00.000Z,TJ-,mamece2,"OK, that means there's something wrong with your config. Check in /var/log/syslog for any clues about it failing to start"
+2012-08-24T06:40:00.000Z,mamece2,TJ-,NetworkManager[873]: <error> [1345775755.125846] [nm-device-wifi.c:1865] nm_device_wifi_set_mode(): (wlan0): error setting mode 2
+2012-08-24T06:41:00.000Z,TJ-,mamece2,OK... let me research that
+2012-08-24T06:41:00.000Z,mamece2,TJ-, this might help http://pastebin.com/v3AgAf0B
+2012-08-24T06:43:00.000Z,TJ-,mamece2,ahh! network manager needs to be told to not manage wlan0! you have to restart it. It'll ignore any interface listed in /etc/network/interfaces.
+2012-08-24T06:43:00.000Z,TJ-,mamece2,try this 'sudo service network-manager restart' then 'sudo service hostapd restart'
+2012-08-24T06:51:00.000Z,mamece2,TJ-,"sudo service hostapd restart doesnt seem to do nothign,. nothigns added to the syslog log"
+2012-08-24T06:51:00.000Z,mamece2,TJ-,now broadcom appears like device not managed
+2012-08-24T06:52:00.000Z,TJ-,mamece2,you didn't accidentally mistype it's config file name did you? I've done that before and wasted hours! :p
+2012-08-24T06:52:00.000Z,TJ-,mamece2,'not managed' is what you want. Don't want network-manager touching it
+2012-08-24T06:53:00.000Z,mamece2,TJ-, let me check
+2012-08-24T06:55:00.000Z,mamece2,TJ-,the file is in the directory /etc/hostapd and it has the following http://pastebin.com/Aj0LPgC4
+2012-08-24T06:56:00.000Z,TJ-,mamece2,your file looks good. We need therefore to find out why hostapd doesn't seem to be logging. lets find out if its in memory
+2012-08-24T06:56:00.000Z,mamece2,TJ-, shoudl i reinstall
+2012-08-24T06:57:00.000Z,TJ-,mamece2,do this 'ps -ef | grep hostapd' and you should see a line similar to this: 'root      4224     1  0 Aug20 ?        00:00:03 /usr/sbin/hostapd -B -P /var/run/hostapd.pid /etc/hostapd/hostapd.conf'
+2012-08-24T06:57:00.000Z,mamece2,TJ-, why in iwconfig wlan0 is in managed mode?
+2012-08-24T06:57:00.000Z,TJ-,mamece2,that's the default mode until something changes it
+2012-08-24T06:58:00.000Z,mamece2,TJ-,mike     13237  4450  0 22:27 pts/0    00:00:00 grep --color=auto hostapd
+2012-08-24T06:58:00.000Z,TJ-,mamece2,ok... hostapd isn't starting then
+2012-08-24T06:58:00.000Z,TJ-,mamece2,that explains alot!
+2012-08-24T06:58:00.000Z,mamece2,TJ-,why not?
+2012-08-24T06:58:00.000Z,TJ-,mamece2,do this and pastebin me the results: 'sudo service hostapd start'
+2012-08-24T06:59:00.000Z,mamece2,TJ-,doesnt give something back
+2012-08-24T06:59:00.000Z,TJ-,mamece2,really? not even an error message?
+2012-08-24T07:00:00.000Z,mamece2,TJ-,nope. thats why i think it does nothing
+2012-08-24T07:01:00.000Z,TJ-,mamece2,the service command always reports any failure. that's where the problem is I think.
+2012-08-24T07:01:00.000Z,TJ-,mamece2,see http://paste.ubuntu.com/1163749/
+2012-08-24T07:03:00.000Z,TJ-,mamece2,Let's try the alternative method of controlling services. do 'sudo /etc/init.d/hostapd start'
+2012-08-24T07:03:00.000Z,mamece2,TJ-,should I reinstall?
+2012-08-24T07:04:00.000Z,mamece2,TJ-,the same: nothing
+2012-08-24T07:04:00.000Z,TJ-,mamece2,OK ... pastebin me this file 'cat /etc/default/hostapd'
+2012-08-24T07:06:00.000Z,mamece2,TJ-,http://pastebin.com/tgYCTWtW
+2012-08-24T07:08:00.000Z,TJ-,mamece2,HAHAHA slap me!
+2012-08-24T07:08:00.000Z,TJ-,mamece2,see that #DAEMON_CONF=''  and the text above it!?
+2012-08-24T07:09:00.000Z,TJ-,mamece2,My fault - I forgot I had to edit that... after all the time since I installed it I assumed it had that set originally!
+2012-08-24T07:09:00.000Z,mamece2,TJ-,"yeah,,, uncooment it"
+2012-08-24T07:09:00.000Z,mamece2,TJ-,i read it too jeje
+2012-08-24T07:09:00.000Z,TJ-,mamece2,"so, 'gksudo gedit /etc/default/hostapd' and edit that line, remove the leading '#' and insert the name of the config file '/etc/hostapd/hostapd.conf'"
+2012-08-24T07:09:00.000Z,TJ-,mamece2,Save it then finally START the service!
+2012-08-24T07:10:00.000Z,TJ-,mamece2,This is mine: http://paste.ubuntu.com/1163759/
+2012-08-24T07:11:00.000Z,mamece2,TJ-, * Starting advanced IEEE 802.11 management hostapd                      [fail]
+2012-08-24T07:12:00.000Z,mamece2,TJ-,the text is like this DAEMON_CONF='/etc/hostapd/hostapd.conf'
+2012-08-24T07:12:00.000Z,TJ-,mamece2,That's correct
+2012-08-24T07:13:00.000Z,mamece2,TJ-,it fails :/
+2012-08-24T07:13:00.000Z,TJ-,mamece2,Did it try to start?
+2012-08-24T07:13:00.000Z,TJ-,mamece2,"if so, check the log :D"
+2012-08-24T07:16:00.000Z,mamece2,TJ-,still no log for hostapd
+2012-08-24T07:16:00.000Z,TJ-,mamece2,did the service start say 'failed'
+2012-08-24T07:16:00.000Z,mamece2,TJ-, yes
+2012-08-24T07:18:00.000Z,TJ-,mamece2,"OK, check /var/log/syslog it may say why"
+2012-08-24T07:18:00.000Z,mamece2,TJ-, it doesnt add a new line when i try to restart
+2012-08-24T07:18:00.000Z,TJ-,mamece2,"OK, let me check on mine for anything different"
+2012-08-24T07:19:00.000Z,TJ-,mamece2,I wonder about the '+' at then end of your spa_passphrase. Try without it
+2012-08-24T07:19:00.000Z,mamece2,TJ-,its part of the password
+2012-08-24T07:19:00.000Z,TJ-,mamece2,That's in hostapd.conf
+2012-08-24T07:20:00.000Z,TJ-,mamece2,I know... but I'm looking for anything that might cause hostapd to barf
+2012-08-24T07:21:00.000Z,mamece2,TJ-,i thought its gonna be that but it failed too. still it addded some line to the log
+2012-08-24T07:22:00.000Z,TJ-,mamece2,it did? what was it?
+2012-08-24T07:22:00.000Z,mamece2,TJ-,http://pastebin.com/HC1GaFdJ
+2012-08-24T07:26:00.000Z,mamece2,TJ-, i dont understand what happened
+2012-08-24T07:27:00.000Z,TJ-,mamece2,pastebin the output of this: 'iw list  | grep -A 10 'Supported interface modes'  '
+2012-08-24T07:29:00.000Z,mamece2,TJ-," i dont have iw installed, i will do it"
+2012-08-24T07:30:00.000Z,TJ-,mamece2,ahh!
+2012-08-24T07:30:00.000Z,mamece2,TJ-,im not a genius like u
+2012-08-24T07:31:00.000Z,mamece2,TJ-,http://paste.ubuntu.com/1163778/
+2012-08-24T07:31:00.000Z,TJ-,mamece2,Another YATY - AP mode is on that list
+2012-08-24T07:32:00.000Z,mamece2,TJ-,what do u mean?
+2012-08-24T07:34:00.000Z,TJ-,mamece2,"although, we need to be sure that response was for wlan0 since you have two wifis."
+2012-08-24T07:34:00.000Z,TJ-,mamece2,try restarting hostapd now... It should have been installed in support of hostapd but seemingly wasnt
+2012-08-24T07:35:00.000Z,mamece2,TJ-," i did, it failes"
+2012-08-24T07:35:00.000Z,TJ-,mamece2,OK
+2012-08-24T07:36:00.000Z,TJ-,mamece2,do this: 'sudo /usr/sbin/hostapd  /etc/hostapd/hostapd.conf'
+2012-08-24T07:36:00.000Z,TJ-,mamece2,maybe pastebin the output if there is anything useful
+2012-08-24T07:37:00.000Z,mamece2,TJ-,/etc/hostapd/hostapd.conf
+2012-08-24T07:37:00.000Z,mamece2,TJ-,weird
+2012-08-24T07:37:00.000Z,TJ-,mamece2,channel?
+2012-08-24T07:37:00.000Z,TJ-,mamece2,try changing it in the config to 6 and try again
+2012-08-24T07:38:00.000Z,mamece2,TJ-,i change it to channel 6 in the .conf file and still the same error message
+2012-08-24T07:39:00.000Z,mamece2,TJ-,the same message  as above
+2012-08-24T07:42:00.000Z,TJ-,mamece2,let's enable lots of debug info. do this: 'sudo /usr/sbin/hostapd -dd  /etc/hostapd/hostapd.conf'
+2012-08-24T07:43:00.000Z,TJ-,mamece2,I'll need it in pastebin... you might want to install 'pastebinit' and then run 'sudo /usr/sbin/hostapd -dd  /etc/hostapd/hostapd.conf | pastebinit'
+2012-08-24T07:43:00.000Z,mamece2,TJ-," nice, i like that"
+2012-08-24T07:43:00.000Z,mamece2,TJ-,http://paste.ubuntu.com/1163785/
+2012-08-24T07:44:00.000Z,TJ-,mamece2,mmmmm data... I'll be back :p
+2012-08-24T07:45:00.000Z,TJ-,mamece2,"I *think* this may be to do with the channel width; 20MHz vs 40MHz ... I need to dig some more, give me a few minutes"
+2012-08-24T07:46:00.000Z,mamece2,TJ-,channelwight isnt a standar?
+2012-08-24T07:48:00.000Z,TJ-,mamece2,40MHz channels are 802.11n ... doubles the available bandwidth but uses twice as many frequency bands
+2012-08-24T07:49:00.000Z,TJ-,mamece2,"Got it! In hostapd.conf change 'ieee80211n=' from 1 to 0 ... save, and try it again"
+2012-08-24T07:52:00.000Z,mamece2,TJ-,to 80200n ?
+2012-08-24T07:52:00.000Z,mamece2,TJ-,i got it
+2012-08-24T07:52:00.000Z,TJ-,mamece2,change 'ieee80211n=0'
+2012-08-24T07:52:00.000Z,TJ-,mamece2,We need to *disable* 40MHz channels
+2012-08-24T07:53:00.000Z,mamece2,TJ-,i did it with the -dd option and i unleashed hell
+2012-08-24T07:53:00.000Z,TJ-,mamece2,That means it works!
+2012-08-24T07:54:00.000Z,TJ-,mamece2,press Ctrl+C to kill that process
+2012-08-24T07:54:00.000Z,mamece2,TJ-," it kinda stuck, i dont like it"
+2012-08-24T07:54:00.000Z,TJ-,mamece2,stuck?
+2012-08-24T07:55:00.000Z,mamece2,TJ-,it hasnt done its thing
+2012-08-24T07:55:00.000Z,TJ-,mamece2,"Ctrl+C should terminate the process. If not, do Ctrl+D to suspend it"
+2012-08-24T07:55:00.000Z,mamece2,TJ-,this is repeating in the log . Aug 23 23:25:26 pain-laptop kernel: [16528.204004] NOHZ: local_softirq_pending 08
+2012-08-24T07:55:00.000Z,TJ-,mamece2,if you have a command line after Ctrl+D then kill the suspended process using 'sudo kill %1'
+2012-08-24T07:57:00.000Z,mamece2,TJ-,im trying again
+2012-08-24T07:58:00.000Z,TJ-,mamece2,"that NOHZ report is a known kernel bug, I'm checking on it"
+2012-08-24T07:58:00.000Z,mamece2,TJ-,this is at the log pain-laptop kernel: [16646.440052] wlan0: no IPv6 routers present
+2012-08-24T08:00:00.000Z,mamece2,TJ-, it freezes at Using interface wlan0 with hwaddr 00:23:4e:df:52:45 and ssid 'local'
+2012-08-24T08:01:00.000Z,mamece2,TJ-,now it doenst even get to the NOHZ report
+2012-08-24T08:02:00.000Z,TJ-,mamece2,"Is that after starting the service with 'sudo service hostapd start' ? And do you mean the PC freezes, or the hostapd log file?"
+2012-08-24T08:02:00.000Z,mamece2,TJ-, the terminal just get there and theres no more entries at the log
+2012-08-24T08:03:00.000Z,TJ-,mamece2,that's the normal thing... normal service isn't generating all that debug info (there's no '-dd' on the command line any more)
+2012-08-24T08:03:00.000Z,mamece2,TJ-,"ok, but does it take that long to start?"
+2012-08-24T08:04:00.000Z,TJ-,mamece2,usually a couple of seconds or so
+2012-08-24T08:05:00.000Z,mamece2,TJ-, but still i dont know how to set the AP
+2012-08-24T08:05:00.000Z,TJ-,mamece2,"You've set it, it's working."
+2012-08-24T08:06:00.000Z,TJ-,mamece2,if you every change the settings in hostapd.conf all you need do is issue a 'restart' to the service
+2012-08-24T08:06:00.000Z,mamece2,TJ-,how can i connect the mobile phone to the AP created?
+2012-08-24T08:08:00.000Z,mamece2,TJ-,i see it!! but i would like to see if i can have internet on my mobile phone
+2012-08-24T08:09:00.000Z,TJ-,mamece2,"As I said, you'll need to configure the PC to forward packets to the internet and masquarade (NAT) them"
+2012-08-24T08:10:00.000Z,mamece2,TJ-, the iphone doesnt finnish to connect to the AP
+2012-08-24T08:11:00.000Z,mamece2,TJ-,ok but i mean my mobile phone doesnt connect to the AP ive just created in ubuntu
+2012-08-24T08:11:00.000Z,TJ-,mamece2,are you giving it the correct passphrase?
+2012-08-24T08:12:00.000Z,mamece2,TJ-," yes, its in some kind of loop . hostapd: wlan0: STA 44:d8:84:0f:52:64 WPA: pairwise key handshake completed (RSN)"
+2012-08-24T08:12:00.000Z,TJ-,mamece2,That's good
+2012-08-24T08:13:00.000Z,TJ-,mamece2,Remember I had you edit the pass-phrase; did you change it back?
+2012-08-24T08:13:00.000Z,mamece2,TJ-,look at this http://paste.ubuntu.com/1163803/
+2012-08-24T08:15:00.000Z,TJ-,mamece2,That looks the same as my AP
+2012-08-24T08:16:00.000Z,mamece2,TJ-,"ok,, what if i want to deactivate the AP?}"
+2012-08-24T08:16:00.000Z,TJ-,mamece2,Stop the service
+2012-08-24T08:17:00.000Z,mamece2,TJ-,ctrl+C  right
+2012-08-24T08:17:00.000Z,TJ-,mamece2,no!
+2012-08-24T08:17:00.000Z,TJ-,mamece2,You should now be running it using 'sudo service hostapd start'
+2012-08-24T08:17:00.000Z,mamece2,TJ-,or sudo /etc/init.d/hostapd stop
+2012-08-24T08:17:00.000Z,TJ-,mamece2,"that puts it into the background and it runs as a service, no need for the terminal at all now"
+2012-08-24T08:18:00.000Z,TJ-,mamece2,"you can do that, but using 'service' is better in many ways"
+2012-08-24T08:20:00.000Z,mamece2,TJ-,"ok thanks very much! i need to sleep, tomorrow i will ask and learn more"
+2012-08-24T08:20:00.000Z,TJ-,mamece2,Well done :)
+2012-08-24T04:06:00.000Z,TJ-,mamece2,"Ad-Hoc wireless is a point-to-point connection. Access Points (AP) are managed mode, and you'd need hostapd installing and configuring to operate an AP"
+2012-08-24T04:11:00.000Z,TJ-,mamece2,"This is a much better guide, and the recommended one https://help.ubuntu.com/community/WifiDocs/MasterMode"
+2012-08-24T04:12:00.000Z,mamece2,TJ-,i have an atheros one!
+2012-08-24T04:14:00.000Z,TJ-,mamece2,"I run an Ubuntu server here configured as the access point, it was quick to set up"
+2012-08-24T04:15:00.000Z,mamece2,TJ-,so you can set a wireless network and share internet? i want to have internet through my external wireless dongle and send internet to my ihpone thought the internal wifi card
+2012-08-24T04:16:00.000Z,TJ-,mamece2,"That's exactly how its used here - the server has 6 wired ethernet ports, the Wireless, and an embedded xDSL"
+2012-08-24T04:17:00.000Z,mamece2,TJ-,do u know where can i read how to set up this laptop taht way?
+2012-08-24T04:17:00.000Z,TJ-,mamece2,Is the laptop connecting to the Internet via  wired connection?
+2012-08-24T04:18:00.000Z,mamece2,TJ-,"no, via wireless external adapter"
+2012-08-24T04:18:00.000Z,TJ-,mamece2,So does the laptop have *TWO* wifi adapters?
+2012-08-24T04:18:00.000Z,mamece2,TJ-,yes
+2012-08-24T04:18:00.000Z,TJ-,mamece2,"OK, you can do it then"
+2012-08-24T04:19:00.000Z,TJ-,mamece2,I've uploaded my server's hostpapd.conf file for you to see. If you 'sudo apt-get install hostapd' and copy/edit my config to your PC you're almost ready to go. http://iam.tj/files/
+2012-08-24T04:20:00.000Z,TJ-,mamece2,*hostapd.conf* ... typo!
+2012-08-24T04:21:00.000Z,TJ-,mamece2,You'll need to configure it for your atheros driver of course
+2012-08-24T04:21:00.000Z,mamece2,TJ-,everywhere i see a tutorial is for the following configuration: wired internet and wireless sharing interface.
+2012-08-24T04:21:00.000Z,TJ-,mamece2,"Well, think slightly laterally. All those tutorials assume you've only got ONE wifi ... what they should say is 'how to configure for TWO separate interfaces'"
+2012-08-24T04:22:00.000Z,mamece2,TJ-,yeah.. my internal wifi is called eth1 (weird) and the external one is wlan0
+2012-08-24T04:22:00.000Z,TJ-,mamece2,"Think of your existing wireless connection to the Internet as being the 'wired' connection in those tutorials, and it makes sense"
+2012-08-24T04:23:00.000Z,mamece2,TJ-, im afraid that if i configure that way my connection I wont be able to connect to another wifi. is that true? is easy to deactivate all that config im about to do?
+2012-08-24T04:24:00.000Z,TJ-,mamece2,Do you use the 2nd Wifi (wlan0) as a roaming connection then?
+2012-08-24T04:25:00.000Z,mamece2,TJ-,"yes, sometimes i connect to another wireless networks"
+2012-08-24T04:25:00.000Z,TJ-,mamece2,I've copied the entries you'd need in /etc/network/interfaces to my server too ... the file's called 'interfaces'
+2012-08-24T04:25:00.000Z,TJ-,mamece2,Could you change your procedures so you connect to those other WiFi networks using the internal wireless?
+2012-08-24T04:26:00.000Z,mamece2,TJ-," i cant, my internal adapter doesnt have enough gain, just to connect my mobile phone"
+2012-08-24T04:27:00.000Z,TJ-,mamece2,"OK, well then can't you swap things around so the external Wifi connects to the Internet router and roams, and you configure the internal WiFi as the AP for your phone?"
+2012-08-24T04:27:00.000Z,mamece2,TJ-, correct
+2012-08-24T04:27:00.000Z,TJ-,mamece2,As an aside... if the internal wifi signal is that bad... it's likely that the antenna connectors inside the laptop have become disconnected. You might consider opening it up and checking on that!
+2012-08-24T04:29:00.000Z,mamece2,TJ-,"im kinda lost, first i should install hostapd?"
+2012-08-24T04:30:00.000Z,TJ-,mamece2,make sure you have the correct drivers for the internal wifi adapter first
+2012-08-24T04:30:00.000Z,mamece2,TJ-," i have them, i am sure because i have use them to connect before, right?"
+2012-08-24T04:31:00.000Z,TJ-,mamece2,"No! sometimes the driver firmware that has to be uploaded into the processor of the wifi chipset is different ... you need MASTER mode firmware, rather than just STATION mode... sometimes its combined; often not"
+2012-08-24T04:34:00.000Z,mamece2,TJ-, i have a broadcom and a realtek
+2012-08-24T04:35:00.000Z,TJ-,mamece2,Broadcom could be a pig... not sure about realtek
+2012-08-24T04:35:00.000Z,mamece2,TJ-, dont worry is broadcom  4312
+2012-08-24T04:36:00.000Z,TJ-,mamece2,is the Broadcom the internal device you want to use as the AP?
+2012-08-24T04:37:00.000Z,mamece2,TJ-,"broadcom is internal, realtek is the external one"
+2012-08-24T04:38:00.000Z,mamece2,TJ-, im trying sudo iwconfig eth1 mode master and i get '
+2012-08-24T04:39:00.000Z,TJ-,mamece2,Sounds like you need additional driver firmware
+2012-08-24T04:40:00.000Z,mamece2,TJ-,'things just got real bro'
+2012-08-24T04:40:00.000Z,TJ-,mamece2,From the linux wireless web-site I see that the driver you need to use for Broadcom to support AP is the 'b43'
+2012-08-24T04:41:00.000Z,mamece2,TJ-," the realtek also has a problem, right? the message is the same from the wlan1 mode master command"
+2012-08-24T04:42:00.000Z,TJ-,mamece2,"Check this out, it's much more authoritative http://wireless.kernel.org/en/users/Documentation/modes"
+2012-08-24T04:46:00.000Z,mamece2,TJ-, wow this is something sorta complex
+2012-08-24T04:48:00.000Z,mamece2,TJ-,i need to set master mode for my internal or external driver? the one in master mode is the one who would be the AP?
+2012-08-24T04:50:00.000Z,TJ-,mamece2,"correct, so I guess that's the internal one"
+2012-08-24T04:52:00.000Z,mamece2,TJ-,"so the internal driver will be the one spreading wireless internet, but it will get it from the external one, right?"
+2012-08-24T04:54:00.000Z,TJ-,mamece2,Correct
+2012-08-24T04:55:00.000Z,TJ-,mamece2,as long as the default gateway is configured correctly (as it should be automatically) packets from AP clients should be routed out on the other Wifi. what you need to be sure to do to avoid interference is to set the channel number of the AP as far away from your router's channel as possible.
+2012-08-24T04:56:00.000Z,TJ-,mamece2,"Ideally put your home router on channel 1 and then, depending on your country limits, your AP on channel 11/13/14"
+2012-08-24T05:04:00.000Z,mamece2,TJ-," cant find how to set master mode with the broadcom,just how to make it work, it already works!"
+2012-08-24T05:04:00.000Z,TJ-,mamece2,"Try installing and configuring hostapd then, see if it 'just works' !"
+2012-08-24T05:05:00.000Z,TJ-,mamece2,Only if you reconfigure the interface you're currently using to access the Internet
+2012-08-24T05:11:00.000Z,mamece2,TJ-,done with the hostapd
+2012-08-24T05:12:00.000Z,TJ-,mamece2,Did it work?
+2012-08-24T05:13:00.000Z,mamece2,TJ-,"well i dont know how to test it, the input is 'sudo iwconfig eth1 mode master' i keep getting 'sudo iwconfig eth1 mode master'"
+2012-08-24T05:14:00.000Z,TJ-,mamece2,"If you configure 'hostapd.conf' and 'interfaces' as in the files I uploaded for you, it should just work"
+2012-08-24T05:16:00.000Z,TJ-,mamece2,You won't need any commands; the machine will configure itself correctly when it is started
+2012-08-24T05:20:00.000Z,mamece2,TJ-,wheres can i see the complete name of the driver?
+2012-08-24T05:21:00.000Z,TJ-,mamece2,From what I read you should be OK to use the default 'nl80211' as is in my hostapd.conf
+2012-08-24T05:23:00.000Z,mamece2,TJ-,so i just replace the file in that directory and then?
+2012-08-24T05:24:00.000Z,TJ-,mamece2,Edit the hostapd.conf I've provided where you see the ***.....*** parts
+2012-08-24T05:24:00.000Z,mamece2,TJ-,done
+2012-08-24T05:24:00.000Z,TJ-,mamece2,make sure you set a channel number that doesn't interfere with your home router
+2012-08-24T05:24:00.000Z,mamece2,TJ-,"ok , done"
+2012-08-24T05:25:00.000Z,TJ-,mamece2,"Then you need to add to /etc/network/interfaces the contents of the 'interfaces' file I uploaded for you, too"
+2012-08-24T05:25:00.000Z,TJ-,mamece2,"You'll need to EDIT that interfaces section for wlan0 to ensure the addresses are the same as in your network, but on a different subnet to the other eth0 interface"
+2012-08-24T05:26:00.000Z,mamece2,TJ-,so eth1 must be in a different subnet than wlan1 ?
+2012-08-24T05:27:00.000Z,TJ-,mamece2,Yes... I have my main wired LAN on 10.254.251.0/24 so I put the Wireless on 10.254.250.0/24
+2012-08-24T05:28:00.000Z,TJ-,mamece2,Then there's one thing left to do. You'll need to configure a lightweight DHCP server (dnsmasq) that will listen on the AP interface and issue IP addresses to clients
+2012-08-24T05:28:00.000Z,mamece2,TJ-,that kinda complex
+2012-08-24T05:29:00.000Z,TJ-,mamece2,How so? you want your clients to be able to talk to other don't you? without DHCP they won't be!
+2012-08-24T05:30:00.000Z,mamece2,TJ-,i could have a fixed Ip on my phone and i wont care
+2012-08-24T05:30:00.000Z,TJ-,mamece2,"If you tell me your sub-net for wired and what you want to use for Wifi, I'll write you the /etc/dnsmasq.conf"
+2012-08-24T05:31:00.000Z,TJ-,mamece2,OK... but it really would be better to just set it up to work automatically!
+2012-08-24T05:31:00.000Z,mamece2,TJ-,"i dont us wired, just wireless for the access to the intenet AP and i wannt the mobile phone to get internet thoughr the laptop"
+2012-08-24T05:32:00.000Z,TJ-,mamece2,sorry... I didn't mean wired I meant the internet eth0 interface :D
+2012-08-24T05:33:00.000Z,mamece2,TJ-, i added this to the interface file: iface eth0 inet static
+2012-08-24T05:34:00.000Z,TJ-,mamece2,that looks good
+2012-08-24T05:35:00.000Z,mamece2,TJ-,"done, now what?"
+2012-08-24T05:35:00.000Z,mamece2,TJ-, i dont see where would I put the interface in master mode
+2012-08-24T05:36:00.000Z,TJ-,mamece2,"You don't, that's what hostapd does for you"
+2012-08-24T05:36:00.000Z,mamece2,TJ-,how can i activate it?
+2012-08-24T05:36:00.000Z,TJ-,mamece2,restart hostapd with 'sudo service hostapd restart'
+2012-08-24T05:37:00.000Z,TJ-,mamece2,and check /var/log/syslog with the 'Log file viewer' to check for error or success messages
+2012-08-24T05:37:00.000Z,mamece2,TJ-,"ok log file viewer? i havent use that, explain me how please"
+2012-08-24T05:38:00.000Z,TJ-,mamece2,If you're using 12.04 with Unity  open the dash and type 'Log file viewer' to find it
+2012-08-24T05:38:00.000Z,mamece2,TJ-, its blank
+2012-08-24T05:39:00.000Z,TJ-,mamece2,should be installed by default :s
+2012-08-24T05:39:00.000Z,mamece2,TJ-," it is , butwhen i opened it its blank"
+2012-08-24T05:39:00.000Z,TJ-,mamece2,LOL ok... thought you meant dash was blank. Use File > Open and choose /var/log/syslog
+2012-08-24T05:40:00.000Z,mamece2,TJ-,the file /etc/hostapd/hostapd.conf its in blank too
+2012-08-24T05:40:00.000Z,TJ-,mamece2,How did you copy/edit my example to your system?
+2012-08-24T05:41:00.000Z,mamece2,TJ-, sudo gedit /etc/hostapd/hostapd.conf
+2012-08-24T05:41:00.000Z,TJ-,mamece2,"OK, that should do it, assuming you saved it"
+2012-08-24T05:42:00.000Z,mamece2,TJ-,"i mean, the file doesnt exist right now"
+2012-08-24T05:42:00.000Z,TJ-,mamece2,If you save it using gedit it should do
+2012-08-24T05:42:00.000Z,mamece2,TJ-,"ok, done, now i will restart service"
+2012-08-24T05:43:00.000Z,TJ-,mamece2,OK ... good luck!
+2012-08-24T05:43:00.000Z,mamece2,TJ-,"mmm done, aparently nothing happened"
+2012-08-24T05:43:00.000Z,TJ-,mamece2,how do you test it?
+2012-08-24T05:44:00.000Z,mamece2,TJ-, i just type sudo service hostapd restart
+2012-08-24T05:44:00.000Z,mamece2,TJ-, nothing new in the syslog
+2012-08-24T05:44:00.000Z,TJ-,mamece2,"OK... using that log file viewer, open the file /var/log/hostapd.log  and look for details"
+2012-08-24T05:45:00.000Z,mamece2,TJ-,the same in 'sudo iwconfig eth1 mode master
+2012-08-24T05:45:00.000Z,TJ-,mamece2,OK... so we can work on that. That's the same error you got trying to use 'iwconfig' so it's likely a driver error
+2012-08-24T05:46:00.000Z,TJ-,mamece2,I need you to pastebin me the output of 'lspci -nn'
+2012-08-24T05:46:00.000Z,TJ-,mamece2,and also 'lsusb'
+2012-08-24T05:47:00.000Z,mamece2,TJ-, theres no  /var/log/hostapd.log
+2012-08-24T05:49:00.000Z,TJ-,mamece2,If you've configured the /etc/hostapd/hostapd.conf correctly it should start and log something at least. You have installed hostapd haven't you ('sudo apt-get install hostapd') ?
+2012-08-24T05:50:00.000Z,mamece2,TJ-,yes
+2012-08-24T05:50:00.000Z,mamece2,TJ-,http://pastebin.com/RT8id2uN
+2012-08-24T05:50:00.000Z,TJ-,mamece2,thanks
+2012-08-24T05:52:00.000Z,TJ-,mamece2,And pastebin the output of 'iwconfig'
+2012-08-24T05:52:00.000Z,mamece2,TJ-,the folder was created for hostapd
+2012-08-24T05:52:00.000Z,TJ-,mamece2,This is what mine shows: http://paste.ubuntu.com/1163701/
+2012-08-24T05:53:00.000Z,mamece2,TJ-,http://pastebin.com/a37JdR08
+2012-08-24T05:54:00.000Z,mamece2,TJ-,"you cant be the AP and get the internet int he same interface, right?"
+2012-08-24T05:54:00.000Z,TJ-,mamece2,and you've specified 'eth1' in both /etc/network/interfaces and /etc/hostapd/hostapd.conf  ?
+2012-08-24T05:54:00.000Z,TJ-,mamece2,correct... well it is technically possibly but hell to do!
+2012-08-24T05:55:00.000Z,TJ-,mamece2,I think the issue here is the BCM driver.
+2012-08-24T05:57:00.000Z,TJ-,mamece2,can you pastebin the output of 'sudo lspci -vvvnn -s 04:00.0'
+2012-08-24T05:59:00.000Z,mamece2,TJ-,http://pastebin.com/krEY3Tpi
+2012-08-24T05:59:00.000Z,mamece2,TJ-,whatis the interface that i need to set in interfaces and in hostadp?
+2012-08-24T05:59:00.000Z,TJ-,mamece2,that shows the driver is 'wl' ... we need to check that
+2012-08-24T05:59:00.000Z,TJ-,mamece2,it's 'eth1' currently
+2012-08-24T06:01:00.000Z,mamece2,TJ-,what can i do about this wl driver?
+2012-08-24T06:02:00.000Z,TJ-,mamece2,I'm researching it now
+2012-08-24T06:02:00.000Z,mamece2,TJ-,should i put in the config file of hostapd the wl drive?
+2012-08-24T06:04:00.000Z,TJ-,mamece2,no don't change anything
+2012-08-24T06:04:00.000Z,TJ-,mamece2,The 'wl' driver doesn't support master mode
+2012-08-24T06:05:00.000Z,TJ-,mamece2,You need to install the 'b43' driver. I'm reading that you need to do 'sudo apt-get install firmware-b43-installer' from this page: https://help.ubuntu.com/community/WifiDocs/Driver/bcm43xx#Installing_b43_drivers
+2012-08-24T06:07:00.000Z,mamece2,TJ-,you mean sudo apt-get install b43-fwcutter
+2012-08-24T06:09:00.000Z,TJ-,mamece2,no I don't
+2012-08-24T06:09:00.000Z,TJ-,mamece2,it's now 'firmware-b43-installer'
+2012-08-24T06:10:00.000Z,mamece2,TJ-, im following thar url instructions
+2012-08-24T06:11:00.000Z,TJ-,mamece2,At the start of the 'Installing b43 drivers' section it says 'Note: On Ubuntu 11.04 installing the 'firmware-b43-installer' package takes care of the downloading and installation of the b43 driver. '
+2012-08-24T06:11:00.000Z,TJ-,mamece2,"If you're on 11.04, 11.10 or 12.04 then that's the package to use"
+2012-08-24T06:11:00.000Z,mamece2,TJ-,"ok, now i need to restart :/ i hate when that happens"
+2012-08-24T06:12:00.000Z,TJ-,mamece2,"you might not need to, you can manually load the driver after unloading the 'wl' driver"
+2012-08-24T06:12:00.000Z,mamece2,TJ-,"ive installed b43 and i still see wl, how to unload that?"
+2012-08-24T06:13:00.000Z,TJ-,mamece2,"at a command line, first ensure that 'wl' isn't in use by anything. Do 'lsmod | grep wl' and check that the number after 'wl' is zero"
+2012-08-24T06:14:00.000Z,mamece2,TJ-, it is : 'lsmod | grep wl
+2012-08-24T06:14:00.000Z,mamece2,TJ-,wl                   2568210  0
+2012-08-24T06:14:00.000Z,TJ-,mamece2,That's good.  Now we can unload it: 'sudo rmmod wl'
+2012-08-24T06:15:00.000Z,TJ-,mamece2,check it's gone by doing 'lsmod | grep wl' once more
+2012-08-24T06:15:00.000Z,mamece2,TJ-,gone
+2012-08-24T06:15:00.000Z,TJ-,mamece2,Now we load the b43: 'sudo modprobe b43'
+2012-08-24T06:15:00.000Z,TJ-,mamece2,then check its in memory with 'lsmod | grep b43'
+2012-08-24T06:16:00.000Z,mamece2,TJ-, Kernel driver in use: b43-pci-bridge
+2012-08-24T06:16:00.000Z,TJ-,mamece2,sounds good
+2012-08-24T06:16:00.000Z,TJ-,mamece2,check the interfaces with 'iwconfig'
+2012-08-24T06:17:00.000Z,TJ-,mamece2,It's probably no longer eth1 and you'll need to change 'interfaces' and 'hostapd.conf' to reflect the new interface name
+2012-08-24T06:17:00.000Z,mamece2,TJ-,the same error when i try  sudo iwconfig wlan0 mode master
+2012-08-24T06:18:00.000Z,TJ-,mamece2,iwconfig shows the new interface as wlan0 then ?
+2012-08-24T06:18:00.000Z,TJ-,mamece2,pastebin me 'iwconfig' again please
+2012-08-24T06:18:00.000Z,mamece2,TJ-,http://pastebin.com/DpQM6akf
+2012-08-24T06:19:00.000Z,mamece2,TJ-,the command mode master shouldnt get a error message back
+2012-08-24T06:20:00.000Z,TJ-,mamece2,after you've fixed up the config files do 'sudo ifdown wlan0' then 'sudo service hostapd restart' and check the hostapd log file again
+2012-08-24T06:21:00.000Z,mamece2,TJ-, both config files should be with wlan0 interface?
+2012-08-24T06:22:00.000Z,TJ-,mamece2,yes
+2012-08-24T06:22:00.000Z,mamece2,TJ-,"when i click in the upper corner icon, the broadcome says device not ready , firmware missing"
+2012-08-24T06:23:00.000Z,mamece2,TJ-,should i change the driver=nl80211 line?
+2012-08-24T06:23:00.000Z,TJ-,mamece2,No
+2012-08-24T06:23:00.000Z,TJ-,mamece2,The message about the firmware is the clue.
+2012-08-24T06:24:00.000Z,mamece2,TJ-,ifdown: interface wlan0 not configured
+2012-08-24T06:24:00.000Z,TJ-,mamece2,"that means the ' firmware-b43-installer' hasn't done its job, or else the firmware hasn't been uploaded to the device"
+2012-08-24T06:24:00.000Z,TJ-,mamece2,that's fine
+2012-08-24T06:25:00.000Z,TJ-,mamece2,check the firmware files. pastebin me the directory listing 'ls -l /lib/firmware/brcm/'
+2012-08-24T06:26:00.000Z,mamece2,TJ-,http://pastebin.com/v9M6e6R2
+2012-08-24T06:27:00.000Z,mamece2,TJ-,its something bad with the driver? how can i erase it and dl again?
+2012-08-24T06:27:00.000Z,TJ-,mamece2,"No it isn't, wait!"
+2012-08-24T06:29:00.000Z,TJ-,mamece2,"OK, there's an alternative for low-power devices."
+2012-08-24T06:30:00.000Z,TJ-,mamece2,remove the one you just installed 'sudo apt-get --purge remove firmware-b43-installer' and then install the low-power version 'sudo apt-get install firmware-b43-lpphy-installer'
+2012-08-24T06:31:00.000Z,mamece2,TJ-,downloading
+2012-08-24T06:33:00.000Z,mamece2,TJ-,"ok, done..."
+2012-08-24T06:33:00.000Z,mamece2,TJ-,"broadcom is back online, the 'local' (ssid) is connected again"
+2012-08-24T06:34:00.000Z,mamece2,TJ-,mode master command reply with an error still
+2012-08-24T06:35:00.000Z,TJ-,mamece2,does that interface report missing firmware now?
+2012-08-24T06:35:00.000Z,mamece2,TJ-, no
+2012-08-24T06:35:00.000Z,TJ-,mamece2,"use log file viewer, look in /var/log/kern.log ... see if you see a recent message saying it's loading firmware"
+2012-08-24T06:37:00.000Z,TJ-,mamece2,Yay!
+2012-08-24T06:37:00.000Z,TJ-,mamece2,"ok, try restarting hostapd again"
+2012-08-24T06:37:00.000Z,TJ-,mamece2,then look at the hostapd log file if its there
+2012-08-24T06:37:00.000Z,mamece2,TJ-,"ok , done, nothing happened"
+2012-08-24T06:38:00.000Z,TJ-,mamece2,no log entries?
+2012-08-24T06:38:00.000Z,mamece2,TJ-,theres no log
+2012-08-24T06:39:00.000Z,TJ-,mamece2,"OK, that means there's something wrong with your config. Check in /var/log/syslog for any clues about it failing to start"
+2012-08-24T06:40:00.000Z,mamece2,TJ-,NetworkManager[873]: <error> [1345775755.125846] [nm-device-wifi.c:1865] nm_device_wifi_set_mode(): (wlan0): error setting mode 2
+2012-08-24T06:41:00.000Z,TJ-,mamece2,OK... let me research that
+2012-08-24T06:41:00.000Z,mamece2,TJ-, this might help http://pastebin.com/v3AgAf0B
+2012-08-24T06:43:00.000Z,TJ-,mamece2,ahh! network manager needs to be told to not manage wlan0! you have to restart it. It'll ignore any interface listed in /etc/network/interfaces.
+2012-08-24T06:43:00.000Z,TJ-,mamece2,try this 'sudo service network-manager restart' then 'sudo service hostapd restart'
+2012-08-24T06:51:00.000Z,mamece2,TJ-,"sudo service hostapd restart doesnt seem to do nothign,. nothigns added to the syslog log"
+2012-08-24T06:51:00.000Z,mamece2,TJ-,now broadcom appears like device not managed
+2012-08-24T06:52:00.000Z,TJ-,mamece2,you didn't accidentally mistype it's config file name did you? I've done that before and wasted hours! :p
+2012-08-24T06:52:00.000Z,TJ-,mamece2,'not managed' is what you want. Don't want network-manager touching it
+2012-08-24T06:53:00.000Z,mamece2,TJ-, let me check
+2012-08-24T06:55:00.000Z,mamece2,TJ-,the file is in the directory /etc/hostapd and it has the following http://pastebin.com/Aj0LPgC4
+2012-08-24T06:56:00.000Z,TJ-,mamece2,your file looks good. We need therefore to find out why hostapd doesn't seem to be logging. lets find out if its in memory
+2012-08-24T06:56:00.000Z,mamece2,TJ-, shoudl i reinstall
+2012-08-24T06:57:00.000Z,TJ-,mamece2,do this 'ps -ef | grep hostapd' and you should see a line similar to this: 'root      4224     1  0 Aug20 ?        00:00:03 /usr/sbin/hostapd -B -P /var/run/hostapd.pid /etc/hostapd/hostapd.conf'
+2012-08-24T06:57:00.000Z,mamece2,TJ-, why in iwconfig wlan0 is in managed mode?
+2012-08-24T06:57:00.000Z,TJ-,mamece2,that's the default mode until something changes it
+2012-08-24T06:58:00.000Z,mamece2,TJ-,mike     13237  4450  0 22:27 pts/0    00:00:00 grep --color=auto hostapd
+2012-08-24T06:58:00.000Z,TJ-,mamece2,ok... hostapd isn't starting then
+2012-08-24T06:58:00.000Z,TJ-,mamece2,that explains alot!
+2012-08-24T06:58:00.000Z,mamece2,TJ-,why not?
+2012-08-24T06:58:00.000Z,TJ-,mamece2,do this and pastebin me the results: 'sudo service hostapd start'
+2012-08-24T06:59:00.000Z,mamece2,TJ-,doesnt give something back
+2012-08-24T06:59:00.000Z,TJ-,mamece2,really? not even an error message?
+2012-08-24T07:00:00.000Z,mamece2,TJ-,nope. thats why i think it does nothing
+2012-08-24T07:01:00.000Z,TJ-,mamece2,the service command always reports any failure. that's where the problem is I think.
+2012-08-24T07:01:00.000Z,TJ-,mamece2,see http://paste.ubuntu.com/1163749/
+2012-08-24T07:03:00.000Z,TJ-,mamece2,Let's try the alternative method of controlling services. do 'sudo /etc/init.d/hostapd start'
+2012-08-24T07:03:00.000Z,mamece2,TJ-,should I reinstall?
+2012-08-24T07:04:00.000Z,mamece2,TJ-,the same: nothing
+2012-08-24T07:04:00.000Z,TJ-,mamece2,OK ... pastebin me this file 'cat /etc/default/hostapd'
+2012-08-24T07:06:00.000Z,mamece2,TJ-,http://pastebin.com/tgYCTWtW
+2012-08-24T07:08:00.000Z,TJ-,mamece2,HAHAHA slap me!
+2012-08-24T07:08:00.000Z,TJ-,mamece2,see that #DAEMON_CONF=''  and the text above it!?
+2012-08-24T07:09:00.000Z,TJ-,mamece2,My fault - I forgot I had to edit that... after all the time since I installed it I assumed it had that set originally!
+2012-08-24T07:09:00.000Z,mamece2,TJ-,"yeah,,, uncooment it"
+2012-08-24T07:09:00.000Z,mamece2,TJ-,i read it too jeje
+2012-08-24T07:09:00.000Z,TJ-,mamece2,"so, 'gksudo gedit /etc/default/hostapd' and edit that line, remove the leading '#' and insert the name of the config file '/etc/hostapd/hostapd.conf'"
+2012-08-24T07:09:00.000Z,TJ-,mamece2,Save it then finally START the service!
+2012-08-24T07:10:00.000Z,TJ-,mamece2,This is mine: http://paste.ubuntu.com/1163759/
+2012-08-24T07:11:00.000Z,mamece2,TJ-, * Starting advanced IEEE 802.11 management hostapd                      [fail]
+2012-08-24T07:12:00.000Z,mamece2,TJ-,the text is like this DAEMON_CONF='/etc/hostapd/hostapd.conf'
+2012-08-24T07:12:00.000Z,TJ-,mamece2,That's correct
+2012-08-24T07:13:00.000Z,mamece2,TJ-,it fails :/
+2012-08-24T07:13:00.000Z,TJ-,mamece2,Did it try to start?
+2012-08-24T07:13:00.000Z,TJ-,mamece2,"if so, check the log :D"
+2012-08-24T07:16:00.000Z,mamece2,TJ-,still no log for hostapd
+2012-08-24T07:16:00.000Z,TJ-,mamece2,did the service start say 'failed'
+2012-08-24T07:16:00.000Z,mamece2,TJ-, yes
+2012-08-24T07:18:00.000Z,TJ-,mamece2,"OK, check /var/log/syslog it may say why"
+2012-08-24T07:18:00.000Z,mamece2,TJ-, it doesnt add a new line when i try to restart
+2012-08-24T07:18:00.000Z,TJ-,mamece2,"OK, let me check on mine for anything different"
+2012-08-24T07:19:00.000Z,TJ-,mamece2,I wonder about the '+' at then end of your spa_passphrase. Try without it
+2012-08-24T07:19:00.000Z,mamece2,TJ-,its part of the password
+2012-08-24T07:19:00.000Z,TJ-,mamece2,That's in hostapd.conf
+2012-08-24T07:20:00.000Z,TJ-,mamece2,I know... but I'm looking for anything that might cause hostapd to barf
+2012-08-24T07:21:00.000Z,mamece2,TJ-,i thought its gonna be that but it failed too. still it addded some line to the log
+2012-08-24T07:22:00.000Z,TJ-,mamece2,it did? what was it?
+2012-08-24T07:22:00.000Z,mamece2,TJ-,http://pastebin.com/HC1GaFdJ
+2012-08-24T07:26:00.000Z,mamece2,TJ-, i dont understand what happened
+2012-08-24T07:27:00.000Z,TJ-,mamece2,pastebin the output of this: 'iw list  | grep -A 10 'Supported interface modes'  '
+2012-08-24T07:29:00.000Z,mamece2,TJ-," i dont have iw installed, i will do it"
+2012-08-24T07:30:00.000Z,TJ-,mamece2,ahh!
+2012-08-24T07:30:00.000Z,mamece2,TJ-,im not a genius like u
+2012-08-24T07:31:00.000Z,mamece2,TJ-,http://paste.ubuntu.com/1163778/
+2012-08-24T07:31:00.000Z,TJ-,mamece2,Another YATY - AP mode is on that list
+2012-08-24T07:32:00.000Z,mamece2,TJ-,what do u mean?
+2012-08-24T07:34:00.000Z,TJ-,mamece2,"although, we need to be sure that response was for wlan0 since you have two wifis."
+2012-08-24T07:34:00.000Z,TJ-,mamece2,try restarting hostapd now... It should have been installed in support of hostapd but seemingly wasnt
+2012-08-24T07:35:00.000Z,mamece2,TJ-," i did, it failes"
+2012-08-24T07:35:00.000Z,TJ-,mamece2,OK
+2012-08-24T07:36:00.000Z,TJ-,mamece2,do this: 'sudo /usr/sbin/hostapd  /etc/hostapd/hostapd.conf'
+2012-08-24T07:36:00.000Z,TJ-,mamece2,maybe pastebin the output if there is anything useful
+2012-08-24T07:37:00.000Z,mamece2,TJ-,/etc/hostapd/hostapd.conf
+2012-08-24T07:37:00.000Z,mamece2,TJ-,weird
+2012-08-24T07:37:00.000Z,TJ-,mamece2,channel?
+2012-08-24T07:37:00.000Z,TJ-,mamece2,try changing it in the config to 6 and try again
+2012-08-24T07:38:00.000Z,mamece2,TJ-,i change it to channel 6 in the .conf file and still the same error message
+2012-08-24T07:39:00.000Z,mamece2,TJ-,the same message  as above
+2012-08-24T07:42:00.000Z,TJ-,mamece2,let's enable lots of debug info. do this: 'sudo /usr/sbin/hostapd -dd  /etc/hostapd/hostapd.conf'
+2012-08-24T07:43:00.000Z,TJ-,mamece2,I'll need it in pastebin... you might want to install 'pastebinit' and then run 'sudo /usr/sbin/hostapd -dd  /etc/hostapd/hostapd.conf | pastebinit'
+2012-08-24T07:43:00.000Z,mamece2,TJ-," nice, i like that"
+2012-08-24T07:43:00.000Z,mamece2,TJ-,http://paste.ubuntu.com/1163785/
+2012-08-24T07:44:00.000Z,TJ-,mamece2,mmmmm data... I'll be back :p
+2012-08-24T07:45:00.000Z,TJ-,mamece2,"I *think* this may be to do with the channel width; 20MHz vs 40MHz ... I need to dig some more, give me a few minutes"
+2012-08-24T07:46:00.000Z,mamece2,TJ-,channelwight isnt a standar?
+2012-08-24T07:48:00.000Z,TJ-,mamece2,40MHz channels are 802.11n ... doubles the available bandwidth but uses twice as many frequency bands
+2012-08-24T07:49:00.000Z,TJ-,mamece2,"Got it! In hostapd.conf change 'ieee80211n=' from 1 to 0 ... save, and try it again"
+2012-08-24T07:52:00.000Z,mamece2,TJ-,to 80200n ?
+2012-08-24T07:52:00.000Z,mamece2,TJ-,i got it
+2012-08-24T07:52:00.000Z,TJ-,mamece2,change 'ieee80211n=0'
+2012-08-24T07:52:00.000Z,TJ-,mamece2,We need to *disable* 40MHz channels
+2012-08-24T07:53:00.000Z,mamece2,TJ-,i did it with the -dd option and i unleashed hell
+2012-08-24T07:53:00.000Z,TJ-,mamece2,That means it works!
+2012-08-24T07:54:00.000Z,TJ-,mamece2,press Ctrl+C to kill that process
+2012-08-24T07:54:00.000Z,mamece2,TJ-," it kinda stuck, i dont like it"
+2012-08-24T07:54:00.000Z,TJ-,mamece2,stuck?
+2012-08-24T07:55:00.000Z,mamece2,TJ-,it hasnt done its thing
+2012-08-24T07:55:00.000Z,TJ-,mamece2,"Ctrl+C should terminate the process. If not, do Ctrl+D to suspend it"
+2012-08-24T07:55:00.000Z,mamece2,TJ-,this is repeating in the log . Aug 23 23:25:26 pain-laptop kernel: [16528.204004] NOHZ: local_softirq_pending 08
+2012-08-24T07:55:00.000Z,TJ-,mamece2,if you have a command line after Ctrl+D then kill the suspended process using 'sudo kill %1'
+2012-08-24T07:57:00.000Z,mamece2,TJ-,im trying again
+2012-08-24T07:58:00.000Z,TJ-,mamece2,"that NOHZ report is a known kernel bug, I'm checking on it"
+2012-08-24T07:58:00.000Z,mamece2,TJ-,this is at the log pain-laptop kernel: [16646.440052] wlan0: no IPv6 routers present
+2012-08-24T08:00:00.000Z,mamece2,TJ-, it freezes at Using interface wlan0 with hwaddr 00:23:4e:df:52:45 and ssid 'local'
+2012-08-24T08:01:00.000Z,mamece2,TJ-,now it doenst even get to the NOHZ report
+2012-08-24T08:02:00.000Z,TJ-,mamece2,"Is that after starting the service with 'sudo service hostapd start' ? And do you mean the PC freezes, or the hostapd log file?"
+2012-08-24T08:02:00.000Z,mamece2,TJ-, the terminal just get there and theres no more entries at the log
+2012-08-24T08:03:00.000Z,TJ-,mamece2,that's the normal thing... normal service isn't generating all that debug info (there's no '-dd' on the command line any more)
+2012-08-24T08:03:00.000Z,mamece2,TJ-,"ok, but does it take that long to start?"
+2012-08-24T08:04:00.000Z,TJ-,mamece2,usually a couple of seconds or so
+2012-08-24T08:05:00.000Z,mamece2,TJ-, but still i dont know how to set the AP
+2012-08-24T08:05:00.000Z,TJ-,mamece2,"You've set it, it's working."
+2012-08-24T08:06:00.000Z,TJ-,mamece2,if you every change the settings in hostapd.conf all you need do is issue a 'restart' to the service
+2012-08-24T08:06:00.000Z,mamece2,TJ-,how can i connect the mobile phone to the AP created?
+2012-08-24T08:08:00.000Z,mamece2,TJ-,i see it!! but i would like to see if i can have internet on my mobile phone
+2012-08-24T08:09:00.000Z,TJ-,mamece2,"As I said, you'll need to configure the PC to forward packets to the internet and masquarade (NAT) them"
+2012-08-24T08:10:00.000Z,mamece2,TJ-, the iphone doesnt finnish to connect to the AP
+2012-08-24T08:11:00.000Z,mamece2,TJ-,ok but i mean my mobile phone doesnt connect to the AP ive just created in ubuntu
+2012-08-24T08:11:00.000Z,TJ-,mamece2,are you giving it the correct passphrase?
+2012-08-24T08:12:00.000Z,mamece2,TJ-," yes, its in some kind of loop . hostapd: wlan0: STA 44:d8:84:0f:52:64 WPA: pairwise key handshake completed (RSN)"
+2012-08-24T08:12:00.000Z,TJ-,mamece2,That's good
+2012-08-24T08:13:00.000Z,TJ-,mamece2,Remember I had you edit the pass-phrase; did you change it back?
+2012-08-24T08:13:00.000Z,mamece2,TJ-,look at this http://paste.ubuntu.com/1163803/
+2012-08-24T08:15:00.000Z,TJ-,mamece2,That looks the same as my AP
+2012-08-24T08:16:00.000Z,mamece2,TJ-,"ok,, what if i want to deactivate the AP?}"
+2012-08-24T08:16:00.000Z,TJ-,mamece2,Stop the service
+2012-08-24T08:17:00.000Z,mamece2,TJ-,ctrl+C  right
+2012-08-24T08:17:00.000Z,TJ-,mamece2,no!
+2012-08-24T08:17:00.000Z,TJ-,mamece2,You should now be running it using 'sudo service hostapd start'
+2012-08-24T08:17:00.000Z,mamece2,TJ-,or sudo /etc/init.d/hostapd stop
+2012-08-24T08:17:00.000Z,TJ-,mamece2,"that puts it into the background and it runs as a service, no need for the terminal at all now"
+2012-08-24T08:18:00.000Z,TJ-,mamece2,"you can do that, but using 'service' is better in many ways"
+2012-08-24T08:20:00.000Z,mamece2,TJ-,"ok thanks very much! i need to sleep, tomorrow i will ask and learn more"
+2012-08-24T08:20:00.000Z,TJ-,mamece2,Well done :)
