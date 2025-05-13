@@ -20,3 +20,8 @@
 ### Project ScreenCast
 Please use the following <a href="https://youtu.be/kTXRjwRqz6w" target="_blank">link</a>
 
+### Project Process Book
+Please use the following Google Drive <a href="https://drive.google.com/file/d/1LPl7xny57IWIoSNrJ8RavohQcx18rxMP/view?usp=sharing" target="_blank">link</a>
+
+### Original Data Source
+Please use the following Kaggle <a href="https://www.kaggle.com/datasets/rtatman/ubuntu-dialogue-corpus/data" target="_blank">link</a>
