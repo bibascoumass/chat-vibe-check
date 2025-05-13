@@ -17,7 +17,7 @@ root.render(
     <HashRouter>
       <AppBar />
       <Routes>
-        {/* <Route exact path="/" element={<Dashboard />} /> */}
+        <Route exact path="/" element={<Dashboard />} />
         <Route path="/" element={<Navigate to="/heatmap" replace />} />
         <Route exact path="/heatmap" element={<SentimentHeatmap />} />
         <Route path="/scatterplots" element={<SentimentScatterPlot />} />

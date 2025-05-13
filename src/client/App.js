@@ -26,43 +26,43 @@ function Dashboard() {
 
   return (
     <div className="dashboardContainer">
-      <div className="uploadContent">
-        <div className="leftPanel">
-          <h2>Upload WhatsApp Chat</h2>
-          <p className="description">
-            Analyze the emotional vibe of your group chats using our sentiment analyzer.
-            Just upload the exported chat file and get started!
-          </p>
-
-          <label htmlFor="fileUpload" className="customFileUpload">Choose Chat File</label>
-          <input
-            id="fileUpload"
-            type="file"
-            accept=".txt"
-            onChange={(e) => setFile(e.target.files[0])}
-            className="fileInputHidden"
-          />
-          {file && <p className="fileName">✅ {file.name}</p>}
-          <div>
-            <button className="uploadButton" onClick={handleUpload}>📤 Upload Chat</button>
-          </div>
-        </div>
-
-        <div className="rightPanel">
-          <img src={logo} alt="Chat Analyzer Illustration" className="dashboardImage" />
-        </div>
+      <h1>Welcome to Chat Vibe Check!</h1>
+      <div className="videoWrapper">
+        <iframe
+          width="760"
+          height="320"
+          src="https://www.youtube.com/embed/kTXRjwRqz6w?si=0gqa9dFaHawi3yqU"
+          title="YouTube video demo"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </div>
-
-      {showBackdrop && (
-        <div className="backdrop">
-          <div className="backdropContent">
-            <h2>🎉 Upload Successful!</h2>
-            <p>Your chat file has been processed successfully.</p>
-            <button className="closeButton1" onClick={() => setShowBackdrop(false)}>Close</button>
-          </div>
-        </div>
-      )}
-    </div >
+      <div className="linkWrapper">
+        <p>
+          View our process book on{' '}
+          <a
+            href="https://drive.google.com/file/d/1LPl7xny57IWIoSNrJ8RavohQcx18rxMP/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Drive
+          </a>.
+        </p>
+      </div>
+      <div className="linkWrapper">
+        <p>
+          View our source data{' '}
+          <a
+            href="https://www.kaggle.com/datasets/rtatman/ubuntu-dialogue-corpus/data"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Kaggle
+          </a>.
+        </p>
+      </div>
+    </div>
   );
 }
 
