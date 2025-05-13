@@ -4,6 +4,27 @@
 - Node.JS v23.11.0
 - npm 10.9.2
 
+See package.json for JavaScript dependencies:
+```
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.8.4",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "d3": "^7.9.0",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.0",
+    "react-scripts": "5.0.1",
+    "sentiment": "^5.0.2",
+    "stream": "^0.0.3",
+    "web-vitals": "^2.1.4"
+```
 
 ## Setup & Start
 ### Make sure your directory is "/chat-vibe-check", not in any of the sub-folders
